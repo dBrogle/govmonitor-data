@@ -1,0 +1,25 @@
+# ── Secrets ──────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python ───────────────────────────────────────────────
+venv/
+__pycache__/
+*.py[cod]
+
+# ── Regenerable API response cache (~2 GB) ───────────────
+# CACHE_DIR = utils/../data  → raw Congress.gov / OpenFEC responses.
+# Rebuilt from the APIs on demand; never source data.
+/data/
+
+# ── Pipeline run logs ────────────────────────────────────
+*.log
+
+# ── Local tool / OS state ────────────────────────────────
+.claude/
+.DS_Store
+
+# ── Intentionally COMMITTED (do not ignore) ──────────────
+# pipeline/output/   → the produced dataset (the open-data deliverable)
+# config.json, candidates.json, requirements.txt, *.py, notes.txt, DATA_REFERENCE.md
