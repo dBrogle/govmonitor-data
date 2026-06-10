@@ -123,186 +123,165 @@
   },
   "alignment": {
     "congress": 119,
-    "votes_analyzed": 43,
-    "votes_without_analysis": 1,
+    "votes_analyzed": 65,
+    "votes_without_analysis": 25,
     "topics": [
       {
-        "topic_slug": "national_debt",
-        "topic_name": "National Debt",
-        "alignment": 1.0,
-        "numerator": 1.5,
-        "denominator": 1.5,
-        "minus_one_desc": "Accept deficit spending for investment",
-        "plus_one_desc": "Prioritize debt reduction",
+        "topic_slug": "military_defense",
+        "topic_name": "Military & Defense Spending",
+        "alignment": 0.8201,
+        "raw_alignment": 1.0,
+        "numerator": 4.56,
+        "denominator": 4.56,
+        "salience": 0.0843,
+        "contributing_signal_count": 11,
+        "confidence": "high",
+        "minus_one_desc": "Less military spending",
+        "plus_one_desc": "More military spending",
         "contributing_bills": [
           {
-            "bill_type": "S",
-            "bill_number": "356",
-            "vote_position": "Not Voting",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Nay",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
+            "bill_type": "HRES",
+            "bill_number": "682",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Aye",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-09"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
+            "contributed_to_alignment": true,
             "vote_date": "2025-09-10"
           },
           {
             "bill_type": "HCONRES",
             "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 0.3,
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3424",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
+            "bill_number": "6875",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
-            "bill_number": "825",
-            "vote_position": "Not Voting",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-02-24"
-          }
-        ]
-      },
-      {
-        "topic_slug": "foreign_aid",
-        "topic_name": "Foreign Aid",
-        "alignment": 1.0,
-        "numerator": 3.2,
-        "denominator": 3.2,
-        "minus_one_desc": "More foreign aid spending",
-        "plus_one_desc": "Less foreign aid spending",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "4423",
-            "vote_position": "Yea",
-            "bill_topic_score": 1.0,
+            "bill_number": "6624",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
-            "vote_date": "2025-12-01"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Nay",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Aye",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
             "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 0.7,
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           },
           {
             "bill_type": "HR",
-            "bill_number": "1503",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
+            "bill_number": "8697",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.4,
             "contributed_to_alignment": true,
-            "vote_date": "2025-05-07"
-          }
-        ]
-      },
-      {
-        "topic_slug": "labor_unions",
-        "topic_name": "Labor & Unions",
-        "alignment": 1.0,
-        "numerator": 0.2,
-        "denominator": 0.2,
-        "minus_one_desc": "More labor laws and union rights",
-        "plus_one_desc": "Employer flexibility and limit union power",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
+            "vote_date": null
           },
           {
             "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-02"
-          }
-        ]
-      },
-      {
-        "topic_slug": "taxation",
-        "topic_name": "Taxation",
-        "alignment": 1.0,
-        "numerator": 0.9,
-        "denominator": 0.9,
-        "minus_one_desc": "Higher taxes",
-        "plus_one_desc": "Lower taxes",
-        "contributing_bills": [
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.9,
+            "bill_number": "971",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.4,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "952",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.4,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8963",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7622",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
           }
         ]
       },
       {
         "topic_slug": "climate_environment",
         "topic_name": "Climate & Environment",
-        "alignment": 1.0,
+        "alignment": 0.8,
+        "raw_alignment": 1.0,
         "numerator": 4.0,
         "denominator": 4.0,
+        "salience": 0.0739,
+        "contributing_signal_count": 5,
+        "confidence": "medium",
         "minus_one_desc": "More environmental protection",
         "plus_one_desc": "Less environmental regulations",
         "contributing_bills": [
           {
-            "bill_type": "HR",
-            "bill_number": "1676",
-            "vote_position": "Not Voting",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-09"
-          },
-          {
             "bill_type": "HJRES",
             "bill_number": "78",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.9,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-01"
@@ -310,7 +289,10 @@
           {
             "bill_type": "HJRES",
             "bill_number": "88",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.9,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-01"
@@ -318,7 +300,10 @@
           {
             "bill_type": "HJRES",
             "bill_number": "42",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.9,
             "contributed_to_alignment": true,
             "vote_date": "2025-03-05"
@@ -326,7 +311,10 @@
           {
             "bill_type": "SJRES",
             "bill_number": "11",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
             "vote_date": "2025-03-06"
@@ -334,8 +322,1012 @@
           {
             "bill_type": "HCONRES",
             "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          }
+        ]
+      },
+      {
+        "topic_slug": "immigration",
+        "topic_name": "Immigration",
+        "alignment": 0.7748,
+        "raw_alignment": 1.0,
+        "numerator": 3.44,
+        "denominator": 3.44,
+        "salience": 0.0636,
+        "contributing_signal_count": 7,
+        "confidence": "medium",
+        "minus_one_desc": "More immigration",
+        "plus_one_desc": "Secure Borders",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "993",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "495",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "682",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-09"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1128",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.4,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1503",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.3,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-07"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6846",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "criminal_justice",
+        "topic_name": "Criminal Justice",
+        "alignment": 0.6,
+        "raw_alignment": 1.0,
+        "numerator": 1.5,
+        "denominator": 1.5,
+        "salience": 0.0277,
+        "contributing_signal_count": 9,
+        "confidence": "high",
+        "minus_one_desc": "Softer justice, more rehabilitation",
+        "plus_one_desc": "Stricter justice and stronger policing",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8774",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1252",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.3,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1128",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.3,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "682",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-09"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "719",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1503",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-07"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8697",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "government_spending",
+        "topic_name": "Government Spending",
+        "alignment": -0.5777,
+        "raw_alignment": -0.6248,
+        "numerator": -7.66,
+        "denominator": 12.26,
+        "salience": 0.2266,
+        "contributing_signal_count": 22,
+        "confidence": "high",
+        "minus_one_desc": "More government spending",
+        "plus_one_desc": "Less government spending",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "3425",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-08"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "682",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-09"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "530",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-05"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "4305",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-03"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "993",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "695",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-02-26"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1270",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8205",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1128",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7622",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1744",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5645",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "863",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3424",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-08"
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1069",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-04"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8774",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.3,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-05"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "377",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-06"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "916",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-02"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8963",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.1,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "national_debt",
+        "topic_name": "National Debt",
+        "alignment": -0.5122,
+        "raw_alignment": -0.6774,
+        "numerator": -2.1,
+        "denominator": 3.1,
+        "salience": 0.0573,
+        "contributing_signal_count": 7,
+        "confidence": "medium",
+        "minus_one_desc": "Accept deficit spending for investment",
+        "plus_one_desc": "Prioritize debt reduction",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8205",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1128",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7622",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1744",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.3,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3424",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-08"
+          }
+        ]
+      },
+      {
+        "topic_slug": "voting_elections",
+        "topic_name": "Voting & Elections",
+        "alignment": 0.5,
+        "raw_alignment": 1.0,
+        "numerator": 1.0,
+        "denominator": 1.0,
+        "salience": 0.0185,
+        "contributing_signal_count": 1,
+        "confidence": "low",
+        "minus_one_desc": "Expand voting access and election reform",
+        "plus_one_desc": "Enforce voter ID and secure elections",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          }
+        ]
+      },
+      {
+        "topic_slug": "education",
+        "topic_name": "Education",
+        "alignment": -0.4754,
+        "raw_alignment": -0.5686,
+        "numerator": -2.9,
+        "denominator": 5.1,
+        "salience": 0.0943,
+        "contributing_signal_count": 6,
+        "confidence": "medium",
+        "minus_one_desc": "More spending on public schools",
+        "plus_one_desc": "Less spending on public schools",
+        "contributing_bills": [
+          {
+            "bill_type": "HRES",
+            "bill_number": "377",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-06"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1005",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-03"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1069",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-04"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1049",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-04"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "916",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-02"
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.4,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          }
+        ]
+      },
+      {
+        "topic_slug": "taxation",
+        "topic_name": "Taxation",
+        "alignment": 0.4737,
+        "raw_alignment": 1.0,
+        "numerator": 0.9,
+        "denominator": 0.9,
+        "salience": 0.0166,
+        "contributing_signal_count": 1,
+        "confidence": "low",
+        "minus_one_desc": "Higher taxes",
+        "plus_one_desc": "Lower taxes",
+        "contributing_bills": [
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          }
+        ]
+      },
+      {
+        "topic_slug": "tech_privacy",
+        "topic_name": "Tech & Privacy",
+        "alignment": -0.4145,
+        "raw_alignment": -0.4961,
+        "numerator": -2.52,
+        "denominator": 5.08,
+        "salience": 0.0939,
+        "contributing_signal_count": 9,
+        "confidence": "high",
+        "minus_one_desc": "More oversight and data protection",
+        "plus_one_desc": "Less regulation on tech and privacy",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "5348",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-01"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1402",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-29"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "901",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1128",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7622",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "993",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8697",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "drug_policy",
+        "topic_name": "Drug Policy",
+        "alignment": 0.3243,
+        "raw_alignment": 1.0,
+        "numerator": 0.48,
+        "denominator": 0.48,
+        "salience": 0.0089,
+        "contributing_signal_count": 3,
+        "confidence": "medium",
+        "minus_one_desc": "Relaxed drug enforcement",
+        "plus_one_desc": "Stricter drug enforcement",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "495",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-10"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1128",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "trade_policy",
+        "topic_name": "Trade Policy",
+        "alignment": -0.321,
+        "raw_alignment": -0.4643,
+        "numerator": -1.04,
+        "denominator": 2.24,
+        "salience": 0.0414,
+        "contributing_signal_count": 8,
+        "confidence": "high",
+        "minus_one_desc": "Protectionist policies and tariffs",
+        "plus_one_desc": "Free trade",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "9062",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6875",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6624",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "971",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5853",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.6,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": -0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7622",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.4,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -0.1,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-05"
+          }
+        ]
+      },
+      {
+        "topic_slug": "social_safety_net",
+        "topic_name": "Social Safety Net",
+        "alignment": -0.3103,
+        "raw_alignment": -0.4737,
+        "numerator": -0.9,
+        "denominator": 1.9,
+        "salience": 0.0351,
+        "contributing_signal_count": 3,
+        "confidence": "medium",
+        "minus_one_desc": "Expand welfare",
+        "plus_one_desc": "Reduce welfare spending",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "530",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-05"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "863",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           }
@@ -344,480 +1336,104 @@
       {
         "topic_slug": "lgbtq_rights",
         "topic_name": "LGBTQ+ Rights",
-        "alignment": -1.0,
-        "numerator": -1.0,
-        "denominator": 1.0,
+        "alignment": 0.25,
+        "raw_alignment": 0.4286,
+        "numerator": 0.6,
+        "denominator": 1.4,
+        "salience": 0.0259,
+        "contributing_signal_count": 2,
+        "confidence": "low",
         "minus_one_desc": "Pro LGBT+ Legal Protections",
         "plus_one_desc": "Limit LGBT+ Legal Protections",
         "contributing_bills": [
           {
             "bill_type": "HR",
             "bill_number": "3838",
-            "vote_position": "Nay",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
             "bill_topic_score": 1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Aye",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "drug_policy",
-        "topic_name": "Drug Policy",
-        "alignment": 0.7143,
-        "numerator": 1.0,
-        "denominator": 1.4,
-        "minus_one_desc": "Relaxed drug enforcement",
-        "plus_one_desc": "Stricter drug enforcement",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "93",
-            "vote_position": "Yea",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-05"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "495",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "trade_policy",
-        "topic_name": "Trade Policy",
-        "alignment": -0.6667,
-        "numerator": -0.4,
-        "denominator": 0.6,
-        "minus_one_desc": "Free trade",
-        "plus_one_desc": "Protectionist policies and tariffs",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "36",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          }
-        ]
-      },
-      {
-        "topic_slug": "immigration",
-        "topic_name": "Immigration",
-        "alignment": 0.641,
-        "numerator": 2.5,
-        "denominator": 3.9,
-        "minus_one_desc": "More immigration",
-        "plus_one_desc": "Secure Borders",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "993",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.9,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "495",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1503",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-07"
-          }
-        ]
-      },
-      {
-        "topic_slug": "education",
-        "topic_name": "Education",
-        "alignment": -0.5686,
-        "numerator": -2.9,
-        "denominator": 5.1,
-        "minus_one_desc": "More spending on public schools",
-        "plus_one_desc": "Less spending on public schools",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "vote_position": "Yea",
+            "bill_number": "7622",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "vote_position": "Aye",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1005",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-03"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1069",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1049",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "356",
-            "vote_position": "Not Voting",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.4,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "criminal_justice",
-        "topic_name": "Criminal Justice",
-        "alignment": 0.5,
-        "numerator": 1.0,
-        "denominator": 2.0,
-        "minus_one_desc": "Softer justice, more rehabilitation",
-        "plus_one_desc": "Stricter justice and stronger policing",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "93",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-05"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "vote_position": "Not Voting",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-02-24"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1503",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-07"
-          }
-        ]
-      },
-      {
-        "topic_slug": "tech_privacy",
-        "topic_name": "Tech & Privacy",
-        "alignment": -0.4894,
-        "numerator": -2.3,
-        "denominator": 4.7,
-        "minus_one_desc": "More oversight and data protection",
-        "plus_one_desc": "Less regulation on tech and privacy",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "5348",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-01"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1402",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-29"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "901",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "993",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "military_defense",
-        "topic_name": "Military & Defense Spending",
-        "alignment": 0.375,
-        "numerator": 1.2,
-        "denominator": 3.2,
-        "minus_one_desc": "Less military spending",
-        "plus_one_desc": "More military spending",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Yea",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Aye",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Nay",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Aye",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "36",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
+            "vote_date": null
           }
         ]
       },
       {
         "topic_slug": "healthcare",
         "topic_name": "Healthcare",
-        "alignment": -0.3333,
-        "numerator": -0.5,
-        "denominator": 1.5,
+        "alignment": -0.1675,
+        "raw_alignment": -0.2245,
+        "numerator": -0.66,
+        "denominator": 2.94,
+        "salience": 0.0543,
+        "contributing_signal_count": 5,
+        "confidence": "medium",
         "minus_one_desc": "More public healthcare",
         "plus_one_desc": "Private healthcare",
         "contributing_bills": [
           {
             "bill_type": "HR",
             "bill_number": "530",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           },
           {
+            "bill_type": "HR",
+            "bill_number": "8205",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "863",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1262",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
             "bill_type": "HCONRES",
             "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
@@ -825,219 +1441,131 @@
         ]
       },
       {
-        "topic_slug": "social_safety_net",
-        "topic_name": "Social Safety Net",
-        "alignment": -0.3333,
-        "numerator": -0.5,
-        "denominator": 1.5,
-        "minus_one_desc": "Expand welfare",
-        "plus_one_desc": "Reduce welfare spending",
+        "topic_slug": "labor_unions",
+        "topic_name": "Labor & Unions",
+        "alignment": 0.1667,
+        "raw_alignment": 1.0,
+        "numerator": 0.2,
+        "denominator": 0.2,
+        "salience": 0.0037,
+        "contributing_signal_count": 1,
+        "confidence": "low",
+        "minus_one_desc": "More labor laws and union rights",
+        "plus_one_desc": "Employer flexibility and limit union power",
         "contributing_bills": [
           {
-            "bill_type": "HR",
-            "bill_number": "530",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
+            "bill_type": "HRES",
+            "bill_number": "916",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": "2025-12-02"
           }
         ]
       },
       {
-        "topic_slug": "government_spending",
-        "topic_name": "Government Spending",
-        "alignment": -0.2903,
-        "numerator": -2.7,
-        "denominator": 9.3,
-        "minus_one_desc": "More government spending",
-        "plus_one_desc": "Less government spending",
+        "topic_slug": "foreign_aid",
+        "topic_name": "Foreign Aid",
+        "alignment": 0.096,
+        "raw_alignment": 0.12,
+        "numerator": 0.48,
+        "denominator": 4.0,
+        "salience": 0.0739,
+        "contributing_signal_count": 8,
+        "confidence": "high",
+        "minus_one_desc": "More foreign aid spending",
+        "plus_one_desc": "Less foreign aid spending",
         "contributing_bills": [
           {
             "bill_type": "HR",
-            "bill_number": "3425",
+            "bill_number": "4423",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": -1.0,
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Aye",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "530",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "356",
-            "vote_position": "Not Voting",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "4305",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-03"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "993",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
+            "vote_date": "2025-12-01"
           },
           {
             "bill_type": "HR",
             "bill_number": "3838",
-            "vote_position": "Nay",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Aye",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Aye",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "695",
-            "vote_position": "Yea",
+            "bill_number": "7622",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-02-26"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3424",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1069",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
             "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 0.2,
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           },
           {
             "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
+            "bill_number": "860",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.7,
             "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Aye",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-02"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
-            "bill_number": "825",
-            "vote_position": "Not Voting",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-02-24"
-          }
-        ]
-      },
-      {
-        "topic_slug": "voting_elections",
-        "topic_name": "Voting & Elections",
-        "alignment": 0.0,
-        "numerator": 0.0,
-        "denominator": 2.0,
-        "minus_one_desc": "Expand voting access and election reform",
-        "plus_one_desc": "Enforce voter ID and secure elections",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Nay",
-            "bill_topic_score": 1.0,
+            "bill_number": "1503",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": "2025-05-07"
           },
           {
             "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Yea",
-            "bill_topic_score": 1.0,
+            "bill_number": "8982",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.2,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9062",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": null
           }
         ]
       }
@@ -1945,5 +2473,1723 @@
       "introduced_date": "2025-09-18"
     }
   ],
-  "finance": null
+  "finance": {
+    "fec_id": "H4TX10093",
+    "name": "Michael T. McCaul",
+    "cycle": 2024,
+    "fetched_at": "2026-06-08",
+    "data_quality_warnings": [],
+    "totals": {
+      "candidate_id": "H4TX10093",
+      "name": "MCCAUL, MICHAEL",
+      "party": "REP",
+      "office": "H",
+      "state": "TX",
+      "cycle": 2024,
+      "incumbent_challenge_full": "Incumbent",
+      "receipts": 3131114.63,
+      "disbursements": 3260803.34,
+      "cash_on_hand_end_period": 131068.91,
+      "individual_itemized_contributions": 1086625.37,
+      "other_political_committee_contributions": 708750.0
+    },
+    "funding_breakdown": {
+      "source": "committee_totals",
+      "total": 3131114.63,
+      "components": [
+        {
+          "key": "individual_large",
+          "label": "Large individuals (itemized)",
+          "amount": 1086625.37
+        },
+        {
+          "key": "transfers",
+          "label": "Committee transfers",
+          "amount": 958000.0
+        },
+        {
+          "key": "pac",
+          "label": "PACs & other committees",
+          "amount": 708750.0
+        },
+        {
+          "key": "individual_small",
+          "label": "Small-dollar individuals",
+          "amount": 377739.26
+        }
+      ],
+      "unaccounted": 0.0
+    },
+    "committees": [
+      {
+        "committee_id": "C00392688",
+        "name": "MCCAUL FOR CONGRESS, INC",
+        "designation": "P",
+        "committee_type": "H"
+      },
+      {
+        "committee_id": "C00573246",
+        "name": "TEAM MCCAUL TEXAS VICTORY",
+        "designation": "J",
+        "committee_type": "N"
+      }
+    ],
+    "top_pac_contributions": [
+      {
+        "contributor_id": "C00144766",
+        "contributor_name": "NATIONAL BEER WHOLESALERS ASSOCIATION PAC (NBWA PAC)",
+        "total": 50000.0,
+        "detail": {
+          "committee_id": "C00144766",
+          "name": "NATIONAL BEER WHOLESALERS ASSOCIATION POLITICAL ACTION COMMITTEE",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Trade Association",
+          "connected_organization_name": null,
+          "party": null,
+          "state": "VA"
+        }
+      },
+      {
+        "contributor_id": "C00064766",
+        "contributor_name": "UNITED PARCEL SERVICE INC. PAC",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00064766",
+          "name": "UNITED PARCEL SERVICE, INC. PAC (UPSPAC)",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Corporation",
+          "connected_organization_name": null,
+          "party": null,
+          "state": "DC"
+        }
+      },
+      {
+        "contributor_id": "C00012245",
+        "contributor_name": "UBS AMERICAS INC. POLITICAL ACTION COMMITTEE",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00012245",
+          "name": "UBS AMERICAS INC. POLITICAL ACTION COMMITTEE (UBS PAC)",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Corporation",
+          "connected_organization_name": null,
+          "party": null,
+          "state": "CT"
+        }
+      },
+      {
+        "contributor_id": "C00196725",
+        "contributor_name": "HEWLETT PACKARD COMPANY PAC",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00196725",
+          "name": "HEWLETT PACKARD ENTERPRISE COMPANY PAC",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Corporation",
+          "connected_organization_name": null,
+          "party": null,
+          "state": "DC"
+        }
+      },
+      {
+        "contributor_id": "C00100321",
+        "contributor_name": "L3HARRIS TECHNOLOGIES INC. PAC",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00100321",
+          "name": "L3HARRIS TECHNOLOGIES, INC. PAC",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Corporation",
+          "connected_organization_name": null,
+          "party": null,
+          "state": "VA"
+        }
+      },
+      {
+        "contributor_id": "C00211318",
+        "contributor_name": "DELOITTE PAC",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00211318",
+          "name": "DELOITTE POLITICAL ACTION COMMITTEE",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": null,
+          "connected_organization_name": null,
+          "party": null,
+          "state": "DC"
+        }
+      },
+      {
+        "contributor_id": "C00010868",
+        "contributor_name": "AMERICAN COUNCIL OF ENGINEERING COMPANIES PAC",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00010868",
+          "name": "AMERICAN COUNCIL OF ENGINEERING COMPANIES (ACEC/PAC)",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Trade Association",
+          "connected_organization_name": null,
+          "party": "UNK",
+          "state": "DC"
+        }
+      },
+      {
+        "contributor_id": "C00590315",
+        "contributor_name": "SAMSUNG ELECTRONICS AMERICA INC.",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00590315",
+          "name": "SAMSUNG ELECTRONICS AMERICA INC POLITICAL ACTION COMMITTEE",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Corporation",
+          "connected_organization_name": null,
+          "party": null,
+          "state": "DC"
+        }
+      },
+      {
+        "contributor_id": "C00531764",
+        "contributor_name": "ANN PAC",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00531764",
+          "name": "A NEW NATION PAC",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": null,
+          "connected_organization_name": null,
+          "party": "REP",
+          "state": "MO"
+        }
+      },
+      {
+        "contributor_id": "C00110338",
+        "contributor_name": "AMERICAN CRYSTAL SUGAR COMPANY PAC",
+        "total": 40000.0,
+        "detail": {
+          "committee_id": "C00110338",
+          "name": "AMERICAN CRYSTAL SUGAR COMPANY POLITICAL ACTION COMMITTEE",
+          "committee_type_full": "PAC - Qualified",
+          "organization_type_full": "Cooperative",
+          "connected_organization_name": null,
+          "party": null,
+          "state": "MN"
+        }
+      }
+    ],
+    "top_individual_contributions": [],
+    "contributions_by_employer": [
+      {
+        "employer": "RETIRED",
+        "total": 493640.0,
+        "count": 256
+      },
+      {
+        "employer": "NULL",
+        "total": 276700.0,
+        "count": 146
+      },
+      {
+        "employer": "DISRUPTIVE TECHNOLOGY ADVISORS",
+        "total": 266300.0,
+        "count": 1
+      },
+      {
+        "employer": "SELF",
+        "total": 212401.0,
+        "count": 108
+      },
+      {
+        "employer": "LANIER LAW FIRM",
+        "total": 123200.0,
+        "count": 4
+      },
+      {
+        "employer": "JW CHILDS ASSOCIATES",
+        "total": 88400.0,
+        "count": 2
+      }
+    ],
+    "independent_expenditures": [
+      {
+        "committee_id": "C00787671",
+        "committee_name": "FIREFIGHTERS COALITION OF AMERICA PAC",
+        "candidate_id": "H4TX10093",
+        "candidate_name": "MCCAUL, MICHAEL",
+        "support_oppose_indicator": "S",
+        "total": 27487.68,
+        "count": 302
+      },
+      {
+        "committee_id": "C00053553",
+        "committee_name": "NATIONAL RIFLE ASSOCIATION OF AMERICA POLITICAL VICTORY FUND",
+        "candidate_id": "H4TX10093",
+        "candidate_name": "MCCAUL, MICHAEL",
+        "support_oppose_indicator": "S",
+        "total": 1375.46,
+        "count": 1
+      },
+      {
+        "committee_id": "C00754218",
+        "committee_name": "TEXAS ALLIANCE FOR LIFE FED PAC",
+        "candidate_id": "H4TX10093",
+        "candidate_name": "MCCAUL, MICHAEL",
+        "support_oppose_indicator": "S",
+        "total": 292.38,
+        "count": 6
+      }
+    ],
+    "electioneering": [],
+    "committee_details": {
+      "C00144766": {
+        "committee_id": "C00144766",
+        "name": "NATIONAL BEER WHOLESALERS ASSOCIATION POLITICAL ACTION COMMITTEE",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Trade Association",
+        "connected_organization_name": null,
+        "party": null,
+        "state": "VA"
+      },
+      "C00064766": {
+        "committee_id": "C00064766",
+        "name": "UNITED PARCEL SERVICE, INC. PAC (UPSPAC)",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "party": null,
+        "state": "DC"
+      },
+      "C00012245": {
+        "committee_id": "C00012245",
+        "name": "UBS AMERICAS INC. POLITICAL ACTION COMMITTEE (UBS PAC)",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "party": null,
+        "state": "CT"
+      },
+      "C00196725": {
+        "committee_id": "C00196725",
+        "name": "HEWLETT PACKARD ENTERPRISE COMPANY PAC",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "party": null,
+        "state": "DC"
+      },
+      "C00100321": {
+        "committee_id": "C00100321",
+        "name": "L3HARRIS TECHNOLOGIES, INC. PAC",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "party": null,
+        "state": "VA"
+      },
+      "C00211318": {
+        "committee_id": "C00211318",
+        "name": "DELOITTE POLITICAL ACTION COMMITTEE",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "party": null,
+        "state": "DC"
+      },
+      "C00010868": {
+        "committee_id": "C00010868",
+        "name": "AMERICAN COUNCIL OF ENGINEERING COMPANIES (ACEC/PAC)",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Trade Association",
+        "connected_organization_name": null,
+        "party": "UNK",
+        "state": "DC"
+      },
+      "C00590315": {
+        "committee_id": "C00590315",
+        "name": "SAMSUNG ELECTRONICS AMERICA INC POLITICAL ACTION COMMITTEE",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "party": null,
+        "state": "DC"
+      },
+      "C00531764": {
+        "committee_id": "C00531764",
+        "name": "A NEW NATION PAC",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "party": "REP",
+        "state": "MO"
+      },
+      "C00110338": {
+        "committee_id": "C00110338",
+        "name": "AMERICAN CRYSTAL SUGAR COMPANY POLITICAL ACTION COMMITTEE",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Cooperative",
+        "connected_organization_name": null,
+        "party": null,
+        "state": "MN"
+      },
+      "C00787671": {
+        "committee_id": "C00787671",
+        "name": "FIREFIGHTERS COALITION OF AMERICA PAC",
+        "committee_type_full": "Super PAC (Independent Expenditure-Only)",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "party": null,
+        "state": "TX"
+      },
+      "C00053553": {
+        "committee_id": "C00053553",
+        "name": "NATIONAL RIFLE ASSOCIATION OF AMERICA POLITICAL VICTORY FUND",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Membership Organization",
+        "connected_organization_name": null,
+        "party": "UNK",
+        "state": "VA"
+      },
+      "C00754218": {
+        "committee_id": "C00754218",
+        "name": "TEXAS ALLIANCE FOR LIFE FED PAC",
+        "committee_type_full": "Super PAC (Independent Expenditure-Only)",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "party": null,
+        "state": "TX"
+      }
+    },
+    "pac_profiles": {
+      "C00144766": {
+        "committee_id": "C00144766",
+        "name": "NATIONAL BEER WHOLESALERS ASSOCIATION POLITICAL ACTION COMMITTEE",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Trade Association",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 3944314.52,
+        "disbursements": 3582383.3,
+        "cash_on_hand": 561649.83,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 80000.0,
+          "rep_total": 81000.0,
+          "other_total": 0.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 30000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 30000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00000935",
+            "recipient_name": "DCCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00042366",
+            "recipient_name": "DSCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00859892",
+            "recipient_name": "VINCE FONG FOR CONGRESS",
+            "total": 11000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00575126",
+            "recipient_name": "JAMIE RASKIN FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00255562",
+            "recipient_name": "FRIENDS OF JIM CLYBURN",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00474189",
+            "recipient_name": "MIKE KELLY FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 189966.0,
+            "count": 174
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 54293.58,
+            "count": 185
+          },
+          {
+            "label": "Under $200",
+            "total": 17877.69,
+            "count": 0
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 90162.0,
+            "count": 172
+          },
+          {
+            "label": "$2,000+",
+            "total": 3582010.0,
+            "count": 769
+          }
+        ],
+        "pac_type": "Trade",
+        "outside_spending": null
+      },
+      "C00064766": {
+        "committee_id": "C00064766",
+        "name": "UNITED PARCEL SERVICE, INC. PAC (UPSPAC)",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 4571167.26,
+        "disbursements": 5101874.22,
+        "cash_on_hand": 1773921.29,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 60000.0,
+          "rep_total": 170000.0,
+          "other_total": 0.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 65000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 60000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00042366",
+            "recipient_name": "DSCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00000935",
+            "recipient_name": "DCCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00706614",
+            "recipient_name": "TONY GONZALES FOR CONGRESS",
+            "total": 12500.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00647339",
+            "recipient_name": "JOHN CURTIS FOR UTAH",
+            "total": 12500.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00738872",
+            "recipient_name": "BLAKE MOORE FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00575050",
+            "recipient_name": "LAHOOD FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$500\u2013$999",
+            "total": 43169.56,
+            "count": 68
+          },
+          {
+            "label": "$2,000+",
+            "total": 28100.0,
+            "count": 6
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 1087.5,
+            "count": 1
+          },
+          {
+            "label": "Under $200",
+            "total": 4281556.81,
+            "count": 0
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 207253.39,
+            "count": 739
+          }
+        ],
+        "pac_type": "Corporate",
+        "outside_spending": null
+      },
+      "C00012245": {
+        "committee_id": "C00012245",
+        "name": "UBS AMERICAS INC. POLITICAL ACTION COMMITTEE (UBS PAC)",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 3087315.3,
+        "disbursements": 2932100.0,
+        "cash_on_hand": 993632.43,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 100000.0,
+          "rep_total": 60000.0,
+          "other_total": 0.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 30000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00042366",
+            "recipient_name": "DSCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00000935",
+            "recipient_name": "DCCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 30000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00575092",
+            "recipient_name": "FRIENDS OF RAJA FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00581074",
+            "recipient_name": "DARREN SOTO FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00503110",
+            "recipient_name": "SCOTT PETERS FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00457556",
+            "recipient_name": "QUIGLEY FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$200\u2013$499",
+            "total": 1417351.91,
+            "count": 3921
+          },
+          {
+            "label": "Under $200",
+            "total": 997725.92,
+            "count": 0
+          },
+          {
+            "label": "$2,000+",
+            "total": 50000.0,
+            "count": 11
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 15199.98,
+            "count": 13
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 9643.16,
+            "count": 15
+          }
+        ],
+        "pac_type": "Corporate",
+        "outside_spending": null
+      },
+      "C00196725": {
+        "committee_id": "C00196725",
+        "name": "HEWLETT PACKARD ENTERPRISE COMPANY PAC",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 581341.79,
+        "disbursements": 748329.07,
+        "cash_on_hand": 489544.26,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 10000.0,
+          "rep_total": 20000.0,
+          "other_total": 50000.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00331397",
+            "recipient_name": "SIMPSON FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00771238",
+            "recipient_name": "DEFEND THE DREAM",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00387464",
+            "recipient_name": "ALAMO PAC",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00410092",
+            "recipient_name": "PEOPLE'S VOICE PAC",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00858688",
+            "recipient_name": "LICCARDO FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00443218",
+            "recipient_name": "WICKER FOR SENATE",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00686402",
+            "recipient_name": "NOOGA PAC",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00365270",
+            "recipient_name": "M-PAC",
+            "total": 10000.0,
+            "party": null
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$2,000+",
+            "total": 83500.0,
+            "count": 18
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 170508.95,
+            "count": 818
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 9000.0,
+            "count": 6
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 1000.0,
+            "count": 2
+          },
+          {
+            "label": "Under $200",
+            "total": 313768.76,
+            "count": 0
+          }
+        ],
+        "pac_type": "Corporate",
+        "outside_spending": null
+      },
+      "C00100321": {
+        "committee_id": "C00100321",
+        "name": "L3HARRIS TECHNOLOGIES, INC. PAC",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 2554899.85,
+        "disbursements": 2633682.0,
+        "cash_on_hand": 1597355.53,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 447500.0,
+          "rep_total": 440000.0,
+          "other_total": 0.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 210000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00000935",
+            "recipient_name": "DCCC",
+            "total": 210000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00042366",
+            "recipient_name": "DSCC",
+            "total": 210000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 210000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00607200",
+            "recipient_name": "SUOZZI FOR CONGRESS",
+            "total": 15000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00653923",
+            "recipient_name": "VERONICA ESCOBAR FOR CONGRESS",
+            "total": 12500.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00376087",
+            "recipient_name": "MARIO DIAZ-BALART FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00310532",
+            "recipient_name": "KAY GRANGER CAMPAIGN FUND",
+            "total": 10000.0,
+            "party": "REP"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$2,000+",
+            "total": 156797.63,
+            "count": 60
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 570423.54,
+            "count": 1796
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 483244.63,
+            "count": 741
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 462786.52,
+            "count": 372
+          },
+          {
+            "label": "Under $200",
+            "total": 777831.6,
+            "count": 0
+          }
+        ],
+        "pac_type": "Corporate",
+        "outside_spending": null
+      },
+      "C00211318": {
+        "committee_id": "C00211318",
+        "name": "DELOITTE POLITICAL ACTION COMMITTEE",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 3661698.87,
+        "disbursements": 3826707.56,
+        "cash_on_hand": 1042573.19,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 72500.0,
+          "rep_total": 60000.0,
+          "other_total": 30000.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 30000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00000935",
+            "recipient_name": "DCCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00042366",
+            "recipient_name": "DSCC",
+            "total": 30000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 30000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00573949",
+            "recipient_name": "JOSH GOTTHEIMER FOR CONGRESS",
+            "total": 12500.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00503151",
+            "recipient_name": "UPPER HAND FUND",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00654475",
+            "recipient_name": "SMART SOLUTIONS PAC",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00492058",
+            "recipient_name": "LEADERSHIP AND ACCOUNTABILITY ARE NATIONAL KEYS PAC",
+            "total": 10000.0,
+            "party": null
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 796022.0,
+            "count": 640
+          },
+          {
+            "label": "$2,000+",
+            "total": 168310.0,
+            "count": 14
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 731717.5,
+            "count": 1044
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 1004014.58,
+            "count": 3037
+          },
+          {
+            "label": "Under $200",
+            "total": 1085766.55,
+            "count": 0
+          }
+        ],
+        "pac_type": "PAC",
+        "outside_spending": null
+      },
+      "C00010868": {
+        "committee_id": "C00010868",
+        "name": "AMERICAN COUNCIL OF ENGINEERING COMPANIES (ACEC/PAC)",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Trade Association",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 2707611.1,
+        "disbursements": 3129715.49,
+        "cash_on_hand": 501059.05,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 195000.0,
+          "rep_total": 195000.0,
+          "other_total": 45000.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 100000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 80000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00010603",
+            "recipient_name": "DNC SERVICES CORP / DEMOCRATIC NATIONAL COMMITTEE",
+            "total": 75000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00042366",
+            "recipient_name": "DSCC",
+            "total": 60000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00000935",
+            "recipient_name": "DCCC",
+            "total": 60000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00733352",
+            "recipient_name": "AMERICANS 4 SECURITY PAC",
+            "total": 25000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00859058",
+            "recipient_name": "EMMER MAJORITY BUILDERS",
+            "total": 20000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00784520",
+            "recipient_name": "LORI CHAVEZ-DEREMER FOR CONGRESS",
+            "total": 15000.0,
+            "party": "REP"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "Under $200",
+            "total": 702250.71,
+            "count": 0
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 468043.96,
+            "count": 1500
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 424547.72,
+            "count": 744
+          },
+          {
+            "label": "$2,000+",
+            "total": 308833.79,
+            "count": 89
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 631334.92,
+            "count": 607
+          }
+        ],
+        "pac_type": "Trade",
+        "outside_spending": null
+      },
+      "C00590315": {
+        "committee_id": "C00590315",
+        "name": "SAMSUNG ELECTRONICS AMERICA INC POLITICAL ACTION COMMITTEE",
+        "pac_type": "Corporate",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Corporation",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 416088.27,
+        "disbursements": 436500.0,
+        "cash_on_hand": 164880.84,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 29000.0,
+          "rep_total": 29000.0,
+          "other_total": 20000.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00226928",
+            "recipient_name": "PALLONE FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00392688",
+            "recipient_name": "MCCAUL FOR CONGRESS, INC",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00387464",
+            "recipient_name": "ALAMO PAC",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00371203",
+            "recipient_name": "JOHN CARTER FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00388934",
+            "recipient_name": "FUND FOR AMERICA'S FUTURE",
+            "total": 10000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00503052",
+            "recipient_name": "JEFFRIES FOR CONGRESS",
+            "total": 10000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00255562",
+            "recipient_name": "FRIENDS OF JIM CLYBURN",
+            "total": 9000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00714865",
+            "recipient_name": "BETH VAN DUYNE FOR CONGRESS",
+            "total": 9000.0,
+            "party": "REP"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$2,000+",
+            "total": 15000.0,
+            "count": 3
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 830.76,
+            "count": 3
+          },
+          {
+            "label": "Under $200",
+            "total": 390906.51,
+            "count": 0
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 6500.0,
+            "count": 6
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 2851.0,
+            "count": 5
+          }
+        ],
+        "outside_spending": null
+      },
+      "C00531764": {
+        "committee_id": "C00531764",
+        "name": "A NEW NATION PAC",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 478482.81,
+        "disbursements": 520320.89,
+        "cash_on_hand": 29523.56,
+        "lean": {
+          "label": "Republican",
+          "dem_total": 0.0,
+          "rep_total": 69500.0,
+          "other_total": 0.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00677286",
+            "recipient_name": "STEIL FOR WISCONSIN, INC.",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00392688",
+            "recipient_name": "MCCAUL FOR CONGRESS, INC",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00729954",
+            "recipient_name": "GARBARINO FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00665638",
+            "recipient_name": "YOUNG KIM FOR CONGRESS",
+            "total": 10000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00474189",
+            "recipient_name": "MIKE KELLY FOR CONGRESS",
+            "total": 7500.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00704981",
+            "recipient_name": "MICHELLE STEEL FOR CONGRESS",
+            "total": 7500.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00558825",
+            "recipient_name": "MILLER-MEEKS FOR CONGRESS",
+            "total": 7500.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00784389",
+            "recipient_name": "IOWANS FOR ZACH NUNN",
+            "total": 7000.0,
+            "party": "REP"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$500\u2013$999",
+            "total": 1000.0,
+            "count": 2
+          },
+          {
+            "label": "$2,000+",
+            "total": 138400.0,
+            "count": 31
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 1000.0,
+            "count": 1
+          }
+        ],
+        "pac_type": "PAC",
+        "outside_spending": null
+      },
+      "C00110338": {
+        "committee_id": "C00110338",
+        "name": "AMERICAN CRYSTAL SUGAR COMPANY POLITICAL ACTION COMMITTEE",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Cooperative",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 3559779.24,
+        "disbursements": 3350604.36,
+        "cash_on_hand": 1799969.3,
+        "lean": {
+          "label": "Bipartisan",
+          "dem_total": 165000.0,
+          "rep_total": 135000.0,
+          "other_total": 0.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00042366",
+            "recipient_name": "DSCC",
+            "total": 60000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 60000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00000935",
+            "recipient_name": "DCCC",
+            "total": 60000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 60000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00343871",
+            "recipient_name": "SCHIFF FOR SENATE",
+            "total": 15000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00786657",
+            "recipient_name": "FRY FOR CONGRESS",
+            "total": 15000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00502575",
+            "recipient_name": "DR. RAUL RUIZ FOR CONGRESS",
+            "total": 15000.0,
+            "party": "DEM"
+          },
+          {
+            "recipient_id": "C00795823",
+            "recipient_name": "SYDNEY KAMLAGER-DOVE FOR CONGRESS",
+            "total": 15000.0,
+            "party": "DEM"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$2,000+",
+            "total": 927889.66,
+            "count": 298
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 889920.0,
+            "count": 662
+          },
+          {
+            "label": "Under $200",
+            "total": 247500.58,
+            "count": 0
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 513266.63,
+            "count": 1549
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 813351.51,
+            "count": 1170
+          }
+        ],
+        "pac_type": "Cooperative",
+        "outside_spending": null
+      },
+      "C00787671": {
+        "committee_id": "C00787671",
+        "name": "FIREFIGHTERS COALITION OF AMERICA PAC",
+        "committee_type_full": "Super PAC (Independent Expenditure-Only)",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 321423.6,
+        "disbursements": 330230.26,
+        "cash_on_hand": 1116.63,
+        "lean": {
+          "label": "Unclassified",
+          "dem_total": 0.0,
+          "rep_total": 0.0,
+          "other_total": 0.0,
+          "basis": "top 0 recipients"
+        },
+        "top_recipients": [],
+        "funding_by_size": [
+          {
+            "label": "Under $200",
+            "total": 301278.6,
+            "count": 0
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 13805.0,
+            "count": 50
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 1000.0,
+            "count": 1
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 5340.0,
+            "count": 9
+          }
+        ],
+        "pac_type": "Super PAC",
+        "outside_spending": {
+          "total": 54975.36,
+          "support_total": 54975.36,
+          "oppose_total": 0,
+          "target_count": 3,
+          "top_targets": [
+            {
+              "candidate_id": "H4TX10093",
+              "candidate_name": "MCCAUL, MICHAEL",
+              "support_oppose": "S",
+              "total": 27487.68
+            },
+            {
+              "candidate_id": "H8NH01210",
+              "candidate_name": "PAPPAS, CHRIS",
+              "support_oppose": "S",
+              "total": 24261.65
+            },
+            {
+              "candidate_id": "H2CA00120",
+              "candidate_name": "BROWNLEY, JULIA",
+              "support_oppose": "S",
+              "total": 3226.03
+            }
+          ]
+        }
+      },
+      "C00053553": {
+        "committee_id": "C00053553",
+        "name": "NATIONAL RIFLE ASSOCIATION OF AMERICA POLITICAL VICTORY FUND",
+        "committee_type_full": "PAC - Qualified",
+        "organization_type_full": "Membership Organization",
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 11237682.17,
+        "disbursements": 15747523.58,
+        "cash_on_hand": 1698212.32,
+        "lean": {
+          "label": "Republican",
+          "dem_total": 0.0,
+          "rep_total": 244700.0,
+          "other_total": 15000.0,
+          "basis": "top 8 recipients"
+        },
+        "top_recipients": [
+          {
+            "recipient_id": "C00003418",
+            "recipient_name": "REPUBLICAN NATIONAL COMMITTEE",
+            "total": 100000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00027466",
+            "recipient_name": "NRSC",
+            "total": 60000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00075820",
+            "recipient_name": "NRCC",
+            "total": 45000.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00887299",
+            "recipient_name": "ADVANCE THE SENATE",
+            "total": 15000.0,
+            "party": null
+          },
+          {
+            "recipient_id": "C00844159",
+            "recipient_name": "TIM SHEEHY FOR MONTANA",
+            "total": 9950.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00851980",
+            "recipient_name": "FRIENDS OF DAVE MCCORMICK",
+            "total": 9950.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00504522",
+            "recipient_name": "HUDSON FOR CONGRESS",
+            "total": 9900.0,
+            "party": "REP"
+          },
+          {
+            "recipient_id": "C00416594",
+            "recipient_name": "JIM JORDAN FOR CONGRESS",
+            "total": 9900.0,
+            "party": "REP"
+          }
+        ],
+        "funding_by_size": [
+          {
+            "label": "$500\u2013$999",
+            "total": 308355.91,
+            "count": 605
+          },
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 221482.0,
+            "count": 216
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 561680.52,
+            "count": 2138
+          },
+          {
+            "label": "$2,000+",
+            "total": 172540.0,
+            "count": 47
+          },
+          {
+            "label": "Under $200",
+            "total": 9651807.27,
+            "count": 0
+          }
+        ],
+        "pac_type": "Membership",
+        "outside_spending": {
+          "total": 10162183.01,
+          "support_total": 6355816.72,
+          "oppose_total": 3806366.29,
+          "target_count": 112,
+          "top_targets": [
+            {
+              "candidate_id": "P80001571",
+              "candidate_name": "TRUMP, DONALD J.",
+              "support_oppose": "S",
+              "total": 2240078.09
+            },
+            {
+              "candidate_id": "P00009423",
+              "candidate_name": "HARRIS, KAMALA",
+              "support_oppose": "O",
+              "total": 1848972.27
+            },
+            {
+              "candidate_id": "S2PA00661",
+              "candidate_name": "MCCORMICK, DAVE",
+              "support_oppose": "S",
+              "total": 1257801.36
+            },
+            {
+              "candidate_id": "S4MT00183",
+              "candidate_name": "SHEEHY, TIM",
+              "support_oppose": "S",
+              "total": 1134587.14
+            },
+            {
+              "candidate_id": "S6MT00162",
+              "candidate_name": "TESTER, R. JON",
+              "support_oppose": "O",
+              "total": 950918.12
+            },
+            {
+              "candidate_id": "S6OH00163",
+              "candidate_name": "BROWN, SHERROD",
+              "support_oppose": "O",
+              "total": 949380.07
+            },
+            {
+              "candidate_id": "S4OH00192",
+              "candidate_name": "MORENO, BERNIE",
+              "support_oppose": "S",
+              "total": 616977.8
+            },
+            {
+              "candidate_id": "S4MI00595",
+              "candidate_name": "ROGERS, MICHAEL J",
+              "support_oppose": "S",
+              "total": 86969.67
+            },
+            {
+              "candidate_id": "S4AZ00220",
+              "candidate_name": "LAKE, KARI",
+              "support_oppose": "S",
+              "total": 76699.79
+            },
+            {
+              "candidate_id": "S2TX00312",
+              "candidate_name": "CRUZ, RAFAEL EDWARD  TED",
+              "support_oppose": "S",
+              "total": 66706.4
+            },
+            {
+              "candidate_id": "H4PA08124",
+              "candidate_name": "BRESNAHAN, ROB",
+              "support_oppose": "S",
+              "total": 59233.1
+            },
+            {
+              "candidate_id": "H8PA15195",
+              "candidate_name": "MACKENZIE, RYAN EDWARD",
+              "support_oppose": "S",
+              "total": 58909.34
+            }
+          ]
+        }
+      },
+      "C00754218": {
+        "committee_id": "C00754218",
+        "name": "TEXAS ALLIANCE FOR LIFE FED PAC",
+        "committee_type_full": "Super PAC (Independent Expenditure-Only)",
+        "organization_type_full": null,
+        "connected_organization_name": null,
+        "cycle": 2024,
+        "receipts": 31544.15,
+        "disbursements": 49732.05,
+        "cash_on_hand": -3601.14,
+        "lean": {
+          "label": "Unclassified",
+          "dem_total": 0.0,
+          "rep_total": 0.0,
+          "other_total": 0.0,
+          "basis": "top 0 recipients"
+        },
+        "top_recipients": [],
+        "funding_by_size": [
+          {
+            "label": "$1,000\u2013$1,999",
+            "total": 1000.0,
+            "count": 1
+          },
+          {
+            "label": "Under $200",
+            "total": 10994.06,
+            "count": 0
+          },
+          {
+            "label": "$2,000+",
+            "total": 12000.0,
+            "count": 2
+          },
+          {
+            "label": "$200\u2013$499",
+            "total": 6950.09,
+            "count": 31
+          },
+          {
+            "label": "$500\u2013$999",
+            "total": 600.0,
+            "count": 1
+          }
+        ],
+        "pac_type": "Super PAC",
+        "outside_spending": {
+          "total": 44621.76,
+          "support_total": 7064.26,
+          "oppose_total": 37557.5,
+          "target_count": 27,
+          "top_targets": [
+            {
+              "candidate_id": "S4TX00722",
+              "candidate_name": "ALLRED, COLIN",
+              "support_oppose": "O",
+              "total": 25950.0
+            },
+            {
+              "candidate_id": "P00009423",
+              "candidate_name": "HARRIS, KAMALA",
+              "support_oppose": "O",
+              "total": 11607.5
+            },
+            {
+              "candidate_id": "H0TX35015",
+              "candidate_name": "GONZALES, ERNEST ANTHONY TONY II",
+              "support_oppose": "S",
+              "total": 318.83
+            },
+            {
+              "candidate_id": "H6TX02079",
+              "candidate_name": "BABIN, BRIAN",
+              "support_oppose": "S",
+              "total": 313.22
+            },
+            {
+              "candidate_id": "H8TX06266",
+              "candidate_name": "ELLZEY, JOHN KEVIN SR.",
+              "support_oppose": "S",
+              "total": 292.39
+            },
+            {
+              "candidate_id": "H0TX04219",
+              "candidate_name": "FALLON, PATRICK",
+              "support_oppose": "S",
+              "total": 292.38
+            },
+            {
+              "candidate_id": "H0TX07170",
+              "candidate_name": "HUNT, WESLEY",
+              "support_oppose": "S",
+              "total": 292.38
+            },
+            {
+              "candidate_id": "H0TX11230",
+              "candidate_name": "PFLUGER, AUGUST LEE II",
+              "support_oppose": "S",
+              "total": 292.38
+            },
+            {
+              "candidate_id": "H0TX13228",
+              "candidate_name": "JACKSON, RONNY LYNN",
+              "support_oppose": "S",
+              "total": 292.38
+            },
+            {
+              "candidate_id": "H0TX15124",
+              "candidate_name": "DE LA CRUZ, MONICA",
+              "support_oppose": "S",
+              "total": 292.38
+            },
+            {
+              "candidate_id": "H0TX22302",
+              "candidate_name": "NEHLS, TROY",
+              "support_oppose": "S",
+              "total": 292.38
+            },
+            {
+              "candidate_id": "H0TX24209",
+              "candidate_name": "VAN DUYNE, ELIZABETH ANN",
+              "support_oppose": "S",
+              "total": 292.38
+            }
+          ]
+        }
+      }
+    }
+  }
 }

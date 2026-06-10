@@ -306,6 +306,20 @@ class FECService:
         results.sort(key=lambda r: r.total, reverse=True)
         return results
 
+    def get_committee_independent_expenditures(self, committee_id: str, cycle: int) -> list[IndependentExpenditure]:
+        """A committee's independent expenditures aggregated by candidate (Schedule E) — i.e.
+        which candidates this PAC spent to support/oppose. Empty for PACs that make none."""
+        # election_full=false is required when filtering by committee (the default full-election
+        # view demands a candidate_id/office); it also scopes totals to this cycle.
+        data = self._get_all_pages("schedules/schedule_e/by_candidate/", {
+            "committee_id": committee_id,
+            "cycle": cycle,
+            "election_full": "false",
+        }, folder="fundraising/ie_by_committee")
+        results = [IndependentExpenditure.model_validate(r) for r in data.get("results", [])]
+        results.sort(key=lambda r: r.total, reverse=True)
+        return results
+
     def get_contributions_by_employer(self, committee_id: str, cycle: int, *, limit: int = 20) -> list[EmployerContributions]:
         """Top employer sources of individual contributions to a committee (Schedule A aggregates)."""
         data = self._get("schedules/schedule_a/by_employer/", {

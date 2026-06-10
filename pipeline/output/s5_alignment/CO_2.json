@@ -53,189 +53,206 @@
   },
   "alignment": {
     "congress": 119,
-    "votes_analyzed": 43,
-    "votes_without_analysis": 1,
+    "votes_analyzed": 79,
+    "votes_without_analysis": 56,
     "topics": [
       {
-        "topic_slug": "trade_policy",
-        "topic_name": "Trade Policy",
-        "alignment": 1.0,
-        "numerator": 0.6,
-        "denominator": 0.6,
-        "minus_one_desc": "Free trade",
-        "plus_one_desc": "Protectionist policies and tariffs",
+        "topic_slug": "foreign_aid",
+        "topic_name": "Foreign Aid",
+        "alignment": 0.7706,
+        "raw_alignment": 1.0,
+        "numerator": 3.36,
+        "denominator": 3.36,
+        "salience": 0.0503,
+        "contributing_signal_count": 5,
+        "confidence": "medium",
+        "minus_one_desc": "More foreign aid spending",
+        "plus_one_desc": "Less foreign aid spending",
         "contributing_bills": [
           {
             "bill_type": "HR",
-            "bill_number": "3838",
+            "bill_number": "4423",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 0.5,
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
+            "vote_date": "2025-12-01"
           },
           {
             "bill_type": "HR",
             "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "No",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": false,
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
             "vote_date": "2025-09-10"
           },
           {
             "bill_type": "HR",
             "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          }
-        ]
-      },
-      {
-        "topic_slug": "labor_unions",
-        "topic_name": "Labor & Unions",
-        "alignment": -1.0,
-        "numerator": -0.2,
-        "denominator": 0.2,
-        "minus_one_desc": "More labor laws and union rights",
-        "plus_one_desc": "Employer flexibility and limit union power",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "No",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-02"
-          }
-        ]
-      },
-      {
-        "topic_slug": "taxation",
-        "topic_name": "Taxation",
-        "alignment": -1.0,
-        "numerator": -0.9,
-        "denominator": 0.9,
-        "minus_one_desc": "Higher taxes",
-        "plus_one_desc": "Lower taxes",
-        "contributing_bills": [
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.9,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "healthcare",
-        "topic_name": "Healthcare",
-        "alignment": -1.0,
-        "numerator": -1.5,
-        "denominator": 1.5,
-        "minus_one_desc": "More public healthcare",
-        "plus_one_desc": "Private healthcare",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "530",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "climate_environment",
-        "topic_name": "Climate & Environment",
-        "alignment": -1.0,
-        "numerator": -5.0,
-        "denominator": 5.0,
-        "minus_one_desc": "More environmental protection",
-        "plus_one_desc": "Less environmental regulations",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "1676",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "HJRES",
-            "bill_number": "78",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.9,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-01"
-          },
-          {
-            "bill_type": "HJRES",
-            "bill_number": "88",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.9,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-01"
-          },
-          {
-            "bill_type": "HJRES",
-            "bill_number": "42",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.9,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-05"
-          },
-          {
-            "bill_type": "SJRES",
-            "bill_number": "11",
-            "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
-            "vote_date": "2025-03-06"
+            "vote_date": "2025-05-05"
           },
           {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.6,
+            "bill_type": "HR",
+            "bill_number": "1503",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": "2025-05-07"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6856",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.4,
+            "contributed_to_alignment": true,
+            "vote_date": null
           }
         ]
       },
       {
         "topic_slug": "social_safety_net",
         "topic_name": "Social Safety Net",
-        "alignment": -1.0,
-        "numerator": -1.5,
-        "denominator": 1.5,
+        "alignment": -0.7268,
+        "raw_alignment": -1.0,
+        "numerator": -2.66,
+        "denominator": 2.66,
+        "salience": 0.0398,
+        "contributing_signal_count": 5,
+        "confidence": "medium",
         "minus_one_desc": "Expand welfare",
         "plus_one_desc": "Reduce welfare spending",
         "contributing_bills": [
           {
             "bill_type": "HR",
             "bill_number": "530",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-05"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9014",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1175",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.7,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5651",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.6,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          }
+        ]
+      },
+      {
+        "topic_slug": "voting_elections",
+        "topic_name": "Voting & Elections",
+        "alignment": -0.6324,
+        "raw_alignment": -1.0,
+        "numerator": -1.72,
+        "denominator": 1.72,
+        "salience": 0.0257,
+        "contributing_signal_count": 2,
+        "confidence": "low",
+        "minus_one_desc": "Expand voting access and election reform",
+        "plus_one_desc": "Enforce voter ID and secure elections",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HJRES",
+            "bill_number": "122",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.9,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "healthcare",
+        "topic_name": "Healthcare",
+        "alignment": -0.6,
+        "raw_alignment": -1.0,
+        "numerator": -1.5,
+        "denominator": 1.5,
+        "salience": 0.0225,
+        "contributing_signal_count": 2,
+        "confidence": "low",
+        "minus_one_desc": "More public healthcare",
+        "plus_one_desc": "Private healthcare",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "530",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
@@ -243,8 +260,114 @@
           {
             "bill_type": "HCONRES",
             "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          }
+        ]
+      },
+      {
+        "topic_slug": "tech_privacy",
+        "topic_name": "Tech & Privacy",
+        "alignment": -0.5333,
+        "raw_alignment": -0.64,
+        "numerator": -3.2,
+        "denominator": 5.0,
+        "salience": 0.0749,
+        "contributing_signal_count": 8,
+        "confidence": "high",
+        "minus_one_desc": "More oversight and data protection",
+        "plus_one_desc": "Less regulation on tech and privacy",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "5348",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-01"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1402",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-29"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "901",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6505",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "993",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9068",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           }
@@ -253,43 +376,281 @@
       {
         "topic_slug": "lgbtq_rights",
         "topic_name": "LGBTQ+ Rights",
-        "alignment": 1.0,
-        "numerator": 1.0,
+        "alignment": -0.5,
+        "raw_alignment": -1.0,
+        "numerator": -1.0,
         "denominator": 1.0,
+        "salience": 0.015,
+        "contributing_signal_count": 1,
+        "confidence": "low",
         "minus_one_desc": "Pro LGBT+ Legal Protections",
         "plus_one_desc": "Limit LGBT+ Legal Protections",
         "contributing_bills": [
           {
             "bill_type": "HR",
             "bill_number": "3838",
-            "vote_position": "Yea",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": 1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-10"
+          }
+        ]
+      },
+      {
+        "topic_slug": "climate_environment",
+        "topic_name": "Climate & Environment",
+        "alignment": -0.4638,
+        "raw_alignment": -0.5275,
+        "numerator": -3.84,
+        "denominator": 7.28,
+        "salience": 0.109,
+        "contributing_signal_count": 12,
+        "confidence": "high",
+        "minus_one_desc": "More environmental protection",
+        "plus_one_desc": "Less environmental regulations",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "1676",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-09"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3838",
+            "bill_number": "2758",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HJRES",
+            "bill_number": "78",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-01"
+          },
+          {
+            "bill_type": "HJRES",
+            "bill_number": "88",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-05-01"
+          },
+          {
+            "bill_type": "HJRES",
+            "bill_number": "42",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-05"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8876",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5823",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "4109",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "SJRES",
+            "bill_number": "11",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-03-06"
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5855",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5123",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "taxation",
+        "topic_name": "Taxation",
+        "alignment": -0.3953,
+        "raw_alignment": -0.6456,
+        "numerator": -1.02,
+        "denominator": 1.58,
+        "salience": 0.0237,
+        "contributing_signal_count": 3,
+        "confidence": "medium",
+        "minus_one_desc": "Higher taxes",
+        "plus_one_desc": "Lower taxes",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "8910",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.9,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "2089",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.7,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "labor_unions",
+        "topic_name": "Labor & Unions",
+        "alignment": -0.375,
+        "raw_alignment": -1.0,
+        "numerator": -0.6,
+        "denominator": 0.6,
+        "salience": 0.009,
+        "contributing_signal_count": 2,
+        "confidence": "low",
+        "minus_one_desc": "More labor laws and union rights",
+        "plus_one_desc": "Employer flexibility and limit union power",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "5408",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "916",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "No",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-02"
           }
         ]
       },
       {
         "topic_slug": "national_debt",
         "topic_name": "National Debt",
-        "alignment": -0.7692,
-        "numerator": -2.0,
-        "denominator": 2.6,
+        "alignment": -0.3014,
+        "raw_alignment": -0.3636,
+        "numerator": -1.76,
+        "denominator": 4.84,
+        "salience": 0.0725,
+        "contributing_signal_count": 13,
+        "confidence": "high",
         "minus_one_desc": "Accept deficit spending for investment",
         "plus_one_desc": "Prioritize debt reduction",
         "contributing_bills": [
           {
             "bill_type": "S",
             "bill_number": "356",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-12-09"
@@ -297,125 +658,286 @@
           {
             "bill_type": "HR",
             "bill_number": "3838",
-            "vote_position": "Yea",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "No",
+            "bill_number": "9014",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
             "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3144",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8802",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6505",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "2089",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
           },
           {
             "bill_type": "HCONRES",
             "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": 0.3,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           },
           {
+            "bill_type": "HRES",
+            "bill_number": "1185",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.3,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
             "bill_type": "HR",
             "bill_number": "3424",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-08"
           },
           {
             "bill_type": "HR",
+            "bill_number": "8914",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
             "bill_number": "825",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.1,
             "contributed_to_alignment": true,
             "vote_date": "2025-02-24"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8910",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": null
           }
         ]
       },
       {
-        "topic_slug": "tech_privacy",
-        "topic_name": "Tech & Privacy",
-        "alignment": -0.5745,
-        "numerator": -2.7,
-        "denominator": 4.7,
-        "minus_one_desc": "More oversight and data protection",
-        "plus_one_desc": "Less regulation on tech and privacy",
+        "topic_slug": "gun_control",
+        "topic_name": "Gun Control",
+        "alignment": -0.2857,
+        "raw_alignment": -1.0,
+        "numerator": -0.4,
+        "denominator": 0.4,
+        "salience": 0.006,
+        "contributing_signal_count": 1,
+        "confidence": "low",
+        "minus_one_desc": "Stricter gun rules",
+        "plus_one_desc": "Protect gun rights",
         "contributing_bills": [
           {
             "bill_type": "HR",
-            "bill_number": "5348",
-            "vote_position": "Yea",
+            "bill_number": "8694",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-12-01"
-          },
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "education",
+        "topic_name": "Education",
+        "alignment": 0.2837,
+        "raw_alignment": 0.3291,
+        "numerator": 2.06,
+        "denominator": 6.26,
+        "salience": 0.0937,
+        "contributing_signal_count": 8,
+        "confidence": "high",
+        "minus_one_desc": "More spending on public schools",
+        "plus_one_desc": "Less spending on public schools",
+        "contributing_bills": [
           {
-            "bill_type": "HR",
-            "bill_number": "1402",
-            "vote_position": "Yea",
+            "bill_type": "HRES",
+            "bill_number": "377",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-29"
+            "vote_date": "2025-05-06"
           },
           {
             "bill_type": "HR",
-            "bill_number": "901",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
+            "bill_number": "1005",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
-            "bill_topic_score": 0.5,
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": "2025-12-03"
           },
           {
             "bill_type": "HR",
-            "bill_number": "993",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
+            "bill_number": "1069",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
+            "vote_date": "2025-12-04"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1049",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-04"
+          },
+          {
+            "bill_type": "S",
+            "bill_number": "356",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-09"
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "916",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-02"
           },
           {
             "bill_type": "HCONRES",
             "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
-            "bill_topic_score": 0.2,
+            "vote_class": "passage",
+            "bill_topic_score": 0.4,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6886",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
           }
         ]
       },
       {
         "topic_slug": "government_spending",
         "topic_name": "Government Spending",
-        "alignment": -0.4286,
-        "numerator": -4.5,
-        "denominator": 10.5,
+        "alignment": -0.2162,
+        "raw_alignment": -0.2288,
+        "numerator": -3.94,
+        "denominator": 17.22,
+        "salience": 0.2578,
+        "contributing_signal_count": 32,
+        "confidence": "high",
         "minus_one_desc": "More government spending",
         "plus_one_desc": "Less government spending",
         "contributing_bills": [
           {
             "bill_type": "HR",
             "bill_number": "3425",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-08"
@@ -423,23 +945,21 @@
           {
             "bill_type": "HRES",
             "bill_number": "682",
-            "vote_position": "Nay",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-09"
           },
           {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "No",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
-          },
-          {
             "bill_type": "HR",
             "bill_number": "530",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
@@ -447,7 +967,10 @@
           {
             "bill_type": "S",
             "bill_number": "356",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-12-09"
@@ -455,7 +978,10 @@
           {
             "bill_type": "HR",
             "bill_number": "4305",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-12-03"
@@ -463,7 +989,10 @@
           {
             "bill_type": "HR",
             "bill_number": "993",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-03-10"
@@ -471,31 +1000,164 @@
           {
             "bill_type": "HR",
             "bill_number": "3838",
-            "vote_position": "Yea",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "No",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
             "bill_number": "695",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-02-26"
           },
           {
             "bill_type": "HR",
+            "bill_number": "5002",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9014",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3144",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8802",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6505",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1277",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8275",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "2758",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5782",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HJRES",
+            "bill_number": "122",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8914",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1185",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
             "bill_number": "3424",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.6,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-08"
@@ -503,158 +1165,327 @@
           {
             "bill_type": "HCONRES",
             "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": 0.6,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           },
           {
             "bill_type": "HR",
+            "bill_number": "5652",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
             "bill_number": "1069",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
             "vote_date": "2025-12-04"
           },
           {
             "bill_type": "HR",
+            "bill_number": "5854",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.4,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
             "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           },
           {
             "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HRES",
             "bill_number": "377",
-            "vote_position": "Nay",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-06"
           },
           {
             "bill_type": "HRES",
-            "bill_number": "377",
-            "vote_position": "No",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HRES",
             "bill_number": "916",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
+            "contributed_to_alignment": true,
             "vote_date": "2025-12-02"
           },
           {
             "bill_type": "HR",
             "bill_number": "825",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": "2025-02-24"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5781",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5651",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.2,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7706",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": null
           }
         ]
       },
       {
-        "topic_slug": "drug_policy",
-        "topic_name": "Drug Policy",
-        "alignment": -0.4286,
-        "numerator": -0.6,
-        "denominator": 1.4,
-        "minus_one_desc": "Relaxed drug enforcement",
-        "plus_one_desc": "Stricter drug enforcement",
+        "topic_slug": "military_defense",
+        "topic_name": "Military & Defense Spending",
+        "alignment": -0.2138,
+        "raw_alignment": -0.2583,
+        "numerator": -1.24,
+        "denominator": 4.8,
+        "salience": 0.0719,
+        "contributing_signal_count": 9,
+        "confidence": "high",
+        "minus_one_desc": "Less military spending",
+        "plus_one_desc": "More military spending",
         "contributing_bills": [
           {
             "bill_type": "HRES",
-            "bill_number": "93",
+            "bill_number": "682",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-09"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
+            "bill_topic_score": 1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6664",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "6856",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
-            "bill_topic_score": 1.0,
+            "vote_class": "passage",
+            "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
-            "vote_date": "2025-02-05"
+            "vote_date": "2025-04-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "495",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
+            "bill_number": "6759",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.6,
             "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "No",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "foreign_aid",
-        "topic_name": "Foreign Aid",
-        "alignment": 0.375,
-        "numerator": 1.2,
-        "denominator": 3.2,
-        "minus_one_desc": "More foreign aid spending",
-        "plus_one_desc": "Less foreign aid spending",
-        "contributing_bills": [
-          {
-            "bill_type": "HR",
-            "bill_number": "4423",
-            "vote_position": "Yea",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-01"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "vote_position": "No",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
             "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 0.7,
+            "vote_class": "passage",
+            "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           },
           {
             "bill_type": "HR",
-            "bill_number": "1503",
-            "vote_position": "Yea",
+            "bill_number": "6796",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.3,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1363",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ]
+      },
+      {
+        "topic_slug": "criminal_justice",
+        "topic_name": "Criminal Justice",
+        "alignment": -0.1409,
+        "raw_alignment": -0.2121,
+        "numerator": -0.42,
+        "denominator": 1.98,
+        "salience": 0.0296,
+        "contributing_signal_count": 7,
+        "confidence": "medium",
+        "minus_one_desc": "Softer justice, more rehabilitation",
+        "plus_one_desc": "Stricter justice and stronger policing",
+        "contributing_bills": [
+          {
+            "bill_type": "HR",
+            "bill_number": "9068",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.6,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": 0.5,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9069",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.5,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "682",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-09-09"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "825",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-02-24"
+          },
+          {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Nay",
+            "vote_class": "passage",
+            "bill_topic_score": 0.1,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "1503",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.1,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-07"
           }
@@ -663,32 +1494,78 @@
       {
         "topic_slug": "immigration",
         "topic_name": "Immigration",
-        "alignment": 0.3333,
-        "numerator": 1.3,
-        "denominator": 3.9,
+        "alignment": -0.0256,
+        "raw_alignment": -0.0305,
+        "numerator": -0.16,
+        "denominator": 5.24,
+        "salience": 0.0784,
+        "contributing_signal_count": 9,
+        "confidence": "high",
         "minus_one_desc": "More immigration",
         "plus_one_desc": "Secure Borders",
         "contributing_bills": [
           {
             "bill_type": "HR",
+            "bill_number": "1689",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
             "bill_number": "993",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.9,
             "contributed_to_alignment": true,
             "vote_date": "2025-03-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.7,
+            "bill_number": "8740",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.9,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9069",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9068",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": null
           },
           {
             "bill_type": "HR",
             "bill_number": "22",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Nay",
+            "vote_class": "passage",
             "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
@@ -696,7 +1573,10 @@
           {
             "bill_type": "HR",
             "bill_number": "495",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.7,
             "contributed_to_alignment": true,
             "vote_date": "2025-03-10"
@@ -704,23 +1584,21 @@
           {
             "bill_type": "HRES",
             "bill_number": "682",
-            "vote_position": "Nay",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
             "bill_topic_score": 0.6,
             "contributed_to_alignment": true,
             "vote_date": "2025-09-09"
           },
           {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "No",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
-          },
-          {
             "bill_type": "HR",
             "bill_number": "1503",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
+            "vote_class": "passage",
             "bill_topic_score": 0.3,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-07"
@@ -728,255 +1606,92 @@
         ]
       },
       {
-        "topic_slug": "education",
-        "topic_name": "Education",
-        "alignment": 0.3115,
-        "numerator": 1.9,
-        "denominator": 6.1,
-        "minus_one_desc": "More spending on public schools",
-        "plus_one_desc": "Less spending on public schools",
+        "topic_slug": "trade_policy",
+        "topic_name": "Trade Policy",
+        "alignment": 0.0204,
+        "raw_alignment": 0.0417,
+        "numerator": 0.04,
+        "denominator": 0.96,
+        "salience": 0.0144,
+        "contributing_signal_count": 3,
+        "confidence": "medium",
+        "minus_one_desc": "Protectionist policies and tariffs",
+        "plus_one_desc": "Free trade",
         "contributing_bills": [
           {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "vote_position": "Nay",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "vote_position": "No",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-05-06"
-          },
-          {
             "bill_type": "HR",
-            "bill_number": "1005",
-            "vote_position": "Nay",
-            "bill_topic_score": -1.0,
+            "bill_number": "6856",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -0.9,
             "contributed_to_alignment": true,
-            "vote_date": "2025-12-03"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1069",
-            "vote_position": "Nay",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1049",
-            "vote_position": "Nay",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "356",
-            "vote_position": "Yea",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "vote_position": "No",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.4,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          }
-        ]
-      },
-      {
-        "topic_slug": "criminal_justice",
-        "topic_name": "Criminal Justice",
-        "alignment": -0.2727,
-        "numerator": -0.6,
-        "denominator": 2.2,
-        "minus_one_desc": "Softer justice, more rehabilitation",
-        "plus_one_desc": "Stricter justice and stronger policing",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "93",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-05"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "No",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-24"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1503",
-            "vote_position": "Yea",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-07"
-          }
-        ]
-      },
-      {
-        "topic_slug": "military_defense",
-        "topic_name": "Military & Defense Spending",
-        "alignment": -0.0625,
-        "numerator": -0.2,
-        "denominator": 3.2,
-        "minus_one_desc": "Less military spending",
-        "plus_one_desc": "More military spending",
-        "contributing_bills": [
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "Nay",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "vote_position": "No",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-09"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
             "bill_number": "3838",
-            "vote_position": "Yea",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "No",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": false,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "vote_position": "Nay",
-            "bill_topic_score": 0.7,
+            "vote_class": "passage",
+            "bill_topic_score": -0.5,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": "2025-09-10"
           },
           {
             "bill_type": "HR",
             "bill_number": "36",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 0.5,
+            "vote_class": "passage",
+            "bill_topic_score": -0.1,
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
         ]
       },
       {
-        "topic_slug": "voting_elections",
-        "topic_name": "Voting & Elections",
+        "topic_slug": "drug_policy",
+        "topic_name": "Drug Policy",
         "alignment": 0.0,
+        "raw_alignment": 0.0,
         "numerator": 0.0,
-        "denominator": 2.0,
-        "minus_one_desc": "Expand voting access and election reform",
-        "plus_one_desc": "Enforce voter ID and secure elections",
+        "denominator": 0.4,
+        "salience": 0.006,
+        "contributing_signal_count": 2,
+        "confidence": "low",
+        "minus_one_desc": "Relaxed drug enforcement",
+        "plus_one_desc": "Stricter drug enforcement",
         "contributing_bills": [
           {
             "bill_type": "HR",
-            "bill_number": "22",
+            "bill_number": "495",
+            "role": "vote",
+            "weight": 1.0,
             "vote_position": "Yea",
-            "bill_topic_score": 1.0,
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": "2025-03-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "22",
-            "vote_position": "Nay",
-            "bill_topic_score": 1.0,
+            "bill_number": "3838",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "No",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
+            "vote_date": "2025-09-10"
           }
         ]
       }
     ],
     "topics_without_signal": [
-      {
-        "topic_slug": "gun_control",
-        "topic_name": "Gun Control"
-      },
       {
         "topic_slug": "abortion",
         "topic_name": "Abortion"

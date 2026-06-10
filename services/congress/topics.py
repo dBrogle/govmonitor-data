@@ -93,8 +93,10 @@ TOPICS: list[TopicConfig] = [
     TopicConfig(
         slug="trade_policy",
         name="Trade Policy",
-        minus_one_desc="Free trade",
-        plus_one_desc="Protectionist policies and tariffs",
+        # Flipped: protectionism/tariffs is now the left-leaning (−1) pole and free trade
+        # the right-leaning (+1) pole, reflecting the current party alignment on trade.
+        minus_one_desc="Protectionist policies and tariffs",
+        plus_one_desc="Free trade",
     ),
     TopicConfig(
         slug="national_debt",

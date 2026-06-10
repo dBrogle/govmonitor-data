@@ -113,6 +113,8 @@ class IndependentExpenditure(BaseModel):
 
     committee_id: str | None = None
     committee_name: str | None = None
+    candidate_id: str | None = None      # populated when querying by committee
+    candidate_name: str | None = None
     support_oppose_indicator: str | None = None  # "S" (support) or "O" (oppose)
     total: float = 0.0
     count: int = 0

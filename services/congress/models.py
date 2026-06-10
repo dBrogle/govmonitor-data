@@ -291,4 +291,7 @@ class BillAnalysis(BaseModel):
     bill_type: str
     bill_number: str
     summary: str | None = None
+    # Which text the LLM scored: "summary" (CRS), "full_text", or "full_text_truncated".
+    # Provenance so we know whether a score rests on the official summary or the full bill.
+    text_source: str | None = None
     scores: list[BillTopicScore] = []

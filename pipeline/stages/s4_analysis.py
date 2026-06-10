@@ -10,6 +10,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from services.congress.congress import CongressService
+from services.congress.policy_areas import topics_for_policy_area
+from services.congress.topics import TOPICS
 from services.llm.openrouter import OpenRouterService
 
 OUTPUT_DIR = Path(__file__).parent.parent / "output" / "s4_analysis"
@@ -46,11 +48,14 @@ def _analyze_one(
     bill_type: str,
     bill_number: str,
     title: str,
+    topics: list,
 ) -> tuple[str, dict | None, str | None]:
-    """Analyze a single bill (topic scoring + summary). Returns (tag, result_dict, error_message)."""
+    """Analyze a single bill (topic scoring + summary). Returns (tag, result_dict, error_message).
+
+    `topics` is the policy-area-targeted subset to score (not all 19)."""
     tag = f"{bill_type.upper()} {bill_number}"
     try:
-        analysis = svc.analyze_bill(congress, bill_type, bill_number)
+        analysis = svc.analyze_bill(congress, bill_type, bill_number, topics=topics)
     except ValueError:
         return tag, None, "no XML available"
     except Exception as e:
@@ -103,34 +108,54 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
     bill_files = sorted(BILLS_DIR.glob("*.json"))
     bills_with_xml = []
     skipped_unvoted = 0
+    skipped_no_topic = 0  # policy-area prefilter: no relevant topic in our taxonomy
+    skipped_unreadable = 0  # partial/corrupt file (e.g. mid-write by a concurrent fetch)
 
     for bill_file in bill_files:
-        data = json.loads(bill_file.read_text())
+        # A concurrent bill fetch may be mid-write on this file; a valid s3_bills JSON means
+        # the bill is fully fetched (it's written last). Skip unreadable ones rather than
+        # crashing the whole batch — they'll be picked up on a later run.
+        try:
+            data = json.loads(bill_file.read_text())
+        except (ValueError, OSError):
+            skipped_unreadable += 1
+            continue
         if not data.get("has_xml"):
             continue
         key = (data["congress"], data["bill_type"].upper(), str(data["bill_number"]))
         if voted_keys is not None and key not in voted_keys:
             skipped_unvoted += 1
             continue
+        # Policy-area targeting: score only the relevant topics, and skip bills whose policy
+        # area maps to none of our topics (post-office namings, internal congressional
+        # matters, etc.). Unknown/missing areas fall back to all topics — never lose a bill.
+        topics = topics_for_policy_area(data["detail"].get("policy_area"), TOPICS)
+        if not topics:
+            skipped_no_topic += 1
+            continue
         bills_with_xml.append((
             data["congress"],
             data["bill_type"].upper(),
             data["bill_number"],
             data["detail"].get("title", "(untitled)"),
+            topics,
         ))
 
     if analyze_voted_only:
         print(f"  Voted-only mode: {skipped_unvoted} unvoted bills skipped (v0; sponsored/cosponsored analysis is v2)")
+    print(f"  Policy-area prefilter: {skipped_no_topic} bills skipped (no relevant topic)")
+    if skipped_unreadable:
+        print(f"  Skipped {skipped_unreadable} unreadable bill files (likely mid-fetch — re-run later to catch them)")
 
     # Filter out already-processed bills
     to_process = []
     skipped = 0
-    for congress, bill_type, bill_number, title in bills_with_xml:
+    for congress, bill_type, bill_number, title, topics in bills_with_xml:
         out = output_path(congress, bill_type, bill_number)
         if out.exists() and not force:
             skipped += 1
         else:
-            to_process.append((congress, bill_type, bill_number, title))
+            to_process.append((congress, bill_type, bill_number, title, topics))
 
     total = len(to_process)
     print(f"  Found {len(bills_with_xml)} bills with XML, {skipped} already done, {total} to analyze")
@@ -170,8 +195,8 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
 
         with ThreadPoolExecutor(max_workers=len(batch)) as executor:
             futures = {
-                executor.submit(_analyze_one, svc, congress, bt, bn, title): (congress, bt, bn, title)
-                for congress, bt, bn, title in batch
+                executor.submit(_analyze_one, svc, congress, bt, bn, title, topics): (congress, bt, bn, title)
+                for congress, bt, bn, title, topics in batch
             }
 
             for future in as_completed(futures):

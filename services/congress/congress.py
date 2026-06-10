@@ -2,6 +2,7 @@ import hashlib
 import itertools
 import json
 import os
+import re
 import threading
 import time
 import requests
@@ -518,10 +519,15 @@ class CongressService:
     def _analysis_cache_path(
         self, congress: int, bill_type: str, bill_number: str, topics: list[TopicConfig]
     ) -> Path:
-        """Cache path for a bill's full topic analysis."""
+        """Cache path for a bill's full topic analysis.
+
+        Keyed on both the topic list AND the scoring system prompt, so that any change to
+        the topics OR the prompt invalidates stale analyses (a prompt change alters the
+        scores, so reusing a cache from the old prompt would silently serve wrong data)."""
         bill_slug = f"{congress}_{bill_type.lower()}_{bill_number}"
-        topics_hash = self._topics_hash(topics)
-        return CACHE_DIR / "bills" / "analysis" / bill_slug / f"{topics_hash}.json"
+        prompt_hash = hashlib.sha256(BILL_ANALYSIS_SYSTEM_PROMPT.encode()).hexdigest()[:6]
+        key = f"{self._topics_hash(topics)}_{prompt_hash}"
+        return CACHE_DIR / "bills" / "analysis" / bill_slug / f"{key}.json"
 
     def _summary_cache_path(
         self, congress: int, bill_type: str, bill_number: str
@@ -530,24 +536,82 @@ class CongressService:
         bill_slug = f"{congress}_{bill_type.lower()}_{bill_number}"
         return CACHE_DIR / "bills" / "summary" / f"{bill_slug}.json"
 
+    def get_bill_crs_summary(
+        self, congress: int, bill_type: str, bill_number: str
+    ) -> str | None:
+        """The latest official (CRS) summary for a bill as plain text, or None.
+
+        CRS summaries are neutral, compact descriptions of a bill's main thrust. ~Half of
+        bills have one (CRS lags introduction; minor bills often never get one)."""
+        try:
+            summaries = self.get_bill_summaries(congress, bill_type, bill_number)
+        except Exception:
+            return None
+        # Last entry is the most recent summary version.
+        texts = [s.text for s in summaries if s.text and s.text.strip()]
+        if not texts:
+            return None
+        plain = re.sub(r"<[^>]+>", " ", texts[-1])      # strip HTML tags
+        plain = re.sub(r"\s+", " ", plain).strip()       # collapse whitespace
+        return plain or None
+
+    # Max characters of full bill text to send before falling back to the summary. ~150K
+    # tokens — safely inside a 1M-context model while bounding cost/latency on omnibus bills
+    # (the NDAA's full text alone is ~1.26M tokens and would overflow context entirely).
+    MAX_ANALYSIS_CHARS = 600_000
+
+    def _select_analysis_input(
+        self, congress: int, bill_type: str, bill_number: str
+    ) -> tuple[str, str]:
+        """Choose the text to score and report its provenance.
+
+        FULL-TEXT-FIRST. The full bill text is the most accurate input: a generic CRS summary
+        can strip a bill's political valence entirely — e.g. a budget resolution that enables
+        tax cuts reads in summary as neutral "recommended levels for federal revenues," which
+        the model mis-scored as a tax *increase* (a sign flip that swung the whole House's
+        taxation alignment in testing). So prefer full text, and fall back to the CRS summary
+        ONLY when the full text would overflow the model context (omnibus bills like the
+        NDAA), where the centrality prompt + policy-area targeting already guard against a
+        buried provision dominating. Truncated full text is the last resort.
+
+        Returns (text, source), source ∈ {full_text, summary, full_text_truncated}.
+        Raises ValueError if no text is available at all."""
+        bill_xml = self.get_bill_text_xml(congress, bill_type, bill_number)
+        if bill_xml is not None and len(bill_xml) <= self.MAX_ANALYSIS_CHARS:
+            return bill_xml, "full_text"
+
+        # Full text is oversized or missing — the summary is the better choice here (it keeps a
+        # huge bill within context, and centrality/targeting handle the lost detail).
+        summary = self.get_bill_crs_summary(congress, bill_type, bill_number)
+        if summary:
+            return summary, "summary"
+        if bill_xml is not None:
+            return bill_xml[: self.MAX_ANALYSIS_CHARS], "full_text_truncated"
+        raise ValueError(
+            f"No summary or XML text available for bill {congress}/{bill_type}/{bill_number}. "
+            "Fetch the bill text first."
+        )
+
     def analyze_bill(
         self,
         congress: int,
         bill_type: str,
         bill_number: str | int,
         topics: list[TopicConfig] | None = None,
+        force: bool = False,
     ) -> BillAnalysis:
         """Analyze a bill's alignment with political topics using the LLM.
 
         Fetches the bill XML (cached), then sends a single LLM call to score
-        it against all topics at once. The result is cached per bill, keyed
-        on a hash of the full topic list so that any topic change invalidates it.
+        it against all topics at once. The result is cached per bill, keyed on a hash of
+        the topic list AND the scoring prompt, so any change to either invalidates it.
 
         Args:
             congress: Congress number (e.g. 119).
             bill_type: Bill type slug (e.g. "hr", "hjres").
             bill_number: Bill number.
             topics: Optional list of TopicConfig to evaluate. Defaults to all.
+            force: Bypass the cache read (always re-score). Used by tests and re-runs.
 
         Returns:
             BillAnalysis with a score for each topic.
@@ -559,10 +623,11 @@ class CongressService:
 
         # Check cache
         cache_file = self._analysis_cache_path(congress, bt, bn, topics)
-        cached = load_cache(cache_file)
-        if cached is not None:
-            print(f"  [cache] analysis/{cache_file.parent.name}/{cache_file.name}")
-            return BillAnalysis.model_validate(cached)
+        if not force:
+            cached = load_cache(cache_file)
+            if cached is not None:
+                print(f"  [cache] analysis/{cache_file.parent.name}/{cache_file.name}")
+                return BillAnalysis.model_validate(cached)
 
         # Need LLM
         if self.llm_service is None:
@@ -571,14 +636,9 @@ class CongressService:
                 "Pass llm_service= to CongressService."
             )
 
-        bill_xml = self.get_bill_text_xml(congress, bt, bn)
-        if bill_xml is None:
-            raise ValueError(
-                f"No XML text available for bill {congress}/{bt}/{bn}. "
-                "Fetch the bill text first."
-            )
+        bill_text, text_source = self._select_analysis_input(congress, bt, bn)
 
-        user_prompt = build_topics_user_prompt(bill_xml, topics)
+        user_prompt = build_topics_user_prompt(bill_text, topics)
 
         response: BillAnalysisResponse = self.llm_service.structured_completion(
             system_prompt=BILL_ANALYSIS_SYSTEM_PROMPT,
@@ -601,6 +661,7 @@ class CongressService:
             congress=congress,
             bill_type=bt,
             bill_number=bn,
+            text_source=text_source,
             scores=scores,
         )
 

@@ -7,6 +7,12 @@ V0
 
 V0 polish (before shipping — current focus)
 [ ] General cleanup + ship what we have
+[X] Wrong member on 6 seats (GA-14 + the 5 at-large) — root cause was the Congress.gov
+    district lookup grabbing a former occupant/senator, NOT the images. Fixed by writing
+    the authoritative bioguide into candidates.json (build_roster.py) and having s1 use it.
+    GA-14 (Clay Fuller) shows a placeholder — his portrait isn't on the CDN yet (freshman).
+[ ] Orphaned image files: old bioguides (e.g. MTG G000596) linger in public/members/ but
+    are no longer referenced — harmless, clean up sometime. ~9 CDN 404s still on placeholders.
 [ ] Protest-vote / "maverick" flag: a Nay can mean "didn't go far enough," not opposition
     (a hardliner voting No on a too-soft border bill scores as anti-secure-border). Plan:
     flag votes that break from the member's own party majority, down-weight/surface them

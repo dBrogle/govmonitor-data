@@ -51,39 +51,37 @@ def pick_house_fec(
 ) -> tuple[str | None, str | None]:
     """Choose the member's active House (H-prefixed) FEC candidate ID.
 
-    FEC IDs encode the seat at first registration: H8CA04152 = 'H'ouse, cycle digit,
-    'CA', district '04'. A member can carry more than one ID (e.g. after redistricting).
-    Resolution order: (1) the single ID matching the current state+district; (2) if
-    still ambiguous, the ID with real receipts this cycle; (3) give up and flag it.
-    Returns (fec_id, flag)."""
+    A member can carry more than one H-prefixed ID (redistricting, re-files). The embedded
+    district is NOT reliable for picking — FEC encodes the district at *first* registration,
+    so a member's active committee often shows an old district, while a dead old committee can
+    coincidentally match their current number. So for multi-ID members we pick purely by which
+    committee actually raised money (this cycle or the next). Returns (fec_id, flag)."""
     house = [f for f in fec_ids if f.startswith("H")]
     if not house:
         return None, "no-house-fec-id"
     if len(house) == 1:
         return house[0], None
 
-    dd = f"{district:02d}"
-    seat_match = [f for f in house if f[2:4] == state and f[4:6] == dd]
-    if len(seat_match) == 1:
-        return seat_match[0], None
-
-    pool = seat_match or house
     if fec is not None:
         # Pick the registration with the most receipts. Check the election cycle and the
-        # next one — 2024-elected freshmen often have their money under the 2026 cycle.
+        # next one — special-election / freshman money often sits under the 2026 cycle.
         def receipts(cid: str) -> float:
             best = 0.0
             for cy in (CYCLE, CYCLE + 2):
                 t = fec.get_candidate_totals(cid, cy)
-                if t and t.receipts > best:
+                if t and t.receipts and t.receipts > best:
                     best = t.receipts
             return best
 
-        scored = [(f, receipts(f)) for f in pool]
+        scored = [(f, receipts(f)) for f in house]
         best, amount = max(scored, key=lambda x: x[1])
         if amount > 0:
             return best, f"resolved-by-receipts (${amount:,.0f})"
-    return pool[-1], "AMBIGUOUS — verify manually"
+
+    # No FEC client, or no receipts anywhere — fall back to a current-district match.
+    dd = f"{district:02d}"
+    seat = [f for f in house if f[2:4] == state and f[4:6] == dd]
+    return (seat or house)[-1], "AMBIGUOUS — verify manually"
 
 
 def main() -> None:
@@ -136,7 +134,14 @@ def main() -> None:
             elif flag:
                 flags.append(f"  {seat:>6} {name}: {flag} → {fec_id}")
 
-        roster.append({"name": name, "state": state, "district": district, "fec_id": fec_id})
+        roster.append({
+            "name": name,
+            "state": state,
+            "district": district,
+            "fec_id": fec_id,
+            # Authoritative bioguide — s1 uses this instead of the unreliable district lookup.
+            "bioguide_id": L["id"]["bioguide"],
+        })
 
     roster.sort(key=lambda c: (c["state"], c["district"]))
 

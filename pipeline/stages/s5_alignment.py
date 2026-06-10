@@ -8,14 +8,76 @@ import json
 from pathlib import Path
 
 from services.congress.topics import TOPICS, TOPICS_BY_SLUG
+from services.congress.vote_questions import classify_vote_question, vote_weight
+from utils.cache import CACHE_DIR
 
 OUTPUT_DIR = Path(__file__).parent.parent / "output" / "s5_alignment"
 MEMBERS_DIR = Path(__file__).parent.parent / "output" / "s1_members"
 FINANCE_DIR = Path(__file__).parent.parent / "output" / "s2_finance"
 BILLS_DIR = Path(__file__).parent.parent / "output" / "s3_bills"
 ANALYSIS_DIR = Path(__file__).parent.parent / "output" / "s4_analysis"
+VOTE_MEMBERS_CACHE = CACHE_DIR / "vote_members"
 
 CONGRESS_URL = "https://www.congress.gov/bill/{congress}th-congress/{path}/{number}"
+
+# Confidence thresholds: how many signals (votes + sponsorship) back a topic's alignment.
+# A topic moved by a single signal is far less reliable than one backed by many.
+CONFIDENCE_MEDIUM_MIN = 3
+CONFIDENCE_HIGH_MIN = 8
+
+# Stance-signal weights by role. A floor-passage vote is the formal recorded act (weight 1.0,
+# via vote_weight()). Sponsoring is authoring a bill — a strong endorsement of its direction;
+# cosponsoring is backing someone else's bill — weaker support. Sponsorship is always an
+# endorsement (+); there is no "oppose by sponsorship". Tunable.
+WEIGHT_SPONSOR = 0.8
+WEIGHT_COSPONSOR = 0.4
+
+# Evidence shrinkage: alignment = numerator / (evidence_mass + K_SHRINKAGE). Pulls thin-evidence
+# topics toward neutral so a member who barely engages a topic can't show a full-strength bar;
+# topics with lots of evidence are ~unaffected. K ≈ "one solid sponsored bill" of evidence.
+# Tunable — raise for a more conservative (more-evidence-required) scale.
+K_SHRINKAGE = 1.0
+
+
+def _load_vote_questions() -> dict[tuple[int, int], str]:
+    """Map (session, vote_number) → substantive voteQuestion from the cached vote headers.
+
+    The substantive question ("On Passage" / "On Motion to Recommit" / "On Agreeing to the
+    Amendment") lives only in the house-vote /members endpoint header — not in the list
+    endpoint that feeds voting_history (which carries only voteType, the voting *method*).
+    We read it from the request cache, the authoritative copy that's always present once a
+    vote's member positions were fetched. Vote numbers reset per session, so the key includes
+    the session."""
+    out: dict[tuple[int, int], str] = {}
+    if not VOTE_MEMBERS_CACHE.exists():
+        return out
+    for f in VOTE_MEMBERS_CACHE.glob("*_members.json"):
+        try:
+            hdr = json.loads(f.read_text()).get("houseRollCallVoteMemberVotes", {})
+        except (ValueError, OSError):
+            continue
+        session, vote_number, q = hdr.get("sessionNumber"), hdr.get("rollCallNumber"), hdr.get("voteQuestion")
+        if session is not None and vote_number is not None and q:
+            out[(int(session), int(vote_number))] = q
+    return out
+
+
+def _session_for_date(vote_date: str | None) -> int | None:
+    """119th Congress session from a vote date: session 1 = 2025, session 2 = 2026.
+
+    (Vote numbers reset each session, so we need the session to look up a roll call.
+    Extend this map when earlier/later congresses are added.)"""
+    if not vote_date:
+        return None
+    return {"2025": 1, "2026": 2}.get(vote_date[:4])
+
+
+def _confidence(n: int) -> str:
+    if n >= CONFIDENCE_HIGH_MIN:
+        return "high"
+    if n >= CONFIDENCE_MEDIUM_MIN:
+        return "medium"
+    return "low"
 
 
 def output_path(state: str, district: int) -> Path:
@@ -69,6 +131,10 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
         print("  [!] No members output found — run the 'members' stage first")
         return
 
+    # Substantive vote question per roll call (shared across all candidates; load once).
+    vote_questions = _load_vote_questions()
+    print(f"  Loaded substantive question for {len(vote_questions)} roll-call votes")
+
     for candidate in candidates:
         state = candidate["state"]
         district = candidate["district"]
@@ -91,78 +157,130 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
 
         print(f"\n  Processing {name} ({state}-{district})...")
 
-        # ── Compute alignment with per-topic bill breakdowns ─────────────
-        # Per topic, track: numerator, denominator, and contributing bills
-        topic_numerator: dict[str, float] = {}
-        topic_denominator: dict[str, float] = {}
-        topic_bills: dict[str, list[dict]] = {}  # slug → list of bill contributions
+        # ── Gather weighted contributions (votes + sponsorship) ──────────
+        # A member's stance on a topic is built from several weighted signals, not votes
+        # alone. Each bill the member engaged contributes once, at the weight of their
+        # strongest role for it (vote > sponsor > cosponsor):
+        #   • Vote on final passage — formal, directional (Yea/+1, Nay/−1). Procedural/amendment
+        #     votes carry no weight and are excluded (see vote_questions.py).
+        #   • Sponsored — authored the bill: a strong endorsement of its direction (+1).
+        #   • Cosponsored — backed someone else's bill: weaker support (+1).
+        # Sponsorship has no "oppose" — you either back a bill or you don't. When a member both
+        # voted on and sponsored the same bill, the vote (formal + directional) takes precedence.
+        sponsored = [
+            b for b in member_data.get("sponsored_bills", [])
+            # Drop placeholder bills leadership reserves at the start of a Congress.
+            if "reserved for the speaker" not in (b.get("title") or "").lower()
+        ]
+        cosponsored = member_data.get("cosponsored_bills", [])
 
-        bills_scored = 0
-        bills_skipped = 0
+        contributions: dict[tuple[str, str], dict] = {}  # (TYPE, number) → contribution
+        votes_excluded = 0  # directional votes dropped because the question is procedural/amendment
 
         for vote in votes:
             bill_ref = vote.get("bill")
             if not bill_ref:
                 continue
-
-            bill_type = bill_ref.get("type", "").upper()
-            bill_number = str(bill_ref.get("number", ""))
-            if not bill_type or not bill_number:
+            bt = bill_ref.get("type", "").upper()
+            bn = str(bill_ref.get("number", ""))
+            if not bt or not bn:
                 continue
+            position = vote.get("member_position", "")
+            # Yea/Nay (final passage) and Aye/No (Committee of the Whole) are both directional —
+            # recognizing both is what fixed the Barry-Moore "100% pro-LGBT" sign-flip bug.
+            yea = position in ("Yea", "Aye")
+            nay = position in ("Nay", "No")
+            session = _session_for_date(vote.get("vote_date"))
+            vnum = vote.get("vote_number")
+            question = vote_questions.get((session, int(vnum))) if session and vnum is not None else None
+            weight = vote_weight(question)
+            if (yea or nay) and weight == 0:
+                votes_excluded += 1
+            if not ((yea or nay) and weight > 0):
+                continue  # procedural / amendment / non-directional → no stance signal
+            contributions[(bt, bn)] = {
+                "congress": congress, "weight": weight, "sign": 1 if yea else -1,
+                "role": "vote", "vote_position": position,
+                "vote_class": classify_vote_question(question), "vote_date": vote.get("vote_date"),
+            }
 
-            analysis = _load_json(ANALYSIS_DIR / f"{congress}_{bill_type}_{bill_number}.json")
+        for b in sponsored:
+            key = (b["type"].upper(), str(b["number"]))
+            if key in contributions:  # a vote on the same bill outranks sponsorship
+                continue
+            contributions[key] = {"congress": b.get("congress", congress),
+                                  "weight": WEIGHT_SPONSOR, "sign": 1, "role": "sponsor"}
+        for b in cosponsored:
+            key = (b["type"].upper(), str(b["number"]))
+            if key in contributions:
+                continue
+            contributions[key] = {"congress": b.get("congress", congress),
+                                  "weight": WEIGHT_COSPONSOR, "sign": 1, "role": "cosponsor"}
+
+        # ── Aggregate into per-topic alignment ───────────────────────────
+        topic_numerator: dict[str, float] = {}
+        topic_denominator: dict[str, float] = {}
+        topic_bills: dict[str, list[dict]] = {}      # slug → contributing-bill list
+        topic_signal_count: dict[str, int] = {}      # slug → # of signals (for confidence)
+
+        bills_scored = 0
+        bills_skipped = 0
+
+        for (bt, bn), c in contributions.items():
+            analysis = _load_json(ANALYSIS_DIR / f"{c['congress']}_{bt}_{bn}.json")
             if not analysis:
                 bills_skipped += 1
                 continue
-
             bills_scored += 1
-            position = vote.get("member_position", "")
-
-            # Only votes that express a for/against stance move the score.
-            # Present / Not Voting are deliberate non-positions and are excluded
-            # from both numerator and denominator (an abstention isn't a signal).
-            yea = position == "Yea"
-            nay = position == "Nay"
-            counts = yea or nay
+            w, sign = c["weight"], c["sign"]
 
             for score_item in analysis.get("scores", []):
                 slug = score_item["topic_slug"]
                 score = score_item["score"]
-
-                # Skip topics no longer in the config — cached analysis files may
-                # still carry a topic that was since removed from topics.py.
+                # Skip 0s and topics since removed from topics.py (cached files may carry them).
                 if score == 0 or slug not in TOPICS_BY_SLUG:
                     continue
 
-                if counts:
-                    # A Yea endorses the bill's direction (+score); a Nay opposes
-                    # it (-score). Both add |score| of "stake" to the denominator.
-                    topic_denominator[slug] = topic_denominator.get(slug, 0) + abs(score)
-                    topic_numerator[slug] = topic_numerator.get(slug, 0) + (score if yea else -score)
+                # Endorsing the bill's direction (+sign) adds sign·score to the numerator;
+                # every signal adds weight·|score| of "stake" to the denominator.
+                topic_denominator[slug] = topic_denominator.get(slug, 0) + w * abs(score)
+                topic_numerator[slug] = topic_numerator.get(slug, 0) + w * sign * score
+                topic_signal_count[slug] = topic_signal_count.get(slug, 0) + 1
 
-                # Record this bill's contribution to the topic
-                if slug not in topic_bills:
-                    topic_bills[slug] = []
-
-                topic_bills[slug].append({
-                    "bill_type": bill_type.upper(),
-                    "bill_number": bill_number,
-                    "vote_position": position,
+                topic_bills.setdefault(slug, []).append({
+                    "bill_type": bt,
+                    "bill_number": bn,
+                    "role": c["role"],                    # vote | sponsor | cosponsor
+                    "weight": w,
+                    "vote_position": c.get("vote_position"),  # None for sponsorship
+                    "vote_class": c.get("vote_class"),
                     "bill_topic_score": round(score, 4),
-                    "contributed_to_alignment": counts,
-                    "vote_date": vote.get("vote_date"),
-                    # title/url/summary omitted — title+summary fetched lazily by id,
-                    # url derived client-side. (Inlined titles were duplicated across
-                    # every topic a bill touched — ~20KB per candidate.)
+                    "contributed_to_alignment": True,
+                    "vote_date": c.get("vote_date"),
+                    # title/url/summary fetched lazily by bill id; url derived client-side.
                 })
 
-        print(f"    {bills_scored} bills with analysis, {bills_skipped} without")
+        n_vote = sum(1 for c in contributions.values() if c["role"] == "vote")
+        n_spon = sum(1 for c in contributions.values() if c["role"] == "sponsor")
+        n_cospon = sum(1 for c in contributions.values() if c["role"] == "cosponsor")
+        print(f"    {len(contributions)} contributions ({n_vote} votes, {n_spon} sponsored, "
+              f"{n_cospon} cosponsored) — {bills_scored} scored, {bills_skipped} without analysis, "
+              f"{votes_excluded} procedural/amendment votes excluded")
 
         # ── Assemble alignment topics ────────────────────────────────────
+        # `denominator` is the evidence mass M (Σ weight·|score|). Salience = a topic's share
+        # of the member's total evidence across all topics — how much of their legislative
+        # attention sits there. Used to order/emphasize topics, separate from direction.
+        total_mass = sum(topic_denominator.values())
+
         alignments = []
         for slug, denom in topic_denominator.items():
             numer = topic_numerator.get(slug, 0)
-            alignment = numer / denom if denom else 0
+            # Direction with evidence shrinkage toward neutral: thin topics are pulled to 0,
+            # well-evidenced topics keep their raw lean. raw_alignment kept for transparency.
+            raw_alignment = numer / denom if denom else 0
+            alignment = numer / (denom + K_SHRINKAGE)
+            salience = denom / total_mass if total_mass else 0
             topic_cfg = TOPICS_BY_SLUG.get(slug)
             topic_name = topic_cfg.name if topic_cfg else slug
 
@@ -173,17 +291,30 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
                 reverse=True,
             )
 
+            n_signals = topic_signal_count.get(slug, 0)
             alignments.append({
                 "topic_slug": slug,
                 "topic_name": topic_name,
+                # Shrunk, engagement-aware lean (the displayed bar); raw lean kept alongside.
                 "alignment": round(alignment, 4),
+                "raw_alignment": round(raw_alignment, 4),
                 "numerator": round(numer, 4),
                 "denominator": round(denom, 4),
+                # Share of the member's total evidence on this topic — drives prominence/order.
+                "salience": round(salience, 4),
+                # How many signals (votes + sponsorship) back this score — a 1-signal topic is
+                # far less reliable than a many-signal one. `confidence` is a display bucket.
+                "contributing_signal_count": n_signals,
+                "confidence": _confidence(n_signals),
                 "minus_one_desc": topic_cfg.minus_one_desc if topic_cfg else None,
                 "plus_one_desc": topic_cfg.plus_one_desc if topic_cfg else None,
                 "contributing_bills": bills_for_topic,
             })
 
+        # Order by the shrunk lean magnitude: the strongest, best-evidenced stances first.
+        # (Shrinkage already mutes thin topics, so a high |alignment| means both a clear lean
+        # AND real engagement — better than pure salience, which a high-volume catch-all topic
+        # like government_spending would dominate for nearly everyone.)
         alignments.sort(key=lambda x: abs(x["alignment"]), reverse=True)
 
         topics_with_signal = {a["topic_slug"] for a in alignments}

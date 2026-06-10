@@ -57,27 +57,28 @@ def _process_one(svc, candidate, *, congress, session, sponsored_limit,
     # Guard each candidate so one failure (e.g. an exhausted-retry network error)
     # doesn't abort the whole batch — the rest still process.
     try:
-        # Resolve bioguide ID
-        members = svc.get_members_by_district(congress, state, district)
-        if not members:
-            return label, "error", f"no member found for {state}-{district} in {congress}th"
-
-        # The district endpoint may return multiple members (including historical).
-        # Pick the one whose detail shows a term matching the requested congress
-        # and district.  Fall back to the first entry if none match.
-        member_summary = members[0]
-        if len(members) > 1:
-            for ms in members:
-                detail_check = svc.get_member(ms.bioguide_id)
-                if detail_check and detail_check.terms:
-                    if any(
+        # Prefer the authoritative bioguide from the roster (build_roster.py pulls it from
+        # the congress-legislators dataset). The district endpoint is unreliable for seats
+        # that changed hands mid-term — it returns both members, and picking the wrong one
+        # attaches the former occupant (e.g. GA-14 resolved to Greene instead of Fuller).
+        bioguide_id = candidate.get("bioguide_id")
+        if not bioguide_id:
+            members = svc.get_members_by_district(congress, state, district)
+            if not members:
+                return label, "error", f"no member found for {state}-{district} in {congress}th"
+            # Multiple may come back (incl. historical); pick the one whose detail shows a
+            # term matching the requested congress + district, else the first.
+            member_summary = members[0]
+            if len(members) > 1:
+                for ms in members:
+                    detail_check = svc.get_member(ms.bioguide_id)
+                    if detail_check and detail_check.terms and any(
                         t.get("congress") == congress and t.get("district") == district
                         for t in detail_check.terms
                     ):
                         member_summary = ms
                         break
-
-        bioguide_id = member_summary.bioguide_id
+            bioguide_id = member_summary.bioguide_id
 
         detail = svc.get_member(bioguide_id)
         sponsored = svc.get_sponsored_legislation(bioguide_id, congress=congress)

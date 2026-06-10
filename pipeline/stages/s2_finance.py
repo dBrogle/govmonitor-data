@@ -65,6 +65,69 @@ def _classify_lean(dem: float, rep: float, other: float, basis: str) -> dict:
     }
 
 
+def classify_pac_type(committee_type_full: str | None, organization_type_full: str | None) -> str:
+    """Derive a single human label for a PAC from FEC's two classification axes.
+
+    The organization type (who sponsors it) is most informative when present; otherwise
+    fall back to the committee's legal/structural type. Super PACs, party, and candidate
+    committees have no sponsoring org by design, so they're labeled from committee type."""
+    org = (organization_type_full or "").lower()
+    if "corporation" in org:
+        return "Corporate"
+    if "trade" in org:
+        return "Trade"
+    if "labor" in org:
+        return "Labor"
+    if "membership" in org:
+        return "Membership"
+    if "cooperative" in org:
+        return "Cooperative"
+
+    ct = (committee_type_full or "").lower()
+    if "super pac" in ct or "independent expenditure" in ct:
+        return "Super PAC"
+    if "hybrid" in ct:
+        return "Hybrid PAC"
+    if "party" in ct:
+        return "Party"
+    if any(c in ct for c in ("house", "senate", "presidential")):
+        return "Candidate Committee"
+    return "PAC"
+
+
+def build_outside_spending(svc: FECService, committee_id: str, cycle: int, *, top_n: int = 12) -> dict | None:
+    """A PAC's independent expenditures (Schedule E): total spent supporting vs opposing,
+    and its top candidate targets. Returns None for PACs that make no outside spending."""
+    try:
+        ie = svc.get_committee_independent_expenditures(committee_id, cycle)
+    except Exception as e:
+        print(f"    [warning] outside spending for {committee_id}: {e}")
+        return None
+    # Drop the unattributed aggregate row(s) the endpoint returns with no candidate, so
+    # totals match the named targets we display.
+    ie = [e for e in ie if e.candidate_id]
+    if not ie:
+        return None
+    support = sum(e.total for e in ie if e.support_oppose_indicator == "S")
+    oppose = sum(e.total for e in ie if e.support_oppose_indicator == "O")
+    targets = [
+        {
+            "candidate_id": e.candidate_id,
+            "candidate_name": e.candidate_name,
+            "support_oppose": e.support_oppose_indicator,
+            "total": round(e.total, 2),
+        }
+        for e in ie if e.total
+    ][:top_n]
+    return {
+        "total": round(support + oppose, 2),
+        "support_total": round(support, 2),
+        "oppose_total": round(oppose, 2),
+        "target_count": len({e.candidate_id for e in ie if e.candidate_id}),
+        "top_targets": targets,
+    }
+
+
 def build_pac_profile(svc: FECService, committee_id: str, cycle: int, *, recipient_lookups: int = 8, force: bool = False) -> dict | None:
     """Build (or load cached) a standalone profile for a PAC: who it funds, who funds it,
     its size and partisan lean. Cached to its own file so it's shared across candidates and
@@ -115,9 +178,13 @@ def build_pac_profile(svc: FECService, committee_id: str, cycle: int, *, recipie
                 "count": b.count or 0,
             })
 
+    # Who it spends to support/oppose (Schedule E) — distinct from the contributions above.
+    outside_spending = build_outside_spending(svc, committee_id, cycle)
+
     profile = {
         "committee_id": committee_id,
         "name": detail.name,
+        "pac_type": classify_pac_type(detail.committee_type_full, detail.organization_type_full),
         "committee_type_full": detail.committee_type_full,
         "organization_type_full": detail.organization_type_full,
         "connected_organization_name": detail.connected_organization_name,
@@ -128,6 +195,7 @@ def build_pac_profile(svc: FECService, committee_id: str, cycle: int, *, recipie
         "lean": _classify_lean(dem, rep, other, f"top {len(recipients)} recipients"),
         "top_recipients": top_recipients,
         "funding_by_size": funding_by_size,
+        "outside_spending": outside_spending,
     }
     cache_file.write_text(json.dumps(profile, indent=2, default=str))
     return profile
@@ -197,6 +265,16 @@ def _process_one(svc, candidate, *, cycle, contribution_limit,
     try:
         # Candidate totals
         totals = svc.get_candidate_totals(fec_id, cycle)
+
+        # Self-heal the cycle: special-election winners (e.g. 2026 specials) have no money
+        # in the default cycle but real totals in the next one. Fall back automatically so
+        # they don't come back empty, without per-candidate config.
+        if not totals or not totals.receipts:
+            alt = cycle + 2
+            alt_totals = svc.get_candidate_totals(fec_id, alt)
+            if alt_totals and alt_totals.receipts:
+                print(f"  [cycle] {name}: no {cycle} finance → using {alt}")
+                cycle, totals = alt, alt_totals
 
         # Committee structure
         committees = svc.get_committees(fec_id, cycle)
