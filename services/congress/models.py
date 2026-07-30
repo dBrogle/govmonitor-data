@@ -243,6 +243,8 @@ class VoteMember(BaseModel):
 
 class MemberVoteRecord(BaseModel):
     """A member's position on a specific house vote (assembled client-side)."""
+    # Vote numbers restart each session, so a roll call is only identified by the pair.
+    session: int | None = None
     vote_number: int
     vote_date: str | None
     vote_question: str | None

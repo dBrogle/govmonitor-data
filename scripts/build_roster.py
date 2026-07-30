@@ -90,22 +90,26 @@ def main() -> None:
     args = parser.parse_args()
 
     print(f"Fetching {SOURCE} ...")
-    req = urllib.request.Request(SOURCE, headers={"User-Agent": "govstalker"})
+    req = urllib.request.Request(SOURCE, headers={"User-Agent": "watchgov"})
     legislators = json.load(urllib.request.urlopen(req, timeout=120))
     print(f"  {len(legislators)} current legislators")
 
-    key = os.getenv("OPEN_FEC_API_KEY")
+    # api.data.gov keys are universal — one key works for Congress.gov and OpenFEC alike,
+    # so fall back to the pipeline's key pool rather than requiring a separate variable.
+    key = os.getenv("OPEN_FEC_API_KEY") or os.getenv("CONGRESS_API_KEY_1")
     fec = FECService(api_key=key) if key else None
     if fec is None:
-        print("  [!] OPEN_FEC_API_KEY not set — can't disambiguate multi-ID members by activity")
+        print("  [!] No OPEN_FEC_API_KEY / CONGRESS_API_KEY_1 — can't disambiguate multi-ID members by activity")
 
-    # Hand-verified fec_ids from the existing roster, keyed by seat. Only reused when the
-    # ID still belongs to the seat's *current* occupant (a seat can change hands).
-    existing: dict[tuple[str, int], str] = {}
+    # Hand-verified fec_ids from the existing roster, keyed by seat, alongside the bioguide
+    # they belonged to. The bioguide — not the fec_id — is what tells us whether a seat
+    # changed hands: upstream prunes stale FEC registrations from a sitting member's id list
+    # fairly often, and those pruned ids are frequently the only ones carrying receipts.
+    existing: dict[tuple[str, int], tuple[str, str | None]] = {}
     if os.path.exists(OUT):
         for c in json.load(open(OUT)):
             if c.get("fec_id"):
-                existing[(c["state"], c["district"])] = c["fec_id"]
+                existing[(c["state"], c["district"])] = (c["fec_id"], c.get("bioguide_id"))
 
     roster: list[dict] = []
     flags: list[str] = []
@@ -119,16 +123,33 @@ def main() -> None:
         district = term["district"]  # 0 for at-large
         name = L["name"].get("official_full") or f"{L['name']['first']} {L['name']['last']}"
         member_fecs = L["id"].get("fec", [])
+        bioguide = L["id"]["bioguide"]
         seat = f"{state}-{district}"
 
-        kept = existing.get((state, district))
+        kept, kept_bioguide = existing.get((state, district), (None, None))
+        same_member = kept_bioguide is not None and kept_bioguide == bioguide
+
         if kept and kept in member_fecs:
             # Our verified ID is one of this member's registrations — trust it (warm cache).
             fec_id = kept
+        elif kept and same_member:
+            # Same person, but upstream no longer lists the ID we verified. Switching on that
+            # alone has blanked finance before: the dropped registration held every dollar
+            # (e.g. NY-4 H2NY04244, $4.6M) while the replacement had none. Keep the verified
+            # ID unless FEC receipts positively say another one is the live committee.
+            fec_id = kept
+            if fec is not None:
+                picked, _ = pick_house_fec(sorted(set(member_fecs) | {kept}), state, district, fec)
+                if picked and picked != kept:
+                    fec_id = picked
+                    flags.append(f"  {seat:>6} {name}: {kept} superseded by {picked} (more receipts)")
+            if fec_id == kept:
+                flags.append(f"  {seat:>6} {name}: upstream dropped {kept}; kept it (same member)")
         else:
             fec_id, flag = pick_house_fec(member_fecs, state, district, fec)
-            if kept and kept not in member_fecs:
-                flags.append(f"  {seat:>6} {name}: seat changed occupant — dropped old {kept}, using {fec_id}")
+            if kept and not same_member:
+                flags.append(f"  {seat:>6} {name}: seat changed occupant "
+                             f"({kept_bioguide} → {bioguide}) — dropped old {kept}, using {fec_id}")
             elif flag == "no-house-fec-id":
                 flags.append(f"  {seat:>6} {name}: NO fec_id — finance will be skipped")
             elif flag:

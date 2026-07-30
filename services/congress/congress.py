@@ -436,15 +436,65 @@ class CongressService:
     # ── Votes ──────────────────────────────────────────────────────────────
 
     def get_house_votes(self, congress: int, session: int) -> list[HouseVoteRecord]:
-        """Fetch the first page (up to 250) of House roll call votes for a
-        congress/session, sorted most-recent first by default."""
-        data = self._get(
+        """Every House roll call vote for a congress/session, most recent first.
+
+        The list endpoint caps a page at 250 and returns votes in no meaningful order
+        (session 1 of the 119th holds 362 roll calls, and its first page opens with
+        #240, #306, #241), so we exhaust pagination and sort explicitly rather than
+        trusting response order.
+
+        Sort key is (session, vote_number), not startDate: roll call numbers increase
+        strictly with time within a session, whereas startDate carries a UTC offset
+        that shifts across daylight saving and would misorder votes around the change.
+        """
+        data = self._get_all_pages(
             f"house-vote/{congress}/{session}",
-            {"limit": 250},
+            {},
             subfolder="house_votes",
+            results_key="houseRollCallVotes",
         )
         # API returns results under houseRollCallVotes, not houseVotes
-        return [HouseVoteRecord.model_validate(v) for v in data.get("houseRollCallVotes", [])]
+        votes = [HouseVoteRecord.model_validate(v) for v in data.get("houseRollCallVotes", [])]
+        votes.sort(key=lambda v: (v.session, v.vote_number), reverse=True)
+        return votes
+
+    def get_member_votes_index(
+        self, congress: int, sessions: list[int]
+    ) -> dict[str, list[dict]]:
+        """bioguide_id → every position that member recorded, most recent first.
+
+        Inverts the roll-call→members mapping in a single pass. Resolving each member
+        separately would re-read every vote's cached member list once per candidate —
+        ~600 votes x ~440 members is a quarter-million re-parses of the same 85 KB
+        responses. Records are plain dicts, not models: at this volume pydantic
+        instances cost hundreds of MB and buy nothing, since they are only dumped.
+        """
+        index: dict[str, list[dict]] = {}
+        for session in sessions:
+            votes = self.get_house_votes(congress, session)
+            print(f"  [votes] session {session}: {len(votes)} roll calls")
+            for vote in votes:
+                try:
+                    members = self.get_vote_members(congress, session, vote.vote_number)
+                except Exception as e:
+                    print(f"  [warning] vote {session}-{vote.vote_number}: {e}")
+                    continue
+                # `bill` builds a fresh dict per access; every member on this roll call
+                # shares one read-only reference rather than 440 copies.
+                bill = vote.bill
+                for m in members:
+                    index.setdefault(m.bioguide_id, []).append({
+                        "session": session,
+                        "vote_number": vote.vote_number,
+                        "vote_date": vote.vote_date,
+                        "vote_question": vote.vote_question,
+                        "vote_result": vote.vote_result,
+                        "member_position": m.vote_position,
+                        "bill": bill,
+                    })
+        for records in index.values():
+            records.sort(key=lambda r: (r["session"], r["vote_number"]), reverse=True)
+        return index
 
     def get_vote_members(
         self, congress: int, session: int, vote_number: int
@@ -475,8 +525,8 @@ class CongressService:
     ) -> list[MemberVoteRecord]:
         """Return the member's position on the most recent `limit` roll call votes.
 
-        Fetches the vote list once (cached), then fetches per-vote member lists
-        (each cached individually under vote_members/).
+        Single-member convenience wrapper. To resolve many members at once, use
+        get_member_votes_index — it reads each vote's member list only once.
         """
         votes = self.get_house_votes(congress, session)[:limit]
         result = []
@@ -492,6 +542,7 @@ class CongressService:
             if member_vote:
                 result.append(
                     MemberVoteRecord(
+                        session=session,
                         vote_number=vote.vote_number,
                         vote_date=vote.vote_date,
                         vote_question=vote.vote_question,
