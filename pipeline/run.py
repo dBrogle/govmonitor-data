@@ -98,7 +98,7 @@ def _load_api_keys() -> list[str]:
 def show_menu() -> tuple[list[str], bool]:
     """Interactive menu for selecting stages. Returns (stage_names, force)."""
     print(f"\n{'═' * 60}")
-    print(f"  govstalker pipeline — select stages")
+    print(f"  watchgov pipeline — select stages")
     print(f"{'═' * 60}")
     for i, name in enumerate(STAGE_ORDER, 1):
         desc, _ = STAGES[name]
@@ -130,7 +130,7 @@ def show_menu() -> tuple[list[str], bool]:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Run the govstalker data pipeline.",
+        description="Run the watchgov data pipeline.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -162,7 +162,7 @@ def main():
         stages_to_run, force = show_menu()
 
     print(f"\n{'═' * 60}")
-    print(f"  govstalker pipeline")
+    print(f"  watchgov pipeline")
     print(f"  Candidates: {len(candidates)}")
     print(f"  Stages: {', '.join(stages_to_run)}")
     print(f"  Force: {force}")

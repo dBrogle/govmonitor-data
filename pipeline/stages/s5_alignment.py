@@ -65,8 +65,10 @@ def _load_vote_questions() -> dict[tuple[int, int], str]:
 def _session_for_date(vote_date: str | None) -> int | None:
     """119th Congress session from a vote date: session 1 = 2025, session 2 = 2026.
 
-    (Vote numbers reset each session, so we need the session to look up a roll call.
-    Extend this map when earlier/later congresses are added.)"""
+    Fallback only. s1_members now records `session` on every vote; this covers member
+    files written before that field existed. Extend the map if you resurrect one for
+    another congress.
+    """
     if not vote_date:
         return None
     return {"2025": 1, "2026": 2}.get(vote_date[:4])
@@ -190,7 +192,7 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
             # recognizing both is what fixed the Barry-Moore "100% pro-LGBT" sign-flip bug.
             yea = position in ("Yea", "Aye")
             nay = position in ("Nay", "No")
-            session = _session_for_date(vote.get("vote_date"))
+            session = vote.get("session") or _session_for_date(vote.get("vote_date"))
             vnum = vote.get("vote_number")
             question = vote_questions.get((session, int(vnum))) if session and vnum is not None else None
             weight = vote_weight(question)
@@ -356,10 +358,15 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
                         "type": v["bill"]["type"],
                     } if v.get("bill") else None,
                 }
-                # Most recent first; vote_number breaks ties within a day.
+                # Most recent first. Roll call numbers rise strictly with time inside a
+                # session and reset between them, so (session, vote_number) orders exactly
+                # — and unlike vote_date it never ties.
                 for v in sorted(
                     votes,
-                    key=lambda v: (v.get("vote_date") or "", v.get("vote_number") or 0),
+                    key=lambda v: (
+                        v.get("session") or _session_for_date(v.get("vote_date")) or 0,
+                        v.get("vote_number") or 0,
+                    ),
                     reverse=True,
                 )
             ],

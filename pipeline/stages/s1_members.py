@@ -43,7 +43,7 @@ def _run_parallel(items, fn, *, workers, label):
     return done, errors
 
 
-def _process_one(svc, candidate, *, congress, session, sponsored_limit,
+def _process_one(svc, candidate, *, congress, vote_index, sponsored_limit,
                  cosponsored_limit, vote_limit, force):
     state = candidate["state"]
     district = candidate["district"]
@@ -83,9 +83,15 @@ def _process_one(svc, candidate, *, congress, session, sponsored_limit,
         detail = svc.get_member(bioguide_id)
         sponsored = svc.get_sponsored_legislation(bioguide_id, congress=congress)
         cosponsored = svc.get_cosponsored_legislation(bioguide_id, congress=congress)
-        votes = svc.get_member_voting_history(bioguide_id, congress, session, limit=vote_limit)
     except Exception as e:
         return label, "error", str(e)
+
+    # Already most-recent-first, across every session of this congress. Kept whole by
+    # default: alignment scores off the full record, and truncating here would silently
+    # narrow the evidence base to the last few months of voting.
+    votes = vote_index.get(bioguide_id, [])
+    if vote_limit:
+        votes = votes[:vote_limit]
 
     result = {
         "bioguide_id": bioguide_id,
@@ -96,7 +102,7 @@ def _process_one(svc, candidate, *, congress, session, sponsored_limit,
         "member_detail": detail.model_dump() if detail else None,
         "sponsored_bills": [b.model_dump() for b in sponsored[:sponsored_limit]],
         "cosponsored_bills": [b.model_dump() for b in cosponsored[:cosponsored_limit]],
-        "voting_history": [v.model_dump() for v in votes],
+        "voting_history": votes,
     }
 
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -106,17 +112,28 @@ def _process_one(svc, candidate, *, congress, session, sponsored_limit,
 
 def run(candidates: list[dict], config: dict, *, force: bool = False):
     congress = config["congress"]
-    session = config["session"]
+    # Cover every session of this congress. Reading a scalar `session` here (while
+    # s3_bills read the `sessions` list) is what kept an entire year of roll calls
+    # out of every member's voting history — and therefore out of alignment.
+    sessions = config.get("sessions") or [config.get("session", 1)]
     sponsored_limit = config.get("sponsored_bill_limit", 50)
     cosponsored_limit = config.get("cosponsored_bill_limit", 50)
-    vote_limit = config.get("vote_limit", 50)
+    # Falsy (null/absent) keeps the full voting record; set an int only to cap it.
+    vote_limit = config.get("vote_limit")
     workers = config.get("members_parallel", DEFAULT_MEMBERS_PARALLEL)
 
     svc = CongressService(api_key=config["_congress_api_key"])
 
+    # Built once and shared: resolving votes per member would re-parse every cached
+    # roll call 430 times. Must precede the parallel loop — the threads only read it.
+    print(f"  Indexing roll-call votes for sessions {sessions}...")
+    vote_index = svc.get_member_votes_index(congress, sessions)
+    total_votes = sum(len(v) for v in vote_index.values())
+    print(f"  Indexed {total_votes} member-votes across {len(vote_index)} members")
+
     def fn(candidate):
         return _process_one(
-            svc, candidate, congress=congress, session=session,
+            svc, candidate, congress=congress, vote_index=vote_index,
             sponsored_limit=sponsored_limit, cosponsored_limit=cosponsored_limit,
             vote_limit=vote_limit, force=force,
         )

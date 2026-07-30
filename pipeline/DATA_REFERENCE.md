@@ -1,6 +1,6 @@
-# Govstalker Pipeline Data Reference
+# WatchGov Pipeline Data Reference
 
-Govstalker tracks US House representatives across three dimensions: how they vote on legislation, where they stand on political topics (scored by LLM analysis of bill text), and who funds their campaigns. The pipeline collects data from Congress.gov and OpenFEC APIs, then aggregates everything into one JSON file per candidate for the frontend to consume.
+WatchGov tracks US House representatives across three dimensions: how they vote on legislation, where they stand on political topics (scored by LLM analysis of bill text), and who funds their campaigns. The pipeline collects data from Congress.gov and OpenFEC APIs, then aggregates everything into one JSON file per candidate for the frontend to consume.
 
 Data lives in `data/pipeline/output/`. The primary frontend data source is **s5_alignment** (one file per candidate, ~60-70KB each). **s3_bills** provides deep-dive bill data if you need a bill detail page. Pydantic models for all types are in `data/pipeline/models.py`.
 
