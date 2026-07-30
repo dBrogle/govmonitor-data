@@ -1,13 +1,13 @@
 """Download official congressional portraits for tracked members.
 
-Pulls each member's portrait (keyed by bioguide id) into the frontend's public/members/
-so the app serves them locally — more stable than hotlinking. Re-run after adding members.
+Pulls each member's portrait (keyed by bioguide id) into member_images/ (gitignored),
+one JPG per member. Re-run after adding members.
 
 Primary source is the unitedstates project's public-domain image set. Recently-seated
 members (e.g. special-election winners) are often missing there, so we fall back to
-Congress.gov's own member depiction (needs CONGRESS_API_KEY in data/.env).
+Congress.gov's own member depiction (needs CONGRESS_API_KEY in .env).
 
-    python data/scripts/download_member_images.py [--force]
+    python scripts/download_member_images.py [--force]
 
 Skips members whose image already exists unless --force is passed.
 """
@@ -22,18 +22,18 @@ import urllib.request
 from dotenv import load_dotenv
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
-PROFILES_GLOB = os.path.join(REPO, "data", "pipeline", "output", "s5_alignment", "*.json")
-DEST = os.path.join(REPO, "web_app", "frontend", "public", "members")
+DATA_ROOT = os.path.abspath(os.path.join(HERE, ".."))
+PROFILES_GLOB = os.path.join(DATA_ROOT, "pipeline", "output", "s5_alignment", "*.json")
+DEST = os.path.join(DATA_ROOT, "member_images")
 # 450x550 is the largest "sized" portrait; "original" and "225x275" also exist.
 CDN_URL = "https://unitedstates.github.io/images/congress/450x550/{bioguide}.jpg"
 
-load_dotenv(os.path.join(REPO, "data", ".env"))
+load_dotenv(os.path.join(DATA_ROOT, ".env"))
 CONGRESS_KEY = os.getenv("CONGRESS_API_KEY_1") or os.getenv("CONGRESS_API_KEY")
 
 
 def fetch_bytes(url: str) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": "govstalker"})
+    req = urllib.request.Request(url, headers={"User-Agent": "watchgov"})
     data = urllib.request.urlopen(req, timeout=30).read()
     if len(data) < 1000:
         raise ValueError("suspiciously small image")
@@ -45,7 +45,7 @@ def congress_depiction_url(bioguide: str) -> str | None:
     if not CONGRESS_KEY:
         return None
     url = f"https://api.congress.gov/v3/member/{bioguide}?format=json&api_key={CONGRESS_KEY}"
-    req = urllib.request.Request(url, headers={"User-Agent": "govstalker"})
+    req = urllib.request.Request(url, headers={"User-Agent": "watchgov"})
     data = json.load(urllib.request.urlopen(req, timeout=30))
     img = ((data.get("member") or {}).get("depiction") or {}).get("imageUrl")
     # The API hands back a thumbnail (e.g. ..._200.jpg); dropping the size suffix

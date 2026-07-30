@@ -70,12 +70,16 @@ def _analyze_one(
         # Non-fatal — analysis still valid without summary
 
     result = analysis.model_dump()
+    # Stamp provenance so every scored file records exactly what produced it. Without this,
+    # recovering which model/temperature made the dataset takes log-and-git forensics.
+    llm = getattr(svc, "llm_service", None)
+    result["llm_model"] = getattr(llm, "model", None)
+    result["temperature"] = getattr(llm, "temperature", None)
 
     out = output_path(congress, bill_type, bill_number)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, indent=2, default=str))
 
-    nonzero = [s for s in analysis.scores if s.score != 0]
     return tag, result, None
 
 

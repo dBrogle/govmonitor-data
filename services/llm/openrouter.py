@@ -19,17 +19,22 @@ class OpenRouterService(LLMService):
     Uses response_format with json_schema to enforce structured output.
     """
 
-    def __init__(self, api_key: str, model: str = "x-ai/grok-4.3"):
+    def __init__(self, api_key: str, model: str = "x-ai/grok-4.3", temperature: float = 0.0):
         self.api_key = api_key
         self.model = model
+        # Temperature 0 by default, owned here as the single source of truth so every scored
+        # artifact is as reproducible as the model allows. Stamped into each analysis output.
+        self.temperature = temperature
 
     def structured_completion(
         self,
         system_prompt: str,
         user_prompt: str,
         response_model: Type[T],
-        temperature: float = 0.0,
+        temperature: float | None = None,
     ) -> T:
+        # Fall back to the service-level temperature (0.0) unless a call explicitly overrides it.
+        temperature = self.temperature if temperature is None else temperature
         json_schema = response_model.model_json_schema()
 
         payload = {

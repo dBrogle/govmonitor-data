@@ -1,3 +1,4 @@
+# Runtime
 annotated-types==0.7.0
 certifi==2026.2.25
 charset-normalizer==3.4.5
@@ -9,3 +10,6 @@ requests==2.32.5
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 urllib3==2.6.3
+
+# Tests (see tests/ — the bill-scoring suite also needs OPENROUTER_API_KEY and hits the network)
+pytest==9.0.3
