@@ -1,6 +1,6 @@
 # WatchGov Pipeline Data Reference
 
-WatchGov tracks U.S. House representatives across three dimensions: how they vote on and sponsor legislation, where they stand on 19 policy topics (scored by LLM analysis of bill text), and who funds their campaigns. The pipeline collects data from the Congress.gov and OpenFEC APIs, scores bills with an LLM, and aggregates everything into one JSON file per member for downstream consumers.
+WatchGov tracks U.S. House representatives across three dimensions: how they vote on and sponsor legislation, where they stand on 5 policy topics (scored by LLM analysis of bill text), and who funds their campaigns. The pipeline collects data from the Congress.gov and OpenFEC APIs, scores bills with an LLM, and aggregates everything into one JSON file per member for downstream consumers.
 
 Data lives in [`pipeline/output/`](output/). The primary data source is **`s5_alignment`** (one self-contained file per member). **`s3_bills`** provides deep-dive detail for individual bills. Pydantic models for the intermediate types are in [`pipeline/models.py`](models.py); note that `s5_alignment` is assembled as a plain dict in [`stages/s5_alignment.py`](stages/s5_alignment.py), so *this document is the authoritative schema for that file*.
 
@@ -119,11 +119,13 @@ salience      = denominator / Σ(all topics' denominator)
 
 `K` (evidence shrinkage) pulls thinly-evidenced topics toward neutral, so a member who barely engages a topic can't show a full-strength bar; well-evidenced topics are ~unaffected. Topics are sorted by `|alignment|` so the strongest, best-evidenced stances lead.
 
-Every topic has its own `minus_one_desc` / `plus_one_desc` poles. By convention **−1 = left-leaning, +1 = right-leaning** (e.g. immigration: −1 "More immigration" / +1 "Secure Borders"; taxation: −1 "Higher taxes" / +1 "Lower taxes"). Poles are defined in [`services/congress/topics.py`](../services/congress/topics.py).
+Every topic has its own `minus_one_desc` / `plus_one_desc` poles. By convention **−1 = left-leaning, +1 = right-leaning** (e.g. taxation: −1 "Higher taxes" / +1 "Lower taxes"). Poles are defined in [`services/congress/topics.py`](../services/congress/topics.py).
 
-### The 19 topic slugs
+### The 5 topic slugs
 
-`government_spending`, `taxation`, `healthcare`, `gun_control`, `immigration`, `abortion`, `military_defense`, `climate_environment`, `social_safety_net`, `education`, `drug_policy`, `criminal_justice`, `trade_policy`, `national_debt`, `lgbtq_rights`, `foreign_aid`, `voting_elections`, `tech_privacy`, `labor_unions`
+`military_defense`, `taxation`, `government_spending`, `trade_policy`, `foreign_aid`
+
+The v1 topic set is deliberately narrow. `government_spending` absorbs national debt (a bill's `national_debt` score folds into it via `TOPIC_ALIASES` in [`stages/s5_alignment.py`](stages/s5_alignment.py)). Older `s4_analysis` files still carry scores for previously-tracked topics; `s5` simply ignores any slug not in the current set, so widening the set later is a one-line change in `topics.py`.
 
 ---
 

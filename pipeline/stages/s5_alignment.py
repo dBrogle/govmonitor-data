@@ -38,6 +38,11 @@ WEIGHT_COSPONSOR = 0.4
 # Tunable — raise for a more conservative (more-evidence-required) scale.
 K_SHRINKAGE = 1.0
 
+# Topics folded into another for the v1 topic set. National debt is treated as part of
+# government spending — the same left/right axis (more spending / deficit tolerance = −1,
+# restraint = +1) — so a bill's national_debt score contributes to government_spending.
+TOPIC_ALIASES = {"national_debt": "government_spending"}
+
 
 def _load_vote_questions() -> dict[tuple[int, int], str]:
     """Map (session, vote_number) → substantive voteQuestion from the cached vote headers.
@@ -237,7 +242,7 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
             w, sign = c["weight"], c["sign"]
 
             for score_item in analysis.get("scores", []):
-                slug = score_item["topic_slug"]
+                slug = TOPIC_ALIASES.get(score_item["topic_slug"], score_item["topic_slug"])
                 score = score_item["score"]
                 # Skip 0s and topics since removed from topics.py (cached files may carry them).
                 if score == 0 or slug not in TOPICS_BY_SLUG:
