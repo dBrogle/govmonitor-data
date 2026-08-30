@@ -36,10 +36,10 @@
     "votes_analyzed": 325,
     "votes_without_analysis": 112,
     "truth_score": {
-      "score": 49,
+      "score": 72,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:42:36+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:18:45+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -355,8 +355,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "I voted to block taxpayer funding to Israel in the 2027 National Security, Department of State, and Related Programs Appropriations Act. Key to my vote was the elimination of $3.3 billion in Foreign Military Financing to Israel.",
-          "reasoning": "The statement explicitly supports blocking specific military financing and aid.",
+          "emphasis": 0.4,
+          "quote": "I voted to block taxpayer funding to Israel in the 2027 National Security, Department of State, and Related Programs Appropriations Act.",
+          "reasoning": "The statements explicitly oppose additional offensive military aid spending and criticize war-related Pentagon funding.",
           "source": "https://kamlager-dove.house.gov"
         }
       },
@@ -561,12 +562,7 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Americans do not want to see their tax dollars thrown at another endless war, they want to see them invested back into their pockets and communities.",
-          "reasoning": "The statement indicates preference for returning funds to taxpayers rather than additional spending.",
-          "source": "https://kamlager-dove.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -758,7 +754,13 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.35,
+          "quote": "I voted to block taxpayer funding to Israel in the 2027 National Security, Department of State, and Related Programs Appropriations Act.",
+          "reasoning": "Explicit vote and statement opposing foreign military financing aid to Israel.",
+          "source": "https://kamlager-dove.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2623,9 +2625,10 @@
           }
         ],
         "stated": {
-          "score": 1.0,
-          "quote": "Now Republicans want to give Trump and Hegseth more money for a botched war that is making life more expensive? It\u2019s a hell no from me.",
-          "reasoning": "The statement opposes additional government spending on military/war efforts.",
+          "score": -1.0,
+          "emphasis": 0.5,
+          "quote": "These investments in our Los Angeles community create jobs with better pay, make us safer, and strengthen our communities,\u201d said Congresswoman Kamlager-Dove. \u201cI am proud to have fought for this funding that directly benefits the people of my district.",
+          "reasoning": "Multiple releases celebrate securing federal community project funding while opposing war-related spending increases.",
           "source": "https://kamlager-dove.house.gov"
         }
       },

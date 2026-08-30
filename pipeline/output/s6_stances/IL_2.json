@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "K000385",
   "website": "https://robinkelly.house.gov/",
-  "fetched_at": "2026-08-30T07:46:44+00:00",
+  "fetched_at": "2026-08-30T14:23:19+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending in the text."
+      "reasoning": "No statements address military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tax rates or taxation policy appear in the text."
+      "reasoning": "No statements address tax rates or taxation policy."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "Rep. Kelly Condemns Republican Budget Cuts to Medicaid In marathon committee markup, Rep. Kelly protects Medicaid from Republican $880 billion cut",
-      "reasoning": "Opposition to Republican cuts on Medicaid and the Farm Bill indicates support for maintaining or increasing government spending."
+      "reasoning": "Opposition to Medicaid cuts and support for federal investments in health, education, and agriculture indicate preference for more government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.15,
       "stated_score": 1.0,
-      "quote": "Developing an international trade agenda that expands foreign markets for Illinois commodities while protecting labor, health and safety regulations;",
-      "reasoning": "Support for expanding foreign markets for commodities indicates a pro-free trade position."
+      "quote": "Developing an international trade agenda that expands foreign markets for Illinois commodities while protecting labor, health and safety regulations",
+      "reasoning": "Explicit support for expanding foreign markets for commodities indicates a free trade stance."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending in the text."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

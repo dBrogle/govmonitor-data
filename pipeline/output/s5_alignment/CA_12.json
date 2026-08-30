@@ -26,10 +26,10 @@
     "votes_analyzed": 318,
     "votes_without_analysis": 102,
     "truth_score": {
-      "score": 81,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:40:47+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 75,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:17:11+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -356,8 +356,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.7,
           "quote": "I voted HELL NO on the Fiscal Year 2027 National Defense Authorization Act. Our national security depends on more than military strength.",
-          "reasoning": "The statement explicitly opposes the NDAA and downplays military strength as the core of national security.",
+          "reasoning": "The member explicitly voted against the NDAA and downplayed military strength as the core of national security.",
           "source": "https://simon.house.gov/"
         }
       },
@@ -743,7 +744,13 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.5,
+          "quote": "Congresswoman Simon Votes Against Republican Foreign Aid Budget Bill",
+          "reasoning": "The member voted against the foreign aid appropriations bill, indicating opposition to the proposed spending level.",
+          "source": "https://simon.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",

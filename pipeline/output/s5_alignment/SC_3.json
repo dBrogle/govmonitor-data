@@ -26,10 +26,10 @@
     "votes_analyzed": 329,
     "votes_without_analysis": 109,
     "truth_score": {
-      "score": 62,
+      "score": 65,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:58:45+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:35:22+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -334,8 +334,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "National defense and homeland security are, and must remain, front and center to keep America and her people safe.",
-          "reasoning": "Text emphasizes national defense as front and center and supports stronger Air Force fleet.",
+          "emphasis": 0.8,
+          "quote": "Congresswoman Sheri Biggs Leads Letter Calling for Stronger Air Force Fighter Fleet",
+          "reasoning": "Text repeatedly emphasizes strengthening national defense and military support through specific legislation and calls for enhanced capabilities.",
           "source": "https://sheribiggs.house.gov/"
         }
       },
@@ -2175,8 +2176,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "cutting wasteful spending",
-          "reasoning": "Text repeatedly calls for fiscal responsibility and cutting wasteful spending to address debt.",
+          "emphasis": 0.7,
+          "quote": "Bidenomics fueled inflation, and the associated out-of-control debt harms the next generation. Fiscal responsibility, accountability, and transparency of citizens' hard-earned tax dollars is needed now more than ever.",
+          "reasoning": "Text explicitly advocates fiscal responsibility, cutting wasteful spending, and reducing out-of-control debt.",
           "source": "https://sheribiggs.house.gov/"
         }
       },
@@ -2328,8 +2330,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Put America first by rescinding USAID funds",
-          "reasoning": "Text advocates rescinding USAID funds to put America first.",
+          "emphasis": 0.4,
+          "quote": "Letter: Put America first by rescinding USAID funds",
+          "reasoning": "Text includes a direct call to rescind USAID funds in favor of putting America first.",
           "source": "https://sheribiggs.house.gov/"
         }
       },

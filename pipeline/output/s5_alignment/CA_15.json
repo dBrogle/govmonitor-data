@@ -36,10 +36,10 @@
     "votes_analyzed": 300,
     "votes_without_analysis": 116,
     "truth_score": {
-      "score": 65,
+      "score": 64,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:41:02+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:17:26+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -245,8 +245,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.4,
           "quote": "I support a progressive, equitable tax code that keeps costs down for working families while ensuring that large corporations and the wealthiest 1% pay their fair share.",
-          "reasoning": "Explicit support for progressive tax code requiring wealthy and corporations to pay more indicates preference for higher taxes.",
+          "reasoning": "Explicit support for progressive taxation that raises revenue from corporations and the wealthy indicates a preference for higher taxes on those groups.",
           "source": "https://kevinmullin.house.gov"
         }
       },
@@ -2229,8 +2230,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "I have supported making greater investments in our pre-kindergarten, K-12 schools, and universities.",
-          "reasoning": "Multiple statements advocating greater investments and higher funding for programs show support for increased government spending.",
+          "emphasis": 0.6,
+          "quote": "I advocated for higher funding for many international aid programs including the Global Fund to Fight AIDS, the Global Equality Fund, the Nita M. Lowey Middle East Partnership for Peace Program, the USAID Inclusive Development Hub\u2019s Protection of LGBTQI+ Persons Program, and other programs that provide assistance for vulnerable communities.",
+          "reasoning": "Repeated calls for robust or higher funding across education, veterans, foreign aid, and climate programs demonstrate advocacy for increased government spending.",
           "source": "https://kevinmullin.house.gov"
         }
       },
@@ -2607,8 +2609,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.5,
           "quote": "In addition to defending democracy and human rights, we have a moral duty to provide humanitarian, economic, and developmental foreign aid.",
-          "reasoning": "Direct statement of moral duty to provide foreign aid plus advocacy for higher funding indicates support for more foreign aid spending.",
+          "reasoning": "Direct endorsement of a moral duty to provide foreign aid combined with advocacy for higher funding shows support for more foreign aid spending.",
           "source": "https://kevinmullin.house.gov"
         }
       }

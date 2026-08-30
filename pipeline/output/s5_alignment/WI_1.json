@@ -56,10 +56,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 128,
     "truth_score": {
-      "score": 58,
+      "score": 50,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T08:02:44+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:39:47+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -556,8 +556,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "we must protect good paying jobs by keeping the government's hands off of small businesses and maintaining tax and regulatory relief",
-          "reasoning": "Text explicitly endorses maintaining tax relief, indicating support for lower taxes.",
+          "emphasis": 0.4,
+          "quote": "we must protect good paying jobs by keeping the government's hands off of small businesses and maintaining tax and regulatory relief.",
+          "reasoning": "Explicit support for tax relief indicates preference for lower taxes.",
           "source": "https://steil.house.gov"
         }
       },
@@ -2128,8 +2129,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Washington has a spending problem and we must act to restore fiscal responsibility",
-          "reasoning": "Text directly criticizes excessive spending and calls for fiscal responsibility, indicating support for less spending.",
+          "emphasis": 0.7,
+          "quote": "Washington has a spending problem and we must act to restore fiscal responsibility.",
+          "reasoning": "Repeated emphasis on fiscal responsibility and spending problem shows clear stance for less spending.",
           "source": "https://steil.house.gov"
         }
       },
@@ -2358,8 +2360,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "I strongly supported the United States-Mexico-Canada Trade Agreement (USMCA) and worked to get it passed and signed into law. USMCA increases dairy farmers' access to Canada's markets, creates a level playing field for American agricultural exports",
-          "reasoning": "Text praises a free trade agreement for expanding market access, indicating support for free trade.",
+          "reasoning": "Strong endorsement of USMCA demonstrates support for free trade agreements.",
           "source": "https://steil.house.gov"
         }
       },

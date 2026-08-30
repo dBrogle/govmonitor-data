@@ -3,7 +3,7 @@
   "district": 22,
   "bioguide_id": "F000462",
   "website": "https://frankel.house.gov",
-  "fetched_at": "2026-08-30T07:45:05+00:00",
+  "fetched_at": "2026-08-30T14:21:43+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on U.S. military or defense spending levels."
+      "reasoning": "No statement on U.S. military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "I have been proud to support legislation to lower the price of prescription drugs, make home ownership and rent more affordable, and lower taxes for families with children.",
-      "reasoning": "Explicit support for lowering taxes for families indicates a pro-lower-taxes position."
+      "quote": "lower taxes for families with children",
+      "reasoning": "Explicit support for lowering taxes."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "As a Member of the House Appropriations Committee, I have fought for increased funding for child care programs, including the Child Care and Development Block Grant (CCDBG) and Head Start, and Home and Community-Based Services.",
-      "reasoning": "Advocacy for increased funding across multiple programs shows support for more government spending."
+      "quote": "I have fought for increased funding for child care programs, including the Child Care and Development Block Grant (CCDBG) and Head Start, and Home and Community-Based Services",
+      "reasoning": "Repeated advocacy for expanded program funding and opposition to cuts."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade."
+      "reasoning": "No statement on trade policy or tariffs."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
+      "emphasis": 0.3,
       "stated_score": -1.0,
-      "quote": "In Congress, as Ranking Member of the National Security, Department of State, and Related Programs Appropriations Subcommittee, I support continued security assistance to Israel and robust funding for Israel\u2019s missile defense capabilities.",
-      "reasoning": "Support for continued and robust security assistance and emergency aid to Israel indicates backing for more foreign aid spending."
+      "quote": "I support continued security assistance to Israel and robust funding for Israel\u2019s missile defense capabilities... I have supported emergency aid to Israel",
+      "reasoning": "Explicit support for increased aid and assistance to Israel."
     }
   ]
 }

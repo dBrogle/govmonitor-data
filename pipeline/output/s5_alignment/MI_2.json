@@ -76,10 +76,10 @@
     "votes_analyzed": 335,
     "votes_without_analysis": 130,
     "truth_score": {
-      "score": 65,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:50:27+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 55,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:26:59+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -439,8 +439,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Selfridge is a critical asset to our national security and a major contributor to Michigan's economy. President Trump rightly recognizes its role in our keeping our country safe and committed a new fighter mission to the base last year. However, there is work to be done to update the base to fit the needs of the new F-15EX fighters. As the only House appropriator from our state, I will always work with my Michigan colleagues to bring critical funding like this to the state to improve our economy and keep our country safe",
-          "reasoning": "Text explicitly supports securing additional federal funding for a military base to enhance national security.",
+          "emphasis": 0.4,
+          "quote": "Selfridge is a critical asset to our national security and a major contributor to Michigan's economy. ... I will always work with my Michigan colleagues to bring critical funding like this to the state to improve our economy and keep our country safe",
+          "reasoning": "Text supports increased military-related funding for bases and national security assets.",
           "source": "https://moolenaar.house.gov/"
         }
       },
@@ -2077,8 +2078,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Congress should lead by example to reduce federal spending and the national debt.",
-          "reasoning": "Text explicitly calls for reducing federal spending and controlling the national debt.",
+          "emphasis": 0.9,
+          "quote": "Excessive spending in Washington has been unchecked for too long, and as a result, our nation faces over $30 trillion in debt. Plain and simple, our obligations are growing faster than our ability to pay them. We must find a way to get the federal government's spending under control",
+          "reasoning": "Repeated calls for reduced federal spending and fiscal responsibility to control debt.",
           "source": "https://moolenaar.house.gov/"
         }
       },
@@ -2274,8 +2276,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "That is why I supported tax reform that will let hardworking Michigan families keep more of their own money.",
-          "reasoning": "Text states support for tax reform that reduces taxes to allow families to keep more money.",
+          "emphasis": 0.7,
+          "quote": "As a father of six, I understand the importance of every dollar in raising a family. That is why I supported tax reform that will let hardworking Michigan families keep more of their own money.",
+          "reasoning": "Explicit support for tax cuts and extending 2017 tax reform to lower taxes.",
           "source": "https://moolenaar.house.gov/"
         }
       },
@@ -2727,7 +2730,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "Moolenaar Leads Bipartisan Bill to Stop China From Purchasing U.S. Farmland ... Food security is national security, and we cannot allow foreign adversaries like China to buy up American farmland",
+          "reasoning": "Advocates protectionist measures against foreign adversaries like China on farmland and projects.",
+          "source": "https://moolenaar.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

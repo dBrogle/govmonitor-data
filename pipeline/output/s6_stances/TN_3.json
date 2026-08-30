@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "F000459",
   "website": "https://fleischmann.house.gov/",
-  "fetched_at": "2026-08-30T07:59:06+00:00",
+  "fetched_at": "2026-08-30T14:36:08+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,28 +26,32 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on overall military spending levels."
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "The defense portion of the allocation is $35 billion, and the non-defense portion of the allocation is $23.5 billion. The bill prioritizes funding for agencies and programs that safeguard U.S. national security, unleash American energy dominance, and advance economic prosperity.",
+      "reasoning": "The member highlights and supports increased defense allocations in appropriations legislation focused on national security."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "H.R. 1 transformed our outdated and overcomplicated tax code into a fair and simple system that keeps big government out of the pockets of hardworking Tennesseans, while also allowing families and business owners to keep more of their hard-earned dollars.",
-      "reasoning": "Explicit support for tax cuts via the Tax Cuts and Jobs Act demonstrates a position favoring lower taxes."
+      "quote": "H.R. 1 transformed our outdated and overcomplicated tax code into a fair and simple system that keeps big government out of the pockets of hardworking Tennesseans, while also allowing families and business owners to keep more of their hard-earned dollars... our corporate tax was reduced from 35% to 21%... a typical family of four in Tennessee will see a tax cut of just over $2,000.",
+      "reasoning": "The member explicitly praises and endorses major tax cuts that reduce rates and increase take-home pay."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Mentions of debt exist but no explicit stance on increasing or decreasing overall government spending."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Much of this is due to reckless government policies which have pushed our nation into more than $40 trillion in debt",
+      "reasoning": "The member attributes national debt to reckless government policies, indicating opposition to higher spending levels."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address trade policy, tariffs, or free trade."
@@ -55,9 +59,10 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Foreign aid is mentioned only in terms of focusing on national security, without stating a position on spending levels."
+      "reasoning": "The foreign affairs section discusses aid only in general terms tied to national security without stating a position on spending levels."
     }
   ]
 }

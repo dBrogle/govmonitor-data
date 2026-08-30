@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "G000576",
   "website": "https://grothman.house.gov",
-  "fetched_at": "2026-08-30T08:03:11+00:00",
+  "fetched_at": "2026-08-30T14:40:05+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,38 +26,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear statement on military spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "Grothman Leads Wisconsin Delegation in Protecting Marine Corps Readiness",
+      "reasoning": "Text urges protecting Marine Corps readiness, indicating support for military capabilities."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "The less the government takes from its citizens, the more money Americans can use to provide for their families, save for the future and grow our economy.",
-      "reasoning": "Explicit support for tax cuts and lower government revenue collection."
+      "reasoning": "Explicitly endorses lower taxes via support for Tax Cuts and Jobs Act and reduced government take."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "As your representative in Washington, I will work to cut spending, root out waste and balance the federal budget.",
-      "reasoning": "Direct call to reduce federal spending and balance budget."
+      "reasoning": "Directly states goal to cut spending and reduce debt/deficit."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Mentions export markets but no position on tariffs or free trade."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "feed the world through our strong export markets",
+      "reasoning": "Highlights strong export markets for agriculture, implying support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

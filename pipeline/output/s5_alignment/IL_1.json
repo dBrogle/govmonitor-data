@@ -36,10 +36,10 @@
     "votes_analyzed": 296,
     "votes_without_analysis": 96,
     "truth_score": {
-      "score": 59,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:46:42+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 52,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:23:20+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -232,7 +232,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.2,
+          "quote": "This legislation replaces the concept of a static minimum wage with a \"stability wage\" that is sufficient to cover basic living expenses such as housing, healthcare, and food.",
+          "reasoning": "The text endorses the American Stability Act for delivering tax breaks to the working class.",
+          "source": "https://jonathanjackson.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -1982,8 +1988,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "a proposal to invest over $500 billion in federal programs that fund the construction of affordable and deeply affordable housing",
-          "reasoning": "Multiple explicit endorsements of large new federal spending programs indicate support for more government spending.",
+          "emphasis": 0.4,
+          "quote": "Additionally, he cosponsored the Community Housing Act, a proposal to invest over $500 billion in federal programs that fund the construction of affordable and deeply affordable housing.",
+          "reasoning": "Multiple passages endorse large new federal investments in housing, education, and health programs.",
           "source": "https://jonathanjackson.house.gov"
         }
       },
@@ -2371,8 +2378,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The illegal U.S. blockade of fuel to Cuba\u201490 miles south of the United States\u2014adds to the longest embargo in world history and is causing untold suffering to the Cuban people. ... It must stop immediately.",
-          "reasoning": "Explicit call to end the Cuba embargo and blockade demonstrates opposition to protectionist trade measures.",
+          "emphasis": 0.15,
+          "quote": "The illegal U.S. blockade of fuel to Cuba\u201490 miles south of the United States\u2014adds to the longest embargo in world history and is causing untold suffering to the Cuban people... It must stop immediately.",
+          "reasoning": "The Cuba delegation statement condemns the embargo and calls for its immediate end.",
           "source": "https://jonathanjackson.house.gov"
         }
       }

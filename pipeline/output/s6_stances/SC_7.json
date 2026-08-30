@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "F000478",
   "website": "https://fry.house.gov",
-  "fetched_at": "2026-08-30T07:59:01+00:00",
+  "fetched_at": "2026-08-30T14:35:34+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -22,28 +22,32 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "stated_score": 1.0,
-      "quote": "We need leadership in our military that prioritizes bolstering our military, not DEI initiatives.",
-      "reasoning": "The statement explicitly calls for bolstering the military, indicating support for increased defense resources."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "This legislation would also prevent the IRS from using its $80 billion increase to target Americans for the purpose of squeezing even more dollars from the pockets of hard-working Americans.",
-      "reasoning": "The text opposes measures that would extract more tax revenue from Americans, favoring lower effective taxation."
+      "reasoning": "Explicit opposition to IRS expansion aimed at collecting more revenue from taxpayers indicates support for lower taxes."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "We must cut wasteful spending to fight inflation.",
-      "reasoning": "The statement directly advocates cutting wasteful spending to address economic issues."
+      "reasoning": "Direct calls to cut wasteful spending and end out-of-control federal spending demonstrate a clear position favoring less government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address trade policy, tariffs, or free trade."
@@ -51,6 +55,7 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address foreign aid spending."

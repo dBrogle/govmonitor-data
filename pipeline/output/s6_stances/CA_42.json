@@ -3,7 +3,7 @@
   "district": 42,
   "bioguide_id": "G000598",
   "website": "https://robertgarcia.house.gov",
-  "fetched_at": "2026-08-30T07:42:51+00:00",
+  "fetched_at": "2026-08-30T14:18:52+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on US military or defense spending."
+      "reasoning": "No clear statement on US domestic military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on taxation."
+      "reasoning": "No statements on tax rates or policy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear general position stated on government spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "This $255 million investment, split between the federal government and the Port of Long Beach, will expand the port\u2019s main channel, strengthen America\u2019s supply chain, and reduce pollution from ships waiting to dock outside the harbor.",
+      "reasoning": "Explicit support for a major federal infrastructure investment indicates preference for more government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "I will continue working to secure supply chains against destructive tariffs",
-      "reasoning": "Statement explicitly opposes tariffs, indicating support for free trade."
+      "quote": "I will continue working to secure supply chains against destructive tariffs, protect competition in the marketplace, expand access to capital, and safeguard the federal services and programs that so many small businesses rely on.",
+      "reasoning": "Opposition to tariffs as 'destructive' signals support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Today, I am voting yes on an amendment to block $3.3 billion in American taxpayer dollars for Benjamin Netanyahu and the Israeli military.",
-      "reasoning": "Vote to withhold foreign military financing shows support for less foreign aid spending."
+      "reasoning": "Vote to withhold foreign military financing demonstrates preference for less foreign aid spending."
     }
   ]
 }

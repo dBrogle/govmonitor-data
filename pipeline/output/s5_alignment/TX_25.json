@@ -86,10 +86,10 @@
     "votes_analyzed": 320,
     "votes_without_analysis": 113,
     "truth_score": {
-      "score": 67,
+      "score": 69,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T08:00:33+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:37:33+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -394,6 +394,7 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "I have been an ardent advocate for expanding funding for the military and will continue working to deliver the resources needed for our servicemen and women to remain the greatest fighting force in the world.",
           "reasoning": "Text explicitly advocates expanding military funding and delivering highest defense spending.",
           "source": "https://williams.house.gov"
@@ -580,7 +581,8 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The bottom line is that you know how to spend your money better than the government does. I will always fight for hardworking families and workers to have certainty for the future and to put more money back into your pockets.",
+          "emphasis": 0.85,
+          "quote": "As Chairman of the House Committee on Small Business, I am fighting each day to lower taxes and cut the burdensome regulations that hurt small businesses and stifle economic growth.",
           "reasoning": "Text repeatedly states commitment to lowering taxes and passing tax cuts.",
           "source": "https://williams.house.gov"
         }
@@ -2141,8 +2143,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.75,
           "quote": "America does not have a revenue problem - we have a spending problem. I am committed to fighting for responsible spending cuts so that hardworking families never have to choose between keeping the lights on or putting food on the table.",
-          "reasoning": "Text identifies spending as the problem and commits to responsible spending cuts.",
+          "reasoning": "Text identifies spending as the problem and commits to spending cuts.",
           "source": "https://williams.house.gov"
         }
       },

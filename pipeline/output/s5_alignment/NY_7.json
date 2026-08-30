@@ -186,10 +186,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 118,
     "truth_score": {
-      "score": 51,
-      "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:55:09+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 55,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:31:38+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -741,8 +741,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.2,
           "quote": "She supports initiatives to limit the impact that rising energy costs and regulatory and tax burdens have on small businesses.",
-          "reasoning": "Text explicitly supports reducing tax burdens on small businesses.",
+          "reasoning": "The text explicitly supports reducing tax burdens on small businesses.",
           "source": "https://velazquez.house.gov"
         }
       },
@@ -2445,8 +2446,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "She supports bold, meaningful action to address this problem.",
-          "reasoning": "Text repeatedly endorses increased federal spending on housing, healthcare, environment, and Puerto Rico relief.",
+          "emphasis": 0.6,
+          "quote": "It is unacceptable that the United States of America is the only developed country in the world that does not have a universal healthcare system for its citizens.",
+          "reasoning": "The text repeatedly advocates for expanded federal funding and programs in housing, healthcare, and Puerto Rico recovery.",
           "source": "https://velazquez.house.gov"
         }
       },
@@ -2675,8 +2677,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.15,
           "quote": "She voted against the Trans-Pacific Partnership trade deal, which would accelerate a \"race to the bottom\" for environmental standards.",
-          "reasoning": "Text states opposition to a major free trade agreement.",
+          "reasoning": "The text states opposition to a major free-trade agreement.",
           "source": "https://velazquez.house.gov"
         }
       },
@@ -2859,12 +2862,7 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Vel\u00e1zquez Demands Answers on Trump\u2019s $20 Billion Bailout for Argentina",
-          "reasoning": "Text shows opposition to providing $20 billion in support to Argentina.",
-          "source": "https://velazquez.house.gov"
-        }
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -46,10 +46,10 @@
     "votes_analyzed": 327,
     "votes_without_analysis": 121,
     "truth_score": {
-      "score": 65,
+      "score": 68,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:48:06+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:43+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -343,8 +343,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The annual bill provides critical resources for U.S. national defense, military readiness, and support for the nation\u2019s service members.",
-          "reasoning": "Text explicitly supports advancing NDAA to provide critical resources for national defense and military readiness.",
+          "emphasis": 0.85,
+          "quote": "U.S. Representative Tracey Mann (KS-01) voted to advance H.R. 8800, the National Defense Authorization Act for Fiscal Year 2027 (NDAA). The annual bill provides critical resources for U.S. national defense, military readiness, and support for the nation\u2019s service members.",
+          "reasoning": "Multiple statements explicitly endorse NDAA bills that provide critical resources and strengthen national defense, indicating support for more military spending.",
           "source": "https://mann.house.gov"
         }
       },
@@ -2036,8 +2037,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.65,
           "quote": "We understand all too well the pain that reckless federal spending can have on everyday Americans, and how overregulation can exacerbate costs for American families.",
-          "reasoning": "Text criticizes reckless federal spending and calls for reining in wasteful spending.",
+          "reasoning": "Statements criticize reckless federal spending and call for reining in wasteful spending, indicating preference for less government spending.",
           "source": "https://mann.house.gov"
         }
       },
@@ -2255,8 +2257,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "Congress needs to support policies that restore our economic strength by rolling back unnecessary red tape, lowering taxes, and reining in wasteful and fraudulent spending once and for all.",
-          "reasoning": "Text explicitly calls for lowering taxes as part of economic policy.",
+          "reasoning": "Text directly advocates lowering taxes as part of restoring economic strength.",
           "source": "https://mann.house.gov"
         }
       },

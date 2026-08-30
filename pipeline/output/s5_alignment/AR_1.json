@@ -96,10 +96,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 103,
     "truth_score": {
-      "score": 38,
+      "score": 41,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:39:07+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:20+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2026,8 +2026,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "he is also a conservative that believes we can reduce the dependence of farmers on the federal government through opening new markets and through better risk management tools.",
-          "reasoning": "The text explicitly advocates reducing farmers' dependence on federal government support.",
+          "emphasis": 0.25,
+          "quote": "we need to leverage new technologies that allow small towns the access they need to crucial services without overspending",
+          "reasoning": "Text explicitly advocates keeping spending under control and reducing farmer dependence on federal government.",
           "source": "https://crawford.house.gov/"
         }
       },
@@ -2662,8 +2663,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Congressman Crawford doesn't believe it makes sense to deny our farmers and ranchers access to Cuban markets, particularly when our continued insistence on maintaining the embargo yields the same lackluster result.",
-          "reasoning": "The text explicitly supports easing trade restrictions to expand market access.",
+          "emphasis": 0.35,
+          "quote": "It has become clear over the last several decades that the embargo has not weakened the regime but instead stifled American business opportunities.",
+          "reasoning": "Text criticizes Cuba embargo for limiting US exports and pushes incremental policy changes to expand agricultural trade.",
           "source": "https://crawford.house.gov/"
         }
       }

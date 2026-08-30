@@ -46,10 +46,10 @@
     "votes_analyzed": 338,
     "votes_without_analysis": 121,
     "truth_score": {
-      "score": 55,
+      "score": 58,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:00:00+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:36:55+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -590,8 +590,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Pfluger: Americans asked for lower prices, Democrats delivered higher taxes",
-          "reasoning": "The statement criticizes higher taxes, indicating a clear preference for lower taxes.",
+          "reasoning": "Explicit criticism of higher taxes indicates support for lower taxes.",
           "source": "https://pfluger.house.gov"
         }
       },
@@ -2173,8 +2174,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "American-made energy powers more people, protects more people, and lifts more people out of poverty than government handouts.",
-          "reasoning": "The statement contrasts energy production favorably against government handouts, indicating support for less government spending.",
+          "emphasis": 0.25,
+          "quote": "Pfluger votes to fix national debt crisis",
+          "reasoning": "Vote to address national debt crisis signals preference for reduced government spending.",
           "source": "https://pfluger.house.gov"
         }
       },

@@ -56,10 +56,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 117,
     "truth_score": {
-      "score": 22,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T08:02:39+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 28,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:40:30+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -243,8 +243,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "The Gas Prices Relief Act of 2026 would suspend the federal gas tax to cut nearly 20 cents per gallon for the rest of the year",
-          "reasoning": "Explicit support for suspending the federal gas tax to lower prices indicates position favoring lower taxes.",
+          "reasoning": "Text explicitly supports suspending federal gas tax to lower prices.",
           "source": "https://schrier.house.gov"
         }
       },
@@ -2170,7 +2171,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.2,
+          "quote": "voted to pass the National Defense Authorization Act (NDAA), an annual piece of legislation that authorizes defense programs to maintain military readiness and increase national security",
+          "reasoning": "Text explicitly supports passing NDAA to maintain military readiness and national security.",
+          "source": "https://schrier.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",

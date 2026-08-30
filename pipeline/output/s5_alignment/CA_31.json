@@ -38,8 +38,8 @@
     "truth_score": {
       "score": 30,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:42:08+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:18:32+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -525,8 +525,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "voted yes on the Fiscal Year 2026 National Defense Authorization Act. The bipartisan legislation included a critical investment in southern California manufacturers, a 3.8% raise for servicemembers, support for our allies abroad, and much needed oversight to hold Secretary Hegseth accountable.",
-          "reasoning": "Text explicitly endorses NDAA passage with investments and raises for servicemembers.",
+          "emphasis": 0.8,
+          "quote": "Last night, Rep. Gil Cisneros voted yes on the Fiscal Year 2026 National Defense Authorization Act. The bipartisan legislation included a critical investment in southern California manufacturers, a 3.8% raise for servicemembers, support for our allies abroad, and much needed oversight to hold Secretary Hegseth accountable.",
+          "reasoning": "The text repeatedly endorses the NDAA with explicit support for increased defense investments and servicemember raises.",
           "source": "https://cisneros.house.gov/"
         }
       },

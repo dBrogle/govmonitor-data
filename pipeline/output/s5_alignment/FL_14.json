@@ -116,10 +116,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 118,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:44:49+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 69,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:21:17+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2077,7 +2077,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.45,
+          "quote": "The Tampa Bay Area is transforming thanks to historic legislation, federal investments from the Bipartisan Infrastructure Law and Inflation Reduction Act and Community Project Funding I champion in the Congress.",
+          "reasoning": "Championing major federal spending legislation such as the Bipartisan Infrastructure Law and Inflation Reduction Act indicates support for increased government spending.",
+          "source": "https://castor.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",

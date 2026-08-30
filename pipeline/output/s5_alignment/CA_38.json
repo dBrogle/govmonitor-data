@@ -136,10 +136,10 @@
     "votes_analyzed": 330,
     "votes_without_analysis": 103,
     "truth_score": {
-      "score": 61,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:42:42+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 60,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:18:43+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -398,12 +398,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "It is no secret that recent partisan Republican changes to the tax code picked multinational corporate winners while leaving too many working families as the losers.",
-          "reasoning": "Criticism of 2017 tax cuts indicates preference for higher or more progressive taxation.",
-          "source": "https://lindasanchez.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2461,8 +2456,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "I will continue working with my colleagues to protect, strengthen, and expand Social Security.",
-          "reasoning": "Explicit support for expanding entitlement programs shows preference for more government spending.",
+          "emphasis": 0.8,
+          "quote": "I am proud to advocate for resources that will strengthen our housing market and help families in our district to achieve the American dream.",
+          "reasoning": "Repeated advocacy for expanding funding on housing, seniors, health care, and community programs indicates support for more spending.",
           "source": "https://lindasanchez.house.gov/"
         }
       },
@@ -2691,8 +2687,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "S\u00e1nchez: Trump\u2019s latest tariffs aren\u2019t serious attempt to combat forced labor",
-          "reasoning": "Criticism of tariffs indicates support for free trade over protectionism.",
+          "reasoning": "Direct criticism of tariffs signals preference for free trade over protectionism.",
           "source": "https://lindasanchez.house.gov/"
         }
       },

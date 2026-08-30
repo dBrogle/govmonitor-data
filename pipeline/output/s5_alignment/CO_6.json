@@ -56,10 +56,10 @@
     "votes_analyzed": 339,
     "votes_without_analysis": 115,
     "truth_score": {
-      "score": 68,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:43:45+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 61,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:19:49+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -263,7 +263,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "Americans won\u2019t forget that Republicans cut healthcare to pass a massive tax cut for big corporations and the wealthiest Americans.",
+          "reasoning": "Explicit opposition to tax cuts for corporations and wealthy indicates stance against lower taxes.",
+          "source": "https://crow.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -578,8 +584,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "\u201cSix months later, 18 servicemembers are dead, hundreds more are wounded, and American taxpayers have spent billions of dollars on a war that has not made them safer and that has only raised their prices at home.\u201d",
-          "reasoning": "The statements criticize military spending on the Iran war as wasteful and call to prohibit funding for it, indicating a position favoring less military spending.",
+          "emphasis": 0.8,
+          "quote": "Six months later, 18 servicemembers are dead, hundreds more are wounded, and American taxpayers have spent billions of dollars on a war that has not made them safer and that has only raised their prices at home.",
+          "reasoning": "Text repeatedly criticizes billions spent on Iran war and calls for ending funding for military adventurism.",
           "source": "https://crow.house.gov/"
         }
       },
@@ -2346,7 +2353,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "Republicans keep telling us we can't afford to lower the cost of healthcare, food, and housing. Yet they can magically find nearly $100 billion dollars of taxpayer dollars to fund Trump\u2019s Iran war and the President\u2019s vanity projects.",
+          "reasoning": "Criticism of spending on war and vanity projects while opposing cuts elsewhere shows preference for less such government spending.",
+          "source": "https://crow.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",

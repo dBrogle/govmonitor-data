@@ -26,10 +26,10 @@
     "votes_analyzed": 330,
     "votes_without_analysis": 95,
     "truth_score": {
-      "score": 89,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:43:41+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 75,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:19:47+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -323,8 +323,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "$60 billion to provide funding for operational costs, military pay and readiness, and munitions investment, to support our service members and ensure the U.S. military remains the most lethal fighting force across the globe.",
-          "reasoning": "The statements explicitly support increased defense funding and NDAA advancement for military readiness and pay raises.",
+          "emphasis": 0.85,
+          "quote": "The budget resolution provides the framework needed for Congress to advance legislation that strengthens our national defense... $60 billion to provide funding for operational costs, military pay and readiness, and munitions investment, to support our service members and ensure the U.S. military remains the most lethal fighting force across the globe.",
+          "reasoning": "Multiple statements explicitly endorse increased defense funding and NDAA investments.",
           "source": "https://crank.house.gov/"
         }
       },
@@ -553,8 +554,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "This past year alone, President Trump and his Administration have worked with House Republicans to pass the largest tax cut in American history",
-          "reasoning": "The text praises the largest tax cut in history, indicating support for lower taxes.",
+          "emphasis": 0.4,
+          "quote": "This past year alone, President Trump and his Administration have worked with House Republicans to pass the largest tax cut in American history, to overturn burdensome Biden-Era regulations, secure our American elections and borders, deliver lower costs, and more.",
+          "reasoning": "Praises the largest tax cut as a positive achievement.",
           "source": "https://crank.house.gov/"
         }
       },
@@ -2233,7 +2235,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 0.8,
+          "emphasis": 0.55,
+          "quote": "This package saves the taxpayer a whopping $18.5 billion. This is a win for all Americans, and invests in domestic energy production, ensuring affordable energy and creating jobs across the country.",
+          "reasoning": "Explicitly highlights major spending reductions via reconciliation while supporting targeted funding.",
+          "source": "https://crank.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",

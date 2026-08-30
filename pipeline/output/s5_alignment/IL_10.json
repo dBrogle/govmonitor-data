@@ -78,8 +78,8 @@
     "truth_score": {
       "score": 43,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:47:18+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:23:50+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2478,8 +2478,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "\u201cSince taking office, President Trump has taken a reckless, arbitrary, and punitive approach to trade policy that will only hurt American consumers, American companies, and the entire U.S. economy,\u201d said Rep. Schneider . \u201cTariffs, when used strategically, can be an important tool in defending U.S. economic interests \u2013 but that\u2019s far from the sledgehammer and whipsaw approach President Trump has so far shown to be the only way he knows. Congress must exercise its constitutional responsibilities and step in to put a check on the President\u2019s authority to punish our small businesses, retirement accounts, and economy.\u201d",
-          "reasoning": "Explicit opposition to unilateral tariffs and calls to repeal tariff authorities indicate support for free trade.",
+          "emphasis": 0.85,
+          "quote": "\u201cSince taking office, President Trump has taken a reckless, arbitrary, and punitive approach to trade policy that will only hurt American consumers, American companies, and the entire U.S. economy,\u201d said Rep. Schneider . \u201cTariffs, when used strategically, can be an important tool in defending U.S. economic interests \u2013 but that\u2019s far from the sledgehammer and whipsaw approach President Trump has so far shown to be the only way he knows.\u201d",
+          "reasoning": "Multiple statements explicitly oppose unilateral tariffs and seek to repeal tariff authorities in favor of strategic, non-protectionist trade policy.",
           "source": "https://schneider.house.gov"
         }
       },

@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "R000621",
   "website": "https://randall.house.gov/",
-  "fetched_at": "2026-08-30T08:02:33+00:00",
+  "fetched_at": "2026-08-30T14:39:31+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -23,38 +23,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear overall position stated on U.S. military spending levels."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "That means no more additional funding for offensive weapons.",
+      "reasoning": "Explicit vote and statement to cut $3.3B in military aid plus opposition to Iran war spending show clear preference for less military spending."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on taxation appear in the text."
+      "reasoning": "No statements on tax rates or policy appear in the text."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on overall government spending."
+      "reasoning": "No direct statements on overall government spending levels are present."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy appear in the text."
+      "reasoning": "No mentions of tariffs, trade agreements, or trade policy appear."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "stated_score": 1.0,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
       "quote": "My vote reflects the need for a fundamental change in our approach to the far-right Netanyahu government \u2013 one that is long overdue. That means no more additional funding for offensive weapons.",
-      "reasoning": "Explicit vote and statement supporting cuts to military aid to Israel indicates preference for less foreign aid spending."
+      "reasoning": "Vote to cut $3.3B annual military aid to Israel and call to end unconditional military support indicate preference for less foreign aid spending."
     }
   ]
 }

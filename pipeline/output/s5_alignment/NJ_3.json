@@ -27,9 +27,9 @@
     "votes_without_analysis": 109,
     "truth_score": {
       "score": 47,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:53:51+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:30:16+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -224,8 +224,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "He supports initiatives to limit the impact that rising energy costs and regulatory and tax burdens have on small businesses.",
-          "reasoning": "The text explicitly supports limiting tax burdens on small businesses.",
+          "reasoning": "The text explicitly supports reducing tax burdens on small businesses.",
           "source": "https://conaway.house.gov/"
         }
       },
@@ -1994,8 +1995,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.3,
           "quote": "I am proud to have secured over $12 million in federal funding that I know will help meet long overdue community needs in New Jersey's 3rd District.",
-          "reasoning": "The text expresses pride in securing federal project funding.",
+          "reasoning": "The text proudly highlights securing substantial federal community project funding.",
           "source": "https://conaway.house.gov/"
         }
       },
@@ -2491,7 +2493,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.2,
+          "quote": "Small firms also need assistance from Congress to secure better financing for capital purchases, obtain world-class training and development programs, and open doors to sell their products and services around the globe.",
+          "reasoning": "The text advocates assisting small firms with global sales opportunities.",
+          "source": "https://conaway.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",

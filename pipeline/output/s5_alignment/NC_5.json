@@ -128,8 +128,8 @@
     "truth_score": {
       "score": 66,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:52:44+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:29:05+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -423,8 +423,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "After nearly a decade of cuts, my colleagues and I have made rebuilding the military one of our top priorities.",
-          "reasoning": "The text explicitly supports rebuilding the military after cuts and backing the NDAA to strengthen readiness and increase personnel.",
+          "reasoning": "Text explicitly endorses rebuilding and strengthening the military with increased resources and personnel via NDAA support.",
           "source": "https://foxx.house.gov/"
         }
       },
@@ -620,8 +621,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "I have long advocated for a fairer, simpler and lower taxes on American families and job-creators.",
-          "reasoning": "The text states advocacy for lower taxes and support for the Tax Cuts and Jobs Act.",
+          "reasoning": "Text repeatedly praises and supports tax cuts including H.R. 1 to lower rates for individuals and businesses.",
           "source": "https://foxx.house.gov/"
         }
       },
@@ -2192,8 +2194,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a strong fiscal conservative, I will continue to oppose unnecessary federal spending and higher taxes and will support responsible long-term solutions to shrink the national debt and restore fiscal sanity to this country.",
-          "reasoning": "The text opposes unnecessary federal spending, supports spending cuts, and aims to shrink the national debt.",
+          "emphasis": 0.85,
+          "quote": "As a strong fiscal conservative, I will continue to oppose unnecessary federal spending and higher taxes and will support responsible long-term solutions to shrink the national debt.",
+          "reasoning": "Text advocates spending cuts, opposes unnecessary outlays, and backs bills to rescind unused funds and balance the budget.",
           "source": "https://foxx.house.gov/"
         }
       },

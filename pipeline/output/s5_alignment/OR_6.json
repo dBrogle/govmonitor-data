@@ -36,10 +36,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 133,
     "truth_score": {
-      "score": 75,
+      "score": 72,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:57:36+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:06+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -234,8 +234,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.35,
           "quote": "I support proposals to close loopholes that allow the wealthiest Americans to avoid paying their fair share in taxes, which will keep Medicare funded for decades into the future.",
-          "reasoning": "Text explicitly supports closing tax loopholes for the wealthy to increase revenue.",
+          "reasoning": "Text explicitly supports closing tax loopholes for the wealthy and opposes Republican tax cuts for billionaires.",
           "source": "https://salinas.house.gov"
         }
       },
@@ -2295,8 +2296,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.65,
           "quote": "I strongly oppose any effort to undermine Social Security or Medicare.",
-          "reasoning": "Text opposes cuts to major federal programs and defends critical spending.",
+          "reasoning": "Multiple statements defend funding for Medicare, seniors programs, education, housing, and oppose budget cuts or Republican spending bills.",
           "source": "https://salinas.house.gov"
         }
       },

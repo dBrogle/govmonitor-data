@@ -26,10 +26,10 @@
     "votes_analyzed": 58,
     "votes_without_analysis": 26,
     "truth_score": {
-      "score": 64,
+      "score": 68,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:44:31+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:21:02+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -114,8 +114,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "I am committed to ensuring our service members have the resources they need, supporting strong defense investments, and advancing innovation in aerospace and national security.",
-          "reasoning": "Text explicitly supports strong defense investments.",
+          "reasoning": "The text explicitly endorses strong defense investments and resources for service members.",
           "source": "https://haridopolos.house.gov/"
         }
       },
@@ -168,8 +169,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "We have learned that reducing burdensome taxes and regulations creates an economic engine where everyone is lifted together.",
-          "reasoning": "Text repeatedly advocates reducing taxes and extending tax cuts.",
+          "emphasis": 0.9,
+          "quote": "I\u2019ve spent my career fighting for lower taxes, responsible spending, and policies that allow families and small businesses to thrive... extending the 2017 tax cuts and reducing taxes further especially to reshore jobs lost due to past policies... no tax on tips, no tax on social security, no tax on overtime and a 15% corporate tax rate for firms that create jobs in the USA.",
+          "reasoning": "The text repeatedly and explicitly advocates for lower taxes, extending cuts, and specific tax reductions.",
           "source": "https://haridopolos.house.gov/"
         }
       },
@@ -557,8 +559,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I believe hardworking Americans deserve to keep more of what they earn\u2014not send it to Washington to fund wasteful programs and runaway bureaucracy.",
-          "reasoning": "Text calls for responsible spending and opposes wasteful programs.",
+          "emphasis": 0.6,
+          "quote": "Floridians know how to balance a budget, and Washington should do the same... keep more of what they earn\u2014not send it to Washington to fund wasteful programs and runaway bureaucracy.",
+          "reasoning": "The text calls for balanced budgets and criticizes wasteful spending and bureaucracy.",
           "source": "https://haridopolos.house.gov/"
         }
       },

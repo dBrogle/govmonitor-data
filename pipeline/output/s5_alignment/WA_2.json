@@ -146,10 +146,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 92,
     "truth_score": {
-      "score": 66,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:02:16+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:39:17+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -344,8 +344,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.2,
           "quote": "I voted against the Big Ugly Law, which cuts roughly $1.1 trillion from Medicaid, Medicare, and the ACA \u2013 $911 billion of which is from Medicaid \u2013 all to pay for a tax break for the richest Americans and biggest corporations.",
-          "reasoning": "Opposes tax breaks for the wealthy, indicating preference for higher taxes.",
+          "reasoning": "Opposition to tax breaks for the rich and support for increasing wealthy contributions to Social Security indicate a position favoring higher taxes.",
           "source": "https://larsen.house.gov"
         }
       },
@@ -2392,7 +2393,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.4,
+          "quote": "I voted against the Big Ugly Law, which cuts roughly $1.1 trillion from Medicaid, Medicare, and the ACA \u2013 $911 billion of which is from Medicaid \u2013 all to pay for a tax break for the richest Americans and biggest corporations.",
+          "reasoning": "Repeated support for funding programs and opposition to spending cuts demonstrate a stance favoring more government spending.",
+          "source": "https://larsen.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2800,8 +2807,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "These new tariffs aren't leverage over Canada. They're yet another way that the Trump administration is raising your prices and sabotaging...",
-          "reasoning": "Criticizes new tariffs as harmful, supporting free trade.",
+          "reasoning": "Criticism of tariffs and emphasis on overseas market access and export promotion show support for free trade.",
           "source": "https://larsen.house.gov"
         }
       }

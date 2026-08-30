@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "C001137",
   "website": "https://crank.house.gov/",
-  "fetched_at": "2026-08-30T07:43:41+00:00",
+  "fetched_at": "2026-08-30T14:19:47+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "$60 billion to provide funding for operational costs, military pay and readiness, and munitions investment, to support our service members and ensure the U.S. military remains the most lethal fighting force across the globe.",
-      "reasoning": "The statements explicitly support increased defense funding and NDAA advancement for military readiness and pay raises."
+      "quote": "The budget resolution provides the framework needed for Congress to advance legislation that strengthens our national defense... $60 billion to provide funding for operational costs, military pay and readiness, and munitions investment, to support our service members and ensure the U.S. military remains the most lethal fighting force across the globe.",
+      "reasoning": "Multiple statements explicitly endorse increased defense funding and NDAA investments."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "This past year alone, President Trump and his Administration have worked with House Republicans to pass the largest tax cut in American history",
-      "reasoning": "The text praises the largest tax cut in history, indicating support for lower taxes."
+      "quote": "This past year alone, President Trump and his Administration have worked with House Republicans to pass the largest tax cut in American history, to overturn burdensome Biden-Era regulations, secure our American elections and borders, deliver lower costs, and more.",
+      "reasoning": "Praises the largest tax cut as a positive achievement."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear general position stated on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.55,
+      "stated_score": 0.8,
+      "quote": "This package saves the taxpayer a whopping $18.5 billion. This is a win for all Americans, and invests in domestic energy production, ensuring affordable energy and creating jobs across the country.",
+      "reasoning": "Explicitly highlights major spending reductions via reconciliation while supporting targeted funding."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade."
+      "reasoning": "No statements address tariffs, protectionism, or free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

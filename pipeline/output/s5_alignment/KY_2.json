@@ -106,10 +106,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 100,
     "truth_score": {
-      "score": 65,
+      "score": 64,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:48:24+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:58+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -414,8 +414,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a former Army officer, I believe in having a strong military so that our country can stand up to growing threats abroad.",
-          "reasoning": "Text explicitly supports strengthening the military through votes for modernization, pay raises, and NDAA funding.",
+          "emphasis": 0.8,
+          "quote": "As a former Army officer, I believe in having a strong military so that our country can stand up to growing threats abroad. Throughout my time in Congress, I have voted to improve our military\u2019s technology and to give the troops pay raises.",
+          "reasoning": "Text explicitly endorses strong military with votes to modernize and raise pay.",
           "source": "https://guthrie.house.gov/"
         }
       },
@@ -644,8 +645,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "I strongly oppose Democrat policies like the methane tax, or proposed changes to the current stepped-up basis and capital gains tax that could force families to sell their farms.",
-          "reasoning": "Text opposes specific tax increases, indicating preference for lower taxes.",
+          "reasoning": "Explicit opposition to new or increased taxes.",
           "source": "https://guthrie.house.gov/"
         }
       },
@@ -2260,8 +2262,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I am a strong believer in fiscal responsibility and believe we need to get our national debt under control.",
-          "reasoning": "Text advocates fiscal responsibility, balanced budget amendment, and opposes reckless spending packages.",
+          "emphasis": 0.7,
+          "quote": "I am a strong believer in fiscal responsibility and believe we need to get our national debt under control. ... The Democrats\u2019 proposed policies such as the Green New Deal, government-run health care, and other reckless spending packages would be disastrous for the financial stability of our country.",
+          "reasoning": "Direct call for fiscal restraint and against reckless spending.",
           "source": "https://guthrie.house.gov/"
         }
       },
@@ -2490,8 +2493,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.2,
           "quote": "The Farm Bill extends farm support programs, improves crop insurance, promotes agricultural exports and the opening of new markets for Kentucky\u2019s farmers.",
-          "reasoning": "Text supports promoting exports and opening new markets, consistent with free trade.",
+          "reasoning": "Supports expanding export markets, indicating free-trade stance.",
           "source": "https://guthrie.house.gov/"
         }
       },

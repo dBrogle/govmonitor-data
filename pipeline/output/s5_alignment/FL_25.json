@@ -126,10 +126,10 @@
     "votes_analyzed": 313,
     "votes_without_analysis": 120,
     "truth_score": {
-      "score": 71,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:45:14+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 76,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:21:56+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -335,8 +335,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.25,
           "quote": "I\u2019m fighting against President Trump\u2019s Tax Cuts and Jobs Acts of 2017, which doled out enormous, permanent tax cuts for corporations and billionaires with meager, temporary tax cuts for American families.",
-          "reasoning": "The text explicitly opposes tax cuts, indicating a preference for higher taxes.",
+          "reasoning": "The quote explicitly opposes tax cuts, indicating a preference against lower taxes.",
           "source": "https://wassermanschultz.house.gov/"
         }
       },
@@ -2229,12 +2230,7 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "For America to prosper, we must strike the appropriate balance regarding budget cuts and making critical investments in our future. Attempting to balance our budget on the backs of students is neither ethical nor the way for America to remain competitive in a global marketplace.",
-          "reasoning": "The text criticizes budget cuts and advocates critical investments and robust funding, indicating support for more spending.",
-          "source": "https://wassermanschultz.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",

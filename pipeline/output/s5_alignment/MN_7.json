@@ -46,10 +46,10 @@
     "votes_analyzed": 322,
     "votes_without_analysis": 113,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:51:16+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 81,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:27:50+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -566,7 +566,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "I am excited to introduce the Hardworking Seniors Act to help America's working seniors continue to make these contributions and receive the tax benefits that go with them.",
+          "reasoning": "The Hardworking Seniors Act press release explicitly promotes tax-advantaged HSA contributions.",
+          "source": "https://fischbach.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",

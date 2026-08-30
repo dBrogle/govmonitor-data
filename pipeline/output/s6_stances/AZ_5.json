@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "B001302",
   "website": "https://biggs.house.gov",
-  "fetched_at": "2026-08-30T07:39:31+00:00",
+  "fetched_at": "2026-08-30T14:16:33+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -24,27 +24,31 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on the level of military spending."
+      "reasoning": "No clear position stated on military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "stated_score": 1.0,
-      "quote": "A constitutional amendment requiring the federal government to operate under a balanced budget by permanently prohibiting deficit spending and placing a two-thirds supermajority requirement on any bill that creates a new tax in any way.",
-      "reasoning": "Explicit support for making new taxes more difficult indicates preference for lower taxes."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of a specific education tax credit do not state a general position on taxation."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "For decades, Members of Congress have shown catastrophic unseriousness about reining in government spending and leaving a better future for the next generation.",
-      "reasoning": "Direct criticism of unchecked spending and calls to reduce it show preference for less government spending."
+      "quote": "Hundreds of bills to reduce nondefense discretionary spending.",
+      "reasoning": "Multiple statements explicitly criticize unchecked federal spending and advocate reducing it via balanced budget requirements and spending cuts."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements on trade policy or tariffs."
@@ -52,6 +56,7 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements on foreign aid spending."

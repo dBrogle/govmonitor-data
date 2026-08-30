@@ -86,10 +86,10 @@
     "votes_analyzed": 355,
     "votes_without_analysis": 112,
     "truth_score": {
-      "score": 62,
+      "score": 59,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:58:08+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:40+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -641,8 +641,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "Small business owners throughout the 10th District have repeatedly told me that increasing taxes and government regulations hurt their ability to create jobs and grow the economy.",
-          "reasoning": "The text opposes tax increases, indicating support for lower taxes.",
+          "reasoning": "Text explicitly criticizes increasing taxes as harmful to jobs and growth.",
           "source": "https://perry.house.gov/"
         }
       },
@@ -2850,8 +2851,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.35,
           "quote": "We can't keep spending money we don't have and we must reduce barriers for real private sector job growth.",
-          "reasoning": "The text explicitly calls for stopping spending money not available, indicating support for less spending.",
+          "reasoning": "Text repeatedly calls for stopping spending money the government does not have.",
           "source": "https://perry.house.gov/"
         }
       }

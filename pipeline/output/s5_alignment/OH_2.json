@@ -26,10 +26,10 @@
     "votes_analyzed": 332,
     "votes_without_analysis": 122,
     "truth_score": {
-      "score": 53,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:56:23+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 47,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:32:56+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1934,8 +1934,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.55,
           "quote": "Congress needs to reign in wasteful government spending and allocate taxpayer dollars responsibly.",
-          "reasoning": "Text explicitly advocates reigning in wasteful spending.",
+          "reasoning": "Direct advocacy for reigning in wasteful spending indicates preference for less government spending.",
           "source": "https://taylor.house.gov/"
         }
       },
@@ -2120,8 +2121,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.45,
           "quote": "Congress needs to cut taxes for hardworking American families and combat inflation.",
-          "reasoning": "Text explicitly calls for cutting taxes.",
+          "reasoning": "Explicit call to cut taxes shows support for lower taxes.",
           "source": "https://taylor.house.gov/"
         }
       },
@@ -2348,12 +2350,7 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "I look forward to supporting a strong Farm Bill that bolsters our local agriculture industry, expands trade markets, and secures our Nation's food supply chain.",
-          "reasoning": "Text supports expanding trade markets.",
-          "source": "https://taylor.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",

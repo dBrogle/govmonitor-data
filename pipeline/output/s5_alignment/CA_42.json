@@ -36,10 +36,10 @@
     "votes_analyzed": 314,
     "votes_without_analysis": 101,
     "truth_score": {
-      "score": 59,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:42:51+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:18:52+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -717,8 +717,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "Today, I am voting yes on an amendment to block $3.3 billion in American taxpayer dollars for Benjamin Netanyahu and the Israeli military.",
-          "reasoning": "Vote to withhold foreign military financing shows support for less foreign aid spending.",
+          "reasoning": "Vote to withhold foreign military financing demonstrates preference for less foreign aid spending.",
           "source": "https://robertgarcia.house.gov"
         }
       },
@@ -2430,7 +2431,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "This $255 million investment, split between the federal government and the Port of Long Beach, will expand the port\u2019s main channel, strengthen America\u2019s supply chain, and reduce pollution from ships waiting to dock outside the harbor.",
+          "reasoning": "Explicit support for a major federal infrastructure investment indicates preference for more government spending.",
+          "source": "https://robertgarcia.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2646,8 +2653,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I will continue working to secure supply chains against destructive tariffs",
-          "reasoning": "Statement explicitly opposes tariffs, indicating support for free trade.",
+          "emphasis": 0.2,
+          "quote": "I will continue working to secure supply chains against destructive tariffs, protect competition in the marketplace, expand access to capital, and safeguard the federal services and programs that so many small businesses rely on.",
+          "reasoning": "Opposition to tariffs as 'destructive' signals support for free trade.",
           "source": "https://robertgarcia.house.gov"
         }
       }

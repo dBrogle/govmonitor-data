@@ -36,10 +36,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 99,
     "truth_score": {
-      "score": 55,
+      "score": 51,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:45:54+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:22:44+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -536,8 +536,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.2,
           "quote": "This bipartisan legislative package recognizes those who have worn the uniform by establishing a Veterans Appreciation Month, the America 250 Military Appreciation Discount, and Veterans Tax Relief Weekends.",
-          "reasoning": "Explicit support for Veterans Tax Relief Weekends indicates position favoring lower taxes.",
+          "reasoning": "The introduction of Veterans Tax Relief Weekends explicitly endorses tax relief measures.",
           "source": "https://collins.house.gov"
         }
       },
@@ -2130,8 +2131,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "We promised the American people we would rein in federal agencies and get spending under control.",
-          "reasoning": "Direct call to get spending under control indicates position favoring less government spending.",
+          "reasoning": "Direct call to reduce federal spending and rein in agencies.",
           "source": "https://collins.house.gov"
         }
       },

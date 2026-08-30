@@ -66,10 +66,10 @@
     "votes_analyzed": 328,
     "votes_without_analysis": 114,
     "truth_score": {
-      "score": 49,
+      "score": 52,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:58:11+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:43+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -610,8 +610,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Congressional Republicans, with President Trump, delivered on our promise to extend tax relief for families and small businesses.",
-          "reasoning": "Explicit support for tax relief and tax cuts indicates position favoring lower taxes.",
+          "emphasis": 0.9,
+          "quote": "Congressional Republicans, with President Trump, delivered on our promise to extend tax relief for families and small businesses. The Working Families Tax Cuts Act puts more money back in families\u2019 pockets, provides tax certainty for small businesses, secures our border, unleashes America\u2019s energy potential, and strengthens our national security \u2014 all while producing the greatest savings of any reconciliation legislation in our nation\u2019s history.",
+          "reasoning": "Multiple statements explicitly endorse tax relief and tax cuts as policy achievements.",
           "source": "https://smucker.house.gov/"
         }
       },
@@ -2391,8 +2392,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "It is difficult to comprehend the scale of a $40 trillion national debt. What should be easy to understand is that we cannot continue down this path.",
-          "reasoning": "Concern over national debt and budget process implies support for reduced government spending.",
+          "reasoning": "Repeated emphasis on controlling the national debt and fixing the budget process indicates support for reduced government spending.",
           "source": "https://smucker.house.gov/"
         }
       },
@@ -2610,8 +2612,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.6,
           "quote": "Rep. Lloyd Smucker (PA-11), a member of the Ways and Means Trade Subcommittee, introduced the Protecting American Streaming and Innovation Act, legislation to counter Canada\u2019s digital trade barriers targeting American streaming companies and content producers.",
-          "reasoning": "Action to counter foreign trade barriers via investigation shows protectionist stance.",
+          "reasoning": "Actions focus on investigating and countering foreign trade practices via Section 301, reflecting a protectionist stance.",
           "source": "https://smucker.house.gov/"
         }
       },

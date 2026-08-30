@@ -36,10 +36,10 @@
     "votes_analyzed": 314,
     "votes_without_analysis": 103,
     "truth_score": {
-      "score": 66,
+      "score": 81,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:41:25+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:17:48+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -344,8 +344,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation that strengthens America's national defense, invests in our military installations, and delivers for the men and women who serve this nation. Congressman Vince Fong (CA-20) voted in support of the bill",
-          "reasoning": "Text shows repeated support for NDAA and military funding bills that increase defense spending.",
+          "emphasis": 0.8,
+          "quote": "the House of Representatives passed the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation that strengthens America's national defense, invests in our military installations, and delivers for the men and women who serve this nation.",
+          "reasoning": "Multiple statements show strong support for NDAA, military infrastructure funding, and defense projects.",
           "source": "https://fong.house.gov/"
         }
       },
@@ -563,8 +564,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "Fong Moves to End California\u2019s Hidden Climate Tax on American Consumers",
-          "reasoning": "Text explicitly opposes a state climate tax and a health care tax increase, favoring lower taxes.",
+          "reasoning": "Repeated opposition to state taxes including health care tax and climate regulations framed as hidden taxes.",
           "source": "https://fong.house.gov/"
         }
       },
@@ -2199,12 +2201,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Votes to Advance FY2026 Appropriations Bills to Strengthen National Security, Rein in Spending",
-          "reasoning": "Text states support for appropriations bills that rein in spending.",
-          "source": "https://fong.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2429,7 +2426,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "Trump can protect California avocado farmers and take a bite out of Mexican cartels, too",
+          "reasoning": "Editorial advocates protection for domestic farmers against Mexican imports.",
+          "source": "https://fong.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",

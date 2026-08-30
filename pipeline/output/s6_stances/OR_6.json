@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "S001226",
   "website": "https://salinas.house.gov",
-  "fetched_at": "2026-08-30T07:57:36+00:00",
+  "fetched_at": "2026-08-30T14:34:06+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military spending appear in the text."
+      "reasoning": "No statements on military or defense spending appear in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.35,
       "stated_score": -1.0,
       "quote": "I support proposals to close loopholes that allow the wealthiest Americans to avoid paying their fair share in taxes, which will keep Medicare funded for decades into the future.",
-      "reasoning": "Text explicitly supports closing tax loopholes for the wealthy to increase revenue."
+      "reasoning": "Text explicitly supports closing tax loopholes for the wealthy and opposes Republican tax cuts for billionaires."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.65,
       "stated_score": -1.0,
       "quote": "I strongly oppose any effort to undermine Social Security or Medicare.",
-      "reasoning": "Text opposes cuts to major federal programs and defends critical spending."
+      "reasoning": "Multiple statements defend funding for Medicare, seniors programs, education, housing, and oppose budget cuts or Republican spending bills."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs appear in the text."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid appear in the text."
+      "reasoning": "No statements on foreign aid spending appear in the text."
     }
   ]
 }

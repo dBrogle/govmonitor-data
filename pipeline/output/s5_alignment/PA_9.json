@@ -56,10 +56,10 @@
     "votes_analyzed": 315,
     "votes_without_analysis": 104,
     "truth_score": {
-      "score": 89,
+      "score": 90,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:58:07+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:39+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -397,8 +397,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Protecting National Security : Rebuild our military to ensure it remains the strongest in the world to defend America\u2019s interests at home and abroad.",
-          "reasoning": "Text explicitly calls for rebuilding the military to keep it the strongest.",
+          "emphasis": 0.8,
+          "quote": "Protecting National Security : Rebuild our military to ensure it remains the strongest in the world to defend America\u2019s interests at home and abroad. Refocus on war-fighting capabilities and ending political agendas in the armed forces.",
+          "reasoning": "Text explicitly calls for rebuilding the military to keep it the strongest in the world.",
           "source": "https://meuser.house.gov"
         }
       },
@@ -616,8 +617,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Supporting Small Businesses: Extend the Trump Tax Cuts and Jobs, including provisions like bonus depreciation, the small business deduction, and the R&D tax credit",
-          "reasoning": "Text explicitly supports extending tax cuts.",
+          "emphasis": 0.7,
+          "quote": "Extend the Trump Tax Cuts and Jobs, including provisions like bonus depreciation, the small business deduction, and the R&D tax credit, which allow entrepreneurs to invest in their businesses, innovate, and create jobs.",
+          "reasoning": "Text explicitly endorses extending the Trump tax cuts.",
           "source": "https://meuser.house.gov"
         }
       },

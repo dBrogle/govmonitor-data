@@ -36,10 +36,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 96,
     "truth_score": {
-      "score": 47,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:49:55+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 62,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:26:33+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -254,7 +254,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.4,
+          "quote": "I will always fight for more progressive economic policies that reduce barriers for working- and middle-class families in my district and across the country.",
+          "reasoning": "The text explicitly endorses progressive economic policies, which align with higher taxes on the wealthy.",
+          "source": "https://ivey.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2085,7 +2091,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.7,
+          "quote": "The Republican budget and H.R. 1, the One Big Ugly Bill, take us in the wrong direction for our nation\u2019s climate policy and energy independence.",
+          "reasoning": "The text repeatedly opposes Republican spending cuts across energy, education, healthcare, housing, and veterans programs while advocating increased investment.",
+          "source": "https://ivey.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2570,8 +2582,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.3,
           "quote": "House Republicans passed a foreign aid budget that guts American diplomacy, slashes humanitarian assistance",
-          "reasoning": "Opposition to cuts in foreign aid spending indicates support for more foreign aid.",
+          "reasoning": "The text opposes cuts to foreign aid and humanitarian assistance.",
           "source": "https://ivey.house.gov"
         }
       },
@@ -2778,8 +2791,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Over the past months, President Trump has threatened and implemented a series of unpredictable and irresponsible tariffs. These economic depression-triggering tariffs wreak havoc on financial markets and the global economy.",
-          "reasoning": "Explicit opposition to tariffs indicates support for free trade.",
+          "emphasis": 0.5,
+          "quote": "Over the past months, President Trump has threatened and implemented a series of unpredictable and irresponsible tariffs.",
+          "reasoning": "The text criticizes tariffs as harmful, indicating support for free trade.",
           "source": "https://ivey.house.gov"
         }
       }

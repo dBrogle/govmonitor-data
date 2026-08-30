@@ -36,10 +36,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 136,
     "truth_score": {
-      "score": 24,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:46:09+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 36,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:22:59+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -245,8 +245,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "This bill allows residents to claim significant tax deductions for property losses not covered by insurance. It also guarantees that any wildfire relief payments and disaster settlements received will remain completely tax-exempt at the federal level",
-          "reasoning": "Text shows support for tax deductions and exemptions via co-led disaster relief legislation.",
+          "reasoning": "Text endorses legislation providing tax deductions and exemptions for disaster survivors, indicating support for lower taxes in this context.",
           "source": "https://tokuda.house.gov"
         }
       },
@@ -1859,7 +1860,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.25,
+          "quote": "Rep. Tokuda Leads Hawai\u02bbi Delegation Urging President Trump to Approve FEMA Kona Low Recovery Aid",
+          "reasoning": "Text advocates for federal disaster recovery aid and rural hospital infrastructure loans, showing support for increased government spending.",
+          "source": "https://tokuda.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2174,8 +2181,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "such as expanding emergency disaster response and increasing funding for barracks maintenance",
-          "reasoning": "Text explicitly supports increasing funding for military barracks maintenance within the NDAA.",
+          "reasoning": "Text explicitly supports increasing military-related funding via NDAA priorities while affirming the bill's role in national security.",
           "source": "https://tokuda.house.gov"
         }
       },

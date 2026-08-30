@@ -56,10 +56,10 @@
     "votes_analyzed": 289,
     "votes_without_analysis": 121,
     "truth_score": {
-      "score": 66,
+      "score": 68,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:52:37+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:58+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -331,8 +331,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "Congressman Greg Murphy, M.D., applauds the passage of H.R. 8800, the National Defense Authorization Act for Fiscal Year 2027. This legislation authorizes $1.15 trillion for fiscal year 2027.",
-          "reasoning": "The statement explicitly applauds a large defense authorization bill, indicating support for more military spending.",
+          "reasoning": "Text explicitly applauds a large defense authorization bill, indicating support for increased military spending.",
           "source": "https://murphy.house.gov"
         }
       },
@@ -528,8 +529,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I am proud to have helped write and pass the Working Families Tax Cut. Without this action, the average taxpayer in our district would have been hit with a 27% tax hike.",
-          "reasoning": "The text praises tax cuts and warns against tax hikes, showing a clear preference for lower taxes.",
+          "emphasis": 0.8,
+          "quote": "Without this action, the average taxpayer in our district would have been hit with a 27% tax hike.",
+          "reasoning": "Text repeatedly praises tax cuts and warns against tax hikes, showing clear support for lower taxes.",
           "source": "https://murphy.house.gov"
         }
       },
@@ -1946,8 +1948,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "due to reckless spending and overregulation by the last administration, inflation has caused the cost of living to skyrocket",
-          "reasoning": "The statement criticizes reckless spending as harmful, indicating a position favoring less government spending.",
+          "reasoning": "Text criticizes reckless spending and supports the Limit, Save, Grow Act, indicating preference for reduced government spending.",
           "source": "https://murphy.house.gov"
         }
       },
@@ -2143,8 +2146,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.5,
           "quote": "As a member of the Trade Subcommittee, I work every day to improve global market access and trade opportunities.",
-          "reasoning": "The text endorses improving global market access, reflecting support for free trade.",
+          "reasoning": "Text emphasizes improving global market access, reflecting a pro-free-trade stance.",
           "source": "https://murphy.house.gov"
         }
       },

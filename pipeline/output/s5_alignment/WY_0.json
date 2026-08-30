@@ -36,8 +36,8 @@
     "truth_score": {
       "score": 34,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T08:10:23+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:40:32+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2211,8 +2211,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "We are not taxed too little; we spend too much.",
-          "reasoning": "Explicitly criticizes excessive spending and debt while rejecting deficit-increasing bills.",
+          "reasoning": "Explicit call for reduced spending to address debt.",
           "source": "https://hageman.house.gov"
         }
       },

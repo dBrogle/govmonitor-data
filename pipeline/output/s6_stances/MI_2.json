@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "M001194",
   "website": "https://moolenaar.house.gov/",
-  "fetched_at": "2026-08-30T07:50:27+00:00",
+  "fetched_at": "2026-08-30T14:26:59+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "Selfridge is a critical asset to our national security and a major contributor to Michigan's economy. President Trump rightly recognizes its role in our keeping our country safe and committed a new fighter mission to the base last year. However, there is work to be done to update the base to fit the needs of the new F-15EX fighters. As the only House appropriator from our state, I will always work with my Michigan colleagues to bring critical funding like this to the state to improve our economy and keep our country safe",
-      "reasoning": "Text explicitly supports securing additional federal funding for a military base to enhance national security."
+      "quote": "Selfridge is a critical asset to our national security and a major contributor to Michigan's economy. ... I will always work with my Michigan colleagues to bring critical funding like this to the state to improve our economy and keep our country safe",
+      "reasoning": "Text supports increased military-related funding for bases and national security assets."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "That is why I supported tax reform that will let hardworking Michigan families keep more of their own money.",
-      "reasoning": "Text states support for tax reform that reduces taxes to allow families to keep more money."
+      "quote": "As a father of six, I understand the importance of every dollar in raising a family. That is why I supported tax reform that will let hardworking Michigan families keep more of their own money.",
+      "reasoning": "Explicit support for tax cuts and extending 2017 tax reform to lower taxes."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
-      "quote": "Congress should lead by example to reduce federal spending and the national debt.",
-      "reasoning": "Text explicitly calls for reducing federal spending and controlling the national debt."
+      "quote": "Excessive spending in Washington has been unchecked for too long, and as a result, our nation faces over $30 trillion in debt. Plain and simple, our obligations are growing faster than our ability to pay them. We must find a way to get the federal government's spending under control",
+      "reasoning": "Repeated calls for reduced federal spending and fiscal responsibility to control debt."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear statement on tariffs or free trade versus protectionism."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Moolenaar Leads Bipartisan Bill to Stop China From Purchasing U.S. Farmland ... Food security is national security, and we cannot allow foreign adversaries like China to buy up American farmland",
+      "reasoning": "Advocates protectionist measures against foreign adversaries like China on farmland and projects."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements addressing foreign aid spending levels."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

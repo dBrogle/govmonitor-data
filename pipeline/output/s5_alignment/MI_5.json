@@ -106,10 +106,10 @@
     "votes_analyzed": 332,
     "votes_without_analysis": 105,
     "truth_score": {
-      "score": 49,
+      "score": 53,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:50:28+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:27:09+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2047,8 +2047,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "WALBERG'S LEGISLATION SAVES OVER $280 BILLION The Student Success and Taxpayer Savings Plan was signed into law as part of the Working Families Tax Cuts legislation and saves over $280 billion.",
-          "reasoning": "Highlighting billions in savings and restoring fiscal sanity shows support for less government spending.",
+          "reasoning": "The text highlights legislation that explicitly reduces federal outlays by hundreds of billions.",
           "source": "https://walberg.house.gov/"
         }
       },
@@ -2233,8 +2234,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "WALBERG VOTES TO PASS THE WORKING FAMILIES TAX CUTS The Working Families Tax Cuts legislation takes advantage of a generational opportunity to restore fiscal sanity, invest in our communities, and usher in a new Golden Age in America.",
-          "reasoning": "Explicit support for tax cuts legislation demonstrates position favoring lower taxes.",
+          "reasoning": "The text repeatedly and prominently endorses tax-cut legislation that saves taxpayers money.",
           "source": "https://walberg.house.gov/"
         }
       },

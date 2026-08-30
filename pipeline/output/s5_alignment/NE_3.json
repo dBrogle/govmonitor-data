@@ -116,10 +116,10 @@
     "votes_analyzed": 328,
     "votes_without_analysis": 107,
     "truth_score": {
-      "score": 61,
+      "score": 71,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:53:25+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:30:02+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -682,8 +682,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "While we have successfully enacted major legislation this year to protect our borders, cut taxes for families, and restore faith in government this year",
-          "reasoning": "The text explicitly endorses cutting taxes.",
+          "reasoning": "Text explicitly praises cutting taxes, indicating support for lower taxes.",
           "source": "https://adriansmith.house.gov/"
         }
       },
@@ -2621,9 +2622,10 @@
           }
         ],
         "stated": {
-          "score": -1.0,
-          "quote": "As Nebraska\u2019s ranchers continue to recover from the historic wildfires this spring\u2014amid an ongoing drought\u2014they need market certainty. With cattle inventory at 75-year lows, we must focus on policies which empower ranchers to rebuild our domestic herd.",
-          "reasoning": "The text opposes increased foreign beef imports to protect domestic producers.",
+          "score": 1.0,
+          "emphasis": 0.8,
+          "quote": "trade has been at the forefront since January, and the pace has not slowed as we reach year-end. In recent weeks the administration has begun the mandatory six-year review of the U.S-Canada-Mexico Agreement, announced trade deals and frameworks with several Latin American and Asian partners",
+          "reasoning": "Multiple statements promote trade agreements and deals, showing support for free trade.",
           "source": "https://adriansmith.house.gov/"
         }
       },

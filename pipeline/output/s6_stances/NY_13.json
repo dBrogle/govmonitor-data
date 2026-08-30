@@ -3,7 +3,7 @@
   "district": 13,
   "bioguide_id": "E000297",
   "website": "https://espaillat.house.gov",
-  "fetched_at": "2026-08-30T07:55:23+00:00",
+  "fetched_at": "2026-08-30T14:32:15+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,6 +27,7 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No mention of military or defense spending in the text."
@@ -34,30 +35,34 @@
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No mention of taxes or taxation policy in the text."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": true,
-      "stated_score": 1.0,
-      "quote": "Espaillat denuncia los esfuerzos de los republicanos de la C\u00e1mara para asignar $70,000 millones adicionales al ICE sin supervisi\u00f3n",
-      "reasoning": "Text denounces additional funding allocation to ICE, indicating opposition to increased government spending."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Text advocates specific program funding but states no general position on overall government spending levels."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of trade policy or tariffs in the text."
+      "reasoning": "No mention of trade, tariffs, or trade policy in the text."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
+      "emphasis": 0.3,
       "stated_score": -1.0,
       "quote": "Funding for the United States Agency for International Development (USAID)",
-      "reasoning": "Text states support for pushing funding of USAID, indicating position favoring more foreign aid spending."
+      "reasoning": "Text lists funding USAID and State Department as priorities he is pushing for, indicating support for more foreign aid."
     }
   ]
 }

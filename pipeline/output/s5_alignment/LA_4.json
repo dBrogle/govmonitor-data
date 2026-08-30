@@ -68,8 +68,8 @@
     "truth_score": {
       "score": 69,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:48:35+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:25:14+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -330,8 +330,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Adequate investment is necessary to maintain the air, land, sea, nuclear and cyber warfare.",
-          "reasoning": "Text explicitly calls for adequate investment to keep the strongest military.",
+          "emphasis": 0.9,
+          "quote": "we must remain the strongest military power on earth fully prepared and capable of defeating any adversaries, tyrants or terrorists, under any circumstances, at any time. Adequate investment is necessary to maintain the air, land, sea, nuclear and cyber warfare.",
+          "reasoning": "The Peace through Strength page explicitly calls for adequate investment to maintain the strongest military.",
           "source": "https://mikejohnson.house.gov"
         }
       },
@@ -483,8 +484,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.85,
           "quote": "pursue continued pro-growth tax reforms and permanent tax reductions",
-          "reasoning": "Text advocates permanent tax reductions and pro-growth tax reforms.",
+          "reasoning": "Fiscal Responsibility page states a duty to pursue permanent tax reductions.",
           "source": "https://mikejohnson.house.gov"
         }
       },
@@ -1780,8 +1782,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.85,
           "quote": "bring spending under control, balance the federal budget, reform and modernize entitlement programs, eliminate fraud, waste and abuse",
-          "reasoning": "Text demands bringing spending under control and balancing the budget.",
+          "reasoning": "Fiscal Responsibility page states a duty to bring spending under control and balance the budget.",
           "source": "https://mikejohnson.house.gov"
         }
       },
@@ -1955,8 +1958,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "Free markets and free trade agreements allow for innovation, improvement and economic expansion",
-          "reasoning": "Text endorses free trade agreements and free markets.",
+          "reasoning": "Free Markets page endorses free trade agreements for economic expansion.",
           "source": "https://mikejohnson.house.gov"
         }
       },

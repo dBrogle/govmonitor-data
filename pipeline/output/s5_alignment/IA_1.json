@@ -46,10 +46,10 @@
     "votes_analyzed": 328,
     "votes_without_analysis": 124,
     "truth_score": {
-      "score": 89,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:46:16+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 84,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:22:59+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -343,8 +343,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "Whether it\u2019s cutting taxes, securing the border, strengthening our military, or lowering health care costs",
-          "reasoning": "The statement explicitly supports strengthening the military, aligning with more military spending.",
+          "reasoning": "Text explicitly supports strengthening the military, indicating position favoring more spending.",
           "source": "https://millermeeks.house.gov/"
         }
       },
@@ -2034,7 +2035,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "Congresswoman Mariannette Miller-Meeks (IA-01) has successfully secured $27 million in Community Project Funding for transformational projects in southeast Iowa",
+          "reasoning": "Text highlights securing and promoting specific federal spending projects.",
+          "source": "https://millermeeks.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2239,8 +2246,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Lowers Taxes on Working Iowans by increasing the Child Tax Credit and delivering a $6,000 tax deduction for seniors on fixed incomes.",
-          "reasoning": "Multiple statements advocate for tax cuts and preventing tax hikes, aligning with lower taxes.",
+          "emphasis": 0.6,
+          "quote": "Lowers Taxes on Working Iowans by increasing the Child Tax Credit and delivering a $6,000 tax deduction for seniors on fixed incomes",
+          "reasoning": "Multiple statements advocate cutting taxes and making tax cuts permanent.",
           "source": "https://millermeeks.house.gov/"
         }
       },

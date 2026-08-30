@@ -57,9 +57,9 @@
     "votes_without_analysis": 114,
     "truth_score": {
       "score": 68,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:01:41+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:38:37+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -373,7 +373,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "H.R. 4366, the Military Construction, Veterans Affairs, and Related Agencies Appropriations Act of FY24 which provides funding for Defense Department military and family housing construction activities",
+          "reasoning": "Text supports legislation providing funding for Defense Department activities, indicating position favoring more military spending.",
+          "source": "https://cline.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -578,8 +584,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "committed to lowering taxes that stunt economic growth",
-          "reasoning": "Text explicitly commits to lowering taxes.",
+          "emphasis": 0.7,
+          "quote": "Congressman Cline is focused on growing the economy and keeping more money in the pockets of hard-working Americans... committed to lowering taxes that stunt economic growth.",
+          "reasoning": "Explicit statements and support for extending 2017 tax cuts show clear position favoring lower taxes.",
           "source": "https://cline.house.gov"
         }
       },
@@ -2236,7 +2243,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.3,
+          "quote": "H.R. 23, the Family and Small Business Taxpayer Protection Act rescinds all new IRS funding for squeezing middle-class families and small businesses",
+          "reasoning": "Support for rescinding specific new government funding indicates position favoring less government spending.",
+          "source": "https://cline.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2463,8 +2476,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "believes in promoting free trade agreements and policies that benefit farmers and small businesses",
-          "reasoning": "Text explicitly supports free trade agreements.",
+          "emphasis": 0.5,
+          "quote": "He also believes in promoting free trade agreements and policies that benefit farmers and small businesses in Virginia\u2019s Sixth Congressional District.",
+          "reasoning": "Direct statement endorsing free trade agreements shows position favoring free trade.",
           "source": "https://cline.house.gov"
         }
       },

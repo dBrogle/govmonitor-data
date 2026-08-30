@@ -176,10 +176,10 @@
     "votes_analyzed": 314,
     "votes_without_analysis": 116,
     "truth_score": {
-      "score": 72,
+      "score": 73,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:01:13+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:38:14+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -665,8 +665,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.75,
           "quote": "I voted against the Republican Tax Cuts and Jobs Act of 2017 because it threatens these vital investments in our economy, hurts working families, balloons the national debt, and threatens Social Security and Medicare, all to lavish tax breaks on multinational corporations and those already on the top rung of the economic ladder.",
-          "reasoning": "Opposes Republican tax cuts, favoring higher effective taxation on corporations and wealthy.",
+          "reasoning": "Explicit opposition to tax cuts and support for closing loopholes shows a clear preference against lower taxes.",
           "source": "https://doggett.house.gov"
         }
       },
@@ -2643,8 +2644,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "To grow our economy, we need to invest in our workforce, education, and job training. We need to fix our crumbling infrastructure, bringing it into the 21st century. We need to invest in health care, research and development, and bolster small businesses and local manufacturers.",
-          "reasoning": "Advocates increased government investment in infrastructure, education, health care, and related areas.",
+          "emphasis": 0.6,
+          "quote": "During the consideration of the Republican Budget in February, which will slash funding for millions of Americans in order to provide tax cuts for billionaires, I offered an amendment to preserve the Department by protecting critical funding.",
+          "reasoning": "Opposition to budget cuts that reduce funding for programs indicates preference for maintaining or increasing government spending.",
           "source": "https://doggett.house.gov"
         }
       }

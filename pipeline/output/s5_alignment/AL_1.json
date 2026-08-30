@@ -46,10 +46,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 118,
     "truth_score": {
-      "score": 68,
+      "score": 66,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:38:41+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:04+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -354,8 +354,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "investing in new defense technologies",
-          "reasoning": "The statement supports the reconciliation bill that includes investing in new defense technologies, indicating a position favoring more military spending.",
+          "emphasis": 0.2,
+          "quote": "The passage of President Trump's One Big, Beautiful Bill delivers a victory for hardworking families by extending the Trump tax cuts, fully funding border security, lowering energy costs, and investing in new defense technologies.",
+          "reasoning": "The statement endorses investing in new defense technologies as part of a bill, indicating support for increased military spending.",
           "source": "https://barrymoore.house.gov"
         }
       },
@@ -573,8 +574,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "extending the Trump tax cuts",
-          "reasoning": "The statement endorses the bill for extending the Trump tax cuts and calls it the largest tax cut in American history, showing support for lower taxes.",
+          "emphasis": 0.4,
+          "quote": "This bill is a once in a generation opportunity to renew the Trump tax cuts and deliver on the promises made to the American people.",
+          "reasoning": "The text explicitly supports extending and renewing tax cuts, showing a clear preference for lower taxes.",
           "source": "https://barrymoore.house.gov"
         }
       },
@@ -2348,8 +2350,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "A reversal of the spending insanity by securing $1.6 trillion in mandatory savings",
-          "reasoning": "The statement praises the bill for securing $1.6 trillion in mandatory savings, indicating a position favoring less government spending.",
+          "emphasis": 0.3,
+          "quote": "A reversal of the spending insanity by securing $1.6 trillion in mandatory savings.",
+          "reasoning": "The statement praises securing large mandatory savings to reverse spending, indicating support for reduced government spending.",
           "source": "https://barrymoore.house.gov"
         }
       },

@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "P000034",
   "website": "https://pallone.house.gov",
-  "fetched_at": "2026-08-30T07:53:57+00:00",
+  "fetched_at": "2026-08-30T14:30:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending in the text."
+      "reasoning": "No statements address military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "Republicans in Congress are pushing the largest health care cuts in American history just to hand massive tax breaks to billionaires",
-      "reasoning": "The statement criticizes tax breaks for billionaires, indicating opposition to lower taxes."
+      "quote": "Republicans in Congress are pushing the largest health care cuts in American history just to hand massive tax breaks to billionaires, and they\u2019re doing it at the expense of working families in our state.",
+      "reasoning": "Criticism of tax breaks for billionaires indicates opposition to lower taxes."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": -1.0,
-      "quote": "today announced that the US Army Corps of Engineers is awarding a $38.3 million contract to Weeks Marine to begin a targeted sand replenishment project",
-      "reasoning": "Multiple statements endorse specific federal spending projects and oppose cuts to programs like Medicare and Medicaid."
+      "quote": "today announced that the US Army Corps of Engineers is awarding a $38.3 million contract to Weeks Marine to begin a targeted sand replenishment project in Monmouth County",
+      "reasoning": "Repeated support for specific federal spending projects and opposition to cuts in Medicare/Medicaid shows preference for more spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.3,
       "stated_score": -1.0,
       "quote": "Congressman Pallone has consistently voted against bad trade deals, including the original North American Free Trade Agreement (NAFTA), the U.S.-Korea Free Trade Agreement (KORUS), and the Trans-Pacific Partnership (TPP).",
-      "reasoning": "Explicit opposition to multiple free trade agreements shows a protectionist stance."
+      "reasoning": "Explicit opposition to multiple free trade agreements indicates protectionist stance."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending in the text."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

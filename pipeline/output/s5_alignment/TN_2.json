@@ -56,10 +56,10 @@
     "votes_analyzed": 342,
     "votes_without_analysis": 121,
     "truth_score": {
-      "score": 61,
+      "score": 60,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:59:05+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:35:48+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -446,8 +446,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "No foreign aid should ever be given without proper auditing and accountability, and not a single penny of taxpayer dollars should be sent to terrorists.",
-          "reasoning": "The foreign affairs section explicitly restricts foreign aid with conditions and prohibits any to terrorists.",
+          "reasoning": "The foreign affairs section explicitly conditions and restricts foreign aid spending.",
           "source": "https://burchett.house.gov"
         }
       },
@@ -2886,8 +2887,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "it\u2019s time for Congress to reverse its irresponsible spending habits and get back to a place of fiscal responsibility.",
-          "reasoning": "The debt & deficit section explicitly calls for reversing spending habits to achieve fiscal responsibility.",
+          "emphasis": 0.85,
+          "quote": "Our leaders need to recognize that every dollar we spend comes from the hard-earned paychecks of the American people, and it\u2019s time for Congress to reverse its irresponsible spending habits and get back to a place of fiscal responsibility.",
+          "reasoning": "The debt & deficit section explicitly calls for reversing irresponsible spending habits in favor of fiscal responsibility.",
           "source": "https://burchett.house.gov"
         }
       }

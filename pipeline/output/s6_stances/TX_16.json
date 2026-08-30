@@ -3,7 +3,7 @@
   "district": 16,
   "bioguide_id": "E000299",
   "website": "https://escobar.house.gov",
-  "fetched_at": "2026-08-30T08:00:12+00:00",
+  "fetched_at": "2026-08-30T14:37:16+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on military or defense spending levels."
+      "reasoning": "No statement on military or defense spending levels appears in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "Congresswoman Escobar believes tax policies should prioritize working families and small businesses, not billionaires and corporations. Congresswoman Escobar has continued to fight against tax cuts that benefit the ultra-wealthy at the expense of essential programs like healthcare, education, and infrastructure.",
-      "reasoning": "Text explicitly opposes tax cuts for the wealthy and supports corporations paying their fair share via the IRA."
+      "reasoning": "Text explicitly opposes tax cuts for the wealthy and supports corporations paying a fair share via the IRA."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit overall position stated on increasing or decreasing total government spending."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "Congresswoman Escobar has continued to fight against tax cuts that benefit the ultra-wealthy at the expense of essential programs like healthcare, education, and infrastructure.",
+      "reasoning": "Text defends spending on essential programs and highlights securing federal funding for local projects."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No position stated on trade policy, tariffs, or free trade."
+      "reasoning": "No statement on tariffs or free trade appears in the text."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No position stated on foreign aid spending."
+      "reasoning": "No statement on foreign aid spending appears in the text."
     }
   ]
 }

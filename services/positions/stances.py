@@ -14,6 +14,7 @@ from services.congress.topics import TOPICS
 class StatedStance(BaseModel):
     topic_slug: str
     addressed: bool          # did the text clearly state a position on this topic?
+    emphasis: float | None   # 0..1: how much they "preach" this topic (prominence in messaging)
     stated_score: float | None   # −1..+1 on the topic convention, or null if not addressed
     quote: str | None            # exact verbatim supporting quote from the text, or null
     reasoning: str               # one sentence
@@ -34,6 +35,10 @@ SYSTEM_PROMPT = (
     "- When addressed, you MUST include an EXACT VERBATIM quote copied word-for-word from the "
     "provided text as evidence. Never paraphrase or invent a quote. If you cannot find a "
     "verbatim quote that shows the position, treat the topic as NOT addressed.\n"
+    "- Set emphasis (0..1) to how CENTRAL this topic is to the member's messaging — how much "
+    "they 'preach' it — judged by how prominently and how often it appears across the provided "
+    "text. 1.0 = a signature issue they return to repeatedly; ~0.15 = mentioned once in "
+    "passing. Set emphasis=null when addressed=false.\n"
     "- Judge ONLY what the text says. Do not infer a position from the member's party, name, "
     "or your own prior knowledge of them.\n"
     "- Keep reasoning to one sentence."

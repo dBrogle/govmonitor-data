@@ -46,10 +46,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 132,
     "truth_score": {
-      "score": 52,
+      "score": 61,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T08:01:20+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:38:16+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2031,8 +2031,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Rather than taking more from American families to spend on wasteful and unnecessary big government wish list items and slush funds, our tax code should let families decide how to spend their money so they can best care for their needs.",
-          "reasoning": "Text criticizes big government spending and deficit-fueled budgets in favor of lower spending.",
+          "emphasis": 0.7,
+          "quote": "Rather than taking more from American families to spend on wasteful and unnecessary big government wish list items and slush funds",
+          "reasoning": "Multiple pages criticize wasteful spending, deficits, and big-government programs while promoting fiscal restraint.",
           "source": "https://blakemoore.house.gov"
         }
       },
@@ -2272,8 +2273,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "nothing is better for American industry and economic prosperity than tax cuts",
-          "reasoning": "Text explicitly endorses tax cuts and the TCJA for keeping more money with families and businesses.",
+          "reasoning": "The taxes page explicitly praises tax cuts under TCJA and opposes higher taxes.",
           "source": "https://blakemoore.house.gov"
         }
       },
@@ -2501,9 +2503,10 @@
           }
         ],
         "stated": {
-          "score": 1.0,
-          "quote": "I am committed to ensuring that U.S. trade policy helps Utah businesses find new opportunities in overseas markets for decades to come... negotiating new and enforceable trade agreements that create new opportunities with allies",
-          "reasoning": "Text emphasizes expanding trade agreements and market access while using targeted tariffs only against adversaries.",
+          "score": 0.5,
+          "emphasis": 0.6,
+          "quote": "negotiating new and enforceable trade agreements that create new opportunities with allies... On one hand, this means leveraging tariffs in certain sectors like steel and aluminum",
+          "reasoning": "Trade page endorses both new free-trade agreements and targeted tariffs, yielding a mixed but not purely protectionist stance.",
           "source": "https://blakemoore.house.gov"
         }
       },

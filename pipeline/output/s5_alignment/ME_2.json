@@ -56,10 +56,10 @@
     "votes_analyzed": 319,
     "votes_without_analysis": 100,
     "truth_score": {
-      "score": 60,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:50:17+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 61,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:26:52+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2167,8 +2167,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.6,
           "quote": "His proposed 10 percent universal tariff is designed to reorient our economy from one based on consumption to one built on production",
-          "reasoning": "Text advocates universal tariff as protectionist policy.",
+          "reasoning": "Text advocates a universal tariff and criticizes past free-trade policies.",
           "source": "https://golden.house.gov"
         }
       },
@@ -2329,12 +2330,7 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "A bipartisan group of military veterans today called on Secretary of State Antony Blinken to formalize a security assistance memorandum of understanding (MOU) with Ukraine.",
-          "reasoning": "Text supports security assistance to Ukraine, indicating more foreign aid.",
-          "source": "https://golden.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2649,8 +2645,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "In addition to providing authorization for funds necessary to protect America and provide for our troops, the bill increases troop pay and includes funding for the construction of destroyers built at Bath Iron Works.",
-          "reasoning": "Text explicitly supports NDAA funding for troops and shipbuilding.",
+          "emphasis": 0.75,
+          "quote": "providing authorization for funds necessary to protect America and provide for our troops, the bill increases troop pay and includes funding for the construction of destroyers built at Bath Iron Works",
+          "reasoning": "Text explicitly endorses NDAA funding increases for troops, pay, and shipbuilding.",
           "source": "https://golden.house.gov"
         }
       }

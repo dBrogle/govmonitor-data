@@ -126,10 +126,10 @@
     "votes_analyzed": 280,
     "votes_without_analysis": 93,
     "truth_score": {
-      "score": 56,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:59:55+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 70,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:36:52+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -498,7 +498,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.6,
+          "quote": "I have voted for pay increases for the military, bonuses for service members, and made permanent a temporary program to pay military widows and widowers.",
+          "reasoning": "Text shows repeated support for military pay raises, NDAA passage, and unleashing U.S. military power, indicating preference for more defense spending.",
+          "source": "https://mccaul.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -659,8 +665,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "I also sponsored the TCJA Permanency Act , legislation to keep more money in Americans' wallets by making permanent the tax cuts for families and small businesses enacted in 2017.",
-          "reasoning": "Explicit support for making tax cuts permanent indicates preference for lower taxes.",
+          "reasoning": "Explicit sponsorship of legislation to make 2017 tax cuts permanent demonstrates support for lower taxes.",
           "source": "https://mccaul.house.gov"
         }
       },
@@ -2055,8 +2062,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.5,
           "quote": "Republicans, including myself, are committed to making meaningful spending cuts in this new term to fight inflation and lower the cost of living for every day Americans.",
-          "reasoning": "Direct commitment to spending cuts shows preference for less government spending.",
+          "reasoning": "Direct commitment to meaningful spending cuts to combat inflation shows preference for less government spending.",
           "source": "https://mccaul.house.gov"
         }
       },

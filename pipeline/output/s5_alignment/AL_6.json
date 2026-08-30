@@ -76,10 +76,10 @@
     "votes_analyzed": 333,
     "votes_without_analysis": 96,
     "truth_score": {
-      "score": 49,
+      "score": 48,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:38:56+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:17+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2017,8 +2017,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I Could Not in Good Conscience Vote For Omnibus",
-          "reasoning": "Opposition to the omnibus spending bill and emphasis on spending cuts show support for less government spending.",
+          "emphasis": 0.9,
+          "quote": "voted against H.R. 2029, the \u201cOmnibus\u201d spending bill, because it doesn\u2019t abide by the budget resolution passed by the House and it failed to include necessary policy corrections.",
+          "reasoning": "Repeated statements opposing omnibus bills and advocating spending cuts and debt reduction indicate strong preference for less government spending.",
           "source": "https://palmer.house.gov/"
         }
       },
@@ -2225,8 +2226,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Today the House of Representatives passed the Tax Cuts and Jobs Act by a vote of 227-205.",
-          "reasoning": "Explicit support for the Tax Cuts and Jobs Act demonstrates a position favoring lower taxes.",
+          "emphasis": 0.8,
+          "quote": "Today the House of Representatives passed the Tax Cuts and Jobs Act by a vote of 227-205. Congressman Gary Palmer (R-AL) released the following statement after voting in favor of the bill.",
+          "reasoning": "Multiple references to voting for and supporting tax cuts legislation show clear support for lower taxes.",
           "source": "https://palmer.house.gov/"
         }
       },

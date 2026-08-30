@@ -88,8 +88,8 @@
     "truth_score": {
       "score": 89,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:53:00+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:29:21+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -185,8 +185,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "which requires the United States to maintain the most lethal, agile, and robust military in the world",
-          "reasoning": "Text explicitly calls for the most lethal military possible, indicating support for more defense spending.",
+          "emphasis": 0.8,
+          "quote": "which requires the United States to maintain the most lethal, agile, and robust military in the world.",
+          "reasoning": "Text explicitly calls for the most robust military and highlights defense bill achievements plus troop support funding.",
           "source": "https://hudson.house.gov"
         }
       },
@@ -563,8 +564,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I was proud to support H.R. 1, the Working Families Tax Cuts, which permanently increased the exemption amounts so farms can stay in the family for generations",
-          "reasoning": "Text endorses tax cuts via H.R. 1 and estate tax relief, showing preference for lower taxes.",
+          "emphasis": 0.6,
+          "quote": "H.R. 1 - the Working Families Tax Cuts - has made good on President Trump and Republicans promises to small businesses and family operations.",
+          "reasoning": "Text endorses tax cuts legislation and estate tax relief to keep farms in families.",
           "source": "https://hudson.house.gov"
         }
       },

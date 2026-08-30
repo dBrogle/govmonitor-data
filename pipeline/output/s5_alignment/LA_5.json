@@ -46,10 +46,10 @@
     "votes_analyzed": 314,
     "votes_without_analysis": 98,
     "truth_score": {
-      "score": 88,
+      "score": 85,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:48:48+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:25:32+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -332,8 +332,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I voted for the National Defense Authorization Act (NDAA) to support our men and women in uniform and protect our national security. The House-passed NDAA provides a pay raise for our troops while increasing our military readiness amid continued threats from foreign adversaries.",
-          "reasoning": "The statement explicitly endorses the NDAA for increasing military readiness and support.",
+          "emphasis": 0.45,
+          "quote": "I voted for the National Defense Authorization Act (NDAA) to support our men and women in uniform and protect our national security. The House-passed NDAA provides a pay raise for our troops while increasing our military readiness amid continued threats from foreign adversaries. It also strengthens America's shipbuilding capacity, strips harmful DEI policies from our Armed Forces, and increases support for our Louisiana bases at Fort Polk and Barksdale,",
+          "reasoning": "The statement explicitly endorses the NDAA for increasing military readiness, pay, and shipbuilding capacity.",
           "source": "https://letlow.house.gov"
         }
       },
@@ -529,8 +530,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "With passage of President Trump\u2019s pro-family agenda, we have provided tax relief for the middle class and saved every American from a tax increase.",
-          "reasoning": "The text repeatedly advocates tax relief, extensions of tax cuts, and preventing tax increases.",
+          "emphasis": 0.85,
+          "quote": "With passage of President Trump\u2019s pro-family agenda, we have provided tax relief for the middle class and saved every American from a tax increase. Our working families and seniors will see new relief through a bigger child tax credit, eliminating taxes on tips, and a tax cut for retirees on Social Security.",
+          "reasoning": "Multiple statements repeatedly emphasize tax relief, extending tax cuts, and preventing tax increases.",
           "source": "https://letlow.house.gov"
         }
       },

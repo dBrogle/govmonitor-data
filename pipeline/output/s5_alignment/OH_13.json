@@ -36,10 +36,10 @@
     "votes_analyzed": 329,
     "votes_without_analysis": 119,
     "truth_score": {
-      "score": 50,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:56:51+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 52,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:33:32+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -245,8 +245,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Reps. Sykes, Malliotakis, Horsford, LaLota, Suozzi, Fitzpatrick Introduce Bipartisan No Tax on Overtime for All Workers Act",
-          "reasoning": "Supports specific tax relief measures for workers.",
+          "emphasis": 0.3,
+          "quote": "September 19, 2025 Reps. Sykes, Malliotakis, Horsford, LaLota, Suozzi, Fitzpatrick Introduce Bipartisan No Tax on Overtime for All Workers Act",
+          "reasoning": "Text explicitly backs no tax on overtime and expanding EITC/Child Tax Credit.",
           "source": "https://sykes.house.gov"
         }
       },
@@ -2048,8 +2049,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Congresswoman Sykes is firmly committed to protecting and strengthening Medicare, Medicaid, and Social Security, and she will always oppose any cuts to these hard-earned benefits.",
-          "reasoning": "Opposes cuts and supports full funding for multiple programs.",
+          "emphasis": 0.6,
+          "quote": "Rep. Sykes Leads Letter Requesting Full Funding for National Parks Service, Cuyahoga Valley National Park",
+          "reasoning": "Multiple statements oppose spending cuts and advocate full funding for programs and grants.",
           "source": "https://sykes.house.gov"
         }
       },
@@ -2545,7 +2547,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "September 30, 2025 Ahead of Looming Government Shutdown, Rep. Sykes Introduces Legislation to Pay our Military & Keep Food on the Table",
+          "reasoning": "Text shows support for paying military and opposing insufficient VA/military construction funding bills.",
+          "source": "https://sykes.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

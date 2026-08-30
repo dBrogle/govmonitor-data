@@ -76,10 +76,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 101,
     "truth_score": {
-      "score": 54,
+      "score": 45,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:57:46+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:26+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -598,8 +598,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "praised today's House passage of the historic $1.7 trillion Build Back Better Act, which will meet the urgent needs of individuals and families across the nation and in Pennsylvania by creating jobs, cutting taxes, and lowering costs.",
-          "reasoning": "Praising a bill specifically for cutting taxes indicates support for lower taxes.",
+          "emphasis": 0.4,
+          "quote": "creating jobs, cutting taxes, and lowering costs",
+          "reasoning": "Explicit support for cutting taxes and opposition to tariff taxes indicates preference for lower taxes.",
           "source": "https://boyle.house.gov/"
         }
       },
@@ -827,9 +828,10 @@
           }
         ],
         "stated": {
-          "score": -1.0,
-          "quote": "Boyle Announces Legislation to Lower Cost of Back-to-School Supplies, Calls on Trump to End Tariff Taxes on School Supplies",
-          "reasoning": "Calling to end tariff taxes demonstrates opposition to protectionist tariffs.",
+          "score": 1.0,
+          "emphasis": 0.5,
+          "quote": "Calls on Trump to End Tariff Taxes on School Supplies",
+          "reasoning": "Repeated opposition to tariffs demonstrates support for free trade over protectionism.",
           "source": "https://boyle.house.gov/"
         }
       },
@@ -2565,8 +2567,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "300,000 Pennsylvanians are projected to lose their health care. My bill very simply would say these Medicaid cuts do not take effect in December. We need to act to prevent them, and we need to act now.",
-          "reasoning": "Opposing Medicaid cuts and praising large spending bills shows support for more government spending.",
+          "emphasis": 0.6,
+          "quote": "praised today's House passage of the historic $1.7 trillion Build Back Better Act",
+          "reasoning": "Praising large spending bills and opposing cuts to programs shows support for more government spending.",
           "source": "https://boyle.house.gov/"
         }
       },

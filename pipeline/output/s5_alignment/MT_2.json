@@ -28,8 +28,8 @@
     "truth_score": {
       "score": 75,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:52:21+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:57+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -537,8 +537,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "That\u2019s why I strongly support making the Tax Cuts and Jobs Act permanent to keep more money in the pockets of hardworking Montanans.",
-          "reasoning": "Explicit support for extending tax cuts indicates preference for lower taxes.",
+          "reasoning": "Text explicitly endorses extending tax cuts and repealing the estate tax to reduce tax burdens.",
           "source": "https://downing.house.gov/"
         }
       },

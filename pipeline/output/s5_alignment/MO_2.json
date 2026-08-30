@@ -86,10 +86,10 @@
     "votes_analyzed": 320,
     "votes_without_analysis": 102,
     "truth_score": {
-      "score": 66,
+      "score": 70,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:51:41+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:06+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -394,8 +394,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Wagner Votes to Advance Peace Through Strength, Invest in Missouri-made Defense Production July 22, 2026 Press Release Washington, D.C. \u2013 Congresswoman Ann Wagner (R-MO) released the following statement after she voted for H.R. 8800, the National Defense Authorization Act for Fiscal Year 2027:",
-          "reasoning": "The text explicitly supports increased defense spending via NDAA vote and defense production investment.",
+          "emphasis": 0.7,
+          "quote": "Congresswoman Ann Wagner (R-MO) released the following statement after she voted for H.R. 8800, the National Defense Authorization Act for Fiscal Year 2027",
+          "reasoning": "Text shows repeated support for NDAA and defense production investments indicating preference for more military spending.",
           "source": "https://wagner.house.gov"
         }
       },
@@ -580,8 +581,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I will always be committed to keeping taxes low for hardworking families and getting government out of the way so that Americans can do what they do best: work hard and innovate in pursuit of their dreams.",
-          "reasoning": "The text directly states commitment to keeping taxes low.",
+          "emphasis": 0.8,
+          "quote": "I will always be committed to keeping taxes low for hardworking families",
+          "reasoning": "Explicit statements favor tax cuts and keeping taxes low for families and businesses.",
           "source": "https://wagner.house.gov"
         }
       },
@@ -2152,8 +2154,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "We are never going to be able to tax, borrow, and spend our way to a strong economy--it is American business and entrepreneurs that make our economy grow.",
-          "reasoning": "The text criticizes borrow-and-spend policies and highlights debt crisis as unsustainable.",
+          "emphasis": 0.6,
+          "quote": "We are never going to be able to tax, borrow, and spend our way to a strong economy",
+          "reasoning": "Criticism of debt and borrow-and-spend approach signals preference for reduced government spending.",
           "source": "https://wagner.house.gov"
         }
       },
@@ -2404,8 +2407,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a former United States Ambassador, I saw firsthand what strong ties with our allies and partners mean to an enhanced national security, free and fair trade, the protection of American interests abroad, and the promotion of democracy and human rights.",
-          "reasoning": "The text endorses free and fair trade as a core principle.",
+          "emphasis": 0.4,
+          "quote": "strong ties with our allies and partners mean to an enhanced national security, free and fair trade",
+          "reasoning": "Emphasis on free and fair trade indicates support for free trade policies.",
           "source": "https://wagner.house.gov"
         }
       },

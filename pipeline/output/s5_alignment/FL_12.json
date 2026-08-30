@@ -116,10 +116,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 119,
     "truth_score": {
-      "score": 65,
+      "score": 66,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:44:44+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:21:20+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -413,8 +413,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "it is imperative the security and long-term success of the country is not sacrificed through arbitrary cuts to the military's budget",
-          "reasoning": "The statement explicitly opposes cuts to the military budget and emphasizes providing necessary resources to the Armed Forces.",
+          "emphasis": 0.85,
+          "quote": "Despite the budgetary and fiscal climate, it is imperative the security and long-term success of the country is not sacrificed through arbitrary cuts to the military's budget.",
+          "reasoning": "Text explicitly opposes cuts to military budget and stresses need for resources to meet threats.",
           "source": "https://bilirakis.house.gov/"
         }
       },
@@ -1985,8 +1986,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "wasteful and duplicative programs are eliminated in order to make government more efficient and accountable",
-          "reasoning": "The statement calls for eliminating wasteful spending and supports balanced budget rules requiring flat or reduced spending.",
+          "emphasis": 0.75,
+          "quote": "Our federal spending programs must be carefully examined so that wasteful and duplicative programs are eliminated in order to make government more efficient and accountable.",
+          "reasoning": "Text calls for eliminating wasteful spending, balanced budget amendment, and restraining federal spending growth.",
           "source": "https://bilirakis.house.gov/"
         }
       },
@@ -2182,8 +2184,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "the Tax Reform law is helping some seniors by dropping the average senior from a 15% tax rate to 12% and doubling the standard deduction",
-          "reasoning": "The statement praises tax reform that lowered rates and increased deductions, indicating support for lower taxes.",
+          "emphasis": 0.6,
+          "quote": "Happily, the Tax Reform law is helping some seniors by dropping the average senior from a 15% tax rate to 12% and doubling the standard deduction.",
+          "reasoning": "Text praises tax reform that lowered rates and supports reforming the tax code to promote growth.",
           "source": "https://bilirakis.house.gov/"
         }
       },

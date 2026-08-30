@@ -3,7 +3,7 @@
   "district": 30,
   "bioguide_id": "F000483",
   "website": "https://friedman.house.gov/",
-  "fetched_at": "2026-08-30T07:41:59+00:00",
+  "fetched_at": "2026-08-30T14:18:13+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -25,37 +25,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military spending levels."
+      "reasoning": "No statement on military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Criticism of tax breaks for wealthy appears only in health funding context without general taxation position."
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": -1.0,
+      "quote": "Trump and Congressional Republicans let the ACA tax credits expire and cut a trillion dollars from Medicaid to pay for a trillion dollars in tax breaks for the ultra-wealthy.",
+      "reasoning": "Explicitly condemns tax breaks for the wealthy in context of funding cuts."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Support for specific federal investments and ACA credits does not state general position on government spending."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Trump and Congressional Republicans let the ACA tax credits expire and cut a trillion dollars from Medicaid to pay for a trillion dollars in tax breaks for the ultra-wealthy.",
+      "reasoning": "Opposes cuts to Medicaid and ACA subsidies, supporting higher government spending on these programs."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on trade or tariffs."
+      "reasoning": "No statement on trade policy or tariffs."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid."
+      "reasoning": "No statement on foreign aid spending."
     }
   ]
 }

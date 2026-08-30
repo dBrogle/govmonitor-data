@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M001224",
   "website": "https://moran.house.gov",
-  "fetched_at": "2026-08-30T07:59:26+00:00",
+  "fetched_at": "2026-08-30T14:36:17+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -22,37 +22,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military spending levels appears in the text."
+      "reasoning": "No clear position stated on military spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "Congressman Moran Introduces No Tax on Overtime Act",
-      "reasoning": "The news title directly indicates support for eliminating taxes on overtime pay."
+      "reasoning": "Title directly indicates support for eliminating taxes on overtime pay."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "The debt-related headline does not contain an explicit position statement on spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "Moran Leads with TRUST Act to Tackle $37 Trillion National Debt",
+      "reasoning": "Title shows focus on reducing national debt via spending restraint."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on tariffs or free trade appears in the text."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Letter to USTR and Treasury On Curbing Import of Dangerous Chinese Vapes",
+      "reasoning": "Action targets restricting specific Chinese imports."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
+      "reasoning": "No mention of foreign aid in the provided text."
     }
   ]
 }

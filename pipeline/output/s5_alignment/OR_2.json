@@ -46,10 +46,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 110,
     "truth_score": {
-      "score": 59,
+      "score": 64,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:57:23+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:33:55+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -343,8 +343,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Congressman Bentz (OR-02) voted YES for the Fiscal Year 2027 Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, legislation that includes $80 million for the construction of an Academic Training Center at Kingsley Field Air National Guard Base in Klamath Falls.",
-          "reasoning": "The statement explicitly supports increased military construction funding.",
+          "emphasis": 0.4,
+          "quote": "Today, Congressman Cliff Bentz (OR-02) voted YES for the Fiscal Year 2027 Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, legislation that includes $80 million for the construction of an Academic Training Center at Kingsley Field Air National Guard Base in Klamath Falls.",
+          "reasoning": "Text explicitly supports military construction funding via a yes vote on appropriations bill.",
           "source": "https://bentz.house.gov"
         }
       },
@@ -2025,8 +2026,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Congressman Cliff Bentz (R-Ore.) voted against H.R.1319 , the $1.9 trillion spending bill, which passed the United States House of Representatives 219-212 .",
-          "reasoning": "The statement explicitly opposes a large federal spending bill.",
+          "reasoning": "Text states opposition to a large spending bill.",
           "source": "https://bentz.house.gov"
         }
       },

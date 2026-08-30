@@ -78,8 +78,8 @@
     "truth_score": {
       "score": 93,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:55:39+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:32:30+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -406,8 +406,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The FY27 NDAA authorizes $1.15 trillion in investment in national defense modernization, emerging technologies, military readiness, missile defense,",
-          "reasoning": "Text explicitly endorses major increases in defense funding and military capabilities.",
+          "emphasis": 0.9,
+          "quote": "This legislation restores peace through strength by rebuilding our defense industrial base, modernizing our military acquisition system, accelerating emerging technologies, and increasing the readiness and lethality of America\u2019s fighting force",
+          "reasoning": "Text repeatedly advocates strengthening military capabilities, readiness, and funding via NDAA and related bills.",
           "source": "https://stefanik.house.gov/"
         }
       },

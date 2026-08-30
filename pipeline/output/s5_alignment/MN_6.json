@@ -76,10 +76,10 @@
     "votes_analyzed": 312,
     "votes_without_analysis": 83,
     "truth_score": {
-      "score": 80,
+      "score": 81,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:51:18+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:27:54+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -585,7 +585,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.2,
+          "quote": "Congressman Emmer highlights constituents\u2019 support of the Working Families Tax Cut Act",
+          "reasoning": "The text explicitly highlights support for a tax cut act, indicating a position favoring lower taxes.",
+          "source": "https://emmer.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2141,12 +2147,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "Our office was proud to advocate for these infrastructure projects in communities across the Sixth District,\u201d Congressman Emmer said. \"These investments will significantly improve the daily lives of Minnesotans and will drive growth throughout our district.\"",
-          "reasoning": "The text repeatedly celebrates securing federal funding and investments for infrastructure and law enforcement programs.",
-          "source": "https://emmer.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",

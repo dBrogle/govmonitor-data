@@ -3,7 +3,7 @@
   "district": 12,
   "bioguide_id": "L000602",
   "website": "https://summerlee.house.gov",
-  "fetched_at": "2026-08-30T07:58:11+00:00",
+  "fetched_at": "2026-08-30T14:34:43+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending in the text."
+      "reasoning": "No mention of military or defense spending in the provided text."
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No mention of taxation levels or policy in the text."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "cracking down on corporate price-gouging, ending tax breaks for billionaires and giant corporations",
+      "reasoning": "Text explicitly calls for ending tax breaks for billionaires and corporations, indicating support for higher taxes."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Mentions of specific federal funding and rejecting cuts exist but no clear general position on overall government spending levels is stated verbatim."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "Congresswoman Summer L. Lee (PA-12) voted YES on the House minibus funding package, advancing millions of federal dollars she secured for critical investments in Western Pennsylvania... rejects the most extreme, right-wing budget cuts",
+      "reasoning": "Multiple statements celebrate securing federal funding and reject budget cuts across housing, infrastructure, health, and environmental projects."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of trade policy or tariffs in the text."
+      "reasoning": "No mention of trade policy, tariffs, or free trade in the provided text."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending in the text."
+      "reasoning": "No mention of foreign aid spending in the provided text."
     }
   ]
 }

@@ -116,10 +116,10 @@
     "votes_analyzed": 310,
     "votes_without_analysis": 122,
     "truth_score": {
-      "score": 42,
+      "score": 44,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:47:57+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:38+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -325,8 +325,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "I support extending tax cuts",
-          "reasoning": "Text explicitly supports extending tax cuts, indicating preference for lower taxes.",
+          "reasoning": "Explicit support for extending tax cuts indicates preference for lower taxes.",
           "source": "https://carson.house.gov/"
         }
       },
@@ -2243,8 +2244,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "I strongly support more federal resources to expand the supply of affordable housing",
-          "reasoning": "Text calls for more federal resources on housing and opposes cuts to programs like HUD and Medicaid.",
+          "emphasis": 0.4,
+          "quote": "I strongly support more federal resources to expand the supply of affordable housing, and more resources to fight housing insecurity",
+          "reasoning": "Repeated calls for increased federal funding and opposition to program cuts show preference for more spending.",
           "source": "https://carson.house.gov/"
         }
       },
@@ -2621,8 +2623,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The new Trump tariffs will only make this worse, especially for construction materials.",
-          "reasoning": "Text criticizes tariffs as harmful, indicating support for free trade.",
+          "emphasis": 0.2,
+          "quote": "The new Trump tariffs will only make this worse, especially for construction materials. ... adding unnecessary tariffs only exacerbates the problem.",
+          "reasoning": "Criticism of tariffs indicates support for free trade.",
           "source": "https://carson.house.gov/"
         }
       }

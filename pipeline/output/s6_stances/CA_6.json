@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "B001287",
   "website": "https://bera.house.gov",
-  "fetched_at": "2026-08-30T07:40:10+00:00",
+  "fetched_at": "2026-08-30T14:16:58+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels."
+      "reasoning": "No verbatim statement addresses the level of military or defense spending."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on tax rates or policy."
+      "reasoning": "No verbatim statement addresses tax rates or taxation policy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "Since Community Project Funding was restored, I have secured more than $63.8 million for 51 projects across Sacramento County, including investments in technology infrastructure, trans",
+      "reasoning": "Text repeatedly highlights securing and supporting federal project funding and investments, indicating preference for more government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "I have also opposed sweeping tariff policies that raise costs for working families, hurt small businesses, and strain our economy.",
-      "reasoning": "Explicit opposition to tariffs indicates support for free trade."
+      "reasoning": "Explicit opposition to tariffs demonstrates support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Today, U.S. Representatives Ami Bera, M.D. (CA-06), Derek Tran (CA-45), and Salud Carbajal (CA-24) led a group of 65 Members of Congress in urging Secretary of State Marco Rubio to address overly broad and inconsistently enforced Israeli restrictions on dual-use goods entering the Gaza Strip.",
+      "reasoning": "Advocacy to facilitate humanitarian aid into Gaza indicates support for more foreign aid spending."
     }
   ]
 }

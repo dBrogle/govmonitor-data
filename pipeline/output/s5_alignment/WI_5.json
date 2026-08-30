@@ -46,10 +46,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 122,
     "truth_score": {
-      "score": 66,
+      "score": 73,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T08:03:09+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:40:07+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -354,8 +354,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "which includes key conservative victories, including securing servicemembers the largest pay raise in twenty years, ending the liberal ideology infiltrating the U.S. military, and a Parents\u2019 Bill of Rights for military families.",
-          "reasoning": "The text shows support for NDAA passage including military pay raises and readiness.",
+          "emphasis": 0.7,
+          "quote": "Congressman Scott Fitzgerald (WI-05) issued the following statement after voting to pass H.R. 8070, the Servicemember Quality of Life and National Defense Authorization Act of Fiscal Year 2025",
+          "reasoning": "Multiple statements show support for passing NDAA and military construction appropriations bills.",
           "source": "https://fitzgerald.house.gov"
         }
       },
@@ -562,8 +563,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "make permanent the 100 percent bonus depreciation credit passed as part of the Tax Cuts and Jobs Act (TCJA)",
-          "reasoning": "The text explicitly endorses extending TCJA tax provisions to favor manufacturers.",
+          "emphasis": 0.5,
+          "quote": "Congress and the Administration could work together to make permanent the 100 percent bonus depreciation credit passed as part of the Tax Cuts and Jobs Act (TCJA)",
+          "reasoning": "Explicit support for extending TCJA tax provisions and highlighting wins from tax cuts.",
           "source": "https://fitzgerald.house.gov"
         }
       },
@@ -2123,8 +2125,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Inflationary pressures will only worsen if we do not work to cut reckless spending.",
-          "reasoning": "The text directly advocates cutting government spending to address inflation.",
+          "reasoning": "Direct call to cut reckless spending to fight inflation.",
           "source": "https://fitzgerald.house.gov"
         }
       },

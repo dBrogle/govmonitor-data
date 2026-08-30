@@ -36,10 +36,10 @@
     "votes_analyzed": 330,
     "votes_without_analysis": 97,
     "truth_score": {
-      "score": 66,
+      "score": 67,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:51:56+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:29+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -289,8 +289,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "how H.R. 1, the Working Families Tax Cuts Act, reverses misguided policies championed by Democrats and strengthens our position to win.",
-          "reasoning": "Text endorses the Working Families Tax Cuts Act as reversing misguided policies.",
+          "emphasis": 0.6,
+          "quote": "the Working Families Tax Cut Act stopped China from benefiting from American tax provisions and can be a key tool in maintaining the U.S.\u2019s leadership on the world stage",
+          "reasoning": "Text repeatedly promotes the Working Families Tax Cuts Act as reversing misguided policies and strengthening U.S. position.",
           "source": "https://burlison.house.gov"
         }
       },
@@ -2591,8 +2592,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "a provision targeting a Federal Reserve payment stream that outside research projects will exceed $1 trillion over the next decade.",
-          "reasoning": "Text promotes a trillion-dollar savings offset by reforming Federal Reserve payments.",
+          "emphasis": 0.5,
+          "quote": "a provision targeting a Federal Reserve payment stream that outside research projects will exceed $1 trillion over the next decade",
+          "reasoning": "Text highlights trillion-dollar savings by repealing Fed authority to pay interest on reserve balances as a pay-for mechanism.",
           "source": "https://burlison.house.gov"
         }
       }

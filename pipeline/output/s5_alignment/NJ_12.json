@@ -78,8 +78,8 @@
     "truth_score": {
       "score": 80,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:54:13+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:30:41+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -285,8 +285,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "against harmful bills\u2014including the GOP Tax Bill\u2014that threaten the prosperity of all New Jerseyans",
-          "reasoning": "Opposition to the GOP Tax Bill (a tax-cut measure) indicates a position favoring higher taxes.",
+          "emphasis": 0.2,
+          "quote": "I have continued to fight for fair pay, paid leave, and against harmful bills\u2014including the GOP Tax Bill\u2014that threaten the prosperity of all New Jerseyans.",
+          "reasoning": "Explicit opposition to the GOP Tax Bill (a tax-cutting measure) indicates a stance favoring higher taxes or against lower taxes.",
           "source": "https://watsoncoleman.house.gov/"
         }
       },

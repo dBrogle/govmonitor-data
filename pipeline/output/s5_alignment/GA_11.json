@@ -76,10 +76,10 @@
     "votes_analyzed": 310,
     "votes_without_analysis": 108,
     "truth_score": {
-      "score": 53,
+      "score": 57,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:46:28+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:22:54+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -373,8 +373,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "ensuring our military has the resources needed to defend our nation",
-          "reasoning": "The text explicitly supports providing resources for the military, indicating a position favoring more defense spending.",
+          "emphasis": 0.8,
+          "quote": "Ensuring a strong national defense to protect our citizens and uphold American interests worldwide.",
+          "reasoning": "Text explicitly prioritizes strong national defense and resources for the military.",
           "source": "https://loudermilk.house.gov"
         }
       },
@@ -2082,8 +2083,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Supporting a constitutional amendment to require the federal government to balance its budget and curb deficit spending",
-          "reasoning": "The text directly endorses balancing the budget and curbing deficit spending, indicating support for less government spending.",
+          "emphasis": 0.7,
+          "quote": "Supporting a constitutional amendment to require the federal government to balance its budget and curb deficit spending.",
+          "reasoning": "Text directly advocates balancing budget and curbing deficit spending.",
           "source": "https://loudermilk.house.gov"
         }
       },
@@ -2290,8 +2292,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Working to create fair trade policies that protect American jobs, strengthen our economy, and uphold national interests",
-          "reasoning": "The text advocates fair trade policies to protect American jobs and national interests, indicating a protectionist stance.",
+          "emphasis": 0.4,
+          "quote": "Trade Working to create fair trade policies that protect American jobs, strengthen our economy, and uphold national interests.",
+          "reasoning": "Text supports fair trade policies explicitly to protect American jobs.",
           "source": "https://loudermilk.house.gov"
         }
       },

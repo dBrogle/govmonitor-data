@@ -86,10 +86,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 81,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:49:33+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 67,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:26:43+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2283,7 +2283,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.8,
+          "quote": "With our game-changing Inflation Reduction Act, Democrats enacted the largest climate investment in history",
+          "reasoning": "Repeated support for major spending legislation and opposition to program cuts clearly favors more government spending.",
+          "source": "https://katherineclark.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

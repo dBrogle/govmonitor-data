@@ -76,10 +76,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 112,
     "truth_score": {
-      "score": 90,
+      "score": 92,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:47:17+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:02+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -395,8 +395,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "This spending package provides the certainty needed to unleash America\u2019s energy potential, invest in our military, and modernize our aging infrastructure",
-          "reasoning": "The statement explicitly supports investing in the military.",
+          "reasoning": "Multiple references to voting for defense authorization, military construction funding, and explicit support for investing in the military indicate a clear pro-increased defense spending stance.",
           "source": "https://bost.house.gov/"
         }
       },
@@ -592,8 +593,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "We\u2019ve locked in historic tax relief for working families.",
-          "reasoning": "The statement endorses tax relief, indicating support for lower taxes.",
+          "reasoning": "The statement praising historic tax relief directly endorses lower taxes.",
           "source": "https://bost.house.gov/"
         }
       },

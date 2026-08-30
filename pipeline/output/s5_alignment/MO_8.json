@@ -86,10 +86,10 @@
     "votes_analyzed": 315,
     "votes_without_analysis": 94,
     "truth_score": {
-      "score": 61,
+      "score": 66,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:51:59+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:25+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -383,8 +383,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "Whether it\u2019s fully funding the equipment they need to do their jobs or ensuring they have great healthcare when they get home from a tour of duty, I am honored to vote in favor of policies that support our Veterans.",
-          "reasoning": "Text explicitly supports fully funding military equipment and veterans' needs, indicating more defense spending.",
+          "reasoning": "Text explicitly supports fully funding military equipment and veterans' needs, indicating position for more military spending.",
           "source": "https://jasonsmith.house.gov"
         }
       },
@@ -1944,8 +1945,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Fighting to restore fiscal sanity in Washington",
-          "reasoning": "Text advocates restoring fiscal sanity alongside keeping money in pockets rather than with bureaucrats, indicating preference for less spending.",
+          "emphasis": 0.5,
+          "quote": "Fighting to restore fiscal sanity in Washington.",
+          "reasoning": "Calls for fiscal sanity combined with emphasis on keeping money out of Washington indicate preference for less government spending.",
           "source": "https://jasonsmith.house.gov"
         }
       },
@@ -2141,8 +2143,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "PASSED: The One, Big, Beautiful Bill \u2013 The Largest Tax Cut in American History",
-          "reasoning": "Text endorses major tax cuts and relief, showing support for lower taxes.",
+          "emphasis": 0.8,
+          "quote": "You earned your paycheck, and you should be able to keep it because you know how to spend your money way better than some bureaucrat in Washington.",
+          "reasoning": "Multiple references to tax relief, tax cuts, and keeping earnings show clear support for lower taxes.",
           "source": "https://jasonsmith.house.gov"
         }
       },
@@ -2497,8 +2500,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "A trade agenda that puts America first",
-          "reasoning": "Text promotes an America-first trade agenda aligned with protectionist measures like Trump's orders for a level playing field.",
+          "emphasis": 0.4,
+          "quote": "Smith: President Trump Trade Order Helps Deliver American Workers and Manufacturers a Level Playing Field.",
+          "reasoning": "Support for Trump trade orders and America-first agenda aligns with protectionist policies.",
           "source": "https://jasonsmith.house.gov"
         }
       }

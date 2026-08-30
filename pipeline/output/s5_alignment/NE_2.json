@@ -66,10 +66,10 @@
     "votes_analyzed": 320,
     "votes_without_analysis": 143,
     "truth_score": {
-      "score": 72,
+      "score": 76,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:53:20+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:29:40+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -396,8 +396,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "In Congress, Rep. Bacon is committed to enhancing America\u2019s military readiness to deter and combat emerging threats through vital defense legislation, such as the National Defense Authorization Act",
-          "reasoning": "The statement explicitly supports enhancing military readiness via defense legislation, indicating a pro-increased military stance.",
+          "emphasis": 0.9,
+          "quote": "Rep. Bacon is committed to enhancing America\u2019s military readiness to deter and combat emerging threats through vital defense legislation, such as the National Defense Authorization Act",
+          "reasoning": "Text explicitly prioritizes military readiness, NDAA support, and defense capabilities as core priorities.",
           "source": "https://bacon.house.gov"
         }
       },
@@ -2473,8 +2474,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Bacon, Panetta Introduce the Bipartisan Stop Global Tariffs Act",
-          "reasoning": "The introduction of legislation to stop global tariffs directly supports free trade over protectionism.",
+          "reasoning": "Explicit introduction of legislation to stop tariffs indicates support for free trade.",
           "source": "https://bacon.house.gov"
         }
       },

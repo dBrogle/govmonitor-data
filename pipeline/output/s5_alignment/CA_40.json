@@ -46,10 +46,10 @@
     "votes_analyzed": 327,
     "votes_without_analysis": 138,
     "truth_score": {
-      "score": 88,
+      "score": 89,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:42:51+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:18:51+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -365,8 +365,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.85,
           "quote": "I will always work to guarantee our warfighters and diplomats have the resources and tools they need to accomplish American policy objectives globally.",
-          "reasoning": "Text explicitly supports providing resources and tools to warfighters.",
+          "reasoning": "Text repeatedly emphasizes providing resources to warfighters and countering adversaries like China.",
           "source": "https://youngkim.house.gov"
         }
       },
@@ -2206,8 +2207,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "ensure that the federal government is cutting red tape and not increasing taxes on our small and medium-sized businesses so we can return to pre-pandemic economic growth.",
-          "reasoning": "Text explicitly opposes increasing taxes.",
+          "emphasis": 0.6,
+          "quote": "we must ensure that the federal government is cutting red tape and not increasing taxes on our small and medium-sized businesses",
+          "reasoning": "Explicit opposition to tax increases on businesses appears in economy and small business sections.",
           "source": "https://youngkim.house.gov"
         }
       },

@@ -48,8 +48,8 @@
     "truth_score": {
       "score": 54,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:48:33+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:25:11+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2640,8 +2640,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "For that reason, I am supporting Representative Thomas Massie\u2019s amendment. It is a vote for accountability. It is a vote to say that American support should encourage peace, protect innocent lives, and advance the values we stand for as a nation.",
-          "reasoning": "The text states support for an amendment limiting funding for Israel, indicating a position favoring less foreign aid spending.",
+          "reasoning": "The statement explicitly supports an amendment limiting funding for Israel, indicating a preference for reduced foreign aid spending.",
           "source": "https://troycarter.house.gov"
         }
       }

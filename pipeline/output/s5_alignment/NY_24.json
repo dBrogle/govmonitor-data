@@ -56,10 +56,10 @@
     "votes_analyzed": 329,
     "votes_without_analysis": 139,
     "truth_score": {
-      "score": 84,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:55:58+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 89,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:32:39+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -362,7 +362,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "ensure every American service member and veteran is well-equipped and adequately supported",
+          "reasoning": "Text repeatedly emphasizes equipping and supporting military readiness and specific defense programs like Fort Drum nuclear energy.",
+          "source": "https://tenney.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -622,8 +628,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Both laws delivered historic relief by lowering rates for individuals and businesses, doubling the Standard Deduction and the Child Tax Credit, and driving private investment and job growth across the country.",
-          "reasoning": "Text explicitly supports lower taxes via multiple references to voting for and expanding tax cuts.",
+          "emphasis": 0.8,
+          "quote": "setting forth her priorities to lower taxes, reward work, support families and seniors, strengthen small businesses and family farms",
+          "reasoning": "Multiple releases and the dedicated tax plan page explicitly advocate lowering taxes and expanding TCJA relief provisions.",
           "source": "https://tenney.house.gov/"
         }
       },

@@ -56,10 +56,10 @@
     "votes_analyzed": 328,
     "votes_without_analysis": 113,
     "truth_score": {
-      "score": 86,
+      "score": 88,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:58:27+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:50+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -353,8 +353,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.85,
           "quote": "We must continue to rebuild our military and ensure that our troops have the resources and training they need to defend our nation at home and abroad.",
-          "reasoning": "Text explicitly calls for rebuilding the military with more resources.",
+          "reasoning": "The text explicitly calls for rebuilding the military with necessary resources, indicating support for increased military spending.",
           "source": "https://johnjoyce.house.gov/"
         }
       },
@@ -539,8 +540,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "prevent the largest tax hike in American history.",
-          "reasoning": "Text supports preventing tax increases.",
+          "emphasis": 0.6,
+          "quote": "secure our border, unleash domestic energy production, strengthen Medicaid, and prevent the largest tax hike in American history.",
+          "reasoning": "The statement supports legislation to prevent the largest tax hike, showing a clear preference for lower taxes.",
           "source": "https://johnjoyce.house.gov/"
         }
       },

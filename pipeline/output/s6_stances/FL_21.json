@@ -3,7 +3,7 @@
   "district": 21,
   "bioguide_id": "M001199",
   "website": "https://mast.house.gov",
-  "fetched_at": "2026-08-30T07:44:55+00:00",
+  "fetched_at": "2026-08-30T14:21:32+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -17,28 +17,32 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Text discusses securing national defense but does not state a position on military spending levels."
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": 1.0,
+      "quote": "Having served in combat operations in Afghanistan, I learned firsthand how the United States\u2019 retreat from a leadership role in the international community has set the world on a dangerous course that threatens our national security. Read more about my work to secure our national defense .",
+      "reasoning": "Explicit priority on securing national defense after combat experience indicates support for stronger military posture."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "Read more about my work to lower taxes and reduce spending",
-      "reasoning": "Text explicitly states intent to lower taxes."
+      "quote": "Read more about my work to lower taxes and reduce spending .",
+      "reasoning": "Direct statement of work to lower taxes shows clear position favoring reduced taxation."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "Read more about my work to lower taxes and reduce spending",
-      "reasoning": "Text explicitly states intent to reduce spending."
+      "quote": "Washington\u2019s spending habits are completely out of control. These high levels of debt are simply unsustainable and will limit economic opportunities for future generations of Floridians if not addressed. Read more about my work to lower taxes and reduce spending .",
+      "reasoning": "Explicit criticism of out-of-control spending and commitment to reduce it indicates preference for less government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statement on trade policy or tariffs appears in the text."
@@ -46,6 +50,7 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statement on foreign aid spending appears in the text."

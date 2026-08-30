@@ -48,8 +48,8 @@
     "truth_score": {
       "score": 76,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:54:18+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:30:49+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -546,8 +546,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Today, I voted for peace and human dignity\u2014voting 'yes' on an Amendment to the National Security funding bill that would have blocked $3.3 billion in offensive military aid to fund violence in the Middle East.",
-          "reasoning": "Vote to block military aid directly states support for less military spending.",
+          "emphasis": 0.25,
+          "quote": "Today, I voted for peace and human dignity\u2014voting 'yes' on an Amendment to the National Security funding bill that would have blocked $3.3 billion in offensive military aid to fund violence in the Middle East. ... No more money for endless wars.",
+          "reasoning": "Explicit vote and statement opposing military aid spending shows clear position for less military spending.",
           "source": "https://stansbury.house.gov/"
         }
       },
@@ -699,8 +700,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Today, I voted for peace and human dignity\u2014voting 'yes' on an Amendment to the National Security funding bill that would have blocked $3.3 billion in offensive military aid to fund violence in the Middle East.",
-          "reasoning": "Vote to block foreign military aid directly states support for less foreign aid spending.",
+          "emphasis": 0.25,
+          "quote": "Today, I voted for peace and human dignity\u2014voting 'yes' on an Amendment to the National Security funding bill that would have blocked $3.3 billion in offensive military aid to fund violence in the Middle East. ... No more money for endless wars.",
+          "reasoning": "Explicit vote and statement opposing foreign military aid shows clear position for less foreign aid spending.",
           "source": "https://stansbury.house.gov/"
         }
       },

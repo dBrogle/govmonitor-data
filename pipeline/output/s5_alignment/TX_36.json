@@ -76,10 +76,10 @@
     "votes_analyzed": 318,
     "votes_without_analysis": 105,
     "truth_score": {
-      "score": 64,
+      "score": 66,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T08:01:08+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:38:03+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -373,8 +373,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Our Armed Forces must be second to none and fully prepared, at all times, to defend the U.S. and our interests at home and abroad.",
-          "reasoning": "Text explicitly calls for a strong military that is second to none, indicating support for more defense spending.",
+          "emphasis": 0.9,
+          "quote": "As the son of a WWII veteran, a veteran myself, and the father of a decorated Navy SEAL, I understand first-hand the importance of maintaining a strong, robust military. Our Armed Forces must be second to none and fully prepared, at all times, to defend the U.S. and our interests at home and abroad.",
+          "reasoning": "Text explicitly advocates for a strong military second to none with peace through strength, indicating support for more defense spending.",
           "source": "https://babin.house.gov"
         }
       },
@@ -1868,8 +1869,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Clearly, Washington doesn\u2019t have a revenue problem; it has a spending problem.",
-          "reasoning": "Text criticizes excessive federal spending and calls for reducing it to address debt.",
+          "emphasis": 0.7,
+          "quote": "Clearly, Washington doesn\u2019t have a revenue problem; it has a spending problem. ... I am pushing policies that work to balance our budget by eliminating wasteful spending",
+          "reasoning": "Text identifies spending as the core problem and calls for eliminating wasteful spending to address debt.",
           "source": "https://babin.house.gov"
         }
       },
@@ -2076,8 +2078,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "we are working to lower taxes for hardworking families and small businesses",
-          "reasoning": "Text states support for lowering taxes.",
+          "emphasis": 0.4,
+          "quote": "To grow America\u2019s economy, we are working to lower taxes for hardworking families and small businesses while also taking steps to reform America\u2019s tax code so it is fairer and simpler.",
+          "reasoning": "Text states support for lowering taxes to grow the economy.",
           "source": "https://babin.house.gov"
         }
       },

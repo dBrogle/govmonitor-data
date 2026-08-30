@@ -3,7 +3,7 @@
   "district": 10,
   "bioguide_id": "H001101",
   "website": "https://harrigan.house.gov/",
-  "fetched_at": "2026-08-30T07:53:02+00:00",
+  "fetched_at": "2026-08-30T14:29:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "He is committed to strengthening our military, investing in cutting-edge technology, and ensuring our troops have the resources they need to succeed.",
-      "reasoning": "The text explicitly supports strengthening the military and providing resources to troops."
+      "reasoning": "Text repeatedly emphasizes commitment to strengthening and modernizing the military with resources and readiness investments."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position on higher or lower taxes is stated."
+      "reasoning": "No explicit position stated on tax rates or levels."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position on more or less government spending is stated."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "put your wallet ahead of Washington\u2019s waste",
+      "reasoning": "Mentions fighting inflation by prioritizing wallets over government waste, indicating preference for reduced spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No position on trade policy or tariffs is stated."
+      "reasoning": "No explicit statements on tariffs, protectionism, or free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No position on foreign aid spending is stated."
+      "reasoning": "No explicit statements on foreign aid spending."
     }
   ]
 }

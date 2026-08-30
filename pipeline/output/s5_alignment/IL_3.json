@@ -36,10 +36,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 111,
     "truth_score": {
-      "score": 86,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:46:50+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 66,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:23:23+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -602,8 +602,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Congresswoman Ramirez believes our tax code shouldn't do more for billionaires and corporations than it does for working families",
-          "reasoning": "Text explicitly supports higher taxes on billionaires and corporations to benefit working families.",
+          "emphasis": 0.25,
+          "quote": "Tax Code that Works for Working Families Congresswoman Ramirez believes our tax code shouldn't do more for billionaires and corporations than it doe",
+          "reasoning": "Explicit call for tax code changes so corporations and billionaires pay fair share implies support for higher taxes on wealthy.",
           "source": "https://ramirez.house.gov"
         }
       },
@@ -2452,7 +2453,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.6,
+          "quote": "In Congress, I am organizing and fighting for legislation and investment to realize a progressive vision of affordable, sustainable housing for all",
+          "reasoning": "Repeated emphasis on new investments, funding expansions, and programs across housing, education, health, and jobs sections shows preference for increased government spending.",
+          "source": "https://ramirez.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",

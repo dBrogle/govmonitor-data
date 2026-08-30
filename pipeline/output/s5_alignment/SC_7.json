@@ -36,10 +36,10 @@
     "votes_analyzed": 328,
     "votes_without_analysis": 106,
     "truth_score": {
-      "score": 68,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:59:01+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 51,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:35:34+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -342,12 +342,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "We need leadership in our military that prioritizes bolstering our military, not DEI initiatives.",
-          "reasoning": "The statement explicitly calls for bolstering the military, indicating support for increased defense resources.",
-          "source": "https://fry.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -541,8 +536,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "This legislation would also prevent the IRS from using its $80 billion increase to target Americans for the purpose of squeezing even more dollars from the pockets of hard-working Americans.",
-          "reasoning": "The text opposes measures that would extract more tax revenue from Americans, favoring lower effective taxation.",
+          "reasoning": "Explicit opposition to IRS expansion aimed at collecting more revenue from taxpayers indicates support for lower taxes.",
           "source": "https://fry.house.gov"
         }
       },
@@ -2168,8 +2164,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "We must cut wasteful spending to fight inflation.",
-          "reasoning": "The statement directly advocates cutting wasteful spending to address economic issues.",
+          "reasoning": "Direct calls to cut wasteful spending and end out-of-control federal spending demonstrate a clear position favoring less government spending.",
           "source": "https://fry.house.gov"
         }
       },

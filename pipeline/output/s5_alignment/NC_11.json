@@ -36,10 +36,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 103,
     "truth_score": {
-      "score": 57,
+      "score": 59,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:52:57+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:29:29+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -366,8 +366,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "Congressman Edwards voted to pass the FY27 National Security, Department of State, and Related Programs Appropriations Bill to strengthen America's national security and support key allies.",
-          "reasoning": "The statement explicitly supports passing a bill to strengthen national security funding.",
+          "reasoning": "The text explicitly supports increased funding to strengthen national security.",
           "source": "https://edwards.house.gov"
         }
       },
@@ -2328,8 +2329,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "Additionally, this legislation reins in unnecessary spending, refocuses agencies on their core missions, and puts the health, safety, and prosperity of American producers and consumers first.",
-          "reasoning": "The text states support for legislation that reins in unnecessary spending and cuts wasteful spending.",
+          "reasoning": "Multiple press releases state support for reining in unnecessary spending and responsible use of taxpayer dollars.",
           "source": "https://edwards.house.gov"
         }
       },
@@ -2717,8 +2719,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The legislation refocuses foreign assistance on advancing U.S. national security and economic interests, while ensuring our international partners do their fair share. Additionally, the bill cuts wasteful spending, increases oversight of foreign assistance programs.",
-          "reasoning": "The statement supports refocusing and cutting wasteful foreign assistance spending.",
+          "emphasis": 0.6,
+          "quote": "The legislation refocuses foreign assistance on advancing U.S. national security and economic interests, while ensuring our international partners do their fair share. Additionally, the bill cuts wasteful spending, increases oversight of foreign assistance programs, and ensures taxpayer dollars are spent on policies and programs that make America safer, stronger, and more prosperous.",
+          "reasoning": "The text supports refocusing and cutting wasteful foreign assistance spending.",
           "source": "https://edwards.house.gov"
         }
       }

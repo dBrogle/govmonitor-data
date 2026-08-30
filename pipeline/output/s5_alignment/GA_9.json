@@ -46,10 +46,10 @@
     "votes_analyzed": 339,
     "votes_without_analysis": 105,
     "truth_score": {
-      "score": 67,
+      "score": 69,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:45:47+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:22:31+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -343,8 +343,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.85,
           "quote": "I am committed to ensuring our armed forces have the tools and resources they need to protect our nation from all the threats we face.",
-          "reasoning": "The statement explicitly supports providing armed forces with necessary tools and resources, indicating a position favoring more military spending.",
+          "reasoning": "Explicit commitment to providing tools and resources for armed forces indicates support for military spending.",
           "source": "https://clyde.house.gov"
         }
       },
@@ -562,8 +563,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "Most importantly, the FairTax would allow American workers to keep more of their hard-earned paychecks and only pay taxes on what they spend.",
-          "reasoning": "The endorsement of the FairTax to let workers keep more paychecks demonstrates support for lower taxes.",
+          "reasoning": "Advocacy for FairTax to let workers keep more paychecks shows clear preference for lower taxes.",
           "source": "https://clyde.house.gov"
         }
       },
@@ -2222,8 +2224,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "That\u2019s why I plan to look for opportunities in Congress to right-size the federal government and re-align its operations within the bounds of the U.S. Constitution, as was intended by our nation\u2019s Founding Fathers.",
-          "reasoning": "The call to right-size the federal government and root out waste shows a position favoring less government spending.",
+          "emphasis": 0.75,
+          "quote": "That\u2019s why I plan to look for opportunities in Congress to right-size the federal government and re-align its operations within the bounds of the U.S. Constitution.",
+          "reasoning": "Calls to right-size government and root out waste indicate preference for reduced spending.",
           "source": "https://clyde.house.gov"
         }
       },

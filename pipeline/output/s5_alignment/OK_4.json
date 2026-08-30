@@ -136,10 +136,10 @@
     "votes_analyzed": 317,
     "votes_without_analysis": 108,
     "truth_score": {
-      "score": 65,
+      "score": 68,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:57:08+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:33:47+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -444,8 +444,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I am a champion for a strong national defense and returning fiscal discipline to the Pentagon.",
-          "reasoning": "Text explicitly champions strong national defense and votes for NDAA, indicating support for more military spending.",
+          "emphasis": 0.9,
+          "quote": "I am a champion for a strong national defense and returning fiscal discipline to the Pentagon. I will continue to support a strong military well-equipped to face the challenges of the 21st century.",
+          "reasoning": "The text repeatedly champions strong national defense and votes for defense authorizations and appropriations, indicating support for more military spending.",
           "source": "https://cole.house.gov"
         }
       },
@@ -2104,8 +2105,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "We must also rein in the Biden Administration\u2019s excessive government spending and misguided policies, which instigated our present inflation crisis and threaten to drive our economy into a painful recession.",
-          "reasoning": "Text calls for reining in excessive government spending to address debt and inflation, indicating preference for less spending.",
+          "emphasis": 0.7,
+          "quote": "I have consistently supported legislation and policies to get the nation\u2019s long-term fiscal house in order by balancing the budget and reforming entitlements, so we can eventually pay down our debt.",
+          "reasoning": "The statements emphasize balancing the budget, reforming entitlements, and reining in excessive government spending to address debt and inflation.",
           "source": "https://cole.house.gov"
         }
       },
@@ -2301,8 +2303,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "I support maintaining low individual tax rates and permitting Americans to keep more of their hard-earned money and voted for legislation to increase the size of the standard deduction and child tax credit.",
-          "reasoning": "Text states support for maintaining low tax rates and keeping more earnings, indicating preference for lower taxes.",
+          "reasoning": "The member explicitly supports low tax rates, larger deductions/credits, and a competitive corporate tax code to let Americans and businesses keep more earnings.",
           "source": "https://cole.house.gov"
         }
       },

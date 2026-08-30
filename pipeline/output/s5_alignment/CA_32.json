@@ -166,10 +166,10 @@
     "votes_analyzed": 313,
     "votes_without_analysis": 108,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:42:22+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 71,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:18:32+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -373,7 +373,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "Congressman Brad Sherman introduced the Iran War Oil Crisis Windfall Profits Tax Act to alleviate the burden of the Iran war on the American people.",
+          "reasoning": "The text explicitly supports introducing a new windfall profits tax, indicating a position favoring higher taxes.",
+          "source": "https://sherman.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2692,7 +2698,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.25,
+          "quote": "Congressman Brad Sherman introduced the Stop Oil Exports to Lower Gas Prices Act to protect American consumers from rising energy costs and economic instability by halting exports of U.S.-produced crude oil during the ongoing war with Iran.",
+          "reasoning": "The text supports halting U.S. oil exports, a policy restricting trade rather than promoting free trade.",
+          "source": "https://sherman.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

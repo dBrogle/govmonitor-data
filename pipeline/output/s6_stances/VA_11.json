@@ -3,7 +3,7 @@
   "district": 11,
   "bioguide_id": "W000831",
   "website": "https://walkinshaw.house.gov/",
-  "fetched_at": "2026-08-30T08:02:04+00:00",
+  "fetched_at": "2026-08-30T14:39:08+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military or defense spending levels appears in the text."
+      "reasoning": "No statements on military or defense spending appear in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on raising or lowering taxes appears in the text."
+      "reasoning": "No statements on taxation levels appear in the text."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No general statement on overall government spending levels appears in the text."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "In Congress, James is opposing efforts to dismantle the Department of Education, and supports fully funding IDEA and Title I, and expanding support for military-connected students through the federal Impact Aid program.",
+      "reasoning": "Text repeatedly endorses increased federal funding and investments across education, infrastructure, clean energy, and workforce programs while opposing cuts."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.2,
       "stated_score": 1.0,
       "quote": "In Congress, James opposes harmful tariffs imposed under the Trump administration, which have increased costs for businesses and consumers alike.",
-      "reasoning": "Opposition to tariffs is a clear statement favoring free trade."
+      "reasoning": "Explicit opposition to tariffs indicates support for free trade over protectionism."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending appears in the text."
+      "reasoning": "No statements on foreign aid spending appear in the text."
     }
   ]
 }

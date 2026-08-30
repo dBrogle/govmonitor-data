@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "M001234",
   "website": "https://morrison.house.gov/",
-  "fetched_at": "2026-08-30T07:51:02+00:00",
+  "fetched_at": "2026-08-30T14:27:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -20,37 +20,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels appears in the text."
+      "reasoning": "No statements on military or defense spending levels appear in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on raising or lowering taxes appears in the text."
+      "reasoning": "No explicit position on raising or lowering taxes is stated."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels appears in the text."
+      "reasoning": "No clear stance on overall government spending levels is present."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement of position on tariffs or trade appears in the text, only release titles."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "U.S. Rep. Kelly Morrison Leads Effort Calling on Speaker Johnson to Take Action on Bipartisan Bills to End Tariff War",
+      "reasoning": "Multiple releases explicitly oppose tariffs and trade wars, indicating support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
+      "reasoning": "No statements on foreign aid spending appear in the text."
     }
   ]
 }

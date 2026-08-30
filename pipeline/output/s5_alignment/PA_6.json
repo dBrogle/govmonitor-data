@@ -56,10 +56,10 @@
     "votes_analyzed": 311,
     "votes_without_analysis": 124,
     "truth_score": {
-      "score": 42,
+      "score": 41,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:57:48+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:37+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2134,8 +2134,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.85,
           "quote": "Support pay raises for all ranks, repair unsafe barracks and dorms, and invest in new housing for military families.",
-          "reasoning": "The statement explicitly endorses increased investment in military pay, facilities, and housing.",
+          "reasoning": "Text explicitly calls for investing in military pay, housing, and facilities, indicating support for more military spending.",
           "source": "https://houlahan.house.gov/"
         }
       },
@@ -2512,8 +2513,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.45,
           "quote": "Support the State Department and USAID, including their goals of promoting peace, security, and prosperity through diplomacy, development, and humanitarian assistance",
-          "reasoning": "The statement explicitly endorses support for USAID and humanitarian/development assistance.",
+          "reasoning": "Text explicitly endorses supporting USAID and humanitarian assistance programs, indicating support for more foreign aid spending.",
           "source": "https://houlahan.house.gov/"
         }
       }

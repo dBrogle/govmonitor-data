@@ -36,10 +36,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 127,
     "truth_score": {
-      "score": 64,
+      "score": 66,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:56:07+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:32:47+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -266,9 +266,10 @@
           }
         ],
         "stated": {
-          "score": 0.0,
+          "score": 0.6,
+          "emphasis": 0.25,
           "quote": "including tax relief for the middle class while ensuring those at the top pay their fair share",
-          "reasoning": "Text calls for tax relief for middle class alongside higher contributions from top earners, indicating a mixed position on taxation.",
+          "reasoning": "Text explicitly calls for tax relief for the middle class, indicating support for lower taxes in that context.",
           "source": "https://kennedy.house.gov"
         }
       },
@@ -1981,9 +1982,10 @@
           }
         ],
         "stated": {
-          "score": -1.0,
-          "quote": "Kennedy Announces $2.9 Million in Federal Funding for The Service Collaborative of WNY",
-          "reasoning": "Multiple statements advocate for increased federal funding, investments, and spending on education, infrastructure, healthcare, and jobs programs.",
+          "score": -0.7,
+          "emphasis": 0.4,
+          "quote": "Championing smart investments and innovations to keep revitalizing the Western New York region",
+          "reasoning": "Multiple calls for federal funding, investments, and infrastructure spending indicate support for increased government spending.",
           "source": "https://kennedy.house.gov"
         }
       },
@@ -2502,9 +2504,10 @@
           }
         ],
         "stated": {
-          "score": 1.0,
-          "quote": "fighting against burdensome regulations that stifle trade and travel with Canada",
-          "reasoning": "Text supports free movement of goods, incentivizing trade, and strengthening partnerships with Canada without tariffs or protectionism.",
+          "score": 0.8,
+          "emphasis": 0.3,
+          "quote": "Kennedy slams Donald Trump on reckless tariffs and misguided priorities",
+          "reasoning": "Explicit criticism of tariffs combined with support for incentivizing trade with Canada shows a free-trade stance.",
           "source": "https://kennedy.house.gov"
         }
       },

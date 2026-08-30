@@ -68,8 +68,8 @@
     "truth_score": {
       "score": 25,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:54:51+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:31:18+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -274,8 +274,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "particularly the urgent need to restore the SALT deduction",
-          "reasoning": "Text explicitly advocates restoring the SALT deduction, indicating support for lower taxes.",
+          "emphasis": 0.9,
+          "quote": "This is not just an opportunity to serve my district but a chance to champion the priorities that matter most to hard-working families, particularly the urgent need to restore the SALT deduction",
+          "reasoning": "Explicit advocacy for restoring the SALT deduction demonstrates support for lower taxes.",
           "source": "https://suozzi.house.gov"
         }
       },

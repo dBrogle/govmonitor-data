@@ -106,10 +106,10 @@
     "votes_analyzed": 303,
     "votes_without_analysis": 95,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:50:09+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 57,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:26:52+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2242,7 +2242,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.6,
+          "quote": "While American families are dealing with rising prices, shrinking paychecks, and cuts to the health care and nutrition programs they depend on, Republicans once again chose to make funding an unaccountable deportation machine their top priority.",
+          "reasoning": "Mfume repeatedly announces and supports specific federal funding projects while opposing cuts to health care and nutrition programs.",
+          "source": "https://mfume.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",

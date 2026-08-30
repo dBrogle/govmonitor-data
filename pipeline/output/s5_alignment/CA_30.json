@@ -26,10 +26,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 101,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:41:59+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 69,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:18:13+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -546,7 +546,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.25,
+          "quote": "Trump and Congressional Republicans let the ACA tax credits expire and cut a trillion dollars from Medicaid to pay for a trillion dollars in tax breaks for the ultra-wealthy.",
+          "reasoning": "Explicitly condemns tax breaks for the wealthy in context of funding cuts.",
+          "source": "https://friedman.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2415,7 +2421,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "Trump and Congressional Republicans let the ACA tax credits expire and cut a trillion dollars from Medicaid to pay for a trillion dollars in tax breaks for the ultra-wealthy.",
+          "reasoning": "Opposes cuts to Medicaid and ACA subsidies, supporting higher government spending on these programs.",
+          "source": "https://friedman.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",

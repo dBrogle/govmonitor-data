@@ -26,10 +26,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 109,
     "truth_score": {
-      "score": 58,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:02:24+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 68,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:39:27+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -389,8 +389,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I am proud to support the passage of the NDAA and stand with the brave men and women who wear our nation\u2019s uniform. This legislation strengthens support for our Fairchild servicemembers and their families by increasing their pay and enhancing housing, education, and access to childcare, while ensuring our military has the tools and capabilities needed to deter our adversaries and defend the American way of life.",
-          "reasoning": "Text explicitly endorses NDAA passage authorizing $1.15 trillion in defense spending and military upgrades.",
+          "emphasis": 0.9,
+          "quote": "I am proud to support the passage of the NDAA and stand with the brave men and women who wear our nation\u2019s uniform, \u201d said Congressman Baumgartner. \u201c This legislation strengthens support for our Fairchild servicemembers and their families by increasing their pay and enhancing housing, education, and access to childcare, while ensuring our military has the tools and capabilities needed to deter our adversaries and defend the American way of life.",
+          "reasoning": "Multiple statements explicitly endorse NDAA passage, defense appropriations, Fairchild AFB upgrades, and increased military capabilities.",
           "source": "https://baumgartner.house.gov/"
         }
       },
@@ -573,7 +574,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "Celebrating the anniversary of \u2018The Working Families Tax Cuts\u2019 \u2013 delivering results for Washington\u2019s 5th District.",
+          "reasoning": "Direct celebration of tax cuts legislation indicates support for lower taxes.",
+          "source": "https://baumgartner.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2186,8 +2193,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "I support policies to reduce inflation and curb reckless government spending, which I believe is driving up prices and increasing the national debt.",
-          "reasoning": "Text directly states support for curbing government spending.",
+          "reasoning": "Explicit statement favoring curbs on reckless spending, though paired with support for targeted defense and infrastructure outlays.",
           "source": "https://baumgartner.house.gov/"
         }
       },

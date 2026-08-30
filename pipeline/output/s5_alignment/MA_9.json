@@ -96,10 +96,10 @@
     "votes_analyzed": 309,
     "votes_without_analysis": 112,
     "truth_score": {
-      "score": 53,
+      "score": 64,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:49:38+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:26:20+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -640,8 +640,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "by requiring those earning above $400,000 to pay their fair share of Social Security taxes, just like everyone else",
-          "reasoning": "Supports legislation raising Social Security taxes on high earners.",
+          "emphasis": 0.2,
+          "quote": "It would do this by requiring those earning above $400,000 to pay their fair share of Social Security taxes, just like everyone else",
+          "reasoning": "Text explicitly supports raising Social Security taxes on high earners.",
           "source": "https://keating.house.gov/"
         }
       },
@@ -2332,9 +2333,10 @@
           }
         ],
         "stated": {
-          "score": 1.0,
-          "quote": "One of Bill\u2019s first actions in Congress was to introduce an amendment to end subsidies for large oil companies",
-          "reasoning": "Advocates ending oil company subsidies, indicating preference for reduced government spending.",
+          "score": -1.0,
+          "emphasis": 0.4,
+          "quote": "strongly supports robust federal funding for educational programs at all ages",
+          "reasoning": "Multiple passages advocate increased federal funding and investments across education, infrastructure, seniors, and energy programs.",
           "source": "https://keating.house.gov/"
         }
       },
@@ -2678,8 +2680,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.15,
           "quote": "He has also opposed free trade agreements with countries that violate international labor standard.",
-          "reasoning": "Explicitly opposes certain free trade agreements.",
+          "reasoning": "Text states opposition to free trade agreements under certain conditions.",
           "source": "https://keating.house.gov/"
         }
       }

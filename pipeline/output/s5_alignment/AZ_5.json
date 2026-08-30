@@ -66,10 +66,10 @@
     "votes_analyzed": 341,
     "votes_without_analysis": 114,
     "truth_score": {
-      "score": 56,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:39:31+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 47,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:16:33+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -756,12 +756,7 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "A constitutional amendment requiring the federal government to operate under a balanced budget by permanently prohibiting deficit spending and placing a two-thirds supermajority requirement on any bill that creates a new tax in any way.",
-          "reasoning": "Explicit support for making new taxes more difficult indicates preference for lower taxes.",
-          "source": "https://biggs.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2676,8 +2671,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "For decades, Members of Congress have shown catastrophic unseriousness about reining in government spending and leaving a better future for the next generation.",
-          "reasoning": "Direct criticism of unchecked spending and calls to reduce it show preference for less government spending.",
+          "emphasis": 0.85,
+          "quote": "Hundreds of bills to reduce nondefense discretionary spending.",
+          "reasoning": "Multiple statements explicitly criticize unchecked federal spending and advocate reducing it via balanced budget requirements and spending cuts.",
           "source": "https://biggs.house.gov"
         }
       }

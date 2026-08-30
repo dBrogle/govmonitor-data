@@ -248,8 +248,8 @@
     "truth_score": {
       "score": 21,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:48:22+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:58+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -707,8 +707,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Rogers served as Chairman of the House Appropriations Committee from 2011 to 2016, where he pioneered the path for historic discretionary spending cuts, rigorous oversight, and an open, transparent process.",
-          "reasoning": "The text explicitly states support for discretionary spending cuts, indicating a position favoring less government spending.",
+          "reasoning": "The issues page explicitly states a position favoring discretionary spending cuts.",
           "source": "https://halrogers.house.gov/"
         }
       },

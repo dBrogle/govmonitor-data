@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "P000621",
   "website": "https://pou.house.gov/",
-  "fetched_at": "2026-08-30T07:54:09+00:00",
+  "fetched_at": "2026-08-30T14:30:34+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses U.S. military or defense spending levels."
+      "reasoning": "No verbatim statement on U.S. military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses tax rates or tax policy."
+      "reasoning": "No verbatim statement on tax rates or policy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Opposition to a Republican funding measure and budget is mentioned but does not clearly state a position on overall spending levels."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "\u201cI reject this cruel Republican budget.\u201d",
+      "reasoning": "Opposition to Republican budget and funding measures indicates preference for higher spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.25,
       "stated_score": 1.0,
-      "quote": "Congresswoman Nellie Pou (D-NJ-09) tonight hammered the 25 percent tariffs imposed by President Donald Trump on Canada and Mexico.",
-      "reasoning": "Explicit criticism of tariffs indicates support for free trade over protectionism."
+      "quote": "Congresswoman Pou Blasts Destructive Trump Tariffs",
+      "reasoning": "Explicit criticism of tariffs shows support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
-      "addressed": true,
-      "stated_score": -1.0,
-      "quote": "America providing Ukraine with patriot missile technology is long overdue and should have been done some time ago... America must give our Ukrainian allies whatever resources they need to finish the job",
-      "reasoning": "Support for providing missile technology and resources to Ukraine indicates favoring more foreign aid spending."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Support for Ukraine resources is mentioned but not framed as general foreign aid spending."
     }
   ]
 }

@@ -56,10 +56,10 @@
     "votes_analyzed": 310,
     "votes_without_analysis": 119,
     "truth_score": {
-      "score": 45,
+      "score": 44,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:51:14+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:27:56+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -567,8 +567,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I also introduced legislation to lower the federal tax rate for small businesses to help overcome higher input costs.",
-          "reasoning": "Explicit support for lowering tax rates.",
+          "emphasis": 0.4,
+          "quote": "Rep. Craig\u2019s You Earned It, You Keep It Act would eliminate all federal taxes on Social Security benefits \u2013 putting money back into the pockets of Minnesota\u2019s retirees.",
+          "reasoning": "Explicit support for eliminating taxes on Social Security benefits and lowering small business tax rates indicates position favoring lower taxes.",
           "source": "https://craig.house.gov"
         }
       },
@@ -2161,8 +2162,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.35,
           "quote": "we need to keep Medicare and Social Security fully funded and combat any attempts to privatize or defund them.",
-          "reasoning": "Supports maintaining or increasing funding for major programs.",
+          "reasoning": "Repeated advocacy for fully funding entitlement programs and new housing/education credits shows support for maintaining or increasing government spending.",
           "source": "https://craig.house.gov"
         }
       },

@@ -238,8 +238,8 @@
     "truth_score": {
       "score": 65,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:56:44+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:33:18+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2067,8 +2067,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "forward-thinking farm legislation that eliminates wasteful subsidies, provides resources to strengthen local and regional food systems, and makes the necessary investments in agricultural research",
-          "reasoning": "Text supports targeted government investments and funding awards while criticizing only wasteful subsidies.",
+          "emphasis": 0.85,
+          "quote": "Today, Congresswoman Marcy Kaptur (OH-09) announced that several Northwest Ohio nonprofits, researchers, small businesses and localities will receive awards through the US Department of Health and Human Services (HHS).",
+          "reasoning": "Repeated announcements of securing federal awards and investments for local programs indicate support for increased government spending.",
           "source": "https://kaptur.house.gov/"
         }
       },
@@ -2780,8 +2781,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Congresswoman Kaptur has been fighting for a \"fair trade\" policy since she came to Congress... leading the House effort against the North American Free Trade Agreement (NAFTA)",
-          "reasoning": "Explicit opposition to NAFTA and similar free trade deals in favor of renegotiated fair trade protections.",
+          "emphasis": 0.95,
+          "quote": "Congresswoman Kaptur has been fighting for a \"fair trade\" policy since she came to Congress. In the early 1990s, Congresswoman Kaptur joined House Majority Whip David Bonior and freshman Congressman Sherrod Brown in leading the House effort against the North American Free Trade Agreement (NAFTA).",
+          "reasoning": "Explicit opposition to NAFTA and calls for renegotiating trade deals to protect manufacturing show a protectionist position.",
           "source": "https://kaptur.house.gov/"
         }
       }

@@ -26,10 +26,10 @@
     "votes_analyzed": 331,
     "votes_without_analysis": 106,
     "truth_score": {
-      "score": 66,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:52:50+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 53,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:29:16+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -332,12 +332,7 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Congressman Harris Applauds House Passage of FY27 National Defense Authorization Act",
-          "reasoning": "The press release title directly shows support for the NDAA, indicating a position favoring more military spending.",
-          "source": "https://markharris.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -553,8 +548,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Congressman Harris supported the renewal and expansion of the Trump tax cuts to keep more money in the pockets of working families.",
-          "reasoning": "The statement explicitly endorses extending tax cuts, showing a clear preference for lower taxes.",
+          "emphasis": 0.6,
+          "quote": "A strong economy starts with free enterprise, low taxes, and hard work\u2014not more government programs.",
+          "reasoning": "Explicit support for low taxes and renewal of tax cuts indicates preference for lower taxes.",
           "source": "https://markharris.house.gov/"
         }
       },
@@ -2279,8 +2275,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "we must slash wasteful spending and cut through the bureaucratic red tape strangling our businesses and families.",
-          "reasoning": "The text calls for slashing wasteful spending, demonstrating a position for less government spending.",
+          "reasoning": "Repeated emphasis on slashing wasteful spending and supporting DOGE shows clear stance for less spending.",
           "source": "https://markharris.house.gov/"
         }
       },

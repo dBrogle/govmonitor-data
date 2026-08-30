@@ -26,10 +26,10 @@
     "votes_analyzed": 332,
     "votes_without_analysis": 95,
     "truth_score": {
-      "score": 52,
+      "score": 55,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:55:01+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:31:35+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1753,8 +1753,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "amid devastating GOP cuts to care",
-          "reasoning": "Text opposes spending cuts and highlights securing federal funding.",
+          "emphasis": 0.9,
+          "quote": "Rep. Gillen continues to focus on bringing resources back home to Long Island.",
+          "reasoning": "Repeated emphasis on securing and delivering millions in federal funding indicates support for more government spending.",
           "source": "https://gillen.house.gov/"
         }
       },
@@ -1961,8 +1962,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "lowering costs and cutting taxes for hardworking Long Islanders is a top priority of mine in Congress.",
-          "reasoning": "Text explicitly prioritizes cutting taxes.",
+          "reasoning": "Text explicitly prioritizes cutting taxes, matching +1 convention.",
           "source": "https://gillen.house.gov/"
         }
       },

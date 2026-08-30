@@ -3,7 +3,7 @@
   "district": 13,
   "bioguide_id": "S001223",
   "website": "https://sykes.house.gov",
-  "fetched_at": "2026-08-30T07:56:51+00:00",
+  "fetched_at": "2026-08-30T14:33:32+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,38 +26,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on military spending levels."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "September 30, 2025 Ahead of Looming Government Shutdown, Rep. Sykes Introduces Legislation to Pay our Military & Keep Food on the Table",
+      "reasoning": "Text shows support for paying military and opposing insufficient VA/military construction funding bills."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.3,
       "stated_score": 1.0,
-      "quote": "Reps. Sykes, Malliotakis, Horsford, LaLota, Suozzi, Fitzpatrick Introduce Bipartisan No Tax on Overtime for All Workers Act",
-      "reasoning": "Supports specific tax relief measures for workers."
+      "quote": "September 19, 2025 Reps. Sykes, Malliotakis, Horsford, LaLota, Suozzi, Fitzpatrick Introduce Bipartisan No Tax on Overtime for All Workers Act",
+      "reasoning": "Text explicitly backs no tax on overtime and expanding EITC/Child Tax Credit."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": -1.0,
-      "quote": "Congresswoman Sykes is firmly committed to protecting and strengthening Medicare, Medicaid, and Social Security, and she will always oppose any cuts to these hard-earned benefits.",
-      "reasoning": "Opposes cuts and supports full funding for multiple programs."
+      "quote": "Rep. Sykes Leads Letter Requesting Full Funding for National Parks Service, Cuyahoga Valley National Park",
+      "reasoning": "Multiple statements oppose spending cuts and advocate full funding for programs and grants."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade or tariffs."
+      "reasoning": "No statements address trade policy or tariffs."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

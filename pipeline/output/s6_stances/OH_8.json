@@ -3,7 +3,7 @@
   "district": 8,
   "bioguide_id": "D000626",
   "website": "https://davidson.house.gov/",
-  "fetched_at": "2026-08-30T07:56:34+00:00",
+  "fetched_at": "2026-08-30T14:33:15+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -25,38 +25,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on increasing or decreasing military spending."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "One of Congress\u2019s primary responsibilities is securing the homeland. That includes securing the U.S. border, properly resourcing our military, and rethinking foreign policy that leads to global conflict.",
+      "reasoning": "Text explicitly calls for properly resourcing the military, indicating support for more defense funding."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on higher or lower taxes."
+      "reasoning": "No verbatim statement on tax rates or levels appears in the text."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "We must embrace solutions to cut spending and fix the budget process.",
-      "reasoning": "Text explicitly calls for cutting spending."
+      "quote": "Out of control government spending is a bipartisan problem. But it\u2019s not compassionate to bankrupt America. We must embrace solutions to cut spending and fix the budget process.",
+      "reasoning": "Text directly advocates cutting government spending to address national debt."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on trade policy or tariffs."
+      "reasoning": "No statements on tariffs, protectionism, or free trade are present."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on foreign aid spending."
+      "reasoning": "No explicit position on foreign aid spending levels is stated."
     }
   ]
 }

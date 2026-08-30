@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "C001068",
   "website": "https://cohen.house.gov/",
-  "fetched_at": "2026-08-30T07:59:17+00:00",
+  "fetched_at": "2026-08-30T14:36:12+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "We need to support our troops with sufficient funding so that they have access to adequate equipment and receive necessary training.",
-      "reasoning": "Text explicitly calls for sufficient funding to support troops and equipment."
+      "reasoning": "The defense page explicitly calls for sufficient funding to support troops and equipment."
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on tax rates."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "funding tax giveaways for millionaires, billionaires, high-income earners, and wealthy corporations.",
+      "reasoning": "The budget page criticizes tax cuts for the wealthy as harmful giveaways."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": -1.0,
-      "quote": "He prioritizes ensuring economic security for hard-working American families, small businesses, seniors, and the most vulnerable people in our communities by investing in and protecting Social Security, Medicare, Medicaid and the Affordable Care Act (ACA), nutrition assistance like SNAP and WIC, medical research, and other critical programs.",
-      "reasoning": "Text advocates investing in and protecting multiple federal programs."
+      "quote": "prioritizes ensuring economic security for hard-working American families, small businesses, seniors, and the most vulnerable people in our communities by investing in and protecting Social Security, Medicare, Medicaid and the Affordable Care Act (ACA), nutrition assistance like SNAP and WIC, medical research, and other critical programs.",
+      "reasoning": "The budget page repeatedly emphasizes protecting and investing in major federal programs."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on trade or tariffs."
+      "reasoning": "No statements on trade, tariffs, or free trade appear in the provided text."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on foreign aid."
+      "reasoning": "No statements on foreign aid spending appear in the provided text."
     }
   ]
 }

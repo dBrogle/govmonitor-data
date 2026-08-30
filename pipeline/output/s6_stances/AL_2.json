@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "F000481",
   "website": "https://figures.house.gov/",
-  "fetched_at": "2026-08-30T07:38:50+00:00",
+  "fetched_at": "2026-08-30T14:16:04+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses military or defense spending levels."
+      "reasoning": "No statements address military spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "Today, Congressman Shomari C. Figures (AL-02) introduced the Affordable Youth Enrichment Opportunities Act, a bill to provide a federal tax deduction for parents who pay out-of-pocket expenses for enrichment opportunities for their children.",
-      "reasoning": "The bill introduces a tax deduction, directly supporting lower taxes."
+      "quote": "a bill to provide a federal tax deduction for parents who pay out-of-pocket expenses for enrichment opportunities for their children.",
+      "reasoning": "Bill introduction explicitly supports tax deductions, indicating preference for lower taxes."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Announcements of secured funding do not state a general position on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "over $8.5 million in federal funding has been awarded for renovations and improvements at the Montgomery Regional Airport.",
+      "reasoning": "Multiple announcements of securing federal project funding demonstrate support for increased government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.5,
       "stated_score": -1.0,
-      "quote": "he plans to introduce legislation to reverse President Trump\u2019s plan to allow up to 300,000 metric tons of foreign ground beef to enter the United States tariff-free over the next 90 days\u2014a move that gives little to no relief to consumers and serves as a significant disadvantage to American cattle farmers.",
-      "reasoning": "Opposition to tariff-free imports shows support for protectionist policies."
+      "quote": "plans to introduce legislation to reverse President Trump\u2019s plan to allow up to 300,000 metric tons of foreign ground beef to enter the United States tariff-free over the next 90 days",
+      "reasoning": "Opposition to tariff-free imports to protect domestic farmers indicates a protectionist position."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses foreign aid spending."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

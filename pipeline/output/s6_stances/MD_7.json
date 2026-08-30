@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "M000687",
   "website": "https://mfume.house.gov/",
-  "fetched_at": "2026-08-30T07:50:09+00:00",
+  "fetched_at": "2026-08-30T14:26:52+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels."
+      "reasoning": "No statements address military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on taxation policy."
+      "reasoning": "No statements address taxation policy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim general statement on government spending levels, only specific project funding announcements or opposition to ICE/CBP funds."
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "While American families are dealing with rising prices, shrinking paychecks, and cuts to the health care and nutrition programs they depend on, Republicans once again chose to make funding an unaccountable deportation machine their top priority.",
+      "reasoning": "Mfume repeatedly announces and supports specific federal funding projects while opposing cuts to health care and nutrition programs."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy or tariffs."
+      "reasoning": "No statements address trade policy or tariffs."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

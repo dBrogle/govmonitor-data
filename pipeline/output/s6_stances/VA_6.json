@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "C001118",
   "website": "https://cline.house.gov",
-  "fetched_at": "2026-08-30T08:01:41+00:00",
+  "fetched_at": "2026-08-30T14:38:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -17,38 +17,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on overall military defense spending levels."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "H.R. 4366, the Military Construction, Veterans Affairs, and Related Agencies Appropriations Act of FY24 which provides funding for Defense Department military and family housing construction activities",
+      "reasoning": "Text supports legislation providing funding for Defense Department activities, indicating position favoring more military spending."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "committed to lowering taxes that stunt economic growth",
-      "reasoning": "Text explicitly commits to lowering taxes."
+      "quote": "Congressman Cline is focused on growing the economy and keeping more money in the pockets of hard-working Americans... committed to lowering taxes that stunt economic growth.",
+      "reasoning": "Explicit statements and support for extending 2017 tax cuts show clear position favoring lower taxes."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "H.R. 23, the Family and Small Business Taxpayer Protection Act rescinds all new IRS funding for squeezing middle-class families and small businesses",
+      "reasoning": "Support for rescinding specific new government funding indicates position favoring less government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.5,
       "stated_score": 1.0,
-      "quote": "believes in promoting free trade agreements and policies that benefit farmers and small businesses",
-      "reasoning": "Text explicitly supports free trade agreements."
+      "quote": "He also believes in promoting free trade agreements and policies that benefit farmers and small businesses in Virginia\u2019s Sixth Congressional District.",
+      "reasoning": "Direct statement endorsing free trade agreements shows position favoring free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending."
+      "reasoning": "No clear statement on foreign aid spending appears in the provided text."
     }
   ]
 }

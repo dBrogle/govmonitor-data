@@ -136,10 +136,10 @@
     "votes_analyzed": 318,
     "votes_without_analysis": 99,
     "truth_score": {
-      "score": 41,
+      "score": 38,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:56:47+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:33:23+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2088,8 +2088,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "Reining in out-of-control spending is critical to economic growth and reducing our national debt.",
-          "reasoning": "Explicit commitment to reducing spending to address debt.",
+          "reasoning": "Text explicitly calls for reducing spending to address debt and promote growth.",
           "source": "https://turner.house.gov/"
         }
       },
@@ -2477,8 +2478,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.6,
           "quote": "Congress must continue supporting Ukraine in its courageous battle against Russian aggression.",
-          "reasoning": "Calls for continued US support and military aid to Ukraine.",
+          "reasoning": "Text advocates ongoing U.S. support including military aid to Ukraine.",
           "source": "https://turner.house.gov/"
         }
       },

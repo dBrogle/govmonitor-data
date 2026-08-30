@@ -76,10 +76,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 94,
     "truth_score": {
-      "score": 34,
+      "score": 31,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:48:09+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:46+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1962,8 +1962,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.35,
           "quote": "Eliminating unnecessary government spending, fraud and abuse will help ensure the government is operating at maximum effectiveness and not unnecessarily interfering in the lives of citizens.",
-          "reasoning": "Text explicitly calls for eliminating unnecessary government spending.",
+          "reasoning": "The issues page explicitly calls for eliminating unnecessary government spending.",
           "source": "https://comer.house.gov/"
         }
       },
@@ -2373,8 +2374,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Our nation\u2019s strongest shield against foreign exploitation of American waterways is the Jones Act",
-          "reasoning": "Text advocates maintaining Jones Act protections against foreign competition.",
+          "emphasis": 0.25,
+          "quote": "urged the Trump Administration to allow the current Jones Act waiver to expire as scheduled, and to take additional policy steps to safeguard American shipbuilding and the long-term competitiveness of the U.S. maritime industry.",
+          "reasoning": "The press release advocates maintaining the protectionist Jones Act.",
           "source": "https://comer.house.gov/"
         }
       },

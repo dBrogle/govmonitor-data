@@ -3,7 +3,7 @@
   "district": 26,
   "bioguide_id": "D000600",
   "website": "https://mariodiazbalart.house.gov/",
-  "fetched_at": "2026-08-30T07:45:25+00:00",
+  "fetched_at": "2026-08-30T14:21:58+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,27 +27,31 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on increasing or decreasing military spending."
+      "reasoning": "No explicit statement on increasing or decreasing military spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "I strongly believe that tax relief is an important step in securing a healthy economy and stimulating job growth.",
-      "reasoning": "Explicit support for tax relief to let people keep more earnings indicates preference for lower taxes."
+      "quote": "I strongly believe that tax relief is an important step in securing a healthy economy and stimulating job growth. Tax relief helpes honest, hard-working people save more of their earnings while stimulating the country's economy. I support efforts to eliminate unfair taxes, such as the marriage penalty and the death tax.",
+      "reasoning": "Text explicitly endorses tax relief and eliminating taxes to promote growth."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "I strongly believe that Congress must adhere to the principles of fiscal discipline. Too often, hard-earned taxpayer dollars are wasted on fraudulent and duplicated federal programs. Congress must work to make these programs more efficient, or simply terminate them to ensure better results for beneficiaries and greater savings for taxpayers.",
-      "reasoning": "Advocacy for fiscal discipline, efficiency, and terminating wasteful programs shows preference for less government spending."
+      "quote": "Having served on the House Budget Committee, I strongly believe that Congress must adhere to the principles of fiscal discipline. Too often, hard-earned taxpayer dollars are wasted on fraudulent and duplicated federal programs. Congress must work to make these programs more efficient, or simply terminate them to ensure better results for beneficiaries and greater savings for taxpayers.",
+      "reasoning": "Text calls for fiscal discipline, terminating wasteful programs, and savings for taxpayers."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements on trade policy, tariffs, or free trade."
@@ -55,9 +59,10 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending levels."
+      "reasoning": "No explicit statements on foreign aid spending levels."
     }
   ]
 }

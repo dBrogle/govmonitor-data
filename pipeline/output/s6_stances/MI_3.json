@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "S001221",
   "website": "https://scholten.house.gov",
-  "fetched_at": "2026-08-30T07:50:28+00:00",
+  "fetched_at": "2026-08-30T14:27:08+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,6 +27,7 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No clear position stated on military or defense spending levels."
@@ -34,30 +35,34 @@
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on taxation."
+      "reasoning": "No clear position stated on tax rates or policy."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No clear position stated on overall government spending levels."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on trade policy."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "chaotic tariffs, are driving these skyrocketing costs",
+      "reasoning": "Criticism of tariffs as harmful indicates support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on foreign aid."
+      "reasoning": "No clear position stated on foreign aid spending."
     }
   ]
 }

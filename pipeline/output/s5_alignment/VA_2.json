@@ -36,10 +36,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 138,
     "truth_score": {
-      "score": 58,
+      "score": 65,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:01:25+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:38:23+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -377,8 +377,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "To deter rising threats and maintain the longstanding global peace our nation has experienced since the end of World War II, we must continue to provide the Department of Defense the funding needed to maintain a robust and modern military.",
-          "reasoning": "Text explicitly calls for continued and sufficient DoD funding to maintain a robust military.",
+          "emphasis": 0.9,
+          "quote": "we must continue to provide the Department of Defense the funding needed to maintain a robust and modern military",
+          "reasoning": "The text explicitly calls for continued and robust DoD funding to maintain a modern military.",
           "source": "https://kiggans.house.gov"
         }
       },
@@ -1938,8 +1939,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I am committed to restoring strength in our economy by reining in wasteful spending, supporting pro-growth policies, and ensuring workers have the skills necessary to succeed in the jobs of today and those that will exist in the future.",
-          "reasoning": "Text states commitment to reining in wasteful spending.",
+          "emphasis": 0.6,
+          "quote": "reining in wasteful spending",
+          "reasoning": "The text commits to reining in wasteful spending amid national debt concerns.",
           "source": "https://kiggans.house.gov"
         }
       },

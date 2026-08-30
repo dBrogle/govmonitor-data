@@ -56,10 +56,10 @@
     "votes_analyzed": 330,
     "votes_without_analysis": 127,
     "truth_score": {
-      "score": 55,
+      "score": 59,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:44:55+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:21:26+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -611,8 +611,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "committed to conservative leadership for a stronger economy that will support working families, lower taxes, and promote investment in America. This includes making the Trump Tax Cuts permanent.",
-          "reasoning": "Explicit support for lower taxes and making tax cuts permanent.",
+          "emphasis": 0.8,
+          "quote": "lower taxes, and promote investment in America. This includes making the Trump Tax Cuts permanent.",
+          "reasoning": "Text explicitly commits to lower taxes and making tax cuts permanent.",
           "source": "https://steube.house.gov/"
         }
       },
@@ -2287,8 +2288,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "I oppose the Biden-Harris Administration\u2019s Electric Vehicle mandates and their wasteful taxpayer spending on EV charging infrastructure.",
-          "reasoning": "Opposition to wasteful taxpayer spending indicates preference for less government spending.",
+          "reasoning": "Text opposes specific wasteful government spending, indicating preference for less spending.",
           "source": "https://steube.house.gov/"
         }
       },
@@ -2517,8 +2519,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.5,
           "quote": "reintroduced The U.S. Citrus Protection Act, to prohibit the importation of commercially produced fresh citrus fruit originating from the People\u2019s Republic of China.",
-          "reasoning": "Support for prohibiting imports shows protectionist stance.",
+          "reasoning": "Text supports legislation prohibiting imports, showing protectionist stance.",
           "source": "https://steube.house.gov/"
         }
       }

@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "A000055",
   "website": "https://aderholt.house.gov/",
-  "fetched_at": "2026-08-30T07:38:40+00:00",
+  "fetched_at": "2026-08-30T14:16:04+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,27 +27,31 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "\u201cI am proud to have voted \u2018Yes\u2019 for the FY27 National Defense Authorization Act (NDAA) to revitalize the defense industrial base, secure our supply chains, and improve quality of life for our service members and their families.",
-      "reasoning": "The text explicitly supports strengthening national defense through voting for the NDAA and providing equipment/training to troops."
+      "quote": "\u201cI am proud to have voted \u2018Yes\u2019 for the FY27 National Defense Authorization Act (NDAA) to revitalize the defense industrial base, secure our supply chains, and improve quality of life for our service members and their families.\u201d",
+      "reasoning": "The text repeatedly endorses strengthening the military through equipment, training, NDAA passage, and defense industrial base support."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.75,
       "stated_score": 1.0,
       "quote": "I opposed this legislation. I believe that targeted spending cuts are the most responsible way to address the fiscal crisis facing our country, not increasing taxes on families and small businesses.",
-      "reasoning": "The text states opposition to tax increases and preference for cuts over higher taxes."
+      "reasoning": "The member explicitly opposes tax increases and advocates returning excess revenue to taxpayers."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "I believe the majority of Alabamians support spending cuts and implementation of a framework to require Washington to live within its means from here on out.",
-      "reasoning": "The text repeatedly advocates for spending cuts and reducing the 'spend now, pay later' culture."
+      "reasoning": "The statements consistently call for spending cuts, fiscal restraint, and ending the 'spend now, pay later' culture."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address trade policy, tariffs, or free trade."
@@ -55,6 +59,7 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address foreign aid spending."

@@ -66,10 +66,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 107,
     "truth_score": {
-      "score": 49,
+      "score": 52,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:56:40+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:33:15+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1963,6 +1963,7 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "We need to equip our producers with the tools they need to navigate an inherently uncertain business market, while protecting American taxpayer dollars and fixing ineffective and flawed programs.",
           "reasoning": "Explicitly calls for protecting taxpayer dollars and fixing flawed programs, indicating preference for less government spending.",
           "source": "https://balderson.house.gov"
@@ -2160,8 +2161,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "These issues include lack of capital \u2013 whether human or financial \u2013 burdensome taxes, outdated technology and inadequate cybersecurity infrastructure, and lack of access to the types of resources larger firms and companies have.",
-          "reasoning": "Lists burdensome taxes as a problem facing small businesses, indicating support for lower taxes.",
+          "reasoning": "Describes taxes as burdensome, indicating support for lower taxes.",
           "source": "https://balderson.house.gov"
         }
       },

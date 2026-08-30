@@ -66,10 +66,10 @@
     "votes_analyzed": 330,
     "votes_without_analysis": 142,
     "truth_score": {
-      "score": 45,
+      "score": 48,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:41:09+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:17:33+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1793,8 +1793,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "United States Representative Jimmy Panetta (CA-19) announced $3,895,000 in federal funding to rehabilitate Taxiway A at the Paso Robles Municipal Airport.",
-          "reasoning": "Multiple announcements of securing and supporting federal funding indicate position favoring more spending.",
+          "emphasis": 0.7,
+          "quote": "announced $3,895,000 in federal funding to rehabilitate Taxiway A at the Paso Robles Municipal Airport",
+          "reasoning": "Multiple announcements of securing federal funding and support for legislation like the Inflation Reduction Act demonstrate preference for more government spending.",
           "source": "https://panetta.house.gov"
         }
       },
@@ -2034,8 +2035,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a Member of the House Ways and Means Committee, I continue my work to open new markets around the world for our producers while easing the tax burden on family farms to ensure they can continue to support our community.",
-          "reasoning": "Text explicitly advocates easing the tax burden.",
+          "emphasis": 0.3,
+          "quote": "As a Member of the House Ways and Means Committee, I continue my work to open new markets around the world for our producers while easing the tax burden on family farms",
+          "reasoning": "Explicit statement about easing the tax burden shows preference for lower taxes.",
           "source": "https://panetta.house.gov"
         }
       },
@@ -2363,8 +2365,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I work to maintain the military installations on the Central Coast, promote their educational training and technological innovation, and protect their nearly 15,000 good-paying jobs that impact the economy of our communities and the safety of our country.",
-          "reasoning": "Text supports maintaining and resourcing military installations and personnel.",
+          "emphasis": 0.6,
+          "quote": "I also work to ensure that our men and women in uniform have the tools, resources, and training they need to accomplish their mission and return home.",
+          "reasoning": "Text supports maintaining military installations, jobs, and providing resources/training to service members, indicating support for military spending.",
           "source": "https://panetta.house.gov"
         }
       },
@@ -2593,8 +2596,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Following 50% Tariffs on Canada, Rep. Panetta Joins Introduction of Bill to Repeal Section 338, Refund Tariffs",
-          "reasoning": "Text shows opposition to tariffs by joining bill to repeal them.",
+          "reasoning": "Action to repeal tariffs and open new markets indicates support for free trade over protectionism.",
           "source": "https://panetta.house.gov"
         }
       },

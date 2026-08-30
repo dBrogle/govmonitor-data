@@ -26,10 +26,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 102,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:47:58+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 74,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:24:34+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -343,7 +343,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.8,
+          "quote": "Messmer Celebrates Passage of the FY27 National Defense Authorization Act in the House of Representatives",
+          "reasoning": "Multiple press release titles celebrate NDAA passage, clearly stating support for military defense measures.",
+          "source": "https://messmer.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1943,7 +1949,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "House Passes Messmer-Led Child Care Reform Legislation to Improve Accountability for Taxpayer Dollars",
+          "reasoning": "Title states support for reform improving accountability for taxpayer dollars, indicating preference for less wasteful spending.",
+          "source": "https://messmer.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2157,7 +2169,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.6,
+          "quote": "Messmer Hosts Tax Event Highlighting the Benefits of the One Big Beautiful Bill",
+          "reasoning": "Title directly addresses a tax bill and highlights its benefits, indicating support for lower taxes.",
+          "source": "https://messmer.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",

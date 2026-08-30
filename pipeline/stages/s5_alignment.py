@@ -338,29 +338,40 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
             if s.get("addressed") and s.get("stated_score") is not None
         }
 
-        truth_pairs = []  # per-topic consistency in [0, 1] over comparable, confident topics
+        # Weight each comparable topic by how much the member PREACHES it (stated emphasis), so
+        # the overall score reflects consistency on their signature issues, not a topic they
+        # mentioned once. Emphasis floored so an addressed-but-low-emphasis topic still counts a
+        # little; falls back to a flat mean if no emphasis is recorded.
+        truth_pairs = []  # (consistency in [0,1], weight) over comparable, confident topics
         for a in alignments:
             st = stated_by_slug.get(a["topic_slug"])
             if not st:
                 a["stated"] = None
                 continue
+            emph = st.get("emphasis")
+            emph = emph if isinstance(emph, (int, float)) else None
             a["stated"] = {
                 "score": round(st["stated_score"], 4),
+                "emphasis": round(emph, 4) if emph is not None else None,
                 "quote": st.get("quote"),
                 "reasoning": st.get("reasoning"),
                 "source": (stances_data or {}).get("website"),
             }
             if a["confidence"] in ("medium", "high"):
                 gap = abs(st["stated_score"] - a["alignment"])  # 0..2 on the shared axis
-                truth_pairs.append(1 - gap / 2)                 # 1 = identical, 0 = opposite
+                consistency = 1 - gap / 2                        # 1 = identical, 0 = opposite
+                weight = max(emph if emph is not None else 0.5, 0.05)
+                truth_pairs.append((consistency, weight))
 
+        total_w = sum(w for _, w in truth_pairs)
         truth_score = {
-            "score": round(sum(truth_pairs) / len(truth_pairs) * 100) if truth_pairs else None,
+            "score": round(sum(c * w for c, w in truth_pairs) / total_w * 100) if total_w else None,
             "topics_compared": len(truth_pairs),
             "fetched_at": (stances_data or {}).get("fetched_at"),
             "note": (
-                "Agreement between stated positions and voting record on high-confidence topics "
-                "(100 = words match votes exactly). Null if too few comparable topics."
+                "How consistently the member votes with what they publicly say, weighted by how "
+                "much they emphasize each topic on their site (100 = words match votes exactly). "
+                "Only high-confidence topics count; null if too few are comparable."
             ),
         }
 

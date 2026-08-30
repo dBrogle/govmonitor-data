@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "T000480",
   "website": "https://timmons.house.gov/",
-  "fetched_at": "2026-08-30T07:58:47+00:00",
+  "fetched_at": "2026-08-30T14:35:25+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -22,28 +22,32 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No statement addresses military or defense spending levels."
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": 1.0,
+      "quote": "I also serve as Chairman of the Military and Foreign Affairs Oversight Subcommittee. In this role, I focus on strengthening America\u2019s national security by ensuring our servicemembers have the resources, readiness, and leadership they need to remain the most lethal fighting force in the world.",
+      "reasoning": "Text explicitly supports providing resources to maintain the strongest military force."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.45,
       "stated_score": 1.0,
       "quote": "Additionally, last summer, Republicans voted to deliver the largest tax cut in American history, increasing Americans\u2019 take-home pay by up to $13,300.",
-      "reasoning": "The text explicitly praises and supports a major tax cut."
+      "reasoning": "Text praises and endorses major tax cuts."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "I will continue to reject policies that fuel Washington\u2019s out-of-control spending habits and instead support efforts to reduce spending, rein in the federal bureaucracy...",
-      "reasoning": "The text states opposition to wasteful spending and support for reducing it."
+      "quote": "I will continue to reject policies that fuel Washington\u2019s out-of-control spending habits and instead support efforts to reduce spending, rein in the federal bureaucracy... In Congress, I have consistently stood against wasteful government spending.",
+      "reasoning": "Text repeatedly and explicitly advocates reducing spending and opposing waste."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statement addresses trade policy or tariffs."
@@ -51,9 +55,10 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending levels."
     }
   ]
 }

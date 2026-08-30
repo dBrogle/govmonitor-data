@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "I000058",
   "website": "https://ivey.house.gov",
-  "fetched_at": "2026-08-30T07:49:55+00:00",
+  "fetched_at": "2026-08-30T14:26:33+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses military or defense spending levels."
+      "reasoning": "No clear statement on military or defense spending levels appears in the text."
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No statement clearly addresses higher versus lower taxes overall."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "I will always fight for more progressive economic policies that reduce barriers for working- and middle-class families in my district and across the country.",
+      "reasoning": "The text explicitly endorses progressive economic policies, which align with higher taxes on the wealthy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim quote states a general position on government spending levels."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "The Republican budget and H.R. 1, the One Big Ugly Bill, take us in the wrong direction for our nation\u2019s climate policy and energy independence.",
+      "reasoning": "The text repeatedly opposes Republican spending cuts across energy, education, healthcare, housing, and veterans programs while advocating increased investment."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.5,
       "stated_score": 1.0,
-      "quote": "Over the past months, President Trump has threatened and implemented a series of unpredictable and irresponsible tariffs. These economic depression-triggering tariffs wreak havoc on financial markets and the global economy.",
-      "reasoning": "Explicit opposition to tariffs indicates support for free trade."
+      "quote": "Over the past months, President Trump has threatened and implemented a series of unpredictable and irresponsible tariffs.",
+      "reasoning": "The text criticizes tariffs as harmful, indicating support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
+      "emphasis": 0.3,
       "stated_score": -1.0,
       "quote": "House Republicans passed a foreign aid budget that guts American diplomacy, slashes humanitarian assistance",
-      "reasoning": "Opposition to cuts in foreign aid spending indicates support for more foreign aid."
+      "reasoning": "The text opposes cuts to foreign aid and humanitarian assistance."
     }
   ]
 }

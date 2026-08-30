@@ -46,10 +46,10 @@
     "votes_analyzed": 70,
     "votes_without_analysis": 42,
     "truth_score": {
-      "score": 79,
+      "score": 81,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:44:10+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:20:41+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -112,8 +112,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Congresswoman Kat Cammack (FL-03) today announced that ten of her amendments were adopted in the National Defense Authorization Act for Fiscal Year 2027 (H.R. 8800), which passed the House by a vote of 216-214. The legislation authorizes a pay raise for every service member and now advances to the Senate.",
-          "reasoning": "The statement supports the NDAA and service member pay raises, indicating a pro-military spending position.",
+          "reasoning": "Text shows active support for NDAA including service member pay raises, indicating position favoring military funding.",
           "source": "https://cammack.house.gov"
         }
       },
@@ -155,8 +156,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a member of the House Energy and Commerce Committee and its Health Subcommittee, Cammack helped shape the rural health provisions and shepherd them through the committee process as part of the Working Families Tax Cuts law.",
-          "reasoning": "Explicit reference to supporting the Working Families Tax Cuts law shows a position favoring lower taxes.",
+          "emphasis": 0.2,
+          "quote": "Cammack helped craft and shepherd the Rural Health Transformation Program through committee, securing more than $200 million for Florida and delivering critical resources to rural communities across FL-03... as part of the Working Families Tax Cuts law.",
+          "reasoning": "Explicit involvement in advancing the Working Families Tax Cuts law demonstrates support for lower taxes.",
           "source": "https://cammack.house.gov"
         }
       },
@@ -621,8 +623,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Cammack helped craft and shepherd the Rural Health Transformation Program through committee, securing more than $200 million for Florida and delivering critical resources to rural communities across FL-03.",
-          "reasoning": "The text highlights securing and delivering over $200 million in federal health investments, indicating support for increased government spending.",
+          "emphasis": 0.3,
+          "quote": "Congresswoman Kat Cammack (FL-03) today announced more than $42.2 million in Rural Health Transformation Program investments benefiting health care providers and communities across North Central Florida, following her work in Congress to help craft and advance the legislation that created the program.",
+          "reasoning": "Proudly claims credit for securing and delivering over $42 million in new federal rural health spending.",
           "source": "https://cammack.house.gov"
         }
       },

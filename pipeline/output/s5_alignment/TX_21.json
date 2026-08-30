@@ -56,10 +56,10 @@
     "votes_analyzed": 365,
     "votes_without_analysis": 77,
     "truth_score": {
-      "score": 66,
+      "score": 37,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:00:19+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:37:25+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -363,9 +363,10 @@
           }
         ],
         "stated": {
-          "score": 1.0,
-          "quote": "That's why he supports strengthening our military and ensuring they have both the tools and clarity of mission necessary to succeed on the battlefield.",
-          "reasoning": "The text explicitly states support for strengthening the military with necessary tools.",
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "Rep. Roy Votes Against Bloated $1.15 Trillion NDAA",
+          "reasoning": "Explicit vote against large defense authorization bill indicates opposition to increased military spending.",
           "source": "https://roy.house.gov"
         }
       },
@@ -2661,8 +2662,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Republicans must remain committed to fully offset the spending contained in the final 'Reconciliation 3.0' package through the next reconciliation bill or any supplemental appropriations measure.",
-          "reasoning": "The text states a principle that new spending must be fully paid for and expresses concern over failure to offset spending.",
+          "emphasis": 0.25,
+          "quote": "the failure to offset the proposed spending... new spending should be fully paid for",
+          "reasoning": "Criticism of unoffset spending and insistence on paying for new expenditures shows preference for reduced or balanced government spending.",
           "source": "https://roy.house.gov"
         }
       },

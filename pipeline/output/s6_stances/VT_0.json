@@ -3,7 +3,7 @@
   "district": 0,
   "bioguide_id": "B001318",
   "website": "https://balint.house.gov",
-  "fetched_at": "2026-08-30T08:02:09+00:00",
+  "fetched_at": "2026-08-30T14:39:09+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,34 +27,39 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on military spending levels."
+      "reasoning": "No clear position stated on military or defense spending."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on taxation."
+      "reasoning": "No clear position stated on taxation levels."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on overall government spending levels."
+      "reasoning": "No clear position stated on overall government spending."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on trade policy."
+      "addressed": true,
+      "emphasis": 0.15,
+      "stated_score": 1.0,
+      "quote": "This trade war is going to raise our prices.",
+      "reasoning": "Explicit criticism of trade war implies support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No clear position stated on foreign aid spending."

@@ -96,10 +96,10 @@
     "votes_analyzed": 334,
     "votes_without_analysis": 95,
     "truth_score": {
-      "score": 54,
+      "score": 53,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:40:00+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:47+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -640,8 +640,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "America\u2019s problem is not that we tax too little, but that we spend far too much. I will not vote to increase taxes.",
-          "reasoning": "Text explicitly opposes tax increases, aligning with lower taxes.",
+          "reasoning": "Explicit opposition to tax increases indicates support for lower taxes.",
           "source": "https://gosar.house.gov/"
         }
       },
@@ -2459,8 +2460,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "America\u2019s problem is not that we tax too little, but that we spend far too much.",
-          "reasoning": "Text states spending is excessive and supports spending cuts.",
+          "emphasis": 0.7,
+          "quote": "America\u2019s problem is not that we tax too little, but that we spend far too much. I will not vote to increase taxes.",
+          "reasoning": "Direct statement that spending is excessive indicates preference for reduced government spending.",
           "source": "https://gosar.house.gov/"
         }
       },

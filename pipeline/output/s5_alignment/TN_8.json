@@ -66,10 +66,10 @@
     "votes_analyzed": 331,
     "votes_without_analysis": 114,
     "truth_score": {
-      "score": 78,
+      "score": 81,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:59:25+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:36:08+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -374,8 +374,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "It is critical that Congress continues to take care of our brave service members and give them the tools they need to defend our nation from foreign adversaries.",
-          "reasoning": "The statement explicitly supports providing tools and care for service members to defend the nation, indicating support for more military spending.",
+          "reasoning": "Explicit call to equip service members with needed tools indicates support for more military spending.",
           "source": "https://kustoff.house.gov"
         }
       },
@@ -2380,8 +2381,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a member of the House Ways and Means Committee, I am working to cut taxes, bolster our trade agreements, and advance pro-growth policies.",
-          "reasoning": "The statement directly states working to cut taxes, indicating support for lower taxes.",
+          "emphasis": 0.6,
+          "quote": "I am working to cut taxes, bolster our trade agreements, and advance pro-growth policies.",
+          "reasoning": "Direct statement of working to cut taxes shows preference for lower taxes.",
           "source": "https://kustoff.house.gov"
         }
       },
@@ -2791,8 +2793,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a member of the House Ways and Means Committee, I am working to cut taxes, bolster our trade agreements, and advance pro-growth policies.",
-          "reasoning": "The statement supports bolstering trade agreements, indicating a pro-free trade position.",
+          "emphasis": 0.5,
+          "quote": "I am working to cut taxes, bolster our trade agreements, and advance pro-growth policies.",
+          "reasoning": "Commitment to bolster trade agreements indicates support for free trade.",
           "source": "https://kustoff.house.gov"
         }
       }

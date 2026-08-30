@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M001213",
   "website": "https://blakemoore.house.gov",
-  "fetched_at": "2026-08-30T08:01:20+00:00",
+  "fetched_at": "2026-08-30T14:38:16+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,6 +27,7 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statement on military or defense spending levels appears in the text."
@@ -34,27 +35,31 @@
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "nothing is better for American industry and economic prosperity than tax cuts",
-      "reasoning": "Text explicitly endorses tax cuts and the TCJA for keeping more money with families and businesses."
+      "reasoning": "The taxes page explicitly praises tax cuts under TCJA and opposes higher taxes."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "Rather than taking more from American families to spend on wasteful and unnecessary big government wish list items and slush funds, our tax code should let families decide how to spend their money so they can best care for their needs.",
-      "reasoning": "Text criticizes big government spending and deficit-fueled budgets in favor of lower spending."
+      "quote": "Rather than taking more from American families to spend on wasteful and unnecessary big government wish list items and slush funds",
+      "reasoning": "Multiple pages criticize wasteful spending, deficits, and big-government programs while promoting fiscal restraint."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "stated_score": 1.0,
-      "quote": "I am committed to ensuring that U.S. trade policy helps Utah businesses find new opportunities in overseas markets for decades to come... negotiating new and enforceable trade agreements that create new opportunities with allies",
-      "reasoning": "Text emphasizes expanding trade agreements and market access while using targeted tariffs only against adversaries."
+      "emphasis": 0.6,
+      "stated_score": 0.5,
+      "quote": "negotiating new and enforceable trade agreements that create new opportunities with allies... On one hand, this means leveraging tariffs in certain sectors like steel and aluminum",
+      "reasoning": "Trade page endorses both new free-trade agreements and targeted tariffs, yielding a mixed but not purely protectionist stance."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statement on foreign aid spending levels appears in the text."

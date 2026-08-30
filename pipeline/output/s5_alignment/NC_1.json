@@ -36,10 +36,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 126,
     "truth_score": {
-      "score": 66,
+      "score": 65,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:52:23+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:56+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1708,8 +1708,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Congressman Don Davis (NC-01) toured communities across North Carolina\u2019s First District to highlight the nearly $54 million he secured for eastern North Carolina through Fiscal Year 2026 Community Project Funding",
-          "reasoning": "Text highlights securing and voting for appropriations and community project funding.",
+          "emphasis": 0.7,
+          "quote": "Congressman Don Davis (NC-01) toured communities across North Carolina\u2019s First District to highlight the nearly $54 million he secured for eastern North Carolina through Fiscal Year 2026 Community Project Funding.",
+          "reasoning": "Repeated emphasis on securing federal appropriations and community project funding indicates support for increased government spending.",
           "source": "https://dondavis.house.gov"
         }
       },
@@ -2421,8 +2422,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "sponsored 31 provisions that have advanced through House passage of H.R. 8800, the National Defense Authorization Act (NDAA) for Fiscal Year 2027. He joined his colleagues in voting for the fourth consecutive year to pass the annual defense bill in the House",
-          "reasoning": "Text shows repeated support for NDAA defense bill and provisions.",
+          "emphasis": 0.8,
+          "quote": "Congressman Don Davis (NC-01), Vice Ranking Member of the House Armed Services Committee, sponsored 31 provisions that have advanced through House passage of H.R. 8800, the National Defense Authorization Act (NDAA) for Fiscal Year 2027.",
+          "reasoning": "Multiple statements show strong support for advancing defense legislation and priorities including NDAA passage and F-35 programs.",
           "source": "https://dondavis.house.gov"
         }
       },

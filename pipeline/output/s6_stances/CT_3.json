@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "D000216",
   "website": "https://delauro.house.gov/",
-  "fetched_at": "2026-08-30T07:43:52+00:00",
+  "fetched_at": "2026-08-30T14:20:08+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on military or defense spending levels."
+      "reasoning": "No verbatim statement on overall military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": -1.0,
-      "quote": "allowing the tax rates for the wealthiest 2% of Americans, to return to the Clinton-era rates.",
-      "reasoning": "Text explicitly supports returning to higher Clinton-era tax rates on the wealthiest Americans."
+      "quote": "Rosa supports tax cuts for middle class families on income up to $250,000, while allowing the tax rates for the wealthiest 2% of Americans, to return to the Clinton-era rates.",
+      "reasoning": "Explicit support for raising taxes on the wealthiest while cutting for middle class indicates position favoring higher taxes overall."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear general position stated on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.75,
+      "stated_score": -1.0,
+      "quote": "She has worked hard to prevent teacher layoffs and fully fund Title I of the Elementary and Secondary Education Act, the Individual with Disabilities Education Act, and afterschool programs.",
+      "reasoning": "Repeated advocacy for increased funding across education, health, energy, infrastructure and veterans programs shows support for more government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text."
+      "reasoning": "No statements on tariffs, protectionism or free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No position stated on foreign aid spending levels."
+      "reasoning": "Statement on Gaza aid workers addresses investigation, not aid spending levels."
     }
   ]
 }

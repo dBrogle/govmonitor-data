@@ -46,10 +46,10 @@
     "votes_analyzed": 332,
     "votes_without_analysis": 115,
     "truth_score": {
-      "score": 66,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:51:32+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 67,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:28:04+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -376,8 +376,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "making strong investments in innovation to secure U.S. leadership around the globe",
-          "reasoning": "Text explicitly supports strong investments in defense and innovation for national security.",
+          "emphasis": 0.8,
+          "quote": "Making strong investments in innovation to secure U.S. leadership around the globe. Southern Minnesota is especially well positioned to support force readiness, combat and emergency medicine, research, and innovation.",
+          "reasoning": "Text explicitly calls for strong investments in defense industrial base and innovation under Peace Through Strength.",
           "source": "https://finstad.house.gov/"
         }
       },
@@ -2091,8 +2092,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I have also prioritized responsible spending to bring fiscal discipline back to Washington",
-          "reasoning": "Text advocates for fiscal discipline, balanced budgets, and avoiding additions to national debt.",
+          "emphasis": 0.7,
+          "quote": "I have also prioritized responsible spending to bring fiscal discipline back to Washington. It is past time for Congress to return to regular order and deliver responsible, balanced budgets that reflect the needs of the American people without adding to our already unsustainable national debt.",
+          "reasoning": "Explicit calls for fiscal discipline, balanced budgets, and reducing debt via responsible spending.",
           "source": "https://finstad.house.gov/"
         }
       },
@@ -2299,8 +2301,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "secures $1.2 trillion in savings for American taxpayers and delivers the real, long-term reform that Americans voted for",
-          "reasoning": "Text endorses tax cuts legislation that saves taxpayers money and keeps more of their paychecks.",
+          "emphasis": 0.9,
+          "quote": "The Working Families Tax Cuts does exactly that. Here\u2019s a look at just some of the ways this bill delivers real results for Minnesota\u2019s First Congressional District: Tax Relief for Southern Minnesota Families Saves the typical American family $1,700 in taxes",
+          "reasoning": "Strong, repeated endorsement of tax cuts and making 2017 cuts permanent to let families keep more of their paychecks.",
           "source": "https://finstad.house.gov/"
         }
       },
@@ -2538,7 +2541,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.3,
+          "quote": "Invests additional funding in trade promotion programs to keep U.S. agriculture competitive.",
+          "reasoning": "Supports trade promotion funding to maintain competitiveness, indicating free-trade orientation.",
+          "source": "https://finstad.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",

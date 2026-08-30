@@ -96,10 +96,10 @@
     "votes_analyzed": 293,
     "votes_without_analysis": 98,
     "truth_score": {
-      "score": 66,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:39:10+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 62,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:16:18+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -371,8 +371,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "we must protect our military and give them the tools they need to complete their mission.",
-          "reasoning": "Text explicitly supports providing military with needed resources despite shrinking budgets.",
+          "emphasis": 0.8,
+          "quote": "I will do my best to ensure our military has what they need to keep us safe and protect our way of life, as well as thoroughly examine all legislation to ensure our national defense community is able to build upon its proud history.",
+          "reasoning": "Text explicitly supports providing military with needed resources and tools.",
           "source": "https://womack.house.gov/"
         }
       },
@@ -601,7 +602,8 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The Tax Cuts and Jobs Act allows hardworking Americans keep more of their paycheck, creates jobs and increases wages by making American businesses competitive again",
+          "emphasis": 0.6,
+          "quote": "The Tax Cuts and Jobs Act allows hardworking Americans keep more of their paycheck, creates jobs and increases wages by making American businesses competitive again, and simplifies a code that has become riddled with loopholes.",
           "reasoning": "Text praises tax cuts that let Americans keep more of their pay.",
           "source": "https://womack.house.gov/"
         }
@@ -2173,8 +2175,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I made a commitment to the people of the Third District of Arkansas to cut spending and to make the necessary reforms to put our budget on a sustainable path.",
-          "reasoning": "Text states commitment to cut spending and reduce discretionary spending.",
+          "emphasis": 0.9,
+          "quote": "I made a commitment to the people of the Third District of Arkansas to cut spending and to make the necessary reforms to put our budget on a sustainable path... I have worked closely with my colleagues on the committee to closely evaluate \u2013 and reduce \u2013 discretionary spending.",
+          "reasoning": "Text repeatedly commits to cutting spending and reducing discretionary outlays.",
           "source": "https://womack.house.gov/"
         }
       },
@@ -2505,7 +2508,13 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.4,
+          "quote": "Although some argue against the merits of foreign aid, it is important to note that it accounts for less than one percent of the federal budget... I will continue to support our interests abroad, while ensuring that tax payer dollars are used to increase security and expand economic growth.",
+          "reasoning": "Text defends foreign aid's value and commits to supporting it abroad.",
+          "source": "https://womack.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

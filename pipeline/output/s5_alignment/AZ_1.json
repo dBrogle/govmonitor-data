@@ -96,10 +96,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 125,
     "truth_score": {
-      "score": 55,
+      "score": 53,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:39:28+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:34+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -640,8 +640,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "I was proud to help write the Tax Cuts and Jobs Act, legislation that was signed into law in 2017.",
-          "reasoning": "Explicit support for tax cuts legislation indicates position favoring lower taxes.",
+          "reasoning": "Explicit support for tax cuts shows position favoring lower taxes.",
           "source": "https://schweikert.house.gov/"
         }
       },
@@ -2322,8 +2323,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I believe through stopping wasteful government spending and bringing forward measures that help create good-paying jobs and shrink our debt, we can build a healthier economy",
-          "reasoning": "Direct advocacy for stopping wasteful spending shows position favoring less government spending.",
+          "emphasis": 0.8,
+          "quote": "my mission has always been to help Arizona families. I believe through stopping wasteful government spending and bringing forward measures that help create good-paying jobs and shrink our debt",
+          "reasoning": "Repeated emphasis on reducing wasteful spending and debt indicates preference for less government spending.",
           "source": "https://schweikert.house.gov/"
         }
       },
@@ -2552,8 +2554,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "I am a strong supporter of free trade, and as a border state, Arizonans understand the importance of strong trade partnerships with its neighbors.",
-          "reasoning": "Explicit endorsement of free trade and trade agreements indicates position favoring free trade.",
+          "reasoning": "Direct endorsement of free trade and trade agreements shows support for free trade policies.",
           "source": "https://schweikert.house.gov/"
         }
       },

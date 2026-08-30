@@ -66,10 +66,10 @@
     "votes_analyzed": 325,
     "votes_without_analysis": 144,
     "truth_score": {
-      "score": 86,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:57:22+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 99,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:34:06+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -384,9 +384,10 @@
           }
         ],
         "stated": {
-          "score": 1.0,
+          "score": 0.7,
+          "emphasis": 0.4,
           "quote": "I will vote to continue to pay our troops, provide them with protective and defensive equipment, and ensure that our national defense inventory remains at safe levels.",
-          "reasoning": "The statement supports maintaining defense funding and equipment levels.",
+          "reasoning": "The statement explicitly supports funding troops, equipment, and maintaining defense inventory levels.",
           "source": "https://fitzpatrick.house.gov/"
         }
       },
@@ -2054,7 +2055,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -0.6,
+          "emphasis": 0.3,
+          "quote": "I will continue to fund our government, oppose any and all government shutdowns, and ensure that all of our federal workers are always paid.",
+          "reasoning": "The statement advocates continued government funding and opposes shutdowns.",
+          "source": "https://fitzpatrick.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",

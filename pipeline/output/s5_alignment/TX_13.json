@@ -48,8 +48,8 @@
     "truth_score": {
       "score": 98,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:59:55+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:36:57+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -420,8 +420,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Core to America\u2019s national security is a strong national defense. Having served in the military for nearly three decades, I have been honored to play an active role during my time in Congress to help bolster our national defense. ... keep the growth and modernization of our national defense going.",
-          "reasoning": "The text explicitly supports bolstering, growing, and modernizing national defense.",
+          "emphasis": 0.9,
+          "quote": "Core to America\u2019s national security is a strong national defense. Having served in the military for nearly three decades, I have been honored to play an active role during my time in Congress to help bolster our national defense.",
+          "reasoning": "Text repeatedly emphasizes bolstering and modernizing national defense with multiple press releases and a dedicated issues page supporting stronger defense.",
           "source": "https://jackson.house.gov"
         }
       },

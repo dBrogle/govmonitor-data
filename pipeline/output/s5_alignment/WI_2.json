@@ -86,10 +86,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 114,
     "truth_score": {
-      "score": 77,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T08:02:54+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 69,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:39:51+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -315,7 +315,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.6,
+          "quote": "a bill to tax all payouts from President Trump\u2019s $1.776 billion \u201cAnti-Weaponization Fund\u201d at 100 percent so that all taxpayer funding goes back to the Treasury",
+          "reasoning": "The member proposes a new 100% tax on specific funds, indicating support for higher taxation measures.",
+          "source": "https://pocan.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -608,8 +614,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Donald Trump\u2019s draconian proposal to boost the Pentagon\u2019s budget beyond the already unthinkable $1 trillion mark, to an even more outrageous $1.5 trillion, could be the most egregious waste of taxpayer dollars we have ever seen. ... It's past time to rein in wasteful spending on ineffective weapons programs, stop rewarding wealthy and powerful defense contractors, and restore fiscal discipline to the Pentagon.",
-          "reasoning": "The text explicitly opposes increasing military spending and calls for reducing wasteful Pentagon expenditures.",
+          "emphasis": 0.9,
+          "quote": "Donald Trump\u2019s draconian proposal to boost the Pentagon\u2019s budget beyond the already unthinkable $1 trillion mark, to an even more outrageous $1.5 trillion, could be the most egregious waste of taxpayer dollars we have ever seen.",
+          "reasoning": "The text explicitly criticizes a massive increase in Pentagon spending and calls for reducing wasteful military outlays.",
           "source": "https://pocan.house.gov"
         }
       },
@@ -2266,7 +2273,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.7,
+          "quote": "I am committed to investing in education to provide future generations with the tools they need to become leaders.",
+          "reasoning": "Multiple statements advocate increased federal investment in education, Pell Grants, and domestic programs while opposing cuts.",
+          "source": "https://pocan.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2502,7 +2515,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.5,
+          "quote": "the U.S. policy toward Cuba is not working, and that this blockade must end.",
+          "reasoning": "The member calls for ending the Cuba blockade, opposing protectionist sanctions in favor of open engagement.",
+          "source": "https://pocan.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

@@ -86,10 +86,10 @@
     "votes_analyzed": 333,
     "votes_without_analysis": 111,
     "truth_score": {
-      "score": 21,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:42:40+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 44,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:18:49+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -553,8 +553,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "I successfully included legislative language in the FY21 National Defense Authorization Act (NDAA) to preserve more than 300+ Defense Media Activity jobs at March Air Reserve Base",
-          "reasoning": "The statement supports preserving defense jobs via NDAA funding, indicating a position favoring more military spending.",
+          "reasoning": "Text supports maintaining and protecting defense-related jobs and NDAA provisions, indicating position favoring military spending.",
           "source": "https://takano.house.gov"
         }
       },
@@ -2332,7 +2333,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.5,
+          "quote": "Opposing efforts to cut VA funding or privatize VA care",
+          "reasoning": "Multiple statements advocate restoring or protecting government funding for housing, VA, and clean energy programs.",
+          "source": "https://takano.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

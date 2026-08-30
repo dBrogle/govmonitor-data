@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "D000617",
   "website": "https://delbene.house.gov",
-  "fetched_at": "2026-08-30T08:02:14+00:00",
+  "fetched_at": "2026-08-30T14:39:08+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,6 +27,7 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statement addresses military or defense spending levels."
@@ -34,27 +35,31 @@
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "That\u2019s why I am championing efforts that provide tax relief for the middle-class including the enhanced Child Tax Credit.",
-      "reasoning": "Text explicitly advocates tax relief measures for middle-class families."
+      "reasoning": "Explicit support for tax relief measures indicates a position favoring lower taxes."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Budget text mentions both cutting wasteful spending and investing in programs without a clear net position on overall spending levels."
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "This means taking a balanced approach to craft a responsible plan that cuts wasteful spending and invests in the programs that help working families, create jobs, and put our economy back on the right track.",
+      "reasoning": "Advocacy for cutting wasteful spending to reduce the deficit shows a stance favoring less government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.5,
       "stated_score": 1.0,
-      "quote": "I helped pass the United-States-Mexico-Canada Agreement (USMCA), which provides a stable open marketplace for farmers and businesses. The agreement ensured duty-free trade for most of Washington\u2019s agriculture exports and eliminated key trade barriers",
-      "reasoning": "Text endorses a free-trade agreement that expands duty-free exports and removes barriers."
+      "quote": "The agreement ensured duty-free trade for most of Washington\u2019s agriculture exports and eliminated key trade barriers, including Canada\u2019s dairy pricing system and British Columbia\u2019s discriminatory rule against imported wine.",
+      "reasoning": "Support for USMCA and duty-free trade demonstrates a free trade position."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statement addresses foreign aid spending."

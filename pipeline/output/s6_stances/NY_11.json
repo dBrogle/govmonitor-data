@@ -3,7 +3,7 @@
   "district": 11,
   "bioguide_id": "M000317",
   "website": "https://malliotakis.house.gov",
-  "fetched_at": "2026-08-30T07:55:22+00:00",
+  "fetched_at": "2026-08-30T14:31:56+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military spending levels appear in the text."
+      "reasoning": "No verbatim statement on military spending levels appears in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "instead of increasing taxes, we should eliminate the green tax credits that are allowed to go to Chinese companies",
-      "reasoning": "The statement explicitly opposes tax increases and advocates eliminating tax credits."
+      "reasoning": "Text explicitly opposes tax increases and advocates eliminating credits instead."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on overall government spending levels appear in the text."
+      "reasoning": "No verbatim statement taking a clear position on overall government spending levels."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No direct statements from the member on free trade versus protectionism appear in the text."
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": -1.0,
+      "quote": "Stop China\u2019s unfair and illicit trade practices",
+      "reasoning": "Text frames trade issues around opposing unfair foreign practices, indicating protectionist stance."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
     }
   ]
 }

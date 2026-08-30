@@ -86,10 +86,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 120,
     "truth_score": {
-      "score": 38,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:43:26+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 43,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:19:22+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2228,12 +2228,7 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "I\u2019m ready to work with the President, Republicans, and Democrats on good ideas like revising our tax code to support the middle class, bringing offshore profits back for investment at home, repairing our infrastructure, and strengthening American\u2019s military.",
-          "reasoning": "The statement explicitly supports strengthening the military, indicating a position favoring more military spending.",
-          "source": "https://scottpeters.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2460,8 +2455,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.2,
           "quote": "Representatives Peters, San Diego Business Leaders Highlight Harm of Tariffs on San Diego Businesses and Consumers",
-          "reasoning": "The statement highlights harm from tariffs, indicating support for free trade over protectionism.",
+          "reasoning": "The statement explicitly highlights harm from tariffs, indicating support for free trade.",
           "source": "https://scottpeters.house.gov"
         }
       },

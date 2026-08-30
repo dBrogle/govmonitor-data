@@ -86,10 +86,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 112,
     "truth_score": {
-      "score": 49,
+      "score": 45,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:00:02+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:37:30+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2038,8 +2038,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "More spending is not the answer... hard choices to cut spending and to limit the government",
-          "reasoning": "Direct call to cut spending shows preference for less government spending.",
+          "emphasis": 0.8,
+          "quote": "More spending is not the answer. More taxes are not the answer. The answers are found through hard choices to cut spending and to limit the government",
+          "reasoning": "Repeatedly states opposition to out-of-control spending and calls for cuts.",
           "source": "https://weber.house.gov"
         }
       },
@@ -2224,8 +2225,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "More taxes are not the answer.",
-          "reasoning": "Explicit rejection of higher taxes indicates support for lower taxes.",
+          "reasoning": "Explicitly rejects higher taxes in fiscal policy section.",
           "source": "https://weber.house.gov"
         }
       },

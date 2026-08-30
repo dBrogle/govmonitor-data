@@ -66,10 +66,10 @@
     "votes_analyzed": 333,
     "votes_without_analysis": 119,
     "truth_score": {
-      "score": 34,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:41:35+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 33,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:17:58+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2071,7 +2071,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.2,
+          "quote": "cutting wasteful spending",
+          "reasoning": "Single explicit reference to cutting wasteful spending in NDAA context.",
+          "source": "https://carbajal.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2397,8 +2403,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "I have also worked to secure various funding initiatives in the NDAA that support defense industries on the Central Coast, driving local economic growth and increasing job opportunities.",
-          "reasoning": "Text explicitly supports securing funding initiatives via NDAA for defense industries.",
+          "reasoning": "Text explicitly endorses securing defense funding and NDAA investments while serving on HASC.",
           "source": "https://carbajal.house.gov"
         }
       },

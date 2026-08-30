@@ -116,10 +116,10 @@
     "votes_analyzed": 313,
     "votes_without_analysis": 120,
     "truth_score": {
-      "score": 38,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:45:36+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 41,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:22:21+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -433,7 +433,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.25,
+          "quote": "He consistently advocates for diplomacy first while ensuring that American forces are fully equipped and that veterans receive the best possible support.",
+          "reasoning": "Text states support for fully equipping American forces, indicating position favoring more military resources.",
+          "source": "https://hankjohnson.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -627,8 +633,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "while remaining committed to job creation and middle-class tax relief in the future.",
-          "reasoning": "Explicit support for middle-class tax relief indicates preference for lower taxes.",
+          "emphasis": 0.2,
+          "quote": "committed to job creation and middle-class tax relief in the future.",
+          "reasoning": "Explicit commitment to middle-class tax relief indicates support for lower taxes.",
           "source": "https://hankjohnson.house.gov/"
         }
       },
@@ -2287,8 +2294,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "advocating for increased funding for affordable housing programs",
-          "reasoning": "Multiple statements support increased funding for housing, energy, and other programs.",
+          "emphasis": 0.6,
+          "quote": "addressing inequalities in the education system, increasing public school funding, and advocating for accessible higher education",
+          "reasoning": "Multiple statements advocate increasing funding for schools, housing, energy, health care and other programs, showing support for more government spending.",
           "source": "https://hankjohnson.house.gov/"
         }
       },

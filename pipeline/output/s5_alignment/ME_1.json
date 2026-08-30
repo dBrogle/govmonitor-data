@@ -106,10 +106,10 @@
     "votes_analyzed": 311,
     "votes_without_analysis": 112,
     "truth_score": {
-      "score": 41,
+      "score": 40,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:50:09+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:26:50+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -606,8 +606,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Ever since being elected to Congress, I've been proud to advocate for the best shipbuilders in the world at Bath Iron Works and to keep them working",
-          "reasoning": "Text explicitly advocates for maintaining shipbuilding work at a major military contractor.",
+          "emphasis": 0.8,
+          "quote": "Ever since being elected to Congress, I've been proud to advocate for the best shipbuilders in the world at Bath Iron Works and to keep them working--first as a member of the House Armed Services Committee and now as a member of the House Appropriati...",
+          "reasoning": "Text repeatedly highlights advocacy for Bath Iron Works shipbuilding and providing troops with resources, indicating support for increased military/defense spending.",
           "source": "https://pingree.house.gov/"
         }
       },
@@ -2661,8 +2662,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.6,
           "quote": "As Russia continues its unprovoked attack on the people of Ukraine, I am working at home and abroad to support Ukraine and our allies through this humanitarian crisis.",
-          "reasoning": "Text explicitly supports providing aid and resources to Ukraine.",
+          "reasoning": "Text details active support for Ukraine aid and humanitarian efforts plus UNRWA funding restoration, indicating preference for more foreign aid spending.",
           "source": "https://pingree.house.gov/"
         }
       }

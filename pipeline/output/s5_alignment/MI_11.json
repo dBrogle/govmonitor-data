@@ -56,10 +56,10 @@
     "votes_analyzed": 325,
     "votes_without_analysis": 145,
     "truth_score": {
-      "score": 63,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:50:47+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 42,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:27:36+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -252,12 +252,7 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "the Trump administration is\u2026giving the billionaires a tax cut, but slashing healthcare and food assistance for us",
-          "reasoning": "Criticism of tax cuts for billionaires indicates opposition to lower taxes.",
-          "source": "https://stevens.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1879,12 +1874,7 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "the Trump administration is\u2026giving the billionaires a tax cut, but slashing healthcare and food assistance for us",
-          "reasoning": "Opposition to slashing healthcare and food assistance indicates support for more government spending.",
-          "source": "https://stevens.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2413,8 +2403,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Congress must pass my No Tariffs on Groceries Act now to stop Trump\u2019s reckless trade policies from making grocery bills more expensive.",
-          "reasoning": "Opposition to tariffs and call for no-tariffs legislation indicates support for free trade.",
+          "emphasis": 0.75,
+          "quote": "\u201cMichiganders are tired of paying higher prices for the same food. Congress must pass my No Tariffs on Groceries Act now to stop Trump\u2019s reckless trade policies from making grocery bills more expensive.\u201d",
+          "reasoning": "Multiple statements explicitly oppose tariffs and introduce anti-tariff legislation, indicating support for free trade.",
           "source": "https://stevens.house.gov/"
         }
       },

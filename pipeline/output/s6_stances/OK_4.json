@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "C001053",
   "website": "https://cole.house.gov",
-  "fetched_at": "2026-08-30T07:57:08+00:00",
+  "fetched_at": "2026-08-30T14:33:47+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,27 +27,31 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
-      "quote": "I am a champion for a strong national defense and returning fiscal discipline to the Pentagon.",
-      "reasoning": "Text explicitly champions strong national defense and votes for NDAA, indicating support for more military spending."
+      "quote": "I am a champion for a strong national defense and returning fiscal discipline to the Pentagon. I will continue to support a strong military well-equipped to face the challenges of the 21st century.",
+      "reasoning": "The text repeatedly champions strong national defense and votes for defense authorizations and appropriations, indicating support for more military spending."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "I support maintaining low individual tax rates and permitting Americans to keep more of their hard-earned money and voted for legislation to increase the size of the standard deduction and child tax credit.",
-      "reasoning": "Text states support for maintaining low tax rates and keeping more earnings, indicating preference for lower taxes."
+      "reasoning": "The member explicitly supports low tax rates, larger deductions/credits, and a competitive corporate tax code to let Americans and businesses keep more earnings."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "We must also rein in the Biden Administration\u2019s excessive government spending and misguided policies, which instigated our present inflation crisis and threaten to drive our economy into a painful recession.",
-      "reasoning": "Text calls for reining in excessive government spending to address debt and inflation, indicating preference for less spending."
+      "quote": "I have consistently supported legislation and policies to get the nation\u2019s long-term fiscal house in order by balancing the budget and reforming entitlements, so we can eventually pay down our debt.",
+      "reasoning": "The statements emphasize balancing the budget, reforming entitlements, and reining in excessive government spending to address debt and inflation."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address trade policy, tariffs, or free trade."
@@ -55,9 +59,10 @@
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending levels."
+      "reasoning": "No statements address the level of foreign aid spending."
     }
   ]
 }

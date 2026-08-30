@@ -36,10 +36,10 @@
     "votes_analyzed": 331,
     "votes_without_analysis": 110,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:48:20+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 78,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:25:07+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -353,7 +353,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.4,
+          "quote": "President Trump is starting yet another war in the Middle East without the approval of Congress or the American people, putting our troops \u2013 who are our neighbors, our family members, and our kids \u2013 in harm\u2019s way and spending billions on regime change in another country, all while Americans can barely afford their expenses at home.",
+          "reasoning": "The statement explicitly criticizes spending billions on military action abroad and supports measures to halt it.",
+          "source": "https://mcgarvey.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",

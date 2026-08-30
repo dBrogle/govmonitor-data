@@ -106,10 +106,10 @@
     "votes_analyzed": 288,
     "votes_without_analysis": 101,
     "truth_score": {
-      "score": 49,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:40:30+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 56,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:17:03+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -584,8 +584,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "ensure our military has the resources they need to keep us safe",
-          "reasoning": "Text states support for providing military resources via NDAA.",
+          "emphasis": 0.4,
+          "quote": "It is essential we work together both to ensure our military has the resources they need to keep us safe",
+          "reasoning": "The text explicitly supports providing necessary resources to the military.",
           "source": "https://garamendi.house.gov/"
         }
       },
@@ -2178,8 +2179,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "I secured $1.5 million to build new low-income housing units and address housing repair needs in current low-income homes throughout our communities",
-          "reasoning": "Text repeatedly advocates securing and voting for increased federal appropriations and funding for housing, homelessness, and education programs.",
+          "emphasis": 0.8,
+          "quote": "I consistently advocate to increase funding for federal housing programs",
+          "reasoning": "The text repeatedly advocates increasing federal funding across housing, education, healthcare, and clean energy programs.",
           "source": "https://garamendi.house.gov/"
         }
       },
@@ -2329,7 +2331,13 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.3,
+          "quote": "I have consistently supported policies that would facilitate global prosperity and am proud to have introduced legislation providing additional federal funding and resources to advance the global mission of the Peace Corps",
+          "reasoning": "The text supports additional federal funding for the Peace Corps as part of global engagement.",
+          "source": "https://garamendi.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",

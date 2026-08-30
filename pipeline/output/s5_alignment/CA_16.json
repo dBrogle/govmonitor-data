@@ -28,8 +28,8 @@
     "truth_score": {
       "score": 70,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:41:00+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:17:29+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -356,8 +356,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.25,
           "quote": "Today, the House of Representatives voted to pass the National Defense Authorization Act for Fiscal Year 2027 (NDAA) which would give the Department of War $1.15 trillion in discretionary spending. Congressman Sam Liccardo (CA-16) voted against NDAA",
-          "reasoning": "The statement explicitly records a vote against a large increase in defense spending.",
+          "reasoning": "Text explicitly states vote against NDAA authorizing $1.15 trillion in military spending.",
           "source": "https://liccardo.house.gov/"
         }
       },

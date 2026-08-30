@@ -56,10 +56,10 @@
     "votes_analyzed": 316,
     "votes_without_analysis": 107,
     "truth_score": {
-      "score": 29,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T08:00:46+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 50,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:37:44+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -545,8 +545,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The constant military and technological threats posed by countries like Russia, China, Iran, and North Korea raise the need for robust funding and resources dedicated to the defense and national security of our country.",
-          "reasoning": "Text explicitly calls for robust funding and resources for defense to confront threats.",
+          "emphasis": 0.7,
+          "quote": "raise the need for robust funding and resources dedicated to the defense and national security of our country. This is why Congresswoman Sylvia R. Garcia advocates for legislation that provides service members with the resources, funding, and advanced equipment they need to effectively confront and overcome these threats.",
+          "reasoning": "Text explicitly calls for robust funding and resources for defense and national security.",
           "source": "https://sylviagarcia.house.gov/"
         }
       },
@@ -2291,7 +2292,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.8,
+          "quote": "The Congresswoman was proud to vote for the Bipartisan Infrastructure Law (BIL) in the 117th Congress, a critical step towards a resilient economy, lower consumer costs, increased job creation, and reduced climate pollution.",
+          "reasoning": "Text repeatedly endorses major new federal spending programs including BIL, IRA, expanded healthcare, education, and veterans benefits.",
+          "source": "https://sylviagarcia.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",

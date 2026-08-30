@@ -58,8 +58,8 @@
     "truth_score": {
       "score": 91,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:51:13+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:27:50+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -408,8 +408,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.8,
           "quote": "I am a strong advocate for drawing down our out- of-control defense spending and reinvesting those resources back into our local communities.",
-          "reasoning": "Text explicitly advocates drawing down defense spending.",
+          "reasoning": "Text explicitly advocates reducing defense spending.",
           "source": "https://omar.house.gov/"
         }
       },

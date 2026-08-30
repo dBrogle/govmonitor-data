@@ -26,10 +26,10 @@
     "votes_analyzed": 329,
     "votes_without_analysis": 99,
     "truth_score": {
-      "score": 50,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:50:52+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 33,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:27:20+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1921,12 +1921,7 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "with counterproductive consequences for aid, the important peace-building programs",
-          "reasoning": "Opposes amendment cutting aid and criticizes consequences for aid programs.",
-          "source": "https://mcdonaldrivet.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -2142,8 +2137,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "a game-changing tax cut that would return to working parents up to an additional $5,500 per child under age four",
-          "reasoning": "Explicitly introduces and praises a major tax cut bill.",
+          "emphasis": 0.85,
+          "quote": "a game-changing tax cut that would return to working parents up to an additional $5,500 per child under age four and lift hundreds of thousands of families out of poverty.",
+          "reasoning": "Multiple releases promote a specific tax cut bill for working families, directly supporting lower taxes.",
           "source": "https://mcdonaldrivet.house.gov/"
         }
       },

@@ -3,7 +3,7 @@
   "district": 8,
   "bioguide_id": "S001216",
   "website": "https://schrier.house.gov",
-  "fetched_at": "2026-08-30T08:02:39+00:00",
+  "fetched_at": "2026-08-30T14:40:30+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,38 +26,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on military spending levels."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "voted to pass the National Defense Authorization Act (NDAA), an annual piece of legislation that authorizes defense programs to maintain military readiness and increase national security",
+      "reasoning": "Text explicitly supports passing NDAA to maintain military readiness and national security."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "The Gas Prices Relief Act of 2026 would suspend the federal gas tax to cut nearly 20 cents per gallon for the rest of the year",
-      "reasoning": "Explicit support for suspending the federal gas tax to lower prices indicates position favoring lower taxes."
+      "reasoning": "Text explicitly supports suspending federal gas tax to lower prices."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on overall government spending levels."
+      "reasoning": "No clear position stated on overall government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on trade policy or tariffs."
+      "reasoning": "No clear position stated on trade policy."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on foreign aid spending."
+      "reasoning": "No clear position stated on foreign aid."
     }
   ]
 }

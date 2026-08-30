@@ -106,10 +106,10 @@
     "votes_analyzed": 318,
     "votes_without_analysis": 111,
     "truth_score": {
-      "score": 44,
+      "score": 39,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:40:05+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:52+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2184,8 +2184,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "A proposal to Elon Musk & Vivek Ramaswamy: to balance the budget and improve the economy \u2013 just say NO to subsidies. Not only will a subsidies hunt save hundreds of billions of taxpayer dollars, it will reduce the overall cost of the things being subsidized and reinvigorate the economy by restoring the flow of capital to its most productive use.",
-          "reasoning": "Explicit call to cut subsidies to balance budget and save taxpayer dollars indicates less spending.",
+          "reasoning": "Multiple statements explicitly advocate reducing spending via balanced budgets and ending subsidies.",
           "source": "https://mcclintock.house.gov/"
         }
       },
@@ -2403,8 +2404,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Tariffs harm the overall economy of any count",
-          "reasoning": "Direct statement that tariffs harm the economy supports free trade.",
+          "emphasis": 0.2,
+          "quote": "The use of this authority comes with a price. Tariffs harm the overall economy of any count",
+          "reasoning": "One statement criticizes tariffs for harming the economy, indicating support for free trade.",
           "source": "https://mcclintock.house.gov/"
         }
       },

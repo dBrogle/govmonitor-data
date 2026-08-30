@@ -46,10 +46,10 @@
     "votes_analyzed": 309,
     "votes_without_analysis": 108,
     "truth_score": {
-      "score": 86,
+      "score": 89,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:00:40+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:37:39+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -310,8 +310,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "I am committed to ensuring that our armed forces, intelligence services, and federal law enforcement agencies have the resources they need to be efficient, ready, and lethal in this era of unprecedented threat and uncertainty.",
-          "reasoning": "The national security statement explicitly commits to providing resources needed for armed forces to be ready and lethal.",
+          "reasoning": "Text explicitly commits to providing resources for armed forces to be ready and lethal.",
           "source": "https://nehls.house.gov"
         }
       },
@@ -485,8 +486,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Sneaky new gambling tax punishes you for losing. Reconciliation 3.0 must end it.",
-          "reasoning": "The op-ed directly opposes a new gambling tax, indicating support for lower taxes.",
+          "reasoning": "Op-ed directly opposes a new tax, indicating preference for lower taxes.",
           "source": "https://nehls.house.gov"
         }
       },

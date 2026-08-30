@@ -3,7 +3,7 @@
   "district": 14,
   "bioguide_id": "C001066",
   "website": "https://castor.house.gov/",
-  "fetched_at": "2026-08-30T07:44:49+00:00",
+  "fetched_at": "2026-08-30T14:21:17+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels."
+      "reasoning": "No verbatim statement addresses the level of military or defense spending."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on tax policy or rates."
+      "reasoning": "No verbatim statement addresses taxation levels or policy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Mentions of federal investments and balanced budget approach lack explicit position on overall spending levels."
+      "addressed": true,
+      "emphasis": 0.45,
+      "stated_score": -1.0,
+      "quote": "The Tampa Bay Area is transforming thanks to historic legislation, federal investments from the Bipartisan Infrastructure Law and Inflation Reduction Act and Community Project Funding I champion in the Congress.",
+      "reasoning": "Championing major federal spending legislation such as the Bipartisan Infrastructure Law and Inflation Reduction Act indicates support for increased government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on trade, tariffs, or free trade."
+      "reasoning": "No verbatim statement addresses trade policy, tariffs, or free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on foreign aid spending."
+      "reasoning": "No verbatim statement addresses foreign aid spending."
     }
   ]
 }

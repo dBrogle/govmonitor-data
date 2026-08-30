@@ -3,7 +3,7 @@
   "district": 15,
   "bioguide_id": "M001211",
   "website": "https://marymiller.house.gov",
-  "fetched_at": "2026-08-30T07:47:30+00:00",
+  "fetched_at": "2026-08-30T14:24:06+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -24,6 +24,7 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address military or defense spending."
@@ -31,27 +32,31 @@
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address tax rates or taxation policy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No statements address overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "I am grateful to Chairman Walberg for his leadership and my colleagues for moving this bill through the Education and Workforce Committee and helping House Republicans deliver on our promise to root out waste, fraud, and abuse throughout the federal government.",
+      "reasoning": "The text explicitly supports reducing waste, fraud, and abuse in federal programs, indicating a position favoring less government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statements address trade policy, tariffs, or free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address foreign aid spending."

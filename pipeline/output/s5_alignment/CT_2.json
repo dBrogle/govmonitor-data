@@ -118,8 +118,8 @@
     "truth_score": {
       "score": 39,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:43:49+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:20:15+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2518,8 +2518,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.95,
           "quote": "Courtney, Electric Boat, Local Officials, & Submarine Industry Leaders Celebrate Block VI Virginia-class & Build II Columbia-class Construction Contract Awards",
-          "reasoning": "Multiple releases celebrate major Navy submarine construction contract awards and workforce expansion, clearly stating support for increased military spending.",
+          "reasoning": "The statements repeatedly celebrate major Navy submarine construction contracts and the member's role on the Seapower subcommittee, clearly endorsing increased military spending.",
           "source": "https://courtney.house.gov/"
         }
       },

@@ -26,10 +26,10 @@
     "votes_analyzed": 317,
     "votes_without_analysis": 118,
     "truth_score": {
-      "score": 87,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:58:02+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 83,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:34:38+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -321,12 +321,7 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "The package includes critical funding for national security and defense, health and human services initiatives, housing programs, infrastructure, and more.",
-          "reasoning": "The statement explicitly supports a funding package that includes defense spending.",
-          "source": "https://bresnahan.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -520,8 +515,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "highlight the working-class tax cuts signed into law earlier this month.",
-          "reasoning": "The statement endorses tax cuts as positive policy.",
+          "emphasis": 0.3,
+          "quote": "highlight the working-class tax cuts signed into law earlier this month",
+          "reasoning": "Praising tax cuts indicates support for lower taxes.",
           "source": "https://bresnahan.house.gov/"
         }
       },
@@ -2134,12 +2130,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "Today, U.S. Representative Rob Bresnahan, Jr. (PA-08) joined local community leaders for a press conference announcing $1 million in federal funding he secured for the Jewish Community Alliance of Northeastern Pennsylvania on behalf of the Friedman Jewish Community Center (JCC).",
-          "reasoning": "Multiple statements detail securing and voting for specific federal project funding.",
-          "source": "https://bresnahan.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",

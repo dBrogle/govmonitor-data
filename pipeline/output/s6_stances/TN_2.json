@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "B001309",
   "website": "https://burchett.house.gov",
-  "fetched_at": "2026-08-30T07:59:05+00:00",
+  "fetched_at": "2026-08-30T14:35:48+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,6 +27,7 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No verbatim statement addresses military or defense spending levels."
@@ -34,30 +35,34 @@
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses tax rates or taxation policy."
+      "reasoning": "No verbatim statement addresses raising or lowering tax rates."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "it\u2019s time for Congress to reverse its irresponsible spending habits and get back to a place of fiscal responsibility.",
-      "reasoning": "The debt & deficit section explicitly calls for reversing spending habits to achieve fiscal responsibility."
+      "quote": "Our leaders need to recognize that every dollar we spend comes from the hard-earned paychecks of the American people, and it\u2019s time for Congress to reverse its irresponsible spending habits and get back to a place of fiscal responsibility.",
+      "reasoning": "The debt & deficit section explicitly calls for reversing irresponsible spending habits in favor of fiscal responsibility."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses trade policy, tariffs, or free trade."
+      "reasoning": "No verbatim statement addresses tariffs or free trade policy."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "No foreign aid should ever be given without proper auditing and accountability, and not a single penny of taxpayer dollars should be sent to terrorists.",
-      "reasoning": "The foreign affairs section explicitly restricts foreign aid with conditions and prohibits any to terrorists."
+      "reasoning": "The foreign affairs section explicitly conditions and restricts foreign aid spending."
     }
   ]
 }

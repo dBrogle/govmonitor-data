@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "H001066",
   "website": "https://horsford.house.gov",
-  "fetched_at": "2026-08-30T07:54:40+00:00",
+  "fetched_at": "2026-08-30T14:31:10+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on military or defense spending levels."
+      "reasoning": "No clear statement on military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "stated_score": -1.0,
-      "quote": "He is only interested in delivering tax cuts to the ultra-wealthy.",
-      "reasoning": "Criticism of tax cuts to the wealthy indicates opposition to lower taxes."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions criticism of tax cuts for wealthy but no explicit position on overall tax rates."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": -1.0,
-      "quote": "pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
-      "reasoning": "Opposition to cuts in Social Security and Medicaid shows support for maintaining or increasing such spending."
+      "quote": "He has handed power to unelected billionaires, launched reckless trade wars that hurt working families, and pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
+      "reasoning": "Explicit opposition to proposed cuts in Social Security and Medicaid shows preference against reduced government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.3,
       "stated_score": 1.0,
-      "quote": "launched reckless trade wars that hurt working families",
-      "reasoning": "Criticism of trade wars indicates support for free trade over protectionism."
+      "quote": "He has handed power to unelected billionaires, launched reckless trade wars that hurt working families, and pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
+      "reasoning": "Criticism of 'reckless trade wars' indicates opposition to protectionism and support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on foreign aid spending levels."
+      "reasoning": "Mentions review of military assistance to Israel but states no position on aid levels."
     }
   ]
 }

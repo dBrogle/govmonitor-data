@@ -76,10 +76,10 @@
     "votes_analyzed": 310,
     "votes_without_analysis": 105,
     "truth_score": {
-      "score": 45,
+      "score": 46,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:57:43+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:22+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -296,8 +296,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "advocating for poverty-busting policies such as restoring expansions of the Child Tax Credit and the Low-Income Housing Credit. Moreover, I am fighting for the Earned Income Tax Credit",
-          "reasoning": "Text explicitly supports expanding multiple tax credits, indicating a position favoring lower taxes.",
+          "emphasis": 0.6,
+          "quote": "I am advocating for poverty-busting policies such as restoring expansions of the Child Tax Credit and the Low-Income Housing Credit. Moreover, I am fighting for the Earned Income Tax Credit, one of our biggest, most useful tools to reduce poverty and put hard-earned money back into workers\u2019 pockets.",
+          "reasoning": "Explicit advocacy for expanding tax credits that reduce tax burdens indicates support for lower taxes.",
           "source": "https://evans.house.gov/"
         }
       },
@@ -2269,8 +2270,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.7,
           "quote": "Addressing this crisis involves significant investments in our housing infrastructure and expanding fair housing protections.",
-          "reasoning": "Multiple statements endorse increased federal investments, funding packages, and voting for major spending legislation like the Infrastructure and Inflation Reduction Acts.",
+          "reasoning": "Repeated calls for major new federal investments in housing, infrastructure, and health programs show support for increased government spending.",
           "source": "https://evans.house.gov/"
         }
       },

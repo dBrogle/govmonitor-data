@@ -58,8 +58,8 @@
     "truth_score": {
       "score": 33,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:40:35+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:17:02+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2074,8 +2074,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I've also called on Washington and Sacramento to suspend the gas tax.",
-          "reasoning": "Explicit call to suspend the gas tax indicates support for lower taxes.",
+          "emphasis": 0.2,
+          "quote": "announced new legislation to immediately lower gas prices through the end of the year by suspending the federal gas tax.",
+          "reasoning": "Explicit support for suspending the gas tax demonstrates a position favoring lower taxes.",
           "source": "https://harder.house.gov/"
         }
       },

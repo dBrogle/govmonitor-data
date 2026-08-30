@@ -26,10 +26,10 @@
     "votes_analyzed": 65,
     "votes_without_analysis": 40,
     "truth_score": {
-      "score": 37,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:44:24+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": null,
+      "topics_compared": 0,
+      "fetched_at": "2026-08-30T14:20:42+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -436,12 +436,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Eliminate the Department of Education: Federal bureaucrats shouldn\u2019t dictate how our kids are taught. I support returning control to states, local commu",
-          "reasoning": "Call to eliminate federal department shows stance for less government spending.",
-          "source": "https://fine.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -501,12 +496,7 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "A strong economy is the backbone of a strong America. I believe in pro-growth, pro-worker, and pro-family policies that will secure financial opportunity for future generations and restore America\u2019s leadership in global trade.",
-          "reasoning": "Emphasis on restoring leadership in global trade indicates support for free trade.",
-          "source": "https://fine.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -546,8 +536,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.35,
           "quote": "I voted YES to President Trump\u2019s Working Families Tax Cuts Act, along with my fellow Republicans in Congress, which removes taxes on tips and Social Security, removes criminal aliens and dead people from Medicaid rolls, raises the average Floridian\u2019s salary by nearly $7,000, and protects over 400,000 Florida jobs.",
-          "reasoning": "Explicit support for tax cuts act demonstrates position favoring lower taxes.",
+          "reasoning": "Explicit support for tax cuts demonstrates a clear position favoring lower taxes.",
           "source": "https://fine.house.gov/"
         }
       },

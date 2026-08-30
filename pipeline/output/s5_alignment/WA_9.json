@@ -166,10 +166,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 98,
     "truth_score": {
-      "score": 64,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T08:02:46+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 73,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:39:45+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -364,8 +364,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.8,
           "quote": "I am strongly in favor of increasing wealth taxes on the highest earning households, increasing the corporate tax rate, and investing in the Internal Revenue Service (IRS) to ensure wealthy households and large corporations are paying what they owe.",
-          "reasoning": "Explicit support for raising taxes on wealthy and corporations.",
+          "reasoning": "Text explicitly advocates raising taxes on wealthy individuals and corporations.",
           "source": "https://adamsmith.house.gov/"
         }
       },
@@ -2167,8 +2168,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.7,
           "quote": "It is crucial that we support the programs on which Americans rely, invest in innovation and infrastructure, enhance education and workforce training, and prioritize environmental sustainability in the face of climate change.",
-          "reasoning": "Advocates heavily investing in government programs and services.",
+          "reasoning": "Text calls for substantial new public investments and rejects doing them 'on the cheap.'",
           "source": "https://adamsmith.house.gov/"
         }
       },
@@ -2834,12 +2836,7 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Today, the Supreme Court ruled in a 6-3 decision that President Trump\u2019s tariffs represent an unconstitutional expansion of executive power and that his reciprocal tariffs on nearly every country are illegal.",
-          "reasoning": "Criticizes tariffs as illegal, indicating preference for free trade.",
-          "source": "https://adamsmith.house.gov/"
-        }
+        "stated": null
       }
     ],
     "topics_without_signal": []

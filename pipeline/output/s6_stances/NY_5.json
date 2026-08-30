@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "M001137",
   "website": "https://meeks.house.gov",
-  "fetched_at": "2026-08-30T07:55:03+00:00",
+  "fetched_at": "2026-08-30T14:31:39+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military spending levels appears in the text."
+      "reasoning": "No statements on military or defense spending levels appear in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No direct statement of position on tax rates or policy appears in the text."
+      "reasoning": "Criticism of tax cuts exists but does not clearly state an overall position on taxation."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No direct statement of position on overall government spending levels appears in the text."
+      "reasoning": "Mentions of spending bills occur without any explicit position on overall government spending."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No direct statement of position on trade policy or tariffs appears in the text."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "SCOTUS Ruling on Trump\u2019s Illegal Tariffs",
+      "reasoning": "Labeling tariffs as illegal indicates opposition to protectionism in favor of free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending appears in the text."
+      "reasoning": "Foreign affairs content focuses on diplomacy and sanctions but contains no statements on foreign aid spending."
     }
   ]
 }

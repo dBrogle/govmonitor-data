@@ -3,7 +3,7 @@
   "district": 44,
   "bioguide_id": "B001300",
   "website": "https://barragan.house.gov",
-  "fetched_at": "2026-08-30T07:43:03+00:00",
+  "fetched_at": "2026-08-30T14:19:05+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,38 +26,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "stated_score": 1.0,
-      "quote": "We must make dramatic investments and improvements to our cyber defenses.",
-      "reasoning": "Text explicitly calls for dramatic investments in cyber defenses as part of national security."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on overall military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on tax rates or taxation policy."
+      "reasoning": "No verbatim statement on taxation policy."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "it is imperative that we continue fighting to preserve the guaranteed benefits our nation\u2019s seniors depend on.",
-      "reasoning": "Text opposes dismantling Social Security/Medicare protections and supports preserving benefits."
+      "quote": "Maintaining the integrity of this vital safety net must be a national priority, as Social Security income is necessary for seniors no longer in the workforce.",
+      "reasoning": "Explicit defense of preserving Social Security, Medicare, and Medicaid spending against proposed cuts."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.25,
       "stated_score": -1.0,
-      "quote": "But for too long trade deals have benefited big business at the expense of U.S. workers and our environment. I will fight to ensure that trade agreements are transparent and reflect our national priorities. We need agreements that benefit working families, raise wages, and keep good paying jobs here at home.",
-      "reasoning": "Text criticizes existing trade deals and prioritizes keeping jobs at home over unrestricted trade."
+      "quote": "But for too long trade deals have benefited big business at the expense of U.S. workers and our environment. I will fight to ensure that trade agreements are transparent and reflect our national priorities.",
+      "reasoning": "Criticism of existing trade deals and call for worker- and environment-focused revisions indicates preference for managed rather than free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending."
     }
   ]
 }

@@ -86,10 +86,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 90,
     "truth_score": {
-      "score": 50,
+      "score": 54,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:45:05+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:21:43+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1802,8 +1802,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "As a Member of the House Appropriations Committee, I have fought for increased funding for child care programs, including the Child Care and Development Block Grant (CCDBG) and Head Start, and Home and Community-Based Services.",
-          "reasoning": "Advocacy for increased funding across multiple programs shows support for more government spending.",
+          "emphasis": 0.4,
+          "quote": "I have fought for increased funding for child care programs, including the Child Care and Development Block Grant (CCDBG) and Head Start, and Home and Community-Based Services",
+          "reasoning": "Repeated advocacy for expanded program funding and opposition to cuts.",
           "source": "https://frankel.house.gov"
         }
       },
@@ -2032,8 +2033,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I have been proud to support legislation to lower the price of prescription drugs, make home ownership and rent more affordable, and lower taxes for families with children.",
-          "reasoning": "Explicit support for lowering taxes for families indicates a pro-lower-taxes position.",
+          "emphasis": 0.2,
+          "quote": "lower taxes for families with children",
+          "reasoning": "Explicit support for lowering taxes.",
           "source": "https://frankel.house.gov"
         }
       },
@@ -2745,8 +2747,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "In Congress, as Ranking Member of the National Security, Department of State, and Related Programs Appropriations Subcommittee, I support continued security assistance to Israel and robust funding for Israel\u2019s missile defense capabilities.",
-          "reasoning": "Support for continued and robust security assistance and emergency aid to Israel indicates backing for more foreign aid spending.",
+          "emphasis": 0.3,
+          "quote": "I support continued security assistance to Israel and robust funding for Israel\u2019s missile defense capabilities... I have supported emergency aid to Israel",
+          "reasoning": "Explicit support for increased aid and assistance to Israel.",
           "source": "https://frankel.house.gov"
         }
       }

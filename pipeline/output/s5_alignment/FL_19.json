@@ -46,10 +46,10 @@
     "votes_analyzed": 341,
     "votes_without_analysis": 74,
     "truth_score": {
-      "score": 59,
+      "score": 58,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:44:58+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:21:36+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -277,8 +277,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "As a fiscal conservative with an extensive background in finance and banking, I support a simplified tax code that will stimulate private sector investment, individual wealth creation, reduce bureaucratic red-tape, and promote job creation.",
-          "reasoning": "Supports simplified tax code to stimulate investment and wealth creation, indicating preference for lower taxes.",
+          "emphasis": 0.8,
+          "quote": "I support a simplified tax code that will stimulate private sector investment, individual wealth creation, reduce bureaucratic red-tape, and promote job creation.",
+          "reasoning": "Explicit support for tax code changes favoring lower burdens and growth.",
           "source": "https://donalds.house.gov"
         }
       },
@@ -2360,8 +2361,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "That is why I will work to sponsor and pass a Balanced Budget Amendment, which requires both the House and the Senate to pass a balanced budget annually to regain and restore long-term financial stability in the United States.",
-          "reasoning": "Opposes reckless spending and supports balanced budget amendment to reduce federal spending.",
+          "reasoning": "Direct advocacy for balanced budgets and criticism of reckless spending.",
           "source": "https://donalds.house.gov"
         }
       },

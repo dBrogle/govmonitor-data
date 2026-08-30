@@ -56,10 +56,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 98,
     "truth_score": {
-      "score": 52,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:58:47+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 58,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:35:25+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -373,7 +373,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.35,
+          "quote": "I also serve as Chairman of the Military and Foreign Affairs Oversight Subcommittee. In this role, I focus on strengthening America\u2019s national security by ensuring our servicemembers have the resources, readiness, and leadership they need to remain the most lethal fighting force in the world.",
+          "reasoning": "Text explicitly supports providing resources to maintain the strongest military force.",
+          "source": "https://timmons.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -578,8 +584,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.45,
           "quote": "Additionally, last summer, Republicans voted to deliver the largest tax cut in American history, increasing Americans\u2019 take-home pay by up to $13,300.",
-          "reasoning": "The text explicitly praises and supports a major tax cut.",
+          "reasoning": "Text praises and endorses major tax cuts.",
           "source": "https://timmons.house.gov/"
         }
       },
@@ -2238,8 +2245,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I will continue to reject policies that fuel Washington\u2019s out-of-control spending habits and instead support efforts to reduce spending, rein in the federal bureaucracy...",
-          "reasoning": "The text states opposition to wasteful spending and support for reducing it.",
+          "emphasis": 0.7,
+          "quote": "I will continue to reject policies that fuel Washington\u2019s out-of-control spending habits and instead support efforts to reduce spending, rein in the federal bureaucracy... In Congress, I have consistently stood against wasteful government spending.",
+          "reasoning": "Text repeatedly and explicitly advocates reducing spending and opposing waste.",
           "source": "https://timmons.house.gov/"
         }
       },

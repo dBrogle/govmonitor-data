@@ -36,10 +36,10 @@
     "votes_analyzed": 302,
     "votes_without_analysis": 118,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T08:00:03+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 42,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:37:06+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2507,7 +2507,13 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.2,
+          "quote": "House Passes FY25 Appropriations Bill with Provision to Withhold U.S. Funding to Mexico Over Water Payment Noncompliance",
+          "reasoning": "The text explicitly supports withholding U.S. funding to Mexico, indicating a position favoring less foreign aid spending.",
+          "source": "https://delacruz.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

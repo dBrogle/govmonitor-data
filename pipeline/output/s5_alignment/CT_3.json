@@ -196,10 +196,10 @@
     "votes_analyzed": 349,
     "votes_without_analysis": 104,
     "truth_score": {
-      "score": 82,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:43:52+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 76,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:20:08+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -427,8 +427,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "allowing the tax rates for the wealthiest 2% of Americans, to return to the Clinton-era rates.",
-          "reasoning": "Text explicitly supports returning to higher Clinton-era tax rates on the wealthiest Americans.",
+          "emphasis": 0.85,
+          "quote": "Rosa supports tax cuts for middle class families on income up to $250,000, while allowing the tax rates for the wealthiest 2% of Americans, to return to the Clinton-era rates.",
+          "reasoning": "Explicit support for raising taxes on the wealthiest while cutting for middle class indicates position favoring higher taxes overall.",
           "source": "https://delauro.house.gov/"
         }
       },
@@ -2261,7 +2262,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.75,
+          "quote": "She has worked hard to prevent teacher layoffs and fully fund Title I of the Elementary and Secondary Education Act, the Individual with Disabilities Education Act, and afterschool programs.",
+          "reasoning": "Repeated advocacy for increased funding across education, health, energy, infrastructure and veterans programs shows support for more government spending.",
+          "source": "https://delauro.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",

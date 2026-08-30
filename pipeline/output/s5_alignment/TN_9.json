@@ -116,10 +116,10 @@
     "votes_analyzed": 300,
     "votes_without_analysis": 143,
     "truth_score": {
-      "score": 45,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:59:17+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 54,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:36:12+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -334,7 +334,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.4,
+          "quote": "funding tax giveaways for millionaires, billionaires, high-income earners, and wealthy corporations.",
+          "reasoning": "The budget page criticizes tax cuts for the wealthy as harmful giveaways.",
+          "source": "https://cohen.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -627,8 +633,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "We need to support our troops with sufficient funding so that they have access to adequate equipment and receive necessary training.",
-          "reasoning": "Text explicitly calls for sufficient funding to support troops and equipment.",
+          "reasoning": "The defense page explicitly calls for sufficient funding to support troops and equipment.",
           "source": "https://cohen.house.gov/"
         }
       },
@@ -2166,8 +2173,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "He prioritizes ensuring economic security for hard-working American families, small businesses, seniors, and the most vulnerable people in our communities by investing in and protecting Social Security, Medicare, Medicaid and the Affordable Care Act (ACA), nutrition assistance like SNAP and WIC, medical research, and other critical programs.",
-          "reasoning": "Text advocates investing in and protecting multiple federal programs.",
+          "emphasis": 0.8,
+          "quote": "prioritizes ensuring economic security for hard-working American families, small businesses, seniors, and the most vulnerable people in our communities by investing in and protecting Social Security, Medicare, Medicaid and the Affordable Care Act (ACA), nutrition assistance like SNAP and WIC, medical research, and other critical programs.",
+          "reasoning": "The budget page repeatedly emphasizes protecting and investing in major federal programs.",
           "source": "https://cohen.house.gov/"
         }
       },

@@ -46,10 +46,10 @@
     "votes_analyzed": 330,
     "votes_without_analysis": 122,
     "truth_score": {
-      "score": 79,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:47:36+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 69,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:24:14+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -590,8 +590,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "Yakym Kicks Off \u201cHoosier Heartland\u201d District Tour to Highlight Working Families Tax Cuts",
-          "reasoning": "Tour explicitly highlights tax cuts as beneficial to paychecks and businesses.",
+          "reasoning": "Text promotes tax cuts by highlighting their positive impact.",
           "source": "https://yakym.house.gov"
         }
       },
@@ -2561,7 +2562,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.7,
+          "quote": "Yakym Leads Majority of House Republicans in Push to Strengthen USMCA",
+          "reasoning": "Text endorses strengthening the USMCA trade agreement.",
+          "source": "https://yakym.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

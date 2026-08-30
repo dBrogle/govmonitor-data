@@ -66,10 +66,10 @@
     "votes_analyzed": 302,
     "votes_without_analysis": 89,
     "truth_score": {
-      "score": 65,
+      "score": 69,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:58:58+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:35:33+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -330,8 +330,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Rep. Ralph Norman Secures Four Amendments in House-Passed FY27 National Defense Authorization Act (NDAA), advancing efforts t...",
-          "reasoning": "The statement shows active support for the NDAA which authorizes military funding and programs.",
+          "emphasis": 0.8,
+          "quote": "Congressman Ralph Norman (R-SC) announced that all four of his amendments were included in the House-passed Fiscal Year 2027 National Defense Authorization Act (NDAA), advancing efforts t...",
+          "reasoning": "Text shows active support for advancing the NDAA with personal amendments.",
           "source": "https://norman.house.gov"
         }
       },
@@ -1918,8 +1919,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "It wasn't conservative enough, added more Washington involvement, and failed to address the spending crisis.",
-          "reasoning": "The statement criticizes additional spending and calls out the spending crisis, indicating preference for reduced spending.",
+          "reasoning": "Explicit criticism of spending increases and call to address spending crisis.",
           "source": "https://norman.house.gov"
         }
       },

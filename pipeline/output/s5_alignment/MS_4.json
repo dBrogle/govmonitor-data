@@ -38,8 +38,8 @@
     "truth_score": {
       "score": 66,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:52:15+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:40+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -366,8 +366,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "we must ensure that our armed forces have the best weapons, armor, and technology available",
-          "reasoning": "Text explicitly supports investing in stronger military capabilities and votes for NDAA.",
+          "reasoning": "Text repeatedly endorses strengthening military capabilities and votes for NDAA and shipbuilding.",
           "source": "https://ezell.house.gov"
         }
       },
@@ -574,8 +575,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Yes on the Tax Relief for American Families and Workers Act, which would extend provisions from the Trump Tax Cuts and Jobs Act",
-          "reasoning": "Supports extending tax cut provisions.",
+          "reasoning": "Explicit support for extending tax cuts indicates preference for lower taxes.",
           "source": "https://ezell.house.gov"
         }
       },
@@ -2146,8 +2148,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I\u2019m standing up against radical spending plans that would destroy our economy",
-          "reasoning": "Explicitly opposes increased/radical spending and wasteful spending.",
+          "emphasis": 0.7,
+          "quote": "I'm standing up against radical spending plans that would destroy our economy",
+          "reasoning": "Multiple statements oppose increased spending and call for cutting wasteful spending.",
           "source": "https://ezell.house.gov"
         }
       },

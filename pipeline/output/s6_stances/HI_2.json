@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "T000487",
   "website": "https://tokuda.house.gov",
-  "fetched_at": "2026-08-30T07:46:09+00:00",
+  "fetched_at": "2026-08-30T14:22:59+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "such as expanding emergency disaster response and increasing funding for barracks maintenance",
-      "reasoning": "Text explicitly supports increasing funding for military barracks maintenance within the NDAA."
+      "reasoning": "Text explicitly supports increasing military-related funding via NDAA priorities while affirming the bill's role in national security."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "This bill allows residents to claim significant tax deductions for property losses not covered by insurance. It also guarantees that any wildfire relief payments and disaster settlements received will remain completely tax-exempt at the federal level",
-      "reasoning": "Text shows support for tax deductions and exemptions via co-led disaster relief legislation."
+      "reasoning": "Text endorses legislation providing tax deductions and exemptions for disaster survivors, indicating support for lower taxes in this context."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": -1.0,
+      "quote": "Rep. Tokuda Leads Hawai\u02bbi Delegation Urging President Trump to Approve FEMA Kona Low Recovery Aid",
+      "reasoning": "Text advocates for federal disaster recovery aid and rural hospital infrastructure loans, showing support for increased government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs."
+      "reasoning": "No statements address trade policy or tariffs."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

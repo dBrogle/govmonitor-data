@@ -46,10 +46,10 @@
     "votes_analyzed": 334,
     "votes_without_analysis": 56,
     "truth_score": {
-      "score": 64,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:58:41+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 43,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:35:08+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -330,12 +330,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Today, the House of Representatives passed the Fiscal Year 2027 National Defense Authorization Act (NDAA), which includes 56 wins secured by Congresswoman Nancy Mace (R-SC) for South Carolina, America's servicemembers, and our national defense.",
-          "reasoning": "The statement endorses the NDAA and highlights wins for national defense and servicemembers, indicating support for military spending.",
-          "source": "https://mace.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2168,8 +2163,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "Washington doesn\u2019t have a revenue problem, it has a spending problem.",
-          "reasoning": "The statement identifies excessive spending as the core issue and calls for balancing the budget and cutting waste.",
+          "reasoning": "Repeated emphasis on cutting waste, balancing budget, and rejecting more revenue as solution indicates strong preference for less spending.",
           "source": "https://mace.house.gov"
         }
       },
@@ -2409,8 +2405,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "We will champion policies that lower taxes, alleviate the high cost of living, and provide meaningful change to American families.",
-          "reasoning": "The statement explicitly supports lowering taxes.",
+          "reasoning": "Explicit call for lower taxes shows support for reduced taxation.",
           "source": "https://mace.house.gov"
         }
       },

@@ -126,10 +126,10 @@
     "votes_analyzed": 321,
     "votes_without_analysis": 115,
     "truth_score": {
-      "score": 41,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:03:02+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 15,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:40:52+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -335,8 +335,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.2,
           "quote": "It also provided middle-class tax relief that helped 95 percent of families.",
-          "reasoning": "Text explicitly endorses tax relief measures.",
+          "reasoning": "Text explicitly praises tax relief provided by the Recovery Act.",
           "source": "https://gwenmoore.house.gov"
         }
       },
@@ -2498,12 +2499,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "Following the financial collapse, Congress passed the American Recovery and Reinvestment Act (Recovery Act), which is largely credited with preventing a second Great Depression.",
-          "reasoning": "Text praises and credits major government spending legislation.",
-          "source": "https://gwenmoore.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",

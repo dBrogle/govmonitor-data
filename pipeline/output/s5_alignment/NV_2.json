@@ -96,10 +96,10 @@
     "votes_analyzed": 315,
     "votes_without_analysis": 104,
     "truth_score": {
-      "score": 57,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:54:37+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 17,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:31:15+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -391,12 +391,7 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "a two-year budget agreement that invests in our nation's military, infrastructure, and",
-          "reasoning": "The statement explicitly supports investing in the military, indicating a position favoring more military spending.",
-          "source": "https://amodei.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2053,8 +2048,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I firmly believe that we should not be saddling our children and grandchildren with the burden of paying for reckless spending habits, and I will continue to seek areas that merit cuts in spending.",
-          "reasoning": "The text explicitly calls for cutting spending and curbing reckless government outlays.",
+          "emphasis": 0.6,
+          "quote": "unchecked government spending must be reeled in. I firmly believe that we should not be saddling our children and grandchildren with the burden of paying for reckless spending habits, and I will continue to seek areas that merit cuts in spending.",
+          "reasoning": "Explicit calls to reduce spending and support for bills limiting it indicate strong preference for less government spending.",
           "source": "https://amodei.house.gov"
         }
       },

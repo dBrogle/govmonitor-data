@@ -46,10 +46,10 @@
     "votes_analyzed": 331,
     "votes_without_analysis": 103,
     "truth_score": {
-      "score": 66,
+      "score": 68,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:44:52+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:21:27+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -365,8 +365,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.85,
           "quote": "We must provide the necessary resources to ensure we have the best equipped and most lethal fighting force on the globe.",
-          "reasoning": "Text explicitly calls for providing necessary resources for a best-equipped military force and supports NDAA and national security appropriations.",
+          "reasoning": "Text explicitly calls for providing necessary resources to maintain the most lethal military force and supports NDAA provisions for modernization and funding.",
           "source": "https://franklin.house.gov"
         }
       },
@@ -573,8 +574,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.75,
           "quote": "As a businessman, I believe in lowering taxes, reducing wasteful spending and eliminating excessive regulations in order to create jobs and stimulate economic growth.",
-          "reasoning": "Text directly states belief in lowering taxes and opposition to tax hikes.",
+          "reasoning": "Text directly states belief in lowering taxes and opposition to tax hikes as core economic principles.",
           "source": "https://franklin.house.gov"
         }
       },
@@ -2233,8 +2235,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "As a businessman, I believe in lowering taxes, reducing wasteful spending and eliminating excessive regulations in order to create jobs and stimulate economic growth.",
-          "reasoning": "Text repeatedly advocates reducing wasteful spending and cutting excessive government spending.",
+          "reasoning": "Text repeatedly advocates reducing wasteful spending and cutting excessive government expenditures.",
           "source": "https://franklin.house.gov"
         }
       },

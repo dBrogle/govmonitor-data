@@ -46,10 +46,10 @@
     "votes_analyzed": 331,
     "votes_without_analysis": 110,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:47:30+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 35,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:24:06+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2166,7 +2166,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.3,
+          "quote": "I am grateful to Chairman Walberg for his leadership and my colleagues for moving this bill through the Education and Workforce Committee and helping House Republicans deliver on our promise to root out waste, fraud, and abuse throughout the federal government.",
+          "reasoning": "The text explicitly supports reducing waste, fraud, and abuse in federal programs, indicating a position favoring less government spending.",
+          "source": "https://marymiller.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "W000809",
   "website": "https://womack.house.gov/",
-  "fetched_at": "2026-08-30T07:39:10+00:00",
+  "fetched_at": "2026-08-30T14:16:18+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "we must protect our military and give them the tools they need to complete their mission.",
-      "reasoning": "Text explicitly supports providing military with needed resources despite shrinking budgets."
+      "quote": "I will do my best to ensure our military has what they need to keep us safe and protect our way of life, as well as thoroughly examine all legislation to ensure our national defense community is able to build upon its proud history.",
+      "reasoning": "Text explicitly supports providing military with needed resources and tools."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "The Tax Cuts and Jobs Act allows hardworking Americans keep more of their paycheck, creates jobs and increases wages by making American businesses competitive again",
+      "quote": "The Tax Cuts and Jobs Act allows hardworking Americans keep more of their paycheck, creates jobs and increases wages by making American businesses competitive again, and simplifies a code that has become riddled with loopholes.",
       "reasoning": "Text praises tax cuts that let Americans keep more of their pay."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
-      "quote": "I made a commitment to the people of the Third District of Arkansas to cut spending and to make the necessary reforms to put our budget on a sustainable path.",
-      "reasoning": "Text states commitment to cut spending and reduce discretionary spending."
+      "quote": "I made a commitment to the people of the Third District of Arkansas to cut spending and to make the necessary reforms to put our budget on a sustainable path... I have worked closely with my colleagues on the committee to closely evaluate \u2013 and reduce \u2013 discretionary spending.",
+      "reasoning": "Text repeatedly commits to cutting spending and reducing discretionary outlays."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs appear in the text."
+      "reasoning": "No statements on trade, tariffs, or free trade appear in the text."
     },
     {
       "topic_slug": "foreign_aid",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Text notes foreign aid is under 1% of budget and supports using it for security but states no position on increasing or decreasing spending."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "Although some argue against the merits of foreign aid, it is important to note that it accounts for less than one percent of the federal budget... I will continue to support our interests abroad, while ensuring that tax payer dollars are used to increase security and expand economic growth.",
+      "reasoning": "Text defends foreign aid's value and commits to supporting it abroad."
     }
   ]
 }

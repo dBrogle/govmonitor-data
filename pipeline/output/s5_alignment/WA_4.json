@@ -76,10 +76,10 @@
     "votes_analyzed": 310,
     "votes_without_analysis": 122,
     "truth_score": {
-      "score": 77,
-      "topics_compared": 4,
-      "fetched_at": "2026-08-30T08:02:32+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 58,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:39:27+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -395,8 +395,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Newhouse Votes to Advance Budget Framework Strengthening Elections, Farmers, and Military",
-          "reasoning": "The statement explicitly supports advancing a budget that strengthens the military.",
+          "reasoning": "Text shows support for strengthening military via budget framework vote.",
           "source": "https://newhouse.house.gov"
         }
       },
@@ -1988,9 +1989,10 @@
           }
         ],
         "stated": {
-          "score": -1.0,
-          "quote": "the greatest threat to our national security is our debt",
-          "reasoning": "Identifying debt as the top national security threat implies preference for reduced government spending.",
+          "score": 1.0,
+          "emphasis": 0.25,
+          "quote": "Creo que la mayor amenaza para nuestra seguridad nacional es nuestra deuda",
+          "reasoning": "Fiscal responsibility section frames national debt as top security threat, implying preference for reduced spending.",
           "source": "https://newhouse.house.gov"
         }
       },
@@ -2173,12 +2175,7 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "am against draconian measures and initiatives like the death tax",
-          "reasoning": "Opposition to the death tax indicates support for lower taxes.",
-          "source": "https://newhouse.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2575,8 +2572,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "Newhouse Votes to Eliminate Tariffs on Canada",
-          "reasoning": "Voting to eliminate tariffs demonstrates support for free trade.",
+          "reasoning": "Multiple statements and votes explicitly oppose tariffs and promote global market access and free trade policies.",
           "source": "https://newhouse.house.gov"
         }
       }

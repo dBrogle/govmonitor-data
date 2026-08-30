@@ -28,8 +28,8 @@
     "truth_score": {
       "score": 60,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:57:21+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:01+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2384,8 +2384,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "she is committed to ensuring Congress does its part to invest in housing and homelessness programs.",
-          "reasoning": "Text supports increased federal investment in housing and community projects via funding bills.",
+          "emphasis": 0.4,
+          "quote": "She is pushing back against efforts to cut or restrict access to this essential program and is committed to strengthening the nation\u2019s safety net.",
+          "reasoning": "Text repeatedly advocates increased federal investments in health, housing, and safety-net programs while opposing cuts.",
           "source": "https://dexter.house.gov/"
         }
       },

@@ -46,10 +46,10 @@
     "votes_analyzed": 328,
     "votes_without_analysis": 117,
     "truth_score": {
-      "score": 84,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:57:03+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 76,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:33:35+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -612,8 +612,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "After years of stubborn inflation, American families and small businesses need tax relief to make ends meet today and plan for tomorrow.",
-          "reasoning": "The text repeatedly advocates tax relief and extending the 2017 tax cuts, indicating support for lower taxes.",
+          "reasoning": "Text repeatedly advocates for tax relief and extending 2017 tax cuts, indicating strong support for lower taxes.",
           "source": "https://carey.house.gov"
         }
       },
@@ -2517,7 +2518,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.2,
+          "quote": "we\u2019ve supported legislation to prevent U.S. trade policy from favoring foreign e-commerce.",
+          "reasoning": "Single reference supports measures against trade policies favoring foreign entities, indicating a protectionist stance.",
+          "source": "https://carey.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

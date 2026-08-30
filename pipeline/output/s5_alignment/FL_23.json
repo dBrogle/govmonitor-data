@@ -36,10 +36,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 105,
     "truth_score": {
-      "score": 63,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:45:03+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 76,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:21:41+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1911,8 +1911,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Congressman Jared Moskowitz (FL-23) has secured more than $7.3 million in federal funding for critical projects, delivering major investments in public safety, infrastructure, workforce development, transportation, and community improvements throughout South Florida.",
-          "reasoning": "Announcing secured federal funding for projects states support for more government spending.",
+          "emphasis": 0.4,
+          "quote": "has secured more than $7.3 million in federal funding for critical projects, delivering major investments in public safety, infrastructure, workforce development, transportation, and community improvements throughout South Florida.",
+          "reasoning": "Text highlights securing and delivering federal funding for projects as a positive achievement.",
           "source": "https://moskowitz.house.gov"
         }
       },
@@ -2622,12 +2623,7 @@
             "vote_date": "2025-09-02"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "Moskowitz Urgently Calls on Secretary Rubio and Secretary Hegseth to Deploy Navy Hospital Ship to Venezuela After devastating earthquakes",
-          "reasoning": "Calling for deployment of Navy hospital ship for earthquake relief states support for more foreign aid spending.",
-          "source": "https://moskowitz.house.gov"
-        }
+        "stated": null
       }
     ],
     "topics_without_signal": []

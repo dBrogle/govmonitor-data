@@ -26,10 +26,10 @@
     "votes_analyzed": 347,
     "votes_without_analysis": 122,
     "truth_score": {
-      "score": 56,
+      "score": 65,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:01:56+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:38:55+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1885,8 +1885,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "today celebrated that the U.S. Department of Health and Human Services (HHS) has awarded $1,132,069 to Caroline County and $1,176,402 to",
-          "reasoning": "Repeatedly applauds and celebrates specific federal funding awards.",
+          "emphasis": 0.6,
+          "quote": "celebrated that the U.S. Department of Justice (DOJ) has awarded $69,498 in federal funding",
+          "reasoning": "Multiple press releases repeatedly celebrate and secure additional federal funding for programs and projects.",
           "source": "https://vindman.house.gov/"
         }
       },
@@ -2329,8 +2330,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "introduced the Grocery Affordability Act, legislation that cuts taxes for small, independent food retailers",
-          "reasoning": "Explicit support for legislation that cuts taxes.",
+          "emphasis": 0.2,
+          "quote": "legislation that cuts taxes for small, independent food retailers",
+          "reasoning": "The text explicitly supports legislation cutting taxes.",
           "source": "https://vindman.house.gov/"
         }
       },

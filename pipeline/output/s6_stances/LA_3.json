@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "H001077",
   "website": "https://clayhiggins.house.gov",
-  "fetched_at": "2026-08-30T07:48:46+00:00",
+  "fetched_at": "2026-08-30T14:25:29+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses military or defense spending levels."
+      "reasoning": "No statements on military or defense spending appear in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.85,
       "stated_score": 1.0,
       "quote": "As your Congressman, I will continue to support lower taxes and push back against any effort to raise taxes on hardworking American families.",
-      "reasoning": "Text explicitly endorses lower taxes and opposes tax increases."
+      "reasoning": "Text explicitly endorses lower taxes and opposes tax increases on multiple occasions including a dedicated taxes page."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.35,
       "stated_score": 1.0,
       "quote": "Higgins Leads Freedom Caucus Letter Urging Fiscal Reforms and Topline Spending Reductions",
-      "reasoning": "Text explicitly calls for topline spending reductions."
+      "reasoning": "Text calls for topline spending reductions via Freedom Caucus letter and related fiscal reforms."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Text discusses fair trade and competition but lacks a clear overall stance on protectionism versus free trade."
+      "addressed": true,
+      "emphasis": 0.45,
+      "stated_score": -1.0,
+      "quote": "Higgins, Nehls Legislation to Protect American Shrimpers from Taxpayer-Funded Foreign Competition Passes House",
+      "reasoning": "Text repeatedly advocates protecting domestic industries from foreign competition and illegal imports, indicating protectionist stance."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses foreign aid spending levels."
+      "reasoning": "No statements on foreign aid spending appear in the text."
     }
   ]
 }

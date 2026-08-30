@@ -156,10 +156,10 @@
     "votes_analyzed": 314,
     "votes_without_analysis": 99,
     "truth_score": {
-      "score": 65,
+      "score": 67,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:46:38+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:23:16+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -453,8 +453,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I have been fully committed to ensuring the needs of our men and women in the military are met and that the federal government\u2019s commitments are fulfilled.",
-          "reasoning": "Text explicitly supports providing resources and fulfilling commitments to the military.",
+          "emphasis": 0.7,
+          "quote": "Since coming to Congress, I have been fully committed to ensuring the needs of our men and women in the military are met and that the federal government\u2019s commitments are fulfilled.",
+          "reasoning": "Text explicitly commits to meeting military needs and funding projects, indicating support for more spending.",
           "source": "https://simpson.house.gov"
         }
       },
@@ -2025,8 +2026,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "growing government and saddling our children and grandchildren with debt are unacceptable",
-          "reasoning": "Text opposes expanding government spending and debt.",
+          "emphasis": 0.6,
+          "quote": "The American people have made it clear that growing government and saddling our children and grandchildren with debt are unacceptable.",
+          "reasoning": "Text rejects growing government and debt, favoring less spending.",
           "source": "https://simpson.house.gov"
         }
       },
@@ -2211,8 +2213,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "reducing tax burdens on American families",
-          "reasoning": "Text states support for reducing tax burdens.",
+          "emphasis": 0.6,
+          "quote": "I will continue to support efforts to empower Americans, not the government, by reducing tax burdens on American families",
+          "reasoning": "Text directly advocates reducing tax burdens, showing preference for lower taxes.",
           "source": "https://simpson.house.gov"
         }
       },

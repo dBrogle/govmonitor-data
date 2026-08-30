@@ -3,7 +3,7 @@
   "district": 20,
   "bioguide_id": "F000480",
   "website": "https://fong.house.gov/",
-  "fetched_at": "2026-08-30T07:41:25+00:00",
+  "fetched_at": "2026-08-30T14:17:48+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation that strengthens America's national defense, invests in our military installations, and delivers for the men and women who serve this nation. Congressman Vince Fong (CA-20) voted in support of the bill",
-      "reasoning": "Text shows repeated support for NDAA and military funding bills that increase defense spending."
+      "quote": "the House of Representatives passed the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation that strengthens America's national defense, invests in our military installations, and delivers for the men and women who serve this nation.",
+      "reasoning": "Multiple statements show strong support for NDAA, military infrastructure funding, and defense projects."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "Fong Moves to End California\u2019s Hidden Climate Tax on American Consumers",
-      "reasoning": "Text explicitly opposes a state climate tax and a health care tax increase, favoring lower taxes."
+      "reasoning": "Repeated opposition to state taxes including health care tax and climate regulations framed as hidden taxes."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": true,
-      "stated_score": 1.0,
-      "quote": "Votes to Advance FY2026 Appropriations Bills to Strengthen National Security, Rein in Spending",
-      "reasoning": "Text states support for appropriations bills that rein in spending."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Secures local appropriations but no clear general stance on overall government spending levels."
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear verbatim statement on tariffs or free trade appears in the text."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Trump can protect California avocado farmers and take a bite out of Mexican cartels, too",
+      "reasoning": "Editorial advocates protection for domestic farmers against Mexican imports."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending in the provided statements."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

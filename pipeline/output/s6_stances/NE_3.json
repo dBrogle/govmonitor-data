@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "S001172",
   "website": "https://adriansmith.house.gov/",
-  "fetched_at": "2026-08-30T07:53:25+00:00",
+  "fetched_at": "2026-08-30T14:30:02+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses military spending levels."
+      "reasoning": "No verbatim statement on military spending levels appears in the text."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "While we have successfully enacted major legislation this year to protect our borders, cut taxes for families, and restore faith in government this year",
-      "reasoning": "The text explicitly endorses cutting taxes."
+      "reasoning": "Text explicitly praises cutting taxes, indicating support for lower taxes."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses overall government spending levels."
+      "reasoning": "Text discusses avoiding shutdowns via funding bills but states no position on overall spending levels."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "stated_score": -1.0,
-      "quote": "As Nebraska\u2019s ranchers continue to recover from the historic wildfires this spring\u2014amid an ongoing drought\u2014they need market certainty. With cattle inventory at 75-year lows, we must focus on policies which empower ranchers to rebuild our domestic herd.",
-      "reasoning": "The text opposes increased foreign beef imports to protect domestic producers."
+      "emphasis": 0.8,
+      "stated_score": 1.0,
+      "quote": "trade has been at the forefront since January, and the pace has not slowed as we reach year-end. In recent weeks the administration has begun the mandatory six-year review of the U.S-Canada-Mexico Agreement, announced trade deals and frameworks with several Latin American and Asian partners",
+      "reasoning": "Multiple statements promote trade agreements and deals, showing support for free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
     }
   ]
 }

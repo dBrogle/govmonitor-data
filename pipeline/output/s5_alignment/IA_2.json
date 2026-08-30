@@ -46,10 +46,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 118,
     "truth_score": {
-      "score": 61,
+      "score": 62,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:46:32+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:23:02+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -376,8 +376,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "This strategy requires ensuring our troops always have the resources needed to counter adversaries like China, Russia, and Iran.",
-          "reasoning": "Text explicitly supports providing resources to troops to counter adversaries.",
+          "reasoning": "Text explicitly supports providing resources to the military to counter adversaries.",
           "source": "https://hinson.house.gov"
         }
       },
@@ -2025,8 +2026,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "it is imperative Washington rein in spending and take steps to balance the federal budget",
-          "reasoning": "Text calls for reining in spending, balancing budget, and cutting waste.",
+          "emphasis": 0.7,
+          "quote": "it is imperative Washington rein in spending and take steps to balance the federal budget.",
+          "reasoning": "Text calls for reducing spending and balancing the budget.",
           "source": "https://hinson.house.gov"
         }
       },
@@ -2233,8 +2235,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "my colleagues and I have passed the Working Families Tax Cuts that permanently extend many key provisions of the 2017 Trump Tax Cuts",
-          "reasoning": "Text supports extending tax cuts and reducing taxes on tips/overtime.",
+          "emphasis": 0.8,
+          "quote": "my colleagues and I have passed the Working Families Tax Cuts that permanently extend many key provisions of the 2017 Trump Tax Cuts, supporting Main Street job creators and protecting working families from the largest tax increase in American history.",
+          "reasoning": "Text endorses extending tax cuts and preventing tax increases.",
           "source": "https://hinson.house.gov"
         }
       },
@@ -2589,8 +2592,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "championed my bipartisan legislation the Protecting American Industry and Labor from International Trade Crimes Act to establish a task force within the U.S. Department of Justice to combat China's trade crimes",
-          "reasoning": "Text advocates legislation targeting foreign trade crimes to protect American industry.",
+          "emphasis": 0.4,
+          "quote": "I have championed my bipartisan legislation the Protecting American Industry and Labor from International Trade Crimes Act to establish a task force within the U.S. Department of Justice to combat China's trade crimes and protect American workers and manufacturers.",
+          "reasoning": "Text supports legislation targeting foreign trade practices to protect domestic industry.",
           "source": "https://hinson.house.gov"
         }
       }

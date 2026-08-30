@@ -48,8 +48,8 @@
     "truth_score": {
       "score": 89,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:45:18+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:22:00+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -568,6 +568,7 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "focused on No Tax on Tips, the pressures facing locally owned restaurants, and the industry\u2019s need for a stable, legal workforce.",
           "reasoning": "The press release explicitly highlights support for No Tax on Tips, indicating a position favoring lower taxes.",
           "source": "https://salazar.house.gov"
@@ -2030,8 +2031,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "see firsthand how the $1 million in federal funding she secured is improving the lives of children, families, seniors, and residents across the community.",
-          "reasoning": "The statement praises securing and using federal funding for a community center, indicating support for more government spending.",
+          "emphasis": 0.2,
+          "quote": "visited the West Miami Multigenerational Center alongside West Miami Mayor Eric D\u00edaz-Padr\u00f3n, Vice Mayor Iv\u00e1n Ch\u00e1vez, and city leaders to see firsthand how the $1 million in federal funding she secured is improving the lives of children, families, seniors, and residents across the community.",
+          "reasoning": "The statement promotes securing and using federal funding for local projects, indicating support for more government spending.",
           "source": "https://salazar.house.gov"
         }
       },

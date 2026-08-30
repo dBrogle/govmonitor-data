@@ -96,10 +96,10 @@
     "votes_analyzed": 245,
     "votes_without_analysis": 94,
     "truth_score": {
-      "score": 48,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:45:18+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 65,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:21:52+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -506,12 +506,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "In Congress, she will continue to advocate that our troops have the best equipment, healthcare, and services available.",
-          "reasoning": "The statement explicitly supports providing the best equipment and services to troops, indicating a position favoring more military spending.",
-          "source": "https://wilson.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1761,8 +1756,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.8,
           "quote": "This is why I sponsored the Jobs Now Act, a 21st Century update to President Nixon's Comprehensive Employment and Training Act (CETA) program, to provide funding directly to local governments to train and hire millions of Americans to do crucial work in our communities.",
-          "reasoning": "The statement endorses new federal funding programs for jobs and training, indicating support for increased government spending.",
+          "reasoning": "Text repeatedly advocates targeted federal funding and new spending programs for jobs, housing, and veterans services.",
           "source": "https://wilson.house.gov/"
         }
       },

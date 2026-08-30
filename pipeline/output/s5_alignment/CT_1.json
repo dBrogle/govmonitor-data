@@ -156,10 +156,10 @@
     "votes_analyzed": 319,
     "votes_without_analysis": 110,
     "truth_score": {
-      "score": 36,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:43:50+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 49,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:19:51+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -689,8 +689,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Today, Rep. John B. Larson (CT-01) applauded a $1.3 billion boost for Pratt & Whitney F135 engines, announced by the U.S. Navy.",
-          "reasoning": "Text repeatedly celebrates large federal defense contracts for Connecticut manufacturers, indicating support for increased military spending.",
+          "emphasis": 0.8,
+          "quote": "Congressman Larson is a champion for Connecticut manufacturing and is focused on working with both sides of the aisle to protect our state\u2019s jobs.",
+          "reasoning": "Text repeatedly celebrates large federal defense contracts and positions Larson as defender of Connecticut's defense industry jobs.",
           "source": "https://larson.house.gov/"
         }
       },
@@ -2347,7 +2348,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.9,
+          "quote": "Larson Announces $500,000 in New Federal Funding with Mayor Arunan Arulampalam to Support Renovations at Hartford Public Library",
+          "reasoning": "Frequent announcements securing and celebrating new federal spending across multiple programs indicate support for more government spending.",
+          "source": "https://larson.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2552,8 +2559,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Larson Visits Vendors at Parkville Market to Discuss Affordability Crisis and Trump&#039;s Cost-Raising Tariffs",
-          "reasoning": "Text criticizes tariffs as cost-raising, indicating opposition to protectionist policies.",
+          "reasoning": "Criticism of Trump's tariffs as cost-raising shows preference for free trade over protectionism.",
           "source": "https://larson.house.gov/"
         }
       },

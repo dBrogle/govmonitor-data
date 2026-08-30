@@ -26,10 +26,10 @@
     "votes_analyzed": 325,
     "votes_without_analysis": 111,
     "truth_score": {
-      "score": 60,
+      "score": 68,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:48:17+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:48+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -378,8 +378,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Rep. Derek Schmidt: Passage of Annual Defense Bill Secures Key \u2018Peace through Strength\u2019 Initiatives for Kansas",
-          "reasoning": "The text explicitly supports defense legislation and initiatives under a 'Peace through Strength' framework.",
+          "emphasis": 0.6,
+          "quote": "Several priorities important to Kansas are included in the final National Defense Authorization Act (NDAA) for Fiscal Year 2026 ( S. 1071 ) that today received final approval from Congress and is headed to the President for his signature",
+          "reasoning": "Supports NDAA passage and Armed Services Committee role with 'Peace through Strength' language indicating preference for strong military funding.",
           "source": "https://schmidt.house.gov/"
         }
       },
@@ -2197,8 +2198,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "The legislation claws back $9.4 billion taxpayer dollars earmarked for unnecessary spending.",
-          "reasoning": "The text states support for rescinding unnecessary federal spending.",
+          "reasoning": "Explicit support for Rescissions Act to reduce unnecessary federal spending.",
           "source": "https://schmidt.house.gov/"
         }
       },

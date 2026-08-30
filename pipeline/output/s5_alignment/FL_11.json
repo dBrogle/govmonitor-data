@@ -96,10 +96,10 @@
     "votes_analyzed": 320,
     "votes_without_analysis": 98,
     "truth_score": {
-      "score": 55,
+      "score": 57,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:44:37+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:21:01+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -382,8 +382,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "Today, I voted to pass the FY27 National Defense Authorization Act to ensure America\u2019s military remains the most lethal fighting force in the world",
-          "reasoning": "Text explicitly supports increasing military capabilities and readiness via NDAA passage.",
+          "reasoning": "Strong, repeated support for increased military funding and capabilities via NDAA votes and statements.",
           "source": "https://webster.house.gov/"
         }
       },
@@ -2179,8 +2180,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I consistently vote against Congressional budgets that contain irresponsible spending and reject the Washington presumption that nothing can be cut in order to fund priorities without increasing the deficit",
-          "reasoning": "Text repeatedly advocates cutting spending and rejecting increases without offsets.",
+          "emphasis": 0.85,
+          "quote": "I consistently vote against Congressional budgets that contain irresponsible spending",
+          "reasoning": "Explicit opposition to excessive spending and support for cuts and fiscal restraint across multiple releases.",
           "source": "https://webster.house.gov/"
         }
       },
@@ -2524,8 +2526,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "reduces spending by 6% below the previously enacted level",
-          "reasoning": "Text supports a bill that cuts overall national security/foreign aid spending while eliminating waste.",
+          "emphasis": 0.6,
+          "quote": "The FY27 National Security and Department of State Appropriations Act restores fiscal responsibility by reducing spending by six percent",
+          "reasoning": "Supports reduced overall spending on foreign assistance programs while prioritizing only core national interests.",
           "source": "https://webster.house.gov/"
         }
       }

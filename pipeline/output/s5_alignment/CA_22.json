@@ -76,10 +76,10 @@
     "votes_analyzed": 334,
     "votes_without_analysis": 115,
     "truth_score": {
-      "score": 66,
+      "score": 67,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:41:25+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:17:48+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -417,8 +417,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The primary role of the United States government is providing for our national defense. September 11, 2001, reminded us that our military must have the resources it needs to defend our nation\u2019s interests abroad and protect us from those who would attack us at home. Even in these times of fiscal austerity, we must ensure our men and women in uni",
-          "reasoning": "Text states military must have the resources it needs, indicating support for more defense spending.",
+          "emphasis": 0.25,
+          "quote": "our military must have the resources it needs to defend our nation\u2019s interests abroad and protect us from those who would attack us at home",
+          "reasoning": "The text explicitly states the military needs resources even in fiscal austerity, indicating support for more defense spending.",
           "source": "https://valadao.house.gov"
         }
       },
@@ -625,8 +626,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "lowering taxes for small businesses, decreasing intrusive federal regulation that stymies innovation, and limiting government spending that distorts the marketplace.",
-          "reasoning": "Text explicitly calls for lowering taxes.",
+          "emphasis": 0.3,
+          "quote": "lowering taxes for small businesses, decreasing intrusive federal regulation that stymies innovation, and limiting government spending that distorts the marketplace",
+          "reasoning": "The text advocates lowering taxes and reforming the tax code to let taxpayers keep more money.",
           "source": "https://valadao.house.gov"
         }
       },
@@ -2439,8 +2441,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "lowering taxes for small businesses, decreasing intrusive federal regulation that stymies innovation, and limiting government spending that distorts the marketplace.",
-          "reasoning": "Text explicitly calls for limiting government spending.",
+          "emphasis": 0.25,
+          "quote": "limiting government spending that distorts the marketplace",
+          "reasoning": "The text calls for limiting government spending and references out of control government spending as a problem.",
           "source": "https://valadao.house.gov"
         }
       },

@@ -67,9 +67,9 @@
     "votes_without_analysis": 125,
     "truth_score": {
       "score": 37,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:55:23+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:32:15+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -747,8 +747,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.3,
           "quote": "Funding for the United States Agency for International Development (USAID)",
-          "reasoning": "Text states support for pushing funding of USAID, indicating position favoring more foreign aid spending.",
+          "reasoning": "Text lists funding USAID and State Department as priorities he is pushing for, indicating support for more foreign aid.",
           "source": "https://espaillat.house.gov"
         }
       },
@@ -2416,12 +2417,7 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "Espaillat denuncia los esfuerzos de los republicanos de la C\u00e1mara para asignar $70,000 millones adicionales al ICE sin supervisi\u00f3n",
-          "reasoning": "Text denounces additional funding allocation to ICE, indicating opposition to increased government spending.",
-          "source": "https://espaillat.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",

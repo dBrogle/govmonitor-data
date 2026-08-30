@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "S000929",
   "website": "https://spartz.house.gov",
-  "fetched_at": "2026-08-30T07:47:50+00:00",
+  "fetched_at": "2026-08-30T14:24:30+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -24,34 +24,39 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Text honors military service and units but states no position on defense spending levels."
+      "reasoning": "No statements address military spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address taxation policy or rates."
+      "reasoning": "No statements address taxation policy."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Requests for disaster aid mention federal resources but do not state a general position on government spending."
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": -1.0,
+      "quote": "Today, Rep. Victoria Spartz (IN-05) sent a letter to President Donald Trump requesting a Major Disaster Declaration for Indiana following devastating flooding across her district.",
+      "reasoning": "Multiple releases explicitly advocate for additional federal disaster assistance and emergency declarations, indicating support for increased government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy, tariffs, or free trade."
+      "reasoning": "No statements address trade policy or tariffs."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address foreign aid spending."

@@ -96,10 +96,10 @@
     "votes_analyzed": 325,
     "votes_without_analysis": 117,
     "truth_score": {
-      "score": 65,
+      "score": 69,
       "topics_compared": 4,
-      "fetched_at": "2026-08-30T07:58:22+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:34:55+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -393,8 +393,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "Today, U.S. Rep. Mike Kelly (R-PA) voted in favor of the FY2027 National Defense Authorization Act (NDAA), a comprehensive package of legislation to support the U.S. military and its service members.",
-          "reasoning": "Text explicitly supports NDAA and related defense initiatives including shipbuilding for Navy.",
+          "reasoning": "Multiple votes for NDAA and defense initiatives show clear support for more military spending.",
           "source": "https://kelly.house.gov"
         }
       },
@@ -656,8 +657,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Today, U.S. Rep. Mike Kelly (R-PA), Chairman of the Ways & Means Subcommittee on Tax , voted in favor of the One Big Beautiful Bill Act, a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
-          "reasoning": "Text states support for legislation providing tax cuts.",
+          "emphasis": 0.6,
+          "quote": "a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
+          "reasoning": "Explicit endorsement of tax cuts indicates support for lower taxes.",
           "source": "https://kelly.house.gov"
         }
       },
@@ -2371,8 +2373,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Today, U.S. Rep. Mike Kelly (R-PA), Chairman of the Ways & Means Subcommittee on Tax , voted in favor of the One Big Beautiful Bill Act, a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
-          "reasoning": "Text states support for legislation that cuts spending.",
+          "emphasis": 0.5,
+          "quote": "a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
+          "reasoning": "Direct reference to cutting spending shows preference for less government spending.",
           "source": "https://kelly.house.gov"
         }
       },
@@ -2601,8 +2604,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Today, U.S. Rep. Mike Kelly (R-PA) called on U.S. Trade Ambassador Katherine Tai and the Biden administration to prioritize trade deals that strengthen U.S. national security and make America more competitive.",
-          "reasoning": "Text advocates for strong trade deals to enhance competitiveness.",
+          "reasoning": "Advocacy for strong trade deals aligns with free trade position.",
           "source": "https://kelly.house.gov"
         }
       },

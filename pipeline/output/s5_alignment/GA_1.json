@@ -76,10 +76,10 @@
     "votes_analyzed": 320,
     "votes_without_analysis": 129,
     "truth_score": {
-      "score": 67,
+      "score": 61,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:45:25+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:22:13+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -384,8 +384,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Rep. Earl L. \u201cBuddy\u201d Carter (R-GA) today secured $346.1 million for Georgia\u2019s First Congressional District in the House-passed National Defense Authorization Act (NDAA)",
-          "reasoning": "The statement explicitly highlights securing substantial funding in the NDAA defense bill, indicating support for increased military spending.",
+          "emphasis": 0.8,
+          "quote": "Carter secures $346.1 million for GA-01 in House-passed defense bill WASHINGTON, D.C. \u2013 Rep. Earl L. \u201cBuddy\u201d Carter (R-GA) today secured $346.1 million for Georgia\u2019s First Congressional District in the House-passed National Defense Authorization Act (NDAA)",
+          "reasoning": "Text explicitly highlights securing substantial defense funding and representing major military installations as priorities.",
           "source": "https://buddycarter.house.gov/"
         }
       },
@@ -581,8 +582,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "As a Member of Congress, I have voted to cut more than $5 trillion in waste from the federal budget which reaches balance and begins paying off the national debt within ten years without raising taxes.",
-          "reasoning": "The explicit commitment to balancing the budget without raising taxes aligns with a position favoring lower taxes.",
+          "reasoning": "Explicit statement opposing tax increases while cutting spending to balance the budget.",
           "source": "https://buddycarter.house.gov/"
         }
       },
@@ -2164,8 +2166,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.9,
           "quote": "I will continue to fight to end Washington\u2019s out of control spending addiction.",
-          "reasoning": "The direct call to end out-of-control spending and cut trillions in waste demonstrates a stance for reduced government spending.",
+          "reasoning": "Multiple statements emphasize cutting trillions in waste and balancing the budget by reducing spending.",
           "source": "https://buddycarter.house.gov/"
         }
       },

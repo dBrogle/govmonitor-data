@@ -126,10 +126,10 @@
     "votes_analyzed": 322,
     "votes_without_analysis": 106,
     "truth_score": {
-      "score": 61,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:41:27+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 69,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:17:57+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1818,7 +1818,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.6,
+          "quote": "Costa helped secure $4 billion in the Inflation Reduction Act to combat drought in the West.",
+          "reasoning": "Text repeatedly highlights securing and supporting major federal spending bills including infrastructure, relief, and agriculture programs.",
+          "source": "https://costa.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2539,8 +2545,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "he fought to shape the United States-Mexico-Canada Agreement (USMCA) to protect the Valley\u2019s top commodities like nuts, dairy, wine, and citrus, all while opening new markets and ensuring fair treatment for our farmers.",
-          "reasoning": "Text supports free trade via USMCA and tariff removal.",
+          "emphasis": 0.5,
+          "quote": "fought to shape the United States-Mexico-Canada Agreement (USMCA) to protect the Valley\u2019s top commodities like nuts, dairy, wine, and citrus, all while opening new markets and ensuring fair treatment for our farmers.",
+          "reasoning": "Text describes active support for USMCA and founding the Agricultural Trade Caucus to expand markets.",
           "source": "https://costa.house.gov/"
         }
       },

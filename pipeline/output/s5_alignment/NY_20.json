@@ -106,10 +106,10 @@
     "votes_analyzed": 326,
     "votes_without_analysis": 109,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:55:38+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 66,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:32:19+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2325,7 +2325,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.25,
+          "quote": "Today, Congressman Paul D. Tonko applauded the awarding of $12,823,732 in grants from the Federal Home Loan Bank of New York (FHLBNY) to create, rehabilitate, or preserve 619 affordable housing units across seven projects in Albany, Ball...",
+          "reasoning": "Multiple press releases cheer federal grants, infrastructure investments, and housing awards, indicating support for increased government spending.",
+          "source": "https://tonko.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",

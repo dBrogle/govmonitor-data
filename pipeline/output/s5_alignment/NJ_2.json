@@ -58,8 +58,8 @@
     "truth_score": {
       "score": 91,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:53:43+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:30:05+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -589,8 +589,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "To boost our economy, we need tax reform that benefits middle-class families, not the multi-millionaires and corporate giants. It is time for a real middle-class tax cut that benefits hard-working South Jersey families and small businesses.",
-          "reasoning": "The text explicitly calls for a middle-class tax cut, indicating support for lower taxes.",
+          "emphasis": 0.35,
+          "quote": "It is time for a real middle-class tax cut that benefits hard-working South Jersey families and small businesses.",
+          "reasoning": "Text explicitly calls for a middle-class tax cut, indicating support for lower taxes.",
           "source": "https://vandrew.house.gov"
         }
       },

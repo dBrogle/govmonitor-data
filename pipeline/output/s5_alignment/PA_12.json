@@ -36,10 +36,10 @@
     "votes_analyzed": 330,
     "votes_without_analysis": 113,
     "truth_score": {
-      "score": null,
-      "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:58:11+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 65,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:34:43+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -523,7 +523,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.2,
+          "quote": "cracking down on corporate price-gouging, ending tax breaks for billionaires and giant corporations",
+          "reasoning": "Text explicitly calls for ending tax breaks for billionaires and corporations, indicating support for higher taxes.",
+          "source": "https://summerlee.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2200,7 +2206,13 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.7,
+          "quote": "Congresswoman Summer L. Lee (PA-12) voted YES on the House minibus funding package, advancing millions of federal dollars she secured for critical investments in Western Pennsylvania... rejects the most extreme, right-wing budget cuts",
+          "reasoning": "Multiple statements celebrate securing federal funding and reject budget cuts across housing, infrastructure, health, and environmental projects.",
+          "source": "https://summerlee.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",

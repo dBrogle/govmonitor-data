@@ -3,7 +3,7 @@
   "district": 24,
   "bioguide_id": "T000478",
   "website": "https://tenney.house.gov/",
-  "fetched_at": "2026-08-30T07:55:58+00:00",
+  "fetched_at": "2026-08-30T14:32:39+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,38 +26,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear statement on increasing or decreasing military spending."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "ensure every American service member and veteran is well-equipped and adequately supported",
+      "reasoning": "Text repeatedly emphasizes equipping and supporting military readiness and specific defense programs like Fort Drum nuclear energy."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "Both laws delivered historic relief by lowering rates for individuals and businesses, doubling the Standard Deduction and the Child Tax Credit, and driving private investment and job growth across the country.",
-      "reasoning": "Text explicitly supports lower taxes via multiple references to voting for and expanding tax cuts."
+      "quote": "setting forth her priorities to lower taxes, reward work, support families and seniors, strengthen small businesses and family farms",
+      "reasoning": "Multiple releases and the dedicated tax plan page explicitly advocate lowering taxes and expanding TCJA relief provisions."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on increasing or decreasing overall government spending."
+      "reasoning": "No clear position stated on overall levels of government spending versus reduction."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions unfair foreign trade practices but no explicit position on tariffs versus free trade."
+      "reasoning": "Mentions unfair foreign practices and global competitiveness but does not state a position on tariffs versus free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending levels."
+      "reasoning": "No statements address foreign aid spending levels."
     }
   ]
 }

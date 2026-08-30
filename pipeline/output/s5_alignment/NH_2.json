@@ -28,8 +28,8 @@
     "truth_score": {
       "score": 54,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:53:52+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:30:15+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2631,8 +2631,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.25,
           "quote": "That is the spirit in which I voted today against sending an additional $3.3 billion American taxpayer dollars to Prime Minister Netanyahu\u2019s government.",
-          "reasoning": "Explicit vote and statement against additional aid to Israel indicates preference for less foreign aid spending.",
+          "reasoning": "Explicit vote and statement opposing additional foreign aid spending to Israel indicates support for less foreign aid.",
           "source": "https://goodlander.house.gov/"
         }
       }

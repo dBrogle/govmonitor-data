@@ -76,10 +76,10 @@
     "votes_analyzed": 327,
     "votes_without_analysis": 139,
     "truth_score": {
-      "score": 65,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T08:01:52+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 62,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:38:48+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -307,8 +307,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.4,
           "quote": "asking the wealthy and large corporations to pay their fair share in taxes to finance further investments in American workers and infrastructure.",
-          "reasoning": "Explicit support for higher taxes on wealthy and corporations.",
+          "reasoning": "Explicit call for higher taxes on wealthy and corporations.",
           "source": "https://beyer.house.gov"
         }
       },
@@ -623,7 +624,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 0.5,
+          "emphasis": 0.6,
+          "quote": "We must maintain a national defense that keeps American citizens and our allies safe.",
+          "reasoning": "Text supports maintaining strong national defense while criticizing some nuclear spending as unnecessary.",
+          "source": "https://beyer.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2450,8 +2457,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.5,
           "quote": "helped along by critical investments in the economy like the Inflation Reduction Act, the Infrastructure Investment and Jobs Act, and the CHIPS and Science Act.",
-          "reasoning": "Supports major new government investments and spending programs.",
+          "reasoning": "Strong endorsement of major new federal spending and investments.",
           "source": "https://beyer.house.gov"
         }
       },
@@ -2658,8 +2666,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.2,
           "quote": "Beyer Denounces Trump\u2019s Idiotic Trade Attack On Canada",
-          "reasoning": "Denounces protectionist trade actions against Canada.",
+          "reasoning": "Direct opposition to protectionist trade measures.",
           "source": "https://beyer.house.gov"
         }
       }

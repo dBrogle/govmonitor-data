@@ -56,10 +56,10 @@
     "votes_analyzed": 338,
     "votes_without_analysis": 106,
     "truth_score": {
-      "score": 66,
+      "score": 73,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:49:23+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:26:05+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -386,6 +386,7 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.8,
           "quote": "It\u2019s much easier to inflate the military budget to $1.5 trillion and throw our country deeper into an endless war with Iran than to create lasting peace.",
           "reasoning": "Text explicitly criticizes inflating the military budget and calls for shifting priorities away from war and militarism.",
           "source": "https://pressley.house.gov"
@@ -2513,8 +2514,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.6,
           "quote": "I voted NO on Trump and Republicans\u2019 spending bill that will make families poorer, sicker & more vulnerable. We have a healthcare crisis thanks to their Big, Ugly Bill, which ripped away Medicaid from millions & will raise healthcare costs",
-          "reasoning": "Opposition to a bill that cuts Medicaid and food assistance indicates support for maintaining or increasing such government spending.",
+          "reasoning": "Opposes a bill that cuts social spending programs like Medicaid, indicating preference for sustained or increased government spending on such services.",
           "source": "https://pressley.house.gov"
         }
       },
@@ -2902,8 +2904,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Pressley, Lawmakers Demand Trump Admin. Exempt Essential Baby Products from Harmful Tariffs",
-          "reasoning": "Explicit opposition to harmful tariffs supports free trade over protectionism.",
+          "reasoning": "Describes tariffs as harmful and seeks exemptions, supporting free trade over protectionist measures.",
           "source": "https://pressley.house.gov"
         }
       }

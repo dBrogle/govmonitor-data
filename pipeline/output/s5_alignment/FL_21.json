@@ -66,10 +66,10 @@
     "votes_analyzed": 323,
     "votes_without_analysis": 123,
     "truth_score": {
-      "score": 53,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:44:55+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 68,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:21:32+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -416,7 +416,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.9,
+          "quote": "Having served in combat operations in Afghanistan, I learned firsthand how the United States\u2019 retreat from a leadership role in the international community has set the world on a dangerous course that threatens our national security. Read more about my work to secure our national defense .",
+          "reasoning": "Explicit priority on securing national defense after combat experience indicates support for stronger military posture.",
+          "source": "https://mast.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -599,8 +605,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Read more about my work to lower taxes and reduce spending",
-          "reasoning": "Text explicitly states intent to lower taxes.",
+          "emphasis": 0.85,
+          "quote": "Read more about my work to lower taxes and reduce spending .",
+          "reasoning": "Direct statement of work to lower taxes shows clear position favoring reduced taxation.",
           "source": "https://mast.house.gov"
         }
       },
@@ -2094,8 +2101,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Read more about my work to lower taxes and reduce spending",
-          "reasoning": "Text explicitly states intent to reduce spending.",
+          "emphasis": 0.85,
+          "quote": "Washington\u2019s spending habits are completely out of control. These high levels of debt are simply unsustainable and will limit economic opportunities for future generations of Floridians if not addressed. Read more about my work to lower taxes and reduce spending .",
+          "reasoning": "Explicit criticism of out-of-control spending and commitment to reduce it indicates preference for less government spending.",
           "source": "https://mast.house.gov"
         }
       },

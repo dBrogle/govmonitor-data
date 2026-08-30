@@ -66,10 +66,10 @@
     "votes_analyzed": 324,
     "votes_without_analysis": 111,
     "truth_score": {
-      "score": 97,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:48:15+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 93,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:24:48+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -374,8 +374,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.6,
           "quote": "Rep. Estes Votes to Pass National Defense Authorization Act, Securing Key Authorization for 184th Wing at McConnell AFB",
-          "reasoning": "The text states he voted in favor of the NDAA authorizing defense spending.",
+          "reasoning": "The statement explicitly supports passage of the NDAA which authorizes defense spending.",
           "source": "https://estes.house.gov/"
         }
       },
@@ -602,7 +603,13 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.4,
+          "quote": "expressing strong opposition to Digital Services Taxes (DSTs) and other extraterritorial tax measures levied by foreign nations",
+          "reasoning": "The resolution directly opposes additional taxes.",
+          "source": "https://estes.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",

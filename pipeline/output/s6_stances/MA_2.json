@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "M000312",
   "website": "https://mcgovern.house.gov/",
-  "fetched_at": "2026-08-30T07:49:10+00:00",
+  "fetched_at": "2026-08-30T14:25:49+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military spending levels in the text."
+      "reasoning": "No mention of military or defense spending in the provided statements."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.25,
       "stated_score": -1.0,
       "quote": "failed trickle-down policies have given tax cut after tax cut to those at the top while wages for working people have stagnated",
-      "reasoning": "Text criticizes tax cuts for the wealthy, indicating preference against lower taxes."
+      "reasoning": "Criticism of tax cuts for the wealthy indicates opposition to lower taxes."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No general statement on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "I believe that investing in our public schools is the best way to ensure that every child has the opportunity to thrive",
+      "reasoning": "Repeated calls for increased funding on education, hunger programs, and green energy show support for more government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on trade policy or tariffs."
+      "reasoning": "No statements on trade policy or tariffs appear in the text."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending."
+      "reasoning": "Foreign policy section discusses Cuba and Middle East but contains no position on foreign aid spending."
     }
   ]
 }

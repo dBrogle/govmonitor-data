@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "D000628",
   "website": "https://dunn.house.gov",
-  "fetched_at": "2026-08-30T07:44:05+00:00",
+  "fetched_at": "2026-08-30T14:20:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,37 +26,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "I believe a strong, well-funded military is essential to ensuring the safety of all Americans and promoting freedom throughout the world. We must ensure our brave troopers have all resources they need to execute their missions.",
-      "reasoning": "Text explicitly endorses a well-funded military and celebrates NDAA passage as historic investment in defense."
+      "reasoning": "Text explicitly endorses a well-funded military and celebrates NDAA passage as historic investment in national defense."
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit position stated on tax rates or levels."
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "Key to this will be dialing back government overregulation and reforming our tax system so American workers can better compete in a global economy.",
+      "reasoning": "Text calls for tax system reform to help workers compete and criticizes tax-and-spend policies."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "It\u2019s time to put the brakes on government borrowing and overspending, because the tax and spend policies of Washington are hurting families across the country.",
-      "reasoning": "Text directly opposes government overspending and borrowing."
+      "reasoning": "Text directly advocates reducing government borrowing, overspending, and tax-and-spend policies."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit position stated on tariffs or free trade."
+      "reasoning": "No statements address tariffs, protectionism, or free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid in the text."
+      "reasoning": "No statements address foreign aid spending levels."
     }
   ]
 }

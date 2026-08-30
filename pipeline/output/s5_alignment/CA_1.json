@@ -28,8 +28,8 @@
     "truth_score": {
       "score": null,
       "topics_compared": 0,
-      "fetched_at": "2026-08-30T07:40:01+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:48+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -59,8 +59,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Rep. Gallagher Votes to Pass the National Defense Authorization Act for Fiscal Year 2027 (NDAA), legislation that strengthens America's military while delivering major investments for Beale Air Force Base",
-          "reasoning": "The statement explicitly supports legislation strengthening the military with major investments.",
+          "emphasis": 0.7,
+          "quote": "Rep. Gallagher Votes to Pass the National Defense Authorization Act for Fiscal Year 2027 July 22, 2026 Press Release WASHINGTON, D.C. \u2014 Congressman James Gallagher (CA-01) today voted to pass the National Defense Authorization Act for Fiscal Year 2027 (NDAA), legislation that strengthens America's military while delivering major investments for Beale Air Force Base and the servicemembers who defend our nation.",
+          "reasoning": "Text explicitly supports NDAA passage to strengthen military with major investments, indicating pro-spending stance.",
           "source": "https://gallagher.house.gov"
         }
       },
@@ -102,8 +103,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "He supports cutting burdensome taxes and regulations that make it harder for small businesses, farmers, and entrepreneurs to grow",
-          "reasoning": "The text directly states support for cutting taxes.",
+          "reasoning": "Direct statement favoring tax cuts shows clear preference for lower taxes.",
           "source": "https://gallagher.house.gov"
         }
       },

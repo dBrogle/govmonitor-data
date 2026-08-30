@@ -3,7 +3,7 @@
   "district": 18,
   "bioguide_id": "L000397",
   "website": "https://lofgren.house.gov/",
-  "fetched_at": "2026-08-30T07:41:06+00:00",
+  "fetched_at": "2026-08-30T14:17:33+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military or defense spending levels appears in the text."
+      "reasoning": "No statements on military or defense spending levels appear in the text."
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No direct position on overall tax rates or policy is stated."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Zoe opposed the Republican Affordable Care Act replacement plan which would increase the cost of health care premiums for middle-class Americans while providing tax breaks for the top 1% of taxpayers.",
+      "reasoning": "Opposition to tax breaks for the wealthy indicates a stated preference against lower taxes."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit stance on general government spending levels is provided."
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "I\u2019m proud to select this project for funding this year, and I applaud Santa Clara County for taking the initiative to make sure resources are reaching ag workers.",
+      "reasoning": "Repeated announcements of securing federal grants and appropriations show consistent support for increased government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "The text contains no statements on trade, tariffs, or free trade."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No position on foreign aid spending is mentioned."
+      "reasoning": "No statements on foreign aid spending appear in the text."
     }
   ]
 }

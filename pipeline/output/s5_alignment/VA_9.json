@@ -96,10 +96,10 @@
     "votes_analyzed": 325,
     "votes_without_analysis": 112,
     "truth_score": {
-      "score": 51,
+      "score": 44,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T08:02:00+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:38:54+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -585,8 +585,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Lower taxes, sensible regulation, and a playing field not tilted so heavily towards foreign countries will allow private enterprises in, Southside, and Southwest Virginia to regain their competitive advantage due to innovation and a strong work ethic.",
-          "reasoning": "Explicitly advocates lower taxes to boost economic competitiveness.",
+          "reasoning": "Explicitly advocates lower taxes as key to economic growth.",
           "source": "https://morgangriffith.house.gov/"
         }
       },
@@ -2223,8 +2224,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "I believe that Congress has a responsibility to the American people to rein in wasteful and excessive spending.",
-          "reasoning": "Calls for reducing wasteful and excessive federal spending.",
+          "reasoning": "Repeated emphasis on cutting spending and supporting balanced budget rules.",
           "source": "https://morgangriffith.house.gov/"
         }
       },

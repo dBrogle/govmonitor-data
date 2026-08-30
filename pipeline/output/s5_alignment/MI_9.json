@@ -47,9 +47,9 @@
     "votes_without_analysis": 120,
     "truth_score": {
       "score": 66,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:50:41+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T14:27:23+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -343,8 +343,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "I am committed to building our military into the preeminent fighting force in the world and keeping America safe and secure.",
-          "reasoning": "The statement explicitly commits to strengthening the military, indicating support for more military spending or capability.",
+          "reasoning": "Text explicitly commits to building a preeminent military force, indicating support for strong defense posture.",
           "source": "https://mcclain.house.gov"
         }
       },
@@ -1893,8 +1894,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Washington has a spending problem, and it shows up in places big and small... House Republicans are proving that common sense still has a place in government by cutting waste and protecting taxpayer dollars.",
-          "reasoning": "Explicit criticism of spending and emphasis on cutting waste indicates support for less government spending.",
+          "emphasis": 0.7,
+          "quote": "Washington has a spending problem, and it shows up in places big and small,\u201d Chairwoman McClain said. \u201cIf the federal government is spending nearly four cents to make a penny worth one cent, something is broken. House Republicans are proving that common sense still has a place in government by cutting waste and protecting taxpayer dollars.",
+          "reasoning": "Text directly criticizes federal spending and highlights legislation to cut waste.",
           "source": "https://mcclain.house.gov"
         }
       },
@@ -2101,8 +2103,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I fought to deliver meaningful wins for our farmers through the Working Families Tax Cuts",
-          "reasoning": "Positive reference to tax cuts shows support for lower taxes.",
+          "emphasis": 0.6,
+          "quote": "I fought to deliver meaningful wins for our farmers through the Working Families Tax Cuts, and I will continue pushing to reduce input costs, cut through excessive red tape, and get a long-term Farm Bill across the finish line to bring much-needed relief to our agricultural community.",
+          "reasoning": "Text praises and claims credit for tax cuts while pushing related relief measures.",
           "source": "https://mcclain.house.gov"
         }
       },
@@ -2318,7 +2321,13 @@
             "vote_date": "2025-05-05"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.3,
+          "quote": "Across the country, farmers want fair access to markets both domestically and abroad, they want Congress to address rising input costs, and they want to ensure the next generation can succeed on",
+          "reasoning": "Text endorses farmers' desire for access to international markets, aligning with free trade.",
+          "source": "https://mcclain.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",

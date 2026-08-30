@@ -246,10 +246,10 @@
     "votes_analyzed": 328,
     "votes_without_analysis": 78,
     "truth_score": {
-      "score": 49,
-      "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:49:53+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 44,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:26:37+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2454,7 +2454,13 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": null
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.8,
+          "quote": "I rise in strong disagreement with this amendment, which would dangerously undermine America\u2019s national security. If adopted, it would \u2013 as Leader Jeffries rightly pointed out \u2013 limit our ability to confront terrorist organizations like Hamas and Hezbollah that expressly target American citizens and military personnel.",
+          "reasoning": "Explicit opposition to eliminating $3.3 billion in military aid funding demonstrates support for more military spending.",
+          "source": "https://hoyer.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2829,8 +2835,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.7,
           "quote": "I rise in strong disagreement with this amendment, which would dangerously undermine America\u2019s national security. If adopted, it would \u2013 as Leader Jeffries rightly pointed out \u2013 limit our ability to confront terrorist organizations like Hamas and Hezbollah that expressly target American citizens and military personnel.",
-          "reasoning": "Opposes amendment eliminating $3.3 billion in military aid to Israel, indicating support for maintaining or increasing such aid.",
+          "reasoning": "Opposition to cutting $3.3 billion in military aid to Israel shows support for more foreign aid spending.",
           "source": "https://hoyer.house.gov/"
         }
       }

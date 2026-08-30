@@ -25,10 +25,10 @@
     "votes_analyzed": 320,
     "votes_without_analysis": 108,
     "truth_score": {
-      "score": 70,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:44:06+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 75,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:20:13+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -344,7 +344,8 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "all while demanding a ballooned defense budget that fails to deliver for the servicemembers it is supposed to support",
+          "emphasis": 0.25,
+          "quote": "all while demanding a ballooned defense budget that fails to deliver for the servicemembers it is supposed to support.",
           "reasoning": "The statement criticizes a ballooned defense budget, indicating opposition to increased military spending.",
           "source": "https://mcbride.house.gov/"
         }
@@ -2161,12 +2162,7 @@
             "vote_date": "2025-01-13"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "make critical investments in public safety, scientific research, clean energy, water infrastructure, and coastal resilience, rejecting the devastating cuts proposed by the Trump administration",
-          "reasoning": "The text supports critical investments and rejects cuts, indicating favor for more government spending.",
-          "source": "https://mcbride.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",

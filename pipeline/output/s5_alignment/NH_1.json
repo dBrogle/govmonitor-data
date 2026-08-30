@@ -56,10 +56,10 @@
     "votes_analyzed": 340,
     "votes_without_analysis": 130,
     "truth_score": {
-      "score": 51,
+      "score": 58,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:53:28+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:29:50+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -1761,8 +1761,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "Pappas Leads Call to Restore Over $12 Billion in Funding to States for Public Health and Addiction Treatment",
-          "reasoning": "Calls to restore billions in public health funding and supports federal infrastructure investment, indicating preference for more government spending.",
+          "emphasis": 0.6,
+          "quote": "Every dollar we invest in infrastructure yields two dollars in economic activity, which is why I am proud to lead the fight for federal investment in New Hampshire\u2019s roads, bridges, and waterways",
+          "reasoning": "Multiple statements advocate for increased federal spending on infrastructure, health, education, and clean energy programs.",
           "source": "https://pappas.house.gov"
         }
       },
@@ -2304,8 +2305,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "The bill would establish a uniform standard for taxing income based on physical presence in a state. In doing so, the bill prohibits a state from taxing a nonresident\u2019s income earned when the individual was not physically in that state.",
-          "reasoning": "Opposes taxation of remote workers' income and online sales tax, indicating support for lower taxes.",
+          "emphasis": 0.3,
+          "quote": "fight the online sales tax that is burdening New Hampshire\u2019s small businesses",
+          "reasoning": "Text explicitly opposes the online sales tax and introduces bill to stop taxation of remote workers' income, indicating support for lower taxes.",
           "source": "https://pappas.house.gov"
         }
       },
@@ -2523,8 +2525,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Pappas Slams Trump\u2019s Tariffs on Costs for Small Businesses and Housing Construction, Meets with Forest Products Industry Leaders",
-          "reasoning": "Criticizes tariffs, supporting free trade over protectionism.",
+          "emphasis": 0.2,
+          "quote": "Pappas Slams Trump\u2019s Tariffs on Costs for Small Businesses and Housing Construction",
+          "reasoning": "Direct criticism of tariffs shows opposition to protectionist policies in favor of free trade.",
           "source": "https://pappas.house.gov"
         }
       },

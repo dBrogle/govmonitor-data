@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "J000288",
   "website": "https://hankjohnson.house.gov/",
-  "fetched_at": "2026-08-30T07:45:36+00:00",
+  "fetched_at": "2026-08-30T14:22:21+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,38 +26,43 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels."
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": 1.0,
+      "quote": "He consistently advocates for diplomacy first while ensuring that American forces are fully equipped and that veterans receive the best possible support.",
+      "reasoning": "Text states support for fully equipping American forces, indicating position favoring more military resources."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "while remaining committed to job creation and middle-class tax relief in the future.",
-      "reasoning": "Explicit support for middle-class tax relief indicates preference for lower taxes."
+      "quote": "committed to job creation and middle-class tax relief in the future.",
+      "reasoning": "Explicit commitment to middle-class tax relief indicates support for lower taxes."
     },
     {
       "topic_slug": "government_spending",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": -1.0,
-      "quote": "advocating for increased funding for affordable housing programs",
-      "reasoning": "Multiple statements support increased funding for housing, energy, and other programs."
+      "quote": "addressing inequalities in the education system, increasing public school funding, and advocating for accessible higher education",
+      "reasoning": "Multiple statements advocate increasing funding for schools, housing, energy, health care and other programs, showing support for more government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions trade agreements only in context of quality standards, no position on free trade vs protectionism."
+      "reasoning": "No clear position stated on protectionism versus free trade."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements addressing foreign aid spending."
+      "reasoning": "No statements address foreign aid spending levels."
     }
   ]
 }

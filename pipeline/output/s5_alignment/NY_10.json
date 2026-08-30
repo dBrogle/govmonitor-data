@@ -36,10 +36,10 @@
     "votes_analyzed": 292,
     "votes_without_analysis": 118,
     "truth_score": {
-      "score": 55,
+      "score": 60,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:55:21+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:31:53+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -596,8 +596,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.7,
           "quote": "Rep. Dan Goldman Introduces New Tax On Wealthiest Americans Generating An Estimated $276 Billion In Revenue",
-          "reasoning": "Text explicitly supports new taxes on the wealthy and progressive tax policies.",
+          "reasoning": "Text explicitly supports new and higher taxes on wealthy individuals and corporations.",
           "source": "https://goldman.house.gov"
         }
       },
@@ -749,8 +750,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "demand President Trump stop his ongoing trade war which will harm Asian American families and businesses in New York",
-          "reasoning": "Text opposes tariffs and trade war, favoring free trade.",
+          "reasoning": "Text condemns tariffs and trade war policies in favor of open trade.",
           "source": "https://goldman.house.gov"
         }
       },
@@ -2277,8 +2279,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.8,
           "quote": "Public Housing Emergency Response Act to allocate $70 billion in funding for public housing capital repairs and upgrades throughout the country",
-          "reasoning": "Multiple bills and statements advocate for increased federal funding and spending programs.",
+          "reasoning": "Multiple bills and statements advocate for substantial new federal spending on housing, health, education, and other programs.",
           "source": "https://goldman.house.gov"
         }
       }

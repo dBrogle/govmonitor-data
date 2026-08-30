@@ -66,10 +66,10 @@
     "votes_analyzed": 332,
     "votes_without_analysis": 113,
     "truth_score": {
-      "score": 56,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:54:40+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 64,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:31:10+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2013,8 +2013,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
-          "reasoning": "Opposition to cuts in Social Security and Medicaid shows support for maintaining or increasing such spending.",
+          "emphasis": 0.6,
+          "quote": "He has handed power to unelected billionaires, launched reckless trade wars that hurt working families, and pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
+          "reasoning": "Explicit opposition to proposed cuts in Social Security and Medicaid shows preference against reduced government spending.",
           "source": "https://horsford.house.gov"
         }
       },
@@ -2589,8 +2590,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "launched reckless trade wars that hurt working families",
-          "reasoning": "Criticism of trade wars indicates support for free trade over protectionism.",
+          "emphasis": 0.3,
+          "quote": "He has handed power to unelected billionaires, launched reckless trade wars that hurt working families, and pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
+          "reasoning": "Criticism of 'reckless trade wars' indicates opposition to protectionism and support for free trade.",
           "source": "https://horsford.house.gov"
         }
       },
@@ -3042,12 +3044,7 @@
             "vote_date": "2025-01-22"
           }
         ],
-        "stated": {
-          "score": -1.0,
-          "quote": "He is only interested in delivering tax cuts to the ultra-wealthy.",
-          "reasoning": "Criticism of tax cuts to the wealthy indicates opposition to lower taxes.",
-          "source": "https://horsford.house.gov"
-        }
+        "stated": null
       }
     ],
     "topics_without_signal": []

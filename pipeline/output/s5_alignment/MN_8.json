@@ -58,8 +58,8 @@
     "truth_score": {
       "score": 62,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:51:39+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:28:04+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2491,8 +2491,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Congressman Pete Stauber (MN-08) joined many of his colleagues at the White House as the President signed the historic U.S. \u2013 Mexico \u2013 Canada (USMCA) trade agreement into law.",
-          "reasoning": "Multiple statements explicitly celebrate and support passage of the USMCA free trade agreement.",
+          "emphasis": 0.75,
+          "quote": "Congressman Pete Stauber (MN-08) made the following statement after the U.S.-Mexico-Canada Trade Agreement (USMCA) passed the House with overwhelming bipartisan support.",
+          "reasoning": "Multiple releases celebrate passage and signing of the USMCA free trade agreement.",
           "source": "https://stauber.house.gov"
         }
       },

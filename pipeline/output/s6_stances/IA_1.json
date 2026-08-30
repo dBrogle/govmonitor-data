@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M001215",
   "website": "https://millermeeks.house.gov/",
-  "fetched_at": "2026-08-30T07:46:16+00:00",
+  "fetched_at": "2026-08-30T14:22:59+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,34 +27,39 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "Whether it\u2019s cutting taxes, securing the border, strengthening our military, or lowering health care costs",
-      "reasoning": "The statement explicitly supports strengthening the military, aligning with more military spending."
+      "reasoning": "Text explicitly supports strengthening the military, indicating position favoring more spending."
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "Lowers Taxes on Working Iowans by increasing the Child Tax Credit and delivering a $6,000 tax deduction for seniors on fixed incomes.",
-      "reasoning": "Multiple statements advocate for tax cuts and preventing tax hikes, aligning with lower taxes."
+      "quote": "Lowers Taxes on Working Iowans by increasing the Child Tax Credit and delivering a $6,000 tax deduction for seniors on fixed incomes",
+      "reasoning": "Multiple statements advocate cutting taxes and making tax cuts permanent."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Text mentions securing specific project funding and some taxpayer savings but does not state a clear overall position on government spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Congresswoman Mariannette Miller-Meeks (IA-01) has successfully secured $27 million in Community Project Funding for transformational projects in southeast Iowa",
+      "reasoning": "Text highlights securing and promoting specific federal spending projects."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions discussing trade markets with no explicit stance on free trade versus protectionism."
+      "reasoning": "Mentions of trade are too vague to indicate a clear stance on free trade vs. protectionism."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
       "reasoning": "No statements address foreign aid spending."

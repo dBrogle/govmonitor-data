@@ -58,8 +58,8 @@
     "truth_score": {
       "score": 69,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:43:54+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:20:04+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2118,8 +2118,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "introduce the Head Start Expansion and Improvement Act to triple annual funding for Head Start and Early Head Start to $36 billion for Fiscal Years 2027-2032.",
-          "reasoning": "Text explicitly advocates tripling federal funding for Head Start programs.",
+          "emphasis": 0.25,
+          "quote": "introduce the Head Start Expansion and Improvement Act to triple annual funding for Head Start and Early Head Start to $36 billion for Fiscal Years 2027-2032",
+          "reasoning": "The text explicitly advocates tripling federal funding for Head Start programs.",
           "source": "https://hayes.house.gov"
         }
       },

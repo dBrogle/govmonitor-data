@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "G000592",
   "website": "https://golden.house.gov",
-  "fetched_at": "2026-08-30T07:50:17+00:00",
+  "fetched_at": "2026-08-30T14:26:52+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
+      "emphasis": 0.75,
       "stated_score": 1.0,
-      "quote": "In addition to providing authorization for funds necessary to protect America and provide for our troops, the bill increases troop pay and includes funding for the construction of destroyers built at Bath Iron Works.",
-      "reasoning": "Text explicitly supports NDAA funding for troops and shipbuilding."
+      "quote": "providing authorization for funds necessary to protect America and provide for our troops, the bill increases troop pay and includes funding for the construction of destroyers built at Bath Iron Works",
+      "reasoning": "Text explicitly endorses NDAA funding increases for troops, pay, and shipbuilding."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on taxation appear in the text."
+      "reasoning": "No statements on tax rates or policy appear in the text."
     },
     {
       "topic_slug": "government_spending",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Debt milestone release notes concern but states no explicit position on spending levels."
+      "reasoning": "Debt milestone is noted but no explicit position on overall spending levels is stated."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
+      "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "His proposed 10 percent universal tariff is designed to reorient our economy from one based on consumption to one built on production",
-      "reasoning": "Text advocates universal tariff as protectionist policy."
+      "reasoning": "Text advocates a universal tariff and criticizes past free-trade policies."
     },
     {
       "topic_slug": "foreign_aid",
-      "addressed": true,
-      "stated_score": -1.0,
-      "quote": "A bipartisan group of military veterans today called on Secretary of State Antony Blinken to formalize a security assistance memorandum of understanding (MOU) with Ukraine.",
-      "reasoning": "Text supports security assistance to Ukraine, indicating more foreign aid."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on foreign aid spending levels appear in the text."
     }
   ]
 }

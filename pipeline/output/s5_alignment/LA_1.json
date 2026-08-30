@@ -116,10 +116,10 @@
     "votes_analyzed": 292,
     "votes_without_analysis": 73,
     "truth_score": {
-      "score": 88,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:48:32+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 78,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T14:25:15+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -411,12 +411,7 @@
             "vote_date": "2025-02-25"
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "outlining House Republicans' agenda to keep the government open, strengthen election integrity, reform congressional stock trading, support America's military, and lower costs for American families",
-          "reasoning": "The text explicitly states support for America's military and national defense, indicating a position favoring more military spending.",
-          "source": "https://scalise.house.gov/"
-        }
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2089,8 +2084,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "Working to lower tax rates for working families. Yes, no tax on overtime, a benefit that has helped over 30 million Americans.",
-          "reasoning": "The text repeatedly advocates for tax cuts including no tax on overtime and Working Families Tax Cuts, showing a clear position for lower taxes.",
+          "reasoning": "Explicit support for tax cuts and no tax on overtime.",
           "source": "https://scalise.house.gov/"
         }
       },

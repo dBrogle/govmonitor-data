@@ -26,10 +26,10 @@
     "votes_analyzed": 315,
     "votes_without_analysis": 108,
     "truth_score": {
-      "score": 63,
+      "score": 65,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:55:38+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:32:09+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -235,8 +235,9 @@
         ],
         "stated": {
           "score": -1.0,
+          "emphasis": 0.6,
           "quote": "This plan would hand $7 trillion in tax giveaways to billionaires while cutting Medicare and SNAP benefits for working-and-middle class families",
-          "reasoning": "Opposition to tax giveaways for billionaires indicates a stance against lower taxes.",
+          "reasoning": "Opposes Republican budget's tax giveaways to billionaires, indicating preference against lower taxes.",
           "source": "https://latimer.house.gov/"
         }
       },
@@ -1840,8 +1841,9 @@
         ],
         "stated": {
           "score": -1.0,
-          "quote": "This plan would hand $7 trillion in tax giveaways to billionaires while cutting Medicare and SNAP benefits for working-and-middle class families",
-          "reasoning": "Opposition to cuts in benefits programs indicates support for more government spending.",
+          "emphasis": 0.5,
+          "quote": "Today Congressman George Latimer (NY-16), White Plains Mayor Thomas Roach , White Plains Common Council President Victoria Presser and Westchester County Legislator Ben Boykin were joined by Protect Our Care New York to highlight how Medicaid is under attack. President Trump and Congressional Republicans are working to cut Medicaid by nearly a trillion dollars to pay for tax-breaks for billionaires.",
+          "reasoning": "Opposes cuts to Medicaid, Medicare, SNAP, and VA staffing, indicating support for maintaining or increasing such spending.",
           "source": "https://latimer.house.gov/"
         }
       },
@@ -2350,8 +2352,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "Today Congressman George Latimer (NY-16) took to the House floor to denounce President Donald Trump\u2019s proposed 25% tariffs on our allies Canada and Mexico.",
-          "reasoning": "Denouncing tariffs on allies indicates support for free trade.",
+          "reasoning": "Explicitly denounces proposed tariffs on allies, supporting free trade over protectionism.",
           "source": "https://latimer.house.gov/"
         }
       },

@@ -36,10 +36,10 @@
     "votes_analyzed": 76,
     "votes_without_analysis": 37,
     "truth_score": {
-      "score": 56,
+      "score": 63,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:44:24+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:20:47+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -179,8 +179,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Peace through strength requires more than words, it requires action. The House passed the FY27 National Defense Authorization Act to ensure our military remains the most capable fighting force in the world.",
-          "reasoning": "The statement explicitly endorses the NDAA to strengthen military capabilities.",
+          "emphasis": 0.9,
+          "quote": "The House passed the FY27 National Defense Authorization Act to ensure our military remains the most capable fighting force in the world.",
+          "reasoning": "The text repeatedly endorses increased military funding and readiness through explicit support for the NDAA and related investments.",
           "source": "https://mills.house.gov"
         }
       },
@@ -662,8 +663,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "marking a major step toward restoring fiscal discipline and putting an end to years of Biden-era wasteful policies.",
-          "reasoning": "The statement advocates fiscal discipline and ending wasteful spending.",
+          "emphasis": 0.6,
+          "quote": "marking a major step toward restoring fiscal discipline and putting an end to years of Biden-era wasteful policies",
+          "reasoning": "The text advocates fiscal discipline, ending wasteful spending, and penalizing failure to pass budgets on time.",
           "source": "https://mills.house.gov"
         }
       },
@@ -694,8 +696,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Americans know that when taxes are cut, businesses thrive, but apparently the bureaucrats in the CBO disagree.",
-          "reasoning": "The text praises tax cuts and criticizes barriers to them.",
+          "emphasis": 0.4,
+          "quote": "Americans know that when taxes are cut, businesses thrive",
+          "reasoning": "The statements praise tax cuts and criticize barriers to them, indicating clear support for lower taxes.",
           "source": "https://mills.house.gov"
         }
       },

@@ -66,10 +66,10 @@
     "votes_analyzed": 319,
     "votes_without_analysis": 103,
     "truth_score": {
-      "score": 40,
+      "score": 36,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:47:56+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:24:25+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2100,8 +2100,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.7,
           "quote": "The landmark legislation delivers historic savings by reigning in government waste, fraud, and abuse while unleashing pro-growth policies that strengthen the economy and protect taxpayers.",
-          "reasoning": "Explicit support for reducing government spending via savings and curbing waste.",
+          "reasoning": "Multiple releases explicitly endorse legislation to cut government waste and halt unnecessary spending.",
           "source": "https://stutzman.house.gov/"
         }
       },
@@ -2297,8 +2298,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.3,
           "quote": "Second, the Strait of Hormuz must be open for free and fair global trade.",
-          "reasoning": "Explicit endorsement of free and fair global trade.",
+          "reasoning": "Statement endorses free and fair global trade as a policy goal.",
           "source": "https://stutzman.house.gov/"
         }
       },
@@ -2450,8 +2452,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.4,
           "quote": "transition the United States-Israel relationship away from one of traditional foreign assistance towards a new era of mutual cooperation, joint investment",
-          "reasoning": "Explicit call to move away from traditional foreign assistance.",
+          "reasoning": "Resolution explicitly calls for moving away from traditional foreign assistance.",
           "source": "https://stutzman.house.gov/"
         }
       }

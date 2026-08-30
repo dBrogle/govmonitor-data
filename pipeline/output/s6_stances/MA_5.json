@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "C001101",
   "website": "https://katherineclark.house.gov",
-  "fetched_at": "2026-08-30T07:49:33+00:00",
+  "fetched_at": "2026-08-30T14:26:43+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,37 +27,42 @@
     {
       "topic_slug": "military_defense",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall military or defense spending levels."
+      "reasoning": "No statements address military or defense spending levels."
     },
     {
       "topic_slug": "taxation",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on raising or lowering taxes."
+      "reasoning": "Mentions of ACA tax credits are health-care specific and do not state a general position on taxation."
     },
     {
       "topic_slug": "government_spending",
-      "addressed": false,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels."
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "With our game-changing Inflation Reduction Act, Democrats enacted the largest climate investment in history",
+      "reasoning": "Repeated support for major spending legislation and opposition to program cuts clearly favors more government spending."
     },
     {
       "topic_slug": "trade_policy",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy or tariffs."
+      "reasoning": "No statements address trade policy or tariffs."
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": false,
+      "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No statements address foreign aid spending."
     }
   ]
 }

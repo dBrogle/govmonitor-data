@@ -46,10 +46,10 @@
     "votes_analyzed": 325,
     "votes_without_analysis": 120,
     "truth_score": {
-      "score": 59,
+      "score": 61,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:57:10+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:33:51+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -365,8 +365,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "In order to safeguard our nation and our way of life, we must continuously strengthen our military and provide the very best for our troops.",
-          "reasoning": "Text explicitly calls for strengthening the military and supporting NDAA to increase lethality and readiness.",
+          "emphasis": 0.9,
+          "quote": "This year\u2019s NDAA will help increase our military recruitment, retention, and readiness by improving servicemember's quality of life and strengthening the lethality of our armed forces.",
+          "reasoning": "Text repeatedly emphasizes strengthening the military, supporting NDAA, and increasing funding for troops and readiness.",
           "source": "https://bice.house.gov"
         }
       },
@@ -2047,8 +2048,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "we urgently need to bring fiscal restraint back to Washington.",
-          "reasoning": "Text advocates fiscal restraint, balancing the budget, and reducing waste to address debt.",
+          "emphasis": 0.8,
+          "quote": "For the sake of our children and grandchildren we urgently need to bring fiscal restraint back to Washington.",
+          "reasoning": "Text advocates fiscal conservatism, balancing the budget, reducing debt, and rooting out waste in federal spending.",
           "source": "https://bice.house.gov"
         }
       },

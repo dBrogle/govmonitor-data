@@ -36,10 +36,10 @@
     "votes_analyzed": 319,
     "votes_without_analysis": 100,
     "truth_score": {
-      "score": 59,
+      "score": 63,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:38:38+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:16:02+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -322,8 +322,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I came to Congress to protect and defend our national security, and I recognize that safeguarding our national security requires a strong national defense. As the United States faces unprecedented threats from our adversaries, such as China, Russia, and Iran, we must continue to ensure that our warfighters are equipped with the best available tools and resources.",
-          "reasoning": "Text explicitly calls for a strong national defense with best tools and resources for warfighters amid threats.",
+          "emphasis": 0.9,
+          "quote": "I came to Congress to protect and defend our national security, and I recognize that safeguarding our national security requires a strong national defense.",
+          "reasoning": "Text repeatedly endorses strong national defense, NDAA passage, and military construction funding.",
           "source": "https://strong.house.gov"
         }
       },
@@ -1817,8 +1818,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "I believe that we must reduce wasteful spending, eliminate fraud, and streamline government operations so that innovation can thrive. I am proudly pro-growth, pro-family, and pro-worker. It\u2019s time to put money back in the pockets of American families and workers and right-size wasteful government spending.",
-          "reasoning": "Text explicitly advocates reducing wasteful spending and right-sizing government spending.",
+          "emphasis": 0.7,
+          "quote": "I believe that we must reduce wasteful spending, eliminate fraud, and streamline government operations so that innovation can thrive.",
+          "reasoning": "Fiscal Responsibility page explicitly calls for cutting wasteful spending and right-sizing government.",
           "source": "https://strong.house.gov"
         }
       },

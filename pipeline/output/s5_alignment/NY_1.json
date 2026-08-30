@@ -36,10 +36,10 @@
     "votes_analyzed": 329,
     "votes_without_analysis": 111,
     "truth_score": {
-      "score": 89,
-      "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:54:48+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 87,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T14:31:12+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -344,8 +344,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "From strengthening missile defense and shipbuilding to funding innovation at companies and universities in our district, these dollars keep Long Island at the center of America\u2019s national security and defense supply chain.",
-          "reasoning": "The statements explicitly endorse increased defense investments and missile/shipbuilding funding.",
+          "emphasis": 0.7,
+          "quote": "The legislation funds core government functions across Financial Services and General Government, Defense, Labor\u2013Health and Human Services\u2013Education, Transportation and Housing, Department of State, and critical authorizing extensions, while prioritizing fiscal discipline, public safety, and economic growth.",
+          "reasoning": "Text repeatedly highlights securing defense funding, missile defense, shipbuilding, and troop pay raises as positive achievements.",
           "source": "https://lalota.house.gov"
         }
       },
@@ -519,8 +520,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "LaLota Co-Leads Bipartisan Legislation to Further Reduce Federal Taxes on Overtime for Firefighters, Police Officers, Union Workers",
-          "reasoning": "The text directly advocates reducing federal taxes on overtime pay.",
+          "emphasis": 0.4,
+          "quote": "Congressman Nick LaLota (NY-1) announced he introduced bipartisan legislation alongside Congresswoman Nicole Malliotakis (NY-11) to expand a critical provision of the Working Families Tax Cut, eliminating federal taxes on overtime pay for all union workers.",
+          "reasoning": "Explicit support for reducing federal taxes on overtime pay.",
           "source": "https://lalota.house.gov"
         }
       },
@@ -2188,7 +2190,13 @@
             "vote_date": null
           }
         ],
-        "stated": null
+        "stated": {
+          "score": -1.0,
+          "emphasis": 0.6,
+          "quote": "reaffirming their strong support for Medicaid, urging Republican leadership to protect coverage for vulnerable Americans and reiterating a vote of opposition to any GOP bill that includes any reduction in Medicaid coverage for vulnerable populations.",
+          "reasoning": "Opposes reductions in Medicaid spending and highlights securing large federal funding packages.",
+          "source": "https://lalota.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",

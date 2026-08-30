@@ -46,10 +46,10 @@
     "votes_analyzed": 332,
     "votes_without_analysis": 115,
     "truth_score": {
-      "score": 67,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:59:04+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "score": 80,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T14:35:46+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -343,8 +343,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "believe our men and women in uniform should be outfitted with the best equipment and training to tackle any threats to our nation",
-          "reasoning": "Text explicitly supports equipping military with best resources, indicating support for more military spending.",
+          "emphasis": 0.4,
+          "quote": "I am committed to the idea of peace through strength and believe our men and women in uniform should be outfitted with the best equipment and training to tackle any threats to our nation.",
+          "reasoning": "Text explicitly supports equipping military with best resources, indicating position favoring more defense spending.",
           "source": "https://harshbarger.house.gov"
         }
       },
@@ -540,8 +541,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "taxes and burdensome regulations should both be decreased",
-          "reasoning": "Text directly calls for decreasing taxes.",
+          "emphasis": 0.6,
+          "quote": "The government's role in the economy should be limited to allow businesses to thrive and create jobs, and taxes and burdensome regulations should both be decreased.",
+          "reasoning": "Direct statement calls for decreased taxes, showing clear support for lower taxes.",
           "source": "https://harshbarger.house.gov"
         }
       },
@@ -2121,12 +2123,7 @@
             "vote_date": null
           }
         ],
-        "stated": {
-          "score": 1.0,
-          "quote": "The government's role in the economy should be limited to allow businesses to thrive and create jobs",
-          "reasoning": "Text advocates limiting government's economic role, implying less government spending.",
-          "source": "https://harshbarger.house.gov"
-        }
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",

@@ -76,10 +76,10 @@
     "votes_analyzed": 333,
     "votes_without_analysis": 104,
     "truth_score": {
-      "score": 50,
+      "score": 59,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T07:45:53+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:22:39+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2039,8 +2039,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "By supporting legislation that grows the economy, creates jobs for hardworking Americans, and reduces the size and scope of the federal government for everyone, we can ensure Georgia remains a top state for business and families and America remains competitive around the world.",
-          "reasoning": "Text explicitly endorses reducing the size and scope of the federal government.",
+          "emphasis": 0.45,
+          "quote": "By supporting legislation that grows the economy, creates jobs for hardworking Americans, and reduces the size and scope of the federal government for everyone",
+          "reasoning": "Text states support for reducing federal government size and scope.",
           "source": "https://allen.house.gov"
         }
       },
@@ -2236,8 +2237,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Our tax plan provides bold reforms that will increase paychecks, grow local businesses, and expand our economy in ways that we have not seen in a long time. Specifically, this plan provides relief and simplification for families by doubling the standard deduction, lowering both the individual and corporate rates, eliminating special-interest deductions that increase rates and complicate Americans\u2019 taxes, and reducing the tax rate on the hard-earned business income of Main Street job creators.",
-          "reasoning": "Text explicitly praises and supports tax cuts including lower individual and corporate rates.",
+          "emphasis": 0.85,
+          "quote": "We kept our promise to jumpstart the economy and put more money into family\u2019s pockets by passing the largest tax reform in 30 years. Our tax plan provides bold reforms that will increase paychecks, grow local businesses, and expand our economy in ways that we have not seen in a long time. Specifically, this plan provides relief and simplification for families by doubling the standard deduction, lowering both the individual and corporate rates",
+          "reasoning": "Text explicitly praises tax cuts and rate reductions as key achievements.",
           "source": "https://allen.house.gov"
         }
       },

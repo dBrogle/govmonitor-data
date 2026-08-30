@@ -98,8 +98,8 @@
     "truth_score": {
       "score": 22,
       "topics_compared": 1,
-      "fetched_at": "2026-08-30T07:50:24+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:27:09+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -2251,8 +2251,9 @@
         ],
         "stated": {
           "score": 1.0,
+          "emphasis": 0.8,
           "quote": "We simply must change the trajectory of spending in Washington. In the short-term, Congress can begin immediately by enacting sensible cost-cutting measures and eliminating wasteful and duplicative federal programs.",
-          "reasoning": "Text explicitly calls for cost-cutting and reducing wasteful spending.",
+          "reasoning": "The budget section explicitly advocates cost-cutting and reducing government size.",
           "source": "https://huizenga.house.gov/"
         }
       },

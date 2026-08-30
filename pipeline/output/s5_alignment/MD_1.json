@@ -96,10 +96,10 @@
     "votes_analyzed": 313,
     "votes_without_analysis": 100,
     "truth_score": {
-      "score": 69,
+      "score": 71,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T07:49:26+00:00",
-      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+      "fetched_at": "2026-08-30T14:26:12+00:00",
+      "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
       {
@@ -371,8 +371,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "strengthening our military and intelligence communities is the key to ensuring our nation's safety",
-          "reasoning": "The text explicitly calls for strengthening the military, indicating support for more military spending.",
+          "emphasis": 0.85,
+          "quote": "as a member of the Appropriations Committee, I believe Congress is obligated to provide our military with all of the tools they need to protect the American people.",
+          "reasoning": "Text explicitly calls for strengthening the military and providing all necessary tools via appropriations.",
           "source": "https://harris.house.gov/"
         }
       },
@@ -568,8 +569,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Lowering the corporate tax rate will keep large businesses from sending jobs overseas",
-          "reasoning": "The text advocates lowering corporate tax rates to retain jobs, indicating support for lower taxes.",
+          "emphasis": 0.7,
+          "quote": "Lowering the corporate tax rate will keep large businesses from sending jobs overseas, and a simpler tax code would allow small businesses to save money and grow.",
+          "reasoning": "Text directly advocates lowering corporate tax rates and simplifying the tax code.",
           "source": "https://harris.house.gov/"
         }
       },
@@ -2195,8 +2197,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "quote": "Government spending and regulation will not lead us to prosperity \u2013 only a vibrant private sector will",
-          "reasoning": "The text states government spending will not lead to prosperity, indicating support for less government spending.",
+          "emphasis": 0.65,
+          "quote": "Government spending and regulation will not lead us to prosperity \u2013 only a vibrant private sector will.",
+          "reasoning": "Text states government spending will not lead to prosperity, favoring private sector instead.",
           "source": "https://harris.house.gov/"
         }
       },
