@@ -37,6 +37,12 @@ Everything a consumer needs for one member is in this file. Bill titles/URLs are
     congress: int                   # 119
     votes_analyzed: int             # bills with analysis that contributed a signal
     votes_without_analysis: int     # engaged bills that had no LLM analysis on disk
+    truth_score: {                  # stated positions (s6) vs voting record — see below
+      score: int | null             # 0..100, "words match votes" (null if <1 comparable topic)
+      topics_compared: int          # high-confidence topics with a stated position, behind the score
+      fetched_at: str | null        # when the member's site was last scraped
+      note: str
+    }
     topics: [ TopicAlignment ]      # sorted by |alignment| descending
     topics_without_signal: [ { topic_slug, topic_name } ]   # topics with no evidence
   },
@@ -75,6 +81,12 @@ Everything a consumer needs for one member is in this file. Bill titles/URLs are
   confidence: str                   # "low" (<3) | "medium" (3–7) | "high" (≥8) signals
   minus_one_desc: str               # what -1 means, e.g. "More immigration"
   plus_one_desc: str                # what +1 means, e.g. "Secure Borders"
+  stated: {                         # the member's STATED position on this topic (s6), or null
+    score: float                    # -1..+1 on the same axis as `alignment` (the "says" bar)
+    quote: str | null              # verbatim supporting quote from their website
+    reasoning: str | null
+    source: str | null             # the member's site the statement came from
+  } | null
   contributing_bills: [ ContributingBill ]   # sorted by |bill_topic_score| desc
 }
 ```
@@ -246,11 +258,18 @@ pipeline/
 │   ├── s2_finance.py            # campaign finance from OpenFEC (breakdown, PACs, outside spending)
 │   ├── s3_bills.py              # deep-dive bill detail
 │   ├── s4_analysis.py           # LLM topic scoring (parallel)
-│   └── s5_alignment.py          # aggregate votes + sponsorship + analysis → per-member files
+│   ├── s6_stances.py            # scrape member sites → LLM-score STATED positions (see services/positions/)
+│   └── s5_alignment.py          # aggregate votes + sponsorship + analysis + stances → per-member files
 └── output/
     ├── s1_members/              # intermediate: raw member data
     ├── s2_finance/              # intermediate: raw finance data (+ pac_profiles/)
     ├── s3_bills/                # bill detail files (PipelineBill)
     ├── s4_analysis/             # per-bill LLM topic scores
+    ├── s6_stances/              # per-member stated positions (feeds the truth score)
     └── s5_alignment/            # per-member files ← PRIMARY OUTPUT
 ```
+
+The **truth score** pairs each member's *stated* positions (scraped from their official site
+in the `stances` stage, `s6`) against their *voted* alignment. It's an agreement measure over
+high-confidence topics, gated so a thin or protest-vote record can't read as dishonesty. v1
+coverage on the fiscal topic set is partial; see [`services/positions/NOTES.md`](../services/positions/NOTES.md).
