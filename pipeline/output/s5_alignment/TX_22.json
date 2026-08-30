@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 309,
     "votes_without_analysis": 108,
+    "truth_score": {
+      "score": 86,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:00:40+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -301,7 +307,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am committed to ensuring that our armed forces, intelligence services, and federal law enforcement agencies have the resources they need to be efficient, ready, and lethal in this era of unprecedented threat and uncertainty.",
+          "reasoning": "The national security statement explicitly commits to providing resources needed for armed forces to be ready and lethal.",
+          "source": "https://nehls.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -470,7 +482,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Sneaky new gambling tax punishes you for losing. Reconciliation 3.0 must end it.",
+          "reasoning": "The op-ed directly opposes a new gambling tax, indicating support for lower taxes.",
+          "source": "https://nehls.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1992,7 +2010,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2205,7 +2224,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2330,7 +2350,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

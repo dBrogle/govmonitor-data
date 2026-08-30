@@ -115,6 +115,12 @@
     "congress": 119,
     "votes_analyzed": 312,
     "votes_without_analysis": 72,
+    "truth_score": {
+      "score": 62,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:56:19+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -404,7 +410,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must continue to invest in cutting edge technologies that will preserve our military superiority and act as a deterrent against rogue states that would do us and our allies harm.",
+          "reasoning": "Text explicitly calls for continued investment to maintain military superiority.",
+          "source": "https://jordan.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -628,7 +640,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Low taxes foster a healthier economy across the board\u2014encouraging entrepreneurship, job creation and improving the international competitiveness of our nation\u2019s businesses.",
+          "reasoning": "Text directly endorses low taxes and keeping more money in families' pockets.",
+          "source": "https://jordan.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2183,7 +2201,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Federal government spending is out of control, and it is the responsibility of Congress to fix the problem.",
+          "reasoning": "Text states spending is out of control and must be reined in.",
+          "source": "https://jordan.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2330,7 +2354,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2543,7 +2568,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "It is unfair that American farmers face high tariffs when exporting their products to other countries while those same countries can import their goods to the United States tariff-free.",
+          "reasoning": "Text criticizes foreign tariffs on US exports and unfair trade barriers.",
+          "source": "https://jordan.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

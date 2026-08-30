@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 282,
     "votes_without_analysis": 92,
+    "truth_score": {
+      "score": 97,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:44:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -325,7 +331,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-30"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Today, Congressman Jimmy Patronis (R-FL) voted to advance H.R. 8469, the Fiscal Year 2027 MilCon-VA Appropriations Act, which increases funding for veterans\u2019 health care, strengthens military readiness, and invests in infrastructure to keep America\u2019s armed forces the most lethal fighting force in the world.",
+          "reasoning": "Multiple releases explicitly praise and vote for increased military funding and readiness investments.",
+          "source": "https://patronis.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1682,7 +1694,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -1840,7 +1853,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-20"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2031,7 +2045,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2178,7 +2193,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

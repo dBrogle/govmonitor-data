@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 331,
     "votes_without_analysis": 97,
+    "truth_score": {
+      "score": 63,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T08:00:03+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -347,7 +353,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Strengthens National Defense Provides our military with modern equipment Funds the Golden Dome missile defense system Expands housing, healthcare, and benefits for U.S. servicemembers Invests in U.S. Naval capabilities",
+          "reasoning": "Text explicitly supports increased military funding and capabilities.",
+          "source": "https://craiggoldman.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -560,7 +572,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Rep. Goldman voted for the Working Families Tax Cut, providing the largest tax relief in U.S. history, delivering tax cuts for families, small businesses, and seniors.",
+          "reasoning": "Text repeatedly endorses and details multiple tax reductions and relief measures.",
+          "source": "https://craiggoldman.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2214,7 +2232,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Rep. Goldman voted for the Working Families Tax Cut, eliminating more than $1.4 trillion in federal spending and ending Biden-era student loan repayment programs that shifted costs onto taxpayers.",
+          "reasoning": "Text advocates cutting trillions in spending and eliminating wasteful programs.",
+          "source": "https://craiggoldman.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2438,7 +2462,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2629,7 +2654,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Recissions Act of 2025 \u2013 Signed into law Rep. Goldman voted for the Recissions Act of 2025, which cut $9 billion in spending from the U.S. Agency for International Development (USAID) and government funding for biased media outlets.",
+          "reasoning": "Text supports specific cuts to USAID foreign aid spending.",
+          "source": "https://craiggoldman.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

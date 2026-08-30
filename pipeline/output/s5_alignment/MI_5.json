@@ -105,6 +105,12 @@
     "congress": 119,
     "votes_analyzed": 332,
     "votes_without_analysis": 105,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:50:28+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -405,7 +411,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2037,7 +2044,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "WALBERG'S LEGISLATION SAVES OVER $280 BILLION The Student Success and Taxpayer Savings Plan was signed into law as part of the Working Families Tax Cuts legislation and saves over $280 billion.",
+          "reasoning": "Highlighting billions in savings and restoring fiscal sanity shows support for less government spending.",
+          "source": "https://walberg.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2217,7 +2230,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "WALBERG VOTES TO PASS THE WORKING FAMILIES TAX CUTS The Working Families Tax Cuts legislation takes advantage of a generational opportunity to restore fiscal sanity, invest in our communities, and usher in a new Golden Age in America.",
+          "reasoning": "Explicit support for tax cuts legislation demonstrates position favoring lower taxes.",
+          "source": "https://walberg.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2441,7 +2460,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2588,7 +2608,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 94,
+    "truth_score": {
+      "score": 34,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:48:09+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -353,7 +359,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1952,7 +1959,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Eliminating unnecessary government spending, fraud and abuse will help ensure the government is operating at maximum effectiveness and not unnecessarily interfering in the lives of citizens.",
+          "reasoning": "Text explicitly calls for eliminating unnecessary government spending.",
+          "source": "https://comer.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2143,7 +2156,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2356,7 +2370,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Our nation\u2019s strongest shield against foreign exploitation of American waterways is the Jones Act",
+          "reasoning": "Text advocates maintaining Jones Act protections against foreign competition.",
+          "source": "https://comer.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2492,7 +2512,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

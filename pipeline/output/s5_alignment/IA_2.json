@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 118,
+    "truth_score": {
+      "score": 61,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:46:32+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -367,7 +373,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "This strategy requires ensuring our troops always have the resources needed to counter adversaries like China, Russia, and Iran.",
+          "reasoning": "Text explicitly supports providing resources to troops to counter adversaries.",
+          "source": "https://hinson.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2010,7 +2022,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "it is imperative Washington rein in spending and take steps to balance the federal budget",
+          "reasoning": "Text calls for reining in spending, balancing budget, and cutting waste.",
+          "source": "https://hinson.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2212,7 +2230,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "my colleagues and I have passed the Working Families Tax Cuts that permanently extend many key provisions of the 2017 Trump Tax Cuts",
+          "reasoning": "Text supports extending tax cuts and reducing taxes on tips/overtime.",
+          "source": "https://hinson.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2370,7 +2394,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2561,7 +2586,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "championed my bipartisan legislation the Protecting American Industry and Labor from International Trade Crimes Act to establish a task force within the U.S. Department of Justice to combat China's trade crimes",
+          "reasoning": "Text advocates legislation targeting foreign trade crimes to protect American industry.",
+          "source": "https://hinson.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

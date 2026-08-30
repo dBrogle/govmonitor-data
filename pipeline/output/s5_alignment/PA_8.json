@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 317,
     "votes_without_analysis": 118,
+    "truth_score": {
+      "score": 87,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:58:02+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -314,7 +320,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The package includes critical funding for national security and defense, health and human services initiatives, housing programs, infrastructure, and more.",
+          "reasoning": "The statement explicitly supports a funding package that includes defense spending.",
+          "source": "https://bresnahan.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -505,7 +517,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "highlight the working-class tax cuts signed into law earlier this month.",
+          "reasoning": "The statement endorses tax cuts as positive policy.",
+          "source": "https://bresnahan.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2115,7 +2133,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Today, U.S. Representative Rob Bresnahan, Jr. (PA-08) joined local community leaders for a press conference announcing $1 million in federal funding he secured for the Jewish Community Alliance of Northeastern Pennsylvania on behalf of the Friedman Jewish Community Center (JCC).",
+          "reasoning": "Multiple statements detail securing and voting for specific federal project funding.",
+          "source": "https://bresnahan.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2328,7 +2352,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2475,7 +2500,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

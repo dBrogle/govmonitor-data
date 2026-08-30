@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 321,
     "votes_without_analysis": 125,
+    "truth_score": {
+      "score": 55,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:39:28+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -395,7 +401,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -630,7 +637,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I was proud to help write the Tax Cuts and Jobs Act, legislation that was signed into law in 2017.",
+          "reasoning": "Explicit support for tax cuts legislation indicates position favoring lower taxes.",
+          "source": "https://schweikert.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2306,7 +2319,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I believe through stopping wasteful government spending and bringing forward measures that help create good-paying jobs and shrink our debt, we can build a healthier economy",
+          "reasoning": "Direct advocacy for stopping wasteful spending shows position favoring less government spending.",
+          "source": "https://schweikert.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2530,7 +2549,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am a strong supporter of free trade, and as a border state, Arizonans understand the importance of strong trade partnerships with its neighbors.",
+          "reasoning": "Explicit endorsement of free trade and trade agreements indicates position favoring free trade.",
+          "source": "https://schweikert.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2666,7 +2691,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

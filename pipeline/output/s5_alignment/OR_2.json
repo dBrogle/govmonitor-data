@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 110,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:57:23+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -334,7 +340,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congressman Bentz (OR-02) voted YES for the Fiscal Year 2027 Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, legislation that includes $80 million for the construction of an Academic Training Center at Kingsley Field Air National Guard Base in Klamath Falls.",
+          "reasoning": "The statement explicitly supports increased military construction funding.",
+          "source": "https://bentz.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2010,7 +2022,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congressman Cliff Bentz (R-Ore.) voted against H.R.1319 , the $1.9 trillion spending bill, which passed the United States House of Representatives 219-212 .",
+          "reasoning": "The statement explicitly opposes a large federal spending bill.",
+          "source": "https://bentz.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2201,7 +2219,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2414,7 +2433,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2561,7 +2581,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

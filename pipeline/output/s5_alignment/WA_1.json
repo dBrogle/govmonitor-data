@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 104,
+    "truth_score": {
+      "score": 35,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:02:14+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -329,7 +335,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "That\u2019s why I am championing efforts that provide tax relief for the middle-class including the enhanced Child Tax Credit.",
+          "reasoning": "Text explicitly advocates tax relief measures for middle-class families.",
+          "source": "https://delbene.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2170,7 +2182,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2460,7 +2473,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2607,7 +2621,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2820,7 +2835,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I helped pass the United-States-Mexico-Canada Agreement (USMCA), which provides a stable open marketplace for farmers and businesses. The agreement ensured duty-free trade for most of Washington\u2019s agriculture exports and eliminated key trade barriers",
+          "reasoning": "Text endorses a free-trade agreement that expands duty-free exports and removes barriers.",
+          "source": "https://delbene.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

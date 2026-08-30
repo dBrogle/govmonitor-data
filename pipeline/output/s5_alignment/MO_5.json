@@ -125,6 +125,12 @@
     "congress": 119,
     "votes_analyzed": 307,
     "votes_without_analysis": 115,
+    "truth_score": {
+      "score": 62,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:51:56+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -304,7 +310,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "We must put forth a budget which does not provide for tax breaks for the wealthy and big business on the backs of hard working American families and our most vulnerable communities.",
+          "reasoning": "The text opposes tax breaks, indicating a position against lower taxes.",
+          "source": "https://cleaver.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1914,7 +1926,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I remain committed to responsibly reducing the deficit, but not at the cost of critical programs that support our most vulnerable communities.",
+          "reasoning": "The text opposes cuts to critical programs while supporting investments.",
+          "source": "https://cleaver.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2182,7 +2200,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I strongly believe funding for the military is imperative, and supporting our troops at home and abroad is fundamental.",
+          "reasoning": "The text explicitly states that military funding is imperative.",
+          "source": "https://cleaver.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2395,7 +2419,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "urged the Trump Administration to reverse course on its plan to import 300,000 metric tons of foreign beef over the next 90 days.",
+          "reasoning": "The text urges reversal of increased foreign beef imports, showing protectionist stance.",
+          "source": "https://cleaver.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2542,7 +2572,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

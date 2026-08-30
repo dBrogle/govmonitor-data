@@ -51,6 +51,12 @@
     "congress": 119,
     "votes_analyzed": 316,
     "votes_without_analysis": 120,
+    "truth_score": {
+      "score": 69,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:59:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -307,7 +313,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The bill includes provisions to strengthen deterrence against China, prohibit men from competing in women\u2019s sports at military academies, and robust funding for B-21 aircraft procurement. Johnson voted to pass the legislation.",
+          "reasoning": "Text explicitly supports robust funding for military aircraft procurement in defense bill.",
+          "source": "https://dustyjohnson.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -509,7 +521,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I voted to pass the House\u2019s One Big, Beautiful Bill, which is a strong, conservative package that prevents the largest tax hike in American history while saving $1.6 trillion, the largest spending reduction in a generation.",
+          "reasoning": "Text states opposition to tax hikes, favoring lower taxes.",
+          "source": "https://dustyjohnson.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2141,7 +2159,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I voted to pass the House\u2019s One Big, Beautiful Bill, which is a strong, conservative package that prevents the largest tax hike in American history while saving $1.6 trillion, the largest spending reduction in a generation.",
+          "reasoning": "Text states support for largest spending reduction in a generation.",
+          "source": "https://dustyjohnson.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2266,7 +2290,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2468,7 +2493,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -135,6 +135,12 @@
     "congress": 119,
     "votes_analyzed": 321,
     "votes_without_analysis": 139,
+    "truth_score": {
+      "score": 80,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:43:11+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -479,7 +485,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -681,7 +688,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The group discussed the importance of recent tax relief approved in the One Big Beautiful Bill",
+          "reasoning": "The text explicitly highlights the importance of tax relief, indicating support for lower taxes.",
+          "source": "https://issa.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2247,7 +2260,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2471,7 +2485,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2651,7 +2666,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

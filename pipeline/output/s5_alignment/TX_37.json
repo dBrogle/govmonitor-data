@@ -175,6 +175,12 @@
     "congress": 119,
     "votes_analyzed": 314,
     "votes_without_analysis": 116,
+    "truth_score": {
+      "score": 72,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:01:13+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -453,7 +459,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -655,7 +662,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I voted against the Republican Tax Cuts and Jobs Act of 2017 because it threatens these vital investments in our economy, hurts working families, balloons the national debt, and threatens Social Security and Medicare, all to lavish tax breaks on multinational corporations and those already on the top rung of the economic ladder.",
+          "reasoning": "Opposes Republican tax cuts, favoring higher effective taxation on corporations and wealthy.",
+          "source": "https://doggett.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -868,7 +881,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -1026,7 +1040,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2625,7 +2640,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "To grow our economy, we need to invest in our workforce, education, and job training. We need to fix our crumbling infrastructure, bringing it into the 21st century. We need to invest in health care, research and development, and bolster small businesses and local manufacturers.",
+          "reasoning": "Advocates increased government investment in infrastructure, education, health care, and related areas.",
+          "source": "https://doggett.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 320,
     "votes_without_analysis": 129,
+    "truth_score": {
+      "score": 67,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:45:25+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -375,7 +381,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Rep. Earl L. \u201cBuddy\u201d Carter (R-GA) today secured $346.1 million for Georgia\u2019s First Congressional District in the House-passed National Defense Authorization Act (NDAA)",
+          "reasoning": "The statement explicitly highlights securing substantial funding in the NDAA defense bill, indicating support for increased military spending.",
+          "source": "https://buddycarter.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -566,7 +578,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a Member of Congress, I have voted to cut more than $5 trillion in waste from the federal budget which reaches balance and begins paying off the national debt within ten years without raising taxes.",
+          "reasoning": "The explicit commitment to balancing the budget without raising taxes aligns with a position favoring lower taxes.",
+          "source": "https://buddycarter.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2143,7 +2161,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I will continue to fight to end Washington\u2019s out of control spending addiction.",
+          "reasoning": "The direct call to end out-of-control spending and cut trillions in waste demonstrates a stance for reduced government spending.",
+          "source": "https://buddycarter.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2367,7 +2391,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2525,7 +2550,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

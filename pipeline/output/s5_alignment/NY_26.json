@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 127,
+    "truth_score": {
+      "score": 64,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:56:07+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -258,7 +264,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 0.0,
+          "quote": "including tax relief for the middle class while ensuring those at the top pay their fair share",
+          "reasoning": "Text calls for tax relief for middle class alongside higher contributions from top earners, indicating a mixed position on taxation.",
+          "source": "https://kennedy.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1967,7 +1979,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Kennedy Announces $2.9 Million in Federal Funding for The Service Collaborative of WNY",
+          "reasoning": "Multiple statements advocate for increased federal funding, investments, and spending on education, infrastructure, healthcare, and jobs programs.",
+          "source": "https://kennedy.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2257,7 +2275,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2481,7 +2500,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "fighting against burdensome regulations that stifle trade and travel with Canada",
+          "reasoning": "Text supports free movement of goods, incentivizing trade, and strengthening partnerships with Canada without tariffs or protectionism.",
+          "source": "https://kennedy.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2628,7 +2653,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

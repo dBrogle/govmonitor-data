@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 314,
     "votes_without_analysis": 103,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:41:25+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -335,7 +341,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation that strengthens America's national defense, invests in our military installations, and delivers for the men and women who serve this nation. Congressman Vince Fong (CA-20) voted in support of the bill",
+          "reasoning": "Text shows repeated support for NDAA and military funding bills that increase defense spending.",
+          "source": "https://fong.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -548,7 +560,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Fong Moves to End California\u2019s Hidden Climate Tax on American Consumers",
+          "reasoning": "Text explicitly opposes a state climate tax and a health care tax increase, favoring lower taxes.",
+          "source": "https://fong.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2180,7 +2198,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Votes to Advance FY2026 Appropriations Bills to Strengthen National Security, Rein in Spending",
+          "reasoning": "Text states support for appropriations bills that rein in spending.",
+          "source": "https://fong.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2404,7 +2428,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2573,7 +2598,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

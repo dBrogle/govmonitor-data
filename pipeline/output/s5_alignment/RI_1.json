@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 331,
     "votes_without_analysis": 112,
+    "truth_score": {
+      "score": 54,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:58:33+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -236,7 +242,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -570,7 +577,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2345,7 +2353,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "RI Delegation Announces Over $1.7 Million in Federal Funding to Protect Nonprofits and Places of Worship from Violence",
+          "reasoning": "Multiple press releases announce and celebrate securing specific federal funding for projects, indicating support for more government spending.",
+          "source": "https://amo.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2503,7 +2517,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Yesterday, Congressman Gabe Amo (D-RI), Congressman James Walkinshaw (D-VA), Congresswoman Robin Kelly (D-IL), and Senator Edward J. Markey (D-MA) led 134 Members of Congress in demanding the Trump administration release international affairs funding, including Global Health Programs funding, before its expiration and stop proposed changes to the President\u2019s Emergency Plan for AIDS Relief (PEPFAR).",
+          "reasoning": "The statement explicitly defends and demands release of international affairs and global health funding.",
+          "source": "https://amo.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2727,7 +2747,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -105,6 +105,12 @@
     "congress": 119,
     "votes_analyzed": 318,
     "votes_without_analysis": 111,
+    "truth_score": {
+      "score": 44,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:40:05+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -372,7 +378,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -585,7 +592,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2173,7 +2181,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "A proposal to Elon Musk & Vivek Ramaswamy: to balance the budget and improve the economy \u2013 just say NO to subsidies. Not only will a subsidies hunt save hundreds of billions of taxpayer dollars, it will reduce the overall cost of the things being subsidized and reinvigorate the economy by restoring the flow of capital to its most productive use.",
+          "reasoning": "Explicit call to cut subsidies to balance budget and save taxpayer dollars indicates less spending.",
+          "source": "https://mcclintock.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2386,7 +2400,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Tariffs harm the overall economy of any count",
+          "reasoning": "Direct statement that tariffs harm the economy supports free trade.",
+          "source": "https://mcclintock.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2533,7 +2553,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

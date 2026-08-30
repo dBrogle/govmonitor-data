@@ -215,6 +215,12 @@
     "congress": 119,
     "votes_analyzed": 325,
     "votes_without_analysis": 114,
+    "truth_score": {
+      "score": 68,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:53:57+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -405,7 +411,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Republicans in Congress are pushing the largest health care cuts in American history just to hand massive tax breaks to billionaires",
+          "reasoning": "The statement criticizes tax breaks for billionaires, indicating opposition to lower taxes.",
+          "source": "https://pallone.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -739,7 +751,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2448,7 +2461,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "today announced that the US Army Corps of Engineers is awarding a $38.3 million contract to Weeks Marine to begin a targeted sand replenishment project",
+          "reasoning": "Multiple statements endorse specific federal spending projects and oppose cuts to programs like Medicare and Medicaid.",
+          "source": "https://pallone.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2694,7 +2713,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congressman Pallone has consistently voted against bad trade deals, including the original North American Free Trade Agreement (NAFTA), the U.S.-Korea Free Trade Agreement (KORUS), and the Trans-Pacific Partnership (TPP).",
+          "reasoning": "Explicit opposition to multiple free trade agreements shows a protectionist stance.",
+          "source": "https://pallone.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2863,7 +2888,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

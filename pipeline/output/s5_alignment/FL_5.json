@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 58,
     "votes_without_analysis": 31,
+    "truth_score": {
+      "score": 45,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:44:27+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -167,7 +173,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "one of my top priorities is to continue rebuilding our military and ensuring our veteran community has the resources they need to successfully transition into civilian life.",
+          "reasoning": "Text explicitly prioritizes rebuilding the military and expanding local bases and programs like F-35.",
+          "source": "https://rutherford.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -545,7 +557,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-24"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Rutherford Statement Opposing Democrats' Reckless Spending",
+          "reasoning": "Text includes statements opposing reckless spending and supporting the Fiscal Responsibility Act.",
+          "source": "https://rutherford.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -571,7 +589,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I was proud to support the passage of the Tax Cuts and Jobs Act of 2017, which has unleashed unprecedented economic growth in the United States.",
+          "reasoning": "Text states support for the Tax Cuts and Jobs Act that cut taxes.",
+          "source": "https://rutherford.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -630,7 +654,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Introduced H.R. 5437, the Boosting America\u2019s Exports Act, bipartisan legislation to help small businesses export their products.",
+          "reasoning": "Text supports legislation to boost exports.",
+          "source": "https://rutherford.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -700,7 +730,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

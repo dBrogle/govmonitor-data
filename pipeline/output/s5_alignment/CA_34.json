@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 303,
     "votes_without_analysis": 103,
+    "truth_score": {
+      "score": 46,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:42:22+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -376,7 +382,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -567,7 +574,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I\u2019m fighting to significantly increase the Child Tax Credit and make sure it\u2019s paid monthly.",
+          "reasoning": "The text explicitly supports increasing the Child Tax Credit, indicating a position favoring lower taxes.",
+          "source": "https://gomez.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2320,7 +2333,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I am strong advocate for increasing federal appropriations to the Community Development Financial Institution (CDFI) Fund",
+          "reasoning": "The text repeatedly calls for increased federal funding and investments in housing, child care, and other programs, indicating support for more government spending.",
+          "source": "https://gomez.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2467,7 +2486,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2669,7 +2689,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

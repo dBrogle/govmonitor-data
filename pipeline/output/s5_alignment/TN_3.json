@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 334,
     "votes_without_analysis": 95,
+    "truth_score": {
+      "score": 78,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:59:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -417,7 +423,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2126,7 +2133,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -2361,7 +2369,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "H.R. 1 transformed our outdated and overcomplicated tax code into a fair and simple system that keeps big government out of the pockets of hardworking Tennesseans, while also allowing families and business owners to keep more of their hard-earned dollars.",
+          "reasoning": "Explicit support for tax cuts via the Tax Cuts and Jobs Act demonstrates a position favoring lower taxes.",
+          "source": "https://fleischmann.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2596,7 +2610,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2754,7 +2769,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

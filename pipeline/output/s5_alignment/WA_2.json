@@ -145,6 +145,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 92,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:02:16+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -335,7 +341,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I voted against the Big Ugly Law, which cuts roughly $1.1 trillion from Medicaid, Medicare, and the ACA \u2013 $911 billion of which is from Medicaid \u2013 all to pay for a tax break for the richest Americans and biggest corporations.",
+          "reasoning": "Opposes tax breaks for the wealthy, indicating preference for higher taxes.",
+          "source": "https://larsen.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -658,7 +670,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2378,7 +2391,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2547,7 +2561,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2782,7 +2797,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "These new tariffs aren't leverage over Canada. They're yet another way that the Trump administration is raising your prices and sabotaging...",
+          "reasoning": "Criticizes new tariffs as harmful, supporting free trade.",
+          "source": "https://larsen.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

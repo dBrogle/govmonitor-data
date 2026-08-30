@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 127,
+    "truth_score": {
+      "score": 55,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:44:55+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -366,7 +372,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -601,7 +608,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "committed to conservative leadership for a stronger economy that will support working families, lower taxes, and promote investment in America. This includes making the Trump Tax Cuts permanent.",
+          "reasoning": "Explicit support for lower taxes and making tax cuts permanent.",
+          "source": "https://steube.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -748,7 +761,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2270,7 +2284,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I oppose the Biden-Harris Administration\u2019s Electric Vehicle mandates and their wasteful taxpayer spending on EV charging infrastructure.",
+          "reasoning": "Opposition to wasteful taxpayer spending indicates preference for less government spending.",
+          "source": "https://steube.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2494,7 +2514,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "reintroduced The U.S. Citrus Protection Act, to prohibit the importation of commercially produced fresh citrus fruit originating from the People\u2019s Republic of China.",
+          "reasoning": "Support for prohibiting imports shows protectionist stance.",
+          "source": "https://steube.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

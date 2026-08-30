@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 327,
     "votes_without_analysis": 111,
+    "truth_score": {
+      "score": 48,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:44:35+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -244,7 +250,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "H.R. 1151, the Freedom to Invest in Tomorrow\u2019s Workforce Act, which expands tax-free withdrawals to support education for professional certification, apprenticeships, occupational licenses, and academic degrees",
+          "reasoning": "Text supports expanding tax-free withdrawals, indicating preference for lower taxes.",
+          "source": "https://soto.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1942,7 +1954,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Federal funding ensures that the future of our nation has a strong start, regardless of economic status, religion, race, or disability.",
+          "reasoning": "Text endorses federal funding for education and multiple announcements securing federal grants and disaster relief.",
+          "source": "https://soto.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2232,7 +2250,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2379,7 +2398,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2592,7 +2612,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "From mass deportations to tariffs, unlawful layoffs to ridiculous culture wars, their Big Ugly Law to the Epstein Files, Democrats have stood together at every turn and made united efforts to hold the Administration accountable",
+          "reasoning": "Text criticizes tariffs as part of negative Trump Administration actions, indicating support for free trade.",
+          "source": "https://soto.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 292,
     "votes_without_analysis": 118,
+    "truth_score": {
+      "score": 55,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:55:21+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -302,7 +308,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -416,7 +423,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -585,7 +593,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Rep. Dan Goldman Introduces New Tax On Wealthiest Americans Generating An Estimated $276 Billion In Revenue",
+          "reasoning": "Text explicitly supports new taxes on the wealthy and progressive tax policies.",
+          "source": "https://goldman.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -732,7 +746,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "demand President Trump stop his ongoing trade war which will harm Asian American families and businesses in New York",
+          "reasoning": "Text opposes tariffs and trade war, favoring free trade.",
+          "source": "https://goldman.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2254,7 +2274,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Public Housing Emergency Response Act to allocate $70 billion in funding for public housing capital repairs and upgrades throughout the country",
+          "reasoning": "Multiple bills and statements advocate for increased federal funding and spending programs.",
+          "source": "https://goldman.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

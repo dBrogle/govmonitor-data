@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 339,
     "votes_without_analysis": 105,
+    "truth_score": {
+      "score": 67,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:45:47+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -334,7 +340,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am committed to ensuring our armed forces have the tools and resources they need to protect our nation from all the threats we face.",
+          "reasoning": "The statement explicitly supports providing armed forces with necessary tools and resources, indicating a position favoring more military spending.",
+          "source": "https://clyde.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -547,7 +559,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Most importantly, the FairTax would allow American workers to keep more of their hard-earned paychecks and only pay taxes on what they spend.",
+          "reasoning": "The endorsement of the FairTax to let workers keep more paychecks demonstrates support for lower taxes.",
+          "source": "https://clyde.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2201,7 +2219,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "That\u2019s why I plan to look for opportunities in Congress to right-size the federal government and re-align its operations within the bounds of the U.S. Constitution, as was intended by our nation\u2019s Founding Fathers.",
+          "reasoning": "The call to right-size the federal government and root out waste shows a position favoring less government spending.",
+          "source": "https://clyde.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2359,7 +2383,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2572,7 +2597,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

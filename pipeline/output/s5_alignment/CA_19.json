@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 142,
+    "truth_score": {
+      "score": 45,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:41:09+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1784,7 +1790,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "United States Representative Jimmy Panetta (CA-19) announced $3,895,000 in federal funding to rehabilitate Taxiway A at the Paso Robles Municipal Airport.",
+          "reasoning": "Multiple announcements of securing and supporting federal funding indicate position favoring more spending.",
+          "source": "https://panetta.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2019,7 +2031,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a Member of the House Ways and Means Committee, I continue my work to open new markets around the world for our producers while easing the tax burden on family farms to ensure they can continue to support our community.",
+          "reasoning": "Text explicitly advocates easing the tax burden.",
+          "source": "https://panetta.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2342,7 +2360,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I work to maintain the military installations on the Central Coast, promote their educational training and technological innovation, and protect their nearly 15,000 good-paying jobs that impact the economy of our communities and the safety of our country.",
+          "reasoning": "Text supports maintaining and resourcing military installations and personnel.",
+          "source": "https://panetta.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2566,7 +2590,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Following 50% Tariffs on Canada, Rep. Panetta Joins Introduction of Bill to Repeal Section 338, Refund Tariffs",
+          "reasoning": "Text shows opposition to tariffs by joining bill to repeal them.",
+          "source": "https://panetta.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2724,7 +2754,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

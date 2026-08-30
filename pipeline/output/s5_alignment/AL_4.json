@@ -165,6 +165,12 @@
     "congress": 119,
     "votes_analyzed": 313,
     "votes_without_analysis": 103,
+    "truth_score": {
+      "score": 69,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:38:40+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -465,7 +471,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "\u201cI am proud to have voted \u2018Yes\u2019 for the FY27 National Defense Authorization Act (NDAA) to revitalize the defense industrial base, secure our supply chains, and improve quality of life for our service members and their families.",
+          "reasoning": "The text explicitly supports strengthening national defense through voting for the NDAA and providing equipment/training to troops.",
+          "source": "https://aderholt.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -645,7 +657,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I opposed this legislation. I believe that targeted spending cuts are the most responsible way to address the fiscal crisis facing our country, not increasing taxes on families and small businesses.",
+          "reasoning": "The text states opposition to tax increases and preference for cuts over higher taxes.",
+          "source": "https://aderholt.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2189,7 +2207,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I believe the majority of Alabamians support spending cuts and implementation of a framework to require Washington to live within its means from here on out.",
+          "reasoning": "The text repeatedly advocates for spending cuts and reducing the 'spend now, pay later' culture.",
+          "source": "https://aderholt.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2402,7 +2426,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2560,7 +2585,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

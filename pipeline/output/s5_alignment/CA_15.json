@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 300,
     "votes_without_analysis": 116,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:41:02+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -236,7 +242,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I support a progressive, equitable tax code that keeps costs down for working families while ensuring that large corporations and the wealthiest 1% pay their fair share.",
+          "reasoning": "Explicit support for progressive tax code requiring wealthy and corporations to pay more indicates preference for higher taxes.",
+          "source": "https://kevinmullin.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -526,7 +538,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-30"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2213,7 +2226,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I have supported making greater investments in our pre-kindergarten, K-12 schools, and universities.",
+          "reasoning": "Multiple statements advocating greater investments and higher funding for programs show support for increased government spending.",
+          "source": "https://kevinmullin.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2426,7 +2445,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2584,7 +2604,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "In addition to defending democracy and human rights, we have a moral duty to provide humanitarian, economic, and developmental foreign aid.",
+          "reasoning": "Direct statement of moral duty to provide foreign aid plus advocacy for higher funding indicates support for more foreign aid spending.",
+          "source": "https://kevinmullin.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

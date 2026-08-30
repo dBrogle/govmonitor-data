@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 329,
     "votes_without_analysis": 137,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:57:12+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -285,7 +291,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -597,7 +604,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2383,7 +2391,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Increasing funding for programs that support older adults helps them stay in their homes where they can remain connected to their communities and avoid costlier long-term care.",
+          "reasoning": "Text repeatedly advocates increasing federal funding for housing, child care, seniors, and other programs.",
+          "source": "https://bonamici.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2530,7 +2544,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2743,7 +2758,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "International trade agreements done right have the potential to create quality, high-paying jobs, and expand exports to help Oregon businesses innovate and grow.",
+          "reasoning": "Trade section endorses carefully crafted trade agreements that expand exports.",
+          "source": "https://bonamici.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

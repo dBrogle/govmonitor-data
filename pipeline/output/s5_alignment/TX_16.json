@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 333,
     "votes_without_analysis": 100,
+    "truth_score": {
+      "score": 80,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T08:00:12+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -245,7 +251,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congresswoman Escobar believes tax policies should prioritize working families and small businesses, not billionaires and corporations. Congresswoman Escobar has continued to fight against tax cuts that benefit the ultra-wealthy at the expense of essential programs like healthcare, education, and infrastructure.",
+          "reasoning": "Text explicitly opposes tax cuts for the wealthy and supports corporations paying their fair share via the IRA.",
+          "source": "https://escobar.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -557,7 +569,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2398,7 +2411,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2567,7 +2581,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2791,7 +2806,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 315,
     "votes_without_analysis": 104,
+    "truth_score": {
+      "score": 57,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:54:37+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -384,7 +390,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "a two-year budget agreement that invests in our nation's military, infrastructure, and",
+          "reasoning": "The statement explicitly supports investing in the military, indicating a position favoring more military spending.",
+          "source": "https://amodei.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2038,7 +2050,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I firmly believe that we should not be saddling our children and grandchildren with the burden of paying for reckless spending habits, and I will continue to seek areas that merit cuts in spending.",
+          "reasoning": "The text explicitly calls for cutting spending and curbing reckless government outlays.",
+          "source": "https://amodei.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2229,7 +2247,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2387,7 +2406,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2622,7 +2642,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 331,
     "votes_without_analysis": 112,
+    "truth_score": {
+      "score": 98,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:59:55+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -411,7 +417,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Core to America\u2019s national security is a strong national defense. Having served in the military for nearly three decades, I have been honored to play an active role during my time in Congress to help bolster our national defense. ... keep the growth and modernization of our national defense going.",
+          "reasoning": "The text explicitly supports bolstering, growing, and modernizing national defense.",
+          "source": "https://jackson.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -646,7 +658,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2322,7 +2335,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2491,7 +2505,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2693,7 +2708,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

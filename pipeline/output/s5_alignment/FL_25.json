@@ -125,6 +125,12 @@
     "congress": 119,
     "votes_analyzed": 313,
     "votes_without_analysis": 120,
+    "truth_score": {
+      "score": 71,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:45:14+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -326,7 +332,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I\u2019m fighting against President Trump\u2019s Tax Cuts and Jobs Acts of 2017, which doled out enormous, permanent tax cuts for corporations and billionaires with meager, temporary tax cuts for American families.",
+          "reasoning": "The text explicitly opposes tax cuts, indicating a preference for higher taxes.",
+          "source": "https://wassermanschultz.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -605,7 +617,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2215,7 +2228,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "For America to prosper, we must strike the appropriate balance regarding budget cuts and making critical investments in our future. Attempting to balance our budget on the backs of students is neither ethical nor the way for America to remain competitive in a global marketplace.",
+          "reasoning": "The text criticizes budget cuts and advocates critical investments and robust funding, indicating support for more spending.",
+          "source": "https://wassermanschultz.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2428,7 +2447,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2575,7 +2595,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 256,
     "votes_without_analysis": 95,
+    "truth_score": {
+      "score": 68,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:53:59+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -302,7 +308,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I believe that our nation must maintain a strong and robust military, which is crucial for protecting the interests of our nation at home and abroad. I support providing our servicemembers with the key resources they need to be successful in their missions.",
+          "reasoning": "Text explicitly supports maintaining a strong military and providing key resources to servicemembers, indicating support for more military spending.",
+          "source": "https://kean.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -449,7 +461,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "One of my most important priorities in Congress is to restore the full State and Local Tax (SALT) Deduction.",
+          "reasoning": "Text prioritizes restoring the full SALT deduction to return more dollars to families and eliminate double taxation, indicating support for lower taxes.",
+          "source": "https://kean.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1652,7 +1670,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We can start by eliminating duplicative programs, living within our nation\u2019s means, and cutting wasteful spending.",
+          "reasoning": "Text calls for addressing debt and deficit by eliminating duplicative programs and cutting wasteful spending, indicating support for less government spending.",
+          "source": "https://kean.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -1843,7 +1867,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2012,7 +2037,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

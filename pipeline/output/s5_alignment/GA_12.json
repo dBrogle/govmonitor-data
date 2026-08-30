@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 333,
     "votes_without_analysis": 104,
+    "truth_score": {
+      "score": 50,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:45:53+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -364,7 +370,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2029,7 +2036,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "By supporting legislation that grows the economy, creates jobs for hardworking Americans, and reduces the size and scope of the federal government for everyone, we can ensure Georgia remains a top state for business and families and America remains competitive around the world.",
+          "reasoning": "Text explicitly endorses reducing the size and scope of the federal government.",
+          "source": "https://allen.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2220,7 +2233,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Our tax plan provides bold reforms that will increase paychecks, grow local businesses, and expand our economy in ways that we have not seen in a long time. Specifically, this plan provides relief and simplification for families by doubling the standard deduction, lowering both the individual and corporate rates, eliminating special-interest deductions that increase rates and complicate Americans\u2019 taxes, and reducing the tax rate on the hard-earned business income of Main Street job creators.",
+          "reasoning": "Text explicitly praises and supports tax cuts including lower individual and corporate rates.",
+          "source": "https://allen.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2367,7 +2386,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2602,7 +2622,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

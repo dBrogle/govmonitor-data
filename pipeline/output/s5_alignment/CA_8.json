@@ -105,6 +105,12 @@
     "congress": 119,
     "votes_analyzed": 288,
     "votes_without_analysis": 101,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:40:30+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -273,7 +279,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-26"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -574,7 +581,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "ensure our military has the resources they need to keep us safe",
+          "reasoning": "Text states support for providing military resources via NDAA.",
+          "source": "https://garamendi.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2162,7 +2175,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I secured $1.5 million to build new low-income housing units and address housing repair needs in current low-income homes throughout our communities",
+          "reasoning": "Text repeatedly advocates securing and voting for increased federal appropriations and funding for housing, homelessness, and education programs.",
+          "source": "https://garamendi.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2309,7 +2328,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2511,7 +2531,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

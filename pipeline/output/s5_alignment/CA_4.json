@@ -155,6 +155,12 @@
     "congress": 119,
     "votes_analyzed": 331,
     "votes_without_analysis": 115,
+    "truth_score": {
+      "score": 30,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:40:13+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -466,7 +472,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I'm committed to providing our Armed Forces and Intelligence Community the resources they need to defend our nation.",
+          "reasoning": "Text explicitly commits to providing resources needed by Armed Forces.",
+          "source": "https://mikethompson.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -690,7 +702,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "SENATE PASSES THOMPSON\u2019S BILL EXTENDING TAX RELIEF FOR WILDFIRE SURVIVORS",
+          "reasoning": "Text highlights bill extending tax relief, indicating support for lower taxes in this context.",
+          "source": "https://mikethompson.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2476,7 +2494,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "For far too long, Washington has avoided making the tough choices necessary to get our fiscal house in order.",
+          "reasoning": "Text emphasizes need for tough choices to address deficits, indicating support for less spending.",
+          "source": "https://mikethompson.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2623,7 +2647,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2836,7 +2861,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -135,6 +135,12 @@
     "congress": 119,
     "votes_analyzed": 313,
     "votes_without_analysis": 97,
+    "truth_score": {
+      "score": 50,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:45:25+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -413,7 +419,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -637,7 +644,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I strongly believe that tax relief is an important step in securing a healthy economy and stimulating job growth.",
+          "reasoning": "Explicit support for tax relief to let people keep more earnings indicates preference for lower taxes.",
+          "source": "https://mariodiazbalart.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2192,7 +2205,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I strongly believe that Congress must adhere to the principles of fiscal discipline. Too often, hard-earned taxpayer dollars are wasted on fraudulent and duplicated federal programs. Congress must work to make these programs more efficient, or simply terminate them to ensure better results for beneficiaries and greater savings for taxpayers.",
+          "reasoning": "Advocacy for fiscal discipline, efficiency, and terminating wasteful programs shows preference for less government spending.",
+          "source": "https://mariodiazbalart.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2405,7 +2424,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2552,7 +2572,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

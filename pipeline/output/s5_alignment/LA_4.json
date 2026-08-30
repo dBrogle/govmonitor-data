@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 256,
     "votes_without_analysis": 55,
+    "truth_score": {
+      "score": 69,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:48:35+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -321,7 +327,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Adequate investment is necessary to maintain the air, land, sea, nuclear and cyber warfare.",
+          "reasoning": "Text explicitly calls for adequate investment to keep the strongest military.",
+          "source": "https://mikejohnson.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -468,7 +480,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "pursue continued pro-growth tax reforms and permanent tax reductions",
+          "reasoning": "Text advocates permanent tax reductions and pro-growth tax reforms.",
+          "source": "https://mikejohnson.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1759,7 +1777,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "bring spending under control, balance the federal budget, reform and modernize entitlement programs, eliminate fraud, waste and abuse",
+          "reasoning": "Text demands bringing spending under control and balancing the budget.",
+          "source": "https://mikejohnson.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -1928,7 +1952,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Free markets and free trade agreements allow for innovation, improvement and economic expansion",
+          "reasoning": "Text endorses free trade agreements and free markets.",
+          "source": "https://mikejohnson.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2020,7 +2050,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

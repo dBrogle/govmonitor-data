@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 321,
     "votes_without_analysis": 118,
+    "truth_score": {
+      "score": 68,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:38:41+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -345,7 +351,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "investing in new defense technologies",
+          "reasoning": "The statement supports the reconciliation bill that includes investing in new defense technologies, indicating a position favoring more military spending.",
+          "source": "https://barrymoore.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -558,7 +570,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "extending the Trump tax cuts",
+          "reasoning": "The statement endorses the bill for extending the Trump tax cuts and calls it the largest tax cut in American history, showing support for lower taxes.",
+          "source": "https://barrymoore.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -782,7 +800,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2326,7 +2345,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "A reversal of the spending insanity by securing $1.6 trillion in mandatory savings",
+          "reasoning": "The statement praises the bill for securing $1.6 trillion in mandatory savings, indicating a position favoring less government spending.",
+          "source": "https://barrymoore.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2484,7 +2509,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

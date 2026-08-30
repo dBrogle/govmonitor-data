@@ -155,6 +155,12 @@
     "congress": 119,
     "votes_analyzed": 314,
     "votes_without_analysis": 99,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:46:38+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -444,7 +450,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I have been fully committed to ensuring the needs of our men and women in the military are met and that the federal government\u2019s commitments are fulfilled.",
+          "reasoning": "Text explicitly supports providing resources and fulfilling commitments to the military.",
+          "source": "https://simpson.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2010,7 +2022,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "growing government and saddling our children and grandchildren with debt are unacceptable",
+          "reasoning": "Text opposes expanding government spending and debt.",
+          "source": "https://simpson.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2190,7 +2208,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "reducing tax burdens on American families",
+          "reasoning": "Text states support for reducing tax burdens.",
+          "source": "https://simpson.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2326,7 +2350,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2550,7 +2575,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

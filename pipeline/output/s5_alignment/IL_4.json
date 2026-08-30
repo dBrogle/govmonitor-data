@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 305,
     "votes_without_analysis": 110,
+    "truth_score": {
+      "score": 73,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:46:47+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -333,7 +339,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congressman Garc\u00eda Votes Against NDAA",
+          "reasoning": "The text explicitly states he voted against the NDAA, indicating opposition to military spending.",
+          "source": "https://chuygarcia.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -513,7 +525,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -649,7 +662,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2237,7 +2251,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congressman Garc\u00eda Votes to Pass the Build Back Better Act The bill makes transformative investments in affordable health care, child care, and housing;",
+          "reasoning": "The text states support for the Build Back Better Act's transformative investments, indicating preference for more government spending.",
+          "source": "https://chuygarcia.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2428,7 +2448,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

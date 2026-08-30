@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 101,
+    "truth_score": {
+      "score": 68,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:56:59+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -365,7 +371,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "we must prioritize military preparedness \u2013 which means adequate defense funding.",
+          "reasoning": "The text explicitly calls for prioritizing military preparedness through adequate defense funding, indicating support for more military spending.",
+          "source": "https://hern.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -589,7 +601,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Implementing tax cuts will stimulate the growth of the American middle class.",
+          "reasoning": "The text explicitly endorses implementing tax cuts to stimulate growth, indicating support for lower taxes.",
+          "source": "https://hern.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2210,7 +2228,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must end government waste and cut spending to reduce the American deficit.",
+          "reasoning": "The text explicitly calls for cutting spending to reduce the deficit, indicating support for less government spending.",
+          "source": "https://hern.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2412,7 +2436,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Increased international trade will bring jobs and revenue to the state of Oklahoma.",
+          "reasoning": "The text explicitly supports increased international trade for economic benefits, indicating support for free trade.",
+          "source": "https://hern.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2548,7 +2578,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

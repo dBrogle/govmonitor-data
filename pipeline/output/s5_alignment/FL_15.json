@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 107,
+    "truth_score": {
+      "score": 48,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:44:44+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -346,7 +352,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2033,7 +2040,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I will work to lower taxes on you and your family, balance the budget, and remove regulations that harm Florida\u2019s small businesses.",
+          "reasoning": "Explicit commitment to balance the budget matches +1 for less government spending.",
+          "source": "https://laurellee.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2213,7 +2226,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I will work to lower taxes on you and your family, balance the budget, and remove regulations that harm Florida\u2019s small businesses.",
+          "reasoning": "Explicit commitment to lower taxes matches +1 for taxation.",
+          "source": "https://laurellee.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2360,7 +2379,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2584,7 +2604,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

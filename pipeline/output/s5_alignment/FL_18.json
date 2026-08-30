@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 331,
     "votes_without_analysis": 103,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:44:52+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -356,7 +362,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must provide the necessary resources to ensure we have the best equipped and most lethal fighting force on the globe.",
+          "reasoning": "Text explicitly calls for providing necessary resources for a best-equipped military force and supports NDAA and national security appropriations.",
+          "source": "https://franklin.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -558,7 +570,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a businessman, I believe in lowering taxes, reducing wasteful spending and eliminating excessive regulations in order to create jobs and stimulate economic growth.",
+          "reasoning": "Text directly states belief in lowering taxes and opposition to tax hikes.",
+          "source": "https://franklin.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2212,7 +2230,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a businessman, I believe in lowering taxes, reducing wasteful spending and eliminating excessive regulations in order to create jobs and stimulate economic growth.",
+          "reasoning": "Text repeatedly advocates reducing wasteful spending and cutting excessive government spending.",
+          "source": "https://franklin.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2436,7 +2460,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2616,7 +2641,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

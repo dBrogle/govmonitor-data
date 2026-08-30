@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 269,
     "votes_without_analysis": 94,
+    "truth_score": {
+      "score": 77,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T08:01:01+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -335,7 +341,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "give the Department of Defense the authority to appropriate funds from programs or weapons that it deems unnecessary to instead fund child care programs for military families",
+          "reasoning": "The statement explicitly supports redirecting funds away from military programs and weapons.",
+          "source": "https://casar.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -570,7 +582,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congress must ensure that the ultra rich pay their fair share in taxes and contribute to the schools, roads, and community services that we all use",
+          "reasoning": "The statement calls for the wealthy to pay more in taxes.",
+          "source": "https://casar.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2147,7 +2165,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "increase funding for education at all levels, support our teachers and school staff, and ensure that every student can receive a high-quality education",
+          "reasoning": "The statement advocates for increased federal funding across multiple programs including education, housing, and child care.",
+          "source": "https://casar.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2283,7 +2307,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2463,7 +2488,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

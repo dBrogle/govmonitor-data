@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 302,
     "votes_without_analysis": 121,
+    "truth_score": {
+      "score": 82,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:39:39+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -302,7 +308,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -493,7 +500,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1982,7 +1990,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Ciscomani supported the final passage of the Fiscal Year 2027 Labor, Health and Human Services, Education, and Related Agencies Appropriations Act which included the CPF projects as well as key investments in education, early childhood development, and medical research through the, which was approved by the full House Appropriations Committee.",
+          "reasoning": "Multiple statements detail securing and supporting increased federal appropriations for health, education, water, and infrastructure projects.",
+          "source": "https://ciscomani.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2162,7 +2176,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2287,7 +2302,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

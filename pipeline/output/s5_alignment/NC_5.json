@@ -125,6 +125,12 @@
     "congress": 119,
     "votes_analyzed": 325,
     "votes_without_analysis": 108,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:52:44+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -414,7 +420,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "After nearly a decade of cuts, my colleagues and I have made rebuilding the military one of our top priorities.",
+          "reasoning": "The text explicitly supports rebuilding the military after cuts and backing the NDAA to strengthen readiness and increase personnel.",
+          "source": "https://foxx.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -605,7 +617,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I have long advocated for a fairer, simpler and lower taxes on American families and job-creators.",
+          "reasoning": "The text states advocacy for lower taxes and support for the Tax Cuts and Jobs Act.",
+          "source": "https://foxx.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2171,7 +2189,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a strong fiscal conservative, I will continue to oppose unnecessary federal spending and higher taxes and will support responsible long-term solutions to shrink the national debt and restore fiscal sanity to this country.",
+          "reasoning": "The text opposes unnecessary federal spending, supports spending cuts, and aims to shrink the national debt.",
+          "source": "https://foxx.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2384,7 +2408,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2553,7 +2578,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

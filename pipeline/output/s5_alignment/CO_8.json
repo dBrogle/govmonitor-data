@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 110,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:43:56+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -325,7 +331,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "After serving in the War on Terror, I strongly believe we can be doing more to strengthen our military. We must do more to deter our adversaries and partner with good actors. It should be a priority to maintain a strong military presence on the global stage and restore America\u2019s military superiority, not waste time on frivolous, virtue-signaling programs like DEI.",
+          "reasoning": "Text explicitly calls for strengthening and restoring superiority of the military.",
+          "source": "https://gabeevans.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1979,7 +1991,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Our country is spending money we don\u2019t have, leading to inflation and the always-growing national debt. Reducing, and eventually eliminating, the budget deficit is critical to long term prosperity. We can achieve that by reducing spending on frivolous government projects, such as so-called Green New Deal initiatives and DEI programs.",
+          "reasoning": "Text advocates reducing spending and eliminating the deficit by cutting frivolous projects.",
+          "source": "https://gabeevans.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2170,7 +2188,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must protect Social Security and I support efforts to make Social Security tax-free.",
+          "reasoning": "Text supports making Social Security tax-free, indicating preference for lower taxes.",
+          "source": "https://gabeevans.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2394,7 +2418,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2552,7 +2577,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

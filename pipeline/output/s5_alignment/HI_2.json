@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 136,
+    "truth_score": {
+      "score": 24,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:46:09+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -236,7 +242,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "This bill allows residents to claim significant tax deductions for property losses not covered by insurance. It also guarantees that any wildfire relief payments and disaster settlements received will remain completely tax-exempt at the federal level",
+          "reasoning": "Text shows support for tax deductions and exemptions via co-led disaster relief legislation.",
+          "source": "https://tokuda.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1846,7 +1858,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2158,7 +2171,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "such as expanding emergency disaster response and increasing funding for barracks maintenance",
+          "reasoning": "Text explicitly supports increasing funding for military barracks maintenance within the NDAA.",
+          "source": "https://tokuda.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2316,7 +2335,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2551,7 +2571,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

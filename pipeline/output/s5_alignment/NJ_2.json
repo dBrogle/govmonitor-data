@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 346,
     "votes_without_analysis": 121,
+    "truth_score": {
+      "score": 91,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:53:43+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -366,7 +372,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -579,7 +586,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "To boost our economy, we need tax reform that benefits middle-class families, not the multi-millionaires and corporate giants. It is time for a real middle-class tax cut that benefits hard-working South Jersey families and small businesses.",
+          "reasoning": "The text explicitly calls for a middle-class tax cut, indicating support for lower taxes.",
+          "source": "https://vandrew.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2299,7 +2312,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2523,7 +2537,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2670,7 +2685,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

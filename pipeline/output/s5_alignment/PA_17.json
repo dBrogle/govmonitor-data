@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 124,
+    "truth_score": {
+      "score": 67,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:58:35+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -214,7 +220,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -537,7 +544,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2268,7 +2276,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "\u201cI\u2019m proud that I secured $850,000 in federal funding to help replace and upgrade the bridge on Verona Road in Penn Hills,\u201d said Congressman Deluzio. \u201cOur community should have the best infrastructure out there, and I\u2019m proud I could help Penn Hills and PennDOT do this important bridge replacement. I\u2019ll always fight to bring home federal money to make life better for all of us in Western Pennsylvania.\u201d",
+          "reasoning": "Multiple statements celebrate securing and fighting for additional federal funding for local projects.",
+          "source": "https://deluzio.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2481,7 +2495,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2628,7 +2643,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

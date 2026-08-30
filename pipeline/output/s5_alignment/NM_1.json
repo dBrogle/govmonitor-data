@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 320,
     "votes_without_analysis": 116,
+    "truth_score": {
+      "score": 76,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:54:18+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -246,7 +252,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -536,7 +543,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Today, I voted for peace and human dignity\u2014voting 'yes' on an Amendment to the National Security funding bill that would have blocked $3.3 billion in offensive military aid to fund violence in the Middle East.",
+          "reasoning": "Vote to block military aid directly states support for less military spending.",
+          "source": "https://stansbury.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -683,7 +696,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Today, I voted for peace and human dignity\u2014voting 'yes' on an Amendment to the National Security funding bill that would have blocked $3.3 billion in offensive military aid to fund violence in the Middle East.",
+          "reasoning": "Vote to block foreign military aid directly states support for less foreign aid spending.",
+          "source": "https://stansbury.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2480,7 +2499,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2682,7 +2702,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

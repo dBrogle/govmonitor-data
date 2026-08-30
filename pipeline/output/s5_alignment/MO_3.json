@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 317,
     "votes_without_analysis": 109,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:51:39+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -325,7 +331,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Our Armed Forces must be second to none and fully prepared, always, to defend the U.S. and our interests at home and abroad.",
+          "reasoning": "The statement explicitly calls for U.S. forces to be second to none and fully prepared, indicating support for strong military capabilities and thus more spending.",
+          "source": "https://onder.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -505,7 +517,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "renews critical Trump-era tax cuts... stops the largest tax increase in American history from taking effect",
+          "reasoning": "The text praises renewal of tax cuts and blocking tax increases, showing clear support for lower taxes.",
+          "source": "https://onder.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2115,7 +2133,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Washington must end its spending addiction",
+          "reasoning": "The statement directly criticizes excessive spending and calls to end the spending addiction, favoring less government spending.",
+          "source": "https://onder.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2328,7 +2352,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2486,7 +2511,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

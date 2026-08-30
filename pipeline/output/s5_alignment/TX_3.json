@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 342,
     "votes_without_analysis": 120,
+    "truth_score": {
+      "score": 68,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:59:36+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -236,7 +242,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am committed to promoting pro-growth tax policies, cutting federal spending, and removing burdensome regulations.",
+          "reasoning": "Explicit commitment to pro-growth tax policies indicates support for lower taxes.",
+          "source": "https://keithself.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -570,7 +582,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -750,7 +763,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2360,7 +2374,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am committed to promoting pro-growth tax policies, cutting federal spending, and removing burdensome regulations.",
+          "reasoning": "Multiple statements oppose omnibus spending bills and introduce stricter PAYGO rules to reduce spending.",
+          "source": "https://keithself.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2595,7 +2615,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

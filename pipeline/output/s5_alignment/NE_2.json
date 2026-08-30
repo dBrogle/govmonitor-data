@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 320,
     "votes_without_analysis": 143,
+    "truth_score": {
+      "score": 72,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:53:20+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -387,7 +393,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "In Congress, Rep. Bacon is committed to enhancing America\u2019s military readiness to deter and combat emerging threats through vital defense legislation, such as the National Defense Authorization Act",
+          "reasoning": "The statement explicitly supports enhancing military readiness via defense legislation, indicating a pro-increased military stance.",
+          "source": "https://bacon.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2041,7 +2053,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -2232,7 +2245,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2456,7 +2470,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Bacon, Panetta Introduce the Bipartisan Stop Global Tariffs Act",
+          "reasoning": "The introduction of legislation to stop global tariffs directly supports free trade over protectionism.",
+          "source": "https://bacon.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2603,7 +2623,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

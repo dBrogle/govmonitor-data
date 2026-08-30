@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 116,
+    "truth_score": {
+      "score": 54,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:48:33+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -235,7 +241,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1977,7 +1984,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2278,7 +2286,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2480,7 +2489,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2627,7 +2637,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "For that reason, I am supporting Representative Thomas Massie\u2019s amendment. It is a vote for accountability. It is a vote to say that American support should encourage peace, protect innocent lives, and advance the values we stand for as a nation.",
+          "reasoning": "The text states support for an amendment limiting funding for Israel, indicating a position favoring less foreign aid spending.",
+          "source": "https://troycarter.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

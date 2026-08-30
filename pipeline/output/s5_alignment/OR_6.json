@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 321,
     "votes_without_analysis": 133,
+    "truth_score": {
+      "score": 75,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:57:36+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -225,7 +231,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I support proposals to close loopholes that allow the wealthiest Americans to avoid paying their fair share in taxes, which will keep Medicare funded for decades into the future.",
+          "reasoning": "Text explicitly supports closing tax loopholes for the wealthy to increase revenue.",
+          "source": "https://salinas.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -526,7 +538,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2279,7 +2292,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I strongly oppose any effort to undermine Social Security or Medicare.",
+          "reasoning": "Text opposes cuts to major federal programs and defends critical spending.",
+          "source": "https://salinas.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2426,7 +2445,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2661,7 +2681,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

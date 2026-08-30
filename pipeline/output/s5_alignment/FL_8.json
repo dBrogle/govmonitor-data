@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 58,
     "votes_without_analysis": 26,
+    "truth_score": {
+      "score": 64,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:44:31+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -105,7 +111,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am committed to ensuring our service members have the resources they need, supporting strong defense investments, and advancing innovation in aerospace and national security.",
+          "reasoning": "Text explicitly supports strong defense investments.",
+          "source": "https://haridopolos.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -153,7 +165,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We have learned that reducing burdensome taxes and regulations creates an economic engine where everyone is lifted together.",
+          "reasoning": "Text repeatedly advocates reducing taxes and extending tax cuts.",
+          "source": "https://haridopolos.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -223,7 +241,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -535,7 +554,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I believe hardworking Americans deserve to keep more of what they earn\u2014not send it to Washington to fund wasteful programs and runaway bureaucracy.",
+          "reasoning": "Text calls for responsible spending and opposes wasteful programs.",
+          "source": "https://haridopolos.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -605,7 +630,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-07"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 107,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:56:40+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -354,7 +360,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1953,7 +1960,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We need to equip our producers with the tools they need to navigate an inherently uncertain business market, while protecting American taxpayer dollars and fixing ineffective and flawed programs.",
+          "reasoning": "Explicitly calls for protecting taxpayer dollars and fixing flawed programs, indicating preference for less government spending.",
+          "source": "https://balderson.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2144,7 +2157,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "These issues include lack of capital \u2013 whether human or financial \u2013 burdensome taxes, outdated technology and inadequate cybersecurity infrastructure, and lack of access to the types of resources larger firms and companies have.",
+          "reasoning": "Lists burdensome taxes as a problem facing small businesses, indicating support for lower taxes.",
+          "source": "https://balderson.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2379,7 +2398,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2526,7 +2546,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

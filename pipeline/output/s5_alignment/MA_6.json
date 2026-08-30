@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 266,
     "votes_without_analysis": 110,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:49:08+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -342,7 +348,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -489,7 +496,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -603,7 +611,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1982,7 +1991,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-14"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I am the proud author of the American High-Speed Rail Act, which would invest $205 billion into high-speed rail, create at least 2.6 million direct American jobs over five years",
+          "reasoning": "Text explicitly supports major new federal investments in infrastructure and green jobs.",
+          "source": "https://moulton.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2151,7 +2166,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

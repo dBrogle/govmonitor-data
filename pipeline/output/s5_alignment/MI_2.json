@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 335,
     "votes_without_analysis": 130,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:50:27+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -430,7 +436,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Selfridge is a critical asset to our national security and a major contributor to Michigan's economy. President Trump rightly recognizes its role in our keeping our country safe and committed a new fighter mission to the base last year. However, there is work to be done to update the base to fit the needs of the new F-15EX fighters. As the only House appropriator from our state, I will always work with my Michigan colleagues to bring critical funding like this to the state to improve our economy and keep our country safe",
+          "reasoning": "Text explicitly supports securing additional federal funding for a military base to enhance national security.",
+          "source": "https://moolenaar.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2062,7 +2074,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congress should lead by example to reduce federal spending and the national debt.",
+          "reasoning": "Text explicitly calls for reducing federal spending and controlling the national debt.",
+          "source": "https://moolenaar.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2253,7 +2271,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "That is why I supported tax reform that will let hardworking Michigan families keep more of their own money.",
+          "reasoning": "Text states support for tax reform that reduces taxes to allow families to keep more money.",
+          "source": "https://moolenaar.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2422,7 +2446,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2701,7 +2726,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

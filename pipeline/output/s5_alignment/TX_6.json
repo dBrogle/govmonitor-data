@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 318,
     "votes_without_analysis": 99,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:59:38+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -367,7 +373,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The FY26 NDAA ensures our military remains the most modern and lethal fighting force in the world, capable of deterring any adversary.",
+          "reasoning": "Text repeatedly endorses increased military funding and modernization via NDAA and appropriations.",
+          "source": "https://ellzey.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1933,7 +1945,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "produced funding bills that strengthen our national defense, support our veterans, secure our border, invest in critical infrastructure, and protect taxpayers.",
+          "reasoning": "Text supports spending bills but stresses reducing waste, efficiency, and responsible stewardship of taxpayer dollars.",
+          "source": "https://ellzey.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2124,7 +2142,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2315,7 +2334,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "It also strengthens export promotion programs to help reduce the agricultural trade deficit.",
+          "reasoning": "Text endorses export promotion to reduce trade deficit, indicating free-trade stance.",
+          "source": "https://ellzey.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2462,7 +2487,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

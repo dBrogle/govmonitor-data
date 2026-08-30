@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 331,
     "votes_without_analysis": 97,
+    "truth_score": {
+      "score": 54,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:47:41+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -333,7 +339,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -546,7 +553,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The Trump Administration\u2019s actions to pass historic tax cuts, reduce burdensome regulations, and prioritize domestic manufacturing and energy production unleashed astounding economic growth for our country.",
+          "reasoning": "Explicit praise for historic tax cuts shows support for lower taxes.",
+          "source": "https://fulcher.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2156,7 +2169,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Fiscal responsibility demands that the federal government act as a prudent steward of public funds, safeguarding the economic future for subsequent generations.",
+          "reasoning": "Emphasis on fiscal responsibility and unsustainable debt trajectory indicates preference for less government spending.",
+          "source": "https://fulcher.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2303,7 +2322,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2527,7 +2547,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "International trade and foreign export markets are critical to the U.S. potato industry... Securing this long-delayed market access petition and unlocking the critical Japanese export market would make a meaningful difference for potato growers in our states and across the country.",
+          "reasoning": "Advocacy for expanded export market access demonstrates support for free trade.",
+          "source": "https://fulcher.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

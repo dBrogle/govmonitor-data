@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 289,
     "votes_without_analysis": 118,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:02:54+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -302,7 +308,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -471,7 +478,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "U.S. Rep. Derrick Van Orden says Social Security tax reductions for seniors in President Donald Trump\u2019s One Big Beautiful Bill Act would have extended long beyond 2028 were it not for Senate Democrats.",
+          "reasoning": "Text explicitly supports tax reductions for seniors.",
+          "source": "https://vanorden.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1993,7 +2006,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The broken budget process in Washington has made it incredibly difficult to identify areas of wasteful and duplicative spending. ... Congress must pass appropriations and funding bills through regular order to be good stewards of American taxpayer dollars",
+          "reasoning": "Text calls for identifying and reducing wasteful spending.",
+          "source": "https://vanorden.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2118,7 +2137,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2298,7 +2318,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

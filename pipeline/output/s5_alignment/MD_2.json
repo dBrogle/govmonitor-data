@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 337,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 68,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:49:43+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -226,7 +232,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2067,7 +2074,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "today voted in support of a bipartisan $38.6 billion funding bill that includes at least $8.2 million in targeted investments for Maryland\u2019s Second District, supporting local law enforcement, crime prevention, and critical infrastructure improvements.",
+          "reasoning": "The member explicitly states support for a large federal funding bill with targeted district investments.",
+          "source": "https://olszewski.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2390,7 +2403,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2625,7 +2639,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2805,7 +2820,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 318,
     "votes_without_analysis": 120,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:43:03+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -244,7 +250,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-26"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -556,7 +563,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must make dramatic investments and improvements to our cyber defenses.",
+          "reasoning": "Text explicitly calls for dramatic investments in cyber defenses as part of national security.",
+          "source": "https://barragan.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2320,7 +2333,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "it is imperative that we continue fighting to preserve the guaranteed benefits our nation\u2019s seniors depend on.",
+          "reasoning": "Text opposes dismantling Social Security/Medicare protections and supports preserving benefits.",
+          "source": "https://barragan.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2533,7 +2552,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "But for too long trade deals have benefited big business at the expense of U.S. workers and our environment. I will fight to ensure that trade agreements are transparent and reflect our national priorities. We need agreements that benefit working families, raise wages, and keep good paying jobs here at home.",
+          "reasoning": "Text criticizes existing trade deals and prioritizes keeping jobs at home over unrestricted trade.",
+          "source": "https://barragan.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2680,7 +2705,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

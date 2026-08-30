@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 109,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:59:47+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -379,7 +385,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "\u201cAmerica's servicemembers and their families deserve nothing less than our full commitment to their readiness, their safety, and their quality of life,\u201d said Luttrell. \u201cThis year\u2019s NDAA honors that commitment by rebuilding our defense industrial base, accelerating critical technologies like hypersonics and autonomous systems, and building on previous pay increases for our men and women in uniform.\u201d",
+          "reasoning": "Text repeatedly endorses NDAA provisions that increase defense funding and capabilities.",
+          "source": "https://luttrell.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -559,7 +571,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Republicans like Texas Rep. Morgan Luttrell (R) believe that the Trump-era tax cuts should not only be made permanent, but they should be further reduced, particularly for small businesses.",
+          "reasoning": "Explicit support for making tax cuts permanent and further reducing them.",
+          "source": "https://luttrell.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2136,7 +2154,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "By returning to regular order in our appropriations process, House Republicans set a clear and concrete message to the American people that we are serious about restoring fiscal responsibility and getting results.",
+          "reasoning": "Statement emphasizes restoring fiscal responsibility via the appropriations process.",
+          "source": "https://luttrell.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2294,7 +2318,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2507,7 +2532,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

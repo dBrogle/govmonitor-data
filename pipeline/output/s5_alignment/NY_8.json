@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 327,
     "votes_without_analysis": 76,
+    "truth_score": {
+      "score": 67,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:55:03+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -286,7 +292,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1940,7 +1947,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I spoke on the House Floor for an historic eight hours and 44 minutes in opposition to the One Big Ugly Bill, the largest cut to healthcare in the history of this country, an unprecedented assault on nutritional assistance and a betrayal of the American way of life.",
+          "reasoning": "Opposition to major cuts in healthcare and nutrition programs indicates support for higher government spending.",
+          "source": "https://jeffries.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2230,7 +2243,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2366,7 +2380,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2568,7 +2583,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

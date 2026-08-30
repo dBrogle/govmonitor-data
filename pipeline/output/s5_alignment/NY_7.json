@@ -185,6 +185,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 118,
+    "truth_score": {
+      "score": 51,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:55:09+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -518,7 +524,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -731,7 +738,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "She supports initiatives to limit the impact that rising energy costs and regulatory and tax burdens have on small businesses.",
+          "reasoning": "Text explicitly supports reducing tax burdens on small businesses.",
+          "source": "https://velazquez.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2429,7 +2442,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "She supports bold, meaningful action to address this problem.",
+          "reasoning": "Text repeatedly endorses increased federal spending on housing, healthcare, environment, and Puerto Rico relief.",
+          "source": "https://velazquez.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2653,7 +2672,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "She voted against the Trans-Pacific Partnership trade deal, which would accelerate a \"race to the bottom\" for environmental standards.",
+          "reasoning": "Text states opposition to a major free trade agreement.",
+          "source": "https://velazquez.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2833,7 +2858,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Vel\u00e1zquez Demands Answers on Trump\u2019s $20 Billion Bailout for Argentina",
+          "reasoning": "Text shows opposition to providing $20 billion in support to Argentina.",
+          "source": "https://velazquez.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

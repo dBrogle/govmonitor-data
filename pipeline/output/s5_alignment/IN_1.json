@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 313,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:47:43+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -257,7 +263,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-26"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1889,7 +1896,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Rep. Mrvan supported the American Rescue Plan in order to get past the pandemic and build momentum to grow our economy. This legislation resulted in the quickest economic recovery in our nation\u2019s history and record-low unemployment rates. Rep. Mrvan also supported the Bipartisan Infrastructure Investment and Jobs Act, the largest investment in our nation\u2019s infrastructure since the creation of the National Highway System in the 1950\u2019s.",
+          "reasoning": "Text explicitly praises and supports major new federal spending legislation including the American Rescue Plan and infrastructure investments.",
+          "source": "https://mrvan.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2190,7 +2203,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2425,7 +2439,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Rep. Mrvan believes that we must fight for every single American manufacturing and steel job. That is why Rep. Mrvan has testified on multiple occasions before the International Trade Commission and will continue to fight to ensure that all American trade laws are fully enforced, that Section 232 steel tariffs are continued, and that strong and expanded Buy America requirements are applied to appropriations and infrastructure legislation.",
+          "reasoning": "Text explicitly endorses continuation of steel tariffs, enforcement of trade laws against imports, and expanded Buy America protections.",
+          "source": "https://mrvan.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2583,7 +2603,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

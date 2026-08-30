@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 76,
     "votes_without_analysis": 44,
+    "truth_score": {
+      "score": 63,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:54:16+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -72,7 +78,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -120,7 +127,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -234,7 +242,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-30"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -755,7 +764,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-05-20"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Rep. Mejia and Rep. Dingell Sound Alarm on GOP Medicaid Cuts Threatening Healthcare Access For Millions",
+          "reasoning": "Opposition to Medicaid cuts indicates support for maintaining or increasing government spending on healthcare programs.",
+          "source": "https://mejia.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -825,7 +840,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-05-12"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

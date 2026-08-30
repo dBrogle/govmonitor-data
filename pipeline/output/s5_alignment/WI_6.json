@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 116,
+    "truth_score": {
+      "score": 57,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:03:11+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -386,7 +392,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -577,7 +584,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The less the government takes from its citizens, the more money Americans can use to provide for their families, save for the future and grow our economy.",
+          "reasoning": "Explicit support for tax cuts and lower government revenue collection.",
+          "source": "https://grothman.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2231,7 +2244,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As your representative in Washington, I will work to cut spending, root out waste and balance the federal budget.",
+          "reasoning": "Direct call to reduce federal spending and balance budget.",
+          "source": "https://grothman.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2378,7 +2397,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2602,7 +2622,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

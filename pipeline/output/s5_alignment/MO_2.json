@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 320,
     "votes_without_analysis": 102,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:51:41+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -385,7 +391,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Wagner Votes to Advance Peace Through Strength, Invest in Missouri-made Defense Production July 22, 2026 Press Release Washington, D.C. \u2013 Congresswoman Ann Wagner (R-MO) released the following statement after she voted for H.R. 8800, the National Defense Authorization Act for Fiscal Year 2027:",
+          "reasoning": "The text explicitly supports increased defense spending via NDAA vote and defense production investment.",
+          "source": "https://wagner.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -565,7 +577,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I will always be committed to keeping taxes low for hardworking families and getting government out of the way so that Americans can do what they do best: work hard and innovate in pursuit of their dreams.",
+          "reasoning": "The text directly states commitment to keeping taxes low.",
+          "source": "https://wagner.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2131,7 +2149,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-14"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We are never going to be able to tax, borrow, and spend our way to a strong economy--it is American business and entrepreneurs that make our economy grow.",
+          "reasoning": "The text criticizes borrow-and-spend policies and highlights debt crisis as unsustainable.",
+          "source": "https://wagner.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2377,7 +2401,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a former United States Ambassador, I saw firsthand what strong ties with our allies and partners mean to an enhanced national security, free and fair trade, the protection of American interests abroad, and the promotion of democracy and human rights.",
+          "reasoning": "The text endorses free and fair trade as a core principle.",
+          "source": "https://wagner.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2546,7 +2576,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

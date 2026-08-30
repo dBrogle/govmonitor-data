@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 319,
     "votes_without_analysis": 103,
+    "truth_score": {
+      "score": 40,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:47:56+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -354,7 +360,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -545,7 +552,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2089,7 +2097,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The landmark legislation delivers historic savings by reigning in government waste, fraud, and abuse while unleashing pro-growth policies that strengthen the economy and protect taxpayers.",
+          "reasoning": "Explicit support for reducing government spending via savings and curbing waste.",
+          "source": "https://stutzman.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2280,7 +2294,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Second, the Strait of Hormuz must be open for free and fair global trade.",
+          "reasoning": "Explicit endorsement of free and fair global trade.",
+          "source": "https://stutzman.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2427,7 +2447,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "transition the United States-Israel relationship away from one of traditional foreign assistance towards a new era of mutual cooperation, joint investment",
+          "reasoning": "Explicit call to move away from traditional foreign assistance.",
+          "source": "https://stutzman.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

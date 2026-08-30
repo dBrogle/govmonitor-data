@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 310,
     "votes_without_analysis": 105,
+    "truth_score": {
+      "score": 45,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:57:43+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -287,7 +293,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "advocating for poverty-busting policies such as restoring expansions of the Child Tax Credit and the Low-Income Housing Credit. Moreover, I am fighting for the Earned Income Tax Credit",
+          "reasoning": "Text explicitly supports expanding multiple tax credits, indicating a position favoring lower taxes.",
+          "source": "https://evans.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -566,7 +578,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2253,7 +2266,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Addressing this crisis involves significant investments in our housing infrastructure and expanding fair housing protections.",
+          "reasoning": "Multiple statements endorse increased federal investments, funding packages, and voting for major spending legislation like the Infrastructure and Inflation Reduction Acts.",
+          "source": "https://evans.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2455,7 +2474,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2591,7 +2611,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

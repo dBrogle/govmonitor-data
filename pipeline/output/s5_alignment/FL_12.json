@@ -115,6 +115,12 @@
     "congress": 119,
     "votes_analyzed": 321,
     "votes_without_analysis": 119,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:44:44+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -404,7 +410,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "it is imperative the security and long-term success of the country is not sacrificed through arbitrary cuts to the military's budget",
+          "reasoning": "The statement explicitly opposes cuts to the military budget and emphasizes providing necessary resources to the Armed Forces.",
+          "source": "https://bilirakis.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1970,7 +1982,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "wasteful and duplicative programs are eliminated in order to make government more efficient and accountable",
+          "reasoning": "The statement calls for eliminating wasteful spending and supports balanced budget rules requiring flat or reduced spending.",
+          "source": "https://bilirakis.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2161,7 +2179,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "the Tax Reform law is helping some seniors by dropping the average senior from a 15% tax rate to 12% and doubling the standard deduction",
+          "reasoning": "The statement praises tax reform that lowered rates and increased deductions, indicating support for lower taxes.",
+          "source": "https://bilirakis.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2319,7 +2343,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2510,7 +2535,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 327,
     "votes_without_analysis": 139,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T08:01:52+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -298,7 +304,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "asking the wealthy and large corporations to pay their fair share in taxes to finance further investments in American workers and infrastructure.",
+          "reasoning": "Explicit support for higher taxes on wealthy and corporations.",
+          "source": "https://beyer.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -610,7 +622,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -768,7 +781,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2433,7 +2447,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "helped along by critical investments in the economy like the Inflation Reduction Act, the Infrastructure Investment and Jobs Act, and the CHIPS and Science Act.",
+          "reasoning": "Supports major new government investments and spending programs.",
+          "source": "https://beyer.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2635,7 +2655,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Beyer Denounces Trump\u2019s Idiotic Trade Attack On Canada",
+          "reasoning": "Denounces protectionist trade actions against Canada.",
+          "source": "https://beyer.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

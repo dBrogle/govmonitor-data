@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 332,
     "votes_without_analysis": 115,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:51:32+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -367,7 +373,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "making strong investments in innovation to secure U.S. leadership around the globe",
+          "reasoning": "Text explicitly supports strong investments in defense and innovation for national security.",
+          "source": "https://finstad.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2076,7 +2088,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I have also prioritized responsible spending to bring fiscal discipline back to Washington",
+          "reasoning": "Text advocates for fiscal discipline, balanced budgets, and avoiding additions to national debt.",
+          "source": "https://finstad.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2278,7 +2296,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "secures $1.2 trillion in savings for American taxpayers and delivers the real, long-term reform that Americans voted for",
+          "reasoning": "Text endorses tax cuts legislation that saves taxpayers money and keeps more of their paychecks.",
+          "source": "https://finstad.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2513,7 +2537,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2682,7 +2707,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

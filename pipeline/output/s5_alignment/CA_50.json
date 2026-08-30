@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 120,
+    "truth_score": {
+      "score": 38,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:43:26+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -264,7 +270,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1907,7 +1914,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2219,7 +2227,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I\u2019m ready to work with the President, Republicans, and Democrats on good ideas like revising our tax code to support the middle class, bringing offshore profits back for investment at home, repairing our infrastructure, and strengthening American\u2019s military.",
+          "reasoning": "The statement explicitly supports strengthening the military, indicating a position favoring more military spending.",
+          "source": "https://scottpeters.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2443,7 +2457,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Representatives Peters, San Diego Business Leaders Highlight Harm of Tariffs on San Diego Businesses and Consumers",
+          "reasoning": "The statement highlights harm from tariffs, indicating support for free trade over protectionism.",
+          "source": "https://scottpeters.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2601,7 +2621,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

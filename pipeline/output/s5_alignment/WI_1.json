@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 128,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T08:02:44+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -355,7 +361,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -546,7 +553,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "we must protect good paying jobs by keeping the government's hands off of small businesses and maintaining tax and regulatory relief",
+          "reasoning": "Text explicitly endorses maintaining tax relief, indicating support for lower taxes.",
+          "source": "https://steil.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2112,7 +2125,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Washington has a spending problem and we must act to restore fiscal responsibility",
+          "reasoning": "Text directly criticizes excessive spending and calls for fiscal responsibility, indicating support for less spending.",
+          "source": "https://steil.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2336,7 +2355,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I strongly supported the United States-Mexico-Canada Trade Agreement (USMCA) and worked to get it passed and signed into law. USMCA increases dairy farmers' access to Canada's markets, creates a level playing field for American agricultural exports",
+          "reasoning": "Text praises a free trade agreement for expanding market access, indicating support for free trade.",
+          "source": "https://steil.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2483,7 +2508,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

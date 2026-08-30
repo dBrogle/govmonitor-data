@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 110,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:01:17+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -335,7 +341,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Ensuring that our military remains strong and well equipped to defend our freedoms is essential.",
+          "reasoning": "The statement explicitly supports maintaining a strong and well-equipped military, indicating support for more military spending.",
+          "source": "https://maloy.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -537,7 +549,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2125,7 +2138,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "A smaller federal government leads to a strong and healthy job market, especially for Main Street and America\u2019s small businesses.",
+          "reasoning": "The statement explicitly advocates for a smaller federal government, indicating support for less government spending.",
+          "source": "https://maloy.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2349,7 +2368,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2529,7 +2549,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

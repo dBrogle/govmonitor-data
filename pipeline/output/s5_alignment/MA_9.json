@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 309,
     "votes_without_analysis": 112,
+    "truth_score": {
+      "score": 53,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:49:38+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -417,7 +423,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -630,7 +637,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "by requiring those earning above $400,000 to pay their fair share of Social Security taxes, just like everyone else",
+          "reasoning": "Supports legislation raising Social Security taxes on high earners.",
+          "source": "https://keating.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2317,7 +2330,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "One of Bill\u2019s first actions in Congress was to introduce an amendment to end subsidies for large oil companies",
+          "reasoning": "Advocates ending oil company subsidies, indicating preference for reduced government spending.",
+          "source": "https://keating.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2464,7 +2483,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2655,7 +2675,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "He has also opposed free trade agreements with countries that violate international labor standard.",
+          "reasoning": "Explicitly opposes certain free trade agreements.",
+          "source": "https://keating.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

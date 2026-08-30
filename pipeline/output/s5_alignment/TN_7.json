@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 184,
     "votes_without_analysis": 46,
+    "truth_score": {
+      "score": 97,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:59:22+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -270,7 +276,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-30"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am proud that core provisions of my HONOR Gold Star Families Act made it into the FY27 NDAA. For the first time in nearly two decades, this legislation updates the military death gratuity by increasing the benefit for survivors from $100,000 to $165,000 and indexing future payments to inflation through a cost-of-living adjustment.",
+          "reasoning": "Text supports increased military benefits and NDAA provisions indicating preference for more military spending.",
+          "source": "https://vanepps.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -373,7 +385,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1367,7 +1380,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-11"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -1492,7 +1506,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-15"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -1617,7 +1632,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 333,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:45:38+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -428,7 +434,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2082,7 +2089,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "His administration is also exposing and eliminating tax dollar abuse.",
+          "reasoning": "The member endorses efforts to eliminate wasteful government spending.",
+          "source": "https://austinscott.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2273,7 +2286,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Vital tax relief for all Americans was in this legislation, including my provision to give some tax relief to combat-disabled Purple Heart recipients",
+          "reasoning": "The member explicitly supports tax relief provisions in legislation.",
+          "source": "https://austinscott.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2497,7 +2516,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2655,7 +2675,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

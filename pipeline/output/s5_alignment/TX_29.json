@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 316,
     "votes_without_analysis": 107,
+    "truth_score": {
+      "score": 29,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T08:00:46+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -223,7 +229,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -535,7 +542,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The constant military and technological threats posed by countries like Russia, China, Iran, and North Korea raise the need for robust funding and resources dedicated to the defense and national security of our country.",
+          "reasoning": "Text explicitly calls for robust funding and resources for defense to confront threats.",
+          "source": "https://sylviagarcia.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2277,7 +2290,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2512,7 +2526,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2670,7 +2685,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -28,7 +28,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")
 
 from pipeline.stages import (
-    s1_members, s2_finance, s3_bills, s4_analysis, s5_alignment,
+    s1_members, s2_finance, s3_bills, s4_analysis, s5_alignment, s6_stances,
 )
 
 PIPELINE_DIR = Path(__file__).parent
@@ -38,10 +38,11 @@ STAGES = {
     "finance": ("Campaign finance data", s2_finance),
     "bills": ("Deep-dive bill data", s3_bills),
     "analysis": ("LLM topic scoring", s4_analysis),
+    "stances": ("Stated positions from member websites", s6_stances),
     "alignment": ("Member alignment scores", s5_alignment),
 }
 
-STAGE_ORDER = ["members", "finance", "bills", "analysis", "alignment"]
+STAGE_ORDER = ["members", "finance", "bills", "analysis", "stances", "alignment"]
 
 
 def load_candidates() -> list[dict]:

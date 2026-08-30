@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 314,
     "votes_without_analysis": 101,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:42:51+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -324,7 +330,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -526,7 +533,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -706,7 +714,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Today, I am voting yes on an amendment to block $3.3 billion in American taxpayer dollars for Benjamin Netanyahu and the Israeli military.",
+          "reasoning": "Vote to withhold foreign military financing shows support for less foreign aid spending.",
+          "source": "https://robertgarcia.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2415,7 +2429,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2628,7 +2643,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I will continue working to secure supply chains against destructive tariffs",
+          "reasoning": "Statement explicitly opposes tariffs, indicating support for free trade.",
+          "source": "https://robertgarcia.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

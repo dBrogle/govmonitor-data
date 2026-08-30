@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 107,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:52:15+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -357,7 +363,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "we must ensure that our armed forces have the best weapons, armor, and technology available",
+          "reasoning": "Text explicitly supports investing in stronger military capabilities and votes for NDAA.",
+          "source": "https://ezell.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -559,7 +571,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Yes on the Tax Relief for American Families and Workers Act, which would extend provisions from the Trump Tax Cuts and Jobs Act",
+          "reasoning": "Supports extending tax cut provisions.",
+          "source": "https://ezell.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2125,7 +2143,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I\u2019m standing up against radical spending plans that would destroy our economy",
+          "reasoning": "Explicitly opposes increased/radical spending and wasteful spending.",
+          "source": "https://ezell.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2371,7 +2395,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2518,7 +2543,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

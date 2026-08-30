@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 124,
+    "truth_score": {
+      "score": 89,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:46:16+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -334,7 +340,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Whether it\u2019s cutting taxes, securing the border, strengthening our military, or lowering health care costs",
+          "reasoning": "The statement explicitly supports strengthening the military, aligning with more military spending.",
+          "source": "https://millermeeks.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2021,7 +2033,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -2223,7 +2236,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Lowers Taxes on Working Iowans by increasing the Child Tax Credit and delivering a $6,000 tax deduction for seniors on fixed incomes.",
+          "reasoning": "Multiple statements advocate for tax cuts and preventing tax hikes, aligning with lower taxes.",
+          "source": "https://millermeeks.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2436,7 +2455,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2572,7 +2592,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

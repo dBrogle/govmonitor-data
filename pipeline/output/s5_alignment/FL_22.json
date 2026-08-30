@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 90,
+    "truth_score": {
+      "score": 50,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:45:05+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1793,7 +1799,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "As a Member of the House Appropriations Committee, I have fought for increased funding for child care programs, including the Child Care and Development Block Grant (CCDBG) and Head Start, and Home and Community-Based Services.",
+          "reasoning": "Advocacy for increased funding across multiple programs shows support for more government spending.",
+          "source": "https://frankel.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2017,7 +2029,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I have been proud to support legislation to lower the price of prescription drugs, make home ownership and rent more affordable, and lower taxes for families with children.",
+          "reasoning": "Explicit support for lowering taxes for families indicates a pro-lower-taxes position.",
+          "source": "https://frankel.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2329,7 +2347,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2542,7 +2561,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2722,7 +2742,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "In Congress, as Ranking Member of the National Security, Department of State, and Related Programs Appropriations Subcommittee, I support continued security assistance to Israel and robust funding for Israel\u2019s missile defense capabilities.",
+          "reasoning": "Support for continued and robust security assistance and emergency aid to Israel indicates backing for more foreign aid spending.",
+          "source": "https://frankel.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

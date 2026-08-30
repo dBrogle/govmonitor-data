@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 286,
     "votes_without_analysis": 101,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:44:05+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -343,7 +349,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I believe a strong, well-funded military is essential to ensuring the safety of all Americans and promoting freedom throughout the world. We must ensure our brave troopers have all resources they need to execute their missions.",
+          "reasoning": "Text explicitly endorses a well-funded military and celebrates NDAA passage as historic investment in defense.",
+          "source": "https://dunn.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -545,7 +557,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1946,7 +1959,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "It\u2019s time to put the brakes on government borrowing and overspending, because the tax and spend policies of Washington are hurting families across the country.",
+          "reasoning": "Text directly opposes government overspending and borrowing.",
+          "source": "https://dunn.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2049,7 +2068,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2240,7 +2260,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

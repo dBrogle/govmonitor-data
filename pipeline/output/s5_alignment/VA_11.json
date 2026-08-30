@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 217,
     "votes_without_analysis": 63,
+    "truth_score": {
+      "score": 43,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T08:02:04+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -138,7 +144,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-15"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1231,7 +1238,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-11"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -1455,7 +1463,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-30"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -1547,7 +1556,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -1716,7 +1726,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "In Congress, James opposes harmful tariffs imposed under the Trump administration, which have increased costs for businesses and consumers alike.",
+          "reasoning": "Opposition to tariffs is a clear statement favoring free trade.",
+          "source": "https://walkinshaw.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

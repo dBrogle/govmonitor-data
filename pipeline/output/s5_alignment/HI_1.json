@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 322,
     "votes_without_analysis": 128,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:46:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -264,7 +270,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -587,7 +594,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2219,7 +2227,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Two landmark pieces of legislation, both of which I strongly supported, were enacted in the 117th Congress (2021-2023). The Inflation Reduction Act (IRA) is the largest climate/energy-related investment in our history. ... The other bill, the Bipartisan Infrastructure Law (also known as the BIL or Infrastructure Investment and Jobs Act) is the largest reinvestment in our country\u2019s infrastructure in generations.",
+          "reasoning": "Explicit support for major new federal spending programs indicates preference for more government spending.",
+          "source": "https://case.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2388,7 +2402,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2612,7 +2627,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The Noncontiguous Shipping Relief Act, which exempts noncontiguous regions (not part of the continent) from the Jones Act; the Noncontiguous Shipping Reasonable Rate Act, which caps domestic shipping rates to within 10% of international benchmarks; and The Noncontiguous Shipping Competition Act, which allows noncontiguous regions to invite non-Jones Act vessels to restore competition",
+          "reasoning": "Bills to exempt regions from Jones Act and introduce international competition indicate preference for free trade over protectionism.",
+          "source": "https://case.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

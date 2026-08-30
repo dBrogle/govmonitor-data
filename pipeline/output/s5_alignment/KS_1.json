@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 327,
     "votes_without_analysis": 121,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:48:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -334,7 +340,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The annual bill provides critical resources for U.S. national defense, military readiness, and support for the nation\u2019s service members.",
+          "reasoning": "Text explicitly supports advancing NDAA to provide critical resources for national defense and military readiness.",
+          "source": "https://mann.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2021,7 +2033,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We understand all too well the pain that reckless federal spending can have on everyday Americans, and how overregulation can exacerbate costs for American families.",
+          "reasoning": "Text criticizes reckless federal spending and calls for reining in wasteful spending.",
+          "source": "https://mann.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2234,7 +2252,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congress needs to support policies that restore our economic strength by rolling back unnecessary red tape, lowering taxes, and reining in wasteful and fraudulent spending once and for all.",
+          "reasoning": "Text explicitly calls for lowering taxes as part of economic policy.",
+          "source": "https://mann.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2447,7 +2471,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2605,7 +2630,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

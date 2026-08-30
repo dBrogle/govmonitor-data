@@ -185,6 +185,12 @@
     "congress": 119,
     "votes_analyzed": 325,
     "votes_without_analysis": 97,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:45:31+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1959,7 +1965,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "This bill slashes funding for water and wastewater grants needed by small, rural communities across the country that have a low tax base. This bill guts rural energy programs, reduces rural broadband investments and affordable housing programs, and takes development grants away from our rural businesses.",
+          "reasoning": "Text criticizes spending cuts and calls for maintaining or restoring funding levels across multiple programs.",
+          "source": "https://bishop.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2139,7 +2151,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2451,7 +2464,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The House-passed bill contains several provisions Congressman Bishop strongly supports, including a 5% to 7% military pay raise, improvements to military housing, childcare and education, and investments in munitions production, advanced technology, and the defense industrial base.",
+          "reasoning": "Text explicitly endorses military pay raises, housing improvements, and defense investments while pledging to protect military priorities.",
+          "source": "https://bishop.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2587,7 +2606,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "The amendment prohibited funds in the bill from being used for Israel as well as humanitarian aid for Palestinian refugees and civilians in Gaza.",
+          "reasoning": "Text states opposition to an amendment cutting aid to Israel and humanitarian assistance, showing support for foreign aid spending.",
+          "source": "https://bishop.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2800,7 +2825,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Agricultural producers are facing increased fuel and input costs because of an unauthorized war in Iran and chaotic tariffs.",
+          "reasoning": "Text negatively characterizes tariffs as chaotic, indicating preference for free trade.",
+          "source": "https://bishop.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

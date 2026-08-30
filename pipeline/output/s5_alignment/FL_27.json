@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 291,
     "votes_without_analysis": 96,
+    "truth_score": {
+      "score": 89,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:45:18+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -334,7 +340,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -558,7 +565,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "focused on No Tax on Tips, the pressures facing locally owned restaurants, and the industry\u2019s need for a stable, legal workforce.",
+          "reasoning": "The press release explicitly highlights support for No Tax on Tips, indicating a position favoring lower taxes.",
+          "source": "https://salazar.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2014,7 +2027,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "see firsthand how the $1 million in federal funding she secured is improving the lives of children, families, seniors, and residents across the community.",
+          "reasoning": "The statement praises securing and using federal funding for a community center, indicating support for more government spending.",
+          "source": "https://salazar.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2172,7 +2191,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2385,7 +2405,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

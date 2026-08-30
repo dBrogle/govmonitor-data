@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 143,
+    "truth_score": {
+      "score": 80,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:54:13+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -276,7 +282,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "against harmful bills\u2014including the GOP Tax Bill\u2014that threaten the prosperity of all New Jerseyans",
+          "reasoning": "Opposition to the GOP Tax Bill (a tax-cut measure) indicates a position favoring higher taxes.",
+          "source": "https://watsoncoleman.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -588,7 +600,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2352,7 +2365,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2499,7 +2513,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2712,7 +2727,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

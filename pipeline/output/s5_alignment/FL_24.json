@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 245,
     "votes_without_analysis": 94,
+    "truth_score": {
+      "score": 48,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:45:18+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -263,7 +269,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -498,7 +505,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "In Congress, she will continue to advocate that our troops have the best equipment, healthcare, and services available.",
+          "reasoning": "The statement explicitly supports providing the best equipment and services to troops, indicating a position favoring more military spending.",
+          "source": "https://wilson.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1745,7 +1758,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "This is why I sponsored the Jobs Now Act, a 21st Century update to President Nixon's Comprehensive Employment and Training Act (CETA) program, to provide funding directly to local governments to train and hire millions of Americans to do crucial work in our communities.",
+          "reasoning": "The statement endorses new federal funding programs for jobs and training, indicating support for increased government spending.",
+          "source": "https://wilson.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -1859,7 +1878,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -1995,7 +2015,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

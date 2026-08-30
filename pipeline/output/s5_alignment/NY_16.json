@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 315,
     "votes_without_analysis": 108,
+    "truth_score": {
+      "score": 63,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:55:38+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -226,7 +232,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "This plan would hand $7 trillion in tax giveaways to billionaires while cutting Medicare and SNAP benefits for working-and-middle class families",
+          "reasoning": "Opposition to tax giveaways for billionaires indicates a stance against lower taxes.",
+          "source": "https://latimer.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1825,7 +1837,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "This plan would hand $7 trillion in tax giveaways to billionaires while cutting Medicare and SNAP benefits for working-and-middle class families",
+          "reasoning": "Opposition to cuts in benefits programs indicates support for more government spending.",
+          "source": "https://latimer.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2115,7 +2133,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2328,7 +2347,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Today Congressman George Latimer (NY-16) took to the House floor to denounce President Donald Trump\u2019s proposed 25% tariffs on our allies Canada and Mexico.",
+          "reasoning": "Denouncing tariffs on allies indicates support for free trade.",
+          "source": "https://latimer.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2486,7 +2511,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -16,6 +16,7 @@ MEMBERS_DIR = Path(__file__).parent.parent / "output" / "s1_members"
 FINANCE_DIR = Path(__file__).parent.parent / "output" / "s2_finance"
 BILLS_DIR = Path(__file__).parent.parent / "output" / "s3_bills"
 ANALYSIS_DIR = Path(__file__).parent.parent / "output" / "s4_analysis"
+STANCES_DIR = Path(__file__).parent.parent / "output" / "s6_stances"
 VOTE_MEMBERS_CACHE = CACHE_DIR / "vote_members"
 
 CONGRESS_URL = "https://www.congress.gov/bill/{congress}th-congress/{path}/{number}"
@@ -324,6 +325,45 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
         # like government_spending would dominate for nearly everyone.)
         alignments.sort(key=lambda x: abs(x["alignment"]), reverse=True)
 
+        # ── Attach stated positions + compute the truth score ────────────
+        # Pair each topic's vote-based lean with the member's STATED stance (from s6_stances):
+        # two comparable −1..+1 scores (the double bars). The truth score is their agreement,
+        # over topics where the member both took a clear public position AND has enough votes to
+        # trust the lean — the confidence gate keeps a protest vote or thin record from reading
+        # as a "lie".
+        stances_data = _load_json(STANCES_DIR / f"{state}_{district}.json")
+        stated_by_slug = {
+            s["topic_slug"]: s
+            for s in (stances_data or {}).get("stances", [])
+            if s.get("addressed") and s.get("stated_score") is not None
+        }
+
+        truth_pairs = []  # per-topic consistency in [0, 1] over comparable, confident topics
+        for a in alignments:
+            st = stated_by_slug.get(a["topic_slug"])
+            if not st:
+                a["stated"] = None
+                continue
+            a["stated"] = {
+                "score": round(st["stated_score"], 4),
+                "quote": st.get("quote"),
+                "reasoning": st.get("reasoning"),
+                "source": (stances_data or {}).get("website"),
+            }
+            if a["confidence"] in ("medium", "high"):
+                gap = abs(st["stated_score"] - a["alignment"])  # 0..2 on the shared axis
+                truth_pairs.append(1 - gap / 2)                 # 1 = identical, 0 = opposite
+
+        truth_score = {
+            "score": round(sum(truth_pairs) / len(truth_pairs) * 100) if truth_pairs else None,
+            "topics_compared": len(truth_pairs),
+            "fetched_at": (stances_data or {}).get("fetched_at"),
+            "note": (
+                "Agreement between stated positions and voting record on high-confidence topics "
+                "(100 = words match votes exactly). Null if too few comparable topics."
+            ),
+        }
+
         topics_with_signal = {a["topic_slug"] for a in alignments}
         silent_topics = [
             {"topic_slug": t.slug, "topic_name": t.name}
@@ -350,6 +390,7 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
                 "congress": congress,
                 "votes_analyzed": bills_scored,
                 "votes_without_analysis": bills_skipped,
+                "truth_score": truth_score,
                 "topics": alignments,
                 "topics_without_signal": silent_topics,
             },

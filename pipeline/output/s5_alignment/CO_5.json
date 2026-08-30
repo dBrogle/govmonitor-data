@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 95,
+    "truth_score": {
+      "score": 89,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:43:41+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -314,7 +320,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "$60 billion to provide funding for operational costs, military pay and readiness, and munitions investment, to support our service members and ensure the U.S. military remains the most lethal fighting force across the globe.",
+          "reasoning": "The statements explicitly support increased defense funding and NDAA advancement for military readiness and pay raises.",
+          "source": "https://crank.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -538,7 +550,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "This past year alone, President Trump and his Administration have worked with House Republicans to pass the largest tax cut in American history",
+          "reasoning": "The text praises the largest tax cut in history, indicating support for lower taxes.",
+          "source": "https://crank.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2214,7 +2232,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2427,7 +2446,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2563,7 +2583,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

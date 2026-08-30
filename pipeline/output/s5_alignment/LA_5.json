@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 314,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 88,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:48:48+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -323,7 +329,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I voted for the National Defense Authorization Act (NDAA) to support our men and women in uniform and protect our national security. The House-passed NDAA provides a pay raise for our troops while increasing our military readiness amid continued threats from foreign adversaries.",
+          "reasoning": "The statement explicitly endorses the NDAA for increasing military readiness and support.",
+          "source": "https://letlow.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -514,7 +526,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "With passage of President Trump\u2019s pro-family agenda, we have provided tax relief for the middle class and saved every American from a tax increase.",
+          "reasoning": "The text repeatedly advocates tax relief, extensions of tax cuts, and preventing tax increases.",
+          "source": "https://letlow.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2124,7 +2142,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2315,7 +2334,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2451,7 +2471,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

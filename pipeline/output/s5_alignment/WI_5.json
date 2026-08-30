@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 122,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T08:03:09+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -345,7 +351,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "which includes key conservative victories, including securing servicemembers the largest pay raise in twenty years, ending the liberal ideology infiltrating the U.S. military, and a Parents\u2019 Bill of Rights for military families.",
+          "reasoning": "The text shows support for NDAA passage including military pay raises and readiness.",
+          "source": "https://fitzgerald.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -547,7 +559,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "make permanent the 100 percent bonus depreciation credit passed as part of the Tax Cuts and Jobs Act (TCJA)",
+          "reasoning": "The text explicitly endorses extending TCJA tax provisions to favor manufacturers.",
+          "source": "https://fitzgerald.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2102,7 +2120,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Inflationary pressures will only worsen if we do not work to cut reckless spending.",
+          "reasoning": "The text directly advocates cutting government spending to address inflation.",
+          "source": "https://fitzgerald.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2282,7 +2306,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2517,7 +2542,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

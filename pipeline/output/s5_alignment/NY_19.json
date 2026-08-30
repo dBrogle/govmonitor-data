@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 102,
+    "truth_score": {
+      "score": 27,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:55:51+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1711,7 +1717,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -1902,7 +1909,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-26"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Josh\u2019s You Earned It, You Keep It Act eliminates federal taxes on all Social Security benefits and puts money directly back into senior\u2019s pockets.",
+          "reasoning": "Text explicitly supports eliminating federal taxes on Social Security benefits, indicating a position favoring lower taxes.",
+          "source": "https://riley.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2126,7 +2139,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2416,7 +2430,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2574,7 +2589,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

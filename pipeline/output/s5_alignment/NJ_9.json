@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 327,
     "votes_without_analysis": 106,
+    "truth_score": {
+      "score": 46,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:54:09+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -215,7 +221,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1979,7 +1986,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2291,7 +2299,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2449,7 +2458,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "America providing Ukraine with patriot missile technology is long overdue and should have been done some time ago... America must give our Ukrainian allies whatever resources they need to finish the job",
+          "reasoning": "Support for providing missile technology and resources to Ukraine indicates favoring more foreign aid spending.",
+          "source": "https://pou.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2684,7 +2699,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congresswoman Nellie Pou (D-NJ-09) tonight hammered the 25 percent tariffs imposed by President Donald Trump on Canada and Mexico.",
+          "reasoning": "Explicit criticism of tariffs indicates support for free trade over protectionism.",
+          "source": "https://pou.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

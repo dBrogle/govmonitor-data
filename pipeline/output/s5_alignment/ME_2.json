@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 319,
     "votes_without_analysis": 100,
+    "truth_score": {
+      "score": 60,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:50:17+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1719,7 +1725,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -1921,7 +1928,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2156,7 +2164,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "His proposed 10 percent universal tariff is designed to reorient our economy from one based on consumption to one built on production",
+          "reasoning": "Text advocates universal tariff as protectionist policy.",
+          "source": "https://golden.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2314,7 +2328,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "A bipartisan group of military veterans today called on Secretary of State Antony Blinken to formalize a security assistance memorandum of understanding (MOU) with Ukraine.",
+          "reasoning": "Text supports security assistance to Ukraine, indicating more foreign aid.",
+          "source": "https://golden.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2626,7 +2646,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "In addition to providing authorization for funds necessary to protect America and provide for our troops, the bill increases troop pay and includes funding for the construction of destroyers built at Bath Iron Works.",
+          "reasoning": "Text explicitly supports NDAA funding for troops and shipbuilding.",
+          "source": "https://golden.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

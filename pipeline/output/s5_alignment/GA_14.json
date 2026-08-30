@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 82,
     "votes_without_analysis": 57,
+    "truth_score": {
+      "score": 92,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:46:15+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -127,7 +133,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-30"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "which funds the pay raise President Trump requested for America's service members and authorizes $1.1 trillion for national defense",
+          "reasoning": "The text explicitly supports the NDAA authorizing $1.1 trillion in defense spending and calls a strong national defense essential.",
+          "source": "https://fuller.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -516,7 +528,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -608,7 +621,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-15"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -645,7 +659,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-05-12"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -693,7 +708,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

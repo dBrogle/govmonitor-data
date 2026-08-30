@@ -135,6 +135,12 @@
     "congress": 119,
     "votes_analyzed": 317,
     "votes_without_analysis": 108,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:57:08+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -435,7 +441,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am a champion for a strong national defense and returning fiscal discipline to the Pentagon.",
+          "reasoning": "Text explicitly champions strong national defense and votes for NDAA, indicating support for more military spending.",
+          "source": "https://cole.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2089,7 +2101,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must also rein in the Biden Administration\u2019s excessive government spending and misguided policies, which instigated our present inflation crisis and threaten to drive our economy into a painful recession.",
+          "reasoning": "Text calls for reining in excessive government spending to address debt and inflation, indicating preference for less spending.",
+          "source": "https://cole.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2280,7 +2298,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I support maintaining low individual tax rates and permitting Americans to keep more of their hard-earned money and voted for legislation to increase the size of the standard deduction and child tax credit.",
+          "reasoning": "Text states support for maintaining low tax rates and keeping more earnings, indicating preference for lower taxes.",
+          "source": "https://cole.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2504,7 +2528,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2651,7 +2676,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 341,
     "votes_without_analysis": 74,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:44:58+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -268,7 +274,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a fiscal conservative with an extensive background in finance and banking, I support a simplified tax code that will stimulate private sector investment, individual wealth creation, reduce bureaucratic red-tape, and promote job creation.",
+          "reasoning": "Supports simplified tax code to stimulate investment and wealth creation, indicating preference for lower taxes.",
+          "source": "https://donalds.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -580,7 +592,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2344,7 +2357,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "That is why I will work to sponsor and pass a Balanced Budget Amendment, which requires both the House and the Senate to pass a balanced budget annually to regain and restore long-term financial stability in the United States.",
+          "reasoning": "Opposes reckless spending and supports balanced budget amendment to reduce federal spending.",
+          "source": "https://donalds.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2502,7 +2521,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2682,7 +2702,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

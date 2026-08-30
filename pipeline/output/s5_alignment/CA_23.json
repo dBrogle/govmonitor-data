@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 325,
     "votes_without_analysis": 119,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:41:24+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -345,7 +351,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2076,7 +2083,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "lower government spending",
+          "reasoning": "Text explicitly calls for lowering government spending.",
+          "source": "https://obernolte.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2256,7 +2269,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "lower taxes to encourage job growth",
+          "reasoning": "Text explicitly advocates lowering taxes.",
+          "source": "https://obernolte.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2480,7 +2499,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2627,7 +2647,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

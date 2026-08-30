@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 341,
     "votes_without_analysis": 114,
+    "truth_score": {
+      "score": 56,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:39:31+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -354,7 +360,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -512,7 +519,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -747,7 +755,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "A constitutional amendment requiring the federal government to operate under a balanced budget by permanently prohibiting deficit spending and placing a two-thirds supermajority requirement on any bill that creates a new tax in any way.",
+          "reasoning": "Explicit support for making new taxes more difficult indicates preference for lower taxes.",
+          "source": "https://biggs.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -960,7 +974,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2658,7 +2673,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "For decades, Members of Congress have shown catastrophic unseriousness about reining in government spending and leaving a better future for the next generation.",
+          "reasoning": "Direct criticism of unchecked spending and calls to reduce it show preference for less government spending.",
+          "source": "https://biggs.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

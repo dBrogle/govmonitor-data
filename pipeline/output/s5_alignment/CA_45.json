@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 327,
     "votes_without_analysis": 104,
+    "truth_score": {
+      "score": 35,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:43:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1711,7 +1717,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -1902,7 +1909,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2269,7 +2277,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "President Trump\u2018s decision to gut joint military exercises with South Korea is dangerous. South Korea is one of America\u2019s most critical allies in the Indo-Pacific. Reducing these readiness drills serves no legitimate national security objective; instead, it sacrifices vital military deterrence for short-term political posturing and transactional foreign policy.",
+          "reasoning": "The statement explicitly criticizes reducing military exercises as dangerous and lacking national security justification, indicating support for maintaining or increasing defense readiness.",
+          "source": "https://tran.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2493,7 +2507,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2684,7 +2699,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

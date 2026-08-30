@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 312,
     "votes_without_analysis": 108,
+    "truth_score": {
+      "score": 79,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T08:02:33+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -336,7 +342,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -472,7 +479,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "My vote reflects the need for a fundamental change in our approach to the far-right Netanyahu government \u2013 one that is long overdue. That means no more additional funding for offensive weapons.",
+          "reasoning": "Explicit vote and statement supporting cuts to military aid to Israel indicates preference for less foreign aid spending.",
+          "source": "https://randall.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -663,7 +676,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2328,7 +2342,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2552,7 +2567,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

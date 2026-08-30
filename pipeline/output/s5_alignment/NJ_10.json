@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 333,
     "votes_without_analysis": 106,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:54:11+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -236,7 +242,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -526,7 +533,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2334,7 +2342,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I am committed to advancing legislation that strengthens and expands federal housing assistance programs, including Section 8 vouchers, the Low-Income Housing Tax Credit (LIHTC), and other critical initiatives that support housing access for those who need it most.",
+          "reasoning": "Multiple statements explicitly support expanding federal funding and investments across housing, education, healthcare, and environment.",
+          "source": "https://mciver.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2503,7 +2517,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2716,7 +2731,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 106,
+    "truth_score": {
+      "score": 68,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:59:01+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -335,7 +341,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We need leadership in our military that prioritizes bolstering our military, not DEI initiatives.",
+          "reasoning": "The statement explicitly calls for bolstering the military, indicating support for increased defense resources.",
+          "source": "https://fry.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -526,7 +538,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "This legislation would also prevent the IRS from using its $80 billion increase to target Americans for the purpose of squeezing even more dollars from the pockets of hard-working Americans.",
+          "reasoning": "The text opposes measures that would extract more tax revenue from Americans, favoring lower effective taxation.",
+          "source": "https://fry.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2147,7 +2165,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must cut wasteful spending to fight inflation.",
+          "reasoning": "The statement directly advocates cutting wasteful spending to address economic issues.",
+          "source": "https://fry.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2360,7 +2384,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2518,7 +2543,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

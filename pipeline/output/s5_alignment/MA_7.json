@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 338,
     "votes_without_analysis": 106,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:49:23+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -377,7 +383,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "It\u2019s much easier to inflate the military budget to $1.5 trillion and throw our country deeper into an endless war with Iran than to create lasting peace.",
+          "reasoning": "Text explicitly criticizes inflating the military budget and calls for shifting priorities away from war and militarism.",
+          "source": "https://pressley.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -579,7 +591,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2497,7 +2510,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I voted NO on Trump and Republicans\u2019 spending bill that will make families poorer, sicker & more vulnerable. We have a healthcare crisis thanks to their Big, Ugly Bill, which ripped away Medicaid from millions & will raise healthcare costs",
+          "reasoning": "Opposition to a bill that cuts Medicaid and food assistance indicates support for maintaining or increasing such government spending.",
+          "source": "https://pressley.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2666,7 +2685,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2879,7 +2899,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Pressley, Lawmakers Demand Trump Admin. Exempt Essential Baby Products from Harmful Tariffs",
+          "reasoning": "Explicit opposition to harmful tariffs supports free trade over protectionism.",
+          "source": "https://pressley.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

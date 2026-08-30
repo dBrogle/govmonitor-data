@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 109,
+    "truth_score": {
+      "score": 30,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:42:08+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -214,7 +220,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -515,7 +522,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "voted yes on the Fiscal Year 2026 National Defense Authorization Act. The bipartisan legislation included a critical investment in southern California manufacturers, a 3.8% raise for servicemembers, support for our allies abroad, and much needed oversight to hold Secretary Hegseth accountable.",
+          "reasoning": "Text explicitly endorses NDAA passage with investments and raises for servicemembers.",
+          "source": "https://cisneros.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -662,7 +675,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2349,7 +2363,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2562,7 +2577,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

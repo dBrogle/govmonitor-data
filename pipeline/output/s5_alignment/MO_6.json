@@ -145,6 +145,12 @@
     "congress": 119,
     "votes_analyzed": 296,
     "votes_without_analysis": 107,
+    "truth_score": {
+      "score": 87,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:51:53+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -434,7 +440,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "\u201cAs threats around the world continue to increase, we have to give our warfighters the tools and resources they need to successfully defend our country,\u201d said Graves. \u201cPeace through strength requires increasing production of critical weapons, developing the workforce needed to produce them and investing in our military.",
+          "reasoning": "Text explicitly supports increasing military investment and production in the NDAA.",
+          "source": "https://graves.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -658,7 +670,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2213,7 +2226,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congressman Sam Graves (MO-06), Chairman of the House Transportation and Infrastructure Committee, announced that Sullivan County and the City of Milan has received a $9.3 million BUILD (Better Utilizing Investments to Leverage Development) Grant to improve their infrastructure.",
+          "reasoning": "Multiple announcements of securing and approving federal grants and infrastructure spending bills indicate support for increased government spending.",
+          "source": "https://graves.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2371,7 +2390,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2551,7 +2571,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

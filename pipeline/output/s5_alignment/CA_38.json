@@ -135,6 +135,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 103,
+    "truth_score": {
+      "score": 61,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:42:42+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -391,7 +397,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "It is no secret that recent partisan Republican changes to the tax code picked multinational corporate winners while leaving too many working families as the losers.",
+          "reasoning": "Criticism of 2017 tax cuts indicates preference for higher or more progressive taxation.",
+          "source": "https://lindasanchez.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -681,7 +693,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2445,7 +2458,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I will continue working with my colleagues to protect, strengthen, and expand Social Security.",
+          "reasoning": "Explicit support for expanding entitlement programs shows preference for more government spending.",
+          "source": "https://lindasanchez.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2669,7 +2688,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "S\u00e1nchez: Trump\u2019s latest tariffs aren\u2019t serious attempt to combat forced labor",
+          "reasoning": "Criticism of tariffs indicates support for free trade over protectionism.",
+          "source": "https://lindasanchez.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2805,7 +2830,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

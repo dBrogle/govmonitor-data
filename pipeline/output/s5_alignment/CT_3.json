@@ -195,6 +195,12 @@
     "congress": 119,
     "votes_analyzed": 349,
     "votes_without_analysis": 104,
+    "truth_score": {
+      "score": 82,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:43:52+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -418,7 +424,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "allowing the tax rates for the wealthiest 2% of Americans, to return to the Clinton-era rates.",
+          "reasoning": "Text explicitly supports returning to higher Clinton-era tax rates on the wealthiest Americans.",
+          "source": "https://delauro.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2248,7 +2260,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2560,7 +2573,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2828,7 +2842,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2986,7 +3001,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

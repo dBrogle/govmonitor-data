@@ -195,6 +195,12 @@
     "congress": 119,
     "votes_analyzed": 333,
     "votes_without_analysis": 109,
+    "truth_score": {
+      "score": 63,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:42:57+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -385,7 +391,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -708,7 +715,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2494,7 +2502,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I was absolutely appalled to learn of the Trump administration\u2019s plans to slash $40 billion from the budget of the Department of Health and Human Services.",
+          "reasoning": "Statements oppose budget cuts to HHS and homelessness grants, indicating support for more government spending.",
+          "source": "https://waters.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2707,7 +2721,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "denounces plans to downsize the State Department and withdraw from world leadership, especially in sub-Saharan Africa",
+          "reasoning": "Statements criticize dismantling USAID and downsizing State Department, indicating support for more foreign aid spending.",
+          "source": "https://waters.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2964,7 +2984,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

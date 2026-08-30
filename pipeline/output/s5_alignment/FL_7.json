@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 76,
     "votes_without_analysis": 37,
+    "truth_score": {
+      "score": 56,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:44:24+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -170,7 +176,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Peace through strength requires more than words, it requires action. The House passed the FY27 National Defense Authorization Act to ensure our military remains the most capable fighting force in the world.",
+          "reasoning": "The statement explicitly endorses the NDAA to strengthen military capabilities.",
+          "source": "https://mills.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -647,7 +659,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-24"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "marking a major step toward restoring fiscal discipline and putting an end to years of Biden-era wasteful policies.",
+          "reasoning": "The statement advocates fiscal discipline and ending wasteful spending.",
+          "source": "https://mills.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -673,7 +691,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Americans know that when taxes are cut, businesses thrive, but apparently the bureaucrats in the CBO disagree.",
+          "reasoning": "The text praises tax cuts and criticizes barriers to them.",
+          "source": "https://mills.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -721,7 +745,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -802,7 +827,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

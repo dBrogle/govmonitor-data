@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 334,
     "votes_without_analysis": 95,
+    "truth_score": {
+      "score": 54,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:40:00+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -406,7 +412,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -630,7 +637,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "America\u2019s problem is not that we tax too little, but that we spend far too much. I will not vote to increase taxes.",
+          "reasoning": "Text explicitly opposes tax increases, aligning with lower taxes.",
+          "source": "https://gosar.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -777,7 +790,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2442,7 +2456,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "America\u2019s problem is not that we tax too little, but that we spend far too much.",
+          "reasoning": "Text states spending is excessive and supports spending cuts.",
+          "source": "https://gosar.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2655,7 +2675,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 335,
     "votes_without_analysis": 112,
+    "truth_score": {
+      "score": 39,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:43:08+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -204,7 +210,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -494,7 +501,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Representative Dave Min (CA-47) issued the following statement after President Trump abruptly ordered a substantial reduction in joint U.S.\u2013South Korea military exercises as the annual Ulchi Freedom Shield exercises began:",
+          "reasoning": "The statement criticizes the reduction of joint military exercises as undermining a key alliance and U.S. strategic interests.",
+          "source": "https://min.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2192,7 +2205,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2361,7 +2375,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2574,7 +2589,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Representative Dave Min (CA-47), along with members of the Congressional Asian Pacific American Caucus (CAPAC) slammed the devastating impacts of President Trump\u2019s tariffs on Asian American businesses and communities across the country.",
+          "reasoning": "The statement opposes tariffs, indicating support for free trade over protectionism.",
+          "source": "https://min.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

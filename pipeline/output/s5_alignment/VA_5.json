@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 332,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T08:01:42+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -314,7 +320,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "U.S. Representative John McGuire (VA-05), voted for the Fiscal Year 2026 National Defense Authorization Act (NDAA) through the House Committee on Armed Services. This NDAA enhances peace through strength, reforms defense acquisition, improves servicemembers\u2019 quality of life, expedites in",
+          "reasoning": "Multiple votes and statements explicitly support NDAA and military construction appropriations, indicating position favoring more military spending.",
+          "source": "https://mcguire.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -516,7 +528,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The One Big Beautiful Bill Act advances President Trump\u2019s America First agenda, prevents the largest tax hike in American history, provides for American energy dominance, secures our border, supports families and small businesses, and cuts wasteful spending.",
+          "reasoning": "Explicit statement opposing the largest tax hike shows support for lower taxes.",
+          "source": "https://mcguire.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2082,7 +2100,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The One Big Beautiful Bill Act advances President Trump\u2019s America First agenda, prevents the largest tax hike in American history, provides for American energy dominance, secures our border, supports families and small businesses, and cuts wasteful spending.",
+          "reasoning": "Explicit mention of cutting wasteful spending indicates position favoring less government spending.",
+          "source": "https://mcguire.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2284,7 +2308,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2420,7 +2445,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-12-10"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

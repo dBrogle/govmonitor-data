@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 322,
     "votes_without_analysis": 91,
+    "truth_score": {
+      "score": 48,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:56:55+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -214,7 +220,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -493,7 +500,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -651,7 +659,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2195,7 +2204,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congress must stop spending money we do not have and work to eliminate the waste, fraud, and abuse currently found within the federal government.",
+          "reasoning": "Text explicitly calls for stopping excess federal spending and eliminating waste.",
+          "source": "https://brecheen.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2408,7 +2423,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

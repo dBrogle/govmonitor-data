@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 319,
     "votes_without_analysis": 117,
+    "truth_score": {
+      "score": 45,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:38:50+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -226,7 +232,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Today, Congressman Shomari C. Figures (AL-02) introduced the Affordable Youth Enrichment Opportunities Act, a bill to provide a federal tax deduction for parents who pay out-of-pocket expenses for enrichment opportunities for their children.",
+          "reasoning": "The bill introduces a tax deduction, directly supporting lower taxes.",
+          "source": "https://figures.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2001,7 +2013,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2291,7 +2304,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2515,7 +2529,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "he plans to introduce legislation to reverse President Trump\u2019s plan to allow up to 300,000 metric tons of foreign ground beef to enter the United States tariff-free over the next 90 days\u2014a move that gives little to no relief to consumers and serves as a significant disadvantage to American cattle farmers.",
+          "reasoning": "Opposition to tariff-free imports shows support for protectionist policies.",
+          "source": "https://figures.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2662,7 +2682,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 103,
+    "truth_score": {
+      "score": 38,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:39:07+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -406,7 +412,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2016,7 +2023,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "he is also a conservative that believes we can reduce the dependence of farmers on the federal government through opening new markets and through better risk management tools.",
+          "reasoning": "The text explicitly advocates reducing farmers' dependence on federal government support.",
+          "source": "https://crawford.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2207,7 +2220,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2354,7 +2368,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2644,7 +2659,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congressman Crawford doesn't believe it makes sense to deny our farmers and ranchers access to Cuban markets, particularly when our continued insistence on maintaining the embargo yields the same lackluster result.",
+          "reasoning": "The text explicitly supports easing trade restrictions to expand market access.",
+          "source": "https://crawford.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

@@ -105,6 +105,12 @@
     "congress": 119,
     "votes_analyzed": 311,
     "votes_without_analysis": 112,
+    "truth_score": {
+      "score": 41,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:50:09+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -295,7 +301,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -596,7 +603,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Ever since being elected to Congress, I've been proud to advocate for the best shipbuilders in the world at Bath Iron Works and to keep them working",
+          "reasoning": "Text explicitly advocates for maintaining shipbuilding work at a major military contractor.",
+          "source": "https://pingree.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2250,7 +2263,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2474,7 +2488,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2643,7 +2658,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "As Russia continues its unprovoked attack on the people of Ukraine, I am working at home and abroad to support Ukraine and our allies through this humanitarian crisis.",
+          "reasoning": "Text explicitly supports providing aid and resources to Ukraine.",
+          "source": "https://pingree.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

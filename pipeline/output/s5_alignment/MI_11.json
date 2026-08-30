@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 325,
     "votes_without_analysis": 145,
+    "truth_score": {
+      "score": 63,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:50:47+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -245,7 +251,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "the Trump administration is\u2026giving the billionaires a tax cut, but slashing healthcare and food assistance for us",
+          "reasoning": "Criticism of tax cuts for billionaires indicates opposition to lower taxes.",
+          "source": "https://stevens.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1866,7 +1878,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "the Trump administration is\u2026giving the billionaires a tax cut, but slashing healthcare and food assistance for us",
+          "reasoning": "Opposition to slashing healthcare and food assistance indicates support for more government spending.",
+          "source": "https://stevens.house.gov/"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2156,7 +2174,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2391,7 +2410,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congress must pass my No Tariffs on Groceries Act now to stop Trump\u2019s reckless trade policies from making grocery bills more expensive.",
+          "reasoning": "Opposition to tariffs and call for no-tariffs legislation indicates support for free trade.",
+          "source": "https://stevens.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2549,7 +2574,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

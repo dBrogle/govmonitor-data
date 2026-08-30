@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 329,
     "votes_without_analysis": 119,
+    "truth_score": {
+      "score": 50,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:56:51+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -236,7 +242,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Reps. Sykes, Malliotakis, Horsford, LaLota, Suozzi, Fitzpatrick Introduce Bipartisan No Tax on Overtime for All Workers Act",
+          "reasoning": "Supports specific tax relief measures for workers.",
+          "source": "https://sykes.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2033,7 +2045,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congresswoman Sykes is firmly committed to protecting and strengthening Medicare, Medicaid, and Social Security, and she will always oppose any cuts to these hard-earned benefits.",
+          "reasoning": "Opposes cuts and supports full funding for multiple programs.",
+          "source": "https://sykes.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2224,7 +2242,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2525,7 +2544,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2672,7 +2692,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

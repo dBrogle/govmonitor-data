@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 315,
     "votes_without_analysis": 94,
+    "truth_score": {
+      "score": 61,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:51:59+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -374,7 +380,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Whether it\u2019s fully funding the equipment they need to do their jobs or ensuring they have great healthcare when they get home from a tour of duty, I am honored to vote in favor of policies that support our Veterans.",
+          "reasoning": "Text explicitly supports fully funding military equipment and veterans' needs, indicating more defense spending.",
+          "source": "https://jasonsmith.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1929,7 +1941,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Fighting to restore fiscal sanity in Washington",
+          "reasoning": "Text advocates restoring fiscal sanity alongside keeping money in pockets rather than with bureaucrats, indicating preference for less spending.",
+          "source": "https://jasonsmith.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2120,7 +2138,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "PASSED: The One, Big, Beautiful Bill \u2013 The Largest Tax Cut in American History",
+          "reasoning": "Text endorses major tax cuts and relief, showing support for lower taxes.",
+          "source": "https://jasonsmith.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2267,7 +2291,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2469,7 +2494,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "A trade agenda that puts America first",
+          "reasoning": "Text promotes an America-first trade agenda aligned with protectionist measures like Trump's orders for a level playing field.",
+          "source": "https://jasonsmith.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

@@ -105,6 +105,12 @@
     "congress": 119,
     "votes_analyzed": 320,
     "votes_without_analysis": 99,
+    "truth_score": {
+      "score": 87,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:44:19+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -273,7 +279,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "In 2022, I was proud to support the passage of the Inflation Reduction Act, which included important provisions to close tax loopholes, crack down on fraud and tax evasion, and ensure wealthy corporations pay their fair share.",
+          "reasoning": "The quote explicitly endorses closing loopholes and ensuring corporations pay their fair share, indicating support for higher effective taxation.",
+          "source": "https://himes.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1971,7 +1983,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2283,7 +2296,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2496,7 +2510,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2643,7 +2658,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

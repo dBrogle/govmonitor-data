@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 334,
     "votes_without_analysis": 56,
+    "truth_score": {
+      "score": 64,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:58:41+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -323,7 +329,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Today, the House of Representatives passed the Fiscal Year 2027 National Defense Authorization Act (NDAA), which includes 56 wins secured by Congresswoman Nancy Mace (R-SC) for South Carolina, America's servicemembers, and our national defense.",
+          "reasoning": "The statement endorses the NDAA and highlights wins for national defense and servicemembers, indicating support for military spending.",
+          "source": "https://mace.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2153,7 +2165,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Washington doesn\u2019t have a revenue problem, it has a spending problem.",
+          "reasoning": "The statement identifies excessive spending as the core issue and calls for balancing the budget and cutting waste.",
+          "source": "https://mace.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2388,7 +2406,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We will champion policies that lower taxes, alleviate the high cost of living, and provide meaningful change to American families.",
+          "reasoning": "The statement explicitly supports lowering taxes.",
+          "source": "https://mace.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2656,7 +2680,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2825,7 +2850,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

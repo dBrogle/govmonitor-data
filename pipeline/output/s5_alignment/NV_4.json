@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 332,
     "votes_without_analysis": 113,
+    "truth_score": {
+      "score": 56,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:54:40+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -2004,7 +2010,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
+          "reasoning": "Opposition to cuts in Social Security and Medicaid shows support for maintaining or increasing such spending.",
+          "source": "https://horsford.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2338,7 +2350,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2573,7 +2586,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "launched reckless trade wars that hurt working families",
+          "reasoning": "Criticism of trade wars indicates support for free trade over protectionism.",
+          "source": "https://horsford.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2720,7 +2739,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -3021,7 +3041,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "He is only interested in delivering tax cuts to the ultra-wealthy.",
+          "reasoning": "Criticism of tax cuts to the wealthy indicates opposition to lower taxes.",
+          "source": "https://horsford.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

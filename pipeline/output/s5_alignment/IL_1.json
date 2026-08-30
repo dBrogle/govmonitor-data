@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 296,
     "votes_without_analysis": 96,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:46:42+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -225,7 +231,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -504,7 +511,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1971,7 +1979,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "a proposal to invest over $500 billion in federal programs that fund the construction of affordable and deeply affordable housing",
+          "reasoning": "Multiple explicit endorsements of large new federal spending programs indicate support for more government spending.",
+          "source": "https://jonathanjackson.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2140,7 +2154,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2353,7 +2368,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The illegal U.S. blockade of fuel to Cuba\u201490 miles south of the United States\u2014adds to the longest embargo in world history and is causing untold suffering to the Cuban people. ... It must stop immediately.",
+          "reasoning": "Explicit call to end the Cuba embargo and blockade demonstrates opposition to protectionist trade measures.",
+          "source": "https://jonathanjackson.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

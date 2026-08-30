@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 327,
     "votes_without_analysis": 138,
+    "truth_score": {
+      "score": 88,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:42:51+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -356,7 +362,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I will always work to guarantee our warfighters and diplomats have the resources and tools they need to accomplish American policy objectives globally.",
+          "reasoning": "Text explicitly supports providing resources and tools to warfighters.",
+          "source": "https://youngkim.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2010,7 +2022,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -2190,7 +2203,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "ensure that the federal government is cutting red tape and not increasing taxes on our small and medium-sized businesses so we can return to pre-pandemic economic growth.",
+          "reasoning": "Text explicitly opposes increasing taxes.",
+          "source": "https://youngkim.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2447,7 +2466,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2616,7 +2636,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

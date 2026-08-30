@@ -115,6 +115,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 107,
+    "truth_score": {
+      "score": 61,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:53:25+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -426,7 +432,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -672,7 +679,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "While we have successfully enacted major legislation this year to protect our borders, cut taxes for families, and restore faith in government this year",
+          "reasoning": "The text explicitly endorses cutting taxes.",
+          "source": "https://adriansmith.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2392,7 +2405,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2605,7 +2619,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "As Nebraska\u2019s ranchers continue to recover from the historic wildfires this spring\u2014amid an ongoing drought\u2014they need market certainty. With cattle inventory at 75-year lows, we must focus on policies which empower ranchers to rebuild our domestic herd.",
+          "reasoning": "The text opposes increased foreign beef imports to protect domestic producers.",
+          "source": "https://adriansmith.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2752,7 +2772,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

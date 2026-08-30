@@ -135,6 +135,12 @@
     "congress": 119,
     "votes_analyzed": 318,
     "votes_without_analysis": 99,
+    "truth_score": {
+      "score": 41,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:56:47+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -468,7 +474,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2078,7 +2085,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Reining in out-of-control spending is critical to economic growth and reducing our national debt.",
+          "reasoning": "Explicit commitment to reducing spending to address debt.",
+          "source": "https://turner.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2280,7 +2293,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2460,7 +2474,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congress must continue supporting Ukraine in its courageous battle against Russian aggression.",
+          "reasoning": "Calls for continued US support and military aid to Ukraine.",
+          "source": "https://turner.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2695,7 +2715,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

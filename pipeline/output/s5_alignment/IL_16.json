@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 120,
+    "truth_score": {
+      "score": 60,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:47:23+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -353,7 +359,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "A strong national defense is crucial to a safe, free, and flourishing America.",
+          "reasoning": "Text explicitly endorses strong national defense and support for the NDAA.",
+          "source": "https://lahood.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -632,7 +644,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2253,7 +2266,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Federal spending is out of control.",
+          "reasoning": "Text states federal spending is out of control and must be brought in check.",
+          "source": "https://lahood.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2466,7 +2485,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "we must expand opportunities for trade.",
+          "reasoning": "Text calls for expanding trade opportunities, indicating free-trade stance.",
+          "source": "https://lahood.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2602,7 +2627,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

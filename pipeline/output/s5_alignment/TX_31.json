@@ -135,6 +135,12 @@
     "congress": 119,
     "votes_analyzed": 317,
     "votes_without_analysis": 96,
+    "truth_score": {
+      "score": 54,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T08:00:52+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -424,7 +430,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1968,7 +1975,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Federal spending must be reduced, but it should not be at the expense of programs like Social Security and Medicare.",
+          "reasoning": "The text directly calls for reduced federal spending overall.",
+          "source": "https://carter.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2159,7 +2172,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "By repealing and replacing the Affordable Care Act, Americans would save more than $770 billion in tax hikes, and it would reduce the burdens placed on small businesses.",
+          "reasoning": "The statement explicitly supports avoiding tax increases, indicating a position favoring lower taxes.",
+          "source": "https://carter.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2361,7 +2380,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I also strongly supported the United-States-Mexico-Canada Agreement (USMCA).",
+          "reasoning": "Support for the USMCA free trade agreement indicates a pro-free-trade stance.",
+          "source": "https://carter.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2497,7 +2522,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

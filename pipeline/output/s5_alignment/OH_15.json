@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 117,
+    "truth_score": {
+      "score": 84,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:57:03+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -345,7 +351,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -602,7 +609,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "After years of stubborn inflation, American families and small businesses need tax relief to make ends meet today and plan for tomorrow.",
+          "reasoning": "The text repeatedly advocates tax relief and extending the 2017 tax cuts, indicating support for lower taxes.",
+          "source": "https://carey.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2278,7 +2291,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2502,7 +2516,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2649,7 +2664,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

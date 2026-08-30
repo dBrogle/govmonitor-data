@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 122,
+    "truth_score": {
+      "score": 84,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:00:18+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -365,7 +371,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "That is why I have consistently voted for funding to give our brave men and women in uniform the resources they need and to modernize our previously depleted military.",
+          "reasoning": "Text explicitly supports increased military funding and modernization.",
+          "source": "https://arrington.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2008,7 +2020,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -2243,7 +2256,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Lowering the tax burden for our families and job creators across the 19th District was a promise I made when I ran for Congress, and our tax-reform bill delivers on that commitment.",
+          "reasoning": "Text explicitly endorses tax cuts and praises the Tax Cuts and Jobs Act.",
+          "source": "https://arrington.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2489,7 +2508,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2636,7 +2656,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

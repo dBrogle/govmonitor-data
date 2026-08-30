@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 319,
     "votes_without_analysis": 100,
+    "truth_score": {
+      "score": 69,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:56:20+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -275,7 +281,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2061,7 +2068,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I believe we should make responsible investments in all levels of education, expand access to high-quality, affordable healthcare, rebuild our crumbling infrastructure, protect Social Security, Medicare, and Veterans, and create innovative programs that will contribute to the success of Central Ohioans and all Americans.",
+          "reasoning": "The quote explicitly advocates responsible investments and expansions in multiple government programs.",
+          "source": "https://beatty.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2340,7 +2353,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2476,7 +2490,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2689,7 +2704,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

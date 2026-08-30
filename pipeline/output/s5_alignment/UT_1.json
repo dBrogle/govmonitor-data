@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 132,
+    "truth_score": {
+      "score": 52,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T08:01:20+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -356,7 +362,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2021,7 +2028,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Rather than taking more from American families to spend on wasteful and unnecessary big government wish list items and slush funds, our tax code should let families decide how to spend their money so they can best care for their needs.",
+          "reasoning": "Text criticizes big government spending and deficit-fueled budgets in favor of lower spending.",
+          "source": "https://blakemoore.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2256,7 +2269,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "nothing is better for American industry and economic prosperity than tax cuts",
+          "reasoning": "Text explicitly endorses tax cuts and the TCJA for keeping more money with families and businesses.",
+          "source": "https://blakemoore.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2480,7 +2499,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am committed to ensuring that U.S. trade policy helps Utah businesses find new opportunities in overseas markets for decades to come... negotiating new and enforceable trade agreements that create new opportunities with allies",
+          "reasoning": "Text emphasizes expanding trade agreements and market access while using targeted tariffs only against adversaries.",
+          "source": "https://blakemoore.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2638,7 +2663,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

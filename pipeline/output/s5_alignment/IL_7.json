@@ -165,6 +165,12 @@
     "congress": 119,
     "votes_analyzed": 310,
     "votes_without_analysis": 110,
+    "truth_score": {
+      "score": 69,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:47:03+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -443,7 +449,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -645,7 +652,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "one year after Donald Trump and the Republicans cut over $1 trillion out of health care to fund tax cuts for billionaires and big businesses",
+          "reasoning": "Criticizes tax cuts for the wealthy, indicating opposition to lower taxes.",
+          "source": "https://davis.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2233,7 +2246,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "the Trump Administration withheld $10 billion in federal funding \u2013 over $1 billion for Illinois alone - for essential services that support millions of Americans served by the CCDF, TANF, and SSBG in five states",
+          "reasoning": "Opposes cuts and freezes to federal funding for social services, indicating support for more government spending.",
+          "source": "https://davis.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2457,7 +2476,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2582,7 +2602,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

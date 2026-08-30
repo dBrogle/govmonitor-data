@@ -24,6 +24,12 @@
     "congress": 119,
     "votes_analyzed": 320,
     "votes_without_analysis": 108,
+    "truth_score": {
+      "score": 70,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:44:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -335,7 +341,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "all while demanding a ballooned defense budget that fails to deliver for the servicemembers it is supposed to support",
+          "reasoning": "The statement criticizes a ballooned defense budget, indicating opposition to increased military spending.",
+          "source": "https://mcbride.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -504,7 +516,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2147,7 +2160,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "make critical investments in public safety, scientific research, clean energy, water infrastructure, and coastal resilience, rejecting the devastating cuts proposed by the Trump administration",
+          "reasoning": "The text supports critical investments and rejects cuts, indicating favor for more government spending.",
+          "source": "https://mcbride.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2305,7 +2324,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2518,7 +2538,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

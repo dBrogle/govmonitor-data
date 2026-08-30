@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 313,
     "votes_without_analysis": 100,
+    "truth_score": {
+      "score": 69,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:49:26+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -362,7 +368,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "strengthening our military and intelligence communities is the key to ensuring our nation's safety",
+          "reasoning": "The text explicitly calls for strengthening the military, indicating support for more military spending.",
+          "source": "https://harris.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -553,7 +565,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Lowering the corporate tax rate will keep large businesses from sending jobs overseas",
+          "reasoning": "The text advocates lowering corporate tax rates to retain jobs, indicating support for lower taxes.",
+          "source": "https://harris.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2174,7 +2192,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Government spending and regulation will not lead us to prosperity \u2013 only a vibrant private sector will",
+          "reasoning": "The text states government spending will not lead to prosperity, indicating support for less government spending.",
+          "source": "https://harris.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2332,7 +2356,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2534,7 +2559,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

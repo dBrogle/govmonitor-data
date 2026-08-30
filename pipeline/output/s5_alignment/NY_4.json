@@ -25,6 +25,12 @@
     "congress": 119,
     "votes_analyzed": 332,
     "votes_without_analysis": 95,
+    "truth_score": {
+      "score": 52,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:55:01+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1744,7 +1750,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "amid devastating GOP cuts to care",
+          "reasoning": "Text opposes spending cuts and highlights securing federal funding.",
+          "source": "https://gillen.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -1946,7 +1958,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "lowering costs and cutting taxes for hardworking Long Islanders is a top priority of mine in Congress.",
+          "reasoning": "Text explicitly prioritizes cutting taxes.",
+          "source": "https://gillen.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2115,7 +2133,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2339,7 +2358,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2662,7 +2682,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

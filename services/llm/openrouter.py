@@ -1,6 +1,7 @@
 """OpenRouter LLM service implementation with JSON schema structured output."""
 
 import json
+import threading
 from typing import Type, TypeVar
 
 import requests
@@ -25,6 +26,12 @@ class OpenRouterService(LLMService):
         # Temperature 0 by default, owned here as the single source of truth so every scored
         # artifact is as reproducible as the model allows. Stamped into each analysis output.
         self.temperature = temperature
+        # Cumulative usage across all calls on this instance (thread-safe), so a stage can
+        # report how much a run cost. `cost` is OpenRouter's own accounting when available.
+        self._usage_lock = threading.Lock()
+        self.prompt_tokens = 0
+        self.completion_tokens = 0
+        self.cost = 0.0
 
     def structured_completion(
         self,
@@ -52,6 +59,8 @@ class OpenRouterService(LLMService):
                     "schema": json_schema,
                 },
             },
+            # Ask OpenRouter to include token counts (and cost, when it reports one) in usage.
+            "usage": {"include": True},
         }
 
         headers = {
@@ -68,6 +77,13 @@ class OpenRouterService(LLMService):
         r.raise_for_status()
 
         data = r.json()
+
+        usage = data.get("usage") or {}
+        with self._usage_lock:
+            self.prompt_tokens += int(usage.get("prompt_tokens") or 0)
+            self.completion_tokens += int(usage.get("completion_tokens") or 0)
+            self.cost += float(usage.get("cost") or 0.0)
+
         content = data["choices"][0]["message"]["content"]
         parsed = json.loads(content)
         return response_model.model_validate(parsed)

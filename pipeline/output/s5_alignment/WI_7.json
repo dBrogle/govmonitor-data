@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 300,
     "votes_without_analysis": 92,
+    "truth_score": {
+      "score": 60,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:03:12+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -344,7 +350,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -502,7 +509,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "This historic legislation delivered the largest tax cut in American history, putting more money back into the pockets of hardworking Americans while protecting benefits for our most vulnerable citizens.",
+          "reasoning": "Praises the largest tax cut in history as positive.",
+          "source": "https://tiffany.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1914,7 +1927,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Telegram readers are by now well aware of the rampant waste, fraud, and abuse throughout our federal aid programs.",
+          "reasoning": "Highlights waste in federal programs and supports cuts like ending benefits for non-citizens.",
+          "source": "https://tiffany.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2116,7 +2135,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2241,7 +2261,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

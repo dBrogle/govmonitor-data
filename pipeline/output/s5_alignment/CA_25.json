@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 122,
+    "truth_score": {
+      "score": 69,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:41:39+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -275,7 +281,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2028,7 +2035,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "advocated and voted for the Bipartisan Infrastructure Law to strengthen our country's infrastructure and create at least 17,000 new jobs in California",
+          "reasoning": "Supports major federal spending bills like the Infrastructure Law and Inflation Reduction Act.",
+          "source": "https://ruiz.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -2318,7 +2331,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2531,7 +2545,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2678,7 +2693,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

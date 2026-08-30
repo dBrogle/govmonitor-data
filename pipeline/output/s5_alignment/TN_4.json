@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 319,
     "votes_without_analysis": 83,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:59:06+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -373,7 +379,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "HOUSE ARMED SERVICES COMMITTEE MEMBER REP. SCOTT DESJARLAIS VOTES AGAINST WEAK DEFENSE BILL",
+          "reasoning": "Text shows support for stronger defense measures via votes and statements against weak bills.",
+          "source": "https://desjarlais.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -586,7 +598,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2064,7 +2077,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "fighting for policies that will enforce fiscal discipline in Washington",
+          "reasoning": "Text explicitly endorses fiscal discipline, indicating preference for reduced spending.",
+          "source": "https://desjarlais.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2255,7 +2274,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2391,7 +2411,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

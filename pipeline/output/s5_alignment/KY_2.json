@@ -105,6 +105,12 @@
     "congress": 119,
     "votes_analyzed": 326,
     "votes_without_analysis": 100,
+    "truth_score": {
+      "score": 65,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:48:24+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -405,7 +411,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "As a former Army officer, I believe in having a strong military so that our country can stand up to growing threats abroad.",
+          "reasoning": "Text explicitly supports strengthening the military through votes for modernization, pay raises, and NDAA funding.",
+          "source": "https://guthrie.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -629,7 +641,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I strongly oppose Democrat policies like the methane tax, or proposed changes to the current stepped-up basis and capital gains tax that could force families to sell their farms.",
+          "reasoning": "Text opposes specific tax increases, indicating preference for lower taxes.",
+          "source": "https://guthrie.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2239,7 +2257,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am a strong believer in fiscal responsibility and believe we need to get our national debt under control.",
+          "reasoning": "Text advocates fiscal responsibility, balanced budget amendment, and opposes reckless spending packages.",
+          "source": "https://guthrie.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2463,7 +2487,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The Farm Bill extends farm support programs, improves crop insurance, promotes agricultural exports and the opening of new markets for Kentucky\u2019s farmers.",
+          "reasoning": "Text supports promoting exports and opening new markets, consistent with free trade.",
+          "source": "https://guthrie.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2610,7 +2640,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

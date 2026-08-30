@@ -85,6 +85,12 @@
     "congress": 119,
     "votes_analyzed": 310,
     "votes_without_analysis": 124,
+    "truth_score": {
+      "score": 97,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:48:27+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -385,7 +391,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congressman Andy Barr (R-KY) voted today in favor of the Fiscal Year 2027 National Defense Authorization Act, legislation that strengthens America\u2019s military, supports servicemembers and their families, and ensures the United States is prepared to confront growing threats around the world.",
+          "reasoning": "The statement explicitly endorses legislation increasing military funding and capabilities.",
+          "source": "https://barr.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -576,7 +588,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2131,7 +2144,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2278,7 +2292,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2502,7 +2517,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

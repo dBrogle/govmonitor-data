@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 330,
     "votes_without_analysis": 97,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:51:56+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -280,7 +286,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "how H.R. 1, the Working Families Tax Cuts Act, reverses misguided policies championed by Democrats and strengthens our position to win.",
+          "reasoning": "Text endorses the Working Families Tax Cuts Act as reversing misguided policies.",
+          "source": "https://burlison.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -548,7 +560,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -673,7 +686,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -864,7 +878,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2573,7 +2588,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "a provision targeting a Federal Reserve payment stream that outside research projects will exceed $1 trillion over the next decade.",
+          "reasoning": "Text promotes a trillion-dollar savings offset by reforming Federal Reserve payments.",
+          "source": "https://burlison.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

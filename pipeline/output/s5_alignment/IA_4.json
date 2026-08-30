@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 322,
     "votes_without_analysis": 121,
+    "truth_score": {
+      "score": 51,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:46:27+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -345,7 +351,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -569,7 +576,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am proud to have worked alongside President Trump to deliver meaningful tax relief for working families, seniors, farmers, workers, and small businesses.",
+          "reasoning": "Text explicitly praises delivering tax relief and lowering costs for families and businesses.",
+          "source": "https://feenstra.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2234,7 +2247,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Randy is committed to standing up for American taxpayers. He is fighting against reckless, wasteful spending and working to enact fiscally responsible policies as a member of the House Committee on the Budget.",
+          "reasoning": "Text directly states opposition to wasteful spending and support for fiscally responsible policies.",
+          "source": "https://feenstra.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2436,7 +2455,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2583,7 +2603,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

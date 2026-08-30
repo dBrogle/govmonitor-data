@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 325,
     "votes_without_analysis": 120,
+    "truth_score": {
+      "score": 59,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:57:10+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -356,7 +362,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "In order to safeguard our nation and our way of life, we must continuously strengthen our military and provide the very best for our troops.",
+          "reasoning": "Text explicitly calls for strengthening the military and supporting NDAA to increase lethality and readiness.",
+          "source": "https://bice.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2032,7 +2044,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "we urgently need to bring fiscal restraint back to Washington.",
+          "reasoning": "Text advocates fiscal restraint, balancing the budget, and reducing waste to address debt.",
+          "source": "https://bice.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2212,7 +2230,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2436,7 +2455,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2572,7 +2592,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

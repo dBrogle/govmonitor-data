@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 329,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 63,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:39:26+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -364,7 +370,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Today, the U.S. House of Representatives voted to pass a series of bills providing supplemental appropriations to address U.S. national security threat and to provide funding for defense assistance to U.S. allies and for costs incurred by the U.S. military for regional support.",
+          "reasoning": "Text supports supplemental defense and military funding for allies and U.S. forces.",
+          "source": "https://westerman.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1985,7 +1997,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Our country has a spending problem. ... reining in on our government\u2019s relentless habit of irresponsible spending.",
+          "reasoning": "Direct criticism of government spending and call to rein it in shows preference for less spending.",
+          "source": "https://westerman.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2176,7 +2194,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "This legislation would permanently repeal the death tax, which imposes an unfair and costly tax on the transfer of property, land, and other assets from a deceased family member to heirs of family farms and small businesses.",
+          "reasoning": "Explicit support for repealing the death tax indicates preference for lower taxes.",
+          "source": "https://westerman.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2389,7 +2413,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2547,7 +2572,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Today, the U.S. House of Representatives voted to pass a series of bills providing supplemental appropriations to address U.S. national security threat and to provide funding for defense assistance to U.S. allies and for costs incurred by the U.S. military for regional support.",
+          "reasoning": "Support for funding defense assistance to U.S. allies indicates preference for more foreign aid spending.",
+          "source": "https://westerman.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

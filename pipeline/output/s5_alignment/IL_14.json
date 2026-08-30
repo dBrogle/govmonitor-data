@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 336,
     "votes_without_analysis": 116,
+    "truth_score": {
+      "score": 70,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:47:35+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -256,7 +262,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -546,7 +553,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "While American families struggle with soaring costs, the Trump Administration has spent tens of billions of taxpayer dollars on a war that has fueled higher gas prices, increased economic uncertainty, and put American servicemembers in harm's way.",
+          "reasoning": "The statement criticizes military war spending as reckless and costly, supporting reduced military engagement and spending.",
+          "source": "https://underwood.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2420,7 +2433,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "This week, Rep. Lauren Underwood, a member of the House Homeland Security Appropriations Subcommittee, wrote to the Department of Homeland Security in opposition to recently reported plans to spend up to $20 million to equip U.S. Immigration and Customs Enforcement (ICE) personnel with electric shock gloves.",
+          "reasoning": "The statement explicitly opposes a specific government spending proposal.",
+          "source": "https://underwood.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2567,7 +2586,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2791,7 +2811,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

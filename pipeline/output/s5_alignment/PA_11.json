@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 114,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:58:11+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -343,7 +349,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -600,7 +607,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congressional Republicans, with President Trump, delivered on our promise to extend tax relief for families and small businesses.",
+          "reasoning": "Explicit support for tax relief and tax cuts indicates position favoring lower taxes.",
+          "source": "https://smucker.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2375,7 +2388,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "It is difficult to comprehend the scale of a $40 trillion national debt. What should be easy to understand is that we cannot continue down this path.",
+          "reasoning": "Concern over national debt and budget process implies support for reduced government spending.",
+          "source": "https://smucker.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2588,7 +2607,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Rep. Lloyd Smucker (PA-11), a member of the Ways and Means Trade Subcommittee, introduced the Protecting American Streaming and Innovation Act, legislation to counter Canada\u2019s digital trade barriers targeting American streaming companies and content producers.",
+          "reasoning": "Action to counter foreign trade barriers via investigation shows protectionist stance.",
+          "source": "https://smucker.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2724,7 +2749,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

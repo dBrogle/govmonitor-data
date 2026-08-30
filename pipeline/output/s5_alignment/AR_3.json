@@ -95,6 +95,12 @@
     "congress": 119,
     "votes_analyzed": 293,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:39:10+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -362,7 +368,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "we must protect our military and give them the tools they need to complete their mission.",
+          "reasoning": "Text explicitly supports providing military with needed resources despite shrinking budgets.",
+          "source": "https://womack.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -586,7 +598,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The Tax Cuts and Jobs Act allows hardworking Americans keep more of their paycheck, creates jobs and increases wages by making American businesses competitive again",
+          "reasoning": "Text praises tax cuts that let Americans keep more of their pay.",
+          "source": "https://womack.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2152,7 +2170,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I made a commitment to the people of the Third District of Arkansas to cut spending and to make the necessary reforms to put our budget on a sustainable path.",
+          "reasoning": "Text states commitment to cut spending and reduce discretionary spending.",
+          "source": "https://womack.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2332,7 +2356,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2479,7 +2504,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

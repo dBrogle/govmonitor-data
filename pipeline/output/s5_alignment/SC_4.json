@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 324,
     "votes_without_analysis": 98,
+    "truth_score": {
+      "score": 52,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:58:47+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -366,7 +372,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -568,7 +575,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Additionally, last summer, Republicans voted to deliver the largest tax cut in American history, increasing Americans\u2019 take-home pay by up to $13,300.",
+          "reasoning": "The text explicitly praises and supports a major tax cut.",
+          "source": "https://timmons.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2222,7 +2235,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I will continue to reject policies that fuel Washington\u2019s out-of-control spending habits and instead support efforts to reduce spending, rein in the federal bureaucracy...",
+          "reasoning": "The text states opposition to wasteful spending and support for reducing it.",
+          "source": "https://timmons.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2435,7 +2454,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2593,7 +2613,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

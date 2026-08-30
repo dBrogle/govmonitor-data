@@ -45,6 +45,12 @@
     "congress": 119,
     "votes_analyzed": 345,
     "votes_without_analysis": 73,
+    "truth_score": {
+      "score": 52,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:43:35+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -257,7 +263,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-26"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -547,7 +554,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -705,7 +713,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I oppose sending unlimited taxpayer money overseas while we face our own challenges domestically.",
+          "reasoning": "The text explicitly opposes sending unlimited taxpayer money overseas.",
+          "source": "https://boebert.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2656,7 +2670,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I support reducing burdensome government regulations, cutting government spending causing inflation, and getting America back to work.",
+          "reasoning": "The text explicitly endorses cutting government spending to address inflation.",
+          "source": "https://boebert.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2891,7 +2911,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I support continuing the Trump administration\u2019s free and fair trade policies that stood up to bullies and put American workers first.",
+          "reasoning": "The text explicitly supports free and fair trade policies including USMCA.",
+          "source": "https://boebert.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

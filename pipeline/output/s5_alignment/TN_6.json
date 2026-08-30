@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 312,
     "votes_without_analysis": 99,
+    "truth_score": {
+      "score": 78,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:59:25+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -333,7 +339,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1866,7 +1873,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-14"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "the $30 billion disaster assistance relief effort authorized by the American Relief Act of 2025 , which Rep. Rose supported.",
+          "reasoning": "Explicit support for a major federal disaster relief spending package indicates position favoring more government spending.",
+          "source": "https://johnrose.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2046,7 +2059,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2182,7 +2196,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2373,7 +2388,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

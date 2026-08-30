@@ -65,6 +65,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 123,
+    "truth_score": {
+      "score": 53,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:44:55+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -409,7 +415,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -589,7 +596,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Read more about my work to lower taxes and reduce spending",
+          "reasoning": "Text explicitly states intent to lower taxes.",
+          "source": "https://mast.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2078,7 +2091,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Read more about my work to lower taxes and reduce spending",
+          "reasoning": "Text explicitly states intent to reduce spending.",
+          "source": "https://mast.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2302,7 +2321,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2460,7 +2480,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

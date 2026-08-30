@@ -75,6 +75,12 @@
     "congress": 119,
     "votes_analyzed": 337,
     "votes_without_analysis": 111,
+    "truth_score": {
+      "score": 38,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:56:34+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -386,7 +392,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -610,7 +617,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2231,7 +2239,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-14"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "We must embrace solutions to cut spending and fix the budget process.",
+          "reasoning": "Text explicitly calls for cutting spending.",
+          "source": "https://davidson.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2389,7 +2403,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2657,7 +2672,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

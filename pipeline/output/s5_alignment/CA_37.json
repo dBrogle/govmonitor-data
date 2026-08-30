@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 325,
     "votes_without_analysis": 112,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 3,
+      "fetched_at": "2026-08-30T07:42:36+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -346,7 +352,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I voted to block taxpayer funding to Israel in the 2027 National Security, Department of State, and Related Programs Appropriations Act. Key to my vote was the elimination of $3.3 billion in Foreign Military Financing to Israel.",
+          "reasoning": "The statement explicitly supports blocking specific military financing and aid.",
+          "source": "https://kamlager-dove.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -548,7 +560,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Americans do not want to see their tax dollars thrown at another endless war, they want to see them invested back into their pockets and communities.",
+          "reasoning": "The statement indicates preference for returning funds to taxpayers rather than additional spending.",
+          "source": "https://kamlager-dove.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -739,7 +757,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2602,7 +2621,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Now Republicans want to give Trump and Hegseth more money for a botched war that is making life more expensive? It\u2019s a hell no from me.",
+          "reasoning": "The statement opposes additional government spending on military/war efforts.",
+          "source": "https://kamlager-dove.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2804,7 +2829,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

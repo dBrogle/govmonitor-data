@@ -245,6 +245,12 @@
     "congress": 119,
     "votes_analyzed": 328,
     "votes_without_analysis": 78,
+    "truth_score": {
+      "score": 49,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:49:53+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -435,7 +441,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2122,7 +2129,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2445,7 +2453,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2658,7 +2667,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2026-04-16"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2816,7 +2826,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "I rise in strong disagreement with this amendment, which would dangerously undermine America\u2019s national security. If adopted, it would \u2013 as Leader Jeffries rightly pointed out \u2013 limit our ability to confront terrorist organizations like Hamas and Hezbollah that expressly target American citizens and military personnel.",
+          "reasoning": "Opposes amendment eliminating $3.3 billion in military aid to Israel, indicating support for maintaining or increasing such aid.",
+          "source": "https://hoyer.house.gov/"
+        }
       }
     ],
     "topics_without_signal": []

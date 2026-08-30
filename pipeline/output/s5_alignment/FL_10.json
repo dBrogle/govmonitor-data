@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 107,
     "votes_without_analysis": 3,
+    "truth_score": {
+      "score": 79,
+      "topics_compared": 1,
+      "fetched_at": "2026-08-30T07:44:31+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -82,7 +88,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -152,7 +159,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-07"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -1014,7 +1022,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Through the surface transportation reauthorization process, we\u2019re fighting for investments that improve railway safety, modernize infrastructure, strengthen transit options, and keep our communities connected.",
+          "reasoning": "Text explicitly supports increased federal investments in infrastructure and transit.",
+          "source": "https://frost.house.gov"
+        }
       },
       {
         "topic_slug": "military_defense",
@@ -1084,7 +1098,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -1143,7 +1158,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

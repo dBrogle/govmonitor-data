@@ -24,6 +24,12 @@
     "congress": 119,
     "votes_analyzed": 322,
     "votes_without_analysis": 105,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 4,
+      "fetched_at": "2026-08-30T07:53:25+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -313,7 +319,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Congresswoman Julie Fedorchak (R-ND) voted in favor of H.R. 8800, the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation to fund national defense programs while strengthening America's military readiness, modernizing strategic deterrence, and supporting servicemembers and their families.",
+          "reasoning": "Text explicitly endorses increased defense funding and military readiness via NDAA support.",
+          "source": "https://fedorchak.house.gov/"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -526,7 +538,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Rep. Fedorchak on Newsmax: This is real money back in the pockets of Americans",
+          "reasoning": "Text promotes tax credits, tax-deferred accounts, and returning money to Americans, indicating support for lower taxes.",
+          "source": "https://fedorchak.house.gov/"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2158,7 +2176,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "The reckless spending habits in Washington are a huge drag on our economy and a real curse for future generations.",
+          "reasoning": "Text criticizes reckless spending and supports balancing the budget with reduced waste.",
+          "source": "https://fedorchak.house.gov/"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2382,7 +2406,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Fedorchak: Foreign beef imports send the wrong signal to North Dakota ranchers",
+          "reasoning": "Text opposes foreign beef imports without higher tariffs, favoring protectionist measures.",
+          "source": "https://fedorchak.house.gov/"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2529,7 +2559,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

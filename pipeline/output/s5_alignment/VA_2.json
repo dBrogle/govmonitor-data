@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 321,
     "votes_without_analysis": 138,
+    "truth_score": {
+      "score": 58,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T08:01:25+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -368,7 +374,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "To deter rising threats and maintain the longstanding global peace our nation has experienced since the end of World War II, we must continue to provide the Department of Defense the funding needed to maintain a robust and modern military.",
+          "reasoning": "Text explicitly calls for continued and sufficient DoD funding to maintain a robust military.",
+          "source": "https://kiggans.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -1923,7 +1935,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I am committed to restoring strength in our economy by reining in wasteful spending, supporting pro-growth policies, and ensuring workers have the skills necessary to succeed in the jobs of today and those that will exist in the future.",
+          "reasoning": "Text states commitment to reining in wasteful spending.",
+          "source": "https://kiggans.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2103,7 +2121,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2327,7 +2346,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2474,7 +2494,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

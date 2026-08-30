@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 310,
     "votes_without_analysis": 119,
+    "truth_score": {
+      "score": 45,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:51:14+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -355,7 +361,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "taxation",
@@ -557,7 +564,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "I also introduced legislation to lower the federal tax rate for small businesses to help overcome higher input costs.",
+          "reasoning": "Explicit support for lowering tax rates.",
+          "source": "https://craig.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2145,7 +2158,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "we need to keep Medicare and Social Security fully funded and combat any attempts to privatize or defund them.",
+          "reasoning": "Supports maintaining or increasing funding for major programs.",
+          "source": "https://craig.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -2292,7 +2311,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2516,7 +2536,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

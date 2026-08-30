@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 321,
     "votes_without_analysis": 126,
+    "truth_score": {
+      "score": 66,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:52:23+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "government_spending",
@@ -1699,7 +1705,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "Congressman Don Davis (NC-01) toured communities across North Carolina\u2019s First District to highlight the nearly $54 million he secured for eastern North Carolina through Fiscal Year 2026 Community Project Funding",
+          "reasoning": "Text highlights securing and voting for appropriations and community project funding.",
+          "source": "https://dondavis.house.gov"
+        }
       },
       {
         "topic_slug": "foreign_aid",
@@ -1868,7 +1880,8 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2092,7 +2105,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2404,7 +2418,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "sponsored 31 provisions that have advanced through House passage of H.R. 8800, the National Defense Authorization Act (NDAA) for Fiscal Year 2027. He joined his colleagues in voting for the fourth consecutive year to pass the annual defense bill in the House",
+          "reasoning": "Text shows repeated support for NDAA defense bill and provisions.",
+          "source": "https://dondavis.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -2595,7 +2615,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []

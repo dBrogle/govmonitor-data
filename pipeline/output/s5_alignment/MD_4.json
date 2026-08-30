@@ -35,6 +35,12 @@
     "congress": 119,
     "votes_analyzed": 323,
     "votes_without_analysis": 96,
+    "truth_score": {
+      "score": 47,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:49:55+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "taxation",
@@ -247,7 +253,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "government_spending",
@@ -2077,7 +2084,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "military_defense",
@@ -2411,7 +2419,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-02-25"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2558,7 +2567,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": {
+          "score": -1.0,
+          "quote": "House Republicans passed a foreign aid budget that guts American diplomacy, slashes humanitarian assistance",
+          "reasoning": "Opposition to cuts in foreign aid spending indicates support for more foreign aid.",
+          "source": "https://ivey.house.gov"
+        }
       },
       {
         "topic_slug": "trade_policy",
@@ -2760,7 +2775,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Over the past months, President Trump has threatened and implemented a series of unpredictable and irresponsible tariffs. These economic depression-triggering tariffs wreak havoc on financial markets and the global economy.",
+          "reasoning": "Explicit opposition to tariffs indicates support for free trade.",
+          "source": "https://ivey.house.gov"
+        }
       }
     ],
     "topics_without_signal": []

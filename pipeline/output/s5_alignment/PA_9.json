@@ -55,6 +55,12 @@
     "congress": 119,
     "votes_analyzed": 315,
     "votes_without_analysis": 104,
+    "truth_score": {
+      "score": 89,
+      "topics_compared": 2,
+      "fetched_at": "2026-08-30T07:58:07+00:00",
+      "note": "Agreement between stated positions and voting record on high-confidence topics (100 = words match votes exactly). Null if too few comparable topics."
+    },
     "topics": [
       {
         "topic_slug": "military_defense",
@@ -388,7 +394,13 @@
             "contributed_to_alignment": true,
             "vote_date": null
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Protecting National Security : Rebuild our military to ensure it remains the strongest in the world to defend America\u2019s interests at home and abroad.",
+          "reasoning": "Text explicitly calls for rebuilding the military to keep it the strongest.",
+          "source": "https://meuser.house.gov"
+        }
       },
       {
         "topic_slug": "taxation",
@@ -601,7 +613,13 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-22"
           }
-        ]
+        ],
+        "stated": {
+          "score": 1.0,
+          "quote": "Supporting Small Businesses: Extend the Trump Tax Cuts and Jobs, including provisions like bonus depreciation, the small business deduction, and the R&D tax credit",
+          "reasoning": "Text explicitly supports extending tax cuts.",
+          "source": "https://meuser.house.gov"
+        }
       },
       {
         "topic_slug": "government_spending",
@@ -2222,7 +2240,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-01-13"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "trade_policy",
@@ -2446,7 +2465,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-05-05"
           }
-        ]
+        ],
+        "stated": null
       },
       {
         "topic_slug": "foreign_aid",
@@ -2571,7 +2591,8 @@
             "contributed_to_alignment": true,
             "vote_date": "2025-09-02"
           }
-        ]
+        ],
+        "stated": null
       }
     ],
     "topics_without_signal": []
