@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "H001090",
   "website": "https://harder.house.gov/",
-  "fetched_at": "2026-08-30T14:17:02+00:00",
+  "fetched_at": "2026-09-04T19:45:22+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,23 +30,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statement addresses military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:22+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.35,
       "stated_score": 1.0,
       "quote": "announced new legislation to immediately lower gas prices through the end of the year by suspending the federal gas tax.",
-      "reasoning": "Explicit support for suspending the gas tax demonstrates a position favoring lower taxes."
+      "reasoning": "Text explicitly supports suspending the federal gas tax and introducing a new tax credit for relief, indicating a preference for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:22+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of securing specific project funds do not state a general position on overall government spending levels."
+      "reasoning": "No statement addresses the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:22+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Vague reference to trade policy working for farmers does not state a clear stance on free trade versus protectionism."
+      "reasoning": "Mentions of trade policy are too vague to state a clear position on free trade versus protectionism.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:22+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:22+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.85,
+      "stated_score": -1.0,
+      "quote": "I will always fight to protect that access and continue to expand health insurance coverage.",
+      "reasoning": "Multiple statements advocate government action to cap drug prices, protect and expand the ACA, and lower costs through legislation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:22+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits or restrictions on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:22+00:00"
     }
   ]
 }

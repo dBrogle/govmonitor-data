@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M001224",
   "website": "https://moran.house.gov",
-  "fetched_at": "2026-08-30T14:36:17+00:00",
+  "fetched_at": "2026-09-04T20:01:43+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -25,15 +25,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on military spending levels."
+      "reasoning": "No statements on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:43+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "Congressman Moran Introduces No Tax on Overtime Act",
-      "reasoning": "Title directly indicates support for eliminating taxes on overtime pay."
+      "reasoning": "Explicit support for eliminating tax on overtime indicates preference for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:43+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -41,15 +47,20 @@
       "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "Moran Leads with TRUST Act to Tackle $37 Trillion National Debt",
-      "reasoning": "Title shows focus on reducing national debt via spending restraint."
+      "reasoning": "Title shows focus on reducing national debt via spending restraint.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": -1.0,
-      "quote": "Letter to USTR and Treasury On Curbing Import of Dangerous Chinese Vapes",
-      "reasoning": "Action targets restricting specific Chinese imports."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:43+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -57,7 +68,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid in the provided text."
+      "reasoning": "No statements on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:43+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "Moran Leads with TRUST Act to Tackle $37 Trillion National Debt",
+      "reasoning": "Focus on tackling national debt shows priority on shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:43+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on healthcare costs or government involvement.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:43+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:43+00:00"
     }
   ]
 }

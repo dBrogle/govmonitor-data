@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "O000175",
   "website": "https://ogles.house.gov",
-  "fetched_at": "2026-08-30T14:35:55+00:00",
+  "fetched_at": "2026-09-04T20:01:27+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,19 +26,25 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "Fighting for the best options for our veterans is a top priority of mine, and it has been since first arriving in Congress.",
-      "reasoning": "Text supports military construction funding and veterans care via amendments to MilCon VA bill plus strategic military acquisition of Greenland."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on overall military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:27+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "Andy has served the people of Tennessee for decades fighting for limited government, lower taxes, and greater freedom.",
-      "reasoning": "Explicit statement endorsing lower taxes."
+      "quote": "fighting for limited government, lower taxes, and greater freedom",
+      "reasoning": "Bio text directly endorses lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:27+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "Andy has served the people of Tennessee for decades fighting for limited government, lower taxes, and greater freedom.",
-      "reasoning": "Explicit endorsement of limited government implies less spending."
+      "reasoning": "Explicit endorsement of limited government implies less spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade, tariffs, or free trade."
+      "reasoning": "No statement on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:27+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statement on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:27+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:27+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions only veterans' specialty care access, not general healthcare costs or market vs. government approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:27+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:27+00:00"
     }
   ]
 }

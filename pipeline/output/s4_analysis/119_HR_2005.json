@@ -2,14 +2,36 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "2005",
-  "summary": null,
+  "summary": "The bill extends Medicare payment transition rules for durable medical equipment in non-rural non-competitive bidding areas through December 31, 2025, and delays other payment adjustments until January 1, 2026.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill directly addresses Medicare payment rates for durable medical equipment, which is a component of public healthcare provision. By adjusting these rates, it aims to influence the accessibility and cost of certain medical supplies within the Medicare system.",
       "topic_slug": "healthcare",
       "topic_name": "Healthcare",
-      "score": -0.6
+      "score": -0.6,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill extends higher Medicare payment transition rates for DMEPOS items through 2025 and delays lower-rate implementation, directly increasing federal Medicare outlays. This is a central purpose of the legislation, pushing toward accepting larger deficits to support providers.",
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:02:24+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "topic_name": "Healthcare Affordability",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:02:24+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

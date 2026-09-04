@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "M001143",
   "website": "https://mccollum.house.gov",
-  "fetched_at": "2026-08-30T14:27:49+00:00",
+  "fetched_at": "2026-09-04T19:53:09+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on level of military spending."
+      "reasoning": "No explicit statement on increasing or decreasing military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:09+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on taxation levels."
+      "reasoning": "No explicit statement on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:09+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "I have been a strong proponent of robust federal investment in our workforce, including through job training programs.",
-      "reasoning": "Multiple statements endorse robust federal funding and full funding for programs, indicating preference for more spending."
+      "reasoning": "Multiple statements endorse robust federal funding and full funding for programs, indicating preference for more spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "tariffs do not achieve these goals and are actively hurting our economy.",
-      "reasoning": "Explicit opposition to tariffs and bad trade deals that ship jobs overseas shows support for free trade."
+      "quote": "Congresswoman McCollum: Trump Tariffs Will \"Liberate\" Americans Only From the Money in Their Bank Accounts",
+      "reasoning": "Opposition to tariffs indicates support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:09+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No explicit statement on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:09+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:09+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "All Americans should have comprehensive, affordable, quality health care as a fundamental right. ... I am a cosponsor of the Medicare for All Act.",
+      "reasoning": "Advocacy for Medicare for All and ACA shows preference for government-led expansion of coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:09+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:09+00:00"
     }
   ]
 }

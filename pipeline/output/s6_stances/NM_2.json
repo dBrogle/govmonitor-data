@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "V000136",
   "website": "https://vasquez.house.gov",
-  "fetched_at": "2026-08-30T14:30:48+00:00",
+  "fetched_at": "2026-09-04T19:56:07+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text states a position on military or defense spending levels."
+      "reasoning": "No explicit position stated on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:07+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No text states a position on taxation levels or rates."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Opposed the Republican tax bill which cut health care and slashed funding for SNAP in order to give massive tax breaks to billionaires and corporations",
+      "reasoning": "Opposition to tax breaks for billionaires indicates preference against lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:07+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text states a position on overall government spending levels."
+      "reasoning": "No text states a position on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text states a position on trade policy or tariffs."
+      "reasoning": "No explicit position stated on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:07+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text states a position on foreign aid spending."
+      "reasoning": "No explicit position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:07+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit position stated on budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:07+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Cosponsored the Protecting Healthcare and Lowering Costs Act to reverse devastating health care cuts in the Republican tax law and permanently extend Affordable Care Act (ACA) tax credits",
+      "reasoning": "Multiple actions support government intervention to lower costs and expand coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:07+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "supports efforts to ban all other Members of Congress from buying or selling stocks while in office",
+      "reasoning": "Advocacy for stock trading ban shows support for tighter limits on political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:07+00:00"
     }
   ]
 }

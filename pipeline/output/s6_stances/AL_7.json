@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "S001185",
   "website": "https://sewell.house.gov/",
-  "fetched_at": "2026-08-30T14:16:18+00:00",
+  "fetched_at": "2026-09-04T19:45:05+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -17,10 +17,10 @@
     "https://sewell.house.gov/press-releases?id=AB4CE21C-120F-436B-AB50-0B620627078A",
     "https://sewell.house.gov/press-releases?id=244FFAD4-B69B-49D1-BC25-2C5A810AD5EE",
     "https://sewell.house.gov/press-releases?id=D36C25B2-3B7A-46C5-966C-2D569DA932F6",
+    "https://sewell.house.gov/press-releases?id=1BB805DA-3B7C-4301-9409-2178E1EF2548",
     "https://sewell.house.gov/press-releases?id=925C8EB5-7F08-4373-9F33-A885D0DF1DF6",
     "https://sewell.house.gov/press-releases?id=E14677D6-5847-4CD5-8A9F-B5AD286B38D4",
     "https://sewell.house.gov/press-releases?id=87D6F3A0-E75E-4E3D-A899-D8C637E78F69",
-    "https://sewell.house.gov/press-releases?id=BCFC540C-DAFE-4818-A8EF-FDD8285AAF83",
     "https://sewell.house.gov/2026/8/rep-sewell-statement-on-supreme-court-decision-on-mail-in-voting"
   ],
   "stances": [
@@ -30,23 +30,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels."
+      "reasoning": "No clear position stated on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:05+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on taxation policy."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "all so they can give trillion-dollar tax cuts to the wealthy and the well-connected.",
+      "reasoning": "Criticism of tax cuts for the wealthy indicates opposition to lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:05+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels."
+      "reasoning": "No clear position stated on deficit reduction or acceptance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:05+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy or tariffs."
+      "reasoning": "No clear position stated on trade or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:05+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No clear position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:05+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "This plan addresses the Republican health care crisis head-on by lowering costs, expanding access to care, protecting rural hospitals, and strengthening the programs that Americans rely on.",
+      "reasoning": "Multiple statements advocate government-led expansion of Medicare coverage and lowering costs through strengthened public programs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:05+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on limits for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:05+00:00"
     }
   ]
 }

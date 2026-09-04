@@ -3,7 +3,7 @@
   "district": 10,
   "bioguide_id": "H001101",
   "website": "https://harrigan.house.gov/",
-  "fetched_at": "2026-08-30T14:29:20+00:00",
+  "fetched_at": "2026-09-04T19:54:32+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -17,20 +17,23 @@
     "https://harrigan.house.gov/issues/supporting-veterans-and-military-families",
     "https://harrigan.house.gov/media/press-releases",
     "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-votes-ban-congressional-stock-trading",
-    "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-introduces-legislation-stop-chinas-acquisition",
+    "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-co-leads-bipartisan-bill-track-self-improving-ai",
     "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-votes-fy27-ndaa-secures-five-key-wins-strengthen",
     "https://harrigan.house.gov/media/press-releases/icymi-congressman-pat-harrigan-pens-op-ed-how-congress-can-lower-americans",
-    "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-votes-support-national-security-and-america-first",
-    "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-co-leads-bipartisan-bill-give-parents-better-tools"
+    "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-votes-expand-american-mining-and-reduce-dependence",
+    "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigans-bipartisan-next-generation-geothermal-research-and"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.9,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "He is committed to strengthening our military, investing in cutting-edge technology, and ensuring our troops have the resources they need to succeed.",
-      "reasoning": "Text repeatedly emphasizes commitment to strengthening and modernizing the military with resources and readiness investments."
+      "reasoning": "Text repeatedly endorses strengthening and modernizing the military with more resources.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:54:32+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit position stated on tax rates or levels."
+      "reasoning": "No clear statement on raising or lowering taxes appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:54:32+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "put your wallet ahead of Washington\u2019s waste",
-      "reasoning": "Mentions fighting inflation by prioritizing wallets over government waste, indicating preference for reduced spending."
+      "reasoning": "Mentions fighting inflation by prioritizing wallets over government waste, indicating preference for reduced spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statements on tariffs, protectionism, or free trade."
+      "reasoning": "Domestic mining support is mentioned but does not state a position on tariffs or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:54:32+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statements on foreign aid spending."
+      "reasoning": "No statements address foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:54:32+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit position on shrinking or accepting larger deficits is stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:54:32+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "VA healthcare improvements are noted but no position on general healthcare costs or markets.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:54:32+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "Congress shouldn't be playing the stock market while writing the laws, which is why I haven't touched individual stocks since coming to Congress and why Americans expect better from Washington.",
+      "reasoning": "Explicit support for banning congressional stock trading and stronger ethics rules.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:54:32+00:00"
     }
   ]
 }

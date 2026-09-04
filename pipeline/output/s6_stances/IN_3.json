@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "S001188",
   "website": "https://stutzman.house.gov/",
-  "fetched_at": "2026-08-30T14:24:25+00:00",
+  "fetched_at": "2026-09-04T19:49:36+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No verbatim statement on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:36+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address tax rates or taxation policy."
+      "reasoning": "No verbatim statement on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:36+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,23 +52,64 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "The landmark legislation delivers historic savings by reigning in government waste, fraud, and abuse while unleashing pro-growth policies that strengthen the economy and protect taxpayers.",
-      "reasoning": "Multiple releases explicitly endorse legislation to cut government waste and halt unnecessary spending."
+      "reasoning": "Multiple releases explicitly endorse legislation to cut government waste and halt unnecessary spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "Second, the Strait of Hormuz must be open for free and fair global trade.",
-      "reasoning": "Statement endorses free and fair global trade as a policy goal."
+      "reasoning": "Text endorses free and fair global trade as a policy goal.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:36+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "introduced a House Resolution to transition the United States-Israel relationship away from one of traditional foreign assistance towards a new era of mutual cooperation, joint investment",
+      "reasoning": "Text advocates moving away from traditional foreign assistance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:36+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
       "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "transition the United States-Israel relationship away from one of traditional foreign assistance towards a new era of mutual cooperation, joint investment",
-      "reasoning": "Resolution explicitly calls for moving away from traditional foreign assistance."
+      "quote": "REP. STUTZMAN VOTES TO HALT UNNECESSARY GOVERNMENT SPENDING",
+      "reasoning": "Text explicitly supports halting unnecessary spending and achieving historic savings by reining in waste.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:36+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on healthcare costs or coverage mechanisms.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:36+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on campaign finance or political spending rules.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:36+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 0,
   "bioguide_id": "F000482",
   "website": "https://fedorchak.house.gov/",
-  "fetched_at": "2026-08-30T14:29:41+00:00",
+  "fetched_at": "2026-09-04T19:55:00+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,10 +18,10 @@
     "https://fedorchak.house.gov/issues/energy-and-environment",
     "https://fedorchak.house.gov/issues/national-defense-and-security",
     "https://fedorchak.house.gov/media/press-releases",
-    "https://fedorchak.house.gov/media/press-releases/fedorchak-recognizes-summer-interns",
     "https://fedorchak.house.gov/media/press-releases/fedorchak-host-fedorchak-forum-september-1",
     "https://fedorchak.house.gov/media/press-releases/fedorchak-announces-september-staff-mobile-office-hours",
-    "https://fedorchak.house.gov/media/press-releases/fedorchak-celebrates-final-passage-one-big-beautiful-bill"
+    "https://fedorchak.house.gov/media/press-releases/fedorchak-celebrates-final-passage-one-big-beautiful-bill",
+    "https://fedorchak.house.gov/media/press-releases/fedorchak-foreign-beef-imports-send-wrong-signal-north-dakota-ranchers"
   ],
   "stances": [
     {
@@ -29,16 +29,22 @@
       "addressed": true,
       "emphasis": 0.75,
       "stated_score": 1.0,
-      "quote": "voted in favor of H.R. 8800, the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation to fund national defense programs while strengthening America's military readiness",
-      "reasoning": "Text repeatedly endorses strengthening and funding the military, including voting for NDAA and calling for a strong well-equipped force."
+      "quote": "voted in favor of H.R. 8800, the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation to fund national defense programs while strengthening America's military readiness, modernizing strategic deterrence, and supporting servicemembers and their families.",
+      "reasoning": "Text repeatedly endorses increased funding and readiness for national defense and military.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:00+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": 1.0,
-      "quote": "This is real money back in the pockets of Americans",
-      "reasoning": "Statements promote tax credits, tax-deferred accounts, and returning money to Americans via lower effective taxation."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on tax rates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:00+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.85,
       "stated_score": 1.0,
       "quote": "The reckless spending habits in Washington are a huge drag on our economy and a real curse for future generations.",
-      "reasoning": "Explicitly condemns reckless federal spending and advocates balancing the budget while rooting out waste to reduce debt."
+      "reasoning": "Explicitly condemns reckless federal spending and advocates balancing the budget while rooting out waste to reduce debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.5,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "Fedorchak: Foreign beef imports send the wrong signal to North Dakota ranchers",
-      "reasoning": "Criticizes tariff-free beef imports and calls for fair trade practices that protect domestic producers, indicating protectionist stance."
+      "quote": "Foreign beef imports send the wrong signal to North Dakota ranchers",
+      "reasoning": "Text opposes additional foreign beef imports without tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:00+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending or policy."
+      "reasoning": "No position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:00+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.85,
+      "stated_score": 1.0,
+      "quote": "I am supporting efforts to balance the budget, root out waste, fraud, and abuse, and bring greater transparency to federal spending... put us on a course to erase the deficit and debt.",
+      "reasoning": "Text explicitly calls for balancing the budget and erasing the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:00+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.65,
+      "stated_score": 1.0,
+      "quote": "I believe in patient-centered solutions that lower costs, expand access, improve outcomes and strengthen rural health care systems by slashing government bureaucracy. Health care decisions should be made by doctors and patients in North Dakota, not in Washington, D.C.",
+      "reasoning": "Text advocates reducing government bureaucracy and letting market/doctor-patient decisions prevail.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:00+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No position stated on political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:00+00:00"
     }
   ]
 }

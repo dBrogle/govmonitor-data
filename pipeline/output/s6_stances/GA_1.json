@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "C001103",
   "website": "https://buddycarter.house.gov/",
-  "fetched_at": "2026-08-30T14:22:13+00:00",
+  "fetched_at": "2026-09-04T19:46:50+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,18 +27,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "Carter secures $346.1 million for GA-01 in House-passed defense bill WASHINGTON, D.C. \u2013 Rep. Earl L. \u201cBuddy\u201d Carter (R-GA) today secured $346.1 million for Georgia\u2019s First Congressional District in the House-passed National Defense Authorization Act (NDAA)",
-      "reasoning": "Text explicitly highlights securing substantial defense funding and representing major military installations as priorities."
+      "quote": "Carter secures $346.1 million for GA-01 in House-passed defense bill",
+      "reasoning": "Text explicitly highlights securing substantial defense funding via NDAA and praises district military installations as vital to national security.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "As a Member of Congress, I have voted to cut more than $5 trillion in waste from the federal budget which reaches balance and begins paying off the national debt within ten years without raising taxes.",
-      "reasoning": "Explicit statement opposing tax increases while cutting spending to balance the budget."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on raising or lowering taxes appears in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "I will continue to fight to end Washington\u2019s out of control spending addiction.",
-      "reasoning": "Multiple statements emphasize cutting trillions in waste and balancing the budget by reducing spending."
+      "reasoning": "Multiple statements emphasize cutting trillions in waste and balancing the budget by reducing spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy, tariffs, or free trade."
+      "reasoning": "No statements on tariffs, protectionism, or free trade appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": 1.0,
+      "quote": "I have voted to cut more than $5 trillion in waste from the federal budget which reaches balance and begins paying off the national debt within ten years without raising taxes.",
+      "reasoning": "Dedicated 'Balancing the Budget' page states national debt is biggest threat and details votes to cut spending to balance budget and pay down debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "Improving America\u2019s health care system requires transparency and competition... By empowering patients and employers to shop for health care and have access to accurate information about the cost of care, treatment, and services, we can bring medical costs down across the board.",
+      "reasoning": "Dedicated Health Care page emphasizes transparency, competition, and patient/employer shopping over government intervention.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Vote to ban insider trading for lawmakers does not address limits or disclosure for political contributions or spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     }
   ]
 }

@@ -3,24 +3,24 @@
   "district": 2,
   "bioguide_id": "G000604",
   "website": "https://goodlander.house.gov/",
-  "fetched_at": "2026-08-30T14:30:15+00:00",
+  "fetched_at": "2026-09-04T19:55:26+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://goodlander.house.gov",
     "https://goodlander.house.gov/media/press-releases/",
-    "https://goodlander.house.gov/media/press-releases/goodlander-backed-affordable-housing-bill-becomes-law/",
     "https://goodlander.house.gov/media/press-releases/goodlander-statement-on-rep-massies-amendment-to-h-r-8595/",
     "https://goodlander.house.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodlander.house.gov%2Fmedia%2Fpress-releases%2F",
     "https://goodlander.house.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoodlander.house.gov%2Fmedia%2Fpress-releases%2F&",
     "https://goodlander.house.gov/media/press-releases/goodlander-pappas-lead-legislation-to-combat-substance-use-disorder-in-house/",
     "https://goodlander.house.gov/media/press-releases/goodlander-backed-bipartisan-bill-to-strengthen-alzheimers-care-passes-the-house/",
-    "https://goodlander.house.gov/media/press-releases/goodlander-statement-on-u-s-supreme-court-decision-upholding-birthright-citizenship/",
     "https://goodlander.house.gov/media/press-releases/goodlander-demands-answers-from-the-pentagon-on-conditions-aboard-the-uss-abraham-lincoln/",
     "https://goodlander.house.gov/media/press-releases/goodlander-democratic-veterans-celebrate-defeat-of-republican-attack-on-veterans-benefits/",
+    "https://goodlander.house.gov/media/press-releases/goodlander-joins-house-veterans-affairs-subcommittees-on-health-and-technology-modernization/",
     "https://goodlander.house.gov/media/press-releases/goodlander-calls-for-federal-investigation-into-conditions-at-the-sununu-youth-services-center/",
-    "https://goodlander.house.gov/media/press-releases/goodlander-introduces-bipartisan-bicameral-effort-to-accelerate-hydropower-production-and-lower-energy-costs/",
+    "https://goodlander.house.gov/media/press-releases/goodlander-and-bicameral-group-of-lawmakers-slam-trump-admin-efforts-to-deport-military-families/",
     "https://goodlander.house.gov/media/press-releases/second-goodlander-backed-bipartisan-war-powers-resolution-to-end-trumps-unauthorized-war-in-iran-passes-house/",
+    "https://goodlander.house.gov/media/press-releases/goodlander-pappas-urge-trump-to-reverse-course-on-canadian-trade-war-threatening-new-hampshire-small-businesses/",
     "https://goodlander.house.gov/media/press-releases/goodlander-joins-house-veterans-affairs-committee-democrats-to-condemn-omb-rule-politicizing-federal-grantmaking/"
   ],
   "stances": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on military spending levels."
+      "reasoning": "No explicit statement on overall military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:26+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address taxation policy."
+      "reasoning": "No explicit statement on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:26+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,23 +52,64 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of spending bills do not state a general position on overall government spending levels."
+      "reasoning": "Mentions of spending bills do not state a general position on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No statements address trade policy."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Goodlander, Pappas Urge Trump to Reverse Course on Canadian Trade War Threatening New Hampshire Small Businesses",
+      "reasoning": "Explicit call to reverse course on tariffs/trade war indicates support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:26+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.5,
       "stated_score": 1.0,
       "quote": "That is the spirit in which I voted today against sending an additional $3.3 billion American taxpayer dollars to Prime Minister Netanyahu\u2019s government.",
-      "reasoning": "Explicit vote and statement opposing additional foreign aid spending to Israel indicates support for less foreign aid."
+      "reasoning": "Explicit vote and statement against additional aid to Israel shows preference for less foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:26+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:26+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "This legislation would deliver more than $65 billion in federal funding over the next ten years for substance use treatment and prevention.",
+      "reasoning": "Multiple statements backing federal grants, funding, and programs for health research, substance use, and Alzheimer\u2019s care indicate support for government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:26+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Bill on exposing secret federal spending does not address political contributions or campaign finance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:26+00:00"
     }
   ]
 }

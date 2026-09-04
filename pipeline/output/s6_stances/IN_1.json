@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M001214",
   "website": "https://mrvan.house.gov",
-  "fetched_at": "2026-08-30T14:24:16+00:00",
+  "fetched_at": "2026-09-04T19:49:34+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military spending levels."
+      "reasoning": "No statements on military spending levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:34+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of tax policy or rates."
+      "reasoning": "No statements on tax rates or policy appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:34+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.75,
       "stated_score": -1.0,
       "quote": "Rep. Mrvan supported the American Rescue Plan in order to get past the pandemic and build momentum to grow our economy. This legislation resulted in the quickest economic recovery in our nation\u2019s history and record-low unemployment rates. Rep. Mrvan also supported the Bipartisan Infrastructure Investment and Jobs Act, the largest investment in our nation\u2019s infrastructure since the creation of the National Highway System in the 1950\u2019s.",
-      "reasoning": "Text repeatedly endorses major federal spending bills and appropriations for infrastructure, disaster relief, and programs."
+      "reasoning": "Text repeatedly endorses major federal spending bills and appropriations for infrastructure, disaster relief, and programs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.85,
+      "emphasis": 0.9,
       "stated_score": -1.0,
-      "quote": "Rep. Mrvan believes that we must fight for every single American manufacturing and steel job. That is why Rep. Mrvan has testified on multiple occasions before the International Trade Commission and will continue to fight to ensure that all American trade laws are fully enforced, that Section 232 steel tariffs are continued, and that strong and expanded Buy America requirements are applied to appropriations and infrastructure legislation.",
-      "reasoning": "Steel caucus role and explicit support for tariffs and Buy America make this a signature protectionist stance."
+      "quote": "fight to ensure that all American trade laws are fully enforced, that Section 232 steel tariffs are continued, and that strong and expanded Buy America requirements are applied to appropriations and infrastructure legislation",
+      "reasoning": "Text repeatedly emphasizes protecting domestic steel via tariffs, Buy America rules, and enforcement against imports, indicating a protectionist stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:34+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:34+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on deficit reduction or accepting larger deficits appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:34+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.75,
+      "stated_score": -1.0,
+      "quote": "One of the main priorities of Congressman Mrvan for Indiana\u2019s First Congressional District is to improve access to affordable healthcare.",
+      "reasoning": "Text frames improving healthcare affordability and access as a top priority through government advocacy and appropriations, indicating support for government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:34+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending limits appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:34+00:00"
     }
   ]
 }

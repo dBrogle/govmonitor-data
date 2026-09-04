@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "T000193",
   "website": "https://benniethompson.house.gov/",
-  "fetched_at": "2026-08-30T14:28:43+00:00",
+  "fetched_at": "2026-09-04T19:53:51+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels appears in the text."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Congressman Thompson is and has been a consistent supporter of our armed fighting forces and veterans, making sure that these 22.6 million heroes get the services they deserve.",
+      "reasoning": "Text shows consistent support for armed forces equipment, health, and benefits implying more military-related spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:51+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on taxation levels or policy appears in the text."
+      "reasoning": "No statement on tax rates or policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:51+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "Congressman Thompson is committed to ensuring that Veterans are provided the very best services. He has worked to ensure that funds are wisely appropriated for VA to improve the quality of life for Veterans and the efficiency of their operations",
-      "reasoning": "Text repeatedly highlights support for federal grants, appropriations, Recovery Act, ACA, and VA funding, indicating preference for more government spending."
+      "reasoning": "Text repeatedly highlights support for federal grants, appropriations, Recovery Act, ACA, and VA funding, indicating preference for more government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy or tariffs appears in the text."
+      "reasoning": "No statement on tariffs, protectionism, or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:51+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
+      "reasoning": "No statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:51+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.15,
+      "stated_score": 1.0,
+      "quote": "Every effort that comes before Congress will be measured by whether it creates jobs strengthens the middle class and reduces the deficit.",
+      "reasoning": "Explicit commitment to measuring efforts by whether they reduce the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:51+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "Democrats introduce the Affordable Care Act of 2010 to improve the quality of health care and insurance coverage for 315,000 residents... Congressman Thompson cast a vote against a repeal of the Affordable Care Act.",
+      "reasoning": "Supports ACA as government action expanding coverage and lowering costs via federal law.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:51+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance, limits, or disclosure appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:51+00:00"
     }
   ]
 }

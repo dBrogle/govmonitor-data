@@ -3,7 +3,7 @@
   "district": 22,
   "bioguide_id": "V000129",
   "website": "https://valadao.house.gov",
-  "fetched_at": "2026-08-30T14:17:48+00:00",
+  "fetched_at": "2026-09-04T19:45:41+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,26 +27,35 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "our military must have the resources it needs to defend our nation\u2019s interests abroad and protect us from those who would attack us at home",
-      "reasoning": "The text explicitly states the military needs resources even in fiscal austerity, indicating support for more defense spending."
+      "quote": "Even in these times of fiscal austerity, we must ensure our men and women in uni",
+      "reasoning": "Text states military must have resources needed even amid austerity, indicating support for more spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:41+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.35,
       "stated_score": 1.0,
-      "quote": "lowering taxes for small businesses, decreasing intrusive federal regulation that stymies innovation, and limiting government spending that distorts the marketplace",
-      "reasoning": "The text advocates lowering taxes and reforming the tax code to let taxpayers keep more money."
+      "quote": "lowering taxes for small businesses",
+      "reasoning": "Text explicitly calls for lowering taxes and reforming tax code to let taxpayers keep more money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:41+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.25,
-      "stated_score": 1.0,
-      "quote": "limiting government spending that distorts the marketplace",
-      "reasoning": "The text calls for limiting government spending and references out of control government spending as a problem."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions limiting spending and fiscal austerity but no clear stance on shrinking deficit versus accepting larger deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:41+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:41+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No statements on foreign aid spending levels are present.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:41+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "I believe high quality, affordable health care should be available to Americans of every income level... Congress must provide robust support for our social safety-net programs, like Medicare and Medicaid",
+      "reasoning": "Text advocates government-supported reforms and safety-net programs to lower costs and expand access.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:41+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, limits, or political spending restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:41+00:00"
     }
   ]
 }

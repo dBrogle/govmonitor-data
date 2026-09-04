@@ -58,7 +58,7 @@
     "truth_score": {
       "score": 90,
       "topics_compared": 2,
-      "fetched_at": "2026-08-30T14:34:39+00:00",
+      "fetched_at": "2026-09-04T19:59:58+00:00",
       "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
@@ -69,7 +69,7 @@
         "raw_alignment": 1.0,
         "numerator": 18.94,
         "denominator": 18.94,
-        "salience": 0.1308,
+        "salience": 0.247,
         "contributing_signal_count": 29,
         "confidence": "high",
         "minus_one_desc": "Less military spending",
@@ -397,8 +397,8 @@
         ],
         "stated": {
           "score": 1.0,
-          "emphasis": 0.8,
-          "quote": "Protecting National Security : Rebuild our military to ensure it remains the strongest in the world to defend America\u2019s interests at home and abroad. Refocus on war-fighting capabilities and ending political agendas in the armed forces.",
+          "emphasis": 0.25,
+          "quote": "Rebuild our military to ensure it remains the strongest in the world to defend America\u2019s interests at home and abroad.",
           "reasoning": "Text explicitly calls for rebuilding the military to keep it the strongest in the world.",
           "source": "https://meuser.house.gov"
         }
@@ -410,7 +410,7 @@
         "raw_alignment": 0.6796,
         "numerator": 5.94,
         "denominator": 8.74,
-        "salience": 0.0604,
+        "salience": 0.114,
         "contributing_signal_count": 18,
         "confidence": "high",
         "minus_one_desc": "Higher taxes",
@@ -617,137 +617,27 @@
         ],
         "stated": {
           "score": 1.0,
-          "emphasis": 0.7,
+          "emphasis": 0.2,
           "quote": "Extend the Trump Tax Cuts and Jobs, including provisions like bonus depreciation, the small business deduction, and the R&D tax credit, which allow entrepreneurs to invest in their businesses, innovate, and create jobs.",
-          "reasoning": "Text explicitly endorses extending the Trump tax cuts.",
+          "reasoning": "Text explicitly supports extending the Trump tax cuts.",
           "source": "https://meuser.house.gov"
         }
       },
       {
-        "topic_slug": "government_spending",
-        "topic_name": "Government Spending",
-        "alignment": -0.5683,
-        "raw_alignment": -0.5741,
-        "numerator": -56.88,
-        "denominator": 99.08,
-        "salience": 0.6843,
-        "contributing_signal_count": 146,
+        "topic_slug": "budget_deficit",
+        "topic_name": "Budget Deficit",
+        "alignment": -0.5291,
+        "raw_alignment": -0.5488,
+        "numerator": -14.74,
+        "denominator": 26.86,
+        "salience": 0.3503,
+        "contributing_signal_count": 37,
         "confidence": "high",
-        "minus_one_desc": "More government spending",
-        "plus_one_desc": "Less government spending",
+        "minus_one_desc": "Accept a larger deficit to fund priorities",
+        "plus_one_desc": "Shrink the deficit and balance the budget",
         "contributing_bills": [
           {
             "bill_type": "HR",
-            "bill_number": "6644",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-02-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "6047",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-21"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "6047",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-21"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1329",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-21"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1300",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1300",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "2393",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "2393",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1299",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1299",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
-          },
-          {
-            "bill_type": "HR",
             "bill_number": "8469",
             "role": "vote",
             "weight": 1.0,
@@ -756,28 +646,6 @@
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2026-05-15"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8469",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-15"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2853",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-12"
           },
           {
             "bill_type": "HR",
@@ -791,37 +659,15 @@
             "vote_date": "2026-04-30"
           },
           {
-            "bill_type": "HR",
-            "bill_number": "7567",
+            "bill_type": "SCONRES",
+            "bill_number": "33",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2026-04-30"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "227",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-04-27"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1182",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-04-22"
+            "vote_date": "2026-04-29"
           },
           {
             "bill_type": "HR",
@@ -836,39 +682,6 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "7613",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-04-14"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "7613",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-04-14"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1142",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-27"
-          },
-          {
-            "bill_type": "HR",
             "bill_number": "8029",
             "role": "vote",
             "weight": 1.0,
@@ -879,81 +692,15 @@
             "vote_date": "2026-03-26"
           },
           {
-            "bill_type": "HR",
-            "bill_number": "8029",
+            "bill_type": "HJRES",
+            "bill_number": "139",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": -1.0,
+            "bill_topic_score": 1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2026-03-26"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1128",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-26"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1128",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-26"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "5103",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "6422",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-24"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "3971",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-17"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "3971",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-17"
+            "vote_date": "2026-03-18"
           },
           {
             "bill_type": "HR",
@@ -979,84 +726,7 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "7744",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-05"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "723",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-04"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3617",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-02-11"
-          },
-          {
-            "bill_type": "HR",
             "bill_number": "7148",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-22"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "7148",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-22"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3123",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-02-02"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "980",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-02-02"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "7147",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
@@ -1075,28 +745,6 @@
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2026-01-22"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1009",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-21"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "5763",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-20"
           },
           {
             "bill_type": "HR",
@@ -1108,28 +756,6 @@
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2026-01-14"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1834",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Nay",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-08"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1834",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Nay",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-08"
           },
           {
             "bill_type": "HR",
@@ -1155,102 +781,36 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "6938",
+            "bill_number": "6703",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2026-01-08"
+            "vote_date": "2025-12-17"
           },
           {
             "bill_type": "HR",
-            "bill_number": "4305",
+            "bill_number": "5371",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-12-03"
+            "vote_date": "2025-09-19"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3015",
+            "bill_number": "1",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-09-18"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2721",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-16"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2721",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-16"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3425",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
+            "vote_date": "2025-05-22"
           },
           {
             "bill_type": "HR",
@@ -1262,116 +822,6 @@
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-06-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3944",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-06-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "4",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-06-12"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1223",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-20"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2240",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-15"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2215",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-14"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "530",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "586",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-07"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1534",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1326",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-24"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1326",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-24"
           },
           {
             "bill_type": "HR",
@@ -1386,50 +836,6 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "993",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "695",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-26"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "776",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-04"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "776",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-04"
-          },
-          {
-            "bill_type": "HR",
             "bill_number": "471",
             "role": "vote",
             "weight": 1.0,
@@ -1441,47 +847,25 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "375",
+            "bill_number": "164",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-01-23"
+            "vote_date": "2025-01-15"
           },
           {
             "bill_type": "HR",
-            "bill_number": "375",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
+            "bill_number": "1264",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2025-01-23"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "5",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-01-22"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "187",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-01-21"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
@@ -1518,51 +902,7 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "1708",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
             "bill_number": "7352",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "7352",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3954",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3954",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
@@ -1583,26 +923,26 @@
             "vote_date": null
           },
           {
-            "bill_type": "HJRES",
-            "bill_number": "139",
+            "bill_type": "HR",
+            "bill_number": "4",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
             "bill_topic_score": 0.9,
             "contributed_to_alignment": true,
-            "vote_date": "2026-03-18"
+            "vote_date": "2025-06-12"
           },
           {
-            "bill_type": "HR",
-            "bill_number": "4758",
+            "bill_type": "HCONRES",
+            "bill_number": "14",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.9,
+            "bill_topic_score": 0.8,
             "contributed_to_alignment": true,
-            "vote_date": "2026-02-25"
+            "vote_date": "2025-02-25"
           },
           {
             "bill_type": "HR",
@@ -1611,64 +951,9 @@
             "weight": 0.8,
             "vote_position": null,
             "vote_class": null,
-            "bill_topic_score": 0.9,
+            "bill_topic_score": 0.8,
             "contributed_to_alignment": true,
             "vote_date": null
-          },
-          {
-            "bill_type": "HJRES",
-            "bill_number": "139",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.8,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-18"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.8,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-22"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "5",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.8,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-01-03"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "4",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-06-12"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "5",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.7,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-01-03"
           },
           {
             "bill_type": "HR",
@@ -1677,9 +962,53 @@
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.6,
+            "bill_topic_score": 0.5,
             "contributed_to_alignment": true,
             "vote_date": "2026-02-25"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7837",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": 0.3,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HRES",
+            "bill_number": "1299",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2026-05-20"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "227",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2026-04-27"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "7959",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.2,
+            "contributed_to_alignment": true,
+            "vote_date": "2026-04-27"
           },
           {
             "bill_type": "HR",
@@ -1688,31 +1017,9 @@
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.6,
+            "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": "2025-12-18"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3424",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-25"
           },
           {
             "bill_type": "HR",
@@ -1721,152 +1028,9 @@
             "weight": 0.4,
             "vote_position": null,
             "vote_class": null,
-            "bill_topic_score": 0.6,
+            "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1069",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1115",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.4,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-17"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1075",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.4,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-02-24"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "161",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.4,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8028",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": 0.4,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8365",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-05-14"
-          },
-          {
-            "bill_type": "SCONRES",
-            "bill_number": "33",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-04-29"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "5764",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-20"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-22"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1039",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-07"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "161",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "164",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-01-15"
           },
           {
             "bill_type": "HR",
@@ -1875,284 +1039,91 @@
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.2,
+            "bill_topic_score": 0.1,
             "contributed_to_alignment": true,
             "vote_date": "2026-02-09"
-          },
+          }
+        ],
+        "stated": null
+      },
+      {
+        "topic_slug": "healthcare_affordability",
+        "topic_name": "Healthcare Affordability",
+        "alignment": -0.3725,
+        "raw_alignment": -0.4634,
+        "numerator": -1.9,
+        "denominator": 4.1,
+        "salience": 0.0535,
+        "contributing_signal_count": 7,
+        "confidence": "medium",
+        "minus_one_desc": "Government action to lower costs and expand coverage",
+        "plus_one_desc": "Market competition with less government involvement",
+        "contributing_bills": [
           {
-            "bill_type": "HRES",
-            "bill_number": "1182",
+            "bill_type": "HR",
+            "bill_number": "2493",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.2,
+            "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2026-04-22"
+            "vote_date": "2026-04-21"
           },
           {
             "bill_type": "HR",
-            "bill_number": "1958",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-18"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "1115",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-17"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "68",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Nay",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-22"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "5764",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-20"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "64",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Nay",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-17"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "61",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Nay",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-17"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "953",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-17"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3187",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-15"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3424",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "426",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-20"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "426",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-20"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "36",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1156",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-11"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "788",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-24"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8028",
-            "role": "cosponsor",
-            "weight": 0.4,
+            "bill_number": "7837",
+            "role": "sponsor",
+            "weight": 0.8,
             "vote_position": null,
             "vote_class": null,
-            "bill_topic_score": 0.2,
+            "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": null
           },
           {
             "bill_type": "HR",
-            "bill_number": "1184",
+            "bill_number": "7871",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
             "vote_class": null,
-            "bill_topic_score": -0.2,
+            "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": null
           },
           {
             "bill_type": "HR",
-            "bill_number": "5317",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
+            "bill_number": "7352",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
-            "bill_number": "4544",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
+            "bill_number": "3954",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
+            "vote_date": null
           },
           {
             "bill_type": "HR",
-            "bill_number": "3234",
+            "bill_number": "6703",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.1,
+            "bill_topic_score": 0.8,
             "contributed_to_alignment": true,
-            "vote_date": "2026-05-20"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1958",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-03-18"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "977",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2026-01-07"
+            "vote_date": "2025-12-17"
           },
           {
             "bill_type": "HR",
@@ -2161,86 +1132,9 @@
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.1,
+            "bill_topic_score": 0.3,
             "contributed_to_alignment": true,
             "vote_date": "2025-12-18"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "64",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Nay",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-17"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2550",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Nay",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-11"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1156",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-11"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "788",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-25"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-24"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "153",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-01-14"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "152",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-01-13"
           }
         ],
         "stated": null
@@ -2252,7 +1146,7 @@
         "raw_alignment": 0.2737,
         "numerator": 2.94,
         "denominator": 10.74,
-        "salience": 0.0742,
+        "salience": 0.1401,
         "contributing_signal_count": 19,
         "confidence": "high",
         "minus_one_desc": "Protectionist policies and tariffs",
@@ -2477,7 +1371,7 @@
         "raw_alignment": -0.0959,
         "numerator": -0.7,
         "denominator": 7.3,
-        "salience": 0.0504,
+        "salience": 0.0952,
         "contributing_signal_count": 10,
         "confidence": "high",
         "minus_one_desc": "More foreign aid spending",
@@ -2597,7 +1491,12 @@
         "stated": null
       }
     ],
-    "topics_without_signal": []
+    "topics_without_signal": [
+      {
+        "topic_slug": "money_in_politics",
+        "topic_name": "Money in Politics"
+      }
+    ]
   },
   "voting_history": [
     {
@@ -9931,6 +8830,69 @@
       "introduced_date": "2026-02-12"
     }
   ],
+  "bipartisanship": {
+    "state": "PA",
+    "district": 9,
+    "name": "Daniel Meuser",
+    "bioguide_id": "M001204",
+    "party": "R",
+    "vote_defection": 0.0083,
+    "cosponsor_reach": 0.22,
+    "attracted_reach": 0.3684,
+    "composite": 0.1989,
+    "signals": {
+      "votes_counted": 363,
+      "defections": 3,
+      "cosponsored_counted": 50,
+      "cosponsored_cross_party": 11,
+      "sponsored_counted": 19,
+      "sponsored_with_cross_party_support": 7
+    },
+    "defection_examples": [
+      {
+        "session": 2,
+        "vote_number": 72,
+        "vote_date": "2026-02-24",
+        "bill": {
+          "number": "2503",
+          "type": "S"
+        },
+        "member_position": "Yea",
+        "party_majority_position": "Nay"
+      },
+      {
+        "session": 1,
+        "vote_number": 300,
+        "vote_date": "2025-11-19",
+        "bill": {
+          "number": "4058",
+          "type": "HR"
+        },
+        "member_position": "Nay",
+        "party_majority_position": "Yea"
+      },
+      {
+        "session": 1,
+        "vote_number": 157,
+        "vote_date": "2025-06-09",
+        "bill": {
+          "number": "2035",
+          "type": "HR"
+        },
+        "member_position": "Nay",
+        "party_majority_position": "Yea"
+      }
+    ],
+    "rank": 201,
+    "percentile": 53,
+    "ranked_against": 431,
+    "note": "Share of substantive votes cast against the member's own party majority, share of cosponsorships given to the other party's bills, and share of their own bills that drew cross-party cosponsors. Percentile is the share of the other 431 scored House members this member's average ranks above.",
+    "caveats": [
+      "Cosponsorship reach is measured over the most recent 50 cosponsorships on file (the Congress.gov per-member list is capped), not a member's full record.",
+      "Cross-party support counts only sponsored bills whose cosponsor list was fetched.",
+      "Procedural and amendment votes are excluded, matching the alignment scoring."
+    ]
+  },
   "finance": {
     "fec_id": "H8PA10147",
     "name": "Daniel Meuser",

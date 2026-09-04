@@ -1,10 +1,12 @@
 # WatchGov — congressional data pipeline
 
 An open pipeline that builds a structured, per-member dataset on the U.S. House of
-Representatives across three dimensions:
+Representatives across four dimensions:
 
-- **Voting & policy alignment** — where each member stands on 5 policy topics, scored by
+- **Voting & policy alignment** — where each member stands on 7 policy topics, scored by
   LLM analysis of the bills they voted on, sponsored, and cosponsored.
+- **Working across the aisle** — how often each member votes against their own party and
+  cosponsors across it, computed straight from the record with no LLM involved.
 - **Campaign finance** — who funds each member, broken down by small-dollar vs. large
   individual vs. PAC vs. party vs. self-funding, plus PAC profiles and outside spending.
 - **Legislation** — bill details, votes, sponsorship, and committee activity.

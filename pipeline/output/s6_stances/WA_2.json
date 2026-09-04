@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "L000560",
   "website": "https://larsen.house.gov",
-  "fetched_at": "2026-08-30T14:39:17+00:00",
+  "fetched_at": "2026-09-04T20:05:12+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -29,15 +29,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending appear in the text."
+      "reasoning": "No mention of military or defense spending in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:12+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.3,
       "stated_score": -1.0,
-      "quote": "I voted against the Big Ugly Law, which cuts roughly $1.1 trillion from Medicaid, Medicare, and the ACA \u2013 $911 billion of which is from Medicaid \u2013 all to pay for a tax break for the richest Americans and biggest corporations.",
-      "reasoning": "Opposition to tax breaks for the rich and support for increasing wealthy contributions to Social Security indicate a position favoring higher taxes."
+      "quote": "I support extending the long-term solvency of Social Security by increasing the amount wealthy individuals contribute to the system",
+      "reasoning": "Text explicitly supports raising contributions from wealthy individuals for Social Security solvency.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:12+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -45,15 +51,20 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "I voted against the Big Ugly Law, which cuts roughly $1.1 trillion from Medicaid, Medicare, and the ACA \u2013 $911 billion of which is from Medicaid \u2013 all to pay for a tax break for the richest Americans and biggest corporations.",
-      "reasoning": "Repeated support for funding programs and opposition to spending cuts demonstrate a stance favoring more government spending."
+      "reasoning": "Repeated support for funding programs and opposition to spending cuts demonstrate a stance favoring more government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "These new tariffs aren't leverage over Canada. They're yet another way that the Trump administration is raising your prices and sabotaging...",
-      "reasoning": "Criticism of tariffs and emphasis on overseas market access and export promotion show support for free trade."
+      "quote": "These new tariffs aren't leverage over Canada. They're yet another way that the Trump administration is raising your prices and sabotaging",
+      "reasoning": "Text criticizes tariffs as harmful and supports offsetting losses from them, indicating free trade stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:12+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -61,7 +72,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No mention of foreign aid spending in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:12+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of budget deficit or balancing the budget in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:12+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "In 2022, I voted to allow Medicare to negotiate drug prices for the first time in our nation\u2019s history (the Inflation Reduction Act)",
+      "reasoning": "Multiple statements support government interventions like Medicare negotiation, Medicaid funding, and drug price caps.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:12+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of campaign finance, political spending limits, or disclosure in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:12+00:00"
     }
   ]
 }

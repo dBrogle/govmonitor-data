@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "F000478",
   "website": "https://fry.house.gov",
-  "fetched_at": "2026-08-30T14:35:34+00:00",
+  "fetched_at": "2026-09-04T20:01:03+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -22,19 +22,25 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on military or defense spending levels."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "We need leadership in our military that prioritizes bolstering our military, not DEI initiatives.",
+      "reasoning": "The text explicitly calls for bolstering the military as a national security priority.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:03+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "This legislation would also prevent the IRS from using its $80 billion increase to target Americans for the purpose of squeezing even more dollars from the pockets of hard-working Americans.",
-      "reasoning": "Explicit opposition to IRS expansion aimed at collecting more revenue from taxpayers indicates support for lower taxes."
+      "quote": "This legislation would block the Biden administration from unleashing 87,000 new IRS agents to go after families and small businesses and their unprecedented increase in IRS audits.",
+      "reasoning": "The text supports blocking IRS expansion aimed at collecting more revenue from taxpayers.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:03+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -42,7 +48,9 @@
       "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "We must cut wasteful spending to fight inflation.",
-      "reasoning": "Direct calls to cut wasteful spending and end out-of-control federal spending demonstrate a clear position favoring less government spending."
+      "reasoning": "Direct calls to cut wasteful spending and end out-of-control federal spending demonstrate a clear position favoring less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -50,7 +58,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy, tariffs, or free trade."
+      "reasoning": "No statements address trade policy, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:03+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -58,7 +69,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements address foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:03+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": 1.0,
+      "quote": "Our national debt has surpassed $34 trillion. Washington can\u2019t keep swiping our country\u2019s credit card and expect Americans to pay for the consequences. We must cut wasteful spending to fight inflation.",
+      "reasoning": "The text repeatedly condemns excessive spending and debt while calling for cuts to restore fiscal sanity.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:03+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address healthcare costs, coverage, or government involvement.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:03+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits, disclosure, or restrictions on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:03+00:00"
     }
   ]
 }

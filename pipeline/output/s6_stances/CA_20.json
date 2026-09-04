@@ -3,7 +3,7 @@
   "district": 20,
   "bioguide_id": "F000480",
   "website": "https://fong.house.gov/",
-  "fetched_at": "2026-08-30T14:17:48+00:00",
+  "fetched_at": "2026-09-04T19:45:35+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -20,41 +20,53 @@
     "https://fong.house.gov/media/press-releases",
     "https://fong.house.gov/media/press-releases/taking-oath-office",
     "https://fong.house.gov/media/press-releases/fong-ai-education-bill-passes-committee",
-    "https://fong.house.gov/media/press-releases/fong-demands-answers-californias-health-care-tax",
-    "https://fong.house.gov/media/press-releases/fong-secures-local-wins-water-resources-development-act"
+    "https://fong.house.gov/media/press-releases/fong-secures-local-wins-water-resources-development-act",
+    "https://fong.house.gov/media/press-releases/congressman-vince-fong-helps-secure-hospital-funding-california"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "the House of Representatives passed the Fiscal Year 2027 National Defense Authorization Act (NDAA), legislation that strengthens America's national defense, invests in our military installations, and delivers for the men and women who serve this nation.",
-      "reasoning": "Multiple statements show strong support for NDAA, military infrastructure funding, and defense projects."
+      "quote": "legislation that strengthens America's national defense, invests in our military installations, and delivers for the men and women who serve this nation",
+      "reasoning": "Text repeatedly supports NDAA passage, military infrastructure funding, and defense projects.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:35+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.5,
       "stated_score": 1.0,
-      "quote": "Fong Moves to End California\u2019s Hidden Climate Tax on American Consumers",
-      "reasoning": "Repeated opposition to state taxes including health care tax and climate regulations framed as hidden taxes."
+      "quote": "Fong Moves to End California's Hidden Climate Tax on American Consumers",
+      "reasoning": "Multiple statements criticize various state and federal taxes as hidden or burdensome and seek to overturn them.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:35+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Secures local appropriations but no clear general stance on overall government spending levels."
+      "reasoning": "No explicit statements on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:35+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.2,
       "stated_score": -1.0,
       "quote": "Trump can protect California avocado farmers and take a bite out of Mexican cartels, too",
-      "reasoning": "Editorial advocates protection for domestic farmers against Mexican imports."
+      "reasoning": "Editorial advocates protection for domestic farmers against Mexican imports.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:35+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No mentions of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:35+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Secures hospital funding and criticizes a state health tax but no clear stance on government vs market approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:35+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:35+00:00"
     }
   ]
 }

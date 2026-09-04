@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "D000631",
   "website": "https://dean.house.gov",
-  "fetched_at": "2026-08-30T14:34:17+00:00",
+  "fetched_at": "2026-09-04T19:59:38+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -11,10 +11,10 @@
     "https://dean.house.gov/issues",
     "https://dean.house.gov/newsroom",
     "https://dean.house.gov/press-releases",
+    "https://dean.house.gov/press-releases?id=30FBE58D-F322-4915-A756-7C32302A91F3",
     "https://dean.house.gov/press-releases?id=ACCACAD7-6890-4FBC-BD1C-76D65B93D160",
     "https://dean.house.gov/press-releases?id=F49990E9-F06F-4156-BBBA-8838DB7B6294",
     "https://dean.house.gov/press-releases?id=C5FB6783-536D-44BE-B0C5-21ABBF152EB9",
-    "https://dean.house.gov/press-releases?id=ED9FD59C-8A98-4CE0-BE1A-11FA2AB70817",
     "https://dean.house.gov/2026/7/congresswoman-dean-s-statement-on-supporting-the-massie-amendment"
   ],
   "stances": [
@@ -24,7 +24,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on US military or defense spending levels."
+      "reasoning": "No verbatim statement on US military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:38+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -32,7 +35,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tax policy or rates."
+      "reasoning": "No verbatim statement on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:38+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -40,7 +46,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No position stated on overall government spending levels."
+      "reasoning": "No position stated on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -48,15 +56,54 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mentions of trade, tariffs, or free trade."
+      "reasoning": "No verbatim statement on trade or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:38+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.15,
       "stated_score": 1.0,
       "quote": "Not another dime to the Netanyahu government.",
-      "reasoning": "Explicit support for cutting aid via Massie Amendment shows preference for less foreign aid spending."
+      "reasoning": "Explicit call to end aid to specific foreign government indicates preference for less foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:38+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on deficit or budget balancing.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:38+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Rep. Dean supports universal, affordable high-quality healthcare.",
+      "reasoning": "Support for universal healthcare indicates preference for government action to expand coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:38+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:38+00:00"
     }
   ]
 }

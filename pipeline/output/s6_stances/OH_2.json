@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "T000490",
   "website": "https://taylor.house.gov/",
-  "fetched_at": "2026-08-30T14:32:56+00:00",
+  "fetched_at": "2026-09-04T19:58:03+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels."
+      "reasoning": "No explicit statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:03+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.45,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "Congress needs to cut taxes for hardworking American families and combat inflation.",
-      "reasoning": "Explicit call to cut taxes shows support for lower taxes."
+      "reasoning": "Text explicitly calls for cutting taxes, matching the +1 convention for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:03+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.55,
       "stated_score": 1.0,
       "quote": "Congress needs to reign in wasteful government spending and allocate taxpayer dollars responsibly.",
-      "reasoning": "Direct advocacy for reigning in wasteful spending indicates preference for less government spending."
+      "reasoning": "Direct advocacy for reigning in wasteful spending indicates preference for less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of expanding trade markets and American-made incentives are present but do not state a clear overall position on free trade versus protectionism."
+      "reasoning": "Mentions of expanding trade markets and bringing back American industry are present but do not clearly state a protectionist or free-trade position.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:03+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements addressing foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:03+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "American families work hard every day and they need Congress to do the same: to balance a budget, reign in our soaring national debt, and spend taxpayer dollars effectively.",
+      "reasoning": "Text directly advocates balancing the budget and reducing national debt, aligning with +1 for shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:03+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No positions on government action versus market competition for healthcare costs are stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:03+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "The text contains no references to limits or restrictions on political spending or donations.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:03+00:00"
     }
   ]
 }

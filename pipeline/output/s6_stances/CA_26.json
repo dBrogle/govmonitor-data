@@ -3,7 +3,7 @@
   "district": 26,
   "bioguide_id": "B001285",
   "website": "https://juliabrownley.house.gov",
-  "fetched_at": "2026-08-30T14:18:04+00:00",
+  "fetched_at": "2026-09-04T19:45:44+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels appears in the text."
+      "reasoning": "No statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,23 +41,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on general tax rates or levels appears in the text."
+      "reasoning": "No general position on raising or lowering taxes is stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels appears in the text."
+      "reasoning": "No statement on deficit size or balancing the budget appears.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Title reference to retaining USMCA exists but lacks any verbatim quote stating a position."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "Brownley, New Dem Colleagues Call on Trump Administration to Retain USMCA",
+      "reasoning": "Explicit call to retain the USMCA trade agreement indicates support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Title reference to foreign aid bill amendment exists but lacks any verbatim quote stating a position."
+      "reasoning": "Mentions a statement on a foreign aid bill amendment but states no position.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "I am working to advance policies that expand coverage and make health insurance more affordable for working families.",
+      "reasoning": "Repeated emphasis on expanding coverage and affordability through government policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "joined the new House Democratic majority last week to introduce the For the People Act (H.R. 1), a sweeping package of pro-democracy and anti-corruption reforms that will put the power back in the hands of the American people.",
+      "reasoning": "Support for H.R. 1 demonstrates backing for tighter campaign finance limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     }
   ]
 }

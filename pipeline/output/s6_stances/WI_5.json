@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "F000471",
   "website": "https://fitzgerald.house.gov",
-  "fetched_at": "2026-08-30T14:40:07+00:00",
+  "fetched_at": "2026-09-04T20:05:51+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,8 +18,8 @@
     "https://fitzgerald.house.gov/issues/jobs-economy",
     "https://fitzgerald.house.gov/issues/election-integrity",
     "https://fitzgerald.house.gov/media/press-releases",
-    "https://fitzgerald.house.gov/media/press-releases/rep-fitzgerald-statement-passage-save-america-act",
     "https://fitzgerald.house.gov/media/press-releases/rep-fitzgerald-votes-pass-stop-insider-trading-act",
+    "https://fitzgerald.house.gov/media/press-releases/rep-fitzgeralds-ndo-fairness-act-passes-house-representatives",
     "https://fitzgerald.house.gov/media/press-releases/rep-fitzgerald-votes-pass-secure-america-act-fully-fund-ice-and-cbp",
     "https://fitzgerald.house.gov/media/press-releases/rep-fitzgeralds-law-enforcement-innovate-de-escalate-act-passes-house"
   ],
@@ -27,18 +27,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "Congressman Scott Fitzgerald (WI-05) issued the following statement after voting to pass H.R. 8070, the Servicemember Quality of Life and National Defense Authorization Act of Fiscal Year 2025",
-      "reasoning": "Multiple statements show support for passing NDAA and military construction appropriations bills."
+      "quote": "Congressman Scott Fitzgerald (WI-05) issued the following statement after voting to pass H.R. 8469, the Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, 2027.",
+      "reasoning": "Text shows repeated votes for military construction and NDAA bills that strengthen readiness and pay.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:51+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.5,
       "stated_score": 1.0,
-      "quote": "Congress and the Administration could work together to make permanent the 100 percent bonus depreciation credit passed as part of the Tax Cuts and Jobs Act (TCJA)",
-      "reasoning": "Explicit support for extending TCJA tax provisions and highlighting wins from tax cuts."
+      "quote": "Ensuring our tax system is favorable to manufacturers is one way to reverse that trend.",
+      "reasoning": "Text advocates making TCJA bonus depreciation permanent and highlights tax cuts as wins.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:51+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "Inflationary pressures will only worsen if we do not work to cut reckless spending.",
-      "reasoning": "Direct call to cut reckless spending to fight inflation."
+      "reasoning": "Direct call to cut reckless spending to fight inflation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No verbatim statement on tariffs or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:51+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:51+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Inflationary pressures will only worsen if we do not work to cut reckless spending.",
+      "reasoning": "Text criticizes added debt and calls for cutting spending to fight inflation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:51+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "All Americans deserve access to quality, affordable healthcare, but a government run healthcare plan is not the answer.",
+      "reasoning": "Text opposes government-run care and Obamacare subsidies while favoring market solutions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:51+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on limits or disclosure for political spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:51+00:00"
     }
   ]
 }

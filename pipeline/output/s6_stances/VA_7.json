@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "V000138",
   "website": "https://vindman.house.gov/",
-  "fetched_at": "2026-08-30T14:38:55+00:00",
+  "fetched_at": "2026-09-04T20:04:59+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,7 +18,7 @@
     "https://vindman.house.gov/category/press-releases/page/5/?et_blog",
     "https://vindman.house.gov/category/press-releases/page/10/?et_blog",
     "https://vindman.house.gov/category/press-releases/page/20/?et_blog",
-    "https://vindman.house.gov/category/press-releases/page/25/?et_blog"
+    "https://vindman.house.gov/category/press-releases/page/26/?et_blog"
   ],
   "stances": [
     {
@@ -27,15 +27,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on the level of military or defense spending appears in the text."
+      "reasoning": "No statements address military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:59+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "legislation that cuts taxes for small, independent food retailers",
-      "reasoning": "The text explicitly supports legislation cutting taxes."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address tax rates or tax policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:59+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -43,7 +49,9 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "celebrated that the U.S. Department of Justice (DOJ) has awarded $69,498 in federal funding",
-      "reasoning": "Multiple press releases repeatedly celebrate and secure additional federal funding for programs and projects."
+      "reasoning": "Multiple press releases repeatedly celebrate and secure additional federal funding for programs and projects.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -51,7 +59,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy, tariffs, or free trade appears in the text."
+      "reasoning": "No statements address trade policy, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:59+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -59,7 +70,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:59+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:59+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of VA wait times and Head Start funding do not state a position on government vs. market approaches to healthcare costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:59+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.45,
+      "stated_score": -1.0,
+      "quote": "Vindman Calls on Legislators to Sell Their Stocks or Step Down to Restore Public Trust and Ensure Politicians Pay Their Fair Share",
+      "reasoning": "Explicit calls for legislators to divest stocks and bipartisan legislation banning congressional lobbying demonstrate support for tighter restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:59+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 0,
   "bioguide_id": "J000301",
   "website": "https://dustyjohnson.house.gov/",
-  "fetched_at": "2026-08-30T14:35:52+00:00",
+  "fetched_at": "2026-09-04T20:01:16+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -14,8 +14,8 @@
     "https://dustyjohnson.house.gov/issues/energy",
     "https://dustyjohnson.house.gov/issues/health",
     "https://dustyjohnson.house.gov/issues/economy",
-    "https://dustyjohnson.house.gov/issues/veterans",
     "https://dustyjohnson.house.gov/issues/congress",
+    "https://dustyjohnson.house.gov/issues/veterans",
     "https://dustyjohnson.house.gov/issues/pro-life",
     "https://dustyjohnson.house.gov/issues/education",
     "https://dustyjohnson.house.gov/issues/agriculture",
@@ -29,16 +29,22 @@
       "addressed": true,
       "emphasis": 0.25,
       "stated_score": 1.0,
-      "quote": "robust funding for B-21 aircraft procurement",
-      "reasoning": "Text supports increased defense funding via NDAA passage including B-21 procurement."
+      "quote": "The bill includes provisions to strengthen deterrence against China, prohibit men from competing in women\u2019s sports at military academies, and robust funding for B-21 aircraft procurement.",
+      "reasoning": "Text explicitly supports robust funding for military aircraft procurement in the NDAA.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:16+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.3,
       "stated_score": 1.0,
-      "quote": "prevents the largest tax hike in American history while saving $1.6 trillion",
-      "reasoning": "Explicit opposition to tax increases indicates preference for lower taxes."
+      "quote": "The Working Families Tax Cuts, which I voted for, delivered a historic $50 billion investment to strengthen rural health care via the Rural Health Transformation Program.",
+      "reasoning": "Text states support for tax cuts and preventing the largest tax hike.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:16+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.2,
       "stated_score": 1.0,
       "quote": "saving $1.6 trillion, the largest spending reduction in a generation",
-      "reasoning": "Direct endorsement of major spending cuts shows preference for less government spending."
+      "reasoning": "Direct endorsement of major spending cuts shows preference for less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.35,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "Johnson, House GOP colleagues send letter to President Trump following reports of potential beef imports from Argentina",
-      "reasoning": "Actions opposing foreign imports and countering China indicate protectionist stance."
+      "quote": "U.S. Representatives Dusty Johnson (R-S.D.) and members of the Select Committee on China introduced the Protecting U.S. Farmland and Sensitive Sites from Foreign Adversaries Act to protect American farmland, military facilities, and critical infrastructure from malign attempts to control American land by foreign adversaries like China.",
+      "reasoning": "Multiple statements focus on countering China through protective legislation rather than free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:16+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No clear position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:16+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "I voted to pass the House\u2019s One Big, Beautiful Bill, which is a strong, conservative package that prevents the largest tax hike in American history while saving $1.6 trillion, the largest spending reduction in a generation.",
+      "reasoning": "Text endorses major spending reductions to shrink the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:16+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": -1.0,
+      "quote": "Today, U.S. Representative Dusty Johnson (R-S.D.) voted to pass the Lower Health Care Premiums for All Americans Act, which makes targeted reforms to health care costs.",
+      "reasoning": "Text supports government reforms and a $50 billion rural health fund to lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:16+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Johnson, Chip Roy (R-TX), and Seth Magaziner (D-RI) re-introduced the bipartisan TRUST in Congress Act to prohibit Members of Congress, their spouses, and dependent children from trading individual stocks during their time in Congress.",
+      "reasoning": "Text leads legislation imposing tighter restrictions on congressional stock trading.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:16+00:00"
     }
   ]
 }

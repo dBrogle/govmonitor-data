@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M000194",
   "website": "https://mace.house.gov",
-  "fetched_at": "2026-08-30T14:35:08+00:00",
+  "fetched_at": "2026-09-04T20:00:46+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on level of military spending."
+      "reasoning": "No explicit statement on increasing or decreasing overall military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:46+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "We will champion policies that lower taxes, alleviate the high cost of living, and provide meaningful change to American families.",
-      "reasoning": "Explicit call for lower taxes shows support for reduced taxation."
+      "quote": "there\u2019s simply no way to tax our way out of the endless cycle of debt and deficits.",
+      "reasoning": "Text explicitly rejects higher taxes as a solution to deficits, favoring spending cuts instead.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:46+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Washington doesn\u2019t have a revenue problem, it has a spending problem.",
-      "reasoning": "Repeated emphasis on cutting waste, balancing budget, and rejecting more revenue as solution indicates strong preference for less spending."
+      "reasoning": "Repeated emphasis on cutting waste, balancing budget, and rejecting more revenue as solution indicates strong preference for less spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy or tariffs."
+      "reasoning": "No statements on tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:46+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No statements addressing foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:46+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "If we don\u2019t act quickly and seriously to balance the budget, our economy will be devastated.",
+      "reasoning": "Multiple passages stress shrinking deficits through waste reduction and balancing the budget as essential.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:46+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "the free market is able to deliver a higher quality product at a lower price for the consumer. Needless taxes and penalties stand in the way... The federal government must loosen its grip on our healthcare decisions.",
+      "reasoning": "Text advocates market competition and reduced government regulation over government intervention.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:46+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:46+00:00"
     }
   ]
 }

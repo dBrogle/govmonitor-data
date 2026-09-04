@@ -2,14 +2,36 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "1647",
-  "summary": null,
+  "summary": "The bill amends the Public Health Service Act to require the CDC to run a Climate Ready Tribes Initiative that translates climate science for tribal governments, builds their planning tools, identifies health threats, and shares resources, with $110 million authorized annually starting in fiscal year 2026.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill establishes the 'Climate Ready Tribes Initiative' within the Public Health Service Act, aiming to address the public health impacts of climate change on Tribal communities. This directly relates to public health services and initiatives, thus expanding public healthcare efforts for a specific population.",
       "topic_slug": "healthcare",
       "topic_name": "Healthcare",
-      "score": -0.7
+      "score": -0.7,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill authorizes $110 million annually in new appropriations for the Climate Ready Tribes Initiative with no offsets, revenue measures, or spending reductions specified, which would increase the deficit to fund this priority. The funding authorization is a necessary but secondary component of a bill whose core purpose is establishing a targeted CDC public health program.",
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:01:39+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "topic_name": "Healthcare Affordability",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:01:39+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

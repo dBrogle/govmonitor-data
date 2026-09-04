@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "P000621",
   "website": "https://pou.house.gov/",
-  "fetched_at": "2026-08-30T14:30:34+00:00",
+  "fetched_at": "2026-09-04T19:55:51+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -17,10 +17,10 @@
     "https://pou.house.gov/issues/education",
     "https://pou.house.gov/media/press-releases",
     "https://pou.house.gov/media/press-releases/congresswoman-pou-blasts-restarting-iran-war",
+    "https://pou.house.gov/media/press-releases/pou-bresnahan-scholten-unveil-aviation-safety-legislation",
     "https://pou.house.gov/media/press-releases/congresswoman-pou-opposes-republican-voter-id-poison-pill",
     "https://pou.house.gov/media/press-releases/sold-out-or-held-back-pou-bill-takes-aim-ticket-holdbacks",
     "https://pou.house.gov/media/press-releases/congresswoman-pou-supports-patriot-missile-systems-ukraine",
-    "https://pou.house.gov/media/press-releases/congresswoman-pou-praises-upholding-birthright-citizenship",
     "https://pou.house.gov/media/press-releases/congresswoman-pou-secures-critical-flood-protection-puerto-rico"
   ],
   "stances": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on U.S. military or defense spending levels."
+      "reasoning": "No clear position stated on U.S. military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:51+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on tax rates or policy."
+      "reasoning": "No clear position stated on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:51+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,23 +52,64 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "\u201cI reject this cruel Republican budget.\u201d",
-      "reasoning": "Opposition to Republican budget and funding measures indicates preference for higher spending."
+      "reasoning": "Opposition to Republican budget and funding measures indicates preference for higher spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "Congresswoman Pou Blasts Destructive Trump Tariffs",
-      "reasoning": "Explicit criticism of tariffs shows support for free trade."
+      "reasoning": "Explicitly blasts 25% tariffs on Canada and Mexico, indicating support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:51+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "America must give our Ukrainian allies whatever resources they need to finish the job",
+      "reasoning": "Supports providing Patriot missile systems and resources to Ukraine.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:51+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Support for Ukraine resources is mentioned but not framed as general foreign aid spending."
+      "reasoning": "Criticism of Republican budget focuses on cruelty and healthcare cuts, not deficit size.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:51+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Supports specific health program for responders but does not address affordability mechanisms.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:51+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions stock trading ban for members but does not address limits on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:51+00:00"
     }
   ]
 }

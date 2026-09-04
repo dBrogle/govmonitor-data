@@ -17,10 +17,16 @@ class TopicConfig(BaseModel):
     plus_one_desc: str
 
 
-# v1 topic set: deliberately narrow. Government Spending absorbs national debt (see
-# TOPIC_ALIASES in pipeline/stages/s5_alignment.py) — the two are treated as one axis.
-# Bills scored on other (now-removed) topics still exist in s4_analysis; s5 simply ignores
-# any score whose slug isn't in TOPICS_BY_SLUG, so widening the set later is a one-line change.
+# v1.1 topic set: still deliberately narrow. `budget_deficit` REPLACED the older
+# `government_spending` axis (and the `national_debt` axis folded into it) — the question we
+# actually care about is the gap between what the government spends and what it takes in, not
+# the raw spending level. The old slugs' cached scores are deliberately NOT aliased forward:
+# they were reasoned about spending levels, so s5 ignores them and the bills get re-scored on
+# the new axis (see the top-up path in s4_analysis).
+#
+# Bills scored on other (now-removed) topics still exist in s4_analysis; s5 simply ignores any
+# score whose slug isn't in TOPICS_BY_SLUG, so widening the set later is a one-line change here
+# plus a policy-area mapping entry — s4 then tops up only the newly-missing topics.
 TOPICS: list[TopicConfig] = [
     TopicConfig(
         slug="military_defense",
@@ -35,10 +41,13 @@ TOPICS: list[TopicConfig] = [
         plus_one_desc="Lower taxes",
     ),
     TopicConfig(
-        slug="government_spending",
-        name="Government Spending",
-        minus_one_desc="More government spending",
-        plus_one_desc="Less government spending",
+        slug="budget_deficit",
+        name="Budget Deficit",
+        # The axis is deficit tolerance, not spending level: a bill that widens the gap between
+        # outlays and revenue scores -1; one that narrows it (cuts, offsets, pay-fors, caps)
+        # scores +1. A fully paid-for spending increase is therefore NOT a -1.
+        minus_one_desc="Accept a larger deficit to fund priorities",
+        plus_one_desc="Shrink the deficit and balance the budget",
     ),
     TopicConfig(
         slug="trade_policy",
@@ -53,6 +62,18 @@ TOPICS: list[TopicConfig] = [
         name="Foreign Aid",
         minus_one_desc="More foreign aid spending",
         plus_one_desc="Less foreign aid spending",
+    ),
+    TopicConfig(
+        slug="healthcare_affordability",
+        name="Healthcare Affordability",
+        minus_one_desc="Government action to lower costs and expand coverage",
+        plus_one_desc="Market competition with less government involvement",
+    ),
+    TopicConfig(
+        slug="money_in_politics",
+        name="Money in Politics",
+        minus_one_desc="Tighter limits and disclosure for political money",
+        plus_one_desc="Fewer restrictions on political spending",
     ),
 ]
 

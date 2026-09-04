@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "S001211",
   "website": "https://stanton.house.gov/",
-  "fetched_at": "2026-08-30T14:16:30+00:00",
+  "fetched_at": "2026-09-04T19:45:12+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -25,7 +25,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending in the statements."
+      "reasoning": "No statements address military or defense spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:12+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -33,15 +36,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of taxation levels or policy in the statements."
+      "reasoning": "No statements address taxation levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:12+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Infrastructure funding references concern releasing already-allocated dollars rather than stating a position on overall government spending levels."
+      "reasoning": "No statements address the budget deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:12+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -49,7 +58,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "USMCA title appears but provides no verbatim quote or stated position on trade policy."
+      "reasoning": "No verbatim quote states a position on trade policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:12+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -57,7 +69,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending in the statements."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:12+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "Four years ago, I took on Big Pharma and fought to get legislation signed into law that would finally empower Medicare to negotiate lower prescription drug prices for seniors.",
+      "reasoning": "The text explicitly endorses government negotiation of drug prices to lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:12+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:12+00:00"
     }
   ]
 }

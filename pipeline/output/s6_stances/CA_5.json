@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "M001177",
   "website": "https://mcclintock.house.gov/",
-  "fetched_at": "2026-08-30T14:16:52+00:00",
+  "fetched_at": "2026-09-04T19:45:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses military or defense spending levels."
+      "reasoning": "No explicit position on military spending levels is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,23 +41,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses taxation rates or policy."
+      "reasoning": "No explicit position on tax rates is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
       "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "A proposal to Elon Musk & Vivek Ramaswamy: to balance the budget and improve the economy \u2013 just say NO to subsidies. Not only will a subsidies hunt save hundreds of billions of taxpayer dollars, it will reduce the overall cost of the things being subsidized and reinvigorate the economy by restoring the flow of capital to its most productive use.",
-      "reasoning": "Multiple statements explicitly advocate reducing spending via balanced budgets and ending subsidies."
+      "quote": "A proposal to Elon Musk & Vivek Ramaswamy: to balance the budget and improve the economy \u2013 just say NO to subsidies.",
+      "reasoning": "Multiple statements explicitly advocate balancing the budget by cutting subsidies and avoiding past mistakes that led to deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.3,
       "stated_score": 1.0,
-      "quote": "The use of this authority comes with a price. Tariffs harm the overall economy of any count",
-      "reasoning": "One statement criticizes tariffs for harming the economy, indicating support for free trade."
+      "quote": "Tariffs harm the overall economy of any count",
+      "reasoning": "Text criticizes tariffs as harmful to the economy, indicating support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses foreign aid spending."
+      "reasoning": "No explicit position on foreign aid spending is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "This bill provides for the government to set prices for drugs sold in the United States \u2013 classic price controls by a different name. The problem is that price controls \u2013 which date back to Hammurabi\u2019s Code \u2013 consistently and unerringly produce a shortage of whatever commodity they\u2019re trying to control -- in this case, life-saving drugs...",
+      "reasoning": "Text opposes government price controls and ACA mandates while supporting market-based reforms like the AHCA.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit position on political spending limits is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     }
   ]
 }

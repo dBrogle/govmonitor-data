@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "G000558",
   "website": "https://guthrie.house.gov/",
-  "fetched_at": "2026-08-30T14:24:58+00:00",
+  "fetched_at": "2026-09-04T19:50:27+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,18 +27,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "As a former Army officer, I believe in having a strong military so that our country can stand up to growing threats abroad. Throughout my time in Congress, I have voted to improve our military\u2019s technology and to give the troops pay raises.",
-      "reasoning": "Text explicitly endorses strong military with votes to modernize and raise pay."
+      "quote": "As a former Army officer, I believe in having a strong military so that our country can stand up to growing threats abroad.",
+      "reasoning": "Text repeatedly endorses stronger military via NDAA support, pay raises, modernization, and Fort Knox resources.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:27+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": 1.0,
-      "quote": "I strongly oppose Democrat policies like the methane tax, or proposed changes to the current stepped-up basis and capital gains tax that could force families to sell their farms.",
-      "reasoning": "Explicit opposition to new or increased taxes."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on tax rates or policy direction appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:27+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "I am a strong believer in fiscal responsibility and believe we need to get our national debt under control. ... The Democrats\u2019 proposed policies such as the Green New Deal, government-run health care, and other reckless spending packages would be disastrous for the financial stability of our country.",
-      "reasoning": "Direct call for fiscal restraint and against reckless spending."
+      "reasoning": "Direct call for fiscal restraint and against reckless spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "The Farm Bill extends farm support programs, improves crop insurance, promotes agricultural exports and the opening of new markets for Kentucky\u2019s farmers.",
-      "reasoning": "Supports expanding export markets, indicating free-trade stance."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on tariffs, protectionism, or free trade is present.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:27+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending."
+      "reasoning": "No mention of foreign aid spending levels or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:27+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "I firmly believe we must balance our budget and address the growing national debt.",
+      "reasoning": "Explicit support for balanced budget amendment and debt control in Fiscal Responsibility section.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:27+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.75,
+      "stated_score": 1.0,
+      "quote": "I advance policies that are designed to lower costs through increasing competition in health care and unleashing price transparency.",
+      "reasoning": "Health Care section stresses market competition and transparency over government expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:27+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, limits, or disclosure appear.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:27+00:00"
     }
   ]
 }

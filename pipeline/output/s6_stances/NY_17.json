@@ -3,7 +3,7 @@
   "district": 17,
   "bioguide_id": "L000599",
   "website": "https://lawler.house.gov",
-  "fetched_at": "2026-08-30T14:32:14+00:00",
+  "fetched_at": "2026-09-04T19:57:36+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels appears in the text."
+      "reasoning": "No verbatim statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:36+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement articulating a position on overall tax rates appears in the text."
+      "reasoning": "Issue page titled 'Tax Cuts & Cost of Living' exists but contains no verbatim position statement on tax rates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:36+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of opposing specific cuts (Foundation Aid, Social Security) do not constitute a general position on government spending."
+      "reasoning": "Mentions of opposing specific cuts (Foundation Aid, Social Security) do not constitute a general position on government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on tariffs, protectionism, or free trade appears in the text."
+      "reasoning": "No verbatim statement on tariffs, protectionism, or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:36+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending levels appears in the text."
+      "reasoning": "Foreign affairs text discusses alliances and Iran but contains no verbatim position on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:36+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on deficit size or balancing the budget appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:36+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "I introduced the IVF Access and Affordability Act, which creates a federal tax credit of up to $20,000 for individuals and $40,000 for couples to help cover the high costs of IVF and other assisted reproductive technologies.",
+      "reasoning": "Text advocates federal tax credits and expanded access programs to lower costs, matching government-action scoring.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:36+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on campaign finance limits or political spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:36+00:00"
     }
   ]
 }

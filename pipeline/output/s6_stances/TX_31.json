@@ -3,7 +3,7 @@
   "district": 31,
   "bioguide_id": "C001051",
   "website": "https://carter.house.gov/",
-  "fetched_at": "2026-08-30T14:37:51+00:00",
+  "fetched_at": "2026-09-04T20:03:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on the level of military or defense spending."
+      "reasoning": "No clear statement on military spending levels in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:37+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "By repealing and replacing the Affordable Care Act, Americans would save more than $770 billion in tax hikes",
-      "reasoning": "Text explicitly supports repealing tax increases associated with Obamacare."
+      "quote": "By repealing and replacing the Affordable Care Act, Americans would save more than $770 billion in tax hikes, and it would reduce the burdens placed on small businesses.",
+      "reasoning": "Explicitly frames tax hikes negatively and supports repeal to avoid them.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:37+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "Federal spending must be reduced, but it should not be at the expense of programs like Social Security and Medicare.",
-      "reasoning": "Text directly calls for reducing federal spending overall."
+      "reasoning": "Text directly calls for reducing federal spending overall.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
       "emphasis": 0.25,
       "stated_score": 1.0,
-      "quote": "I also strongly supported the United-States-Mexico-Canada Agreement (USMCA).",
-      "reasoning": "Text endorses a major free trade agreement as beneficial."
+      "quote": "I also strongly supported the United-States-Mexico-Canada Agreement (USMCA). Texas is one of the biggest winners of the USMCA thanks to our annual export of $140 billion in goods to Mexico and Canada.",
+      "reasoning": "Strong endorsement of a major free trade agreement.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:37+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending or policy."
+      "reasoning": "No mention of foreign aid in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:37+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "Federal spending must be reduced, but it should not be at the expense of programs like Social Security and Medicare.",
+      "reasoning": "Directly calls for reduced federal spending to maintain fiscal responsibility.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:37+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "patients must have the right to choose their physician, pharmacy and services, rather than the government making that choice for them.",
+      "reasoning": "Advocates repealing ACA, tort reform, and patient choice over government control to lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:37+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No reference to campaign finance or political spending restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:37+00:00"
     }
   ]
 }

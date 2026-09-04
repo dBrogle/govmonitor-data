@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "B000490",
   "website": "https://bishop.house.gov/",
-  "fetched_at": "2026-08-30T14:22:17+00:00",
+  "fetched_at": "2026-09-04T19:46:50+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -11,10 +11,10 @@
     "https://bishop.house.gov/media-center/press-releases/bishop-opposes-politicized-house-defense-bill-pledges-to-protect-georgia-military-priorities",
     "https://bishop.house.gov/media-center/press-releases",
     "https://bishop.house.gov/media-center/press-releases/congressman-bishop-announces-2026-congressional-art-competition-winners",
-    "https://bishop.house.gov/media-center/press-releases/congressman-bishop-on-the-passing-of-entrepreneur-humanitarian-ted-turner",
     "https://bishop.house.gov/media-center/press-releases/bishop-says-funding-bill-falls-short-for-families-farmers-rural-communities",
+    "https://bishop.house.gov/media-center/press-releases/congressman-bishop-mourns-the-passing-of-former-us-rep-charles-hatcher-of-georgia",
+    "https://bishop.house.gov/media-center/press-releases/bishop-supports-bipartisan-funding-bill-protects-vital-services-on-which-americans-rely",
     "https://bishop.house.gov/media-center/press-releases/congressman-bishop-announces-20-million-in-grants-to-help-georgia-longleaf-pine-forests",
-    "https://bishop.house.gov/media-center/press-releases/congressman-bishop-mourns-the-passing-of-friend-colleague-former-ga-state-rep-john-white",
     "https://bishop.house.gov/media-center/press-releases/congressman-bishop-applauds-us-court-ruling-blocking-trump-administration-s-100000-visa-fee",
     "https://bishop.house.gov/media-center/press-releases/bishop-kiggans-introduce-bipartisan-stay-act-to-improve-military-family-stability-by-reducing-moves",
     "https://bishop.house.gov/media-center/press-releases/congressman-bishop-opposes-funding-bill-and-amendment-that-undermines-diplomacy-and-regional-security",
@@ -30,7 +30,10 @@
       "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "The House-passed bill contains several provisions Congressman Bishop strongly supports, including a 5% to 7% military pay raise, improvements to military housing, childcare and education, and investments in munitions production, advanced technology, and the defense industrial base.",
-      "reasoning": "Text repeatedly endorses specific increases in military pay, housing, munitions, and technology investments while pledging to protect Georgia military priorities."
+      "reasoning": "Text explicitly endorses military pay raises and multiple new defense investments.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on tax rates or policy."
+      "reasoning": "No statements on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,23 +52,64 @@
       "emphasis": 0.7,
       "stated_score": -1.0,
       "quote": "This bill slashes funding for water and wastewater grants needed by small, rural communities across the country that have a low tax base. This bill guts rural energy programs, reduces rural broadband investments and affordable housing programs, and takes development grants away from our rural businesses.",
-      "reasoning": "Explicit opposition to spending cuts on rural programs, agriculture support, and related federal services indicates preference for higher government spending levels."
+      "reasoning": "Explicit opposition to spending cuts on rural programs, agriculture support, and related federal services indicates preference for higher government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": 1.0,
-      "quote": "Agricultural producers are facing increased fuel and input costs because of an unauthorized war in Iran and chaotic tariffs.",
-      "reasoning": "Negative reference to tariffs as harmful implies support for free trade over protectionist measures."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on trade or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on foreign aid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions funding bills but no explicit stance on deficit size.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
       "addressed": true,
       "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "Congressman Sanford D. Bishop, Jr. (GA-02) issued the following statement after voting against an amendment offered by Congressman Thomas Massie of Kentucky to the Fiscal Year 2027 National Security, Department of State, and Related Programs Appropriations Act. The amendment prohibited funds in the bill from being used for Israel as well as humanitarian aid for Palestinian refugees and civilians in Gaza.",
-      "reasoning": "Vote against amendment cutting aid to Israel and Gaza humanitarian assistance shows preference for maintaining foreign aid spending."
+      "quote": "Bishop Helps Introduce Bipartisan Bill to Help Tackle Prescription Drug Costs",
+      "reasoning": "Explicit support for legislation addressing drug costs via government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:50+00:00"
     }
   ]
 }

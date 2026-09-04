@@ -21,31 +21,42 @@ from .topics import TopicConfig
 # Congress.gov policy area → relevant topic slugs. Empty list = skip the bill.
 # Slugs must exist in topics.py; validated by tests.
 POLICY_AREA_TOPICS: dict[str, list[str]] = {
-    "Health": ["healthcare", "abortion", "social_safety_net", "drug_policy"],
-    "Taxation": ["taxation", "government_spending", "national_debt"],
-    "Economics and Public Finance": ["government_spending", "national_debt", "taxation"],
+    # ── Areas we score ────────────────────────────────────────────────────────────────────
+    # `budget_deficit` is mapped broadly on purpose: nearly any bill that moves outlays or
+    # revenue moves the deficit, and it replaced the old `government_spending` axis, so it
+    # inherits that axis's (deliberately generous) footprint.
+    "Health": ["healthcare_affordability", "budget_deficit"],
+    "Social Welfare": ["healthcare_affordability", "budget_deficit"],
+    "Taxation": ["taxation", "budget_deficit"],
+    "Economics and Public Finance": ["budget_deficit", "taxation"],
     "Armed Forces and National Security": ["military_defense", "foreign_aid"],
     "International Affairs": ["foreign_aid", "military_defense", "trade_policy"],
     "Foreign Trade and International Finance": ["trade_policy", "foreign_aid"],
-    "Immigration": ["immigration"],
-    "Crime and Law Enforcement": ["criminal_justice", "gun_control", "drug_policy"],
-    "Environmental Protection": ["climate_environment"],
-    "Energy": ["climate_environment", "government_spending"],
-    "Public Lands and Natural Resources": ["climate_environment"],
-    "Water Resources Development": ["climate_environment", "government_spending"],
-    "Education": ["education"],
-    "Labor and Employment": ["labor_unions"],
-    "Social Welfare": ["social_safety_net"],
-    "Housing and Community Development": ["social_safety_net", "government_spending"],
-    "Families": ["social_safety_net", "abortion"],
-    "Agriculture and Food": ["social_safety_net", "government_spending"],
-    "Emergency Management": ["government_spending"],
-    "Science, Technology, Communications": ["tech_privacy"],
-    "Civil Rights and Liberties, Minority Issues": ["lgbtq_rights", "voting_elections", "abortion"],
-    "Government Operations and Politics": ["government_spending", "voting_elections"],
-    "Transportation and Public Works": ["government_spending"],
-    # No matching topic in our taxonomy → skip the bill entirely (reviewed decision).
-    "Congress": [],
+    "Energy": ["budget_deficit"],
+    "Public Lands and Natural Resources": ["budget_deficit"],
+    "Water Resources Development": ["budget_deficit"],
+    "Housing and Community Development": ["budget_deficit"],
+    "Agriculture and Food": ["budget_deficit"],
+    "Emergency Management": ["budget_deficit"],
+    "Transportation and Public Works": ["budget_deficit"],
+    "Government Operations and Politics": ["budget_deficit", "money_in_politics"],
+    # Campaign finance, lobbying, ethics and member stock-trading bills live under "Congress"
+    # — the flagship money-in-politics legislation. The area used to be skipped outright
+    # because no live topic covered it.
+    "Congress": ["money_in_politics"],
+    "Civil Rights and Liberties, Minority Issues": ["money_in_politics"],
+
+    # ── No matching topic in the current taxonomy → skip the bill entirely ─────────────────
+    # Reviewed decisions, not oversights. Several of these (immigration, crime, education,
+    # environment, labor) were live topics in the wider pre-v1 taxonomy; if a topic returns,
+    # re-point its area here and s4's top-up will score the backlog on just that topic.
+    "Immigration": [],
+    "Crime and Law Enforcement": [],
+    "Environmental Protection": [],
+    "Education": [],
+    "Labor and Employment": [],
+    "Families": [],
+    "Science, Technology, Communications": [],
     "Finance and Financial Sector": [],
     "Commerce": [],
     "Law": [],

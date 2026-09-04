@@ -3,7 +3,7 @@
   "district": 10,
   "bioguide_id": "T000463",
   "website": "https://turner.house.gov/",
-  "fetched_at": "2026-08-30T14:33:23+00:00",
+  "fetched_at": "2026-09-04T19:58:36+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -15,22 +15,25 @@
     "https://turner.house.gov/issues/war-in-ukraine",
     "https://turner.house.gov/issues/veterans-affairs",
     "https://turner.house.gov/issues/jobs-and-the-economy",
-    "https://turner.house.gov/issues/delphi-salaried-retirees",
     "https://turner.house.gov/issues/social-security-and-medicare",
     "https://turner.house.gov/issues/national-defense-and-security",
     "https://turner.house.gov/issues/wright-patterson-air-force-base",
     "https://turner.house.gov/issues/military-sexual-assault-prevention",
     "https://turner.house.gov/issues/deficit-reduction-and-fiscal-responsibility",
+    "https://turner.house.gov/issues/pensions-retirement-security-and-delphi-salaried-retirees",
     "https://turner.house.gov/media-center/press-releases"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on U.S. military or defense spending levels."
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": 1.0,
+      "quote": "That is why Congressman Turner continues to lead the charge against irresponsible and devastating cuts to our nation's military funding that could seriously jeopardize our national security.",
+      "reasoning": "Text explicitly opposes cuts and advocates securing proper funding for military and nuclear deterrent.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:36+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of tax policy or rates in the provided text."
+      "reasoning": "No statement on tax rates or policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:36+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "Reining in out-of-control spending is critical to economic growth and reducing our national debt.",
-      "reasoning": "Text explicitly calls for reducing spending to address debt and promote growth."
+      "reasoning": "Text explicitly calls for reducing spending to address debt and promote growth.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +62,54 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions reducing trade deficit via exports but no position on tariffs or free trade."
+      "reasoning": "No position stated on tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:36+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Support for Ukraine aid is mentioned but does not state a general position on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:36+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": -1.0,
-      "quote": "Congress must continue supporting Ukraine in its courageous battle against Russian aggression.",
-      "reasoning": "Text advocates ongoing U.S. support including military aid to Ukraine."
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "Reining in out-of-control spending is critical to economic growth and reducing our national debt.",
+      "reasoning": "Text repeatedly calls for reining in spending, balancing the budget, and addressing the debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:36+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Text discusses access and specific crises but states no position on government action versus market competition.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:36+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance, limits, or disclosure appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:36+00:00"
     }
   ]
 }

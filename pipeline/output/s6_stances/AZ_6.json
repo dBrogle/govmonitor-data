@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "C001133",
   "website": "https://ciscomani.house.gov",
-  "fetched_at": "2026-08-30T14:16:40+00:00",
+  "fetched_at": "2026-09-04T19:45:15+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -14,14 +14,14 @@
     "https://ciscomani.house.gov/issues/health",
     "https://ciscomani.house.gov/issues/education",
     "https://ciscomani.house.gov/issues/border-security",
+    "https://ciscomani.house.gov/media/press-releases/ciscomani-issues-statement-after-house-votes-avert-government-shutdown",
     "https://ciscomani.house.gov/media/press-releases",
+    "https://ciscomani.house.gov/media/press-releases/ciscomani-leads-bipartisan-effort-bring-down-cost-higher-education",
     "https://ciscomani.house.gov/media/press-releases/ciscomani-releases-statement-interior-departments-colorado-river-plan",
     "https://ciscomani.house.gov/media/press-releases/representative-ciscomani-highlights-1-million-rural-cochise-county-law",
     "https://ciscomani.house.gov/media/press-releases/ciscomani-again-recognized-among-most-bipartisan-and-effective-members",
     "https://ciscomani.house.gov/media/press-releases/ciscomani-honors-local-heroes-fifth-veteran-servant-leader-awards-meets",
-    "https://ciscomani.house.gov/media/press-releases/ciscomani-secures-more-3-million-rural-health-care-projects-supports-key",
-    "https://ciscomani.house.gov/media/press-releases/ciscomani-highlights-17-million-investment-flood-mitigation-and-pedestrian",
-    "https://ciscomani.house.gov/media/press-releases/ciscomani-touts-27-million-pima-jted-expand-workforce-training-across-pima"
+    "https://ciscomani.house.gov/media/press-releases/ciscomani-secures-more-3-million-rural-health-care-projects-supports-key"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No verbatim statement on military spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address taxation policy."
+      "reasoning": "No verbatim statement on tax rates or policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": -1.0,
-      "quote": "Ciscomani supported the final passage of the Fiscal Year 2027 Labor, Health and Human Services, Education, and Related Agencies Appropriations Act which included the CPF projects as well as key investments in education, early childhood development, and medical research through the, which was approved by the full House Appropriations Committee.",
-      "reasoning": "Multiple statements detail support for specific appropriations bills and secured federal funding for projects, indicating preference for more government spending."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement taking a position on deficit size or balancing the budget appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No verbatim statement on tariffs, protectionism, or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": -1.0,
+      "quote": "Ciscomani supported the final passage of the Fiscal Year 2027 Labor, Health and Human Services, Education, and Related Agencies Appropriations Act which included the CPF projects as well as key investments in education, early childhood development, and medical research through the, which was approved by the full House Appropriations Committee.",
+      "reasoning": "The text explicitly endorses government appropriations for rural health care projects and medical research, indicating support for government action on healthcare.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on limits or disclosure for political spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     }
   ]
 }

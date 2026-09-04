@@ -3,7 +3,7 @@
   "district": 14,
   "bioguide_id": "O000172",
   "website": "https://ocasio-cortez.house.gov/",
-  "fetched_at": "2026-08-30T14:31:57+00:00",
+  "fetched_at": "2026-09-04T19:57:22+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -15,7 +15,7 @@
     "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-introduces-house-version-ai-data-center-moratorium-act",
     "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-joins-state-and-city-elected-officials-celebrate-opening",
     "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-submits-11-amendments-national-defense-authorization-act",
-    "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-and-sewell-selected-co-convene-house-democrats-cost-living",
+    "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-opposition-buses-act-what-i-am-requesting-us-preserve-our",
     "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-if-anyone-wants-live-right-next-one-these-data-centers-here",
     "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-ranking-member-raskin-senator-lujan-introduce-bill-impose-50",
     "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-sanders-ramirez-reintroduce-green-new-deal-public-housing-act-1",
@@ -28,15 +28,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels."
+      "reasoning": "No verbatim statement addresses the level of military or defense spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:22+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on taxation rates or policy."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "makes drastic cuts to health care, food assistance, student loans, and energy programs to pay for tax cuts for the wealthiest people on the planet",
+      "reasoning": "The statement criticizes legislation that funds tax cuts for the wealthy by cutting services, indicating opposition to lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:22+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -44,7 +50,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels."
+      "reasoning": "No verbatim statement on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -52,7 +60,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy or tariffs."
+      "reasoning": "No verbatim statement addresses protectionism, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:22+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -60,7 +71,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No verbatim statement addresses foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:22+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement addresses accepting larger deficits or shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:22+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "makes drastic cuts to health care, food assistance, student loans, and energy programs to pay for tax cuts for the wealthiest people on the planet",
+      "reasoning": "The statement opposes cuts to health care and criticizes Big Pharma practices that raise patient costs, favoring government action to lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:22+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement addresses limits or disclosure for political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:22+00:00"
     }
   ]
 }

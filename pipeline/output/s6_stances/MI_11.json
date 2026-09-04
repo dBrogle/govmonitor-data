@@ -3,7 +3,7 @@
   "district": 11,
   "bioguide_id": "S001215",
   "website": "https://stevens.house.gov/",
-  "fetched_at": "2026-08-30T14:27:36+00:00",
+  "fetched_at": "2026-09-04T19:52:58+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -13,13 +13,13 @@
     "https://stevens.house.gov/issues/how-were-responding-trump-administration",
     "https://stevens.house.gov/media/press-releases",
     "https://stevens.house.gov/media/press-releases/statement-82626",
+    "https://stevens.house.gov/media/press-releases/statement-haley-stevens-condemns-socialism",
+    "https://stevens.house.gov/media/press-releases/statement-haley-stevens-reflects-death-gloria-steinem",
     "https://stevens.house.gov/media/press-releases/statement-rep-haley-stevens-trumps-new-canadian-tariffs",
-    "https://stevens.house.gov/media/press-releases/statement-rep-haley-stevens-dangerous-michigan-air-quality",
+    "https://stevens.house.gov/media/press-releases/substack-haley-stevens-reflects-michigan-democratic-party",
     "https://stevens.house.gov/media/press-releases/wjr-haley-stevens-rips-trumps-iran-war-were-paying-price-michiganders",
     "https://stevens.house.gov/media/press-releases/mi-congresswoman-haley-stevens-applauds-benson-and-brinks-leadership-says",
-    "https://stevens.house.gov/media/press-releases/rep-haley-stevens-demands-independent-investigations-ice-killings-lorenzo",
     "https://stevens.house.gov/media/press-releases/video-mi-congresswoman-haley-stevens-blasts-rfk-jr-cyclosporiasis-outbreak",
-    "https://stevens.house.gov/media/press-releases/recap-rep-haley-stevens-takes-trump-administration-fights-michigan-families",
     "https://stevens.house.gov/media/press-releases/icymi-rep-stevens-introduces-bill-refund-michiganders-trumps-illegal-tariffs",
     "https://stevens.house.gov/media/press-releases/statement-rep-haley-stevens-votes-no-cynical-voter-suppression-effort-demands"
   ],
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military spending levels."
+      "reasoning": "No clear position stated on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:58+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Criticism of tax cuts appears only in passing without stating a taxation policy position."
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": -1.0,
+      "quote": "I\u2019m a Michigan Democrat who believes in capitalism, democracy, making sure billionaires pay their fair share of taxes, and standing with unions in the fight for workers\u2019 rights.",
+      "reasoning": "Explicit support for billionaires paying fair share implies preference for higher taxes on the wealthy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:58+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Vote against one spending bill and mentions of cuts lack a direct position on overall government spending."
+      "reasoning": "Vote against one spending bill and mentions of cuts lack a direct position on overall government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.75,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "\u201cMichiganders are tired of paying higher prices for the same food. Congress must pass my No Tariffs on Groceries Act now to stop Trump\u2019s reckless trade policies from making grocery bills more expensive.\u201d",
-      "reasoning": "Multiple statements explicitly oppose tariffs and introduce anti-tariff legislation, indicating support for free trade."
+      "quote": "Michiganders are tired of paying higher prices for the same food. Congress must pass my No Tariffs on Groceries Act now to stop Trump\u2019s reckless trade policies from making grocery bills more expensive.",
+      "reasoning": "Repeated opposition to tariffs and introduction of anti-tariff legislation shows strong free-trade stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:58+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No clear position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:58+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on accepting larger deficits versus shrinking them.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:58+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": -1.0,
+      "quote": "Since RFK Jr.\u2019s first day in office, he has carried out an unprecedented assault on fact-based science, life-saving research, and the public health system that keeps our communities safe. We are seeing measles cases reach a 30-year high. We are seeing healthcare costs skyrocket. And we are seeing critical programs face devastating cuts.",
+      "reasoning": "Criticism of healthcare cuts and support for public health systems indicates preference for government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:58+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Today, Michigan Congresswoman Haley Stevens led her colleagues... in introducing the No Getting Rich in Congress Act, sweeping legislation to crack down on insider trading in Congress and the White House, restore trust in government, and ensure public service is about serving the American people, not personal profit.",
+      "reasoning": "Multiple bills for tax disclosure and stock trading bans demonstrate support for tighter restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:58+00:00"
     }
   ]
 }

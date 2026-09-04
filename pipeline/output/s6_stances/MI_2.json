@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "M001194",
   "website": "https://moolenaar.house.gov/",
-  "fetched_at": "2026-08-30T14:26:59+00:00",
+  "fetched_at": "2026-09-04T19:52:29+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -29,16 +29,22 @@
       "addressed": true,
       "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "Selfridge is a critical asset to our national security and a major contributor to Michigan's economy. ... I will always work with my Michigan colleagues to bring critical funding like this to the state to improve our economy and keep our country safe",
-      "reasoning": "Text supports increased military-related funding for bases and national security assets."
+      "quote": "Selfridge is a critical asset to our national security and a major contributor to Michigan's economy... I will always work with my Michigan colleagues to bring critical funding like this to the state to improve our economy and keep our country safe",
+      "reasoning": "Text explicitly supports securing additional federal funding for a military base to enhance national security.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:29+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "As a father of six, I understand the importance of every dollar in raising a family. That is why I supported tax reform that will let hardworking Michigan families keep more of their own money.",
-      "reasoning": "Explicit support for tax cuts and extending 2017 tax reform to lower taxes."
+      "quote": "That is why I supported tax reform that will let hardworking Michigan families keep more of their own money... The new law doubled the standard deduction and lowered tax rates across the board.",
+      "reasoning": "Text repeatedly endorses tax cuts and reform that reduce rates and allow families to keep more money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:29+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "Excessive spending in Washington has been unchecked for too long, and as a result, our nation faces over $30 trillion in debt. Plain and simple, our obligations are growing faster than our ability to pay them. We must find a way to get the federal government's spending under control",
-      "reasoning": "Repeated calls for reduced federal spending and fiscal responsibility to control debt."
+      "reasoning": "Repeated calls for reduced federal spending and fiscal responsibility to control debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
       "emphasis": 0.3,
-      "stated_score": -1.0,
-      "quote": "Moolenaar Leads Bipartisan Bill to Stop China From Purchasing U.S. Farmland ... Food security is national security, and we cannot allow foreign adversaries like China to buy up American farmland",
-      "reasoning": "Advocates protectionist measures against foreign adversaries like China on farmland and projects."
+      "stated_score": 1.0,
+      "quote": "California bureaucrats should not be able to supersede federal law and prevent vital parts of Michigan's economy from accessing global markets. Our LOCOMOTIVES Act is a common sense proposal to allow industries... to continue to operate under one national standard.",
+      "reasoning": "Text advocates for national standards enabling access to global markets rather than state-level barriers.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:29+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No explicit position on foreign aid spending is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:29+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "The hardworking families of mid and west Michigan understand how to balance their checkbook and it\u2019s about time the federal government does the same... We must find a way to get the federal government's spending under control",
+      "reasoning": "Text stresses reducing federal spending and debt to balance the budget and control obligations.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:29+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "Moolenaar Reaffirms Support For Medicare Advantage... Moolenaar knows Medicare Advantage is vital for Michigan seniors and he is fighting to protect it.",
+      "reasoning": "Text supports Medicare Advantage, a market-based private insurance option with less direct government provision.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:29+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit position on limits or disclosure for political money is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:29+00:00"
     }
   ]
 }

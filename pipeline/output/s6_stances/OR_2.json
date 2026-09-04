@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "B000668",
   "website": "https://bentz.house.gov",
-  "fetched_at": "2026-08-30T14:33:55+00:00",
+  "fetched_at": "2026-09-04T19:59:16+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,10 +27,13 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "Today, Congressman Cliff Bentz (OR-02) voted YES for the Fiscal Year 2027 Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, legislation that includes $80 million for the construction of an Academic Training Center at Kingsley Field Air National Guard Base in Klamath Falls.",
-      "reasoning": "Text explicitly supports military construction funding via a yes vote on appropriations bill."
+      "quote": "Congressman Cliff Bentz (R-OR) is pleased to announce that after working directly with Kingsley Field leadership, U.S. Air Force command, and the White House, the President\u2019s 2027 budget includes an $80 million dollar line item for the construction of a new F-35 Formal Training Unit (FTU) for the Academic Training Center to be established at Kingsley Field in Klamath Falls, Oregon.",
+      "reasoning": "Text shows active support for adding $80M in military construction funding.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:16+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position on taxation levels is stated in the text."
+      "reasoning": "No verbatim statement on tax rates or policy direction.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:16+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "Congressman Cliff Bentz (R-Ore.) voted against H.R.1319 , the $1.9 trillion spending bill, which passed the United States House of Representatives 219-212 .",
-      "reasoning": "Text states opposition to a large spending bill."
+      "reasoning": "Text states opposition to a large spending bill.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of trade letters exist but no explicit position on tariffs or free trade is stated."
+      "reasoning": "No clear position stated on tariffs or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:16+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No statements on foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:16+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Congressman Cliff Bentz (R-Ore.) voted against H.R.1319 , the $1.9 trillion spending bill, which passed the United States House of Representatives 219-212 .",
+      "reasoning": "Explicit vote against large new spending bill indicates preference to shrink deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:16+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": -1.0,
+      "quote": "Congress, last July, included, in the \u201cWorking Families Tax Cut Act\u201d (WFTC), fifty billion dollars for \u201cRural Health Care Transformation\u201d. This fifty billion dollar sum will be distributed over a five year period, to the states, beginning this year.",
+      "reasoning": "Supports federal funding allocation for rural health providers and pregnancy centers.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:16+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements addressing campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:16+00:00"
     }
   ]
 }

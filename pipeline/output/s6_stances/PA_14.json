@@ -3,7 +3,7 @@
   "district": 14,
   "bioguide_id": "R000610",
   "website": "https://reschenthaler.house.gov/",
-  "fetched_at": "2026-08-30T14:34:52+00:00",
+  "fetched_at": "2026-09-04T20:00:18+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,18 +27,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "To do that, we must provide our military with the resources they need to defend our values at home and abroad.",
-      "reasoning": "Text explicitly calls for providing military resources and rejects national security cuts."
+      "reasoning": "Text explicitly calls for providing military with needed resources and investing to maintain edge, with multiple defense authorization supports.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:18+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear position stated on taxation levels."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "Eliminate Obamacare Taxes",
+      "reasoning": "Multiple references to voting to eliminate specific taxes indicate support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:18+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on overall government spending."
+      "reasoning": "No clear position stated on overall government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on trade or tariffs."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:18+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on foreign aid spending."
+      "reasoning": "Mentions specific aid or funding bans but no general position on foreign aid levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:18+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions debt ceiling plan but no explicit position on shrinking deficit versus accepting larger one.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:18+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "free market solutions and competitive innovation, not government mandates, will provide coverage options that suit the specific needs of Pennsylvania's families.",
+      "reasoning": "Explicitly endorses free market solutions over government mandates for healthcare.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:18+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on political spending limits or disclosure appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:18+00:00"
     }
   ]
 }

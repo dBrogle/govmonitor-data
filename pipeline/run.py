@@ -6,13 +6,16 @@ Run from the data/ directory:
     python pipeline/run.py members            # run just one stage
     python pipeline/run.py members finance    # run specific stages
     python pipeline/run.py --force analysis   # re-run even if output exists
+    python pipeline/run.py analysis --topup-only   # fill in newly-added topics only
 
 Stages (in order):
     1. members    — Congressional profiles, legislation, voting history
     2. finance    — Campaign finance data from OpenFEC
     3. bills      — Deep-dive bill data for all referenced bills
     4. analysis   — LLM topic scoring (requires OPENROUTER_API_KEY)
-    5. alignment  — Per-topic alignment scores from votes + analysis
+    5. stances    — Stated positions scraped from member sites (requires OPENROUTER_API_KEY)
+    6. bipartisan — Cross-party voting & cosponsorship stats (no LLM)
+    7. alignment  — Per-topic alignment scores from votes + analysis
 """
 
 import argparse
@@ -29,6 +32,7 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 
 from pipeline.stages import (
     s1_members, s2_finance, s3_bills, s4_analysis, s5_alignment, s6_stances,
+    s7_bipartisanship,
 )
 
 PIPELINE_DIR = Path(__file__).parent
@@ -39,10 +43,12 @@ STAGES = {
     "bills": ("Deep-dive bill data", s3_bills),
     "analysis": ("LLM topic scoring", s4_analysis),
     "stances": ("Stated positions from member websites", s6_stances),
+    "bipartisan": ("Cross-party voting & cosponsorship stats", s7_bipartisanship),
     "alignment": ("Member alignment scores", s5_alignment),
 }
 
-STAGE_ORDER = ["members", "finance", "bills", "analysis", "stances", "alignment"]
+# `bipartisan` runs before `alignment` because s5 folds its output into the candidate payload.
+STAGE_ORDER = ["members", "finance", "bills", "analysis", "stances", "bipartisan", "alignment"]
 
 
 def load_candidates() -> list[dict]:
@@ -146,6 +152,19 @@ def main():
         action="store_true",
         help="Re-run stages even if output already exists.",
     )
+    parser.add_argument(
+        "--topup-only",
+        action="store_true",
+        help="analysis stage: score only bills that ALREADY have an analysis file, filling in "
+             "topics they're missing. Use after adding a topic to bring the shipped dataset up "
+             "to the new topic set without also scoring never-analyzed bills.",
+    )
+    parser.add_argument(
+        "--refresh-corpus",
+        action="store_true",
+        help="stances stage: re-crawl member websites instead of reusing the cached scrape. "
+             "Adding a topic does NOT need this — the cached corpus is re-scored for free.",
+    )
     args = parser.parse_args()
 
     # Validate stage names if provided via CLI
@@ -155,6 +174,8 @@ def main():
 
     candidates = load_candidates()
     config = load_config()
+    config["topup_only"] = args.topup_only
+    config["refresh_corpus"] = args.refresh_corpus
 
     if args.stages:
         stages_to_run = args.stages

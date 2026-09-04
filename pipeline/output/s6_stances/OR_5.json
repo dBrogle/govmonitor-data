@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "B001326",
   "website": "https://bynum.house.gov/",
-  "fetched_at": "2026-08-30T14:34:06+00:00",
+  "fetched_at": "2026-09-04T19:59:27+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -16,12 +16,12 @@
     "https://bynum.house.gov/issues/healthcare",
     "https://bynum.house.gov/issues/environment",
     "https://bynum.house.gov/media/press-releases",
+    "https://bynum.house.gov/media/press-releases/bynum-introduces-bill-lower-cost-school-supplies",
     "https://bynum.house.gov/media/press-releases/congresswoman-bynum-has-three-housing-bills-signed-law",
     "https://bynum.house.gov/media/press-releases/bynum-introduces-bipartisan-bill-support-credit-union-members",
-    "https://bynum.house.gov/media/press-releases/bynum-urges-epa-monitor-microplastics-americas-drinking-water",
+    "https://bynum.house.gov/media/press-releases/bynum-introduces-bill-expand-healthcare-coverage-young-americans-0",
     "https://bynum.house.gov/media/press-releases/bynum-urges-odoj-approve-deal-protect-oregonians-access-healthcare",
-    "https://bynum.house.gov/media/press-releases/bynum-leads-effort-protect-clean-drinking-water-oregon-communities",
-    "https://bynum.house.gov/media/press-releases/congresswoman-bynum-blasts-trump-betraying-american-people-housing"
+    "https://bynum.house.gov/media/press-releases/bynum-leads-effort-protect-clean-drinking-water-oregon-communities"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending appear in the text."
+      "reasoning": "No statements on military spending in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:27+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No general position on taxation levels is stated, only a narrow bill on fire-victim tax relief."
+      "reasoning": "No statements on tax rates in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:27+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Text advocates specific program funding but does not articulate an overall stance on government spending levels."
+      "reasoning": "Text advocates specific program funding but does not articulate an overall stance on government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No references to trade policy, tariffs, or free trade exist in the provided statements."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "The legislation would exempt school supplies and educational materials from President Trump\u2019s tariff taxes, which have raised prices for families across the country.",
+      "reasoning": "Explicit opposition to tariffs as harmful to families indicates support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:27+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mentions of foreign aid or related spending appear anywhere in the text."
+      "reasoning": "No statements on foreign aid in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:27+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on deficit size or balancing the budget in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:27+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Bynum Introduces Bill to Expand Healthcare Coverage For Young Americans... the Launching with Healthcare Act to allow young adults to remain on a parent\u2019s health insurance plan through age 30.",
+      "reasoning": "Bill to expand coverage via government-mandated insurance extension shows preference for government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:27+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on political spending or limits in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:27+00:00"
     }
   ]
 }

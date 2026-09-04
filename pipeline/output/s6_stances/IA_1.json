@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M001215",
   "website": "https://millermeeks.house.gov/",
-  "fetched_at": "2026-08-30T14:22:59+00:00",
+  "fetched_at": "2026-09-04T19:47:51+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -19,26 +19,32 @@
     "https://millermeeks.house.gov/issues/delivering-results",
     "https://millermeeks.house.gov/media/press-releases/miller-meeks-visits-hinnah-family-farm-discuss-priorities-iowa-agriculture",
     "https://millermeeks.house.gov/media/press-releases",
+    "https://millermeeks.house.gov/media/press-releases/miller-meeks-leads-bipartisan-push-cap-insulin-prices-35",
     "https://millermeeks.house.gov/media/press-releases/miller-meeks-delivers-25-million-forevergreen-road-extension",
-    "https://millermeeks.house.gov/media/press-releases/miller-meeks-bill-expose-billion-dollar-boondoggles-passes-house",
-    "https://millermeeks.house.gov/media/press-releases/miller-meeks-welcomes-treasury-secretary-bessent-iowa-vermeer-tour"
+    "https://millermeeks.house.gov/media/press-releases/miller-meeks-bill-expose-billion-dollar-boondoggles-passes-house"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "Whether it\u2019s cutting taxes, securing the border, strengthening our military, or lowering health care costs",
-      "reasoning": "Text explicitly supports strengthening the military, indicating position favoring more spending."
+      "reasoning": "Text explicitly lists strengthening our military as a core priority.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:51+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "Lowers Taxes on Working Iowans by increasing the Child Tax Credit and delivering a $6,000 tax deduction for seniors on fixed incomes",
-      "reasoning": "Multiple statements advocate cutting taxes and making tax cuts permanent."
+      "quote": "Prevents the Largest Tax Hike in U.S. History by making the Tax Cuts and Jobs Act permanent for families, farmers, and job creators. Lowers Taxes on Working Iowans",
+      "reasoning": "Multiple statements emphasize tax cuts and making prior cuts permanent.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:51+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.3,
       "stated_score": -1.0,
       "quote": "Congresswoman Mariannette Miller-Meeks (IA-01) has successfully secured $27 million in Community Project Funding for transformational projects in southeast Iowa",
-      "reasoning": "Text highlights securing and promoting specific federal spending projects."
+      "reasoning": "Text highlights securing and promoting specific federal spending projects.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of trade are too vague to indicate a clear stance on free trade vs. protectionism."
+      "reasoning": "Mentions discussing trade markets but states no position on tariffs versus free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:51+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:51+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:51+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "The Lower Health Care Premiums for All Americans Act is legislation led by Dr. Miller-Meeks that lowers health care premiums, increases health care access, expands health care choices, and brings greater transparency to America\u2019s health care system.",
+      "reasoning": "Focuses on lowering premiums and costs via transparency, choices, and market mechanisms rather than expanded government programs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:51+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:51+00:00"
     }
   ]
 }

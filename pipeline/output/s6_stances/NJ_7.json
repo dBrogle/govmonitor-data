@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "K000398",
   "website": "https://kean.house.gov",
-  "fetched_at": "2026-08-30T14:30:24+00:00",
+  "fetched_at": "2026-09-04T19:55:34+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -19,26 +19,32 @@
     "https://kean.house.gov/issues/national-defense",
     "https://kean.house.gov/issues/energy-and-environment",
     "https://kean.house.gov/media/press-releases",
-    "https://kean.house.gov/media/press-releases/kean-secures-750k-mount-olive-pd-expansion",
     "https://kean.house.gov/media/press-releases/kean-hosts-roundtable-preventing-nitrous-oxide-misuse",
-    "https://kean.house.gov/media/press-releases/kean-demands-answers-regarding-prolonged-power-outages"
+    "https://kean.house.gov/media/press-releases/kean-demands-answers-regarding-prolonged-power-outages",
+    "https://kean.house.gov/media/press-releases/kean-secures-15-million-hunterdon-county-senior-center"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.75,
       "stated_score": 1.0,
       "quote": "I believe that our nation must maintain a strong and robust military, which is crucial for protecting the interests of our nation at home and abroad. I support providing our servicemembers with the key resources they need to be successful in their missions.",
-      "reasoning": "Text explicitly endorses maintaining a strong military and providing servicemembers with needed resources, indicating support for more defense spending."
+      "reasoning": "Text explicitly supports maintaining a strong military and providing servicemembers with needed resources, indicating support for more military spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:34+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.9,
+      "emphasis": 1.0,
       "stated_score": 1.0,
-      "quote": "One of my most important priorities in Congress is to restore the full State and Local Tax (SALT) Deduction... Restoring the SALT Deduction will get more dollars back in the pockets of hard working, middle-class New Jersey families.",
-      "reasoning": "Repeated emphasis on restoring SALT deduction to return money to taxpayers shows clear support for lower effective taxes."
+      "quote": "One of my most important priorities in Congress is to restore the full State and Local Tax (SALT) Deduction.",
+      "reasoning": "Repeated emphasis on restoring SALT deduction to return money to taxpayers shows clear support for lower effective taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:34+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "it is imperative that we get our nation\u2019s fiscal house in order... We can start by eliminating duplicative programs, living within our nation\u2019s means, and cutting wasteful spending.",
-      "reasoning": "Explicit calls to cut wasteful spending and live within means indicate preference for reduced government spending."
+      "reasoning": "Explicit calls to cut wasteful spending and live within means indicate preference for reduced government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:34+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements on foreign aid spending are present in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:34+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "it is imperative that we get our nation\u2019s fiscal house in order and work to address our debt and deficit... eliminating duplicative programs, living within our nation\u2019s means, and cutting wasteful spending.",
+      "reasoning": "Explicit calls to address debt and deficit through spending cuts indicate priority on shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:34+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 0.6,
+      "quote": "Families must have the ability to make medical decisions for themselves based on what best fits their needs, wants, and budget. Patients and providers should be in control of their own health care decisions.",
+      "reasoning": "Emphasis on patient control, market innovation, and reducing government barriers leans toward market competition over expansive government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:34+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements addressing limits on political spending or money in politics are found in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:34+00:00"
     }
   ]
 }

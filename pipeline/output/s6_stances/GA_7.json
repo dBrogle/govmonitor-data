@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "M001218",
   "website": "https://mccormick.house.gov",
-  "fetched_at": "2026-08-30T14:22:27+00:00",
+  "fetched_at": "2026-09-04T19:47:01+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,7 +21,7 @@
     "https://mccormick.house.gov/media/press-releases/congressman-mccormick-helps-pass-fy27-ndaa-secures-key-georgia-priorities",
     "https://mccormick.house.gov/media/press-releases",
     "https://mccormick.house.gov/media/press-releases/congressman-rich-mccormick-recap-community-job-fair",
-    "https://mccormick.house.gov/media/press-releases/amid-dr-faucis-refusal-answer-more-100-questions-congress-congressman"
+    "https://mccormick.house.gov/media/press-releases/mccormick-marine-abbey-gate-wasnt-military-disaster-it-was-biden"
   ],
   "stances": [
     {
@@ -29,8 +29,11 @@
       "addressed": true,
       "emphasis": 0.9,
       "stated_score": 1.0,
-      "quote": "While our adversaries work to undermine us and our influence abroad, the best way we can ensure peace is by maintaining the most powerful military the world has ever seen.",
-      "reasoning": "Text repeatedly calls for the strongest possible military and significant investments in defense technologies against China."
+      "quote": "the best way we can ensure peace is by maintaining the most powerful military the world has ever seen",
+      "reasoning": "Text repeatedly calls for the strongest possible military with significant investments in defense technologies.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:01+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address tax rates or policy."
+      "reasoning": "No statements on tax rates or policy appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:01+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "We have a chronic spending problem, and cutting wasteful regulations and government \u2014 not services \u2014 is necessary.",
-      "reasoning": "Text explicitly identifies over-spending and national debt as unsustainable threats requiring cuts to wasteful government."
+      "reasoning": "Text explicitly identifies over-spending and national debt as unsustainable threats requiring cuts to wasteful government.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +62,54 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address tariffs, protectionism, or free trade."
+      "reasoning": "No statements on tariffs, protectionism, or free trade appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:01+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Foreign policy is discussed but no explicit position on foreign aid spending levels is stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:01+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "I am committed to ensuring that any taxpayer dollars spent abroad have a clear benefit for our nation and our interests.",
-      "reasoning": "Text stresses fiscally responsible and strategically beneficial use of funds spent abroad, implying reduced unconditional aid."
+      "quote": "This is unsustainable. We have a chronic spending problem, and cutting wasteful regulations and government \u2014 not services \u2014 is necessary.",
+      "reasoning": "Explicitly identifies deficit and debt as unsustainable and demands spending cuts.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:01+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": 1.0,
+      "quote": "We need to deregulate healthcare significantly and find a true free-market solution.",
+      "reasoning": "Advocates deregulation and free-market approaches rather than government intervention.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:01+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, disclosure, or political spending limits appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:01+00:00"
     }
   ]
 }

@@ -2,14 +2,27 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "1991",
-  "summary": null,
+  "summary": "The bill raises caps on direct and guaranteed farm ownership loans to $850,000 and $3.5 million and on operating loans to $750,000 and $3 million, doubles the microloan limit to $100,000, switches the annual inflation adjustment to a weighted average of U.S. farm real estate values, eases down-payment loan rules, and directs USDA to allow refinancing of distressed guaranteed loans into direct loans under specified conditions.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill increases the maximum amounts for farm ownership loans, operating loans, and microloans, and allows for refinancing of guaranteed loans into direct loans. These changes expand the potential financial obligations and outlays of the Farm Service Agency, thus increasing government spending.",
       "topic_slug": "government_spending",
       "topic_name": "Government Spending",
-      "score": -0.6
+      "score": -0.6,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:02:11+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

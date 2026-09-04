@@ -3,7 +3,7 @@
   "district": 10,
   "bioguide_id": "S001190",
   "website": "https://schneider.house.gov",
-  "fetched_at": "2026-08-30T14:23:50+00:00",
+  "fetched_at": "2026-09-04T19:48:59+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels."
+      "reasoning": "No clear position stated on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:59+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions extending ACA tax credits but no explicit position on overall tax levels."
+      "reasoning": "No general position on tax rates; only specific ACA credits mentioned.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:59+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "References infrastructure and project funding but no direct stance on government spending levels."
+      "reasoning": "References infrastructure and project funding but no direct stance on government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.85,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "\u201cSince taking office, President Trump has taken a reckless, arbitrary, and punitive approach to trade policy that will only hurt American consumers, American companies, and the entire U.S. economy,\u201d said Rep. Schneider . \u201cTariffs, when used strategically, can be an important tool in defending U.S. economic interests \u2013 but that\u2019s far from the sledgehammer and whipsaw approach President Trump has so far shown to be the only way he knows.\u201d",
-      "reasoning": "Multiple statements explicitly oppose unilateral tariffs and seek to repeal tariff authorities in favor of strategic, non-protectionist trade policy."
+      "quote": "Tariffs, when used strategically, can be an important tool in defending U.S. economic interests \u2013 but that\u2019s far from the sledgehammer and whipsaw approach President Trump has so far shown to be the only way he knows.",
+      "reasoning": "Repeated bills and statements oppose unilateral tariffs and seek to repeal Section 338 to protect global trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:59+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions regional infrastructure projects but no position on foreign aid spending."
+      "reasoning": "Infrastructure project support mentioned but no position on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:59+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on deficit or budget balancing.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:59+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "Congress has the responsibility to act and ensure every American has access to quality, affordable healthcare from providers they know and trust, when and where they need it.",
+      "reasoning": "Bill extends ACA premium tax credits to prevent cost spikes and expand affordability via government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:59+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:59+00:00"
     }
   ]
 }

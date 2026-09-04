@@ -9,13 +9,37 @@
       "thoughts": "This bill directly appropriates funds for federal firefighters during a lapse in appropriations, ensuring their pay and allowances. This represents an increase in government spending by guaranteeing these payments even when other appropriations are not in effect.",
       "topic_slug": "government_spending",
       "topic_name": "Government Spending",
-      "score": -0.6
+      "score": -0.6,
+      "llm_model": null,
+      "temperature": null
     },
     {
       "thoughts": "By appropriating funds to ensure federal firefighter pay during government shutdowns, the bill could contribute to deficit spending if these funds are not offset elsewhere, thus potentially increasing the national debt.",
       "topic_slug": "national_debt",
       "topic_name": "National Debt",
-      "score": -0.4
+      "score": -0.4,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill automatically appropriates whatever sums are needed to continue firefighter pay and allowances during any lapse in appropriations, directly authorizing additional federal spending without offsetting revenue or cuts. This is the core mechanism of the legislation and would increase outlays (and thus the deficit) whenever a shutdown occurs.",
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:14:12+00:00"
+    },
+    {
+      "topic_slug": "taxation",
+      "topic_name": "Taxation",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:14:12+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

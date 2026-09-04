@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "G000592",
   "website": "https://golden.house.gov",
-  "fetched_at": "2026-08-30T14:26:52+00:00",
+  "fetched_at": "2026-09-04T19:52:16+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,10 +27,13 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.75,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "providing authorization for funds necessary to protect America and provide for our troops, the bill increases troop pay and includes funding for the construction of destroyers built at Bath Iron Works",
-      "reasoning": "Text explicitly endorses NDAA funding increases for troops, pay, and shipbuilding."
+      "quote": "voted in favor of the Fiscal Year 2026 National Defense Authorization Act (NDAA), which passed the House in a 312-112 vote. In addition to providing authorization for funds necessary to protect America and provide for our troops, the bill increases troop pay and includes funding for the construction of destroyers built at Bath Iron Works.",
+      "reasoning": "Text explicitly endorses NDAA funding for troops, pay raises, and shipbuilding.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:16+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tax rates or policy appear in the text."
+      "reasoning": "No statements on tax rates or policy appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:16+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Debt milestone is noted but no explicit position on overall spending levels is stated."
+      "reasoning": "Debt milestone is noted but no explicit position on overall spending levels is stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.5,
       "stated_score": -1.0,
-      "quote": "His proposed 10 percent universal tariff is designed to reorient our economy from one based on consumption to one built on production",
-      "reasoning": "Text advocates a universal tariff and criticizes past free-trade policies."
+      "quote": "His proposed 10 percent universal tariff is designed to reorient our economy from one based on consumption to one built on production, keeping America\u2019s middle class prosperous and secure.",
+      "reasoning": "Explicit support for universal tariff demonstrates protectionist stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:16+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending levels appear in the text."
+      "reasoning": "Mentions security assistance to Ukraine but no position on foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:16+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions debt milestone but offers no position on shrinking the deficit versus accepting larger deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:16+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "Jared voted for the Inflation Reduction Act, legislation that includes meaningful, common-sense reforms to the Medicare program to lower costs and ensure seniors can afford their medicine.",
+      "reasoning": "Supports government-led Medicare drug price negotiation and cost caps.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:16+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, limits, or disclosure appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:16+00:00"
     }
   ]
 }

@@ -3,23 +3,23 @@
   "district": 2,
   "bioguide_id": "F000481",
   "website": "https://figures.house.gov/",
-  "fetched_at": "2026-08-30T14:16:04+00:00",
+  "fetched_at": "2026-09-04T19:45:00+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://figures.house.gov",
-    "https://figures.house.gov/issues/health",
     "https://figures.house.gov/issues/economy",
     "https://figures.house.gov/issues/congress",
     "https://figures.house.gov/issues/veterans",
+    "https://figures.house.gov/issues/education",
     "https://figures.house.gov/media/press-releases",
-    "https://figures.house.gov/media/press-releases/figures-honors-mobile-native-mikhail-torrance-house-floor",
     "https://figures.house.gov/media/press-releases/figures-announces-85-million-fix-runway-montgomery-airport",
-    "https://figures.house.gov/media/press-releases/reps-figures-and-taylor-lead-national-road-safety-week-resolution",
+    "https://figures.house.gov/media/press-releases/figures-calls-emergency-hearing-president-trumps-beef-order",
     "https://figures.house.gov/media/press-releases/figures-introduces-bipartisan-bill-establish-tuskegee-airmen-memorial",
     "https://figures.house.gov/media/press-releases/figures-introduces-legislation-support-alabama-farmers-impacted-trump",
     "https://figures.house.gov/media/press-releases/figures-bipartisan-bill-rename-post-office-after-tuskegee-airmen-passes",
     "https://figures.house.gov/media/press-releases/figures-secures-authorization-50-million-strengthen-water-infrastructure",
+    "https://figures.house.gov/media/press-releases/figures-introduces-bill-reverse-presidents-beef-order-and-support-american",
     "https://figures.house.gov/media/press-releases/figures-introduce-bill-protect-alabama-cattle-farmers-president-trumps-beef",
     "https://figures.house.gov/media/press-releases/figures-introduces-legislation-provide-tax-break-parents-childrens-academic"
   ],
@@ -30,31 +30,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military spending levels."
+      "reasoning": "No statements address military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:00+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "a bill to provide a federal tax deduction for parents who pay out-of-pocket expenses for enrichment opportunities for their children.",
-      "reasoning": "Bill introduction explicitly supports tax deductions, indicating preference for lower taxes."
+      "reasoning": "Text supports tax deductions as relief, indicating preference for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:00+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.7,
-      "stated_score": -1.0,
-      "quote": "over $8.5 million in federal funding has been awarded for renovations and improvements at the Montgomery Regional Airport.",
-      "reasoning": "Multiple announcements of securing federal project funding demonstrate support for increased government spending."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:00+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.5,
+      "emphasis": 0.45,
       "stated_score": -1.0,
-      "quote": "plans to introduce legislation to reverse President Trump\u2019s plan to allow up to 300,000 metric tons of foreign ground beef to enter the United States tariff-free over the next 90 days",
-      "reasoning": "Opposition to tariff-free imports to protect domestic farmers indicates a protectionist position."
+      "quote": "a bill to support American cattle producers by reversing President Trump\u2019s proclamation that allowed for 300,000 metric tons of beef to be imported into the country and sold below market rate.",
+      "reasoning": "Multiple releases oppose increased tariff-free imports to protect domestic producers, indicating protectionist stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:00+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:00+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address healthcare costs or coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:00+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits on political spending or money in politics.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:00+00:00"
     }
   ]
 }

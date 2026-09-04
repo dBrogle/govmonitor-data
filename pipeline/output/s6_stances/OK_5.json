@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "B000740",
   "website": "https://bice.house.gov",
-  "fetched_at": "2026-08-30T14:33:51+00:00",
+  "fetched_at": "2026-09-04T19:59:03+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,19 +18,22 @@
     "https://bice.house.gov/media/press-releases",
     "https://bice.house.gov/media/press-releases/bice-supports-continuing-resolution",
     "https://bice.house.gov/media/press-releases/bice-supports-budget-reconciliation-bill-0",
+    "https://bice.house.gov/media/press-releases/bice-and-womack-introduce-no-preference-act",
     "https://bice.house.gov/media/press-releases/bice-supports-legislation-stop-insider-trading",
-    "https://bice.house.gov/media/press-releases/rep-bice-supports-reconciliation-bill-fully-fund-dhs",
-    "https://bice.house.gov/media/press-releases/icymi-bice-and-brecheen-featured-washington-examiner",
-    "https://bice.house.gov/media/press-releases/bice-welcomes-hud-secretary-scott-turner-oklahomas-fifth-district"
+    "https://bice.house.gov/media/press-releases/bice-supports-continuing-resolution-fund-government",
+    "https://bice.house.gov/media/press-releases/rep-bice-supports-reconciliation-bill-fully-fund-dhs"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.9,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "This year\u2019s NDAA will help increase our military recruitment, retention, and readiness by improving servicemember's quality of life and strengthening the lethality of our armed forces.",
-      "reasoning": "Text repeatedly emphasizes strengthening the military, supporting NDAA, and increasing funding for troops and readiness."
+      "quote": "This legislation includes $452.64 billion for the U.S. Department of Veterans Affairs and $18 billion for military construction and family housing, an increase over FY25 funding levels.",
+      "reasoning": "Text repeatedly endorses increased military funding and strengthening the armed forces.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:03+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tax rates or taxation policy appear in the text."
+      "reasoning": "No statements on tax rates or policy appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:03+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "For the sake of our children and grandchildren we urgently need to bring fiscal restraint back to Washington.",
-      "reasoning": "Text advocates fiscal conservatism, balancing the budget, reducing debt, and rooting out waste in federal spending."
+      "reasoning": "Text advocates fiscal conservatism, balancing the budget, reducing debt, and rooting out waste in federal spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade, tariffs, or free trade appear in the text."
+      "reasoning": "No statements on trade, tariffs, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:03+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:03+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.75,
+      "stated_score": 1.0,
+      "quote": "As a fiscal conservative, I am deeply troubled by our nation\u2019s ever growing debt burden. Washington should respect hardworking taxpayers and balance its budget just like the State of Oklahoma does.",
+      "reasoning": "Text explicitly calls for balancing the budget and fiscal restraint to reduce debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:03+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on government vs. market approaches to healthcare costs appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:03+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on limits or disclosure for political spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:03+00:00"
     }
   ]
 }

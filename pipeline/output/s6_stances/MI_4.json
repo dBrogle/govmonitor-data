@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "H001058",
   "website": "https://huizenga.house.gov/",
-  "fetched_at": "2026-08-30T14:27:09+00:00",
+  "fetched_at": "2026-09-04T19:52:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses military spending levels."
+      "reasoning": "No clear statement on military spending levels in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:20+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses taxation policy."
+      "reasoning": "No statements on tax rates or policy appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:20+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "We simply must change the trajectory of spending in Washington. In the short-term, Congress can begin immediately by enacting sensible cost-cutting measures and eliminating wasteful and duplicative federal programs.",
-      "reasoning": "The budget section explicitly advocates cost-cutting and reducing government size."
+      "reasoning": "The budget section explicitly advocates cost-cutting and reducing government size.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses trade policy or tariffs."
+      "reasoning": "Mentions of a 'level playing field' for farmers do not state a clear position on tariffs versus free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:20+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses foreign aid spending."
+      "reasoning": "No statements on foreign aid spending in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:20+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": 1.0,
+      "quote": "We simply must change the trajectory of spending in Washington. In the short-term, Congress can begin immediately by enacting sensible cost-cutting measures and eliminating wasteful and duplicative federal programs.",
+      "reasoning": "Text repeatedly calls for cutting spending, eliminating waste, and balancing the budget to reduce the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:20+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "Congressman Huizenga believes there is a better way to reduce costs and increase access to health care for all Americans. This includes curbing costly junk lawsuits, encouraging the use of health savings accounts, and empowering small business and states to use innovative means to reduce health care costs for you and your family.",
+      "reasoning": "Text rejects Obamacare and advocates market-oriented reforms like HSAs and reduced lawsuits over government expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:20+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending restrictions in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:20+00:00"
     }
   ]
 }

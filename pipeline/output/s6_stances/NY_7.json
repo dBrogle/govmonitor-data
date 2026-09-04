@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "V000081",
   "website": "https://velazquez.house.gov",
-  "fetched_at": "2026-08-30T14:31:38+00:00",
+  "fetched_at": "2026-09-04T19:57:05+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,9 +18,9 @@
     "https://velazquez.house.gov/media-center/press-releases",
     "https://velazquez.house.gov/media-center/press-releases/velazquez-and-ocasio-cortez-statement-puerto-rico-water-crisis",
     "https://velazquez.house.gov/media-center/press-releases/velazquez-and-johnson-reintroduce-resolution-recognizing-world",
+    "https://velazquez.house.gov/media-center/press-releases/velazquez-demands-answers-culebras-health-center-days-losing-its",
     "https://velazquez.house.gov/media-center/press-releases/velazquez-backed-cooperative-housing-and-public-housing-oversight",
     "https://velazquez.house.gov/media-center/press-releases/velazquez-torres-and-warren-press-warsh-ties-hedge-fund-profiting",
-    "https://velazquez.house.gov/media-center/press-releases/velazquez-re-introduces-bill-honoring-hero-jewish-resistance-during",
     "https://velazquez.house.gov/media-center/press-releases/velazquez-meeks-introduce-war-powers-resolution-stop-unauthorized-us"
   ],
   "stances": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending appear in the text."
+      "reasoning": "No mention of military or defense spending in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:05+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "She supports initiatives to limit the impact that rising energy costs and regulatory and tax burdens have on small businesses.",
-      "reasoning": "The text explicitly supports reducing tax burdens on small businesses."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of tax burdens on small businesses do not state a clear general position on taxation levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:05+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "It is unacceptable that the United States of America is the only developed country in the world that does not have a universal healthcare system for its citizens.",
-      "reasoning": "The text repeatedly advocates for expanded federal funding and programs in housing, healthcare, and Puerto Rico recovery."
+      "reasoning": "The text repeatedly advocates for expanded federal funding and programs in housing, healthcare, and Puerto Rico recovery.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.15,
+      "emphasis": 0.2,
       "stated_score": -1.0,
       "quote": "She voted against the Trans-Pacific Partnership trade deal, which would accelerate a \"race to the bottom\" for environmental standards.",
-      "reasoning": "The text states opposition to a major free-trade agreement."
+      "reasoning": "Explicit opposition to a major free-trade agreement indicates a protectionist stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:05+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "Puerto Rico funding references concern a U.S. territory, not foreign aid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:05+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No references to budget deficits or balancing the budget appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:05+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Congresswoman Vel\u00e1zquez is a huge supporter and co-sponsor of Medicare-for-all. Medicare-for-all will ensure that every American has access to quality healthcare and prescription drugs without having to choose between their health and livelihood.",
+      "reasoning": "Strong endorsement of Medicare-for-all and defense of the ACA shows preference for government-led expansion of coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:05+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, political spending limits, or disclosure requirements.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:05+00:00"
     }
   ]
 }

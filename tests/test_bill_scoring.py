@@ -7,18 +7,20 @@ even at temperature 0, so a point-equality assertion would be flaky. We pick ban
 enough to be stable but tight enough to catch the failure modes we care about.
 
 The headline case is the NDAA (HR 3838): a sprawling defense bill containing one clause that
-restricts gender-transition care. The old prompt scored it lgbtq_rights = +1.0 (a single
-buried provision dominating the whole bill), which — combined with a vote-handling bug — made
-a Republican read as "100% pro-LGBT." The centrality rule in the prompt (plus summary-first
-input) should now keep that score small. `_all_abs_max` cases assert a bill is essentially
-null across every topic (commemorative/naming bills must not hallucinate signal).
+restricts gender-transition care. The old prompt scored that buried clause +1.0 on the
+then-tracked lgbtq_rights topic (a single provision dominating the whole bill), which —
+combined with a vote-handling bug — made a Republican read as "100% pro-LGBT." That topic is
+no longer tracked, so the centrality guard now rides on `healthcare_affordability`: the same
+clause is the only healthcare content in a defense bill, and must stay near zero.
+`_all_abs_max` cases assert a bill is essentially null across every topic (a bill off all our
+axes must not hallucinate signal).
 
 Topic poles (from topics.py), so the expected signs are unambiguous:
-  military_defense:    -1 less military spending  ·  +1 more military spending
-  government_spending: -1 more spending           ·  +1 less spending
-  taxation:            -1 higher taxes             ·  +1 lower taxes
-  gun_control:         -1 stricter gun rules       ·  +1 protect gun rights
-  lgbtq_rights:        -1 pro LGBT+ protections    ·  +1 limit LGBT+ protections
+  military_defense:         -1 less military spending  ·  +1 more military spending
+  taxation:                 -1 higher taxes            ·  +1 lower taxes
+  budget_deficit:           -1 accept a larger deficit ·  +1 shrink the deficit
+  healthcare_affordability: -1 government action       ·  +1 market competition
+  money_in_politics:        -1 tighter limits          ·  +1 fewer restrictions
 
 Run:  cd data && pytest tests/test_bill_scoring.py -v
 (Costs a few cents on gemini-2.5-flash; skipped automatically without OPENROUTER_API_KEY.)
@@ -36,8 +38,8 @@ CASES = [
         "hr", "3838",
         {
             "military_defense": (0.6, 1.0),       # primary purpose: authorize defense
-            "government_spending": (-1.0, -0.4),  # authorizes hundreds of billions -> more spending
-            "lgbtq_rights": (-0.3, 0.35),         # one buried clause must NOT dominate (was +1.0)
+            "budget_deficit": (-1.0, -0.3),       # authorizes hundreds of billions, unoffset
+            "healthcare_affordability": (-0.3, 0.3),  # one buried clause must NOT dominate
         },
         id="ndaa-defense-bill",
     ),
@@ -45,17 +47,20 @@ CASES = [
         "hr", "140",
         {
             "taxation": (0.3, 1.0),               # disaster tax relief = lower taxes
-            "lgbtq_rights": (-0.2, 0.2),          # unrelated
-            "immigration": (-0.2, 0.2),           # unrelated
+            "money_in_politics": (-0.2, 0.2),     # unrelated
+            "military_defense": (-0.2, 0.2),      # unrelated
         },
         id="hurricane-tax-relief",
     ),
     pytest.param(
+        # A substantive bill that sits off every axis we track (firearms records privacy —
+        # its policy area maps to no topic, so production skips it outright). A more demanding
+        # null case than a naming bill: the model must decline to force it onto a live topic.
         "hr", "7678",
         {
-            "gun_control": (0.2, 1.0),            # shields gun-owner records = protect gun rights
+            "_all_abs_max": 0.3,
         },
-        id="gun-owner-privacy",
+        id="off-axis-gun-owner-privacy-null",
     ),
     pytest.param(
         "hr", "1431",
@@ -71,7 +76,12 @@ CASES = [
         "hconres", "14",
         {
             "taxation": (0.3, 1.0),               # enables tax cuts = lower taxes
-            "national_debt": (0.3, 1.0),          # raises debt limit / debt-reduction framing
+            # Deliberately unsigned: the resolution both enables large tax cuts (widening the
+            # deficit) and instructs committees to find spending cuts (narrowing it), so a
+            # defensible score exists on either side. What must NOT happen is a 0 — a budget
+            # resolution is the most deficit-central document Congress produces, and a zero
+            # would mean the axis was lost entirely.
+            "_nonzero": ["budget_deficit"],
         },
         id="budget-resolution-fulltext",
     ),
@@ -90,6 +100,12 @@ def test_bill_topic_scores_are_reasonable(scoring_service, bill_type, bill_numbe
     ctx = f"[{bill_type.upper()} {bill_number} via {analysis.text_source}] nonzero={nonzero}"
 
     all_abs_max = expected.pop("_all_abs_max", None)
+    # Topics that must carry SOME signal, where the defensible sign is genuinely contested.
+    for slug in expected.pop("_nonzero", []):
+        assert abs(scores.get(slug, 0.0)) > 0, (
+            f"{ctx}: {slug}=0 — the bill is centrally about this axis, so a zero means the "
+            "topic was dropped, not that the bill is neutral on it"
+        )
     if all_abs_max is not None:
         worst = max(scores.items(), key=lambda kv: abs(kv[1]), default=(None, 0))
         assert abs(worst[1]) <= all_abs_max, (

@@ -3,7 +3,7 @@
   "district": 13,
   "bioguide_id": "J000302",
   "website": "https://johnjoyce.house.gov/",
-  "fetched_at": "2026-08-30T14:34:50+00:00",
+  "fetched_at": "2026-09-04T20:00:21+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,24 +21,30 @@
     "https://johnjoyce.house.gov/issues/key-issues/health/patients-first-act/section-section",
     "https://johnjoyce.house.gov/issues/key-issues/health/patients-first-act/request-information-strengthening-medicare-physician",
     "https://johnjoyce.house.gov/media/press-releases",
-    "https://johnjoyce.house.gov/media/press-releases/dr-joyce-participates-main-street-rx-roundtable-discussion"
+    "https://johnjoyce.house.gov/media/press-releases/dr-joyce-votes-avoid-government-shutdown"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.85,
+      "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "We must continue to rebuild our military and ensure that our troops have the resources and training they need to defend our nation at home and abroad.",
-      "reasoning": "The text explicitly calls for rebuilding the military with necessary resources, indicating support for increased military spending."
+      "reasoning": "The text explicitly calls for rebuilding the military with necessary resources, indicating support for increased military spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:21+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "secure our border, unleash domestic energy production, strengthen Medicaid, and prevent the largest tax hike in American history.",
-      "reasoning": "The statement supports legislation to prevent the largest tax hike, showing a clear preference for lower taxes."
+      "reasoning": "The statement opposes tax increases by highlighting prevention of the largest tax hike, aligning with lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:21+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position is stated on overall government spending levels."
+      "reasoning": "No clear position is stated on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of combating China focus on jobs but do not state a position on trade policy or tariffs."
+      "reasoning": "No explicit position on tariffs, protectionism, or free trade is stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:21+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "The provided text contains no statements addressing foreign aid spending."
+      "reasoning": "No mention or position on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:21+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No position on deficit size or balancing the budget is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:21+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "The Patients First Act is necessary to keep patients healthy, preserve competition, and deliver affordability.",
+      "reasoning": "The text emphasizes preserving competition and market-oriented reforms to improve affordability rather than government expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:21+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits, disclosure, or restrictions on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:21+00:00"
     }
   ]
 }

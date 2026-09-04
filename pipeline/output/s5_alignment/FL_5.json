@@ -66,9 +66,9 @@
     "votes_analyzed": 58,
     "votes_without_analysis": 31,
     "truth_score": {
-      "score": 54,
-      "topics_compared": 3,
-      "fetched_at": "2026-08-30T14:20:45+00:00",
+      "score": 49,
+      "topics_compared": 4,
+      "fetched_at": "2026-09-04T19:46:21+00:00",
       "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
@@ -79,7 +79,7 @@
         "raw_alignment": 1.0,
         "numerator": 4.12,
         "denominator": 4.12,
-        "salience": 0.1464,
+        "salience": 0.2696,
         "contributing_signal_count": 8,
         "confidence": "high",
         "minus_one_desc": "Less military spending",
@@ -176,160 +176,28 @@
         ],
         "stated": {
           "score": 1.0,
-          "emphasis": 0.85,
-          "quote": "one of my top priorities is to continue rebuilding our military and ensuring our veteran community has the resources they need to successfully transition into civilian life.",
+          "emphasis": 0.9,
+          "quote": "one of my top priorities is to continue rebuilding our military and ensuring our veteran community has the resources they need to successfully transition into civilian life",
           "reasoning": "Text repeatedly emphasizes rebuilding military, F-35 advocacy, increasing ships at Mayport, and protecting defense workforce as top priorities.",
           "source": "https://rutherford.house.gov"
         }
       },
       {
-        "topic_slug": "government_spending",
-        "topic_name": "Government Spending",
-        "alignment": -0.6353,
-        "raw_alignment": -0.6692,
-        "numerator": -12.54,
-        "denominator": 18.74,
-        "salience": 0.666,
-        "contributing_signal_count": 33,
-        "confidence": "high",
-        "minus_one_desc": "More government spending",
-        "plus_one_desc": "Less government spending",
+        "topic_slug": "healthcare_affordability",
+        "topic_name": "Healthcare Affordability",
+        "alignment": -0.6154,
+        "raw_alignment": -1.0,
+        "numerator": -1.6,
+        "denominator": 1.6,
+        "salience": 0.1047,
+        "contributing_signal_count": 4,
+        "confidence": "medium",
+        "minus_one_desc": "Government action to lower costs and expand coverage",
+        "plus_one_desc": "Market competition with less government involvement",
         "contributing_bills": [
           {
             "bill_type": "HR",
-            "bill_number": "3425",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "530",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "356",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "356",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "4305",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-03"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "993",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "695",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-26"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2094",
-            "role": "sponsor",
-            "weight": 0.8,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "2094",
-            "role": "sponsor",
-            "weight": 0.8,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "7622",
+            "bill_number": "4710",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
@@ -340,40 +208,7 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "7622",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "7540",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1004",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1004",
+            "bill_number": "2001",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
@@ -395,7 +230,62 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "8205",
+            "bill_number": "5509",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          }
+        ],
+        "stated": {
+          "score": 1.0,
+          "emphasis": 0.6,
+          "quote": "giving families greater choice and flexibility in purchasing coverage that best fits their need",
+          "reasoning": "Criticizes ACA mandates and emphasizes patient choice, flexibility, transparency, and market-oriented reforms over government expansion.",
+          "source": "https://rutherford.house.gov"
+        }
+      },
+      {
+        "topic_slug": "budget_deficit",
+        "topic_name": "Budget Deficit",
+        "alignment": -0.4773,
+        "raw_alignment": -0.5888,
+        "numerator": -2.52,
+        "denominator": 4.28,
+        "salience": 0.2801,
+        "contributing_signal_count": 8,
+        "confidence": "high",
+        "minus_one_desc": "Accept a larger deficit to fund priorities",
+        "plus_one_desc": "Shrink the deficit and balance the budget",
+        "contributing_bills": [
+          {
+            "bill_type": "S",
+            "bill_number": "356",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-12-09"
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "5699",
+            "role": "sponsor",
+            "weight": 0.8,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "9059",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
@@ -406,7 +296,18 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "7452",
+            "bill_number": "2001",
+            "role": "cosponsor",
+            "weight": 0.4,
+            "vote_position": null,
+            "vote_class": null,
+            "bill_topic_score": -1.0,
+            "contributed_to_alignment": true,
+            "vote_date": null
+          },
+          {
+            "bill_type": "HR",
+            "bill_number": "8205",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
@@ -427,143 +328,33 @@
             "vote_date": null
           },
           {
+            "bill_type": "HCONRES",
+            "bill_number": "14",
+            "role": "vote",
+            "weight": 1.0,
+            "vote_position": "Yea",
+            "vote_class": "passage",
+            "bill_topic_score": 0.8,
+            "contributed_to_alignment": true,
+            "vote_date": "2025-04-10"
+          },
+          {
             "bill_type": "HR",
-            "bill_number": "9059",
+            "bill_number": "1175",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
             "vote_class": null,
-            "bill_topic_score": -0.7,
+            "bill_topic_score": 0.2,
             "contributed_to_alignment": true,
             "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3424",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1069",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3424",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "36",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "916",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-02"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-24"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8842",
-            "role": "sponsor",
-            "weight": 0.8,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -0.2,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-24"
           }
         ],
         "stated": {
           "score": 1.0,
-          "emphasis": 0.6,
-          "quote": "Rutherford Statement Opposing Democrats' Reckless Spending",
-          "reasoning": "Opposes reckless spending and supports Fiscal Responsibility Act, indicating preference for reduced government spending.",
+          "emphasis": 0.5,
+          "quote": "Rutherford Statement in Support of the Fiscal Responsibility Act of 2023",
+          "reasoning": "Multiple statements supporting the Fiscal Responsibility Act and opposing reckless spending to address deficits.",
           "source": "https://rutherford.house.gov"
         }
       },
@@ -574,7 +365,7 @@
         "raw_alignment": 1.0,
         "numerator": 0.9,
         "denominator": 0.9,
-        "salience": 0.032,
+        "salience": 0.0589,
         "contributing_signal_count": 1,
         "confidence": "low",
         "minus_one_desc": "Higher taxes",
@@ -594,9 +385,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "emphasis": 0.75,
-          "quote": "Helped pass the Tax Cuts and Jobs Act of 2017, historic tax reform that simplified the tax code, cut taxes for families and small businesses, and ushered in a new era of economic growth in America.",
-          "reasoning": "Explicit support for TCJA tax cuts and repeated praise for resulting economic growth shows clear lower-taxes stance.",
+          "emphasis": 0.7,
+          "quote": "I was proud to support the passage of the Tax Cuts and Jobs Act of 2017, which has unleashed unprecedented economic growth in the United States",
+          "reasoning": "Explicit support for the 2017 tax cuts that lowered taxes for families and businesses.",
           "source": "https://rutherford.house.gov"
         }
       },
@@ -607,7 +398,7 @@
         "raw_alignment": -1.0,
         "numerator": -0.88,
         "denominator": 0.88,
-        "salience": 0.0313,
+        "salience": 0.0576,
         "contributing_signal_count": 4,
         "confidence": "medium",
         "minus_one_desc": "Protectionist policies and tariffs",
@@ -660,9 +451,9 @@
         ],
         "stated": {
           "score": 1.0,
-          "emphasis": 0.35,
-          "quote": "Introduced H.R. 5437, the Boosting America\u2019s Exports Act, bipartisan legislation to help small businesses export their products.",
-          "reasoning": "Legislation promoting exports demonstrates support for free trade and international commerce.",
+          "emphasis": 0.3,
+          "quote": "Introduced H.R. 5437, the Boosting America\u2019s Exports Act, bipartisan legislation to help small businesses export their products",
+          "reasoning": "Advocates for export promotion legislation consistent with free trade.",
           "source": "https://rutherford.house.gov"
         }
       },
@@ -673,7 +464,7 @@
         "raw_alignment": -0.0286,
         "numerator": -0.1,
         "denominator": 3.5,
-        "salience": 0.1244,
+        "salience": 0.2291,
         "contributing_signal_count": 5,
         "confidence": "medium",
         "minus_one_desc": "More foreign aid spending",
@@ -738,7 +529,12 @@
         "stated": null
       }
     ],
-    "topics_without_signal": []
+    "topics_without_signal": [
+      {
+        "topic_slug": "money_in_politics",
+        "topic_name": "Money in Politics"
+      }
+    ]
   },
   "voting_history": [
     {
@@ -1626,6 +1422,35 @@
       "introduced_date": "2026-02-10"
     }
   ],
+  "bipartisanship": {
+    "state": "FL",
+    "district": 5,
+    "name": "John H. Rutherford",
+    "bioguide_id": "R000609",
+    "party": "R",
+    "vote_defection": null,
+    "cosponsor_reach": 0.3,
+    "attracted_reach": 1.0,
+    "composite": 0.65,
+    "signals": {
+      "votes_counted": 0,
+      "defections": 0,
+      "cosponsored_counted": 50,
+      "cosponsored_cross_party": 15,
+      "sponsored_counted": 8,
+      "sponsored_with_cross_party_support": 8
+    },
+    "defection_examples": [],
+    "rank": 1,
+    "percentile": 100,
+    "ranked_against": 431,
+    "note": "Share of substantive votes cast against the member's own party majority, share of cosponsorships given to the other party's bills, and share of their own bills that drew cross-party cosponsors. Percentile is the share of the other 431 scored House members this member's average ranks above.",
+    "caveats": [
+      "Cosponsorship reach is measured over the most recent 50 cosponsorships on file (the Congress.gov per-member list is capped), not a member's full record.",
+      "Cross-party support counts only sponsored bills whose cosponsor list was fetched.",
+      "Procedural and amendment votes are excluded, matching the alignment scoring."
+    ]
+  },
   "finance": {
     "fec_id": "H6FL04105",
     "name": "John H. Rutherford",

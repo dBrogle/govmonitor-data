@@ -3,7 +3,7 @@
   "district": 12,
   "bioguide_id": "B001306",
   "website": "https://balderson.house.gov",
-  "fetched_at": "2026-08-30T14:33:15+00:00",
+  "fetched_at": "2026-09-04T19:58:32+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,19 +21,25 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "our country has no higher commitment than to take care of our active duty military, their families, and our veterans. We must honor the promises and commitments we have made to our military veterans and ensure the necessary services and care are always available and delivered in a timely fashion. This includes adequate and safe equipment",
+      "reasoning": "Text explicitly prioritizes providing adequate equipment and services for military and veterans, indicating support for more defense spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:32+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "These issues include lack of capital \u2013 whether human or financial \u2013 burdensome taxes, outdated technology and inadequate cybersecurity infrastructure, and lack of access to the types of resources larger firms and companies have.",
-      "reasoning": "Describes taxes as burdensome, indicating support for lower taxes."
+      "quote": "These issues include lack of capital \u2013 whether human or financial \u2013 burdensome taxes, outdated technology and inadequate cybersecurity infrastructure",
+      "reasoning": "Text labels taxes as burdensome in context of small business challenges, indicating preference for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:32+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -41,7 +47,9 @@
       "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "We need to equip our producers with the tools they need to navigate an inherently uncertain business market, while protecting American taxpayer dollars and fixing ineffective and flawed programs.",
-      "reasoning": "Explicitly calls for protecting taxpayer dollars and fixing flawed programs, indicating preference for less government spending."
+      "reasoning": "Explicitly calls for protecting taxpayer dollars and fixing flawed programs, indicating preference for less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -49,7 +57,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions trade in section titles but provides no stated position on tariffs or free trade."
+      "reasoning": "Text discusses agriculture and manufacturing support but contains no explicit stance on tariffs or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:32+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -57,7 +68,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending."
+      "reasoning": "No mention of foreign aid in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:32+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of deficit or budget balancing in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:32+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "Expanding access to quality and affordable health care, especially in rural areas, is a top priority for Representative Balderson. That is why he is a top advocate on Capitol Hill for the expansion of innovations, such as telehealth and remote patient monitoring services, as solutions for improving health outcomes and reducing costs for patients living in rural communities.",
+      "reasoning": "Text advocates market-driven innovations like telehealth to reduce costs rather than government mandates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:32+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of campaign finance or political spending limits in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:32+00:00"
     }
   ]
 }

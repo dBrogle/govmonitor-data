@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "W000821",
   "website": "https://westerman.house.gov/",
-  "fetched_at": "2026-08-30T14:16:28+00:00",
+  "fetched_at": "2026-09-04T19:45:09+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,32 +21,41 @@
     "https://westerman.house.gov/issues/community-project-funding-fy27",
     "https://westerman.house.gov/issues/transportation-and-infrastructure",
     "https://westerman.house.gov/media-center/press-releases/westerman-wrda-priorities-advance-house-floor-0",
-    "https://westerman.house.gov/media-center/weekly-columns/water-infrastructure-policy-built-local-priorities"
+    "https://westerman.house.gov/media-center/press-releases/westerman-funding-priorities-fourth-district-head-presidents-desk"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "Today, the U.S. House of Representatives voted to pass a series of bills providing supplemental appropriations to address U.S. national security threat and to provide funding for defense assistance to U.S. allies and for costs incurred by the U.S. military for regional support.",
-      "reasoning": "Supports supplemental defense and military funding for national security and allies."
+      "quote": "providing supplemental appropriations to address U.S. national security threat and to provide funding for defense assistance to U.S. allies and for costs incurred by the U.S. military for regional support",
+      "reasoning": "Text explicitly supports supplemental funding for national security threats, defense assistance to allies, and U.S. military costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.5,
       "stated_score": 1.0,
-      "quote": "Congressman Bruce Westerman (AR-04) joined Congressman Randy Feenstra (IA-04) and 162 Members of the U.S. House of Representatives in introducing the Death Tax Repeal Act. This legislation would permanently repeal the death tax.",
-      "reasoning": "Explicitly supports repealing the death tax to reduce taxation."
+      "quote": "Congressman Bruce Westerman (AR-04) joined Congressman Randy Feenstra (IA-04) and 162 Members of the U.S. House of Representatives in introducing the Death Tax Repeal Act",
+      "reasoning": "Text shows repeated support for repealing taxes including the death tax and passage of major tax relief legislation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.35,
       "stated_score": 1.0,
-      "quote": "Our nation has a serious debt problem, which goes hand in hand with our government\u2019s irresponsible spending. ... we can\u2019t just continue to raise the debt ceiling without making proactive spending changes.",
-      "reasoning": "Repeatedly criticizes irresponsible spending and calls for spending restraint."
+      "quote": "we can\u2019t just continue to raise the debt ceiling without making proactive spending changes",
+      "reasoning": "Text stresses the debt problem and insists on spending changes rather than accepting larger deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +63,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade, tariffs, or free trade."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Text references defense assistance to allies but contains no clear position on general foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
       "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": -1.0,
-      "quote": "Today, the U.S. House of Representatives passed the Israel Security Supplemental Appropriations Act, cosponsored by Congressman Bruce Westerman (AR-04), to provide fully offset emergency supplemental appropriations for military assistance to Israel.",
-      "reasoning": "Supports supplemental military assistance funding to allies like Israel."
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "Oftentimes, Washington overcomplicates simple issues that can be met with fiscally responsible, long-term solutions that lower costs and provide real results for real Americans",
+      "reasoning": "Text advocates fiscally responsible market-oriented solutions to lower health care costs rather than government expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, political spending limits, or disclosure appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 28,
   "bioguide_id": "C001063",
   "website": "https://cuellar.house.gov/",
-  "fetched_at": "2026-08-30T14:37:41+00:00",
+  "fetched_at": "2026-09-04T20:03:22+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit position stated on military spending levels."
+      "reasoning": "No explicit position stated on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:22+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mentions of taxation or tax policy in the text."
+      "reasoning": "No explicit position stated on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:22+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions appropriations and securing funding but no clear stance on overall spending levels."
+      "reasoning": "Mentions appropriations and securing funding but no clear stance on overall spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
       "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "Across Texas, businesses and communities alike applaud his support for the Central American Free Trade Agreement and the North American Free Trade Agreement.",
-      "reasoning": "Explicitly champions free trade agreements and founded the House Pro-Trade Caucus."
+      "quote": "as Chairman and founder of the bi-partisan House Pro-Trade Caucus, Congressman Cuellar is widely regarded as a national trade expert in Washington D.C.",
+      "reasoning": "Text highlights founding pro-trade caucus and support for free trade agreements like CAFTA and NAFTA.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:22+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements regarding foreign aid spending."
+      "reasoning": "No explicit position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:22+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "As a member of the fiscally-conservative Blue Dog Coalition, Congressman Cuellar is dedicated to reducing the nation's deficit through increasing Congressional federal spending oversight and reforming trade and transport regulatory policies.",
+      "reasoning": "Text explicitly states dedication to reducing the deficit via oversight and reforms.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:22+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "worked on the Appropriations Committee to secure over a billion dollars for Community Health Centers. Additionally, he pushed for the inclusion of funding for Emergency Medical Services for Children (EMSC) in order to reduce child and youth mortality and morbidity resulting from severe illness or trauma.",
+      "reasoning": "Text emphasizes securing federal funding and expanding coverage through government programs and grants.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:22+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit position stated on political spending or campaign finance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:03:22+00:00"
     }
   ]
 }

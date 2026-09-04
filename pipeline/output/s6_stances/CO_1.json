@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "D000197",
   "website": "https://degette.house.gov",
-  "fetched_at": "2026-08-30T14:19:29+00:00",
+  "fetched_at": "2026-09-04T19:46:03+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,16 +21,19 @@
     "https://degette.house.gov/media-center/press-releases",
     "http://degette.house.gov/media-center/press-releases/degette-statement-voting-against-dhs-funding",
     "https://degette.house.gov/media-center/press-releases/degette-statement-iran-war-powers-resolution",
-    "https://degette.house.gov/media-center/press-releases/house-passes-degettes-bill-boosting-down-syndrome-research"
+    "https://degette.house.gov/media-center/press-releases/degette-delivers-bill-cap-insulin-cost-35-month"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": -1.0,
-      "quote": "\u201cToday we voted against additional taxpayer-funded military aid being given to Prime Minister Netanyahu\u2019s government.",
-      "reasoning": "The statement explicitly supports voting against additional military aid spending."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address general military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:03+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address taxation levels or policy."
+      "reasoning": "No statements address taxation policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:03+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Budget votes are noted but no clear position on overall government spending levels is stated."
+      "reasoning": "Voting for a continuing resolution does not state a position on deficit size.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:03+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +63,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statements address trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:03+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.25,
       "stated_score": 1.0,
-      "quote": "\u201cToday we voted against additional taxpayer-funded military aid being given to Prime Minister Netanyahu\u2019s government.",
-      "reasoning": "The statement explicitly opposes additional foreign (military) aid spending."
+      "quote": "Today we voted against additional taxpayer-funded military aid being given to Prime Minister Netanyahu\u2019s government.",
+      "reasoning": "Explicit vote against additional foreign military aid indicates preference for less spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:03+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "This bill will cap the cost of insulin at $35 per month for insured individuals.",
+      "reasoning": "Legislation to impose a government price cap demonstrates support for government action to lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:03+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:03+00:00"
     }
   ]
 }

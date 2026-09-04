@@ -3,7 +3,7 @@
   "district": 26,
   "bioguide_id": "K000402",
   "website": "https://kennedy.house.gov",
-  "fetched_at": "2026-08-30T14:32:47+00:00",
+  "fetched_at": "2026-09-04T19:57:55+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -20,8 +20,8 @@
     "https://kennedy.house.gov/Issues/Issue/?IssueID=15080",
     "https://kennedy.house.gov/Issues/Issue/?IssueID=10177",
     "https://kennedy.house.gov/Issues/Issue/?IssueID=14890",
-    "https://kennedy.house.gov/news/documentquery.aspx?IssueID=73",
-    "https://kennedy.house.gov/news/documentquery.aspx?IssueID=10177"
+    "https://kennedy.house.gov/news/documentquery.aspx?IssueID=15078",
+    "https://kennedy.house.gov/news/documentquery.aspx?IssueID=15077"
   ],
   "stances": [
     {
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending appear in the text."
+      "reasoning": "No mention of military or defense spending in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:55+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.25,
-      "stated_score": 0.6,
-      "quote": "including tax relief for the middle class while ensuring those at the top pay their fair share",
-      "reasoning": "Text explicitly calls for tax relief for the middle class, indicating support for lower taxes in that context."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions tax relief for middle class but no clear overall position on higher versus lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:55+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.4,
       "stated_score": -0.7,
       "quote": "Championing smart investments and innovations to keep revitalizing the Western New York region",
-      "reasoning": "Multiple calls for federal funding, investments, and infrastructure spending indicate support for increased government spending."
+      "reasoning": "Multiple calls for federal funding, investments, and infrastructure spending indicate support for increased government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": 0.8,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
       "quote": "Kennedy slams Donald Trump on reckless tariffs and misguided priorities",
-      "reasoning": "Explicit criticism of tariffs combined with support for incentivizing trade with Canada shows a free-trade stance."
+      "reasoning": "Explicitly criticizes tariffs, indicating support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:55+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No mention of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:55+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:55+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Protect and expand the Affordable Care Act",
+      "reasoning": "Advocates government actions like expanding ACA and Medicare drug price negotiation to lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:55+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:55+00:00"
     }
   ]
 }

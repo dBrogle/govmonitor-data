@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "C001120",
   "website": "https://crenshaw.house.gov/",
-  "fetched_at": "2026-08-30T14:36:23+00:00",
+  "fetched_at": "2026-09-04T20:01:53+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -25,7 +25,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military spending levels."
+      "reasoning": "No explicit statement on military spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:53+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -33,7 +36,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on tax rates."
+      "reasoning": "No explicit statement on tax rates appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:53+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -41,7 +47,9 @@
       "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "Our country is at a crossroads: do we get our fiscal house in order, or continue to kick the can and put the growing burden on the next generation?",
-      "reasoning": "Fiscal responsibility section explicitly calls for getting fiscal house in order, indicating preference for reduced spending."
+      "reasoning": "Fiscal responsibility section explicitly calls for getting fiscal house in order, indicating preference for reduced spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -49,7 +57,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade or tariffs."
+      "reasoning": "No explicit statement on trade policy or tariffs appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:53+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -57,7 +68,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No explicit statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:53+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Our country is at a crossroads: do we get our fiscal house in order, or continue to kick the can and put the growing burden on the next generation?",
+      "reasoning": "The fiscal responsibility section directly advocates getting the fiscal house in order to avoid burdening future generations.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:53+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "Providing Americans with personalized, affordable health care that puts the patient - not the federal government - in the driver seat and protects American medical innovation has been a top priority for me since I was elected to Congress.",
+      "reasoning": "The health care statement explicitly prioritizes patient-driven care over federal government involvement.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:53+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on political spending limits appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:53+00:00"
     }
   ]
 }

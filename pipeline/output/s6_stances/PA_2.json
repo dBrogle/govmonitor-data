@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "B001296",
   "website": "https://boyle.house.gov/",
-  "fetched_at": "2026-08-30T14:34:26+00:00",
+  "fetched_at": "2026-09-04T19:59:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -20,8 +20,8 @@
     "https://boyle.house.gov/issues/budget-and-fiscal-responsibility",
     "https://boyle.house.gov/issues/national-security-and-foreign-policy",
     "https://boyle.house.gov/media-center/press-releases",
-    "https://boyle.house.gov/media-center/press-releases/boyle-statement-trumps-speech-pennsylvania",
-    "https://boyle.house.gov/media-center/press-releases/boyle-statement-91st-anniversary-social-security"
+    "https://boyle.house.gov/media-center/press-releases/boyle-statement-91st-anniversary-social-security",
+    "https://boyle.house.gov/media-center/press-releases/boyle-statement-61st-anniversary-medicare-and-medicaid"
   ],
   "stances": [
     {
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statements on military spending levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:37+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "creating jobs, cutting taxes, and lowering costs",
-      "reasoning": "Explicit support for cutting taxes and opposition to tariff taxes indicates preference for lower taxes."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on tax rates or tax policy appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:37+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "praised today's House passage of the historic $1.7 trillion Build Back Better Act",
-      "reasoning": "Praising large spending bills and opposing cuts to programs shows support for more government spending."
+      "reasoning": "Praising large spending bills and opposing cuts to programs shows support for more government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.5,
-      "stated_score": 1.0,
-      "quote": "Calls on Trump to End Tariff Taxes on School Supplies",
-      "reasoning": "Repeated opposition to tariffs demonstrates support for free trade over protectionism."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim quote stating a position on tariffs or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:37+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:37+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements addressing deficit size or balancing the budget appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:37+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "300,000 Pennsylvanians are projected to lose their health care. My bill very simply would say these Medicaid cuts do not take effect in December. We need to act to prevent them, and we need to act now,",
+      "reasoning": "Text repeatedly opposes Medicaid cuts and supports government-funded health research and coverage expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:37+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending limits appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:37+00:00"
     }
   ]
 }

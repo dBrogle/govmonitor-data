@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "C001117",
   "website": "https://casten.house.gov",
-  "fetched_at": "2026-08-30T14:23:34+00:00",
+  "fetched_at": "2026-09-04T19:48:35+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military or defense spending levels appears in the text."
+      "reasoning": "No statement on military spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:35+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on raising or lowering taxes appears in the text."
+      "reasoning": "No statement on tax rates or policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:35+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on overall government spending levels appears in the text."
+      "reasoning": "No statement on overall government spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +62,54 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on trade policy, tariffs, or free trade appears in the text."
+      "reasoning": "No statement on trade policy or tariffs appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:35+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": -1.0,
+      "quote": "The ongoing conflicts in Ukraine, Israel, and Gaza are clear examples of how the United States has a responsibility to prevent further suffering and provide humanitarian aid to address these crises.",
+      "reasoning": "Text explicitly supports providing humanitarian aid abroad.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:35+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "He is fighting for job creation, economic opportunity for all, and fair and responsible ways to reduce the deficit.",
+      "reasoning": "Text explicitly endorses reducing the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:35+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Representative Casten believes every American deserves universal, quality, affordable healthcare.",
+      "reasoning": "Text endorses government-led actions such as strengthening the ACA and capping drug prices.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:35+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of humanitarian aid exist but do not clearly state a position on foreign aid spending levels."
+      "reasoning": "No statement on campaign finance or political spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:35+00:00"
     }
   ]
 }

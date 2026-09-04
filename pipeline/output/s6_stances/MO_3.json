@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "O000177",
   "website": "https://onder.house.gov/",
-  "fetched_at": "2026-08-30T14:28:11+00:00",
+  "fetched_at": "2026-09-04T19:53:24+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,19 +26,25 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on the level of military or defense spending."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "National defense is a core, constitutional function of our government. Our Armed Forces must be second to none and fully prepared, always, to defend the U.S. and our interests at home and abroad.",
+      "reasoning": "Text explicitly calls for military superiority and strong national defense spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:24+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.8,
       "stated_score": 1.0,
-      "quote": "a huge legislative victory that renews critical Trump-era tax cuts, secures America\u2019s borders, and stops the largest tax increase in American history from taking effect",
-      "reasoning": "Explicit support for renewing tax cuts and blocking tax increases shows clear preference for lower taxes."
+      "quote": "a huge legislative victory that renews critical Trump-era tax cuts, secures America\u2019s borders, and stops the largest tax increase in American history from taking effect.",
+      "reasoning": "Text praises renewal of tax cuts and blocking tax increases, indicating support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:24+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.5,
       "stated_score": 1.0,
       "quote": "Washington must end its spending addiction and focus its efforts on creating opportunities for job growth",
-      "reasoning": "Direct call to end spending addiction indicates preference for reduced government spending."
+      "reasoning": "Direct call to end spending addiction indicates preference for reduced government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade."
+      "reasoning": "No verbatim statement on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:24+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:24+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear verbatim statement on accepting or shrinking deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:24+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions health plan transparency bills but no clear position on government vs. market approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:24+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:24+00:00"
     }
   ]
 }

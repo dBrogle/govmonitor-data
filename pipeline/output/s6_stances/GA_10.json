@@ -3,7 +3,7 @@
   "district": 10,
   "bioguide_id": "C001129",
   "website": "https://collins.house.gov",
-  "fetched_at": "2026-08-30T14:22:44+00:00",
+  "fetched_at": "2026-09-04T19:47:04+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on increasing or decreasing overall military or defense spending levels."
+      "reasoning": "No statement addresses military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:04+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "This bipartisan legislative package recognizes those who have worn the uniform by establishing a Veterans Appreciation Month, the America 250 Military Appreciation Discount, and Veterans Tax Relief Weekends.",
-      "reasoning": "The introduction of Veterans Tax Relief Weekends explicitly endorses tax relief measures."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of 'Veterans Tax Relief Weekends' are too narrow and do not state a general position on taxation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:04+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "We promised the American people we would rein in federal agencies and get spending under control.",
-      "reasoning": "Direct call to reduce federal spending and rein in agencies."
+      "reasoning": "Direct call to reduce federal spending and rein in agencies.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addressing tariffs, protectionism, or free trade."
+      "reasoning": "No statement addresses trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:04+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending levels."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:04+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "We promised the American people we would rein in federal agencies and get spending under control.",
+      "reasoning": "The explicit call to get spending under control states support for shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:04+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Health-related statements focus on opioids and veterans records, not affordability or government vs. market roles.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:04+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:04+00:00"
     }
   ]
 }

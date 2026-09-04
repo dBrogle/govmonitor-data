@@ -3,7 +3,7 @@
   "district": 14,
   "bioguide_id": "C001066",
   "website": "https://castor.house.gov/",
-  "fetched_at": "2026-08-30T14:21:17+00:00",
+  "fetched_at": "2026-09-04T19:46:28+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement addresses the level of military or defense spending."
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": 1.0,
+      "quote": "She believes that a balanced approach for the budget charts a sustainable course for middle-class families --> Energy/Environment --> Women Too many women in America are not participating fully in our economy and that affects us all. --> Health Care Health Care --> Education --> Equality for All Rep. Castor is committed to fighting for equality for everyone across Tampa Bay. --> Gun Violence Prevention Throughout her time in Congress, U.S. Rep. Castor has worked to stem the gun violence epidemic in America. In the 116th Congress, she has helped lead her colleagues in passing H.R. 8, the Bipartisan Background Check Act, a commonsense bill that ensur... --> Protecting Consumers --> Immigration --> Veterans' Affairs Veterans&#39; Affairs --> Military --> Small Business --> Infrastructure Investments in infrastructure projects - roads, bridges, broadband, schools, water infrastructure, energy grids and transit - will create jobs, rebuild America and keep Tampa Bay moving! --> Legislation -->",
+      "reasoning": "Text explicitly highlights support for MacDill Air Force Base as an economic engine and voting for PACT Act expanding veterans' benefits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:28+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses taxation levels or policy."
+      "reasoning": "No verbatim statement on tax rates or policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:28+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.45,
-      "stated_score": -1.0,
-      "quote": "The Tampa Bay Area is transforming thanks to historic legislation, federal investments from the Bipartisan Infrastructure Law and Inflation Reduction Act and Community Project Funding I champion in the Congress.",
-      "reasoning": "Championing major federal spending legislation such as the Bipartisan Infrastructure Law and Inflation Reduction Act indicates support for increased government spending."
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "She believes that a balanced approach for the budget charts a sustainable course for middle-class families",
+      "reasoning": "Text states preference for a balanced budget approach.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:28+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses trade policy, tariffs, or free trade."
+      "reasoning": "No verbatim statement on trade or tariffs appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:28+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:28+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Thanks to the Inflation Reduction Act, people with Medicare Part D drug coverage now pay nothing out-of-pocket for even more vaccines and will experience a price cap of $35/month on insulin. For the first time, Medicare will be able to negotiate directly with manufacturers for the price of certain high-spending brand-name Medicare Part B and Part D drugs that don\u2019t have competition.",
+      "reasoning": "Text repeatedly endorses government-led cost controls via ACA, IRA drug negotiation, and price caps.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:28+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on campaign finance or political spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:28+00:00"
     }
   ]
 }

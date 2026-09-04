@@ -26,9 +26,9 @@
     "votes_analyzed": 58,
     "votes_without_analysis": 26,
     "truth_score": {
-      "score": 68,
+      "score": 72,
       "topics_compared": 3,
-      "fetched_at": "2026-08-30T14:21:02+00:00",
+      "fetched_at": "2026-09-04T19:46:23+00:00",
       "note": "How consistently the member votes with what they publicly say, weighted by how much they emphasize each topic on their site (100 = words match votes exactly). Only high-confidence topics count; null if too few are comparable."
     },
     "topics": [
@@ -39,7 +39,7 @@
         "raw_alignment": 1.0,
         "numerator": 3.6,
         "denominator": 3.6,
-        "salience": 0.1488,
+        "salience": 0.2871,
         "contributing_signal_count": 6,
         "confidence": "medium",
         "minus_one_desc": "Less military spending",
@@ -116,7 +116,7 @@
           "score": 1.0,
           "emphasis": 0.7,
           "quote": "I am committed to ensuring our service members have the resources they need, supporting strong defense investments, and advancing innovation in aerospace and national security.",
-          "reasoning": "The text explicitly endorses strong defense investments and resources for service members.",
+          "reasoning": "Text explicitly endorses strong defense investments and resources for service members.",
           "source": "https://haridopolos.house.gov/"
         }
       },
@@ -127,7 +127,7 @@
         "raw_alignment": 1.0,
         "numerator": 1.5,
         "denominator": 1.5,
-        "salience": 0.062,
+        "salience": 0.1196,
         "contributing_signal_count": 3,
         "confidence": "medium",
         "minus_one_desc": "Higher taxes",
@@ -170,8 +170,8 @@
         "stated": {
           "score": 1.0,
           "emphasis": 0.9,
-          "quote": "I\u2019ve spent my career fighting for lower taxes, responsible spending, and policies that allow families and small businesses to thrive... extending the 2017 tax cuts and reducing taxes further especially to reshore jobs lost due to past policies... no tax on tips, no tax on social security, no tax on overtime and a 15% corporate tax rate for firms that create jobs in the USA.",
-          "reasoning": "The text repeatedly and explicitly advocates for lower taxes, extending cuts, and specific tax reductions.",
+          "quote": "I\u2019ve spent my career fighting for lower taxes, responsible spending, and policies that allow families and small businesses to thrive.",
+          "reasoning": "Text repeatedly advocates extending tax cuts, reducing taxes further, and specific tax relief measures.",
           "source": "https://haridopolos.house.gov/"
         }
       },
@@ -182,7 +182,7 @@
         "raw_alignment": -1.0,
         "numerator": -1.36,
         "denominator": 1.36,
-        "salience": 0.0562,
+        "salience": 0.1085,
         "contributing_signal_count": 5,
         "confidence": "medium",
         "minus_one_desc": "Protectionist policies and tariffs",
@@ -247,52 +247,19 @@
         "stated": null
       },
       {
-        "topic_slug": "government_spending",
-        "topic_name": "Government Spending",
-        "alignment": -0.5273,
-        "raw_alignment": -0.5631,
-        "numerator": -8.3,
-        "denominator": 14.74,
-        "salience": 0.6091,
-        "contributing_signal_count": 27,
-        "confidence": "high",
-        "minus_one_desc": "More government spending",
-        "plus_one_desc": "Less government spending",
+        "topic_slug": "budget_deficit",
+        "topic_name": "Budget Deficit",
+        "alignment": -0.3235,
+        "raw_alignment": -0.4286,
+        "numerator": -1.32,
+        "denominator": 3.08,
+        "salience": 0.2456,
+        "contributing_signal_count": 6,
+        "confidence": "medium",
+        "minus_one_desc": "Accept a larger deficit to fund priorities",
+        "plus_one_desc": "Shrink the deficit and balance the budget",
         "contributing_bills": [
           {
-            "bill_type": "HR",
-            "bill_number": "3425",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "682",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "530",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
             "bill_type": "S",
             "bill_number": "356",
             "role": "vote",
@@ -302,72 +269,6 @@
             "bill_topic_score": -1.0,
             "contributed_to_alignment": true,
             "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "S",
-            "bill_number": "356",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-09"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "4305",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-03"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "993",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-03-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3838",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "695",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": -1.0,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-26"
           },
           {
             "bill_type": "HR",
@@ -382,7 +283,7 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "1529",
+            "bill_number": "7779",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
@@ -393,7 +294,7 @@
           },
           {
             "bill_type": "HR",
-            "bill_number": "5490",
+            "bill_number": "7681",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
@@ -403,165 +304,33 @@
             "vote_date": null
           },
           {
-            "bill_type": "HR",
-            "bill_number": "3424",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
             "bill_type": "HCONRES",
             "bill_number": "14",
             "role": "vote",
             "weight": 1.0,
             "vote_position": "Yea",
             "vote_class": "passage",
-            "bill_topic_score": 0.6,
+            "bill_topic_score": 0.8,
             "contributed_to_alignment": true,
             "vote_date": "2025-04-10"
           },
           {
             "bill_type": "HR",
-            "bill_number": "3625",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": 0.6,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "1069",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.5,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-12-04"
-          },
-          {
-            "bill_type": "HCONRES",
-            "bill_number": "14",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.3,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-04-10"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8774",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -0.3,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3424",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-09-08"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "36",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-05"
-          },
-          {
-            "bill_type": "HRES",
-            "bill_number": "377",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Aye",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-05-06"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-24"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8851",
-            "role": "sponsor",
-            "weight": 0.8,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -0.2,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "3625",
+            "bill_number": "1175",
             "role": "cosponsor",
             "weight": 0.4,
             "vote_position": null,
             "vote_class": null,
             "bill_topic_score": 0.2,
-            "contributed_to_alignment": true,
-            "vote_date": null
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "825",
-            "role": "vote",
-            "weight": 1.0,
-            "vote_position": "Yea",
-            "vote_class": "passage",
-            "bill_topic_score": 0.1,
-            "contributed_to_alignment": true,
-            "vote_date": "2025-02-24"
-          },
-          {
-            "bill_type": "HR",
-            "bill_number": "8743",
-            "role": "cosponsor",
-            "weight": 0.4,
-            "vote_position": null,
-            "vote_class": null,
-            "bill_topic_score": -0.1,
             "contributed_to_alignment": true,
             "vote_date": null
           }
         ],
         "stated": {
           "score": 1.0,
-          "emphasis": 0.6,
-          "quote": "Floridians know how to balance a budget, and Washington should do the same... keep more of what they earn\u2014not send it to Washington to fund wasteful programs and runaway bureaucracy.",
-          "reasoning": "The text calls for balanced budgets and criticizes wasteful spending and bureaucracy.",
+          "emphasis": 0.5,
+          "quote": "Floridians know how to balance a budget, and Washington should do the same.",
+          "reasoning": "Text calls for balancing the budget and responsible spending.",
           "source": "https://haridopolos.house.gov/"
         }
       },
@@ -572,7 +341,7 @@
         "raw_alignment": 0.0667,
         "numerator": 0.2,
         "denominator": 3.0,
-        "salience": 0.124,
+        "salience": 0.2392,
         "contributing_signal_count": 5,
         "confidence": "medium",
         "minus_one_desc": "More foreign aid spending",
@@ -637,7 +406,16 @@
         "stated": null
       }
     ],
-    "topics_without_signal": []
+    "topics_without_signal": [
+      {
+        "topic_slug": "healthcare_affordability",
+        "topic_name": "Healthcare Affordability"
+      },
+      {
+        "topic_slug": "money_in_politics",
+        "topic_name": "Money in Politics"
+      }
+    ]
   },
   "voting_history": [
     {
@@ -1495,6 +1273,35 @@
       "introduced_date": "2026-01-21"
     }
   ],
+  "bipartisanship": {
+    "state": "FL",
+    "district": 8,
+    "name": "Mike Haridopolos",
+    "bioguide_id": "H001099",
+    "party": "R",
+    "vote_defection": null,
+    "cosponsor_reach": 0.08,
+    "attracted_reach": null,
+    "composite": 0.08,
+    "signals": {
+      "votes_counted": 0,
+      "defections": 0,
+      "cosponsored_counted": 50,
+      "cosponsored_cross_party": 4,
+      "sponsored_counted": 3,
+      "sponsored_with_cross_party_support": 1
+    },
+    "defection_examples": [],
+    "rank": 384,
+    "percentile": 11,
+    "ranked_against": 431,
+    "note": "Share of substantive votes cast against the member's own party majority, share of cosponsorships given to the other party's bills, and share of their own bills that drew cross-party cosponsors. Percentile is the share of the other 431 scored House members this member's average ranks above.",
+    "caveats": [
+      "Cosponsorship reach is measured over the most recent 50 cosponsorships on file (the Congress.gov per-member list is capped), not a member's full record.",
+      "Cross-party support counts only sponsored bills whose cosponsor list was fetched.",
+      "Procedural and amendment votes are excluded, matching the alignment scoring."
+    ]
+  },
   "finance": {
     "fec_id": "H4FL08168",
     "name": "Mike Haridopolos",

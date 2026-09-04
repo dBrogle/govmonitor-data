@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "N000189",
   "website": "https://newhouse.house.gov",
-  "fetched_at": "2026-08-30T14:39:27+00:00",
+  "fetched_at": "2026-09-04T20:05:24+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -16,9 +16,9 @@
     "https://newhouse.house.gov/issues/veterans",
     "https://newhouse.house.gov/issues/education",
     "https://newhouse.house.gov/issues/wildfires",
+    "https://newhouse.house.gov/issues/health-care",
     "https://newhouse.house.gov/issues/agriculture",
     "https://newhouse.house.gov/issues/immigration",
-    "https://newhouse.house.gov/issues/health-care",
     "https://newhouse.house.gov/issues/fentanyl-crisis",
     "https://newhouse.house.gov/issues/law-enforcement",
     "https://newhouse.house.gov/issues/water-hydropower"
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": 1.0,
-      "quote": "Newhouse Votes to Advance Budget Framework Strengthening Elections, Farmers, and Military",
-      "reasoning": "Text shows support for strengthening military via budget framework vote."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on military spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:24+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on taxation levels."
+      "reasoning": "No verbatim statement on tax rates appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:24+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "Creo que la mayor amenaza para nuestra seguridad nacional es nuestra deuda",
-      "reasoning": "Fiscal responsibility section frames national debt as top security threat, implying preference for reduced spending."
+      "reasoning": "Fiscal responsibility section frames national debt as top security threat, implying preference for reduced spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Newhouse Votes to Eliminate Tariffs on Canada",
-      "reasoning": "Multiple statements and votes explicitly oppose tariffs and promote global market access and free trade policies."
+      "reasoning": "Multiple statements and votes explicitly support eliminating tariffs and expanding free trade access for exports.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:24+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:24+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "Creo que la mayor amenaza para nuestra seguridad nacional es nuestra deuda, por lo que tambi\u00e9n creo que tenemos la responsabilidad de ayudar a eliminar esa amenaza",
+      "reasoning": "The budget and fiscal responsibility section includes this quote endorsing reduction of the national debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:24+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "I was proud to vote to restore individual healthcare choices and government accountability by repealing Obamacare.",
+      "reasoning": "The health care section repeatedly endorses repealing Obamacare in favor of patient-centered market approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:24+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on political spending limits appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:24+00:00"
     }
   ]
 }

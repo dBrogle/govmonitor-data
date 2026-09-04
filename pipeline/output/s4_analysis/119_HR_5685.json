@@ -2,20 +2,44 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "5685",
-  "summary": null,
+  "summary": "The bill doubles the Medicaid minimum monthly personal needs allowance for institutionalized individuals from $30 to $60 and for couples from $60 to $120 beginning January 2026, and automatically adjusts both amounts each year to match Social Security cost-of-living increases.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill amends the Medicaid program to increase the personal needs allowance for institutionalized individuals. Since Medicaid is a public healthcare program, this bill directly impacts public healthcare by adjusting its benefits.",
       "topic_slug": "healthcare",
       "topic_name": "Healthcare",
-      "score": -0.6
+      "score": -0.6,
+      "llm_model": null,
+      "temperature": null
     },
     {
       "thoughts": "The bill increases the personal needs allowance for individuals and couples in institutions under the Medicaid program, which is a form of welfare. This directly expands benefits for a vulnerable population, thus expanding the social safety net.",
       "topic_slug": "social_safety_net",
       "topic_name": "Social Safety Net",
-      "score": -0.7
+      "score": -0.7,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill's sole purpose is to raise the Medicaid personal needs allowance, directly increasing federal and state Medicaid expenditures for institutionalized beneficiaries. This spending increase has a moderate effect on the deficit by prioritizing expanded support over deficit reduction.",
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:14:36+00:00"
+    },
+    {
+      "thoughts": "The legislation amends Medicaid to expand benefits for institutionalized individuals by increasing the amount they may retain for personal needs, representing direct government action to enhance support and reduce out-of-pocket burdens within the program.",
+      "topic_slug": "healthcare_affordability",
+      "topic_name": "Healthcare Affordability",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:14:36+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

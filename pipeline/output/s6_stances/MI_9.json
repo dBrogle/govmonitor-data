@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "M001136",
   "website": "https://mcclain.house.gov",
-  "fetched_at": "2026-08-30T14:27:23+00:00",
+  "fetched_at": "2026-09-04T19:52:39+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -19,18 +19,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.85,
       "stated_score": 1.0,
       "quote": "I am committed to building our military into the preeminent fighting force in the world and keeping America safe and secure.",
-      "reasoning": "Text explicitly commits to building a preeminent military force, indicating support for strong defense posture."
+      "reasoning": "The text explicitly commits to strengthening the military as a top priority.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:39+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "I fought to deliver meaningful wins for our farmers through the Working Families Tax Cuts, and I will continue pushing to reduce input costs, cut through excessive red tape, and get a long-term Farm Bill across the finish line to bring much-needed relief to our agricultural community.",
-      "reasoning": "Text praises and claims credit for tax cuts while pushing related relief measures."
+      "quote": "I fought to deliver meaningful wins for our farmers through the Working Families Tax Cuts, and I will continue pushing to reduce input costs, cut through excessive red tape, and get a long-term Farm Bill across the finish line.",
+      "reasoning": "The text repeatedly praises and claims credit for tax cuts as beneficial policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:39+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -38,15 +44,20 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Washington has a spending problem, and it shows up in places big and small,\u201d Chairwoman McClain said. \u201cIf the federal government is spending nearly four cents to make a penny worth one cent, something is broken. House Republicans are proving that common sense still has a place in government by cutting waste and protecting taxpayer dollars.",
-      "reasoning": "Text directly criticizes federal spending and highlights legislation to cut waste."
+      "reasoning": "Text directly criticizes federal spending and highlights legislation to cut waste.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": 1.0,
-      "quote": "Across the country, farmers want fair access to markets both domestically and abroad, they want Congress to address rising input costs, and they want to ensure the next generation can succeed on",
-      "reasoning": "Text endorses farmers' desire for access to international markets, aligning with free trade."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position on tariffs versus free trade is stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:39+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -54,7 +65,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending or policy."
+      "reasoning": "No mention of foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:39+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "Washington has a spending problem, and it shows up in places big and small... House Republicans are proving that common sense still has a place in government by cutting waste and protecting taxpayer dollars.",
+      "reasoning": "The text frames government spending as a problem and emphasizes cutting waste to protect taxpayer dollars.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:39+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Veterans' healthcare access is mentioned but no position on general affordability policy or market versus government role is stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:39+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, limits, or disclosure are present.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:39+00:00"
     }
   ]
 }

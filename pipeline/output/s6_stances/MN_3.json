@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "M001234",
   "website": "https://morrison.house.gov/",
-  "fetched_at": "2026-08-30T14:27:37+00:00",
+  "fetched_at": "2026-09-04T19:53:01+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -23,7 +23,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending levels appear in the text."
+      "reasoning": "No statements on military spending levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:01+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -31,7 +34,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit position on raising or lowering taxes is stated."
+      "reasoning": "The vague reference to a tax system ensuring opportunity does not state a position on higher or lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:01+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -39,15 +45,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear stance on overall government spending levels is present."
+      "reasoning": "No clear stance on overall government spending levels is present.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "U.S. Rep. Kelly Morrison Leads Effort Calling on Speaker Johnson to Take Action on Bipartisan Bills to End Tariff War",
-      "reasoning": "Multiple releases explicitly oppose tariffs and trade wars, indicating support for free trade."
+      "reasoning": "Multiple references to opposing Trump's tariffs and trade war indicate support for free trade over protectionism.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:01+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -55,7 +66,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:01+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:01+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "All Minnesotans deserve access to affordable, quality health care.",
+      "reasoning": "Emphasis on lowering health care costs and ensuring access indicates support for government action over pure market solutions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:01+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits or disclosure for political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:01+00:00"
     }
   ]
 }

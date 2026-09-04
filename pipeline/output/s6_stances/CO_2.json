@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "N000191",
   "website": "https://neguse.house.gov/",
-  "fetched_at": "2026-08-30T14:19:36+00:00",
+  "fetched_at": "2026-09-04T19:46:04+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "Rep. Neguse Leads Bipartisan Effort Imploring Defense Department Reverse NATO Force Cuts",
-      "reasoning": "The press release title directly states opposition to NATO force cuts by the Defense Department."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of military or defense spending in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:04+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses taxation policy."
+      "reasoning": "No mention of taxation levels or policy in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:04+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text states a general position on government spending levels."
+      "reasoning": "No mention of budget deficits or balancing the budget in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:04+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses trade policy."
+      "reasoning": "No mention of trade policy, tariffs, or free trade in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:04+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses foreign aid spending."
+      "reasoning": "No mention of foreign aid spending in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:04+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of healthcare costs, coverage, or government vs. market approaches in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:04+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": -1.0,
+      "quote": "It would also remove dark money from politics and strengthen ethics standards for elected officials.",
+      "reasoning": "The text explicitly advocates removing dark money from politics, banning congressional stock trading, and strengthening ethics standards as core priorities.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:04+00:00"
     }
   ]
 }

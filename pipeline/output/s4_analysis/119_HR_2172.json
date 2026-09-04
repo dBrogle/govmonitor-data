@@ -2,14 +2,36 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "2172",
-  "summary": null,
+  "summary": "The bill amends Medicare to expand home infusion therapy coverage by adding pharmacy services and certain non-pump IV drugs, allowing NPs and PAs to oversee plans of care, setting payments at 50% when suppliers are absent and at a 5-hour rate through 2029, and barring separate supply payments after 2025.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill directly amends the Social Security Act to clarify and expand Medicare coverage for home infusion therapy, including pharmacy services and specific drugs. It aims to preserve and improve patient access to a particular type of healthcare service under a public program.",
       "topic_slug": "healthcare",
       "topic_name": "Healthcare",
-      "score": -0.7
+      "score": -0.7,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill amends Medicare statute to expand the definition of home infusion therapy services, adjust payment rates and rules (including for non-pump drugs), allow NPs/PAs to establish plans of care, and prevent duplicate billing for supplies. This is a direct government intervention to preserve and broaden Medicare coverage for a specific therapy modality, making it central to the bill.",
+      "topic_slug": "healthcare_affordability",
+      "topic_name": "Healthcare Affordability",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:02:37+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:02:37+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

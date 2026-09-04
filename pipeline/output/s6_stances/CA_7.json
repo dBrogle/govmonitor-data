@@ -3,11 +3,12 @@
   "district": 7,
   "bioguide_id": "M001163",
   "website": "https://matsui.house.gov",
-  "fetched_at": "2026-08-30T14:17:00+00:00",
+  "fetched_at": "2026-09-04T19:45:24+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://matsui.house.gov",
+    "https://matsui.house.gov/issues/veterans",
     "https://matsui.house.gov/issues/health-care",
     "https://matsui.house.gov/issues/environment",
     "https://matsui.house.gov/issues/economy-and-jobs",
@@ -16,12 +17,11 @@
     "https://matsui.house.gov/media/press-releases",
     "https://matsui.house.gov/media/press-releases/matsui-leads-effort-urging-fcc-stop-att-landline-shutdown",
     "https://matsui.house.gov/media/press-releases/matsui-statement-house-amendment-cut-military-aid-israel-0",
-    "https://matsui.house.gov/media/press-releases/ranking-member-matsui-full-opening-remarks-cat-ntia-oversight-hearing",
+    "https://matsui.house.gov/media/press-releases/matsui-leads-bipartisan-push-build-crisis-care-system-behind-988",
     "https://matsui.house.gov/media/press-releases/matsui-thompson-bera-and-local-leaders-highlight-new-federal-housing-law",
-    "https://matsui.house.gov/media/press-releases/house-passes-matsuis-bill-keep-lights-strengthening-americas-energy-grid",
     "https://matsui.house.gov/media/press-releases/icymi-matsui-kiggans-merkley-champion-bipartisan-legislation-keep-americas",
-    "https://matsui.house.gov/media/press-releases/matsui-statement-finalization-225-million-federal-investment-boschs-roseville",
-    "https://matsui.house.gov/media/press-releases/matsui-introduces-bipartisan-legislation-strengthen-cybersecurity-k-12-schools"
+    "https://matsui.house.gov/media/press-releases/matsui-urges-veterans-organization-reconsider-revocation-sacramento-chapter-6",
+    "https://matsui.house.gov/media/press-releases/matsui-statement-finalization-225-million-federal-investment-boschs-roseville"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on U.S. military or defense spending levels."
+      "reasoning": "No clear general position stated on overall U.S. military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on tax rates or policy."
+      "reasoning": "No clear general position stated on overall tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on overall government spending levels."
+      "reasoning": "No clear position stated on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +63,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on trade, tariffs, or free trade."
+      "reasoning": "No clear position stated on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Specific vote to cut aid to Israel mentioned but no general stance on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
       "addressed": true,
-      "emphasis": 0.25,
-      "stated_score": 1.0,
-      "quote": "I cannot support funding for military aid to any country that fails to comply with U.S. law, U.S. interests, and U.S. values.",
-      "reasoning": "Voted yes to cut $3.3B military aid to Israel and explicitly opposes such funding when conditions unmet."
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "At its core, the Patient Protection and Affordable Care Act is about providing affordable access to high quality health coverage or all Americans. Congresswoman Matsui played a pivotal role in passing this historic health law, and has continued to advocate for building upon its foundation to increase coverage by lowering premiums for people buying coverage through the ACA marketplaces.",
+      "reasoning": "Text repeatedly endorses the ACA and government-led expansions of coverage and affordability measures.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 16,
   "bioguide_id": "K000376",
   "website": "https://kelly.house.gov",
-  "fetched_at": "2026-08-30T14:34:55+00:00",
+  "fetched_at": "2026-09-04T20:00:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -19,26 +19,32 @@
     "https://kelly.house.gov/issues/transportation-infrastructure",
     "https://kelly.house.gov/issues/tax-reform-small-business-economy",
     "https://kelly.house.gov/media/press-releases",
-    "https://kelly.house.gov/media/press-releases/kelly-votes-continuing-resolution-keep-government-open",
-    "https://kelly.house.gov/media/press-releases/kelly-fetterman-urge-postmaster-general-reopen-south-erie-post-office",
-    "https://kelly.house.gov/media/press-releases/kelly-renews-push-dalilahs-law-strengthen-highway-safety-close-loopholes"
+    "https://kelly.house.gov/media/press-releases/kelly-votes-continuing-resolution-keep-government-open-0",
+    "https://kelly.house.gov/media/press-releases/kelly-hold-telephone-town-hall-support-pennsylvania-veterans",
+    "https://kelly.house.gov/media/press-releases/kelly-fetterman-urge-postmaster-general-reopen-south-erie-post-office"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "Today, U.S. Rep. Mike Kelly (R-PA) voted in favor of the FY2027 National Defense Authorization Act (NDAA), a comprehensive package of legislation to support the U.S. military and its service members.",
-      "reasoning": "Multiple votes for NDAA and defense initiatives show clear support for more military spending."
+      "reasoning": "Multiple statements and votes explicitly support NDAA passage and defense funding increases.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:37+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
-      "reasoning": "Explicit endorsement of tax cuts indicates support for lower taxes."
+      "quote": "Today, U.S. Rep. Mike Kelly (R-PA), Chairman of the Ways & Means Subcommittee on Tax , voted in favor of the One Big Beautiful Bill Act, a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
+      "reasoning": "Explicit support for tax cuts legislation and Ways and Means role in revenue planning.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:37+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.5,
       "stated_score": 1.0,
       "quote": "a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
-      "reasoning": "Direct reference to cutting spending shows preference for less government spending."
+      "reasoning": "Direct reference to cutting spending shows preference for less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": 1.0,
-      "quote": "Today, U.S. Rep. Mike Kelly (R-PA) called on U.S. Trade Ambassador Katherine Tai and the Biden administration to prioritize trade deals that strengthen U.S. national security and make America more competitive.",
-      "reasoning": "Advocacy for strong trade deals aligns with free trade position."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of trade deals and domestic mining lack any explicit stance on tariffs versus free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:37+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements address foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:37+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "Today, U.S. Rep. Mike Kelly (R-PA), Chairman of the Ways & Means Subcommittee on Tax , voted in favor of the One Big Beautiful Bill Act, a package of legislation that provides tax cuts, cuts spending, secures the border, expands American energy production, and more.",
+      "reasoning": "The bill language includes explicit spending cuts alongside tax measures.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:37+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "I\u2019ve always fought to protect the rights of every American to choose their doctor and get the treatment which works best for them and their family.",
+      "reasoning": "Core statement emphasizes patient choice and minimal interference over government expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:37+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits or disclosure on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:37+00:00"
     }
   ]
 }

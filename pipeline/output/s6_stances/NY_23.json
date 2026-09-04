@@ -3,7 +3,7 @@
   "district": 23,
   "bioguide_id": "L000600",
   "website": "https://langworthy.house.gov",
-  "fetched_at": "2026-08-30T14:32:35+00:00",
+  "fetched_at": "2026-09-04T19:57:52+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -11,16 +11,16 @@
     "https://langworthy.house.gov/issues/agriculture",
     "https://langworthy.house.gov/issues/grant-announcements",
     "https://langworthy.house.gov/media/press-releases",
-    "https://langworthy.house.gov/media/press-releases/statement-on-passage-kids-act",
-    "https://langworthy.house.gov/media/press-releases/expedited-access-to-biosimilars-act",
-    "https://langworthy.house.gov/media/press-releases/faa-grants-for-southern-tier-airports",
     "https://langworthy.house.gov/media/press-releases/congressman-langworthy-introduces-flows-act",
     "https://langworthy.house.gov/media/press-releases/congressman-langworthy-votes-pass-farm-bill-house-floor",
     "https://langworthy.house.gov/media/press-releases/statement-nick-langworthy-passage-stop-insider-trading-act",
+    "https://langworthy.house.gov/media/press-releases/congressman-langworthy-introduces-american-quantum-competitiveness-act",
     "https://langworthy.house.gov/media/press-releases/congressman-langworthy-introduces-legislation-secure-northern-border-and",
+    "https://langworthy.house.gov/media/press-releases/congressman-langworthy-announces-762-million-investment-strengthen-rural",
     "https://langworthy.house.gov/media/press-releases/statement-congressman-nick-langworthy-air-quality-crisis-caused-unchecked",
-    "https://langworthy.house.gov/media/press-releases/statement-congressman-nick-langworthy-response-buffalo-mayor-ryans-comments",
     "https://langworthy.house.gov/media/press-releases/congressman-nick-langworthy-introduces-energy-choice-act-end-blue-state-wars",
+    "https://langworthy.house.gov/media/press-releases/statement-congressman-langworthy-his-vote-favor-h-res-1490-condemn-socialism",
+    "https://langworthy.house.gov/media/press-releases/congressman-langworthy-announces-70000-federal-grant-strengthen-olean-regions",
     "https://langworthy.house.gov/media/press-releases/congressman-langworthy-announces-20-million-usda-purchase-concord-grape-juice"
   ],
   "stances": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statements address military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:52+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address taxation policy."
+      "reasoning": "No statements address tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:52+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Announcements of securing grants do not state a general position on government spending levels."
+      "reasoning": "Announcements of securing grants do not state a general position on government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statements address tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:52+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:52+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:52+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": -1.0,
+      "quote": "This significant $76 million investment in New York is proof that we are delivering on that promise. By strengthening partnerships among rural hospitals, health centers, and community providers, we are breaking down barriers to care, improving coordination, and building a stronger rural health care system that improves health outcomes, expands access, and delivers the kind of care that Americans in rural communities deserve just as much as those in urban and suburban settings.",
+      "reasoning": "Announcing and praising a major federal investment to expand rural healthcare access shows support for government action to lower costs and expand coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:52+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "From the day I came to Congress, I've consistently championed legislation to ban Members and their spouses from trading individual stocks because we are here to serve the people we represent, not cash in on information that isn\u2019t available to the public.",
+      "reasoning": "Championing a ban on stock trading by members and spouses demonstrates support for tighter limits on political money and ethics.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:52+00:00"
     }
   ]
 }

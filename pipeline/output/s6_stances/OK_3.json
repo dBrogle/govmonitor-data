@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "L000491",
   "website": "https://lucas.house.gov",
-  "fetched_at": "2026-08-30T14:33:33+00:00",
+  "fetched_at": "2026-09-04T19:58:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -12,11 +12,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Text mentions Vance AFB positively but states no position on military spending levels."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Representative Frank D. Lucas (OK-03) applauded the announcement of Vance Air Force Base (AFB) as the fourth T-7A Main Operating Base. The Air Force will replace T-38C aircraft at Vance AFB with T-7A deliveries.",
+      "reasoning": "The statement explicitly praises a major Air Force investment and base upgrade, indicating support for increased military spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:37+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -24,7 +27,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of taxes or tax policy in the provided text."
+      "reasoning": "No statement on tax rates or policy appears in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:37+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -32,7 +38,9 @@
       "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "Representative Frank D. Lucas (OK-03) ... delivered remarks on the House floor advocating for fiscal responsibility by supporting the Common Cents Act.",
-      "reasoning": "Explicit advocacy for fiscal responsibility via the Common Cents Act indicates support for less government spending."
+      "reasoning": "Explicit advocacy for fiscal responsibility via the Common Cents Act indicates support for less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -40,7 +48,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade, tariffs, or free trade appear in the text."
+      "reasoning": "No statement on tariffs, trade agreements, or free trade appears in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:37+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -48,7 +59,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "The statements contain no references to foreign aid spending."
+      "reasoning": "No statement on foreign aid spending appears in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:37+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "Representative Frank D. Lucas (OK-03)... delivered remarks on the House floor advocating for fiscal responsibility by supporting the Common Cents Act.",
+      "reasoning": "The text directly endorses fiscal responsibility legislation aimed at codifying spending restraint.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:37+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on healthcare costs, coverage, or government involvement appears in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:37+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance, disclosure, or political spending limits appears in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:37+00:00"
     }
   ]
 }

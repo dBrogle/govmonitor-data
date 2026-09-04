@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "T000460",
   "website": "https://mikethompson.house.gov/",
-  "fetched_at": "2026-08-30T14:16:56+00:00",
+  "fetched_at": "2026-09-04T19:45:15+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,26 +27,35 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "I'm committed to providing our Armed Forces and Intelligence Community the resources they need to defend our nation.",
-      "reasoning": "Text explicitly commits to providing resources needed by Armed Forces."
+      "reasoning": "Text explicitly commits to providing resources needed by Armed Forces, indicating support for more military spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Mentions specific tax relief and credits but no clear overall position on raising versus lowering taxes."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "Our tax code should work to support low-income and middle class families, it should make raising a family and getting ahead easier, and it should ensure that everyone pays their fair share.",
+      "reasoning": "Text criticizes tax cuts benefiting the rich and calls for everyone to pay their fair share, indicating support for higher taxes on wealthy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Discusses fiscal responsibility and deficits but advocates multiple new or expanded spending programs without a net position."
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "For far too long, Washington has avoided making the tough choices necessary to get our fiscal house in order.",
+      "reasoning": "Text stresses getting fiscal house in order and fiscally responsible future, indicating priority on shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade, tariffs, or free trade appear in the text."
+      "reasoning": "No statement addresses trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": -1.0,
+      "quote": "I believe health care is a right. Congress must work to help everyone in America gain access to quality, affordable health care.",
+      "reasoning": "Text states health care is a right and supports government actions like ACA, Medicare negotiation, and price caps to expand access and lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses money in politics or campaign finance restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:15+00:00"
     }
   ]
 }

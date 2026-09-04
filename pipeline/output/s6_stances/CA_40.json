@@ -3,7 +3,7 @@
   "district": 40,
   "bioguide_id": "K000397",
   "website": "https://youngkim.house.gov",
-  "fetched_at": "2026-08-30T14:18:51+00:00",
+  "fetched_at": "2026-09-04T19:45:55+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,26 +27,35 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.85,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "I will always work to guarantee our warfighters and diplomats have the resources and tools they need to accomplish American policy objectives globally.",
-      "reasoning": "Text repeatedly emphasizes providing resources to warfighters and countering adversaries like China."
+      "reasoning": "Text explicitly supports providing resources and tools to warfighters.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:55+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "we must ensure that the federal government is cutting red tape and not increasing taxes on our small and medium-sized businesses",
-      "reasoning": "Explicit opposition to tax increases on businesses appears in economy and small business sections."
+      "quote": "Instead of making it tougher for small business to flourish by enacting burdensome regulations and higher taxes, Congress must work to enact pro-growth policies that support small businesses",
+      "reasoning": "Text repeatedly opposes higher taxes and calls for pro-growth policies.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:55+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear general statement on overall government spending levels."
+      "reasoning": "No statement addresses the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:55+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tariffs, protectionism, or free trade."
+      "reasoning": "No statement addresses tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:55+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements addressing foreign aid spending levels."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:55+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": 1.0,
+      "quote": "While I believe a one-size-fits-all single-payer approach to healthcare is not the solution, I am committed to working in Congress to ensure everyone has access to affordable high-quality healthcare and medical treatment.",
+      "reasoning": "Text rejects single-payer government approach and emphasizes patient choice and market-oriented reforms.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:55+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits or disclosure for political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:55+00:00"
     }
   ]
 }

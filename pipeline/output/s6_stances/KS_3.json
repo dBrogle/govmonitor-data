@@ -3,15 +3,15 @@
   "district": 3,
   "bioguide_id": "D000629",
   "website": "https://davids.house.gov/",
-  "fetched_at": "2026-08-30T14:24:54+00:00",
+  "fetched_at": "2026-09-04T19:50:13+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://davids.house.gov",
     "https://davids.house.gov/issues",
     "https://davids.house.gov/issues/education",
+    "https://davids.house.gov/issues/healthcare",
     "https://davids.house.gov/issues/agriculture",
-    "https://davids.house.gov/issues/health-care",
     "https://davids.house.gov/issues/rights-freedoms",
     "https://davids.house.gov/issues/energy-environment",
     "https://davids.house.gov/issues/veterans-armed-forces",
@@ -19,9 +19,9 @@
     "https://davids.house.gov/issues/transportation-infrastructure",
     "https://davids.house.gov/issues/making-government-work-kansans",
     "https://davids.house.gov/media/press-releases",
+    "https://davids.house.gov/media/press-releases/davids-votes-bipartisan-legislation-avoid-government-shutdown",
     "https://davids.house.gov/media/press-releases/davids-announces-new-grant-strengthen-olathe-head-start-programs",
-    "https://davids.house.gov/media/press-releases/davids-returns-local-grocery-store-track-price-changes-kansas-families",
-    "https://davids.house.gov/media/press-releases/davids-meets-kansans-facing-rising-costs-highlights-work-lower-everyday"
+    "https://davids.house.gov/media/press-releases/davids-returns-local-grocery-store-track-price-changes-kansas-families"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses military or defense spending levels."
+      "reasoning": "No statements address military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:13+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "I also stood up to leaders in my own party by introducing a bill to suspend the federal gas tax.",
-      "reasoning": "The explicit call to suspend the federal gas tax states support for lower taxes."
+      "reasoning": "Explicit support for suspending the federal gas tax indicates a preference for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:13+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement clearly takes a position on overall government spending levels versus fiscal restraint."
+      "reasoning": "No statement clearly takes a position on overall government spending levels versus fiscal restraint.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses free trade versus protectionist policies or tariffs."
+      "reasoning": "Mentions of trade and bringing jobs home do not state a clear position on protectionism versus free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:13+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses foreign aid spending."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:13+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": 1.0,
+      "quote": "This historic legislation puts the United States on a path to eliminate 40% of greenhouse gas emissions by 2030 and boosts domestic clean energy technology and production. On top of all of that, it cuts the federal deficit, saving taxpayers money.",
+      "reasoning": "Multiple references to cutting the deficit, pay-as-you-go rules, and fiscal responsibility show support for shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:13+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.85,
+      "stated_score": -1.0,
+      "quote": "That\u2019s why I\u2019m dedicated to finding ways to lower the cost of health care and prescription drugs, strengthen the Affordable Care Act, expand Medicaid, and improve quality of care.",
+      "reasoning": "Repeated advocacy for government actions like Medicare negotiation, ACA expansion, and drug price caps indicates preference for government intervention.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:13+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.45,
+      "stated_score": -1.0,
+      "quote": "I\u2019m supporting a sweeping package of reforms that will put the American people back in charge of our democracy by ending the dominance of big money in politics, protecting the right to vote for all eligible U.S. voters, and strengthening ethics laws for elected officials.",
+      "reasoning": "Explicit support for reforms to end big money dominance in politics shows preference for tighter limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:13+00:00"
     }
   ]
 }

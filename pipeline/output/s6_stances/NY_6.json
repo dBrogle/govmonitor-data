@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "M001188",
   "website": "https://meng.house.gov",
-  "fetched_at": "2026-08-30T14:31:33+00:00",
+  "fetched_at": "2026-09-04T19:56:55+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall military or defense spending levels appears in the text."
+      "reasoning": "No statements on military or defense spending levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:55+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on tax rates or taxation policy appears in the text."
+      "reasoning": "No statements on raising or lowering taxes appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:55+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim general statement on overall government spending levels appears in the text."
+      "reasoning": "No verbatim general statement on overall government spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade policy, tariffs, or free trade appears in the text."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:55+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:55+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on the budget deficit or balancing the budget appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:55+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.75,
+      "stated_score": -1.0,
+      "quote": "I believe that affordable health care is not a privilege, but a right. Americans should not be forced to scrape together funds just to afford routine doctor visits or lifesaving medications. We must continue to work to fix our health care system. ... This past year, I alongside my Democratic colleagues, got the Inflation Reduction Act signed into law by President Biden. It is a once in a generation bill that helps lower prescription drugs prices. Most notably capping the prices of insulin at $35 for people with diabetes covered by Medicare.",
+      "reasoning": "Text repeatedly advocates government action via legislation like the IRA to lower costs and expand access, matching the -1 convention.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:55+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, political spending limits, or disclosure appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:55+00:00"
     }
   ]
 }

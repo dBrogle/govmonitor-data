@@ -3,7 +3,7 @@
   "district": 47,
   "bioguide_id": "M001241",
   "website": "https://min.house.gov/",
-  "fetched_at": "2026-08-30T14:19:10+00:00",
+  "fetched_at": "2026-09-04T19:46:02+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,19 +18,22 @@
     "https://min.house.gov/issues/reproductive-rights-0",
     "https://min.house.gov/issues/creating-economic-opportunity-and-protecting-small-businesses",
     "https://min.house.gov/media/press-releases",
+    "https://min.house.gov/media/press-releases/update-rep-min-following-jewish-community-town-hall",
     "https://min.house.gov/media/press-releases/statement-rep-dave-min-supreme-court-decision-mail-voting",
     "https://min.house.gov/media/press-releases/rep-min-joins-planned-parenthood-town-hall-discuss-hr-1-medicaid-cuts",
-    "https://min.house.gov/media/press-releases/statement-rep-dave-min-president-trumps-order-reduce-us-rok-joint-military",
-    "https://min.house.gov/media/press-releases/rep-dave-min-joins-california-leaders-opposing-trump-administration-attack"
+    "https://min.house.gov/media/press-releases/icymi-rep-min-defends-renewable-energy-calls-out-gop-hypocrisy-national"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "Representative Dave Min (CA-47) issued the following statement after President Trump abruptly ordered a substantial reduction in joint U.S.\u2013South Korea military exercises as the annual Ulchi Freedom Shield exercises began",
-      "reasoning": "The text criticizes the reduction of joint military exercises with a key ally, indicating support for maintaining strong defense commitments."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on military or defense spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:02+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,23 +41,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address tax rates or levels."
+      "reasoning": "No statements on tax rates or levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:02+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Oversight bills focus on accountability rather than overall spending levels."
+      "reasoning": "No statements on the budget deficit or balancing the budget appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:02+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
       "emphasis": 0.25,
       "stated_score": 1.0,
-      "quote": "Representative Dave Min (CA-47), along with members of the Congressional Asian Pacific American Caucus (CAPAC) slammed the devastating impacts of President Trump\u2019s tariffs on Asian American businesses and communities across the country",
-      "reasoning": "The text opposes tariffs and their economic harm, supporting free trade."
+      "quote": "slammed the devastating impacts of President Trump\u2019s tariffs on Asian American businesses and communities across the country. Since Donald Trump implemented his sweeping tariffs, the American economy has been in chaos, creating uncertainty for small businesses and consumers",
+      "reasoning": "The text explicitly criticizes tariffs as harmful to the economy and businesses.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:02+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:02+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Representative Dave Min (CA-47), Dr. Kate Williamson, former President of the American Academy of Pediatrics, Orange County Chapter, Mercedes Mata, the mother of Dino, a six-year-old brain cancer patient from Huntington Beach who relies on Medicaid, and Joy Anne Fumera, a registered nurse at Kaiser Permanente Orange County, spoke out against the consequences Republican Medicaid cuts will have on Orange County families.",
+      "reasoning": "The text repeatedly criticizes cuts to Medicaid and advocates for affordable health care through government programs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:02+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Schiff, Min pitch updates to financial disclosures \u2014 California Democrats Sen. Adam Schiff and Rep. Dave Min introduced a bill that would require government officials to provide more detail about large financial holdings and income. Under the Financial Disclosure Modernization Act, officials would have to report income sources and holdings that exceed $1 b",
+      "reasoning": "The text supports legislation requiring greater disclosure of financial holdings by officials.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:02+00:00"
     }
   ]
 }

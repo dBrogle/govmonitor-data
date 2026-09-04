@@ -3,7 +3,7 @@
   "district": 13,
   "bioguide_id": "G000605",
   "website": "https://gray.house.gov/",
-  "fetched_at": "2026-08-30T14:17:18+00:00",
+  "fetched_at": "2026-09-04T19:45:26+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -16,12 +16,12 @@
     "https://gray.house.gov/issues/agriculture",
     "https://gray.house.gov/issues/immigration",
     "https://gray.house.gov/issues/natural-resources",
+    "https://gray.house.gov/media/press-releases/gray-issues-statement-proposed-sale-yosemite-national-park",
     "https://gray.house.gov/media/press-releases/gray-advocates-central-valleys-water-and-agriculture-priorities-hearing",
     "https://gray.house.gov/media/press-releases",
-    "https://gray.house.gov/media/press-releases/reps-gray-and-evans-introduce-bipartisan-bill-counter-fentanyl-crisis",
-    "https://gray.house.gov/media/press-releases/gray-renews-effort-secure-emergency-relief-central-valley-specialty-crop",
-    "https://gray.house.gov/media/press-releases/gray-presents-purple-heart-medal-vietnam-war-veteran-and-patterson-native",
-    "https://gray.house.gov/media/press-releases/gray-backs-efforts-support-central-valley-law-enforcement-during-national"
+    "https://gray.house.gov/media/press-releases/rep-gray-secures-over-16-million-district-funding",
+    "https://gray.house.gov/media/press-releases/gray-announces-delivering-valley-tour-highlight-over-16-million-federal",
+    "https://gray.house.gov/media/press-releases/gray-renews-effort-secure-emergency-relief-central-valley-specialty-crop"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending appear in the text."
+      "reasoning": "No statements on military or defense spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:26+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of ACA tax credits concern health subsidies, not a general position on tax rates."
+      "reasoning": "No statements on tax rates or tax policy appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:26+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Text advocates specific funding releases and grants but lacks a clear general stance on overall government spending levels."
+      "reasoning": "No statements on the budget deficit or balancing the budget appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:26+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text."
+      "reasoning": "No statements on trade policy, tariffs, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:26+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:26+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "urging the agencies to work with California to resolve outstanding concerns and release $867.5 million in deferred federal Medicaid payments",
+      "reasoning": "Text repeatedly advocates government funding and subsidies to maintain or expand healthcare access and affordability.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:26+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, political spending limits, or disclosure appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:26+00:00"
     }
   ]
 }

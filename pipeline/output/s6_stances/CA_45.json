@@ -3,7 +3,7 @@
   "district": 45,
   "bioguide_id": "T000491",
   "website": "https://tran.house.gov/",
-  "fetched_at": "2026-08-30T14:19:15+00:00",
+  "fetched_at": "2026-09-04T19:45:59+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -19,18 +19,21 @@
     "https://tran.house.gov/issues/economy-small-business",
     "https://tran.house.gov/issues/national-security-defense-0",
     "https://tran.house.gov/media/press-releases/representative-tran-issues-statement-trump-decision-reduce-vital-us-south",
+    "https://tran.house.gov/media/press-releases/representative-derek-tran-issues-statement-following-house-refusal-condemn",
     "https://tran.house.gov/media/press-releases/representative-tran-issues-statement-gkns-100-million-fund-families-impacted",
-    "https://tran.house.gov/media/press-releases/representative-derek-tran-issues-statement-supreme-court-ruling-restricting-0",
-    "https://tran.house.gov/media/press-releases/representative-derek-tran-issues-statement-national-defense-authorization-act"
+    "https://tran.house.gov/media/press-releases/representative-tran-issues-statement-cr-vote-fund-government-through-december"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "President Trump\u2018s decision to gut joint military exercises with South Korea is dangerous. South Korea is one of America\u2019s most critical allies in the Indo-Pacific. Reducing these readiness drills serves no legitimate national security objective; instead, it sacrifices vital military deterrence for short-term political posturing and transactional foreign policy.",
-      "reasoning": "The statement criticizes cuts to military exercises and emphasizes the need for strong deterrence and readiness."
+      "reasoning": "The statement explicitly opposes cuts to military exercises and readiness, indicating support for stronger defense posture.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:59+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on taxation in the provided text."
+      "reasoning": "No verbatim statement addresses taxation levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:59+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim quote or explicit position on overall government spending levels."
+      "reasoning": "No verbatim statement addresses the budget deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:59+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of trade negotiations lack any stated position on free trade versus protectionism."
+      "reasoning": "No verbatim statement takes a position on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:59+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim quote expressing a position on foreign aid spending."
+      "reasoning": "No verbatim statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:59+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "No one should have to go into debt to address an illness. I\u2019m fighting every day to protect your access to affordable, high-quality healthcare.",
+      "reasoning": "The statement advocates government action to ensure affordable healthcare access without debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:59+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement addresses money in politics or campaign finance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:59+00:00"
     }
   ]
 }

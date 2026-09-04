@@ -3,7 +3,7 @@
   "district": 38,
   "bioguide_id": "S001156",
   "website": "https://lindasanchez.house.gov/",
-  "fetched_at": "2026-08-30T14:18:43+00:00",
+  "fetched_at": "2026-09-04T19:45:54+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,35 +26,47 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on military spending levels."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "we must maintain a well-trained military, deploy our men and women in uniform only when absolutely necessary, and preserve our civil liberties and freedom.",
+      "reasoning": "Text explicitly calls for maintaining a well-trained military, indicating support for defense resources.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:54+00:00"
     },
     {
       "topic_slug": "taxation",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "It is no secret that recent partisan Republican changes to the tax code picked multinational corporate winners while leaving too many working families as the losers.",
+      "reasoning": "Criticism of 2017 tax cuts and support for undoing their harms shows preference against lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:54+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Criticism of 2017 tax law exists but no clear stance on raising versus lowering taxes overall."
-    },
-    {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.8,
-      "stated_score": -1.0,
-      "quote": "I am proud to advocate for resources that will strengthen our housing market and help families in our district to achieve the American dream.",
-      "reasoning": "Repeated advocacy for expanding funding on housing, seniors, health care, and community programs indicates support for more spending."
+      "reasoning": "No statement addresses deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:54+00:00"
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "S\u00e1nchez: Trump\u2019s latest tariffs aren\u2019t serious attempt to combat forced labor",
-      "reasoning": "Direct criticism of tariffs signals preference for free trade over protectionism."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of trade and supply chains lack any explicit stance on protectionism versus free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:54+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:54+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Quality, accessible, affordable health care should be a right, not just a privilege reserved for the wealthy few. Thanks to the Affordable Care Act (ACA), we've made this fundamental right a reality.",
+      "reasoning": "Strong endorsement of ACA and framing health care as a right shows support for government action to expand coverage and lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:54+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:54+00:00"
     }
   ]
 }

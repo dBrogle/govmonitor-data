@@ -3,7 +3,7 @@
   "district": 8,
   "bioguide_id": "B001327",
   "website": "https://bresnahan.house.gov/",
-  "fetched_at": "2026-08-30T14:34:38+00:00",
+  "fetched_at": "2026-09-04T20:00:03+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military spending levels."
+      "reasoning": "No clear position stated on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:03+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "highlight the working-class tax cuts signed into law earlier this month",
-      "reasoning": "Praising tax cuts indicates support for lower taxes."
+      "reasoning": "Text explicitly praises tax cuts and pro-growth tax policies.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:03+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Frequent securing of federal project funds does not state a general position on overall spending levels."
+      "reasoning": "Frequent securing of federal project funds does not state a general position on overall spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade or tariffs."
+      "reasoning": "No statements on trade, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:03+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid."
+      "reasoning": "No references to foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:03+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of deficit reduction or acceptance of larger deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:03+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "joined local pharmacists to call for continued reforms to pharmacy benefit managers (PBMs), arguing the middlemen have too much control over prescription drug pricing",
+      "reasoning": "Supports reforms targeting drug pricing controls by middlemen.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:03+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "voted in favor of the Stop Insider Trading Act, legislation to prohibit Members of Congress and their immediate families from purchasing individual stocks, requiring advance public disclosure of stock sales, and strengthening penalties for ethics violations",
+      "reasoning": "Explicit support for restricting congressional stock trading and ethics rules.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:03+00:00"
     }
   ]
 }

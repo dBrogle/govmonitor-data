@@ -3,23 +3,23 @@
   "district": 30,
   "bioguide_id": "F000483",
   "website": "https://friedman.house.gov/",
-  "fetched_at": "2026-08-30T14:18:13+00:00",
+  "fetched_at": "2026-09-04T19:45:45+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://friedman.house.gov",
     "https://friedman.house.gov/issues/health",
     "https://friedman.house.gov/media/press-releases",
+    "https://friedman.house.gov/media/press-releases/release-friedman-raises-roof-association-women-architecture-panel",
     "https://friedman.house.gov/media/press-releases/release-rep-friedman-joins-protect-our-care-burbank-condemns-trump-and",
     "https://friedman.house.gov/media/press-releases/release-after-world-cup-reps-friedman-chu-lieu-kamlager-dove-convene-las",
     "https://friedman.house.gov/media/press-releases/release-rep-friedman-drops-local-black-owned-plant-nursery-and-bbq-joint",
     "https://friedman.house.gov/media/press-releases/release-friedman-unveils-1031000-federal-investment-strengthen-community",
-    "https://friedman.house.gov/media/press-releases/release-rep-friedman-statement-legal-scrutiny-110-billion-paramount-warner",
+    "https://friedman.house.gov/media/press-releases/release-rep-friedman-celebrates-official-phase-out-paraquat-after-leading",
     "https://friedman.house.gov/media/press-releases/release-rep-friedman-announces-admitted-service-academy-nominees-class-2030",
-    "https://friedman.house.gov/media/press-releases/release-friedman-applauds-la28-decision-move-international-broadcast-center",
+    "https://friedman.house.gov/media/press-releases/release-rep-friedman-welcomes-trumps-call-bipartisan-federal-film-tax-credit",
     "https://friedman.house.gov/media/press-releases/release-rep-friedman-tours-head-start-site-connect-parents-children-teachers",
-    "https://friedman.house.gov/media/press-releases/release-rep-friedmans-forecasted-tour-national-weather-service-la-office-makes",
-    "https://friedman.house.gov/media/press-releases/release-rep-friedman-statement-after-federal-judge-halts-paramount-warner-bros"
+    "https://friedman.house.gov/media/press-releases/release-rep-friedmans-forecasted-tour-national-weather-service-la-office-makes"
   ],
   "stances": [
     {
@@ -28,23 +28,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military or defense spending levels."
+      "reasoning": "No statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:45+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.25,
-      "stated_score": -1.0,
-      "quote": "Trump and Congressional Republicans let the ACA tax credits expire and cut a trillion dollars from Medicaid to pay for a trillion dollars in tax breaks for the ultra-wealthy.",
-      "reasoning": "Explicitly condemns tax breaks for the wealthy in context of funding cuts."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No general position on tax rates or levels is stated, only criticism of specific tax breaks tied to other cuts.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:45+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": -1.0,
-      "quote": "Trump and Congressional Republicans let the ACA tax credits expire and cut a trillion dollars from Medicaid to pay for a trillion dollars in tax breaks for the ultra-wealthy.",
-      "reasoning": "Opposes cuts to Medicaid and ACA subsidies, supporting higher government spending on these programs."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:45+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -52,7 +61,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on trade policy or tariffs."
+      "reasoning": "No statement on trade policy, tariffs, or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:45+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -60,7 +72,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending."
+      "reasoning": "No statement on foreign aid spending is present.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:45+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.85,
+      "stated_score": -1.0,
+      "quote": "\u201cAfter months of fighting, Democrats successfully forced a vote and passed ACA tax credits extension through the House. This will help millions of Americans afford health insurance. Letting them expire would have been unconscionable.\u201d",
+      "reasoning": "Multiple releases explicitly support extending ACA tax credits and restoring coverage via government action while condemning cuts to Medicaid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:45+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance, limits, or political spending restrictions appears.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:45+00:00"
     }
   ]
 }

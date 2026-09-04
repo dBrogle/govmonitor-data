@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "K000009",
   "website": "https://kaptur.house.gov/",
-  "fetched_at": "2026-08-30T14:33:18+00:00",
+  "fetched_at": "2026-09-04T19:58:21+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statements address military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:21+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address tax rates or taxation policy."
+      "reasoning": "No statements address tax rates or tax policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:21+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.85,
       "stated_score": -1.0,
       "quote": "Today, Congresswoman Marcy Kaptur (OH-09) announced that several Northwest Ohio nonprofits, researchers, small businesses and localities will receive awards through the US Department of Health and Human Services (HHS).",
-      "reasoning": "Repeated announcements of securing federal awards and investments for local programs indicate support for increased government spending."
+      "reasoning": "Repeated announcements of securing federal awards and investments for local programs indicate support for increased government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.95,
+      "emphasis": 0.9,
       "stated_score": -1.0,
       "quote": "Congresswoman Kaptur has been fighting for a \"fair trade\" policy since she came to Congress. In the early 1990s, Congresswoman Kaptur joined House Majority Whip David Bonior and freshman Congressman Sherrod Brown in leading the House effort against the North American Free Trade Agreement (NAFTA).",
-      "reasoning": "Explicit opposition to NAFTA and calls for renegotiating trade deals to protect manufacturing show a protectionist position."
+      "reasoning": "Text repeatedly condemns NAFTA and similar free trade deals while advocating fair trade to protect manufacturing jobs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:21+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Foreign affairs statements discuss policy goals but do not address foreign aid spending levels."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:21+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address the federal budget deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:21+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "I am pleased to provide you with information to help you connect with local healthcare resources that can provide enrollment assistance for the Affordable Care Act (ACA).",
+      "reasoning": "Text promotes enrollment assistance and resources for the ACA, indicating support for government-led coverage expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:21+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Out-of-control campaign spending has reached a truly dangerous level in our country. Our country's very future is at risk unless we achieve significant campaign finance reform.",
+      "reasoning": "Text explicitly calls for significant campaign finance reform to curb special interest influence.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:58:21+00:00"
     }
   ]
 }

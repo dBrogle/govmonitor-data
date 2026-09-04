@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "M001160",
   "website": "https://gwenmoore.house.gov",
-  "fetched_at": "2026-08-30T14:40:52+00:00",
+  "fetched_at": "2026-09-04T20:05:52+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending levels in the text."
+      "reasoning": "No statement on military spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:52+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": 0.2,
       "stated_score": 1.0,
       "quote": "It also provided middle-class tax relief that helped 95 percent of families.",
-      "reasoning": "Text explicitly praises tax relief provided by the Recovery Act."
+      "reasoning": "The text endorses tax relief as part of economic recovery measures.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:52+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Text discusses Recovery Act and investments positively but does not clearly state a general position on overall government spending levels."
+      "reasoning": "Text discusses Recovery Act and investments positively but does not clearly state a general position on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of trade policy, tariffs, or free trade in the text."
+      "reasoning": "No statement on trade policy or tariffs appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:52+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending in the text."
+      "reasoning": "No statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:52+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.15,
+      "stated_score": 1.0,
+      "quote": "Through the Affordable Care Act, we extended health care coverage to 30 million uninsured Americans while at the same time lowering health care costs overall and cutting our nation\u2019s deficit.",
+      "reasoning": "The text highlights cutting the deficit as a positive outcome of supported legislation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:52+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Through the Affordable Care Act, we extended health care coverage to 30 million uninsured Americans while at the same time lowering health care costs overall and cutting our nation\u2019s deficit.",
+      "reasoning": "The text strongly endorses the ACA's government-led expansion of coverage and cost controls.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:52+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.15,
+      "stated_score": -1.0,
+      "quote": "Members of Congress should never use their positions to enrich themselves, including through stock trading.",
+      "reasoning": "The text calls for restrictions against congressional insider trading and self-enrichment.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:52+00:00"
     }
   ]
 }

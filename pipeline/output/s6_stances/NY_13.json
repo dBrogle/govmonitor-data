@@ -3,7 +3,7 @@
   "district": 13,
   "bioguide_id": "E000297",
   "website": "https://espaillat.house.gov",
-  "fetched_at": "2026-08-30T14:32:15+00:00",
+  "fetched_at": "2026-09-04T19:57:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending in the text."
+      "reasoning": "No mention of military or defense spending levels in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:20+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of taxes or taxation policy in the text."
+      "reasoning": "No mention of tax rates or taxation policy in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:20+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Text advocates specific program funding but states no general position on overall government spending levels."
+      "reasoning": "Text advocates specific program funding but states no general position on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +62,54 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of trade, tariffs, or trade policy in the text."
+      "reasoning": "No mention of trade policy, tariffs, or free trade in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:20+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.25,
       "stated_score": -1.0,
-      "quote": "Funding for the United States Agency for International Development (USAID)",
-      "reasoning": "Text lists funding USAID and State Department as priorities he is pushing for, indicating support for more foreign aid."
+      "quote": "Congressmember Adriano Espaillat has been pushing for: ... Funding for the United States Agency for International Development (USAID)",
+      "reasoning": "Explicitly lists pushing for USAID funding as a priority, indicating support for more foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:20+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of budget deficits or balancing the budget in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:20+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Congressmember Espaillat firmly believes that healthcare is a right. Not only do individuals need access to health insurance, but they need affordable access to health insurance.",
+      "reasoning": "Strongly advocates government-backed programs like ACA and Medicare for All to guarantee affordable access as a right.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:20+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of campaign finance, political spending limits, or disclosure rules in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:57:20+00:00"
     }
   ]
 }

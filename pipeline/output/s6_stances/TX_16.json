@@ -3,7 +3,7 @@
   "district": 16,
   "bioguide_id": "E000299",
   "website": "https://escobar.house.gov",
-  "fetched_at": "2026-08-30T14:37:16+00:00",
+  "fetched_at": "2026-09-04T20:02:47+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military or defense spending levels appears in the text."
+      "reasoning": "No clear statement on levels of military or defense spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:02:47+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.6,
       "stated_score": -1.0,
-      "quote": "Congresswoman Escobar believes tax policies should prioritize working families and small businesses, not billionaires and corporations. Congresswoman Escobar has continued to fight against tax cuts that benefit the ultra-wealthy at the expense of essential programs like healthcare, education, and infrastructure.",
-      "reasoning": "Text explicitly opposes tax cuts for the wealthy and supports corporations paying a fair share via the IRA."
+      "quote": "made the biggest corporations and ultra-wealthy pay their fair share of taxes",
+      "reasoning": "Text explicitly supports higher effective taxes on corporations and wealthy via IRA and opposition to tax cuts for the rich.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:02:47+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "Congresswoman Escobar has continued to fight against tax cuts that benefit the ultra-wealthy at the expense of essential programs like healthcare, education, and infrastructure.",
-      "reasoning": "Text defends spending on essential programs and highlights securing federal funding for local projects."
+      "reasoning": "Text defends spending on essential programs and highlights securing federal funding for local projects.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on tariffs or free trade appears in the text."
+      "reasoning": "No statements on tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:02:47+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending appears in the text."
+      "reasoning": "No statements on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:02:47+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "this historic legislation enacted historic deficit reduction to fight inflation",
+      "reasoning": "Text praises IRA specifically for achieving deficit reduction.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:02:47+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "caps insulin at $35/month and out-of-pocket costs at $2,000 for seniors on Medicare, protecting thousands of El Pasoans",
+      "reasoning": "Text repeatedly endorses government interventions like price caps, Medicare negotiation, and expanded coverage via IRA and related bills.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:02:47+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, limits, or disclosure rules.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:02:47+00:00"
     }
   ]
 }

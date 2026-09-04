@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "R000617",
   "website": "https://ramirez.house.gov",
-  "fetched_at": "2026-08-30T14:23:23+00:00",
+  "fetched_at": "2026-09-04T19:48:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -20,8 +20,8 @@
     "https://ramirez.house.gov/issues/environment-conservation-and-infrastructure",
     "https://ramirez.house.gov/media/press-releases",
     "https://ramirez.house.gov/media/press-releases/newest-members-congress",
-    "https://ramirez.house.gov/media/press-releases/ramirez-statement-medical-leave",
-    "https://ramirez.house.gov/media/press-releases/118th-united-states-congress-convenes"
+    "https://ramirez.house.gov/media/press-releases/118th-united-states-congress-convenes",
+    "https://ramirez.house.gov/media/press-releases/ramirez-statement-no-vote-continuing-resolution"
   ],
   "stances": [
     {
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military spending levels in any section."
+      "reasoning": "No mention of military or defense spending levels in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:20+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.2,
       "stated_score": -1.0,
-      "quote": "Tax Code that Works for Working Families Congresswoman Ramirez believes our tax code shouldn't do more for billionaires and corporations than it doe",
-      "reasoning": "Explicit call for tax code changes so corporations and billionaires pay fair share implies support for higher taxes on wealthy."
+      "quote": "an economy where families have access to affordable and high-quality child care and long-term care, where there is paid leave for all, and where working families are not over-burdened by taxation, while mega-corporations fail to pay their fair share.",
+      "reasoning": "Text explicitly calls for corporations to pay their fair share while shielding working families from tax burden, indicating support for higher taxes on the wealthy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:20+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "In Congress, I am organizing and fighting for legislation and investment to realize a progressive vision of affordable, sustainable housing for all",
-      "reasoning": "Repeated emphasis on new investments, funding expansions, and programs across housing, education, health, and jobs sections shows preference for increased government spending."
+      "reasoning": "Repeated emphasis on new investments, funding expansions, and programs across housing, education, health, and jobs sections shows preference for increased government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tariffs or trade policy appear in the provided text."
+      "reasoning": "No mention of trade policy, tariffs, or free trade in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:20+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No direct statements on foreign aid spending levels."
+      "reasoning": "No mention of foreign aid spending levels in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:20+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of budget deficits or balancing the budget in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:20+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Congress must ensure everyone in our communities\u2013no matter their zip code, citizenship status, or economic background\u2013 get the care they need when they need it.",
+      "reasoning": "Text repeatedly advocates Medicare for All and government expansion of coverage as a human right, rejecting market-only approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:20+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "Ramirez understands how critical it is to combat the influence of big money in politics and address our country\u2019s legacy of disenfranchisement of Black, Brown, and low-income communities.",
+      "reasoning": "Text explicitly supports reforming campaign finance laws and combating big money influence to tighten political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:20+00:00"
     }
   ]
 }

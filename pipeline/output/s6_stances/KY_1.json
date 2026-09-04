@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "C001108",
   "website": "https://comer.house.gov/",
-  "fetched_at": "2026-08-30T14:24:46+00:00",
+  "fetched_at": "2026-09-04T19:50:14+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -22,7 +22,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military spending levels appears in the text."
+      "reasoning": "No explicit position stated on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:14+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -30,7 +33,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on taxation appear in the text."
+      "reasoning": "No explicit position stated on tax rates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:14+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -38,15 +44,20 @@
       "emphasis": 0.35,
       "stated_score": 1.0,
       "quote": "Eliminating unnecessary government spending, fraud and abuse will help ensure the government is operating at maximum effectiveness and not unnecessarily interfering in the lives of citizens.",
-      "reasoning": "The issues page explicitly calls for eliminating unnecessary government spending."
+      "reasoning": "The issues page explicitly calls for eliminating unnecessary government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "urged the Trump Administration to allow the current Jones Act waiver to expire as scheduled, and to take additional policy steps to safeguard American shipbuilding and the long-term competitiveness of the U.S. maritime industry.",
-      "reasoning": "The press release advocates maintaining the protectionist Jones Act."
+      "quote": "urge the Trump Administration to allow the current Jones Act waiver to expire as scheduled, and to take additional policy steps to safeguard American shipbuilding and the long-term competitiveness of the U.S. maritime industry.",
+      "reasoning": "Text supports maintaining Jones Act protections against foreign competition in domestic shipping.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:14+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -54,7 +65,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid appear in the text."
+      "reasoning": "No explicit position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:14+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": 1.0,
+      "quote": "Eliminating unnecessary government spending, fraud and abuse will help ensure the government is operating at maximum effectiveness and not unnecessarily interfering in the lives of citizens.",
+      "reasoning": "Text explicitly calls for eliminating unnecessary government spending to improve effectiveness.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:14+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "We must restore competition in the marketplace, expand access to high-quality care and end the one-size-fits-all approach taken in recent years.",
+      "reasoning": "Text advocates restoring marketplace competition rather than government mandates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:14+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit position stated on political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:14+00:00"
     }
   ]
 }

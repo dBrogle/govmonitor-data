@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "C001068",
   "website": "https://cohen.house.gov/",
-  "fetched_at": "2026-08-30T14:36:12+00:00",
+  "fetched_at": "2026-09-04T20:01:44+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,18 +27,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "We need to support our troops with sufficient funding so that they have access to adequate equipment and receive necessary training.",
-      "reasoning": "The defense page explicitly calls for sufficient funding to support troops and equipment."
+      "reasoning": "The defense issues page explicitly calls for sufficient funding to support troops with equipment and training.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:44+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": -1.0,
-      "quote": "funding tax giveaways for millionaires, billionaires, high-income earners, and wealthy corporations.",
-      "reasoning": "The budget page criticizes tax cuts for the wealthy as harmful giveaways."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on raising or lowering taxes in general.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:44+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.8,
       "stated_score": -1.0,
       "quote": "prioritizes ensuring economic security for hard-working American families, small businesses, seniors, and the most vulnerable people in our communities by investing in and protecting Social Security, Medicare, Medicaid and the Affordable Care Act (ACA), nutrition assistance like SNAP and WIC, medical research, and other critical programs.",
-      "reasoning": "The budget page repeatedly emphasizes protecting and investing in major federal programs."
+      "reasoning": "The budget page repeatedly emphasizes protecting and investing in major federal programs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade, tariffs, or free trade appear in the provided text."
+      "reasoning": "The chip export controls discussion is framed as national security, not general trade policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:44+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the provided text."
+      "reasoning": "No mention of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:44+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "adds $4 trillion to the national debt while funding tax giveaways for millionaires, billionaires, high-income earners, and wealthy corporations.",
+      "reasoning": "The budget page criticizes legislation for adding trillions to the national debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:44+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "prioritizes ensuring economic security for hard-working American families, small businesses, seniors, and the most vulnerable people in our communities by investing in and protecting Social Security, Medicare, Medicaid and the Affordable Care Act (ACA)",
+      "reasoning": "The budget page emphasizes protecting and investing in government healthcare programs like Medicaid and ACA.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:44+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:44+00:00"
     }
   ]
 }

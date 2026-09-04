@@ -2,20 +2,44 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "1520",
-  "summary": null,
+  "summary": "This bill bars hospitals, transplant centers, and other health care providers from denying organ transplants or related services to people with disabilities solely because of their disability, except when a physician finds the disability medically significant after an individualized evaluation, and requires providers to make reasonable policy changes and supply aids so qualified individuals can access transplants.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill directly addresses access to organ transplants and related services, which are core components of healthcare. By prohibiting discrimination based on disability, it aims to ensure more equitable access to these medical procedures, aligning with a more public-oriented approach to healthcare access.",
       "topic_slug": "healthcare",
       "topic_name": "Healthcare",
-      "score": -0.7
+      "score": -0.7,
+      "llm_model": null,
+      "temperature": null
     },
     {
       "thoughts": "The bill mentions considering support networks for qualified individuals, including those funded through Medicare or Medicaid, and home and community-based services. This indirectly touches upon the social safety net by acknowledging and integrating existing support structures for individuals with disabilities into the organ transplant process, which could be seen as expanding the effective reach of these services for a specific population.",
       "topic_slug": "social_safety_net",
       "topic_name": "Social Safety Net",
-      "score": -0.2
+      "score": -0.2,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill prohibits discrimination on the basis of disability in organ transplant eligibility, referrals, waiting lists, and related services, requiring covered entities (healthcare providers and transplant hospitals) to make reasonable modifications and auxiliary aids. This constitutes government-mandated expansion of access to healthcare services for individuals with disabilities, directly engaging the -1 pole of the topic.",
+      "topic_slug": "healthcare_affordability",
+      "topic_name": "Healthcare Affordability",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:00:51+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:00:51+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

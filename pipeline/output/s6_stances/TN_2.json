@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "B001309",
   "website": "https://burchett.house.gov",
-  "fetched_at": "2026-08-30T14:35:48+00:00",
+  "fetched_at": "2026-09-04T20:01:15+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses military or defense spending levels."
+      "reasoning": "No verbatim statement on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:15+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses raising or lowering tax rates."
+      "reasoning": "No verbatim statement on tax rates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:15+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.85,
       "stated_score": 1.0,
       "quote": "Our leaders need to recognize that every dollar we spend comes from the hard-earned paychecks of the American people, and it\u2019s time for Congress to reverse its irresponsible spending habits and get back to a place of fiscal responsibility.",
-      "reasoning": "The debt & deficit section explicitly calls for reversing irresponsible spending habits in favor of fiscal responsibility."
+      "reasoning": "The debt & deficit section explicitly calls for reversing irresponsible spending habits in favor of fiscal responsibility.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +62,54 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses tariffs or free trade policy."
+      "reasoning": "No verbatim statement on trade or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:15+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "No foreign aid should ever be given without proper auditing and accountability, and not a single penny of taxpayer dollars should be sent to terrorists.",
-      "reasoning": "The foreign affairs section explicitly conditions and restricts foreign aid spending."
+      "reasoning": "Emphasis on strict limits and zero aid to terrorists indicates preference for reduced foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:15+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": 1.0,
+      "quote": "Our leaders need to recognize that every dollar we spend comes from the hard-earned paychecks of the American people, and it\u2019s time for Congress to reverse its irresponsible spending habits and get back to a place of fiscal responsibility.",
+      "reasoning": "Explicit call for fiscal responsibility and reversing irresponsible spending supports shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:15+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on healthcare policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:15+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on campaign finance or political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:01:15+00:00"
     }
   ]
 }

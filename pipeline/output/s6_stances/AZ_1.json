@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "S001183",
   "website": "https://schweikert.house.gov/",
-  "fetched_at": "2026-08-30T14:16:34+00:00",
+  "fetched_at": "2026-09-04T19:45:08+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,35 +26,47 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on the level of military or defense spending."
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": 1.0,
+      "quote": "Congress has no greater responsibility than providing for America\u2019s national defense.",
+      "reasoning": "Text emphasizes national defense as Congress's top duty and supports military capabilities, pay raises, and bases.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:08+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.9,
       "stated_score": 1.0,
       "quote": "I was proud to help write the Tax Cuts and Jobs Act, legislation that was signed into law in 2017.",
-      "reasoning": "Explicit support for tax cuts shows position favoring lower taxes."
+      "reasoning": "Explicit support for tax cuts and pro-growth tax policies to drive economic growth.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:08+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "my mission has always been to help Arizona families. I believe through stopping wasteful government spending and bringing forward measures that help create good-paying jobs and shrink our debt",
-      "reasoning": "Repeated emphasis on reducing wasteful spending and debt indicates preference for less government spending."
+      "quote": "bringing forward measures that help create good-paying jobs and shrink our debt",
+      "reasoning": "Repeated focus on national debt increases and commitment to shrinking debt through spending restraint.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:08+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.85,
       "stated_score": 1.0,
       "quote": "I am a strong supporter of free trade, and as a border state, Arizonans understand the importance of strong trade partnerships with its neighbors.",
-      "reasoning": "Direct endorsement of free trade and trade agreements shows support for free trade policies."
+      "reasoning": "Dedicated trade page and multiple statements endorsing free trade agreements and market expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:08+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending in the provided statements."
+      "reasoning": "No statements address foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:08+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.75,
+      "stated_score": 1.0,
+      "quote": "Americans need more choices and a competitive insurance marketplace, not mandates.",
+      "reasoning": "Criticizes ACA mandates and promotes competition, transparency, and market-driven solutions over government intervention.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:08+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:08+00:00"
     }
   ]
 }

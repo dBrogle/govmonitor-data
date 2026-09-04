@@ -3,24 +3,24 @@
   "district": 1,
   "bioguide_id": "M001205",
   "website": "https://miller.house.gov/",
-  "fetched_at": "2026-08-30T14:40:14+00:00",
+  "fetched_at": "2026-09-04T20:06:06+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://miller.house.gov",
     "https://miller.house.gov/issues/health-0",
     "https://miller.house.gov/issues/economy-0",
-    "https://miller.house.gov/issues/veterans-0",
     "https://miller.house.gov/issues/congress-0",
+    "https://miller.house.gov/issues/veterans-0",
     "https://miller.house.gov/media/press-releases",
-    "https://miller.house.gov/media/press-releases/miller-colleagues-introduce-rural-hospital-revitalization-act",
+    "https://miller.house.gov/media/press-releases/miller-colleagues-introduce-stronger-start-working-families-act",
     "https://miller.house.gov/media/press-releases/miller-participates-ways-and-means-hearing-taxation-digital-assets",
     "https://miller.house.gov/media/press-releases/miller-applauds-president-trumps-investment-americas-coal-industry",
     "https://miller.house.gov/media/press-releases/miller-secures-over-41-million-rural-ems-and-public-safety-projects",
-    "https://miller.house.gov/media/press-releases/millers-improving-home-dialysis-act-passes-ways-and-means-committee",
-    "https://miller.house.gov/media/press-releases/miller-colleagues-introduce-bipartisan-resolution-recognize-may-17th",
     "https://miller.house.gov/media/press-releases/miller-colleagues-introduce-bill-expanding-virtual-opioid-use-disorder",
+    "https://miller.house.gov/media/press-releases/miller-colleagues-call-ustr-push-back-against-australias-discriminatory",
     "https://miller.house.gov/media/press-releases/miller-sewell-introduce-bill-make-mastectomy-bras-and-silicone-prosthetics",
+    "https://miller.house.gov/media/press-releases/icymi-miller-participates-hearing-secure-us-supply-chains-critical-resources",
     "https://miller.house.gov/media/press-releases/miller-applauds-750000-rural-residency-planning-and-development-funds-awarded"
   ],
   "stances": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statements address military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:06+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Mentions of digital asset tax hearings focus on clarity, not higher or lower rates."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "By lowering the earned income limit, we can ensure parents start receiving much-needed Child Tax Credit benefits from the very first dollar they earn, providing tax relief and improved peace of mind to those needing it most",
+      "reasoning": "Text explicitly supports tax relief via expanded Child Tax Credit eligibility.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:06+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "I am grateful that these vital projects are receiving the critical funding they deserve, and I will continue working alongside my colleagues, Congressional leadership, and the Trump Administration to deliver the resources and support our Mountaineers need.",
-      "reasoning": "Multiple press releases praise and claim credit for securing federal funds and grants for local projects."
+      "reasoning": "Multiple press releases praise and claim credit for securing federal funds and grants for local projects.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Tariff schedule amendments and trade hearing mentions do not state a clear free-trade or protectionist position."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "opposing Australia\u2019s discriminatory taxes and fines targeting American digital service providers",
+      "reasoning": "Text supports opposing foreign discriminatory taxes on US companies, indicating free trade stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:06+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements address foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:06+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address budget deficits or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:06+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "The bill will make these important medical products more accessible and affordable for women who have undergone breast cancer treatment",
+      "reasoning": "Text supports government/tariff changes to increase affordability and access to medical products.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:06+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits or restrictions on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:06+00:00"
     }
   ]
 }

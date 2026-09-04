@@ -3,7 +3,7 @@
   "district": 21,
   "bioguide_id": "C001059",
   "website": "https://costa.house.gov/",
-  "fetched_at": "2026-08-30T14:17:57+00:00",
+  "fetched_at": "2026-09-04T19:45:34+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending in the provided text."
+      "reasoning": "No mention of military or defense spending levels in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:34+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,23 +41,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of taxes or tax policy in the provided text."
+      "reasoning": "No statements on tax rates or tax policy appear in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:34+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": -1.0,
-      "quote": "Costa helped secure $4 billion in the Inflation Reduction Act to combat drought in the West.",
-      "reasoning": "Text repeatedly highlights securing and supporting major federal spending bills including infrastructure, relief, and agriculture programs."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Text references various spending bills but contains no explicit position on deficits or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:34+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.5,
+      "emphasis": 0.35,
       "stated_score": 1.0,
-      "quote": "fought to shape the United States-Mexico-Canada Agreement (USMCA) to protect the Valley\u2019s top commodities like nuts, dairy, wine, and citrus, all while opening new markets and ensuring fair treatment for our farmers.",
-      "reasoning": "Text describes active support for USMCA and founding the Agricultural Trade Caucus to expand markets."
+      "quote": "he fought to shape the United States-Mexico-Canada Agreement (USMCA) to protect the Valley\u2019s top commodities like nuts, dairy, wine, and citrus, all while opening new markets and ensuring fair treatment for our farmers",
+      "reasoning": "Text repeatedly highlights efforts to expand markets and remove tariffs via USMCA and trade caucus work, indicating support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:34+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid in the provided text."
+      "reasoning": "No references to foreign aid spending or policy in the statements.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:34+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.45,
+      "stated_score": -1.0,
+      "quote": "voted to cap insulin at $35 a month, limit prescription drug costs to $2,000 a year, expand access to affordable healthcare, make hearing aids available over the counter, and cut internet costs",
+      "reasoning": "Multiple passages detail support for ACA, drug price caps, and expanded coverage through government programs, showing preference for government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:34+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No discussion of campaign finance, political spending limits, or disclosure rules.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:34+00:00"
     }
   ]
 }

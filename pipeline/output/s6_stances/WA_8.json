@@ -3,7 +3,7 @@
   "district": 8,
   "bioguide_id": "S001216",
   "website": "https://schrier.house.gov",
-  "fetched_at": "2026-08-30T14:40:30+00:00",
+  "fetched_at": "2026-09-04T20:05:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -20,25 +20,31 @@
     "https://schrier.house.gov/issues/agriculture",
     "https://schrier.house.gov/media/press-releases",
     "https://schrier.house.gov/media/press-releases/congresswoman-schrier-introduces-bipartisan-bill-support-hydropower",
-    "https://schrier.house.gov/media/press-releases/drs-schrier-joyce-and-murphy-introduce-bipartisan-patients-first-act",
-    "https://schrier.house.gov/media/press-releases/icymi-congresswoman-schrier-local-leaders-hold-roundtable-discussion"
+    "https://schrier.house.gov/media/press-releases/reps-schrier-houchin-introduce-bipartisan-bill-improve-rural-hospital",
+    "https://schrier.house.gov/media/press-releases/congresswoman-schrier-introduces-bipartisan-bill-cap-cost-insulin-35-all"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "voted to pass the National Defense Authorization Act (NDAA), an annual piece of legislation that authorizes defense programs to maintain military readiness and increase national security",
-      "reasoning": "Text explicitly supports passing NDAA to maintain military readiness and national security."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear statement on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:37+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "The Gas Prices Relief Act of 2026 would suspend the federal gas tax to cut nearly 20 cents per gallon for the rest of the year",
-      "reasoning": "Text explicitly supports suspending federal gas tax to lower prices."
+      "reasoning": "Explicit support for suspending the federal gas tax to lower prices.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:37+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on overall government spending."
+      "reasoning": "No clear position stated on overall government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on trade policy."
+      "reasoning": "No clear statement on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:37+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on foreign aid."
+      "reasoning": "No clear statement on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:37+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear statement on deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:37+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "introduced the bipartisan INSULIN Act to cap out-of-pocket insulin costs at $35, or 25% of the list price per month, for all Americans with diabetes",
+      "reasoning": "Explicit support for government-mandated price caps on insulin.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:37+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear statement on political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:37+00:00"
     }
   ]
 }

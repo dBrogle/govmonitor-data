@@ -3,7 +3,7 @@
   "district": 10,
   "bioguide_id": "P000605",
   "website": "https://perry.house.gov/",
-  "fetched_at": "2026-08-30T14:34:40+00:00",
+  "fetched_at": "2026-09-04T20:00:06+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on U.S. military or defense spending levels."
+      "reasoning": "No verbatim statement on military spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:06+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "Small business owners throughout the 10th District have repeatedly told me that increasing taxes and government regulations hurt their ability to create jobs and grow the economy.",
-      "reasoning": "Text explicitly criticizes increasing taxes as harmful to jobs and growth."
+      "reasoning": "The text explicitly opposes increasing taxes as harmful to jobs and growth.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:06+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.35,
       "stated_score": 1.0,
       "quote": "We can't keep spending money we don't have and we must reduce barriers for real private sector job growth.",
-      "reasoning": "Text repeatedly calls for stopping spending money the government does not have."
+      "reasoning": "Text repeatedly calls for stopping spending money the government does not have.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade."
+      "reasoning": "No verbatim statement on trade policy, tariffs, or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:06+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:06+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": 1.0,
+      "quote": "We can't keep spending money we don\u2019t have and we must reduce barriers for real private sector job growth.",
+      "reasoning": "The text repeatedly calls for stopping spending money not had, indicating a priority to shrink the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:06+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "I support reforms that are patient-centered and doctor-centered, not insurance company-centered. I support: allowing citizens to purchase health insurance across state lines; helping small businesses pool together to negotiate better rates; expanding health savings accounts; and pushing tort reform.",
+      "reasoning": "The text advocates market-based reforms and repeal of ACA in favor of less government involvement.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:06+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Perry Votes to Stop Congressional Insider Trading",
+      "reasoning": "The text highlights voting to stop congressional insider trading, indicating support for tighter restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:06+00:00"
     }
   ]
 }

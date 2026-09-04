@@ -1,6 +1,6 @@
 # WatchGov Pipeline Data Reference
 
-WatchGov tracks U.S. House representatives across three dimensions: how they vote on and sponsor legislation, where they stand on 5 policy topics (scored by LLM analysis of bill text), and who funds their campaigns. The pipeline collects data from the Congress.gov and OpenFEC APIs, scores bills with an LLM, and aggregates everything into one JSON file per member for downstream consumers.
+WatchGov tracks U.S. House representatives across three dimensions: how they vote on and sponsor legislation, where they stand on 7 policy topics (scored by LLM analysis of bill text), how much they cross party lines, and who funds their campaigns. The pipeline collects data from the Congress.gov and OpenFEC APIs, scores bills with an LLM, and aggregates everything into one JSON file per member for downstream consumers.
 
 Data lives in [`pipeline/output/`](output/). The primary data source is **`s5_alignment`** (one self-contained file per member). **`s3_bills`** provides deep-dive detail for individual bills. Pydantic models for the intermediate types are in [`pipeline/models.py`](models.py); note that `s5_alignment` is assembled as a plain dict in [`stages/s5_alignment.py`](stages/s5_alignment.py), so *this document is the authoritative schema for that file*.
 
@@ -9,6 +9,7 @@ Data lives in [`pipeline/output/`](output/). The primary data source is **`s5_al
 - **431 members** — the full U.S. House (one file per seat; at-large seats use district `0`)
 - **119th Congress** (2025–2026), **2024 FEC cycle**
 - **~10,700 bill detail files** (`s3_bills`), of which **~3,500 are LLM-analyzed** (`s4_analysis` — only floor-voted bills are scored by default; see `analyze_voted_only` in [config.json](config.json))
+- **Cross-party rates for all 431 members** (`s7_bipartisanship`), computed from the roll-call and sponsorship record with no LLM involved
 
 ---
 
@@ -62,6 +63,7 @@ Everything a consumer needs for one member is in this file. Bill titles/URLs are
   sponsored_bills:   [ { congress, number, type, introduced_date } ],
   cosponsored_bills: [ { congress, number, type, introduced_date } ],
 
+  bipartisanship: Bipartisanship | null   # see "bipartisanship" below
   finance: CandidateFinance | null  # see "finance" below
 }
 ```
@@ -70,8 +72,8 @@ Everything a consumer needs for one member is in this file. Bill titles/URLs are
 
 ```
 {
-  topic_slug: str                   # "immigration"
-  topic_name: str                   # "Immigration"
+  topic_slug: str                   # "budget_deficit"
+  topic_name: str                   # "Budget Deficit"
   alignment: float                  # -1.0..1.0 — THE DISPLAYED SCORE (shrunk, see below)
   raw_alignment: float              # -1.0..1.0 — lean before shrinkage (transparency)
   numerator: float                  # Σ(weight · sign · score)
@@ -133,11 +135,48 @@ salience      = denominator / Σ(all topics' denominator)
 
 Every topic has its own `minus_one_desc` / `plus_one_desc` poles. By convention **−1 = left-leaning, +1 = right-leaning** (e.g. taxation: −1 "Higher taxes" / +1 "Lower taxes"). Poles are defined in [`services/congress/topics.py`](../services/congress/topics.py).
 
-### The 5 topic slugs
+### The 7 topic slugs
 
-`military_defense`, `taxation`, `government_spending`, `trade_policy`, `foreign_aid`
+`military_defense`, `taxation`, `budget_deficit`, `trade_policy`, `foreign_aid`, `healthcare_affordability`, `money_in_politics`
 
-The v1 topic set is deliberately narrow. `government_spending` absorbs national debt (a bill's `national_debt` score folds into it via `TOPIC_ALIASES` in [`stages/s5_alignment.py`](stages/s5_alignment.py)). Older `s4_analysis` files still carry scores for previously-tracked topics; `s5` simply ignores any slug not in the current set, so widening the set later is a one-line change in `topics.py`.
+The topic set is deliberately narrow. `budget_deficit` **replaced** the earlier `government_spending` axis (which had itself absorbed `national_debt`): the axis is now deficit tolerance, so a fully paid-for spending increase is no longer a −1. Those retired scores are **not** aliased forward — the model reasoned about spending *levels*, so reusing the numbers under a deficit label would claim a judgement it never made. `TOPIC_ALIASES` in [`stages/s5_alignment.py`](stages/s5_alignment.py) is empty for that reason; add an entry only when a rename genuinely preserves an axis's meaning.
+
+Older `s4_analysis` files still carry scores for previously-tracked topics; `s5` ignores any slug not in the current set. Adding a topic is a one-line change in `topics.py` plus a [`policy_areas.py`](../services/congress/policy_areas.py) mapping entry — `s4` then scores only the *missing* topics on only the *relevant* bills (`python pipeline/run.py analysis --topup-only`).
+
+---
+
+## bipartisanship — how much a member crosses party lines
+
+**Path**: `pipeline/output/s7_bipartisanship/{STATE}_{DISTRICT}.json`, copied into `s5_alignment` under `bipartisanship`.
+
+Deliberately **not** a topic. The alignment topics are LLM-scored −1..+1 left/right axes; these are plain rates computed from the roll-call and sponsorship record with no model in the loop. They get their own block (and their own UI section, alongside finance rather than among the alignment bars), and they never feed the truth score — there is no stated-stance counterpart to compare them against.
+
+```
+{
+  state, district, name, bioguide_id, party
+  vote_defection:  float | null     # 0..1 — substantive votes cast against own party's majority
+  cosponsor_reach: float | null     # 0..1 — cosponsorships given to the other party's bills
+  attracted_reach: float | null     # 0..1 — own bills that drew a cross-party cosponsor
+  composite:       float | null     # mean of whichever rates cleared the evidence threshold
+  rank:       int | null            # 1 = most bipartisan
+  percentile: int | null            # 0..100 — share of the other scored members ranked above
+  ranked_against: int               # members with enough record to score
+  signals: {                        # the raw counts behind every rate, so each is checkable
+    votes_counted, defections,
+    cosponsored_counted, cosponsored_cross_party,
+    sponsored_counted, sponsored_with_cross_party_support
+  }
+  defection_examples: [ { session, vote_number, vote_date, bill, member_position,
+                          party_majority_position } ]    # up to 10, the receipts
+  note: str, caveats: [ str ]
+}
+```
+
+**How it's built.** A roll call's party majority comes from the cached `/members` payloads — the only place carrying every member's position *and* party. Procedural and amendment votes are excluded via `vote_weight()`, matching the alignment scoring. A rate is `null` below 5 signals rather than published thin, and independents get a `null` defection rate (no caucus majority to defect from).
+
+**Read the percentile, not the composite.** The three rates have very different natural scales — the median member defects on 2.5% of votes but gives 16% of cosponsorships across the aisle — so the composite's absolute value means nothing on its own. The percentile ranks it against the whole House, both parties together: a within-party rank would hide the real fact that the parties cross over at different rates.
+
+**Caveats that ship with the data.** `cosponsor_reach` is measured over the most recent 50 cosponsorships (the Congress.gov per-member list is capped, and 420 of 431 members are saturated at it), so it is a recent-record sample, not a full-term rate. `attracted_reach` counts only sponsored bills whose cosponsor list was actually fetched.
 
 ---
 
@@ -237,11 +276,24 @@ The per-bill LLM output that `s5_alignment` aggregates. Files record the model a
   congress: int, bill_type: str, bill_number: str
   summary: str                      # short plain-language summary
   text_source: str                  # "full_text" | "summary" | "truncated_full_text"
-  scores: [ { topic_slug, score } ] # score in -1.0..1.0; omitted topics are implicitly 0
-  llm_model: str                    # e.g. "x-ai/grok-4.3"
+  scores: [ BillTopicScore ]
+  llm_model: str                    # e.g. "x-ai/grok-4.3" — the MOST RECENT run to touch the file
   temperature: float                # 0.0
 }
+
+BillTopicScore {
+  topic_slug: str, topic_name: str
+  score: float                      # -1.0..1.0
+  thoughts: str                     # the model's reasoning, written before the score
+  llm_model: str                    # per-score, since a file can span several runs
+  temperature: float
+  scored_at: str                    # ISO timestamp of the run that produced THIS score
+}
 ```
+
+**Scoring is incremental by topic.** A bill is done only when its file holds a score for every topic its policy area targets, so adding a topic costs one call per relevant bill scoring only the missing topics, merged into the existing file. That is why provenance is stamped per score rather than only per file.
+
+The scoring prompt asks the model to *omit* any topic it scores 0. Those omissions are persisted as explicit `0.0` entries (`thoughts` says so) — otherwise "absent" would mean both "never asked" and "asked, scored zero", and the bill would be re-queued and re-billed on every future run.
 
 ---
 
@@ -257,9 +309,10 @@ pipeline/
 │   ├── s1_members.py            # profiles, votes, sponsored/cosponsored bills
 │   ├── s2_finance.py            # campaign finance from OpenFEC (breakdown, PACs, outside spending)
 │   ├── s3_bills.py              # deep-dive bill detail
-│   ├── s4_analysis.py           # LLM topic scoring (parallel)
+│   ├── s4_analysis.py           # LLM topic scoring (parallel, incremental by topic)
 │   ├── s6_stances.py            # scrape member sites → LLM-score STATED positions (see services/positions/)
-│   └── s5_alignment.py          # aggregate votes + sponsorship + analysis + stances → per-member files
+│   ├── s7_bipartisanship.py     # cross-party voting/cosponsorship rates (statistical, no LLM)
+│   └── s5_alignment.py          # aggregate votes + sponsorship + analysis + stances + bipartisanship
 └── output/
     ├── s1_members/              # intermediate: raw member data
     ├── s2_finance/              # intermediate: raw finance data (+ pac_profiles/)

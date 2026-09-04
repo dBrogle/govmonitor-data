@@ -3,28 +3,48 @@
   "district": 2,
   "bioguide_id": "Y000067",
   "website": "https://yakym.house.gov",
-  "fetched_at": "2026-08-30T14:24:14+00:00",
+  "fetched_at": "2026-09-04T19:49:43+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
-    "https://yakym.house.gov"
+    "https://yakym.house.gov",
+    "https://yakym.house.gov/issues",
+    "https://yakym.house.gov/issues/cutting-red-tape",
+    "https://yakym.house.gov/issues/care-for-hoosiers",
+    "https://yakym.house.gov/issues/securing-the-border",
+    "https://yakym.house.gov/issues/defending-your-rights",
+    "https://yakym.house.gov/issues/supporting-the-family",
+    "https://yakym.house.gov/issues/growing-jobs-and-wages",
+    "https://yakym.house.gov/issues/keeping-indiana-moving",
+    "https://yakym.house.gov/issues/peace-through-strength",
+    "https://yakym.house.gov/issues/helping-hoosier-farmers",
+    "https://yakym.house.gov/issues/serving-our-american-heroes",
+    "https://yakym.house.gov/issues/delivering-for-the-second-district",
+    "https://yakym.house.gov/issues/putting-your-money-back-in-your-pocket",
+    "https://yakym.house.gov/media-center/press-releases"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No statement on military spending levels."
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "Voted for the NDAA to keep our military the strongest fighting force on earth",
+      "reasoning": "Text explicitly supports strengthening the military via NDAA votes and pay raises under Peace Through Strength.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:43+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.9,
       "stated_score": 1.0,
-      "quote": "Yakym Kicks Off \u201cHoosier Heartland\u201d District Tour to Highlight Working Families Tax Cuts",
-      "reasoning": "Text promotes tax cuts by highlighting their positive impact."
+      "quote": "Hoosiers Deserve to Keep More of What They Earn",
+      "reasoning": "Multiple statements advocate tax cuts, permanent extensions, and no taxes on tips/overtime/loans to leave more money with families.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:43+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -32,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on government spending levels."
+      "reasoning": "No statement on government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.7,
-      "stated_score": 1.0,
-      "quote": "Yakym Leads Majority of House Republicans in Push to Strengthen USMCA",
-      "reasoning": "Text endorses strengthening the USMCA trade agreement."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Supports strengthening USMCA and worker-first trade but lacks explicit free trade vs protectionist stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:43+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -48,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending."
+      "reasoning": "No statements address foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:43+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of fiscal irresponsibility exist but no clear position on shrinking vs accepting deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:43+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Discusses rural hospitals and lowering costs but no clear stance on government action vs market competition.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:43+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:43+00:00"
     }
   ]
 }

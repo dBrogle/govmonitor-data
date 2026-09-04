@@ -3,7 +3,7 @@
   "district": 43,
   "bioguide_id": "W000187",
   "website": "https://waters.house.gov",
-  "fetched_at": "2026-08-30T14:19:01+00:00",
+  "fetched_at": "2026-09-04T19:45:57+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels appears in the text."
+      "reasoning": "No statements address military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of taxation or tax policy is present in the provided statements."
+      "reasoning": "No statements address tax policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Criticism of specific budget cuts exists but no general position on government spending is clearly stated."
+      "reasoning": "No statements address the budget deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +63,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "The text contains no statements on trade policy, tariffs, or free trade."
+      "reasoning": "No statements address trade policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "CONGRESSWOMAN MAXINE WATERS DENOUNCES PLANS TO DOWNSIZE THE STATE DEPARTMENT AND WITHDRAW FROM WORLD LEADERSHIP, ESPECIALLY IN SUB-SAHARAN AFRICA",
+      "reasoning": "Opposes downsizing State Department and dismantling USAID, indicating support for sustained or increased foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "I was absolutely appalled to learn of the Trump administration\u2019s plans to slash $40 billion from the budget of the Department of Health and Human Services.",
+      "reasoning": "Strongly opposes cuts to HHS funding and supports expanded government health programs like Medicaid access and diabetes initiatives.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Opposition to dismantling USAID is noted but does not constitute a clear general position on foreign aid spending."
+      "reasoning": "No statements address campaign finance or political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     }
   ]
 }

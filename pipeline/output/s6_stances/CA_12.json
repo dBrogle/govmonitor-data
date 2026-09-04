@@ -3,14 +3,15 @@
   "district": 12,
   "bioguide_id": "S001231",
   "website": "https://simon.house.gov/",
-  "fetched_at": "2026-08-30T14:17:11+00:00",
+  "fetched_at": "2026-09-04T19:45:25+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://simon.house.gov",
-    "https://simon.house.gov/issues/education",
+    "https://simon.house.gov/issues/housing",
+    "https://simon.house.gov/issues/immigration",
+    "https://simon.house.gov/issues/health-care",
     "https://simon.house.gov/issues/foreign-policy",
-    "https://simon.house.gov/issues/reproductive-justice",
     "https://simon.house.gov/issues/energy-and-environment",
     "https://simon.house.gov/issues/economy-and-small-business",
     "https://simon.house.gov/issues/transportation-and-infrastructure",
@@ -18,19 +19,21 @@
     "https://simon.house.gov/media/press-releases/icymi-ranking-member-simon-calls-out-republicans-misguided-priorities-during",
     "https://simon.house.gov/media/press-releases",
     "https://simon.house.gov/media/press-releases/congresswoman-simon-votes-against-republican-foreign-aid-budget-bill",
+    "https://simon.house.gov/media/press-releases/icymi-congresswoman-simon-calls-out-republicans-continued-attacks-14th",
     "https://simon.house.gov/media/press-releases/congresswoman-simon-secures-federal-funding-create-new-community-plaza",
-    "https://simon.house.gov/media/press-releases/congresswoman-simon-secures-federal-funding-lincoln-avenue-marshall-way",
-    "https://simon.house.gov/media/press-releases/icymi-congresswoman-simon-fights-back-against-republican-attacks-equity",
-    "https://simon.house.gov/media/press-releases/congresswoman-lateefah-simon-hosts-eleven-town-halls-first-year-congress"
+    "https://simon.house.gov/media/press-releases/ranking-member-robert-garcia-appoints-congresswoman-lateefah-simon-lead"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "I voted HELL NO on the Fiscal Year 2027 National Defense Authorization Act. Our national security depends on more than military strength.",
-      "reasoning": "The member explicitly voted against the NDAA and downplayed military strength as the core of national security."
+      "quote": "I voted HELL NO on the Fiscal Year 2027 National Defense Authorization Act.",
+      "reasoning": "Explicit vote against NDAA indicates opposition to increased military spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address taxation levels."
+      "reasoning": "No statement on taxation levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No general position on overall government spending is stated."
+      "reasoning": "No statement on deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +63,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statement on trade or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
       "topic_slug": "foreign_aid",
-      "addressed": true,
-      "emphasis": 0.5,
-      "stated_score": 1.0,
-      "quote": "Congresswoman Simon Votes Against Republican Foreign Aid Budget Bill",
-      "reasoning": "The member voted against the foreign aid appropriations bill, indicating opposition to the proposed spending level."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Vote against foreign aid bill noted but no explanatory quote on aid levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of health programs but no direct position on government vs market approach.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance or political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     }
   ]
 }

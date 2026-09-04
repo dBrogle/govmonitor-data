@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "C001121",
   "website": "https://crow.house.gov/",
-  "fetched_at": "2026-08-30T14:19:49+00:00",
+  "fetched_at": "2026-09-04T19:46:09+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -11,7 +11,6 @@
     "https://crow.house.gov/issues",
     "https://crow.house.gov/issues/national-security",
     "https://crow.house.gov/issues/fighting-corruption",
-    "https://crow.house.gov/issues/economy-working-class",
     "https://crow.house.gov/issues/gun-violence-prevention",
     "https://crow.house.gov/issues/lower-costs-for-coloradans",
     "https://crow.house.gov/issues/an-economy-for-the-working-class",
@@ -21,16 +20,20 @@
     "https://crow.house.gov/media/press-releases/crow-ocasio-cortez-levin-launch-end-corruption-caucus",
     "https://crow.house.gov/media/press-releases/crow-demands-hegseth-address-corruption-at-the-pentagon",
     "https://crow.house.gov/media/press-releases/crow-to-trump-administration-reveal-true-cost-of-war-with-iran",
-    "https://crow.house.gov/media/press-releases/crow-democratic-veterans-demand-transparency-on-troop-casualties"
+    "https://crow.house.gov/media/press-releases/crow-democratic-veterans-demand-transparency-on-troop-casualties",
+    "https://crow.house.gov/media/press-releases/crow-celebrates-opening-of-project-worthmore-s-roots-community-hub"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.6,
       "stated_score": -1.0,
-      "quote": "Six months later, 18 servicemembers are dead, hundreds more are wounded, and American taxpayers have spent billions of dollars on a war that has not made them safer and that has only raised their prices at home.",
-      "reasoning": "Text repeatedly criticizes billions spent on Iran war and calls for ending funding for military adventurism."
+      "quote": "American taxpayers have spent billions of dollars on a war that has not made them safer and that has only raised their prices at home.",
+      "reasoning": "Text repeatedly criticizes military spending on the Iran war as wasteful and harmful to taxpayers.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:09+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": 0.3,
       "stated_score": -1.0,
       "quote": "Americans won\u2019t forget that Republicans cut healthcare to pass a massive tax cut for big corporations and the wealthiest Americans.",
-      "reasoning": "Explicit opposition to tax cuts for corporations and wealthy indicates stance against lower taxes."
+      "reasoning": "Text frames tax cuts for corporations and wealthy negatively as coming at expense of healthcare.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:09+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "Republicans keep telling us we can't afford to lower the cost of healthcare, food, and housing. Yet they can magically find nearly $100 billion dollars of taxpayer dollars to fund Trump\u2019s Iran war and the President\u2019s vanity projects.",
-      "reasoning": "Criticism of spending on war and vanity projects while opposing cuts elsewhere shows preference for less such government spending."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear statement on accepting larger deficits versus shrinking them.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:09+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs appear in the text."
+      "reasoning": "No mention of tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:09+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No mention of foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:09+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "This critical piece of legislation tackles healthcare and energy costs by: Saving average families up to $1,940 a year on their healthcare coverage; ... Capping Insulin costs at $35 a month for Medicare beneficiaries.",
+      "reasoning": "Text praises government legislation like the Inflation Reduction Act for lowering healthcare costs and expanding coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:09+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "He is fighting to crack down on dark money in politics, strengthen ethics rules, and restore trust in government.",
+      "reasoning": "Text repeatedly states support for cracking down on dark money and limiting special interest influence in politics.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:09+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "B000825",
   "website": "https://boebert.house.gov",
-  "fetched_at": "2026-08-30T14:19:47+00:00",
+  "fetched_at": "2026-09-04T19:46:06+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military spending levels appears in the text."
+      "reasoning": "No explicit statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:06+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,31 +41,65 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit position on tax rates or levels is stated."
+      "reasoning": "No explicit statement on tax rates or tax policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:06+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "I support reducing burdensome government regulations, cutting government spending causing inflation, and getting America back to work.",
-      "reasoning": "The text repeatedly advocates cutting government spending to combat inflation and restore fiscal responsibility."
+      "quote": "At a time when our debt is over $33 trillion, we need to cut unauthorized and wasteful spending wherever we can and restore fiscal responsibility.",
+      "reasoning": "Text explicitly calls for cutting wasteful spending to restore fiscal responsibility amid high debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:06+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "I support continuing the Trump administration\u2019s free and fair trade policies that stood up to bullies and put American workers first.",
-      "reasoning": "The member explicitly endorses free and fair trade policies."
+      "reasoning": "Text endorses free and fair trade policies and the USMCA.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:06+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.5,
+      "emphasis": 0.3,
       "stated_score": 1.0,
       "quote": "I oppose sending unlimited taxpayer money overseas while we face our own challenges domestically.",
-      "reasoning": "The text states opposition to unlimited overseas spending in favor of domestic priorities."
+      "reasoning": "Text explicitly opposes unlimited overseas spending in favor of domestic priorities.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:06+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": 1.0,
+      "quote": "I support healthcare reforms that encourage marketplace competition, expand access to health savings accounts, increase patient choices, safeguard individuals with pre-existing conditions, expand telehealth, and increase care in rural America.",
+      "reasoning": "Text advocates marketplace competition and patient choice over government-heavy approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:06+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on campaign finance, political spending limits, or disclosure appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:06+00:00"
     }
   ]
 }

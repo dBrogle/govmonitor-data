@@ -3,7 +3,7 @@
   "district": 10,
   "bioguide_id": "D000623",
   "website": "https://desaulnier.house.gov/",
-  "fetched_at": "2026-08-30T14:17:10+00:00",
+  "fetched_at": "2026-09-04T19:45:27+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,10 +27,13 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.25,
       "stated_score": -1.0,
-      "quote": "Has regularly opposed the Defense authorization bill (NDAA) since coming to Congress due to lack of accountability and oversight.",
-      "reasoning": "Text explicitly states opposition to NDAA and introduces bill to block additional DoD funding until waste is addressed, indicating preference for less military spending."
+      "quote": "introduced the Department of Defense Waste Reduction Act (H.R. 2367) to prevent DoD from receiving any additional funding until wasteful spending practices within the Department are addressed",
+      "reasoning": "Text shows opposition to additional defense funding without waste reduction and regular opposition to NDAA over accountability.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:27+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on taxation appear in the provided text."
+      "reasoning": "No statement on taxation appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:27+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Text discusses specific federal funding and investments but lacks a clear general position on overall government spending levels."
+      "reasoning": "No statement on budget deficit appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:27+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs appear in the provided text."
+      "reasoning": "No statement on trade policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:27+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid appear in the provided text."
+      "reasoning": "No statement on foreign aid appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:27+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": -1.0,
+      "quote": "Sponsor of Medicare for All Act",
+      "reasoning": "Text explicitly supports expanding ACA and sponsoring Medicare for All, indicating government-led coverage expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:27+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on money in politics appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:27+00:00"
     }
   ]
 }

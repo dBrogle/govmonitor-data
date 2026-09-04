@@ -21,23 +21,24 @@ def test_all_mapped_slugs_are_real_topics():
 
 def test_known_area_maps_to_expected_topics():
     # Set comparison — ordering is asserted separately below.
-    assert set(_slugs("Taxation")) == {"taxation", "government_spending", "national_debt"}
-    assert _slugs("Immigration") == ["immigration"]
-    assert _slugs("Environmental Protection") == ["climate_environment"]
+    assert set(_slugs("Taxation")) == {"taxation", "budget_deficit"}
+    assert set(_slugs("Health")) == {"healthcare_affordability", "budget_deficit"}
+    assert _slugs("Congress") == ["money_in_politics"]
 
 
 def test_returned_topics_preserve_topics_order_and_are_configs():
-    # Order should follow TOPICS, not the mapping's listing order.
-    result = topics_for_policy_area("Taxation", TOPICS)
+    # Order should follow TOPICS, not the mapping's listing order. "Economics and Public
+    # Finance" lists budget_deficit first, but taxation comes first in TOPICS.
+    result = topics_for_policy_area("Economics and Public Finance", TOPICS)
     assert all(t in TOPICS for t in result)
-    order = [t.slug for t in TOPICS if t.slug in {"taxation", "government_spending", "national_debt"}]
+    order = [t.slug for t in TOPICS if t.slug in {"taxation", "budget_deficit"}]
     assert [t.slug for t in result] == order
 
 
 def test_irrelevant_area_skips_bill():
     # Empty mapping → [] → caller skips the bill entirely.
     assert topics_for_policy_area("Animals", TOPICS) == []
-    assert topics_for_policy_area("Congress", TOPICS) == []
+    assert topics_for_policy_area("Immigration", TOPICS) == []
     assert topics_for_policy_area("Commerce", TOPICS) == []
 
 
@@ -48,9 +49,16 @@ def test_unknown_or_missing_area_falls_back_to_all_topics():
     assert _slugs("") == [t.slug for t in TOPICS]
 
 
-def test_defense_bills_are_not_scored_on_lgbtq():
+def test_defense_bills_are_not_scored_on_unrelated_topics():
     """The Barry-Moore guard at the targeting layer: a defense bill is never even asked about
-    LGBTQ, so a buried provision cannot produce an LGBTQ score."""
+    healthcare, so a buried provision cannot produce a healthcare score."""
     defense_topics = _slugs("Armed Forces and National Security")
     assert "military_defense" in defense_topics
-    assert "lgbtq_rights" not in defense_topics
+    assert "healthcare_affordability" not in defense_topics
+
+
+def test_retired_slugs_are_gone_from_the_mapping():
+    """government_spending/national_debt were replaced by budget_deficit. A stale entry here
+    would silently target a topic that no longer exists, so the bill gets no deficit score."""
+    stale = {"government_spending", "national_debt", "healthcare"}
+    assert not {s for v in POLICY_AREA_TOPICS.values() for s in v} & stale

@@ -3,12 +3,11 @@
   "district": 1,
   "bioguide_id": "L000598",
   "website": "https://lalota.house.gov",
-  "fetched_at": "2026-08-30T14:31:12+00:00",
+  "fetched_at": "2026-09-04T19:56:25+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://lalota.house.gov",
-    "https://lalota.house.gov/issues/health",
     "https://lalota.house.gov/issues/veterans",
     "https://lalota.house.gov/issues/congress",
     "https://lalota.house.gov/issues/law-enforcement",
@@ -16,21 +15,25 @@
     "https://lalota.house.gov/media/press-releases/lalota-recovers-over-156-million-suffolk-county-residents",
     "https://lalota.house.gov/media/press-releases/lalota-delivers-429-million-federal-investments-long-island",
     "https://lalota.house.gov/media/press-releases/lalota-secures-big-wins-suffolk-county-troop-pay-raise-fy26-funding-law",
-    "https://lalota.house.gov/media/press-releases/lalota-joins-bipartisan-effort-pass-aca-extension-senate-under-deadline",
     "https://lalota.house.gov/media/press-releases/lalota-secures-five-more-suffolk-county-projects-bringing-total-community",
     "https://lalota.house.gov/media/press-releases/congressman-nick-lalota-presents-purple-heart-vietnam-veteran-daniel-knote",
     "https://lalota.house.gov/media/press-releases/lalota-house-gop-leadership-be-responsible-and-compassionate-when-reforming",
+    "https://lalota.house.gov/media/press-releases/lalota-presents-nearly-1-million-federal-funding-law-enforcement-south-fork",
     "https://lalota.house.gov/media/press-releases/house-passes-lalota-co-sponsored-bipartisan-bill-protect-long-island-waters",
-    "https://lalota.house.gov/media/press-releases/lalota-leads-effort-address-concerns-about-world-trade-center-health-program"
+    "https://lalota.house.gov/media/press-releases/lalota-leads-effort-address-concerns-about-world-trade-center-health-program",
+    "https://lalota.house.gov/media/press-releases/congress-and-trump-approve-rep-lalotas-10-community-projects-totaling-over-11"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "The legislation funds core government functions across Financial Services and General Government, Defense, Labor\u2013Health and Human Services\u2013Education, Transportation and Housing, Department of State, and critical authorizing extensions, while prioritizing fiscal discipline, public safety, and economic growth.",
-      "reasoning": "Text repeatedly highlights securing defense funding, missile defense, shipbuilding, and troop pay raises as positive achievements."
+      "reasoning": "Text repeatedly highlights securing defense funding, missile defense, shipbuilding, and servicemember pay raises.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:25+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "Congressman Nick LaLota (NY-1) announced he introduced bipartisan legislation alongside Congresswoman Nicole Malliotakis (NY-11) to expand a critical provision of the Working Families Tax Cut, eliminating federal taxes on overtime pay for all union workers.",
-      "reasoning": "Explicit support for reducing federal taxes on overtime pay."
+      "reasoning": "Explicit support for eliminating federal taxes on overtime pay.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:25+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "reaffirming their strong support for Medicaid, urging Republican leadership to protect coverage for vulnerable Americans and reiterating a vote of opposition to any GOP bill that includes any reduction in Medicaid coverage for vulnerable populations.",
-      "reasoning": "Opposes reductions in Medicaid spending and highlights securing large federal funding packages."
+      "reasoning": "Opposes reductions in Medicaid spending and highlights securing large federal funding packages.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tariffs, protectionism, or free trade."
+      "reasoning": "No statements on trade policy or tariffs appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:25+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:25+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions fiscal discipline and targeted spending but no clear position on shrinking versus accepting larger deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:25+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "reaffirming their strong support for Medicaid, urging Republican leadership to protect coverage for vulnerable Americans and reiterating a vote of opposition to any GOP bill that includes any reduction in Medicaid coverage for vulnerable populations.",
+      "reasoning": "Explicit opposition to any reduction in Medicaid coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:25+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on political spending limits or disclosure appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:25+00:00"
     }
   ]
 }

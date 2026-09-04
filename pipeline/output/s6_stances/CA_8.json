@@ -3,7 +3,7 @@
   "district": 8,
   "bioguide_id": "G000559",
   "website": "https://garamendi.house.gov/",
-  "fetched_at": "2026-08-30T14:17:03+00:00",
+  "fetched_at": "2026-09-04T19:45:24+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "It is essential we work together both to ensure our military has the resources they need to keep us safe",
-      "reasoning": "The text explicitly supports providing necessary resources to the military."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear verbatim statement on increasing or decreasing overall military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on taxation appear in the text."
+      "reasoning": "No mention of tax rates or policy in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.8,
-      "stated_score": -1.0,
-      "quote": "I consistently advocate to increase funding for federal housing programs",
-      "reasoning": "The text repeatedly advocates increasing federal funding across housing, education, healthcare, and clean energy programs."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +63,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs appear in the text."
+      "reasoning": "No discussion of tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions Peace Corps funding but no position on general foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.9,
       "stated_score": -1.0,
-      "quote": "I have consistently supported policies that would facilitate global prosperity and am proud to have introduced legislation providing additional federal funding and resources to advance the global mission of the Peace Corps",
-      "reasoning": "The text supports additional federal funding for the Peace Corps as part of global engagement."
+      "quote": "I am proud to support Medicare for All, which would create a single-payer system guaranteeing healthcare for all, regardless of income or employment status.",
+      "reasoning": "Explicit support for single-payer government healthcare and Medicare drug price negotiation shows preference for government action over markets.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance limits or political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:24+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "B001287",
   "website": "https://bera.house.gov",
-  "fetched_at": "2026-08-30T14:16:58+00:00",
+  "fetched_at": "2026-09-04T19:45:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -11,17 +11,17 @@
     "https://bera.house.gov/issues",
     "https://bera.house.gov/issues/education",
     "https://bera.house.gov/issues/health-care",
+    "https://bera.house.gov/issues/social-issues",
     "https://bera.house.gov/issues/homeland-security",
     "https://bera.house.gov/issues/jobs-and-the-economy",
     "https://bera.house.gov/issues/military-and-veterans",
     "https://bera.house.gov/issues/international-affairs",
     "https://bera.house.gov/issues/making-government-work",
     "https://bera.house.gov/issues/housing-and-homelessness",
+    "https://bera.house.gov/issues/crime-and-law-enforcement",
+    "https://bera.house.gov/issues/civil-rights-and-liberties",
     "https://bera.house.gov/issues/environment-and-agriculture",
-    "https://bera.house.gov/issues/transportation-and-infrastructure",
-    "https://bera.house.gov/issues/keeping-the-sacramento-region-safe",
-    "https://bera.house.gov/issues/my-vision-for-the-sacramento-region",
-    "https://bera.house.gov/issues/national-security-and-foreign-policy"
+    "https://bera.house.gov/issues/racial-and-ethnic-relations"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses the level of military or defense spending."
+      "reasoning": "No clear statement on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses tax rates or taxation policy."
+      "reasoning": "No statements on tax rates or taxation policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": -1.0,
-      "quote": "Since Community Project Funding was restored, I have secured more than $63.8 million for 51 projects across Sacramento County, including investments in technology infrastructure, trans",
-      "reasoning": "Text repeatedly highlights securing and supporting federal project funding and investments, indicating preference for more government spending."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on budget deficits or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,15 +63,43 @@
       "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "I have also opposed sweeping tariff policies that raise costs for working families, hurt small businesses, and strain our economy.",
-      "reasoning": "Explicit opposition to tariffs demonstrates support for free trade."
+      "reasoning": "Explicit opposition to tariffs indicates support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.35,
       "stated_score": -1.0,
-      "quote": "Today, U.S. Representatives Ami Bera, M.D. (CA-06), Derek Tran (CA-45), and Salud Carbajal (CA-24) led a group of 65 Members of Congress in urging Secretary of State Marco Rubio to address overly broad and inconsistently enforced Israeli restrictions on dual-use goods entering the Gaza Strip.",
-      "reasoning": "Advocacy to facilitate humanitarian aid into Gaza indicates support for more foreign aid spending."
+      "quote": "This bipartisan legislation would strengthen U.S. efforts to prevent, diagnose, treat, and ultimately eliminate tuberculosis (TB) worldwide.",
+      "reasoning": "Support for legislation expanding U.S. global TB efforts shows backing for more foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.85,
+      "stated_score": -1.0,
+      "quote": "That is why I support universal coverage so every American has access to affordable, quality health care.",
+      "reasoning": "Advocacy for universal coverage, cost caps, and Medicare negotiation reflects preference for government action to expand access and lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "I also support banning members of Congress, their spouses, and dependent children from trading and owning individual stocks.",
+      "reasoning": "Support for stock trading ban on members of Congress indicates preference for tighter restrictions on political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:20+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "H001047",
   "website": "https://himes.house.gov/",
-  "fetched_at": "2026-08-30T14:20:48+00:00",
+  "fetched_at": "2026-09-04T19:46:14+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,23 +30,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending levels appear in the text."
+      "reasoning": "No position stated on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:14+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.25,
       "stated_score": -1.0,
       "quote": "In 2022, I was proud to support the passage of the Inflation Reduction Act, which included important provisions to close tax loopholes, crack down on fraud and tax evasion, and ensure wealthy corporations pay their fair share.",
-      "reasoning": "Text explicitly endorses closing loopholes to make corporations pay more, indicating support for higher taxes."
+      "reasoning": "Text supports closing loopholes and ensuring corporations pay fair share, indicating preference for higher effective taxation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:14+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": -1.0,
-      "quote": "I regularly vote for increased investments in Title I funding for our schools.",
-      "reasoning": "Multiple passages endorse increased federal investments and funding for education, infrastructure, manufacturing, and social programs."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No position stated on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:14+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tariffs, protectionism, or free trade appear in the text."
+      "reasoning": "No position stated on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:14+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No position stated on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:14+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Every American should have access to high-quality, affordable healthcare. ... Congress needs to find pragmatic, innovative solutions to expand healthcare coverage and decrease costs.",
+      "reasoning": "Text repeatedly endorses government-led expansions of coverage and cost reductions via ACA and related laws.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:14+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No position stated on limits or disclosure for political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:14+00:00"
     }
   ]
 }

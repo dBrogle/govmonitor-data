@@ -3,7 +3,7 @@
   "district": 23,
   "bioguide_id": "O000019",
   "website": "https://obernolte.house.gov",
-  "fetched_at": "2026-08-30T14:17:47+00:00",
+  "fetched_at": "2026-09-04T19:45:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,23 +30,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on military or defense spending levels."
+      "reasoning": "No explicit statement on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:37+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "In Congress, I am working to eliminate wasteful spending, cut the red tape holding back small businesses, and lower taxes to encourage job growth.",
-      "reasoning": "Explicitly advocates lowering taxes to encourage job growth."
+      "quote": "I am working to eliminate wasteful spending, cut the red tape holding back small businesses, and lower taxes to encourage job growth.",
+      "reasoning": "Text explicitly advocates lowering taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:37+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
       "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "I am dedicated to finding solutions that will balance the federal budget, lower government spending, and rein in our national debt.",
-      "reasoning": "Repeatedly states commitment to lower government spending and balance the budget."
+      "reasoning": "Multiple statements emphasize balancing budget and reducing spending/debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:37+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs."
+      "reasoning": "No statements on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:37+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statements on foreign aid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:37+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "We must support the development of a personalized, patient-centered healthcare system, including better access to telehealth services. We also need fiscally responsible healthcare policies and commonsense initiatives that empower patients, increase choices, and lower health care costs without reducing benefits.",
+      "reasoning": "Text favors market-based, patient-choice approaches over government mandates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:37+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:37+00:00"
     }
   ]
 }

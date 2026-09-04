@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "M001223",
   "website": "https://magaziner.house.gov",
-  "fetched_at": "2026-08-30T14:35:19+00:00",
+  "fetched_at": "2026-09-04T20:00:49+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,7 +21,7 @@
     "https://magaziner.house.gov/media/press-releases",
     "https://magaziner.house.gov/media/press-releases/hundreds-join-magaziner-town-hall-east-greenwich",
     "https://magaziner.house.gov/media/press-releases/magaziner-reintroduces-bill-crack-down-wage-theft",
-    "https://magaziner.house.gov/media/press-releases/magaziner-secures-wins-rhode-island-annual-defense-bill"
+    "https://magaziner.house.gov/media/press-releases/support-magaziners-pto-act-earns-endorsement-us-tour-operators"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement of position on overall military spending levels."
+      "reasoning": "No clear statement on overall military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:49+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mentions of taxes or tax policy in the text."
+      "reasoning": "No mentions of tax policy in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:49+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "Rep. Magaziner is fighting to strengthen and expand Social Security and Medicare, and will always oppose any attempts to cut these vital programs.",
-      "reasoning": "Explicit opposition to cuts and support for expanding Social Security/Medicare indicates preference for more government spending."
+      "reasoning": "Explicit opposition to cuts and support for expanding Social Security/Medicare indicates preference for more government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of tariffs appear only as constituent questions, with no stated position."
+      "reasoning": "Tariffs mentioned only in context of constituent questions, with no member's position articulated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:49+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No references to foreign aid spending."
+      "reasoning": "No references to foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:49+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit position stated on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:49+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Rep. Magaziner is fighting to lower healthcare costs, and especially to lower the cost of prescription drugs like insulin for all Americans.",
+      "reasoning": "Multiple statements emphasize government funding and action to reduce costs and expand access.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:49+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Rep. Magaziner also understands that real reform is needed to restore Americans\u2019 faith in their government, which is why he supports overturning the Citizens United decision that allows unlimited spending in elections, supports banning members of congress from trading stocks, and has introduced legislation to enact term limits for members of congress.",
+      "reasoning": "Explicit support for overturning Citizens United and banning congressional stock trading indicates preference for tighter limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:49+00:00"
     }
   ]
 }

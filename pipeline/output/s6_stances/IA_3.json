@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "N000193",
   "website": "https://nunn.house.gov",
-  "fetched_at": "2026-08-30T14:23:02+00:00",
+  "fetched_at": "2026-09-04T19:47:46+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,7 +21,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses military or defense spending levels."
+      "reasoning": "No statement addresses military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:46+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -29,7 +32,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses taxation policy."
+      "reasoning": "No statement addresses tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:46+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -37,15 +43,20 @@
       "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "Balanced Budget Amendment",
-      "reasoning": "Sponsorship of the Balanced Budget Amendment directly states support for reduced government spending."
+      "reasoning": "Sponsorship of the Balanced Budget Amendment directly states support for reduced government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": -1.0,
-      "quote": "Neutralizing Unfair Chinese Subsidies Act",
-      "reasoning": "Sponsorship of legislation targeting Chinese subsidies states a protectionist trade stance."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:46+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -53,7 +64,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:46+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": 1.0,
+      "quote": "Balanced Budget Amendment",
+      "reasoning": "Sponsorship of the Balanced Budget Amendment directly states support for shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:46+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses healthcare costs or coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:46+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits on political spending or campaign finance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:46+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "M001235",
   "website": "https://rileymoore.house.gov/",
-  "fetched_at": "2026-08-30T14:40:30+00:00",
+  "fetched_at": "2026-09-04T20:06:19+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on increasing or decreasing military spending."
+      "reasoning": "No explicit statement on increasing or decreasing military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:19+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of tax rates or policy."
+      "reasoning": "No explicit statement on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:19+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,23 +52,64 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "defends American taxpayers by cutting federal funding for the third year in a row",
-      "reasoning": "Explicit support for repeated cuts to federal funding indicates preference for less government spending."
+      "reasoning": "Explicit support for repeated cuts to federal funding indicates preference for less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.3,
       "stated_score": -1.0,
-      "quote": "Responds to the Supreme Court\u2019s Decision on President Trump\u2019s Tariffs, Calls for Passage of Reciprocal Trade Act",
-      "reasoning": "Endorsement of Trump's tariffs and reciprocal trade measures shows protectionist stance."
+      "quote": "Congressman Riley M. Moore Responds to the Supreme Court\u2019s Decision on President Trump\u2019s Tariffs, Calls for Passage of Reciprocal Trade Act",
+      "reasoning": "Endorsement of Trump tariffs and reciprocal trade legislation shows protectionist stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:19+00:00"
     },
     {
       "topic_slug": "foreign_aid",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": 1.0,
+      "quote": "defends American taxpayers by cutting federal funding for the third year in a row",
+      "reasoning": "Praising cuts to federal funding in State Department appropriations bill reflects preference for reduced foreign aid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:19+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Today, Congressman Riley M. Moore (R-WV) voted yes on H.J. Res. 139, a Balanced Budget Amendment to the Constitution.",
+      "reasoning": "Explicit support for constitutional balanced budget amendment indicates priority on shrinking deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:19+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of State Department appropriations and cuts do not clearly address foreign aid levels."
+      "reasoning": "Mentions hospital funding and abortion restrictions but no position on market vs. government role in costs/coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:19+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, disclosure, or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:19+00:00"
     }
   ]
 }

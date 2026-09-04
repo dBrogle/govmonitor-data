@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "C001087",
   "website": "https://crawford.house.gov/",
-  "fetched_at": "2026-08-30T14:16:20+00:00",
+  "fetched_at": "2026-09-04T19:45:09+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on military or defense spending levels."
+      "reasoning": "No explicit statement on increasing or decreasing military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,23 +41,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on tax rates or taxation policy."
+      "reasoning": "No explicit statement on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "we need to leverage new technologies that allow small towns the access they need to crucial services without overspending",
-      "reasoning": "Text explicitly advocates keeping spending under control and reducing farmer dependence on federal government."
+      "quote": "the ACA has wrecked our economy, slowing already sluggish growth and adding nearly a trillion dollars to our massive national debt.",
+      "reasoning": "Criticizes ACA specifically for increasing national debt, indicating preference to shrink deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.35,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "It has become clear over the last several decades that the embargo has not weakened the regime but instead stifled American business opportunities.",
-      "reasoning": "Text criticizes Cuba embargo for limiting US exports and pushes incremental policy changes to expand agricultural trade."
+      "reasoning": "Advocates easing Cuba embargo to expand US exports and business opportunities, supporting free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on foreign aid spending."
+      "reasoning": "No explicit statement on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "I favor patient-centered health care that allows individuals the freedom to make important health related decisions. The Affordable Care Act takes control away from patients, has led to higher health care costs, and restricts accessibility to care.",
+      "reasoning": "Opposes ACA government intervention and favors patient choice, HSAs, and market-driven solutions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:09+00:00"
     }
   ]
 }

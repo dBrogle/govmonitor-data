@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "L000273",
   "website": "https://fernandez.house.gov",
-  "fetched_at": "2026-08-30T14:30:55+00:00",
+  "fetched_at": "2026-09-04T19:56:02+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses military spending levels."
+      "reasoning": "No statements on military or defense spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:02+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses taxation levels."
+      "reasoning": "No statements on taxation levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:02+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses overall government spending levels."
+      "reasoning": "No verbatim statement addresses overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses trade policy."
+      "reasoning": "No statements on trade policy or tariffs appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:02+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses foreign aid spending."
+      "reasoning": "No statements on foreign aid appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:02+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on the budget deficit appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:02+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "I strongly support fully funding and strengthening Medicare, Medicaid, and our nation\u2019s network of community health centers to make sure everyone can access care. I proudly voted for the Inflation Reduction Act (IRA)... This landmark law lowers health care premiums and allows Medicare to negotiate drug prices and cap out-of-pocket costs at $2,000.",
+      "reasoning": "Text explicitly endorses government funding, Medicare/Medicaid expansion, and IRA drug-price negotiation to lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:02+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "That\u2019s why I voted for the Freedom to Vote: John R. Lewis Act to make sure that Native Americans, Latinos, African Americans, and every other American has access to the ballot. This bill would protect poll workers, reinstate preclearance, and remove barriers to voting for those living on tribal lands. Finally, this bill would reform our campaign finance system to make sure that our democracy works for the people and not special interests.",
+      "reasoning": "Text supports campaign-finance reform to reduce special-interest influence.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:02+00:00"
     }
   ]
 }

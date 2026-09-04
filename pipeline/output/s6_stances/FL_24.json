@@ -3,7 +3,7 @@
   "district": 24,
   "bioguide_id": "W000808",
   "website": "https://wilson.house.gov/",
-  "fetched_at": "2026-08-30T14:21:52+00:00",
+  "fetched_at": "2026-09-04T19:46:36+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -15,13 +15,13 @@
     "https://wilson.house.gov/issues/haiti",
     "https://wilson.house.gov/issues/housing",
     "https://wilson.house.gov/issues/veterans",
+    "https://wilson.house.gov/issues/education",
     "https://wilson.house.gov/issues/immigration",
     "https://wilson.house.gov/issue/gun-violence",
     "https://wilson.house.gov/issues/voting-rights",
     "https://wilson.house.gov/issues/lgbtqia-rights",
     "https://wilson.house.gov/issues/transportation",
-    "https://wilson.house.gov/issues/economic-growth",
-    "https://wilson.house.gov/issues/foreign-affairs"
+    "https://wilson.house.gov/issues/economic-growth"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels."
+      "reasoning": "No clear statement on overall military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:36+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on tax rates or levels."
+      "reasoning": "No statements on tax rates or taxation policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:36+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.8,
       "stated_score": -1.0,
       "quote": "This is why I sponsored the Jobs Now Act, a 21st Century update to President Nixon's Comprehensive Employment and Training Act (CETA) program, to provide funding directly to local governments to train and hire millions of Americans to do crucial work in our communities.",
-      "reasoning": "Text repeatedly advocates targeted federal funding and new spending programs for jobs, housing, and veterans services."
+      "reasoning": "Text repeatedly advocates targeted federal funding and new spending programs for jobs, housing, and veterans services.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on trade, tariffs, or free trade."
+      "reasoning": "No statements on trade policy, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:36+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending levels."
+      "reasoning": "No statements on levels of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:36+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "There's ultimately only one responsible way to reduce the federal deficit: Get everyone trained, working, and contributing to the tax base.",
+      "reasoning": "Text explicitly advocates reducing the federal deficit through employment and tax base growth rather than accepting larger deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:36+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "Congresswoman Frederica Wilson strongly believes in every American\u2019s access to quality and comprehensive healthcare, no matter what their socioeconomic status may be. Healthcare is a basic human right and she believes that it is our responsibility to ensure that those who are often marginalized can get the medical care that they need.",
+      "reasoning": "Text frames healthcare as a right requiring government responsibility to ensure access regardless of status and praises the ACA.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:36+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, political spending limits, or disclosure.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:36+00:00"
     }
   ]
 }

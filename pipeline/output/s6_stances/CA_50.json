@@ -3,7 +3,7 @@
   "district": 50,
   "bioguide_id": "P000608",
   "website": "https://scottpeters.house.gov",
-  "fetched_at": "2026-08-30T14:19:22+00:00",
+  "fetched_at": "2026-09-04T19:46:01+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels."
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "strengthening American\u2019s military",
+      "reasoning": "Text explicitly supports strengthening the military, indicating a pro-spending stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:01+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,23 +41,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement taking a clear position on raising or lowering taxes."
+      "reasoning": "No clear verbatim position on raising or lowering taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:01+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels."
+      "reasoning": "No statements on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:01+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
       "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "Representatives Peters, San Diego Business Leaders Highlight Harm of Tariffs on San Diego Businesses and Consumers",
-      "reasoning": "The statement explicitly highlights harm from tariffs, indicating support for free trade."
+      "quote": "Highlight Harm of Tariffs on San Diego Businesses and Consumers",
+      "reasoning": "Text criticizes tariffs, supporting free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:01+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No mentions of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:01+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "allows Medicare to negotiate prices with drug companies, caps seniors\u2019 annual out-of-pocket drug spending",
+      "reasoning": "Text advocates government negotiation and cost caps for healthcare.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:01+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:01+00:00"
     }
   ]
 }

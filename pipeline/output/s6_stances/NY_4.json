@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "G000602",
   "website": "https://gillen.house.gov/",
-  "fetched_at": "2026-08-30T14:31:35+00:00",
+  "fetched_at": "2026-09-04T19:56:42+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses military or defense spending levels."
+      "reasoning": "No explicit statement on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:42+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.85,
       "stated_score": 1.0,
       "quote": "lowering costs and cutting taxes for hardworking Long Islanders is a top priority of mine in Congress.",
-      "reasoning": "Text explicitly prioritizes cutting taxes, matching +1 convention."
+      "reasoning": "Text explicitly prioritizes cutting taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:42+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.9,
       "stated_score": -1.0,
       "quote": "Rep. Gillen continues to focus on bringing resources back home to Long Island.",
-      "reasoning": "Repeated emphasis on securing and delivering millions in federal funding indicates support for more government spending."
+      "reasoning": "Repeated emphasis on securing and delivering millions in federal funding indicates support for more government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses trade policy or tariffs."
+      "reasoning": "No explicit statement on trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:42+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses foreign aid spending levels."
+      "reasoning": "No explicit statement on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:42+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:42+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.75,
+      "stated_score": -1.0,
+      "quote": "focused on the rising cost of health care and its impact on Long Island seniors and families amid devastating GOP cuts to care",
+      "reasoning": "Text opposes cuts to care and pushes government medical research funding to address costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:42+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No explicit statement on political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:42+00:00"
     }
   ]
 }

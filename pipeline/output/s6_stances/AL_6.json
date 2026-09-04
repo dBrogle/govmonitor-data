@@ -3,7 +3,7 @@
   "district": 6,
   "bioguide_id": "P000609",
   "website": "https://palmer.house.gov/",
-  "fetched_at": "2026-08-30T14:16:17+00:00",
+  "fetched_at": "2026-09-04T19:45:04+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,27 +26,36 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on the level of military or defense spending."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Funding for the Security of Our Nation",
+      "reasoning": "Text highlights support for defense funding via budget passage statements.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:04+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "Today the House of Representatives passed the Tax Cuts and Jobs Act by a vote of 227-205. Congressman Gary Palmer (R-AL) released the following statement after voting in favor of the bill.",
-      "reasoning": "Multiple references to voting for and supporting tax cuts legislation show clear support for lower taxes."
+      "quote": "Congressman Palmer Votes to Cut Taxes",
+      "reasoning": "Multiple releases explicitly endorse voting for tax cuts legislation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:04+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.9,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "voted against H.R. 2029, the \u201cOmnibus\u201d spending bill, because it doesn\u2019t abide by the budget resolution passed by the House and it failed to include necessary policy corrections.",
-      "reasoning": "Repeated statements opposing omnibus bills and advocating spending cuts and debt reduction indicate strong preference for less government spending."
+      "quote": "I Could Not in Good Conscience Vote For Omnibus",
+      "reasoning": "Statements stress spending restraint and opposition to deficit-increasing bills.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:04+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade."
+      "reasoning": "No verbatim statements on tariffs or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:04+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements addressing foreign aid spending levels."
+      "reasoning": "No statements addressing foreign aid spending levels are present.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:04+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "Palmer Votes to Repeal and Replace Obamacare",
+      "reasoning": "Explicit votes and statements favor market-oriented repeal over government expansion.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:04+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No positions on campaign finance limits or disclosure are stated.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:04+00:00"
     }
   ]
 }

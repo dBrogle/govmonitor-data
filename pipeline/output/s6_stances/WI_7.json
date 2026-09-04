@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "T000165",
   "website": "https://tiffany.house.gov/",
-  "fetched_at": "2026-08-30T14:40:05+00:00",
+  "fetched_at": "2026-09-04T20:06:11+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,10 +18,10 @@
     "https://tiffany.house.gov/media/press-releases",
     "https://tiffany.house.gov/media/press-releases/tiffany-announces-2026-service-academy-day",
     "https://tiffany.house.gov/media/press-releases/tiffany-announces-2026-congressional-art-competition",
+    "https://tiffany.house.gov/media/press-releases/tiffany-applauds-white-houses-action-delist-gray-wolves",
     "https://tiffany.house.gov/media/press-releases/tiffany-announces-winners-2026-congressional-art-competition",
     "https://tiffany.house.gov/media/press-releases/rep-tiffany-introduces-safer-act-crack-down-asylum-fraudsters",
-    "https://tiffany.house.gov/media/press-releases/tiffany-reintroduces-bill-prohibit-campaign-funds-going-spouses",
-    "https://tiffany.house.gov/media/press-releases/wisconsin-congressmen-introduce-fair-air-standards-act-addressing-ozone"
+    "https://tiffany.house.gov/media/press-releases/tiffany-reintroduces-bill-prohibit-campaign-funds-going-spouses"
   ],
   "stances": [
     {
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses military or defense spending levels."
+      "reasoning": "No statement addresses military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:11+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "This historic legislation delivered the largest tax cut in American history, putting more money back into the pockets of hardworking Americans while protecting benefits for our most vulnerable citizens.",
-      "reasoning": "Praises the largest tax cut in history as beneficial."
+      "quote": "One year ago, the Working Families Tax Cuts was signed into law. This historic legislation delivered the largest tax cut in American history, putting more money back into the pockets of hardworking Americans while protecting benefits for our most vulnerable citizens.",
+      "reasoning": "Repeated praise for the largest tax cut in history shows clear support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:11+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Telegram readers are by now well aware of the rampant waste, fraud, and abuse throughout our federal aid programs.",
-      "reasoning": "Repeatedly highlights waste and abuse in federal programs, implying desire to reduce spending."
+      "reasoning": "Repeatedly highlights waste and abuse in federal programs, implying desire to reduce spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses trade policy or tariffs."
+      "reasoning": "No statement addresses trade policy, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:11+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement addresses foreign aid spending."
+      "reasoning": "References to federal aid programs concern domestic programs only and do not address foreign aid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:11+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Mentions of waste and fraud exist but no explicit position on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:11+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Vote for a bill lowering premiums is noted but the text provides no detail on whether it uses government action or market mechanisms.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:11+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits, disclosure, or restrictions on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:11+00:00"
     }
   ]
 }

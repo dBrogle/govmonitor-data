@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "F000469",
   "website": "https://fulcher.house.gov/",
-  "fetched_at": "2026-08-30T14:24:13+00:00",
+  "fetched_at": "2026-09-04T19:48:52+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -11,6 +11,7 @@
     "https://fulcher.house.gov/legislation/key-issues-2/",
     "https://fulcher.house.gov/legislation/key-issues-2/abortion/",
     "https://fulcher.house.gov/legislation/key-issues-2/healthcare/",
+    "https://fulcher.house.gov/legislation/key-issues-2/natural-resources/",
     "https://fulcher.house.gov/legislation/key-issues-2/economy-debt-and-deficits/",
     "https://fulcher.house.gov/2026/04/14/fulcher-issues-survey-encourages-idahoans-to-share-priorities/",
     "https://fulcher.house.gov/2026/07/14/fulcher-issues-federal-land-management-survey-encourages-idahoans-to-participate/",
@@ -20,8 +21,7 @@
     "https://fulcher.house.gov/newsroom/page/2/?et_blog",
     "https://fulcher.house.gov/newsroom/page/3/?et_blog",
     "https://fulcher.house.gov/newsroom/page/4/?et_blog",
-    "https://fulcher.house.gov/newsroom/page/5/?et_blog",
-    "https://fulcher.house.gov/category/press-releases/"
+    "https://fulcher.house.gov/newsroom/page/5/?et_blog"
   ],
   "stances": [
     {
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending appear in the text."
+      "reasoning": "No statement addresses military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:52+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "The Trump Administration\u2019s actions to pass historic tax cuts, reduce burdensome regulations, and prioritize domestic manufacturing and energy production unleashed astounding economic growth for our country.",
-      "reasoning": "Text praises historic tax cuts as key to economic growth."
+      "reasoning": "Text praises historic tax cuts and seeks to make 2017 Tax Cuts and Jobs Act permanent, indicating support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:52+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "Fiscal responsibility demands that the federal government act as a prudent steward of public funds, safeguarding the economic future for subsequent generations.",
-      "reasoning": "Extensive focus on unsustainable debt and need for fiscal responsibility implies support for reduced spending."
+      "reasoning": "Extensive focus on unsustainable debt and need for fiscal responsibility implies support for reduced spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.2,
       "stated_score": 1.0,
       "quote": "International trade and foreign export markets are critical to the U.S. potato industry.",
-      "reasoning": "Text advocates opening export markets and highlights benefits of international trade."
+      "reasoning": "Text advocates opening foreign markets for U.S. exports and calls trade critical, indicating support for free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:52+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:52+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "Our national debt exceeds $36.21 trillion, increasing at a rate of approximately $234.99 million every hour. This escalating debt trajectory is unsustainable and poses significant risks to future generations.",
+      "reasoning": "Multiple sections stress unsustainable debt growth and call for fiscal responsibility to protect future generations, showing strong support for shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:52+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "Government mandates, inadequate cost containment, high drug prices, and lack of price transparency are increasing premiums and deductibles, making insurance unaffordable.",
+      "reasoning": "Text criticizes government mandates and ACA while endorsing patient-centric market alternatives such as HSAs and cross-state insurance sales.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:52+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits or disclosure for political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:52+00:00"
     }
   ]
 }

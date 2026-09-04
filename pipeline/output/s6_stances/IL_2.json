@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "K000385",
   "website": "https://robinkelly.house.gov/",
-  "fetched_at": "2026-08-30T14:23:19+00:00",
+  "fetched_at": "2026-09-04T19:48:25+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statements on military or defense spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:25+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address tax rates or taxation policy."
+      "reasoning": "No statements on tax rates or taxation policy appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:25+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "Rep. Kelly Condemns Republican Budget Cuts to Medicaid In marathon committee markup, Rep. Kelly protects Medicaid from Republican $880 billion cut",
-      "reasoning": "Opposition to Medicaid cuts and support for federal investments in health, education, and agriculture indicate preference for more government spending."
+      "reasoning": "Opposition to Medicaid cuts and support for federal investments in health, education, and agriculture indicate preference for more government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.15,
+      "emphasis": 0.2,
       "stated_score": 1.0,
       "quote": "Developing an international trade agenda that expands foreign markets for Illinois commodities while protecting labor, health and safety regulations",
-      "reasoning": "Explicit support for expanding foreign markets for commodities indicates a free trade stance."
+      "reasoning": "Explicit support for expanding foreign markets indicates a free-trade stance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:25+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:25+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Opposition to Medicaid cuts is mentioned but no direct position on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:25+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "protecting Medicare and Medicaid for future generations",
+      "reasoning": "Repeated emphasis on protecting and expanding government programs like Medicaid and Medicare shows preference for government action on affordability and coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:25+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:25+00:00"
     }
   ]
 }

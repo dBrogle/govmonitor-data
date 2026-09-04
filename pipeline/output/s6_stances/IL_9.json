@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "S001145",
   "website": "https://schakowsky.house.gov",
-  "fetched_at": "2026-08-30T14:23:51+00:00",
+  "fetched_at": "2026-09-04T19:49:00+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on US military or defense spending levels."
+      "reasoning": "No clear statement on US military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:00+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of taxes or tax policy in the text."
+      "reasoning": "No statement on tax rates or taxation policy is present.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:00+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No direct position stated on overall government spending."
+      "reasoning": "No direct position stated on overall government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.8,
-      "stated_score": -0.8,
+      "emphasis": 0.9,
+      "stated_score": -1.0,
       "quote": "I strongly opposed the Free Trade Agreements (FTAs) with Colombia, Panama, and South Korea, and the Trans-Pacific Partnership because they continue to rely on the NAFTA trade model that has proven disastrous for American workers.",
-      "reasoning": "Explicit opposition to multiple free trade agreements indicates a protectionist stance."
+      "reasoning": "Text explicitly rejects multiple free trade agreements in favor of a worker-protective alternative model.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:00+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of Israel security funding are specific and mixed with support for halting some aid, lacking a general position."
+      "reasoning": "Support for Israel security cooperation is mentioned but no position on overall foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:00+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of budget deficits or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:00+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 1.0,
+      "stated_score": -1.0,
+      "quote": "Fixing our broken health care system has been my top priority for most of my life. My goal is to ensure that every person has access to affordable, quality and accessible health care.",
+      "reasoning": "Text repeatedly endorses the ACA and government-led expansion of access and affordability.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:00+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "I do not believe corporations should be able to spend unlimited amounts of money to influence our elections.",
+      "reasoning": "Text calls for constitutional amendment to overturn Citizens United and limit corporate political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:49:00+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "C001101",
   "website": "https://katherineclark.house.gov",
-  "fetched_at": "2026-08-30T14:26:43+00:00",
+  "fetched_at": "2026-09-04T19:51:37+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statement addresses military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:51:37+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of ACA tax credits are health-care specific and do not state a general position on taxation."
+      "reasoning": "No statement addresses general tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:51:37+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.8,
       "stated_score": -1.0,
       "quote": "With our game-changing Inflation Reduction Act, Democrats enacted the largest climate investment in history",
-      "reasoning": "Repeated support for major spending legislation and opposition to program cuts clearly favors more government spending."
+      "reasoning": "Repeated support for major spending legislation and opposition to program cuts clearly favors more government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statement addresses trade policy, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:51:37+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:51:37+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:51:37+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": -1.0,
+      "quote": "I believe that health care is a fundamental human right \u2014 and that our elected leaders have a moral obligation to build a health care system that prioritizes people over profits",
+      "reasoning": "Multiple statements advocate government action via ACA expansion, Medicare drug negotiation, and Medicaid defense to lower costs and expand coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:51:37+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "To fight back and safeguard American democracy, we must restore the heart of the Voting Rights Act, end gerrymandering, and get corporate money out of our elections.",
+      "reasoning": "One statement explicitly calls for removing corporate money from elections, indicating support for tighter limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:51:37+00:00"
     }
   ]
 }

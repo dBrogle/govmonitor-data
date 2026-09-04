@@ -3,13 +3,14 @@
   "district": 3,
   "bioguide_id": "C001039",
   "website": "https://cammack.house.gov",
-  "fetched_at": "2026-08-30T14:20:41+00:00",
+  "fetched_at": "2026-09-04T19:46:19+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://cammack.house.gov",
     "https://cammack.house.gov/issues/congress",
     "https://cammack.house.gov/issues/veterans",
+    "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-issues-statement-censure-rep-chuck-edwards",
     "https://cammack.house.gov/media/press-releases",
     "https://cammack.house.gov/media/press-releases/cammack-delivers-more-42-million-rural-health-investments-north-central",
     "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-honors-five-inductees-florida-law-enforcement",
@@ -18,7 +19,6 @@
     "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-calls-immediate-house-vote-resolution-requiring",
     "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-host-veterans-town-hall-ocala-friday-congressman",
     "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-marion-county-first-responders-champion-answering",
-    "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-co-leads-freeze-disaster-assistance-act-deliver-35",
     "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-welcomes-fda-rule-modernizing-orange-juice-standard",
     "https://cammack.house.gov/media/press-releases/congresswoman-kat-cammack-secures-ten-amendments-house-passed-national-defense"
   ],
@@ -26,26 +26,35 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "Congresswoman Kat Cammack (FL-03) today announced that ten of her amendments were adopted in the National Defense Authorization Act for Fiscal Year 2027 (H.R. 8800), which passed the House by a vote of 216-214. The legislation authorizes a pay raise for every service member and now advances to the Senate.",
-      "reasoning": "Text shows active support for NDAA including service member pay raises, indicating position favoring military funding."
+      "reasoning": "Text shows strong support for NDAA and military pay raises, indicating position favoring more defense spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:19+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "Cammack helped craft and shepherd the Rural Health Transformation Program through committee, securing more than $200 million for Florida and delivering critical resources to rural communities across FL-03... as part of the Working Families Tax Cuts law.",
-      "reasoning": "Explicit involvement in advancing the Working Families Tax Cuts law demonstrates support for lower taxes."
+      "quote": "as part of the Working Families Tax Cuts law.",
+      "reasoning": "Mentions helping craft and advance tax cuts legislation, showing support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:19+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": -1.0,
-      "quote": "Congresswoman Kat Cammack (FL-03) today announced more than $42.2 million in Rural Health Transformation Program investments benefiting health care providers and communities across North Central Florida, following her work in Congress to help craft and advance the legislation that created the program.",
-      "reasoning": "Proudly claims credit for securing and delivering over $42 million in new federal rural health spending."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:19+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -53,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statements on trade policy, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:19+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -61,7 +73,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No mentions of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:19+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "more than $42.2 million in Rural Health Transformation Program investments benefiting health care providers and communities across North Central Florida, following her work in Congress to help craft and advance the legislation that created the program.",
+      "reasoning": "Describes crafting and securing government funding for rural health programs, indicating support for government action on healthcare.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:19+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "The House of Representatives today passed H.R. 7008, the Stop Insider Trading Act, by a vote of 232-198, prohibiting Members of Congress, their spouses, and dependent children from purchasing individual stocks issued by publicly traded companies.",
+      "reasoning": "Presided over and voted for congressional stock trading ban and called reform overdue, showing support for tighter limits on political money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:19+00:00"
     }
   ]
 }

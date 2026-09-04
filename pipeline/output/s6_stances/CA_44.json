@@ -3,7 +3,7 @@
   "district": 44,
   "bioguide_id": "B001300",
   "website": "https://barragan.house.gov",
-  "fetched_at": "2026-08-30T14:19:05+00:00",
+  "fetched_at": "2026-09-04T19:45:58+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall military or defense spending levels."
+      "reasoning": "No statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:58+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,23 +41,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on taxation policy."
+      "reasoning": "No statement on tax rates or taxation policy appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:58+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": -1.0,
-      "quote": "Maintaining the integrity of this vital safety net must be a national priority, as Social Security income is necessary for seniors no longer in the workforce.",
-      "reasoning": "Explicit defense of preserving Social Security, Medicare, and Medicaid spending against proposed cuts."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on the budget deficit or balancing the budget appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:58+00:00"
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.25,
-      "stated_score": -1.0,
-      "quote": "But for too long trade deals have benefited big business at the expense of U.S. workers and our environment. I will fight to ensure that trade agreements are transparent and reflect our national priorities.",
-      "reasoning": "Criticism of existing trade deals and call for worker- and environment-focused revisions indicates preference for managed rather than free trade."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Trade is discussed only in terms of making deals benefit workers, without a clear position on protectionism versus free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:58+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:58+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.85,
+      "stated_score": -1.0,
+      "quote": "I will fight to preserve and strengthen health care reforms that make quality, affordable health coverage accessible to all.",
+      "reasoning": "The text repeatedly endorses the ACA and government-led reforms to expand coverage and lower costs for seniors and others.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:58+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance, limits, or political spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:58+00:00"
     }
   ]
 }

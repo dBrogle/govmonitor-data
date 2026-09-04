@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "M001137",
   "website": "https://meeks.house.gov",
-  "fetched_at": "2026-08-30T14:31:39+00:00",
+  "fetched_at": "2026-09-04T19:56:53+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending levels appear in the text."
+      "reasoning": "No statements on military or defense spending levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:53+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Criticism of tax cuts exists but does not clearly state an overall position on taxation."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Extreme MAGA Republicans will stop at nothing to rob you of your access to care to pay for steep tax cuts for the nation\u2019s ultra-wealthy.",
+      "reasoning": "Text criticizes tax cuts for the wealthy in context of protecting healthcare programs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:53+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of spending bills occur without any explicit position on overall government spending."
+      "reasoning": "Mentions of spending bills occur without any explicit position on overall government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.15,
       "stated_score": 1.0,
       "quote": "SCOTUS Ruling on Trump\u2019s Illegal Tariffs",
-      "reasoning": "Labeling tariffs as illegal indicates opposition to protectionism in favor of free trade."
+      "reasoning": "Text refers to tariffs as illegal, indicating opposition to protectionist measures.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:53+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Foreign affairs content focuses on diplomacy and sanctions but contains no statements on foreign aid spending."
+      "reasoning": "No statements on foreign aid spending levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:53+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on budget deficits or balancing the budget appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:53+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Access to healthcare is a human right, not a privilege. Your zip code, color of your skin, or income should not determine the quality of care that you and your family receive. I have always been an advocate for access to quality healthcare in Congress and that starts with protecting access to the Affordable Care Act, to Medicare, and Medicaid\u2013as well as supporting our local community health centers and hospital systems.",
+      "reasoning": "Text repeatedly advocates protecting and expanding government healthcare programs like ACA, Medicare, and Medicaid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:53+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, political spending limits, or disclosure appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:53+00:00"
     }
   ]
 }

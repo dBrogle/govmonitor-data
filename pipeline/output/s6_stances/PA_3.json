@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "E000296",
   "website": "https://evans.house.gov/",
-  "fetched_at": "2026-08-30T14:34:22+00:00",
+  "fetched_at": "2026-09-04T19:59:34+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statement on military spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:34+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": 1.0,
-      "quote": "I am advocating for poverty-busting policies such as restoring expansions of the Child Tax Credit and the Low-Income Housing Credit. Moreover, I am fighting for the Earned Income Tax Credit, one of our biggest, most useful tools to reduce poverty and put hard-earned money back into workers\u2019 pockets.",
-      "reasoning": "Explicit advocacy for expanding tax credits that reduce tax burdens indicates support for lower taxes."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Text discusses specific tax credits but states no position on overall tax rates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:34+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.7,
       "stated_score": -1.0,
       "quote": "Addressing this crisis involves significant investments in our housing infrastructure and expanding fair housing protections.",
-      "reasoning": "Repeated calls for major new federal investments in housing, infrastructure, and health programs show support for increased government spending."
+      "reasoning": "Repeated calls for major new federal investments in housing, infrastructure, and health programs show support for increased government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy, tariffs, or free trade."
+      "reasoning": "No statement on trade policy or tariffs appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:34+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:34+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on deficit size or balancing the budget appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:34+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.85,
+      "stated_score": -1.0,
+      "quote": "Everyone has a right to affordable and accessible health care. That\u2019s why, since coming to Congress, I have fought alongside my Democratic colleagues to defend, strengthen, and expand the Affordable Care Act, Medicare, and Medicaid.",
+      "reasoning": "Text explicitly advocates government expansion of ACA, Medicare, and Medicaid plus drug price negotiation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:34+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance or political spending limits appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:59:34+00:00"
     }
   ]
 }

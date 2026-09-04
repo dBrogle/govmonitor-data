@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "P000614",
   "website": "https://pappas.house.gov",
-  "fetched_at": "2026-08-30T14:29:50+00:00",
+  "fetched_at": "2026-09-04T19:55:16+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -18,10 +18,10 @@
     "https://pappas.house.gov/issues/combating-opioid-epidemic",
     "https://pappas.house.gov/issues/transportation-infrastructure",
     "https://pappas.house.gov/media/press-releases",
+    "https://pappas.house.gov/media/press-releases/pappas-helps-pass-continuing-resolution",
     "https://pappas.house.gov/media/press-releases/pappas-helps-re-introduce-landmark-equality-act-1",
     "https://pappas.house.gov/media/press-releases/pappas-introduces-bill-to-stop-taxation-of-nh-remote-workers-income",
-    "https://pappas.house.gov/media/press-releases/pappas-helps-introduce-legislation-to-expand-and-improve-child-tax-credit",
-    "https://pappas.house.gov/media/press-releases/watch-pappas-speaks-in-opposition-to-republicans-proposal-to-gut-medicaid"
+    "https://pappas.house.gov/media/press-releases/pappas-helps-introduce-legislation-to-expand-and-improve-child-tax-credit"
   ],
   "stances": [
     {
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statement addresses overall military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:16+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.3,
+      "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "fight the online sales tax that is burdening New Hampshire\u2019s small businesses",
-      "reasoning": "Text explicitly opposes the online sales tax and introduces bill to stop taxation of remote workers' income, indicating support for lower taxes."
+      "quote": "which would provide a tax cut to 3.5 million working families with children by allowing them to begin receiving the Child Tax Credit (CTC) starting with the first dollar they earn.",
+      "reasoning": "Text explicitly supports tax cuts via the Stronger Start for Working Families Act and fighting the online sales tax.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:16+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "Every dollar we invest in infrastructure yields two dollars in economic activity, which is why I am proud to lead the fight for federal investment in New Hampshire\u2019s roads, bridges, and waterways",
-      "reasoning": "Multiple statements advocate for increased federal spending on infrastructure, health, education, and clean energy programs."
+      "reasoning": "Multiple statements advocate for increased federal spending on infrastructure, health, education, and clean energy programs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.25,
       "stated_score": 1.0,
-      "quote": "Pappas Slams Trump\u2019s Tariffs on Costs for Small Businesses and Housing Construction",
-      "reasoning": "Direct criticism of tariffs shows opposition to protectionist policies in favor of free trade."
+      "quote": "Pappas Slams Trump\u2019s Tariffs on Costs for Small Businesses and Housing Construction, Meets with Forest Products Industry Leaders",
+      "reasoning": "Text criticizes tariffs, indicating support for free trade over protectionism.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:16+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:16+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses the budget deficit or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:16+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "Health care should be a right, not a privilege, for all Americans. ... committed to ensuring that all Granite Staters receive quality, affordable health care. ... stabilizing and expanding the ACA as we work to lower the cost of health care for everyone.",
+      "reasoning": "Text repeatedly advocates government expansion of ACA, access, and cost-lowering measures rather than market-only approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:16+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:16+00:00"
     }
   ]
 }

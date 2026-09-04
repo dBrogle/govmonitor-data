@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "M001213",
   "website": "https://blakemoore.house.gov",
-  "fetched_at": "2026-08-30T14:38:16+00:00",
+  "fetched_at": "2026-09-04T20:04:19+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military or defense spending levels appears in the text."
+      "reasoning": "No clear statement on military spending levels in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:19+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.9,
+      "emphasis": 0.8,
       "stated_score": 1.0,
       "quote": "nothing is better for American industry and economic prosperity than tax cuts",
-      "reasoning": "The taxes page explicitly praises tax cuts under TCJA and opposes higher taxes."
+      "reasoning": "Explicitly praises tax cuts and TCJA for growth and keeping money with families.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:19+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Rather than taking more from American families to spend on wasteful and unnecessary big government wish list items and slush funds",
-      "reasoning": "Multiple pages criticize wasteful spending, deficits, and big-government programs while promoting fiscal restraint."
+      "reasoning": "Multiple pages criticize wasteful spending, deficits, and big-government programs while promoting fiscal restraint.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": 0.5,
-      "quote": "negotiating new and enforceable trade agreements that create new opportunities with allies... On one hand, this means leveraging tariffs in certain sectors like steel and aluminum",
-      "reasoning": "Trade page endorses both new free-trade agreements and targeted tariffs, yielding a mixed but not purely protectionist stance."
+      "emphasis": 0.5,
+      "stated_score": 0.7,
+      "quote": "committed to ensuring that U.S. trade policy helps Utah businesses find new opportunities in overseas markets for decades to come",
+      "reasoning": "Emphasizes new trade agreements and market access while noting limited tariffs against adversaries.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:19+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending levels appears in the text."
+      "reasoning": "No statement on foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:19+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "our modern debt culture of spending and deficit-fueled budgets has caused our debt to balloon",
+      "reasoning": "Criticizes deficit spending and highlights Debt & Deficit Task Force.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:19+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Instead of promoting egregious government control of prescription drug pricing... the Lower Costs, More Cures Act seeks to address pricing issues while ensuring a healthy competitive marketplace",
+      "reasoning": "Rejects government price controls in favor of market competition.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:19+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on political spending or campaign finance.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:19+00:00"
     }
   ]
 }

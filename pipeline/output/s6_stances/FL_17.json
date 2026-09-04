@@ -3,7 +3,7 @@
   "district": 17,
   "bioguide_id": "S001214",
   "website": "https://steube.house.gov/",
-  "fetched_at": "2026-08-30T14:21:26+00:00",
+  "fetched_at": "2026-09-04T19:46:29+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,23 +30,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on military or defense spending levels appears in the text."
+      "reasoning": "No verbatim statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:29+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "lower taxes, and promote investment in America. This includes making the Trump Tax Cuts permanent.",
-      "reasoning": "Text explicitly commits to lower taxes and making tax cuts permanent."
+      "quote": "committed to conservative leadership for a stronger economy that will support working families, lower taxes, and promote investment in America. This includes making the Trump Tax Cuts permanent.",
+      "reasoning": "Text explicitly endorses lower taxes and making prior tax cuts permanent.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:29+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.4,
-      "stated_score": 1.0,
-      "quote": "I oppose the Biden-Harris Administration\u2019s Electric Vehicle mandates and their wasteful taxpayer spending on EV charging infrastructure.",
-      "reasoning": "Text opposes specific wasteful government spending, indicating preference for less spending."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on deficit size or balancing the budget appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:29+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": 0.5,
       "stated_score": -1.0,
       "quote": "reintroduced The U.S. Citrus Protection Act, to prohibit the importation of commercially produced fresh citrus fruit originating from the People\u2019s Republic of China.",
-      "reasoning": "Text supports legislation prohibiting imports, showing protectionist stance."
+      "reasoning": "Text supports explicit import bans and protection for domestic producers.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:29+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statement on foreign aid spending appears in the text."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:29+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "fight the harmful effects of the ACA and to reform prescription drug standards... expand access to Health Savings Accounts (HSAs)",
+      "reasoning": "Text opposes ACA government expansion and promotes market tools like HSAs and charity-care deductions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:29+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on political spending limits or disclosure appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:29+00:00"
     }
   ]
 }

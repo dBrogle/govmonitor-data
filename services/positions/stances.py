@@ -45,17 +45,23 @@ SYSTEM_PROMPT = (
 )
 
 
-def build_user_prompt(member_text: str) -> str:
+def build_user_prompt(member_text: str, topics: list | None = None) -> str:
     lines = "\n".join(
         f"- {t.slug} ({t.name}): -1 = {t.minus_one_desc}; +1 = {t.plus_one_desc}"
-        for t in TOPICS
+        for t in (topics or TOPICS)
     )
     return f"TOPICS (scoring convention):\n{lines}\n\nMEMBER PUBLIC-STATEMENT TEXT:\n{member_text}"
 
 
-def score_stances(llm, member_text: str) -> list[StatedStance]:
-    """Return the member's stated stance per topic (structured, verbatim-quoted)."""
+def score_stances(llm, member_text: str, topics: list | None = None) -> list[StatedStance]:
+    """Return the member's stated stance per topic (structured, verbatim-quoted).
+
+    `topics` scopes the request to a subset — used when a topic is ADDED and only the new
+    ones need scoring. Re-scoring a topic the member already has is not free of consequence:
+    a fresh crawl of a member's press releases can legitimately move an existing stance a
+    long way (one member swung 66→39 in testing, see NOTES.md), so leaving settled topics
+    alone keeps existing truth scores stable when the topic set grows."""
     resp: StancesResponse = llm.structured_completion(
-        SYSTEM_PROMPT, build_user_prompt(member_text), StancesResponse
+        SYSTEM_PROMPT, build_user_prompt(member_text, topics), StancesResponse
     )
     return resp.stances

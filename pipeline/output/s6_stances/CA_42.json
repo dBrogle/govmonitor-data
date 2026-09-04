@@ -3,7 +3,7 @@
   "district": 42,
   "bioguide_id": "G000598",
   "website": "https://robertgarcia.house.gov",
-  "fetched_at": "2026-08-30T14:18:52+00:00",
+  "fetched_at": "2026-09-04T19:45:57+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No clear statement on US domestic military or defense spending levels."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "Today, I am voting yes on an amendment to block $3.3 billion in American taxpayer dollars for Benjamin Netanyahu and the Israeli military.",
+      "reasoning": "The statement explicitly supports blocking military financing spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,31 +41,65 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tax rates or policy."
+      "reasoning": "No clear position stated on taxation levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": -1.0,
-      "quote": "This $255 million investment, split between the federal government and the Port of Long Beach, will expand the port\u2019s main channel, strengthen America\u2019s supply chain, and reduce pollution from ships waiting to dock outside the harbor.",
-      "reasoning": "Explicit support for a major federal infrastructure investment indicates preference for more government spending."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on the budget deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
       "emphasis": 0.2,
       "stated_score": 1.0,
-      "quote": "I will continue working to secure supply chains against destructive tariffs, protect competition in the marketplace, expand access to capital, and safeguard the federal services and programs that so many small businesses rely on.",
-      "reasoning": "Opposition to tariffs as 'destructive' signals support for free trade."
+      "quote": "I will continue working to secure supply chains against destructive tariffs, protect competition in the marketplace",
+      "reasoning": "The statement explicitly opposes tariffs in favor of open competition.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     },
     {
       "topic_slug": "foreign_aid",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.4,
       "stated_score": 1.0,
       "quote": "Today, I am voting yes on an amendment to block $3.3 billion in American taxpayer dollars for Benjamin Netanyahu and the Israeli military.",
-      "reasoning": "Vote to withhold foreign military financing demonstrates preference for less foreign aid spending."
+      "reasoning": "The statement explicitly supports reducing foreign military aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": -1.0,
+      "quote": "Congress must pass Medicare for All to ensure our country finally achieves affordable, high quality medical coverage for all.",
+      "reasoning": "The statement explicitly endorses government-led expansion of coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim position stated despite issue title.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:57+00:00"
     }
   ]
 }

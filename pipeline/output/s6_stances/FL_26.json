@@ -3,7 +3,7 @@
   "district": 26,
   "bioguide_id": "D000600",
   "website": "https://mariodiazbalart.house.gov/",
-  "fetched_at": "2026-08-30T14:21:58+00:00",
+  "fetched_at": "2026-09-04T19:46:45+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,19 +26,25 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on increasing or decreasing military spending levels."
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": 1.0,
+      "quote": "The federal government's most important priority is to \"provide for the common defense\" and \"secure the blessings of liberty to ourselves and our posterity.\"",
+      "reasoning": "Text repeatedly highlights defense as top priority and his role chairing national security appropriations subcommittee while securing related funding.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:45+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.7,
       "stated_score": 1.0,
-      "quote": "I strongly believe that tax relief is an important step in securing a healthy economy and stimulating job growth. Tax relief helpes honest, hard-working people save more of their earnings while stimulating the country's economy. I support efforts to eliminate unfair taxes, such as the marriage penalty and the death tax.",
-      "reasoning": "Text explicitly endorses tax relief and eliminating taxes to promote growth."
+      "quote": "I strongly believe that tax relief is an important step in securing a healthy economy and stimulating job growth. Tax relief helpes honest, hard-working people save more of their earnings while stimulating the country's economy.",
+      "reasoning": "Dedicated tax relief page and multiple releases explicitly endorse tax cuts and relief to reduce burdens and spur growth.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:45+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Having served on the House Budget Committee, I strongly believe that Congress must adhere to the principles of fiscal discipline. Too often, hard-earned taxpayer dollars are wasted on fraudulent and duplicated federal programs. Congress must work to make these programs more efficient, or simply terminate them to ensure better results for beneficiaries and greater savings for taxpayers.",
-      "reasoning": "Text calls for fiscal discipline, terminating wasteful programs, and savings for taxpayers."
+      "reasoning": "Text calls for fiscal discipline, terminating wasteful programs, and savings for taxpayers.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy, tariffs, or free trade."
+      "reasoning": "No statements address tariffs, protectionism, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:45+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statements on foreign aid spending levels."
+      "reasoning": "No statements address levels of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:45+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "Having served on the House Budget Committee, I strongly believe that Congress must adhere to the principles of fiscal discipline. Too often, hard-earned taxpayer dollars are wasted on fraudulent and duplicated federal programs.",
+      "reasoning": "Fiscal responsibility section stresses discipline, efficiency, and terminating wasteful programs to save taxpayer money.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:45+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address healthcare costs, coverage, or government vs. market approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:45+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address campaign finance, limits, or political spending restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:45+00:00"
     }
   ]
 }

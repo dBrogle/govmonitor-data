@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "H001093",
   "website": "https://houchin.house.gov",
-  "fetched_at": "2026-08-30T14:24:32+00:00",
+  "fetched_at": "2026-09-04T19:50:00+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending."
+      "reasoning": "No statements on military or defense spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:00+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address taxation policy."
+      "reasoning": "No statements on taxation levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:00+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.25,
       "stated_score": 1.0,
       "quote": "\u201cDemocrats\u2019 reckless spending and refusal to negotiate got us into this mess. That\u2019s why House Republicans have been fighting for fiscal reforms and spending cuts on behalf of the American people.\u201d",
-      "reasoning": "The text explicitly advocates for spending cuts and fiscal reforms to reduce government spending."
+      "reasoning": "The text explicitly advocates for spending cuts and fiscal reforms to reduce government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address trade policy or tariffs."
+      "reasoning": "No statements on trade policy or tariffs appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:00+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements on foreign aid appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:00+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": 1.0,
+      "quote": "Democrats\u2019 reckless spending and refusal to negotiate got us into this mess. That\u2019s why House Republicans have been fighting for fiscal reforms and spending cuts on behalf of the American people.",
+      "reasoning": "The quote explicitly endorses spending cuts and fiscal reforms to address deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:00+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Health-related statements focus on narrow issues like rural hospital cybersecurity and organ transplants without addressing government vs. market approaches to affordability.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:00+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on political spending or campaign finance appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:50:00+00:00"
     }
   ]
 }

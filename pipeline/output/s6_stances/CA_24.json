@@ -3,7 +3,7 @@
   "district": 24,
   "bioguide_id": "C001112",
   "website": "https://carbajal.house.gov",
-  "fetched_at": "2026-08-30T14:17:58+00:00",
+  "fetched_at": "2026-09-04T19:45:44+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "I have also worked to secure various funding initiatives in the NDAA that support defense industries on the Central Coast, driving local economic growth and increasing job opportunities.",
-      "reasoning": "Text explicitly endorses securing defense funding and NDAA investments while serving on HASC."
+      "reasoning": "Text shows support for NDAA funding initiatives and strengthening national security as HASC member.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on tax rates or policy appear in the text."
+      "reasoning": "No clear position stated on tax rates or policy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
-      "topic_slug": "government_spending",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "cutting wasteful spending",
-      "reasoning": "Single explicit reference to cutting wasteful spending in NDAA context."
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of deficit or budget balancing.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade, tariffs, or free trade appear in the text."
+      "reasoning": "No statements on trade, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid appear in the text."
+      "reasoning": "No references to foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "I voted in support of the American Rescue Plan to temporarily lower premiums by an average of 40 percent for two years. As these cuts were set to expire, I then voted yes on the Inflation Reduction Act to extend these reductions to premiums through 2025.",
+      "reasoning": "Explicit support for ACA protections, premium subsidies, and public option via government legislation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No discussion of campaign finance or political spending limits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:44+00:00"
     }
   ]
 }

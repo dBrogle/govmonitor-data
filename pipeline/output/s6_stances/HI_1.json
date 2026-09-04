@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "C001055",
   "website": "https://case.house.gov/",
-  "fetched_at": "2026-08-30T14:22:50+00:00",
+  "fetched_at": "2026-09-04T19:47:20+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military spending levels appears in the text."
+      "reasoning": "No clear position stated on military spending levels in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:20+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on tax rates or policy appears in the text."
+      "reasoning": "No clear position stated on tax rates in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:20+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.7,
       "stated_score": -1.0,
       "quote": "both of which I strongly supported, were enacted in the 117th Congress (2021-2023). The Inflation Reduction Act (IRA) is the largest climate/energy-related investment in our history. ... The other bill, the Bipartisan Infrastructure Law (also known as the BIL or Infrastructure Investment and Jobs Act) is the largest reinvestment in our country\u2019s infrastructure in generations.",
-      "reasoning": "Text explicitly states strong support for two major spending and investment bills."
+      "reasoning": "Text explicitly states strong support for two major spending and investment bills.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "The Noncontiguous Shipping Relief Act, which exempts noncontiguous regions (not part of the continent) from the Jones Act; the Noncontiguous Shipping Reasonable Rate Act, which caps domestic shipping rates to within 10% of international benchmarks; and the Noncontiguous Shipping Competition Act, which allows noncontiguous regions to invite non-Jones Act vessels to restore competition",
-      "reasoning": "Text details bills to exempt Hawaii from Jones Act protections and restore international competition."
+      "quote": "The Noncontiguous Shipping Relief Act, which exempts noncontiguous regions (not part of the continent) from the Jones Act;",
+      "reasoning": "Text explicitly advocates exempting Hawaii from Jones Act restrictions to increase competition and lower shipping costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:20+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending appears in the text."
+      "reasoning": "No clear position stated on foreign aid spending in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:20+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on deficit reduction versus accepting larger deficits in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:20+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "protecting and improving the Affordable Care Act, lowering prescription drug prices and increasing investments in biomedical research.",
+      "reasoning": "Text supports government-led measures including ACA protections and drug price interventions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:20+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position stated on political spending limits in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:47:20+00:00"
     }
   ]
 }

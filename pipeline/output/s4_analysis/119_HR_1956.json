@@ -2,14 +2,27 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "1956",
-  "summary": null,
+  "summary": "The bill amends 37 U.S.C. 403(b)(3) to set monthly basic allowance for housing inside the United States at the full cost of adequate housing in each area, as determined by the Secretary of Defense for each pay grade and dependency status.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill directly increases the basic allowance for housing (BAH) for members of the uniformed services, which is a component of military compensation and thus military spending. The entire bill is dedicated to this increase.",
       "topic_slug": "military_defense",
       "topic_name": "Military & Defense Spending",
-      "score": 0.8
+      "score": 0.8,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "topic_slug": "foreign_aid",
+      "topic_name": "Foreign Aid",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:02:09+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

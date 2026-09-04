@@ -3,7 +3,7 @@
   "district": 8,
   "bioguide_id": "R000606",
   "website": "https://raskin.house.gov",
-  "fetched_at": "2026-08-30T14:26:45+00:00",
+  "fetched_at": "2026-09-04T19:52:04+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -29,7 +29,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses military or defense spending levels."
+      "reasoning": "No mention of military or defense spending in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:04+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -37,7 +40,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses taxation policy or rates."
+      "reasoning": "No mention of taxes or tax policy in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:04+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -45,7 +51,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses overall government spending levels."
+      "reasoning": "No text addresses overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -53,7 +61,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses trade policy or tariffs."
+      "reasoning": "No mention of trade policy or tariffs in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:04+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -61,7 +72,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No text addresses foreign aid spending."
+      "reasoning": "No mention of foreign aid spending in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:04+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of budget deficit or balancing the budget in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:04+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.25,
+      "stated_score": -1.0,
+      "quote": "Congress provided AHRQ with $345.38 million in funding as part of the Fiscal Year 2026 Consolidated Appropriations Act, reflecting bipartisan support for the agency\u2019s work to improve health care access, affordability, and quality.",
+      "reasoning": "Text supports continued government funding for health research to improve affordability and access.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:04+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Title mentions campaign finance loophole but no verbatim position statement in provided text body.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:04+00:00"
     }
   ]
 }

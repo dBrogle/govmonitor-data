@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "K000403",
   "website": "https://mikekennedy.house.gov/",
-  "fetched_at": "2026-08-30T14:38:26+00:00",
+  "fetched_at": "2026-09-04T20:04:28+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on military or defense spending levels appear in the text."
+      "reasoning": "No verbatim statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:28+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "Mentions of a 'tax code that punishes work' criticize the status quo but do not state a clear position on raising or lowering taxes."
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "Burdensome regulations, runaway spending, and a tax code that punishes work and investment have made it harder for families to get ahead and for small businesses to compete.",
+      "reasoning": "The text criticizes the tax code for punishing work and investment, indicating support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:28+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "See how Dr. Mike is working to rein in our out-of-control budget and deficit.",
-      "reasoning": "Text repeatedly criticizes 'runaway spending' and calls for reining in the budget and deficit, indicating support for less government spending."
+      "reasoning": "Text repeatedly criticizes 'runaway spending' and calls for reining in the budget and deficit, indicating support for less government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "H-1B visa reform language addresses worker protection but does not state a position on tariffs or free trade."
+      "reasoning": "No verbatim statement on tariffs or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:28+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the text."
+      "reasoning": "No verbatim statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:28+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "See how Dr. Mike is working to rein in our out-of-control budget and deficit.",
+      "reasoning": "The text explicitly states intent to rein in the budget and deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:28+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "I'm leading legislation to put patients back in charge through price transparency and expanded health savings accounts, and to stop the insurance-driven prior authorization requests and mandated step therapies that delay critical care.",
+      "reasoning": "The text advocates patient-driven solutions like price transparency and HSAs over government mandates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:28+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on limits or disclosure for political money appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:28+00:00"
     }
   ]
 }

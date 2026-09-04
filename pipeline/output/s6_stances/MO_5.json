@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "C001061",
   "website": "https://cleaver.house.gov",
-  "fetched_at": "2026-08-30T14:28:29+00:00",
+  "fetched_at": "2026-09-04T19:53:36+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,18 +27,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.35,
       "stated_score": 1.0,
       "quote": "I strongly believe funding for the military is imperative, and supporting our troops at home and abroad is fundamental.",
-      "reasoning": "Text explicitly endorses military funding as imperative."
+      "reasoning": "The text explicitly endorses strong military funding as imperative.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:36+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": -1.0,
-      "quote": "We must put forth a budget which does not provide for tax breaks for the wealthy and big business on the backs of hard working American families and our most vulnerable communities.",
-      "reasoning": "Explicit opposition to tax breaks indicates preference against lower taxes."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No clear position on tax rates is stated in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:36+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "I remain committed to responsibly reducing the deficit, but not at the cost of critical programs that support our most vulnerable communities.",
-      "reasoning": "Rejects cuts to programs while favoring investments, indicating preference for more spending."
+      "reasoning": "Rejects cuts to programs while favoring investments, indicating preference for more spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": -1.0,
-      "quote": "Today, U.S. Representative Emanuel Cleaver, II (D-MO) urged the Trump Administration to reverse course on its plan to import 300,000 metric tons of foreign beef over the next 90 days.",
-      "reasoning": "Opposition to increased foreign beef imports signals protectionist stance."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Text contains conflicting signals on trade without a consistent position.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:36+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions vote on foreign aid amendment but provides no explicit position statement."
+      "reasoning": "No explicit stance on foreign aid spending levels is provided.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:36+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.45,
+      "stated_score": 1.0,
+      "quote": "I remain committed to responsibly reducing the deficit, but not at the cost of critical programs that support our most vulnerable communities.",
+      "reasoning": "The text states a commitment to reducing the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:36+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Because of healthcare reform, millions of seniors are getting free preventive services, children are not being denied coverage, and young adults are covered under their parents' plan.",
+      "reasoning": "The text strongly praises the ACA and government-led expansions like Medicaid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:36+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits on political spending or money in politics.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:53:36+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 1,
   "bioguide_id": "S001213",
   "website": "https://steil.house.gov",
-  "fetched_at": "2026-08-30T14:39:47+00:00",
+  "fetched_at": "2026-09-04T20:05:36+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address military or defense spending levels."
+      "reasoning": "No statement addresses military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:36+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.4,
+      "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "we must protect good paying jobs by keeping the government's hands off of small businesses and maintaining tax and regulatory relief.",
-      "reasoning": "Explicit support for tax relief indicates preference for lower taxes."
+      "quote": "maintaining tax and regulatory relief",
+      "reasoning": "Text explicitly calls for maintaining tax relief to protect jobs and reduce government interference.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:36+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "Washington has a spending problem and we must act to restore fiscal responsibility.",
-      "reasoning": "Repeated emphasis on fiscal responsibility and spending problem shows clear stance for less spending."
+      "reasoning": "Repeated emphasis on fiscal responsibility and spending problem shows clear stance for less spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
       "emphasis": 0.3,
       "stated_score": 1.0,
-      "quote": "I strongly supported the United States-Mexico-Canada Trade Agreement (USMCA) and worked to get it passed and signed into law. USMCA increases dairy farmers' access to Canada's markets, creates a level playing field for American agricultural exports",
-      "reasoning": "Strong endorsement of USMCA demonstrates support for free trade agreements."
+      "quote": "I strongly supported the United States-Mexico-Canada Trade Agreement (USMCA)",
+      "reasoning": "Text endorses USMCA as increasing market access for exports, indicating support for free trade agreements.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:36+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements directly address foreign aid spending levels."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:36+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": 1.0,
+      "quote": "Washington has a spending problem and we must act to restore fiscal responsibility.",
+      "reasoning": "Text repeatedly frames national debt as a spending problem requiring fiscal responsibility and balanced budgets.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:36+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "We can't afford to have Washington bureaucrats and the federal government dictating individual health care needs.",
+      "reasoning": "Text opposes government dictation of health care and favors patient/doctor decisions to drive down costs via market mechanisms.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:36+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "House Passes Steil's Congressional Stock Trading Ban",
+      "reasoning": "Text highlights introduction and passage of legislation banning congressional stock trading, indicating support for tighter restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:05:36+00:00"
     }
   ]
 }

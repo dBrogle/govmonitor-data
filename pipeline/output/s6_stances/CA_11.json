@@ -3,7 +3,7 @@
   "district": 11,
   "bioguide_id": "P000197",
   "website": "https://pelosi.house.gov/",
-  "fetched_at": "2026-08-30T14:17:07+00:00",
+  "fetched_at": "2026-09-04T19:45:25+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels."
+      "reasoning": "No verbatim statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,15 +41,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on general taxation policy or rates."
+      "reasoning": "No verbatim statement on overall tax rates or policy direction appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Celebrates specific spending bills but no explicit position on overall government spending."
+      "reasoning": "No verbatim statement on deficit size or balancing the budget appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of trade policy, tariffs, or free trade."
+      "reasoning": "No verbatim statement on tariffs, protectionism, or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions U.S. support for Ukraine/Taiwan but no position on foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.9,
+      "stated_score": -1.0,
+      "quote": "House Democrats have also taken bold action to slash the cost of prescription drugs. The Inflation Reduction Act empowers the Secretary of Health and Human Services to directly negotiate prices with drug companies, creates a $2,000 out-of-pocket limit on drug costs for Medicare beneficiaries, caps insulin costs at $35 per month for Medicare beneficiaries and provides free vaccines for seniors.",
+      "reasoning": "Text repeatedly endorses government negotiation and price caps to expand coverage and lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": -1.0,
+      "quote": "Congress must act swiftly to get rid of unlimited, undisclosed spending by corporations and billionaires, reduce the power and influence of special interests in Washington and protect the right to vote for every American.",
+      "reasoning": "Text explicitly calls for tighter limits and disclosure on political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:25+00:00"
     }
   ]
 }

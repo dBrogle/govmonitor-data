@@ -3,7 +3,7 @@
   "district": 7,
   "bioguide_id": "B001321",
   "website": "https://barrett.house.gov/",
-  "fetched_at": "2026-08-30T14:27:23+00:00",
+  "fetched_at": "2026-09-04T19:52:50+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -16,9 +16,9 @@
     "https://barrett.house.gov/media/press-releases/barrett-hosts-fifth-interactive-town-hall-14700-participants-across-mid",
     "https://barrett.house.gov/media/press-releases/barrett-introduces-bills-protect-local-communities-data-center-overreach",
     "https://barrett.house.gov/media/press-releases/barrett-hears-about-agriculture-education-and-transportation-during-week",
-    "https://barrett.house.gov/media/press-releases/barrett-joins-army-secretary-michigan-officials-northern-strike-military",
     "https://barrett.house.gov/media/press-releases/barrett-welcomes-secretary-duffy-mid-michigan-meet-transportation-leaders",
     "https://barrett.house.gov/media/press-releases/barrett-meets-workers-community-leaders-packed-week-traveling-mid-michigan",
+    "https://barrett.house.gov/media/press-releases/barrett-helps-introduce-bipartisan-bill-protect-patients-ai-insurance-denials",
     "https://barrett.house.gov/media/press-releases/barrett-hosts-energy-roundtable-highlight-work-expand-energy-production-lower",
     "https://barrett.house.gov/media/press-releases/barrett-finishes-full-week-engaging-constituents-across-mid-michigan-including",
     "https://barrett.house.gov/media/press-releases/barrett-meets-mid-michigan-farmers-discuss-trade-joins-effort-strengthen-usmca"
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels."
+      "reasoning": "No verbatim statement on overall military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:50+00:00"
     },
     {
       "topic_slug": "taxation",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No verbatim statement on tax rates or policy."
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": 1.0,
+      "quote": "highlighted how the no tax on overtime provision and federal investments in local infrastructure are supporting their industry",
+      "reasoning": "Explicit support for the no-tax-on-overtime policy indicates a position favoring lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:50+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on overall government spending levels."
+      "reasoning": "No verbatim statement on overall government spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions 'free and fair agricultural trade' but lacks explicit position statement on protectionism vs. free trade."
+      "reasoning": "Mentions a roundtable on free and fair agricultural trade but provides no explicit personal position statement.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:50+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on foreign aid spending."
+      "reasoning": "No verbatim statement on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:50+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:50+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Bill on AI insurance decisions addresses transparency but does not state a position on costs, coverage expansion, or market vs. government approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:50+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No verbatim statement on political spending limits or disclosure.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:50+00:00"
     }
   ]
 }

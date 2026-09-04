@@ -3,7 +3,7 @@
   "district": 9,
   "bioguide_id": "G000565",
   "website": "https://gosar.house.gov/",
-  "fetched_at": "2026-08-30T14:16:47+00:00",
+  "fetched_at": "2026-09-04T19:45:29+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,27 +26,36 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": false,
-      "emphasis": null,
-      "stated_score": null,
-      "quote": null,
-      "reasoning": "No explicit statement on increasing or decreasing military or defense spending."
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "As a constitutionalist, I believe that our nation's security from all threats, both foreign and domestic, is the government's core responsibility.",
+      "reasoning": "Text explicitly frames national security and defense as government's core responsibility and praises a defense readiness act.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:29+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.6,
+      "emphasis": 0.5,
       "stated_score": 1.0,
       "quote": "America\u2019s problem is not that we tax too little, but that we spend far too much. I will not vote to increase taxes.",
-      "reasoning": "Explicit opposition to tax increases indicates support for lower taxes."
+      "reasoning": "Text directly states opposition to tax increases and attributes problems to spending rather than insufficient taxation.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:29+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.5,
       "stated_score": 1.0,
-      "quote": "America\u2019s problem is not that we tax too little, but that we spend far too much. I will not vote to increase taxes.",
-      "reasoning": "Direct statement that spending is excessive indicates preference for reduced government spending."
+      "quote": "Spending Cuts and Debt Admiral Mike Mullen, former Chairman of the Joint Chiefs of Staff, stated that the national debt is the biggest threat to our national security.",
+      "reasoning": "Text identifies national debt as top security threat and commits to spending cuts and no tax increases.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:29+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit position stated on tariffs, protectionism, or free trade."
+      "reasoning": "No statements on tariffs, protectionism, or free trade appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:29+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on foreign aid spending levels."
+      "reasoning": "No statements on foreign aid spending levels appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:29+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "America needs health care reform to lower costs, increase access, and enhance patient choice, and as your Congressman, I am committed to reform that is both patient-centered and market-based.",
+      "reasoning": "Text explicitly endorses market-based, patient-centered reform and opposes the ACA's government mandates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:29+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance limits or political spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:29+00:00"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "C001137",
   "website": "https://crank.house.gov/",
-  "fetched_at": "2026-08-30T14:19:47+00:00",
+  "fetched_at": "2026-09-04T19:46:11+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -16,37 +16,46 @@
     "https://crank.house.gov/issues/veterans",
     "https://crank.house.gov/issues/education",
     "https://crank.house.gov/media/press-releases",
-    "https://crank.house.gov/media/press-releases/rep-crank-votes-fully-fund-ice-and-border-patrol",
     "https://crank.house.gov/media/press-releases/rep-crank-votes-advance-reconciliation-30-process",
+    "https://crank.house.gov/media/press-releases/icymi-rep-cranks-resolution-condemn-socialism-all-its-forms",
+    "https://crank.house.gov/media/press-releases/breaking-house-adopts-rep-cranks-resolution-condemn-socialism",
     "https://crank.house.gov/media/press-releases/rep-crank-introduces-resolution-condemn-socialism-all-its-forms",
-    "https://crank.house.gov/media/press-releases/rep-crank-joins-chairman-westerman-hot-springs-national-park-support",
-    "https://crank.house.gov/media/press-releases/rep-crank-votes-advance-ndaa-package-include-pay-raise-servicemembers",
+    "https://crank.house.gov/media/press-releases/reps-crank-and-evans-join-secretary-wright-tour-ray-d-nixon-power-plant",
     "https://crank.house.gov/media/press-releases/ndaa-passes-house-rep-crank-secures-critical-investments-el-paso-county"
   ],
   "stances": [
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.85,
+      "emphasis": 0.7,
       "stated_score": 1.0,
       "quote": "The budget resolution provides the framework needed for Congress to advance legislation that strengthens our national defense... $60 billion to provide funding for operational costs, military pay and readiness, and munitions investment, to support our service members and ensure the U.S. military remains the most lethal fighting force across the globe.",
-      "reasoning": "Multiple statements explicitly endorse increased defense funding and NDAA investments."
+      "reasoning": "Text explicitly supports increased defense funding and resources for military readiness.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:11+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "This past year alone, President Trump and his Administration have worked with House Republicans to pass the largest tax cut in American history, to overturn burdensome Biden-Era regulations, secure our American elections and borders, deliver lower costs, and more.",
-      "reasoning": "Praises the largest tax cut as a positive achievement."
+      "quote": "This past year alone, President Trump and his Administration have worked with House Republicans to pass the largest tax cut in American history",
+      "reasoning": "Text praises the largest tax cut, indicating support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:11+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
-      "emphasis": 0.55,
-      "stated_score": 0.8,
-      "quote": "This package saves the taxpayer a whopping $18.5 billion. This is a win for all Americans, and invests in domestic energy production, ensuring affordable energy and creating jobs across the country.",
-      "reasoning": "Explicitly highlights major spending reductions via reconciliation while supporting targeted funding."
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "This package saves the taxpayer a whopping $18.5 billion. This is a win for all Americans",
+      "reasoning": "Text highlights saving $18.5 billion as a positive outcome from the reconciliation package.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:11+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +63,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address tariffs, protectionism, or free trade."
+      "reasoning": "No statements on trade policy or tariffs appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:11+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +74,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending."
+      "reasoning": "No statements on foreign aid spending appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:11+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.6,
+      "stated_score": 1.0,
+      "quote": "The Lower Health Care Premiums for All Americans Act offers solutions to lower premium costs, expand access to quality care, provide every American with more options and flexibility to choose coverage that works for them, and bring greater transparency to America's health care system.",
+      "reasoning": "Text supports market-based reforms and voted against ACA subsidy extensions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:11+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending limits appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:46:11+00:00"
     }
   ]
 }

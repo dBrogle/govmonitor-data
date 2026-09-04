@@ -3,7 +3,7 @@
   "district": 12,
   "bioguide_id": "L000602",
   "website": "https://summerlee.house.gov",
-  "fetched_at": "2026-08-30T14:34:43+00:00",
+  "fetched_at": "2026-09-04T20:00:23+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -21,7 +21,7 @@
     "https://summerlee.house.gov/newsroom",
     "https://summerlee.house.gov/newsroom/press-kit",
     "https://summerlee.house.gov/newsroom/press-releases",
-    "https://summerlee.house.gov/newsroom/press-releases/rep-summer-lee-joins-pennsylvania-democratic-delegation-in-condemning-us-v-mciver-ruling"
+    "https://summerlee.house.gov/newsroom/press-releases/reps-lee-hayes-introduce-bill-to-provide-free-school-supplies-to-school-districts"
   ],
   "stances": [
     {
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of military or defense spending in the provided text."
+      "reasoning": "No mention of military or defense spending in the provided text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:23+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.2,
+      "emphasis": 0.4,
       "stated_score": -1.0,
-      "quote": "cracking down on corporate price-gouging, ending tax breaks for billionaires and giant corporations",
-      "reasoning": "Text explicitly calls for ending tax breaks for billionaires and corporations, indicating support for higher taxes."
+      "quote": "cracking down on corporate price-gouging, ending tax breaks for billionaires and giant corporations, and holding polluters accountable",
+      "reasoning": "Text explicitly calls for ending tax breaks for billionaires and corporations, indicating support for higher effective taxation on the wealthy.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:23+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.7,
       "stated_score": -1.0,
       "quote": "Congresswoman Summer L. Lee (PA-12) voted YES on the House minibus funding package, advancing millions of federal dollars she secured for critical investments in Western Pennsylvania... rejects the most extreme, right-wing budget cuts",
-      "reasoning": "Multiple statements celebrate securing federal funding and reject budget cuts across housing, infrastructure, health, and environmental projects."
+      "reasoning": "Multiple statements celebrate securing federal funding and reject budget cuts across housing, infrastructure, health, and environmental projects.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of trade policy, tariffs, or free trade in the provided text."
+      "reasoning": "No references to trade policy, tariffs, or free trade in the provided statements.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:23+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid spending in the provided text."
+      "reasoning": "The text contains no discussion of foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:23+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements addressing the budget deficit or balancing the budget appear in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:23+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": -1.0,
+      "quote": "Our healthcare system is fundamentally broken. Medicare For All wouldn\u2019t just save money, it would save lives. Medicare for All would eliminate fees and expand coverage, which means no one has to live in fear of bankruptcy in the event of a medical emergency or even just seeking preventative care.",
+      "reasoning": "Text strongly advocates Medicare for All as government-led expansion of coverage and cost elimination, rejecting market-driven approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:23+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Our political system has been hijacked by billionaires and corporate interests who legally pour unlimited amounts of money into elections to protect their power and profits. ... That\u2019s why I\u2019ve introduced legislation to take on the corrupting power of big money in our politics",
+      "reasoning": "Multiple sections detail opposition to unlimited political spending by billionaires and corporations, with calls for campaign finance reform and ending Citizens United.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:00:23+00:00"
     }
   ]
 }

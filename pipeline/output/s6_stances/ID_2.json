@@ -3,7 +3,7 @@
   "district": 2,
   "bioguide_id": "S001148",
   "website": "https://simpson.house.gov",
-  "fetched_at": "2026-08-30T14:23:16+00:00",
+  "fetched_at": "2026-09-04T19:48:00+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -27,18 +27,24 @@
     {
       "topic_slug": "military_defense",
       "addressed": true,
-      "emphasis": 0.7,
+      "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "Since coming to Congress, I have been fully committed to ensuring the needs of our men and women in the military are met and that the federal government\u2019s commitments are fulfilled.",
-      "reasoning": "Text explicitly commits to meeting military needs and funding projects, indicating support for more spending."
+      "quote": "I have been fully committed to ensuring the needs of our men and women in the military are met and that the federal government\u2019s commitments are fulfilled.",
+      "reasoning": "Text explicitly commits to meeting military needs and funding requests, indicating support for more spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:00+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.6,
       "stated_score": 1.0,
-      "quote": "I will continue to support efforts to empower Americans, not the government, by reducing tax burdens on American families",
-      "reasoning": "Text directly advocates reducing tax burdens, showing preference for lower taxes."
+      "quote": "reducing tax burdens on American families",
+      "reasoning": "Explicit call to reduce tax burdens shows preference for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:00+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "The American people have made it clear that growing government and saddling our children and grandchildren with debt are unacceptable.",
-      "reasoning": "Text rejects growing government and debt, favoring less spending."
+      "reasoning": "Text rejects growing government and debt, favoring less spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position on protectionism versus free trade is stated."
+      "reasoning": "Mentions trade agreements without stating protectionist or free-trade preference.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:00+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements address foreign aid spending levels."
+      "reasoning": "No statements address foreign aid spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:00+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.7,
+      "stated_score": 1.0,
+      "quote": "growing government and saddling our children and grandchildren with debt are unacceptable",
+      "reasoning": "Rejects debt accumulation and endorses fiscal responsibility, favoring deficit reduction.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:00+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Criticizes government healthcare reforms but lacks explicit position on market vs. government action.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:00+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:48:00+00:00"
     }
   ]
 }

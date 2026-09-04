@@ -3,7 +3,7 @@
   "district": 8,
   "bioguide_id": "B001292",
   "website": "https://beyer.house.gov",
-  "fetched_at": "2026-08-30T14:38:48+00:00",
+  "fetched_at": "2026-09-04T20:04:46+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -26,11 +26,14 @@
   "stances": [
     {
       "topic_slug": "military_defense",
-      "addressed": true,
-      "emphasis": 0.6,
-      "stated_score": 0.5,
-      "quote": "We must maintain a national defense that keeps American citizens and our allies safe.",
-      "reasoning": "Text supports maintaining strong national defense while criticizing some nuclear spending as unnecessary."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Text supports maintaining defense and arms control but does not state a clear position on overall military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:46+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": 0.4,
       "stated_score": -1.0,
       "quote": "asking the wealthy and large corporations to pay their fair share in taxes to finance further investments in American workers and infrastructure.",
-      "reasoning": "Explicit call for higher taxes on wealthy and corporations."
+      "reasoning": "Explicit call for higher taxes on wealthy and corporations to fund priorities.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:46+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,23 +52,64 @@
       "emphasis": 0.5,
       "stated_score": -1.0,
       "quote": "helped along by critical investments in the economy like the Inflation Reduction Act, the Infrastructure Investment and Jobs Act, and the CHIPS and Science Act.",
-      "reasoning": "Strong endorsement of major new federal spending and investments."
+      "reasoning": "Strong endorsement of major new federal spending and investments.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "Beyer Denounces Trump\u2019s Idiotic Trade Attack On Canada",
-      "reasoning": "Direct opposition to protectionist trade measures."
-    },
-    {
-      "topic_slug": "foreign_aid",
       "addressed": false,
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statements on trade policy, tariffs, or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:46+00:00"
+    },
+    {
+      "topic_slug": "foreign_aid",
+      "addressed": true,
+      "emphasis": 0.2,
+      "stated_score": -1.0,
+      "quote": "Beyer Leads Special Orders Highlighting Urgent Need to Restore USAID",
+      "reasoning": "Advocates restoring USAID funding, indicating support for more foreign aid.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:46+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No mention of deficit reduction or acceptance of larger deficits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:46+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": -1.0,
+      "quote": "All American families should have access to affordable, quality healthcare. ... I continue fighting to protect these important achievements, and to protect and expand Virginians' access to health care.",
+      "reasoning": "Strong support for government-led expansions like ACA and Medicaid to improve affordability and coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:46+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance, limits, or political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:04:46+00:00"
     }
   ]
 }

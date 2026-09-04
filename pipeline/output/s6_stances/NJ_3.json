@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "C001136",
   "website": "https://conaway.house.gov/",
-  "fetched_at": "2026-08-30T14:30:16+00:00",
+  "fetched_at": "2026-09-04T19:55:29+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on military or defense spending levels appears in the text."
+      "reasoning": "No statement on military or defense spending levels appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:29+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.25,
+      "emphasis": 0.2,
       "stated_score": 1.0,
       "quote": "He supports initiatives to limit the impact that rising energy costs and regulatory and tax burdens have on small businesses.",
-      "reasoning": "The text explicitly supports reducing tax burdens on small businesses."
+      "reasoning": "Text explicitly supports limiting tax burdens on small businesses.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:29+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.3,
       "stated_score": -1.0,
       "quote": "I am proud to have secured over $12 million in federal funding that I know will help meet long overdue community needs in New Jersey's 3rd District.",
-      "reasoning": "The text proudly highlights securing substantial federal community project funding."
+      "reasoning": "The text proudly highlights securing substantial federal community project funding.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
-      "addressed": true,
-      "emphasis": 0.2,
-      "stated_score": 1.0,
-      "quote": "Small firms also need assistance from Congress to secure better financing for capital purchases, obtain world-class training and development programs, and open doors to sell their products and services around the globe.",
-      "reasoning": "The text advocates assisting small firms with global sales opportunities."
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on trade policy, tariffs, or free trade appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:29+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No mention of foreign aid appears in the provided statements."
+      "reasoning": "No statement on foreign aid spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:29+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on deficit size or balancing the budget appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:29+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "No matter your ZIP code, every American should have access to high-quality, affordable health care.",
+      "reasoning": "Text repeatedly advocates government-backed access, coverage expansion, and criticizes cuts to Medicaid and ACA credits.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:29+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement on campaign finance limits or political spending appears in the text.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:55:29+00:00"
     }
   ]
 }

@@ -17,6 +17,7 @@ FINANCE_DIR = Path(__file__).parent.parent / "output" / "s2_finance"
 BILLS_DIR = Path(__file__).parent.parent / "output" / "s3_bills"
 ANALYSIS_DIR = Path(__file__).parent.parent / "output" / "s4_analysis"
 STANCES_DIR = Path(__file__).parent.parent / "output" / "s6_stances"
+BIPARTISAN_DIR = Path(__file__).parent.parent / "output" / "s7_bipartisanship"
 VOTE_MEMBERS_CACHE = CACHE_DIR / "vote_members"
 
 CONGRESS_URL = "https://www.congress.gov/bill/{congress}th-congress/{path}/{number}"
@@ -39,10 +40,13 @@ WEIGHT_COSPONSOR = 0.4
 # Tunable — raise for a more conservative (more-evidence-required) scale.
 K_SHRINKAGE = 1.0
 
-# Topics folded into another for the v1 topic set. National debt is treated as part of
-# government spending — the same left/right axis (more spending / deficit tolerance = −1,
-# restraint = +1) — so a bill's national_debt score contributes to government_spending.
-TOPIC_ALIASES = {"national_debt": "government_spending"}
+# Retired topic slugs folded into a live one. Currently EMPTY on purpose: `government_spending`
+# and `national_debt` were replaced by `budget_deficit`, and their cached scores are deliberately
+# NOT aliased forward — the model reasoned about spending *levels* on those axes, so reusing the
+# numbers under a deficit label would claim a judgement it never made. Those scores are simply
+# ignored (unknown slug) and the bills were re-scored on the new axis instead. Add an entry here
+# only when a rename genuinely preserves the meaning of the axis.
+TOPIC_ALIASES: dict[str, str] = {}
 
 
 def _load_vote_questions() -> dict[tuple[int, int], str]:
@@ -441,6 +445,10 @@ def run(candidates: list[dict], config: dict, *, force: bool = False):
                 _slim_bill_ref(b)
                 for b in member_data.get("cosponsored_bills", [])
             ],
+            # Cross-party voting/cosponsorship rates (s7). Its own block, not an alignment
+            # topic: it's a statistical rate, not an LLM-scored left/right axis, and it has no
+            # stated-stance counterpart so it never feeds the truth score.
+            "bipartisanship": _load_json(BIPARTISAN_DIR / f"{state}_{district}.json"),
             "finance": finance_data,
         }
 

@@ -3,7 +3,7 @@
   "district": 3,
   "bioguide_id": "V000135",
   "website": "https://vanorden.house.gov",
-  "fetched_at": "2026-08-30T14:39:51+00:00",
+  "fetched_at": "2026-09-04T20:06:09+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No explicit statement on military or defense spending levels appears in the text."
+      "reasoning": "No explicit statement on military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:09+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
       "emphasis": 0.4,
       "stated_score": 1.0,
-      "quote": "Social Security tax reductions for seniors in President Donald Trump\u2019s One Big Beautiful Bill Act would have extended long beyond 2028 were it not for Senate Democrats.",
-      "reasoning": "Text explicitly endorses tax reductions for seniors and touts tax cut benefits."
+      "quote": "Van Orden touts tax deduction benefits for seniors U.S. Rep. Derrick Van Orden says Social Security tax reductions for seniors in President Donald Trump\u2019s One Big Beautiful Bill Act would have extended long beyond 2028 were it not for Senate Democrats.",
+      "reasoning": "Text repeatedly praises tax reductions and deductions for seniors and criticizes increased tax rates.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:09+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.35,
       "stated_score": 1.0,
       "quote": "The broken budget process in Washington has made it incredibly difficult to identify areas of wasteful and duplicative spending.",
-      "reasoning": "Text criticizes wasteful spending and calls for responsible stewardship of taxpayer dollars."
+      "reasoning": "Text criticizes wasteful spending and calls for responsible stewardship of taxpayer dollars.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of trade priorities lack any explicit stance on free trade versus protectionism."
+      "reasoning": "Mentions of trade priorities exist but no clear stance on protectionism versus free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:09+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending appear in the provided text."
+      "reasoning": "No statements addressing foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:09+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.3,
+      "stated_score": 1.0,
+      "quote": "The broken budget process in Washington has made it incredibly difficult to identify areas of wasteful and duplicative spending... Congress must pass appropriations and funding bills through regular order to be good stewards of American taxpayer dollars.",
+      "reasoning": "Explicit focus on eliminating waste and being good stewards of taxpayer dollars implies shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:09+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.35,
+      "stated_score": -1.0,
+      "quote": "Van Orden, Wisconsin Delegation Applaud CMS Rule Securing Historic Healthcare Funding for Wisconsin Families... applauded the Center for Medicare and Medicaid Services\u2019(CMS) proposed rule... delivering historic Medicaid funding to WI.",
+      "reasoning": "Multiple statements celebrate government securing and increasing Medicaid and hospital funding.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:09+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "Term limits mentioned but no position stated on campaign finance or political spending restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T20:06:09+00:00"
     }
   ]
 }

@@ -9,13 +9,37 @@
       "thoughts": "This bill directly addresses government spending by establishing automatic continuing appropriations at a reduced rate if regular appropriations are not enacted. This mechanism aims to prevent government shutdowns but also mandates a reduction in spending over time if new appropriations are delayed, thus pushing towards less government spending in such scenarios.",
       "topic_slug": "government_spending",
       "topic_name": "Government Spending",
-      "score": 0.6
+      "score": 0.6,
+      "llm_model": null,
+      "temperature": null
     },
     {
       "thoughts": "By mandating a reduction in the rate of operations for government programs if appropriations are not passed, the bill inherently promotes fiscal restraint and could lead to lower government expenditures in the absence of new spending bills. This indirectly supports prioritizing debt reduction by limiting potential deficit spending during funding impasses.",
       "topic_slug": "national_debt",
       "topic_name": "National Debt",
-      "score": 0.4
+      "score": 0.4,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill establishes automatic continuing appropriations at 99% of prior-year levels, with further 1% reductions every 30 days until regular appropriations pass. This creates a modest downward pressure on spending if triggered, giving the bill a tangential but nonzero relationship to deficit reduction.",
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": 0.2,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:13:57+00:00"
+    },
+    {
+      "topic_slug": "taxation",
+      "topic_name": "Taxation",
+      "score": 0.0,
+      "thoughts": "Scored but omitted by the model, which the prompt defines as no bearing on this topic.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:13:57+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

@@ -3,7 +3,7 @@
   "district": 5,
   "bioguide_id": "W000798",
   "website": "https://walberg.house.gov/",
-  "fetched_at": "2026-08-30T14:27:09+00:00",
+  "fetched_at": "2026-09-04T19:52:36+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -30,15 +30,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement on military or defense spending levels appears in the text."
+      "reasoning": "No clear statement on military spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:36+00:00"
     },
     {
       "topic_slug": "taxation",
       "addressed": true,
-      "emphasis": 0.8,
+      "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "WALBERG VOTES TO PASS THE WORKING FAMILIES TAX CUTS The Working Families Tax Cuts legislation takes advantage of a generational opportunity to restore fiscal sanity, invest in our communities, and usher in a new Golden Age in America.",
-      "reasoning": "The text repeatedly and prominently endorses tax-cut legislation that saves taxpayers money."
+      "reasoning": "Explicit vote and praise for tax cuts legislation shows support for lower taxes.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:36+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,7 +52,9 @@
       "emphasis": 0.6,
       "stated_score": 1.0,
       "quote": "WALBERG'S LEGISLATION SAVES OVER $280 BILLION The Student Success and Taxpayer Savings Plan was signed into law as part of the Working Families Tax Cuts legislation and saves over $280 billion.",
-      "reasoning": "The text highlights legislation that explicitly reduces federal outlays by hundreds of billions."
+      "reasoning": "The text highlights legislation that explicitly reduces federal outlays by hundreds of billions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
@@ -54,7 +62,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement takes a position on tariffs versus free trade."
+      "reasoning": "Mentions global market competition but no explicit stance on tariffs or free trade.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:36+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No verbatim statement addresses foreign aid spending."
+      "reasoning": "No statements on foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:36+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": true,
+      "emphasis": 0.5,
+      "stated_score": 1.0,
+      "quote": "WALBERG'S LEGISLATION SAVES OVER $280 BILLION The Student Success and Taxpayer Savings Plan was signed into law as part of the Working Families Tax Cuts legislation and saves over $280 billion.",
+      "reasoning": "Emphasis on saving hundreds of billions and restoring fiscal sanity indicates priority on shrinking the deficit.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:36+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.4,
+      "stated_score": 1.0,
+      "quote": "It is time for Congress to put partisan politics aside and work on bipartisan solutions that incentivize more competition and ensure patients get the earliest possible access to affordable prescription drugs.",
+      "reasoning": "Focus on competition, transparency, and association health plans shows preference for market-based approaches.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:36+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements on campaign finance or political spending restrictions.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:52:36+00:00"
     }
   ]
 }

@@ -2,14 +2,27 @@
   "congress": 119,
   "bill_type": "hr",
   "bill_number": "1873",
-  "summary": null,
+  "summary": "This bill excludes from gross income any grants or subgrants for broadband deployment received under the BEAD program, State Digital Equity programs, middle-mile grants, certain USDA broadband programs, or related state/local grants funded by ARPA or other specified federal broadband funds, while denying double benefits and reducing the basis of related property.",
   "text_source": "full_text",
   "scores": [
     {
       "thoughts": "This bill explicitly amends the Internal Revenue Code to exclude certain broadband grants from gross income, effectively lowering the tax burden for entities receiving these grants. This is the primary purpose of the bill.",
       "topic_slug": "taxation",
       "topic_name": "Taxation",
-      "score": 0.9
+      "score": 0.9,
+      "llm_model": null,
+      "temperature": null
+    },
+    {
+      "thoughts": "The bill creates a new tax exclusion (IRC \u00a7139J) that removes specified broadband grants from gross income, directly forgoing federal tax revenue on those amounts with no offsetting revenue raisers or spending reductions. Because the entire two-section bill is devoted to this revenue-losing provision, it has a moderate, unambiguous effect of widening the deficit.",
+      "topic_slug": "budget_deficit",
+      "topic_name": "Budget Deficit",
+      "score": -1.0,
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:02:01+00:00"
     }
-  ]
+  ],
+  "llm_model": "x-ai/grok-4.3",
+  "temperature": 0.0
 }

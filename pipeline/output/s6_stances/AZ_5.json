@@ -3,21 +3,21 @@
   "district": 5,
   "bioguide_id": "B001302",
   "website": "https://biggs.house.gov",
-  "fetched_at": "2026-08-30T14:16:33+00:00",
+  "fetched_at": "2026-09-04T19:45:10+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
     "https://biggs.house.gov",
     "https://biggs.house.gov/media/press-releases",
+    "https://biggs.house.gov/media/press-releases/congressman-biggss-statement-us-house-passage-kayleighs-law",
     "https://biggs.house.gov/media/press-releases/congressman-biggs-votes-stop-insider-trading-members-congress",
     "https://biggs.house.gov/media/press-releases/congressman-biggs-obtains-victory-arizona-ranchers-and-farmers",
     "https://biggs.house.gov/media/press-releases/congressman-biggss-statement-national-debt-surpassing-40-trillion",
     "https://biggs.house.gov/media/press-releases/congressman-biggs-urges-senators-kelly-and-gallego-back-bipartisan-bill",
-    "https://biggs.house.gov/media/press-releases/biggss-bipartisan-amendments-included-national-defense-authorization-act",
     "https://biggs.house.gov/media/press-releases/white-house-advances-congressman-biggss-effort-strengthen-americas-mining",
     "https://biggs.house.gov/media/press-releases/congressman-biggss-response-final-environmental-impact-statement-colorado",
-    "https://biggs.house.gov/media/press-releases/congressman-biggss-statement-anthony-faucis-appearance-us-senate-committee",
     "https://biggs.house.gov/media/press-releases/biggs-wyden-davidson-and-jayapal-call-gao-investigation-warrantless-federal",
+    "https://biggs.house.gov/media/press-releases/congressman-biggss-statement-us-house-vote-permanently-set-supreme-court-nine",
     "https://biggs.house.gov/media/press-releases/congressman-biggs-calls-governor-hobbs-give-arizonans-access-education-freedom"
   ],
   "stances": [
@@ -27,7 +27,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear position stated on military or defense spending levels."
+      "reasoning": "No statement addresses military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:10+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -35,15 +38,21 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions of a specific education tax credit do not state a general position on taxation."
+      "reasoning": "No statement addresses general tax rates or levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:10+00:00"
     },
     {
-      "topic_slug": "government_spending",
+      "topic_slug": "budget_deficit",
       "addressed": true,
       "emphasis": 0.85,
       "stated_score": 1.0,
-      "quote": "Hundreds of bills to reduce nondefense discretionary spending.",
-      "reasoning": "Multiple statements explicitly criticize unchecked federal spending and advocate reducing it via balanced budget requirements and spending cuts."
+      "quote": "For decades, Members of Congress have shown catastrophic unseriousness about reining in government spending and leaving a better future for the next generation.",
+      "reasoning": "Text repeatedly calls for reining in spending, balanced budget amendment, and reducing nondefense discretionary spending to address debt.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:10+00:00"
     },
     {
       "topic_slug": "trade_policy",
@@ -51,7 +60,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on trade policy or tariffs."
+      "reasoning": "No statement addresses trade policy or tariffs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:10+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -59,7 +71,32 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No statements on foreign aid spending."
+      "reasoning": "No statement addresses foreign aid spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:10+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statement addresses healthcare costs or coverage.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:10+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": true,
+      "emphasis": 0.45,
+      "stated_score": -1.0,
+      "quote": "One significant step toward earning back trust is banning the insider trading loopholes that have infuriated hardworking citizens across the country.",
+      "reasoning": "Text supports the Stop Insider Trading Act banning member stock purchases and requiring advance sale notices to tighten ethics rules.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:45:10+00:00"
     }
   ]
 }

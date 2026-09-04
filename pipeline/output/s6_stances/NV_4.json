@@ -3,7 +3,7 @@
   "district": 4,
   "bioguide_id": "H001066",
   "website": "https://horsford.house.gov",
-  "fetched_at": "2026-08-30T14:31:10+00:00",
+  "fetched_at": "2026-09-04T19:56:24+00:00",
   "llm_model": "x-ai/grok-4.3",
   "temperature": 0.0,
   "source_pages": [
@@ -17,11 +17,11 @@
     "https://horsford.house.gov/issues/energy-and-environment",
     "https://horsford.house.gov/issues/our-fight-against-trump-s-agenda",
     "https://horsford.house.gov/issues/how-medicaid-cuts-will-devastate-nv-04",
-    "https://horsford.house.gov/issues/tipped-income-protection-and-support-tips-act",
     "https://horsford.house.gov/issues/social-security-protecting-what-you-ve-earned",
+    "https://horsford.house.gov/issues/tipped-income-protection-and-support-tips-act",
     "https://horsford.house.gov/issues/supplemental-nutrition-assistance-program-snap-faqs",
     "https://horsford.house.gov/media/press-releases",
-    "https://horsford.house.gov/media/press-releases/horsford-sign-the-housing-bill-nevadans-have-waited-long-enough"
+    "https://horsford.house.gov/media/press-releases/horsford-affordable-housing-is-coming-to-nevada-with-or-without-trump"
   ],
   "stances": [
     {
@@ -30,7 +30,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "No clear statement on military or defense spending levels."
+      "reasoning": "No clear position stated on overall military or defense spending levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:24+00:00"
     },
     {
       "topic_slug": "taxation",
@@ -38,7 +41,10 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions criticism of tax cuts for wealthy but no explicit position on overall tax rates."
+      "reasoning": "Criticism of tax cuts for the wealthy appears but no explicit stance on raising or lowering taxes overall.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:24+00:00"
     },
     {
       "topic_slug": "government_spending",
@@ -46,15 +52,20 @@
       "emphasis": 0.6,
       "stated_score": -1.0,
       "quote": "He has handed power to unelected billionaires, launched reckless trade wars that hurt working families, and pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
-      "reasoning": "Explicit opposition to proposed cuts in Social Security and Medicaid shows preference against reduced government spending."
+      "reasoning": "Explicit opposition to proposed cuts in Social Security and Medicaid shows preference against reduced government spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0
     },
     {
       "topic_slug": "trade_policy",
       "addressed": true,
-      "emphasis": 0.3,
-      "stated_score": 1.0,
-      "quote": "He has handed power to unelected billionaires, launched reckless trade wars that hurt working families, and pushed for cuts to Social Security and Medicaid \u2014 programs that millions of Americans depend on.",
-      "reasoning": "Criticism of 'reckless trade wars' indicates opposition to protectionism and support for free trade."
+      "emphasis": 0.4,
+      "stated_score": -1.0,
+      "quote": "launched reckless trade wars that hurt working families",
+      "reasoning": "Explicit opposition to trade wars indicates preference for avoiding protectionist policies.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:24+00:00"
     },
     {
       "topic_slug": "foreign_aid",
@@ -62,7 +73,43 @@
       "emphasis": null,
       "stated_score": null,
       "quote": null,
-      "reasoning": "Mentions review of military assistance to Israel but states no position on aid levels."
+      "reasoning": "Mention of reviewing military assistance does not state a position on aid levels.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:24+00:00"
+    },
+    {
+      "topic_slug": "budget_deficit",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address deficit size or balancing the budget.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:24+00:00"
+    },
+    {
+      "topic_slug": "healthcare_affordability",
+      "addressed": true,
+      "emphasis": 0.8,
+      "stated_score": -1.0,
+      "quote": "Congressman Horsford believes that every Nevadan deserves access to high-quality affordable health care, no matter where they live or who they are.",
+      "reasoning": "Repeated emphasis on government programs like Medicaid and opposition to cuts shows support for government action to expand coverage and lower costs.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:24+00:00"
+    },
+    {
+      "topic_slug": "money_in_politics",
+      "addressed": false,
+      "emphasis": null,
+      "stated_score": null,
+      "quote": null,
+      "reasoning": "No statements address limits or disclosure for political spending.",
+      "llm_model": "x-ai/grok-4.3",
+      "temperature": 0.0,
+      "scored_at": "2026-09-04T19:56:24+00:00"
     }
   ]
 }
